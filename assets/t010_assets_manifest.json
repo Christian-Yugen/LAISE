@@ -1,0 +1,25 @@
+{
+  "schema_version": "LAISE-ASSET-REGISTRY-1.0",
+  "assets": [
+    {
+      "asset_id": "LAISE-SF-TEST-0001",
+      "name": "GeneralUser GS",
+      "version": "1.471",
+      "asset_type": "soundfont_sf2",
+      "renderer": "fluidsynth",
+      "path": "assets/soundfonts/GeneralUser GS v1.471.sf2",
+      "sha256": "f45b6b4a68b6bf3d792fcbb6d7de24dc701a0f89c5900a21ef3aaece993b839a",
+      "status": "TEST_ONLY",
+      "license_state": "UNVERIFIED",
+      "license_name": "",
+      "license_note": "Development asset only. Provenance/licensing not yet approved for LAISE production release.",
+      "instruments": [
+        "*"
+      ],
+      "articulations": [
+        "performance_simulated"
+      ],
+      "source": "Existing LAISE development asset"
+    }
+  ]
+}

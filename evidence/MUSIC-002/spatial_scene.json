@@ -1,0 +1,776 @@
+{
+  "scene_version": "LAISE Inspirational Spatial v0.1",
+  "style": "Inspirational Cinematic Orchestral",
+  "bpm": 88,
+  "duration_seconds": 104.65066666666667,
+  "sections": [
+    "Reflection",
+    "Determination",
+    "Triumph",
+    "Release",
+    "Finale"
+  ],
+  "distance_policy": "FIXED_CALIBRATED_3M",
+  "sources": [
+    {
+      "source_id": "piano",
+      "trajectory": "inspirational_section_aware",
+      "gain_db": -3,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -14.7,
+          "elevation_deg": 2,
+          "distance_m": 3.0,
+          "section": "Reflection",
+          "energy": 0.18
+        },
+        {
+          "time_seconds": 10.174370370370369,
+          "azimuth_deg": 14.7,
+          "elevation_deg": 2,
+          "distance_m": 3.0,
+          "section": "Reflection",
+          "energy": 0.18
+        },
+        {
+          "time_seconds": 20.348740740740737,
+          "azimuth_deg": 18.3,
+          "elevation_deg": 2,
+          "distance_m": 3.0,
+          "section": "Determination",
+          "energy": 0.42
+        },
+        {
+          "time_seconds": 31.97659259259259,
+          "azimuth_deg": -18.3,
+          "elevation_deg": 2,
+          "distance_m": 3.0,
+          "section": "Determination",
+          "energy": 0.42
+        },
+        {
+          "time_seconds": 43.60444444444444,
+          "azimuth_deg": 25.2,
+          "elevation_deg": 2,
+          "distance_m": 3.0,
+          "section": "Triumph",
+          "energy": 0.88
+        },
+        {
+          "time_seconds": 61.04622222222222,
+          "azimuth_deg": -25.2,
+          "elevation_deg": 2,
+          "distance_m": 3.0,
+          "section": "Triumph",
+          "energy": 0.88
+        },
+        {
+          "time_seconds": 78.488,
+          "azimuth_deg": -17.7,
+          "elevation_deg": 2,
+          "distance_m": 3.0,
+          "section": "Release",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 87.20888888888888,
+          "azimuth_deg": 17.7,
+          "elevation_deg": 2,
+          "distance_m": 3.0,
+          "section": "Release",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 95.92977777777777,
+          "azimuth_deg": -14.4,
+          "elevation_deg": 2,
+          "distance_m": 3.0,
+          "section": "Finale",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 100.29022222222221,
+          "azimuth_deg": 14.4,
+          "elevation_deg": 2,
+          "distance_m": 3.0,
+          "section": "Finale",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 104.65066666666667,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Finale",
+          "energy": 0.1
+        }
+      ]
+    },
+    {
+      "source_id": "soft_synth",
+      "trajectory": "inspirational_section_aware",
+      "gain_db": -12,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -26.5,
+          "elevation_deg": 14,
+          "distance_m": 3.0,
+          "section": "Reflection",
+          "energy": 0.18
+        },
+        {
+          "time_seconds": 10.174370370370369,
+          "azimuth_deg": 26.5,
+          "elevation_deg": 14,
+          "distance_m": 3.0,
+          "section": "Reflection",
+          "energy": 0.18
+        },
+        {
+          "time_seconds": 20.348740740740737,
+          "azimuth_deg": 32.5,
+          "elevation_deg": 14,
+          "distance_m": 3.0,
+          "section": "Determination",
+          "energy": 0.42
+        },
+        {
+          "time_seconds": 31.97659259259259,
+          "azimuth_deg": -32.5,
+          "elevation_deg": 14,
+          "distance_m": 3.0,
+          "section": "Determination",
+          "energy": 0.42
+        },
+        {
+          "time_seconds": 43.60444444444444,
+          "azimuth_deg": 44.0,
+          "elevation_deg": 14,
+          "distance_m": 3.0,
+          "section": "Triumph",
+          "energy": 0.88
+        },
+        {
+          "time_seconds": 61.04622222222222,
+          "azimuth_deg": -44.0,
+          "elevation_deg": 14,
+          "distance_m": 3.0,
+          "section": "Triumph",
+          "energy": 0.88
+        },
+        {
+          "time_seconds": 78.488,
+          "azimuth_deg": -31.5,
+          "elevation_deg": 14,
+          "distance_m": 3.0,
+          "section": "Release",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 87.20888888888888,
+          "azimuth_deg": 31.5,
+          "elevation_deg": 14,
+          "distance_m": 3.0,
+          "section": "Release",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 95.92977777777777,
+          "azimuth_deg": -26.0,
+          "elevation_deg": 14,
+          "distance_m": 3.0,
+          "section": "Finale",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 100.29022222222221,
+          "azimuth_deg": 26.0,
+          "elevation_deg": 14,
+          "distance_m": 3.0,
+          "section": "Finale",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 104.65066666666667,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Finale",
+          "energy": 0.1
+        }
+      ]
+    },
+    {
+      "source_id": "strings",
+      "trajectory": "inspirational_section_aware",
+      "gain_db": -7,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -23.759999999999998,
+          "elevation_deg": 11.26,
+          "distance_m": 3.0,
+          "section": "Reflection",
+          "energy": 0.18
+        },
+        {
+          "time_seconds": 10.174370370370369,
+          "azimuth_deg": 23.759999999999998,
+          "elevation_deg": 11.26,
+          "distance_m": 3.0,
+          "section": "Reflection",
+          "energy": 0.18
+        },
+        {
+          "time_seconds": 20.348740740740737,
+          "azimuth_deg": 31.439999999999998,
+          "elevation_deg": 12.94,
+          "distance_m": 3.0,
+          "section": "Determination",
+          "energy": 0.42
+        },
+        {
+          "time_seconds": 31.97659259259259,
+          "azimuth_deg": -31.439999999999998,
+          "elevation_deg": 12.94,
+          "distance_m": 3.0,
+          "section": "Determination",
+          "energy": 0.42
+        },
+        {
+          "time_seconds": 43.60444444444444,
+          "azimuth_deg": 46.16,
+          "elevation_deg": 16.16,
+          "distance_m": 3.0,
+          "section": "Triumph",
+          "energy": 0.88
+        },
+        {
+          "time_seconds": 61.04622222222222,
+          "azimuth_deg": -46.16,
+          "elevation_deg": 16.16,
+          "distance_m": 3.0,
+          "section": "Triumph",
+          "energy": 0.88
+        },
+        {
+          "time_seconds": 78.488,
+          "azimuth_deg": -30.16,
+          "elevation_deg": 12.66,
+          "distance_m": 3.0,
+          "section": "Release",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 87.20888888888888,
+          "azimuth_deg": 30.16,
+          "elevation_deg": 12.66,
+          "distance_m": 3.0,
+          "section": "Release",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 95.92977777777777,
+          "azimuth_deg": -23.12,
+          "elevation_deg": 11.120000000000001,
+          "distance_m": 3.0,
+          "section": "Finale",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 100.29022222222221,
+          "azimuth_deg": 23.12,
+          "elevation_deg": 11.120000000000001,
+          "distance_m": 3.0,
+          "section": "Finale",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 104.65066666666667,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Finale",
+          "energy": 0.1
+        }
+      ]
+    },
+    {
+      "source_id": "bass",
+      "trajectory": "inspirational_section_aware",
+      "gain_db": -5,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -2,
+          "elevation_deg": -4,
+          "distance_m": 3.0,
+          "section": "Reflection",
+          "energy": 0.18
+        },
+        {
+          "time_seconds": 10.174370370370369,
+          "azimuth_deg": 2,
+          "elevation_deg": -4,
+          "distance_m": 3.0,
+          "section": "Reflection",
+          "energy": 0.18
+        },
+        {
+          "time_seconds": 20.348740740740737,
+          "azimuth_deg": 2,
+          "elevation_deg": -4,
+          "distance_m": 3.0,
+          "section": "Determination",
+          "energy": 0.42
+        },
+        {
+          "time_seconds": 31.97659259259259,
+          "azimuth_deg": -2,
+          "elevation_deg": -4,
+          "distance_m": 3.0,
+          "section": "Determination",
+          "energy": 0.42
+        },
+        {
+          "time_seconds": 43.60444444444444,
+          "azimuth_deg": 2,
+          "elevation_deg": -4,
+          "distance_m": 3.0,
+          "section": "Triumph",
+          "energy": 0.88
+        },
+        {
+          "time_seconds": 61.04622222222222,
+          "azimuth_deg": -2,
+          "elevation_deg": -4,
+          "distance_m": 3.0,
+          "section": "Triumph",
+          "energy": 0.88
+        },
+        {
+          "time_seconds": 78.488,
+          "azimuth_deg": -2,
+          "elevation_deg": -4,
+          "distance_m": 3.0,
+          "section": "Release",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 87.20888888888888,
+          "azimuth_deg": 2,
+          "elevation_deg": -4,
+          "distance_m": 3.0,
+          "section": "Release",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 95.92977777777777,
+          "azimuth_deg": -2,
+          "elevation_deg": -4,
+          "distance_m": 3.0,
+          "section": "Finale",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 100.29022222222221,
+          "azimuth_deg": 2,
+          "elevation_deg": -4,
+          "distance_m": 3.0,
+          "section": "Finale",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 104.65066666666667,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Finale",
+          "energy": 0.1
+        }
+      ]
+    },
+    {
+      "source_id": "percussion",
+      "trajectory": "inspirational_section_aware",
+      "gain_db": -7,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -22.3,
+          "elevation_deg": 1.9,
+          "distance_m": 3.0,
+          "section": "Reflection",
+          "energy": 0.18
+        },
+        {
+          "time_seconds": 10.174370370370369,
+          "azimuth_deg": 22.3,
+          "elevation_deg": 1.9,
+          "distance_m": 3.0,
+          "section": "Reflection",
+          "energy": 0.18
+        },
+        {
+          "time_seconds": 20.348740740740737,
+          "azimuth_deg": 30.7,
+          "elevation_deg": 3.1,
+          "distance_m": 3.0,
+          "section": "Determination",
+          "energy": 0.42
+        },
+        {
+          "time_seconds": 31.97659259259259,
+          "azimuth_deg": -30.7,
+          "elevation_deg": 3.1,
+          "distance_m": 3.0,
+          "section": "Determination",
+          "energy": 0.42
+        },
+        {
+          "time_seconds": 43.60444444444444,
+          "azimuth_deg": 46.8,
+          "elevation_deg": 5.4,
+          "distance_m": 3.0,
+          "section": "Triumph",
+          "energy": 0.88
+        },
+        {
+          "time_seconds": 61.04622222222222,
+          "azimuth_deg": -46.8,
+          "elevation_deg": 5.4,
+          "distance_m": 3.0,
+          "section": "Triumph",
+          "energy": 0.88
+        },
+        {
+          "time_seconds": 78.488,
+          "azimuth_deg": -29.3,
+          "elevation_deg": 2.9,
+          "distance_m": 3.0,
+          "section": "Release",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 87.20888888888888,
+          "azimuth_deg": 29.3,
+          "elevation_deg": 2.9,
+          "distance_m": 3.0,
+          "section": "Release",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 95.92977777777777,
+          "azimuth_deg": -21.6,
+          "elevation_deg": 1.8,
+          "distance_m": 3.0,
+          "section": "Finale",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 100.29022222222221,
+          "azimuth_deg": 21.6,
+          "elevation_deg": 1.8,
+          "distance_m": 3.0,
+          "section": "Finale",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 104.65066666666667,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Finale",
+          "energy": 0.1
+        }
+      ]
+    },
+    {
+      "source_id": "lead",
+      "trajectory": "inspirational_section_aware",
+      "gain_db": -5,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -26.84,
+          "elevation_deg": 7.4399999999999995,
+          "distance_m": 3.0,
+          "section": "Reflection",
+          "energy": 0.18
+        },
+        {
+          "time_seconds": 10.174370370370369,
+          "azimuth_deg": 26.84,
+          "elevation_deg": 7.4399999999999995,
+          "distance_m": 3.0,
+          "section": "Reflection",
+          "energy": 0.18
+        },
+        {
+          "time_seconds": 20.348740740740737,
+          "azimuth_deg": 35.96,
+          "elevation_deg": 9.36,
+          "distance_m": 3.0,
+          "section": "Determination",
+          "energy": 0.42
+        },
+        {
+          "time_seconds": 31.97659259259259,
+          "azimuth_deg": -35.96,
+          "elevation_deg": 9.36,
+          "distance_m": 3.0,
+          "section": "Determination",
+          "energy": 0.42
+        },
+        {
+          "time_seconds": 43.60444444444444,
+          "azimuth_deg": 53.44,
+          "elevation_deg": 13.04,
+          "distance_m": 3.0,
+          "section": "Triumph",
+          "energy": 0.88
+        },
+        {
+          "time_seconds": 61.04622222222222,
+          "azimuth_deg": -53.44,
+          "elevation_deg": 13.04,
+          "distance_m": 3.0,
+          "section": "Triumph",
+          "energy": 0.88
+        },
+        {
+          "time_seconds": 78.488,
+          "azimuth_deg": -34.44,
+          "elevation_deg": 9.04,
+          "distance_m": 3.0,
+          "section": "Release",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 87.20888888888888,
+          "azimuth_deg": 34.44,
+          "elevation_deg": 9.04,
+          "distance_m": 3.0,
+          "section": "Release",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 95.92977777777777,
+          "azimuth_deg": -26.08,
+          "elevation_deg": 7.28,
+          "distance_m": 3.0,
+          "section": "Finale",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 100.29022222222221,
+          "azimuth_deg": 26.08,
+          "elevation_deg": 7.28,
+          "distance_m": 3.0,
+          "section": "Finale",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 104.65066666666667,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Finale",
+          "energy": 0.1
+        }
+      ]
+    },
+    {
+      "source_id": "ostinato",
+      "trajectory": "inspirational_section_aware",
+      "gain_db": -11,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -17.4,
+          "elevation_deg": 5,
+          "distance_m": 3.0,
+          "section": "Reflection",
+          "energy": 0.18
+        },
+        {
+          "time_seconds": 10.174370370370369,
+          "azimuth_deg": 17.4,
+          "elevation_deg": 5,
+          "distance_m": 3.0,
+          "section": "Reflection",
+          "energy": 0.18
+        },
+        {
+          "time_seconds": 20.348740740740737,
+          "azimuth_deg": 24.6,
+          "elevation_deg": 5,
+          "distance_m": 3.0,
+          "section": "Determination",
+          "energy": 0.42
+        },
+        {
+          "time_seconds": 31.97659259259259,
+          "azimuth_deg": -24.6,
+          "elevation_deg": 5,
+          "distance_m": 3.0,
+          "section": "Determination",
+          "energy": 0.42
+        },
+        {
+          "time_seconds": 43.60444444444444,
+          "azimuth_deg": 38.4,
+          "elevation_deg": 5,
+          "distance_m": 3.0,
+          "section": "Triumph",
+          "energy": 0.88
+        },
+        {
+          "time_seconds": 61.04622222222222,
+          "azimuth_deg": -38.4,
+          "elevation_deg": 5,
+          "distance_m": 3.0,
+          "section": "Triumph",
+          "energy": 0.88
+        },
+        {
+          "time_seconds": 78.488,
+          "azimuth_deg": -23.4,
+          "elevation_deg": 5,
+          "distance_m": 3.0,
+          "section": "Release",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 87.20888888888888,
+          "azimuth_deg": 23.4,
+          "elevation_deg": 5,
+          "distance_m": 3.0,
+          "section": "Release",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 95.92977777777777,
+          "azimuth_deg": -16.8,
+          "elevation_deg": 5,
+          "distance_m": 3.0,
+          "section": "Finale",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 100.29022222222221,
+          "azimuth_deg": 16.8,
+          "elevation_deg": 5,
+          "distance_m": 3.0,
+          "section": "Finale",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 104.65066666666667,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Finale",
+          "energy": 0.1
+        }
+      ]
+    },
+    {
+      "source_id": "brass",
+      "trajectory": "inspirational_section_aware",
+      "gain_db": -10,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -17.04,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "Reflection",
+          "energy": 0.18
+        },
+        {
+          "time_seconds": 10.174370370370369,
+          "azimuth_deg": 17.04,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "Reflection",
+          "energy": 0.18
+        },
+        {
+          "time_seconds": 20.348740740740737,
+          "azimuth_deg": 23.759999999999998,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "Determination",
+          "energy": 0.42
+        },
+        {
+          "time_seconds": 31.97659259259259,
+          "azimuth_deg": -23.759999999999998,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "Determination",
+          "energy": 0.42
+        },
+        {
+          "time_seconds": 43.60444444444444,
+          "azimuth_deg": 36.64,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "Triumph",
+          "energy": 0.88
+        },
+        {
+          "time_seconds": 61.04622222222222,
+          "azimuth_deg": -36.64,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "Triumph",
+          "energy": 0.88
+        },
+        {
+          "time_seconds": 78.488,
+          "azimuth_deg": -22.64,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "Release",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 87.20888888888888,
+          "azimuth_deg": 22.64,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "Release",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 95.92977777777777,
+          "azimuth_deg": -16.48,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "Finale",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 100.29022222222221,
+          "azimuth_deg": 16.48,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "Finale",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 104.65066666666667,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Finale",
+          "energy": 0.1
+        }
+      ]
+    }
+  ]
+}

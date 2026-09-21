@@ -1,0 +1,19 @@
+{
+  "test_id": "T005",
+  "objective_result": "PASS",
+  "perceptual_result": "PENDING",
+  "style": "Cinematic Epic",
+  "duration_seconds": 137.62133333333333,
+  "normalization_gain": 1,
+  "checks": {
+    "six_midi": true,
+    "six_dry_stems": true,
+    "six_spatial_stems": true,
+    "six_emotional_sections": true,
+    "mix_finite": true,
+    "mix_non_silent": true,
+    "mix_no_clipping": true
+  },
+  "mix": "C:\\Projetos2026\\LAISE\\evidence\\T005\\laise_cinematic_epic_v01.wav",
+  "scene": "C:\\Projetos2026\\LAISE\\evidence\\T005\\cinematic_spatial_scene.json"
+}

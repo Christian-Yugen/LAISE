@@ -1,0 +1,84 @@
+{
+  "work_id": "LAISE-MUSIC-007",
+  "comparison_basis": "MUSIC-006 frozen composition + T008 mix/orchestration",
+  "engine": "T006 + T007 + T008 frozen core + T009 Instrument Realism",
+  "seed": 20260928,
+  "objective_result": "PASS",
+  "perceptual_result": "PENDING",
+  "t009_summary": {
+    "families": [
+      "brass_short",
+      "brass_sustain",
+      "cinematic_hit",
+      "cinematic_ping",
+      "keyboard",
+      "low_strings",
+      "percussion",
+      "solo_strings",
+      "solo_wind",
+      "strings",
+      "strings_short"
+    ],
+    "timing_changes": 678,
+    "velocity_changes": 775,
+    "duration_changes": 874,
+    "phrase_breaths": 86,
+    "performance_manifest": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-007\\performance_manifest.json"
+  },
+  "t008_preserved": {
+    "predrop": {
+      "climax_bar": 32,
+      "cut_at_tick": 60720,
+      "resume_tick": 61440,
+      "silence_beats": 1.5,
+      "roles": [
+        "strings",
+        "bass",
+        "ostinato",
+        "percussion",
+        "brass"
+      ]
+    },
+    "lowmid_processed_frames": 3828,
+    "lowmid_analysis": {
+      "strings": {
+        "processed_frames": 1745,
+        "activity_threshold": 0.0002999168761053992,
+        "max_dominance": 0.9059506000074843,
+        "dominance_threshold": 0.18
+      },
+      "bass": {
+        "processed_frames": 1843,
+        "activity_threshold": 0.00896310165441913,
+        "max_dominance": 0.9443633459014896,
+        "dominance_threshold": 0.18
+      },
+      "brass": {
+        "processed_frames": 240,
+        "activity_threshold": 7.471051554205598e-06,
+        "max_dominance": 0.5244730361623371,
+        "dominance_threshold": 0.18
+      }
+    },
+    "minimum_duck_gain": 0.7943282127380371
+  },
+  "checks": {
+    "music006_core_preserved": true,
+    "role_specific_articulation_profiles": true,
+    "timing_humanization_active": true,
+    "velocity_humanization_active": true,
+    "duration_articulation_active": true,
+    "phrase_breathing_active": true,
+    "strings_legato_profile_active": true,
+    "brass_attack_short_profile_active": true,
+    "t008_lowmid_cleanup_preserved": true,
+    "t008_percussion_ducking_preserved": true,
+    "three_depth_planes_preserved": true,
+    "mix_finite": true,
+    "mix_non_silent": true,
+    "mix_no_clipping": true
+  },
+  "mix": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-007\\LAISE_MUSIC006_T009_AB.wav",
+  "mix_sha256": "51136759045ad5008b57e8dac63135027247fc8e2fb296298ac24086b7912ff7",
+  "asset_note": "GeneralUser GS remains TEST_ONLY; T009 validates performance intelligence, not final production timbre."
+}

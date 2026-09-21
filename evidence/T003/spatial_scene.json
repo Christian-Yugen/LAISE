@@ -1,0 +1,211 @@
+{
+  "scene_version": "LAISE Spatial Scene v0.1.1",
+  "coordinate_system": {
+    "type": "polar",
+    "azimuth": "degrees; 0=front, -90=left, +90=right, ±180=back",
+    "elevation": "degrees; 0=horizon, +up, -down",
+    "distance": "meters"
+  },
+  "duration_seconds": 83.66933333333333,
+  "renderer_policy": {
+    "laise_owns_scene": true,
+    "renderer": "dearVR PRO 2",
+    "distance_policy": "FIXED_CALIBRATED_3M",
+    "distance_m": 3.0,
+    "distance_raw": 0.0969899744,
+    "reason": "Pedalboard exposes dearVR distance text as read-only; T003 freezes the T001-H calibrated 3 m point instead of inventing a raw mapping.",
+    "reflection": false,
+    "reverb": false,
+    "known_limitation": "convincing frontal externalization remains unresolved"
+  },
+  "sources": [
+    {
+      "source_id": "strings_pad",
+      "input_file": "C:\\Projetos2026\\LAISE\\evidence\\T002\\T002-CDF\\stems\\01_strings_pad_dry.wav",
+      "trajectory": "wide_slow_motion",
+      "gain_db": -5.0,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -30,
+          "elevation_deg": 12,
+          "distance_m": 3.0
+        },
+        {
+          "time_seconds": 20.917333333333332,
+          "azimuth_deg": -10,
+          "elevation_deg": 16,
+          "distance_m": 3.0
+        },
+        {
+          "time_seconds": 41.834666666666664,
+          "azimuth_deg": 25,
+          "elevation_deg": 12,
+          "distance_m": 3.0
+        },
+        {
+          "time_seconds": 62.751999999999995,
+          "azimuth_deg": 10,
+          "elevation_deg": 18,
+          "distance_m": 3.0
+        },
+        {
+          "time_seconds": 83.66933333333333,
+          "azimuth_deg": -30,
+          "elevation_deg": 12,
+          "distance_m": 3.0
+        }
+      ]
+    },
+    {
+      "source_id": "bass_sub",
+      "input_file": "C:\\Projetos2026\\LAISE\\evidence\\T002\\T002-CDF\\stems\\02_bass_sub_dry.wav",
+      "trajectory": "center_anchor",
+      "gain_db": -3.0,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -4,
+          "elevation_deg": -3,
+          "distance_m": 3.0
+        },
+        {
+          "time_seconds": 41.834666666666664,
+          "azimuth_deg": 4,
+          "elevation_deg": -3,
+          "distance_m": 3.0
+        },
+        {
+          "time_seconds": 83.66933333333333,
+          "azimuth_deg": -4,
+          "elevation_deg": -3,
+          "distance_m": 3.0
+        }
+      ]
+    },
+    {
+      "source_id": "drums_impacts",
+      "input_file": "C:\\Projetos2026\\LAISE\\evidence\\T002\\T002-CDF\\stems\\03_drums_impacts_dry.wav",
+      "trajectory": "alternating_stage_motion",
+      "gain_db": -7.0,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -42,
+          "elevation_deg": 2,
+          "distance_m": 3.0
+        },
+        {
+          "time_seconds": 10.458666666666666,
+          "azimuth_deg": 38,
+          "elevation_deg": 4,
+          "distance_m": 3.0
+        },
+        {
+          "time_seconds": 20.917333333333332,
+          "azimuth_deg": -18,
+          "elevation_deg": -2,
+          "distance_m": 3.0
+        },
+        {
+          "time_seconds": 31.375999999999998,
+          "azimuth_deg": 48,
+          "elevation_deg": 6,
+          "distance_m": 3.0
+        },
+        {
+          "time_seconds": 41.834666666666664,
+          "azimuth_deg": -50,
+          "elevation_deg": 3,
+          "distance_m": 3.0
+        },
+        {
+          "time_seconds": 52.29333333333333,
+          "azimuth_deg": 22,
+          "elevation_deg": -2,
+          "distance_m": 3.0
+        },
+        {
+          "time_seconds": 62.751999999999995,
+          "azimuth_deg": 52,
+          "elevation_deg": 5,
+          "distance_m": 3.0
+        },
+        {
+          "time_seconds": 73.21066666666667,
+          "azimuth_deg": -28,
+          "elevation_deg": 2,
+          "distance_m": 3.0
+        },
+        {
+          "time_seconds": 83.66933333333333,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0
+        }
+      ]
+    },
+    {
+      "source_id": "lead_melody",
+      "input_file": "C:\\Projetos2026\\LAISE\\evidence\\T002\\T002-CDF\\stems\\04_lead_melody_dry.wav",
+      "trajectory": "dynamic_lateral_motion",
+      "gain_db": -2.0,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -55,
+          "elevation_deg": 0,
+          "distance_m": 3.0
+        },
+        {
+          "time_seconds": 10.04032,
+          "azimuth_deg": -25,
+          "elevation_deg": 4,
+          "distance_m": 3.0
+        },
+        {
+          "time_seconds": 20.917333333333332,
+          "azimuth_deg": 15,
+          "elevation_deg": 0,
+          "distance_m": 3.0
+        },
+        {
+          "time_seconds": 31.794346666666666,
+          "azimuth_deg": 55,
+          "elevation_deg": 6,
+          "distance_m": 3.0
+        },
+        {
+          "time_seconds": 41.834666666666664,
+          "azimuth_deg": 20,
+          "elevation_deg": 0,
+          "distance_m": 3.0
+        },
+        {
+          "time_seconds": 51.874986666666665,
+          "azimuth_deg": -35,
+          "elevation_deg": 5,
+          "distance_m": 3.0
+        },
+        {
+          "time_seconds": 62.751999999999995,
+          "azimuth_deg": -60,
+          "elevation_deg": 0,
+          "distance_m": 3.0
+        },
+        {
+          "time_seconds": 73.62901333333333,
+          "azimuth_deg": 35,
+          "elevation_deg": 4,
+          "distance_m": 3.0
+        },
+        {
+          "time_seconds": 83.66933333333333,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0
+        }
+      ]
+    }
+  ]
+}

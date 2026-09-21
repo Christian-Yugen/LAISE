@@ -1,0 +1,117 @@
+{
+  "test_id": "T003",
+  "result": "PASS",
+  "scene": "C:\\Projetos2026\\LAISE\\evidence\\T003\\spatial_scene.json",
+  "renderer": "dearVR PRO 2",
+  "sample_rate": 48000,
+  "buffer_size": 256,
+  "sources": {
+    "strings_pad": {
+      "trajectory": "wide_slow_motion",
+      "keyframe_count": 5,
+      "output": "C:\\Projetos2026\\LAISE\\evidence\\T003\\spatial_stems\\strings_pad_spatial.wav",
+      "sha256": "edf64e979d858c088f17d99b5a74b20f919435e1306f4db5c3d2865bec5c9958",
+      "metrics": {
+        "samples": 4016128,
+        "duration_seconds": 83.66933333333333,
+        "peak": 0.1636035442352295,
+        "peak_dbfs": -15.724145843962633,
+        "rms": 0.02212064200549289,
+        "rms_dbfs": -33.10404545385963,
+        "left_rms": 0.021421759321351732,
+        "right_rms": 0.022798110295558126,
+        "ild_db": -0.5408742962644563,
+        "finite": true,
+        "not_silent": true
+      }
+    },
+    "bass_sub": {
+      "trajectory": "center_anchor",
+      "keyframe_count": 3,
+      "output": "C:\\Projetos2026\\LAISE\\evidence\\T003\\spatial_stems\\bass_sub_spatial.wav",
+      "sha256": "7d1964d2a6b8f594e6f53da5fc256d84348ac14ac44e8056ea83fbb1c157b1c6",
+      "metrics": {
+        "samples": 3952128,
+        "duration_seconds": 82.336,
+        "peak": 0.13335485756397247,
+        "peak_dbfs": -17.499823202810777,
+        "rms": 0.029929328338648788,
+        "rms_dbfs": -30.478060586077298,
+        "left_rms": 0.029947314175445425,
+        "right_rms": 0.02991133168687841,
+        "ild_db": 0.010442600487834918,
+        "finite": true,
+        "not_silent": true
+      }
+    },
+    "drums_impacts": {
+      "trajectory": "alternating_stage_motion",
+      "keyframe_count": 9,
+      "output": "C:\\Projetos2026\\LAISE\\evidence\\T003\\spatial_stems\\drums_impacts_spatial.wav",
+      "sha256": "2860d936e7f4845d423b90e9c104be20465141692dadc2dfcaa4ae18bb09701e",
+      "metrics": {
+        "samples": 3931648,
+        "duration_seconds": 81.90933333333334,
+        "peak": 0.23970921337604523,
+        "peak_dbfs": -12.40630546521941,
+        "rms": 0.016470892289358947,
+        "rms_dbfs": -35.66565745698371,
+        "left_rms": 0.016076905440046342,
+        "right_rms": 0.016855672549238032,
+        "ild_db": -0.4108725677310794,
+        "finite": true,
+        "not_silent": true
+      }
+    },
+    "lead_melody": {
+      "trajectory": "dynamic_lateral_motion",
+      "keyframe_count": 9,
+      "output": "C:\\Projetos2026\\LAISE\\evidence\\T003\\spatial_stems\\lead_melody_spatial.wav",
+      "sha256": "4a8b9084a199ee0adc9d1bbdef007993f829cbb61496dd9126043411de0efbfb",
+      "metrics": {
+        "samples": 3954688,
+        "duration_seconds": 82.38933333333334,
+        "peak": 0.17309892177581787,
+        "peak_dbfs": -15.234112746278484,
+        "rms": 0.01783917604125097,
+        "rms_dbfs": -34.97250417520901,
+        "left_rms": 0.018591048916774697,
+        "right_rms": 0.01705418728159086,
+        "ild_db": 0.7494573136402162,
+        "finite": true,
+        "not_silent": true
+      }
+    }
+  },
+  "mix": {
+    "output": "C:\\Projetos2026\\LAISE\\evidence\\T003\\laise_first_spatial_mix.wav",
+    "sha256": "c69bcb9ce2e7baed2e539fbf6cd42ffa12162cf8902c8523bd1ae902e04e0446",
+    "pre_normalization_peak": 0.37292057275772095,
+    "normalization_gain": 1.0,
+    "metrics": {
+      "samples": 4016128,
+      "duration_seconds": 83.66933333333333,
+      "peak": 0.37292057275772095,
+      "peak_dbfs": -8.56767314861164,
+      "rms": 0.043880905134248256,
+      "rms_dbfs": -27.15448845569531,
+      "left_rms": 0.04375792552180257,
+      "right_rms": 0.044003541048762994,
+      "ild_db": -0.04861803280949063,
+      "finite": true,
+      "not_silent": true
+    }
+  },
+  "validations": {
+    "scene_has_four_sources": true,
+    "four_spatial_stems_created": true,
+    "all_sources_finite": true,
+    "all_sources_non_silent": true,
+    "all_trajectories_have_multiple_keyframes": true,
+    "final_mix_finite": true,
+    "final_mix_non_silent": true,
+    "final_mix_no_clipping": true,
+    "distinct_spatial_outputs": true
+  },
+  "perceptual_result": "PENDING"
+}

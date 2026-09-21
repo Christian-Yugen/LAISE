@@ -1,0 +1,215 @@
+{
+  "engine": "LAISE T009 Instrument Realism & Articulation Intelligence v0.1",
+  "seed": 20260928,
+  "roles": {
+    "piano": {
+      "role": "piano",
+      "family": "keyboard",
+      "profile": {
+        "family": "keyboard",
+        "timing_jitter_ms": 5.5,
+        "timing_bias_ms": 0.0,
+        "velocity_jitter": 3,
+        "duration_factor": 0.92,
+        "overlap_ms": 0.0,
+        "accent_gain": 2,
+        "phrase_end_release": 0.78
+      },
+      "notes": 276,
+      "timing_changes": 243,
+      "velocity_changes": 238,
+      "duration_changes": 276,
+      "phrase_breaths": 0
+    },
+    "theme": {
+      "role": "theme",
+      "family": "solo_wind",
+      "profile": {
+        "family": "solo_wind",
+        "timing_jitter_ms": 3.0,
+        "timing_bias_ms": -2.0,
+        "velocity_jitter": 2,
+        "duration_factor": 0.96,
+        "overlap_ms": 34.0,
+        "accent_gain": 2,
+        "phrase_end_release": 0.84
+      },
+      "notes": 136,
+      "timing_changes": 112,
+      "velocity_changes": 119,
+      "duration_changes": 136,
+      "phrase_breaths": 13
+    },
+    "strings": {
+      "role": "strings",
+      "family": "strings",
+      "profile": {
+        "family": "strings",
+        "timing_jitter_ms": 2.6,
+        "timing_bias_ms": -1.5,
+        "velocity_jitter": 2,
+        "duration_factor": 0.98,
+        "overlap_ms": 58.0,
+        "accent_gain": 2,
+        "phrase_end_release": 0.88
+      },
+      "notes": 114,
+      "timing_changes": 78,
+      "velocity_changes": 97,
+      "duration_changes": 114,
+      "phrase_breaths": 73
+    },
+    "bass": {
+      "role": "bass",
+      "family": "low_strings",
+      "profile": {
+        "family": "low_strings",
+        "timing_jitter_ms": 4.0,
+        "timing_bias_ms": 5.0,
+        "velocity_jitter": 2,
+        "duration_factor": 0.94,
+        "overlap_ms": 18.0,
+        "accent_gain": 2,
+        "phrase_end_release": 0.8
+      },
+      "notes": 61,
+      "timing_changes": 61,
+      "velocity_changes": 56,
+      "duration_changes": 61,
+      "phrase_breaths": 0
+    },
+    "ostinato": {
+      "role": "ostinato",
+      "family": "strings_short",
+      "profile": {
+        "family": "strings_short",
+        "timing_jitter_ms": 3.2,
+        "timing_bias_ms": 1.5,
+        "velocity_jitter": 3,
+        "duration_factor": 0.72,
+        "overlap_ms": 0.0,
+        "accent_gain": 3,
+        "phrase_end_release": 0.72
+      },
+      "notes": 105,
+      "timing_changes": 86,
+      "velocity_changes": 96,
+      "duration_changes": 105,
+      "phrase_breaths": 0
+    },
+    "percussion": {
+      "role": "percussion",
+      "family": "percussion",
+      "profile": {
+        "family": "percussion",
+        "timing_jitter_ms": 1.8,
+        "timing_bias_ms": 0.0,
+        "velocity_jitter": 3,
+        "duration_factor": 0.72,
+        "overlap_ms": 0.0,
+        "accent_gain": 5,
+        "phrase_end_release": 0.7
+      },
+      "notes": 149,
+      "timing_changes": 67,
+      "velocity_changes": 136,
+      "duration_changes": 149,
+      "phrase_breaths": 0
+    },
+    "brass": {
+      "role": "brass",
+      "family": "brass_sustain",
+      "profile": {
+        "family": "brass_sustain",
+        "timing_jitter_ms": 2.2,
+        "timing_bias_ms": -3.0,
+        "velocity_jitter": 2,
+        "duration_factor": 0.9,
+        "overlap_ms": 22.0,
+        "accent_gain": 4,
+        "phrase_end_release": 0.76
+      },
+      "notes": 12,
+      "timing_changes": 12,
+      "velocity_changes": 12,
+      "duration_changes": 12,
+      "phrase_breaths": 0
+    },
+    "countermelody": {
+      "role": "countermelody",
+      "family": "solo_strings",
+      "profile": {
+        "family": "solo_strings",
+        "timing_jitter_ms": 2.2,
+        "timing_bias_ms": -2.5,
+        "velocity_jitter": 2,
+        "duration_factor": 0.98,
+        "overlap_ms": 72.0,
+        "accent_gain": 2,
+        "phrase_end_release": 0.9
+      },
+      "notes": 7,
+      "timing_changes": 6,
+      "velocity_changes": 7,
+      "duration_changes": 7,
+      "phrase_breaths": 0
+    },
+    "brass_attack": {
+      "role": "brass_attack",
+      "family": "brass_short",
+      "profile": {
+        "family": "brass_short",
+        "timing_jitter_ms": 1.5,
+        "timing_bias_ms": -4.0,
+        "velocity_jitter": 2,
+        "duration_factor": 0.48,
+        "overlap_ms": 0.0,
+        "accent_gain": 8,
+        "phrase_end_release": 0.62
+      },
+      "notes": 12,
+      "timing_changes": 12,
+      "velocity_changes": 12,
+      "duration_changes": 12,
+      "phrase_breaths": 0
+    },
+    "braam": {
+      "role": "braam",
+      "family": "cinematic_hit",
+      "profile": {
+        "family": "cinematic_hit",
+        "timing_jitter_ms": 0.5,
+        "timing_bias_ms": 0.0,
+        "velocity_jitter": 1,
+        "duration_factor": 0.95,
+        "overlap_ms": 0.0,
+        "accent_gain": 6,
+        "phrase_end_release": 0.8
+      },
+      "notes": 1,
+      "timing_changes": 0,
+      "velocity_changes": 1,
+      "duration_changes": 1,
+      "phrase_breaths": 0
+    },
+    "ping": {
+      "role": "ping",
+      "family": "cinematic_ping",
+      "profile": {
+        "family": "cinematic_ping",
+        "timing_jitter_ms": 1.0,
+        "timing_bias_ms": -1.0,
+        "velocity_jitter": 1,
+        "duration_factor": 0.82,
+        "overlap_ms": 0.0,
+        "accent_gain": 3,
+        "phrase_end_release": 0.78
+      },
+      "notes": 1,
+      "timing_changes": 1,
+      "velocity_changes": 1,
+      "duration_changes": 1,
+      "phrase_breaths": 0
+    }
+  }
+}

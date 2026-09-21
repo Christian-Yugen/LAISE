@@ -1,0 +1,29 @@
+{
+  "work_id": "LAISE-MUSIC-002",
+  "title": "Inspirational Cinematic 001",
+  "seed": 20260922,
+  "engine": "LAISE procedural + spatial",
+  "style": "Inspirational Cinematic Orchestral",
+  "objective_result": "PASS",
+  "perceptual_result": "PENDING",
+  "duration_seconds": 104.65066666666667,
+  "bpm": 88,
+  "sections": [
+    "Reflection",
+    "Determination",
+    "Triumph",
+    "Release",
+    "Finale"
+  ],
+  "checks": {
+    "eight_midi": true,
+    "eight_dry_stems": true,
+    "eight_spatial_stems": true,
+    "five_sections": true,
+    "mix_finite": true,
+    "mix_non_silent": true,
+    "mix_no_clipping": true
+  },
+  "mix": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-002\\LAISE_Inspirational_Cinematic_001.wav",
+  "scene": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-002\\spatial_scene.json"
+}

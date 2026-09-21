@@ -1,0 +1,129 @@
+{
+  "work_id": "LAISE-MUSIC-006",
+  "comparison_basis": "MUSIC-005 thematic/harmonic structure",
+  "engine": "T006 + T007 frozen core + T008 Orchestration/Mix Intelligence",
+  "seed": 20260927,
+  "t008": {
+    "predrop": {
+      "climax_bar": 32,
+      "cut_at_tick": 60720,
+      "resume_tick": 61440,
+      "silence_beats": 1.5,
+      "roles": [
+        "strings",
+        "bass",
+        "ostinato",
+        "percussion",
+        "brass"
+      ]
+    },
+    "lowmid_processed_frames": 3615,
+    "lowmid_analysis": {
+      "strings": {
+        "processed_frames": 1571,
+        "activity_threshold": 0.0010560890516681156,
+        "max_dominance": 0.9235496553149922,
+        "dominance_threshold": 0.18
+      },
+      "bass": {
+        "processed_frames": 1847,
+        "activity_threshold": 0.009213595169361911,
+        "max_dominance": 0.943539982547836,
+        "dominance_threshold": 0.18
+      },
+      "brass": {
+        "processed_frames": 197,
+        "activity_threshold": 8.580054910738494e-06,
+        "max_dominance": 0.5016039531644383,
+        "dominance_threshold": 0.18
+      }
+    },
+    "minimum_duck_gain": 0.7943282127380371,
+    "depth_profiles": {
+      "piano": {
+        "distance_m": 2.0,
+        "wet": 0.07,
+        "delay_ms": 18,
+        "feedback": 0.1
+      },
+      "theme": {
+        "distance_m": 2.0,
+        "wet": 0.07,
+        "delay_ms": 18,
+        "feedback": 0.1
+      },
+      "strings": {
+        "distance_m": 3.0,
+        "wet": 0.15,
+        "delay_ms": 31,
+        "feedback": 0.16
+      },
+      "bass": {
+        "distance_m": 3.0,
+        "wet": 0.15,
+        "delay_ms": 31,
+        "feedback": 0.16
+      },
+      "ostinato": {
+        "distance_m": 3.0,
+        "wet": 0.15,
+        "delay_ms": 31,
+        "feedback": 0.16
+      },
+      "percussion": {
+        "distance_m": 4.5,
+        "wet": 0.25,
+        "delay_ms": 47,
+        "feedback": 0.23
+      },
+      "brass": {
+        "distance_m": 4.5,
+        "wet": 0.25,
+        "delay_ms": 47,
+        "feedback": 0.23
+      },
+      "countermelody": {
+        "distance_m": 3.0,
+        "wet": 0.15,
+        "delay_ms": 31,
+        "feedback": 0.16
+      },
+      "brass_attack": {
+        "distance_m": 4.5,
+        "wet": 0.25,
+        "delay_ms": 47,
+        "feedback": 0.23
+      },
+      "braam": {
+        "distance_m": 4.5,
+        "wet": 0.25,
+        "delay_ms": 47,
+        "feedback": 0.23
+      },
+      "ping": {
+        "distance_m": 4.5,
+        "wet": 0.25,
+        "delay_ms": 47,
+        "feedback": 0.23
+      }
+    }
+  },
+  "checks": {
+    "frozen_music005_core_roles": true,
+    "predrop_created": true,
+    "countermelody_added": true,
+    "brass_attack_layer_added": true,
+    "optional_punctuation_added": true,
+    "conditional_lowmid_processing_active": true,
+    "percussion_ducking_active": true,
+    "three_depth_planes": true,
+    "mix_finite": true,
+    "mix_non_silent": true,
+    "mix_no_clipping": true
+  },
+  "objective_result": "PASS",
+  "perceptual_result": "PENDING",
+  "mix": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-006\\LAISE_MUSIC005_T008_AB.wav",
+  "mix_sha256": "35ff4f4cf62f187db2619a9cf76bf3a6c96d8ebb20d36924e061303ef8b4cc9a",
+  "asset_note": "GeneralUser GS remains TEST_ONLY; developmental A/B render only."
+}

@@ -1,0 +1,124 @@
+{
+  "work_id": "LAISE-MUSIC-004",
+  "title": "Phrase-Driven Cinematic 001",
+  "seed": 20260925,
+  "engine": "LAISE T006 Phrase Engine + procedural orchestration + spatial",
+  "style": "Hopeful Inspirational Cinematic",
+  "objective_result": "PASS",
+  "perceptual_result": "PENDING",
+  "bpm": 96,
+  "duration_seconds": 103.81866666666667,
+  "sections": [
+    "Opening",
+    "Connection",
+    "Ascent",
+    "Breakthrough",
+    "Home"
+  ],
+  "musical_intelligence": {
+    "motif": [
+      0,
+      2,
+      4,
+      2,
+      1,
+      0,
+      -2,
+      1
+    ],
+    "phrase_plan": [
+      {
+        "bar": 0,
+        "phrase_id": "P1",
+        "function": "statement",
+        "tension_start": 0.22,
+        "tension_end": 0.52
+      },
+      {
+        "bar": 4,
+        "phrase_id": "P2",
+        "function": "response",
+        "tension_start": 0.48,
+        "tension_end": 0.26
+      },
+      {
+        "bar": 8,
+        "phrase_id": "P5",
+        "function": "statement",
+        "tension_start": 0.22,
+        "tension_end": 0.52
+      },
+      {
+        "bar": 12,
+        "phrase_id": "P6",
+        "function": "response",
+        "tension_start": 0.48,
+        "tension_end": 0.26
+      },
+      {
+        "bar": 16,
+        "phrase_id": "P3",
+        "function": "development",
+        "tension_start": 0.48,
+        "tension_end": 0.84
+      },
+      {
+        "bar": 20,
+        "phrase_id": "P7",
+        "function": "development",
+        "tension_start": 0.48,
+        "tension_end": 0.84
+      },
+      {
+        "bar": 24,
+        "phrase_id": "P8",
+        "function": "response",
+        "tension_start": 0.48,
+        "tension_end": 0.26
+      },
+      {
+        "bar": 26,
+        "phrase_id": "P9",
+        "function": "development",
+        "tension_start": 0.48,
+        "tension_end": 0.84
+      },
+      {
+        "bar": 30,
+        "phrase_id": "P10",
+        "function": "development",
+        "tension_start": 0.48,
+        "tension_end": 0.84
+      },
+      {
+        "bar": 34,
+        "phrase_id": "P4",
+        "function": "resolution",
+        "tension_start": 0.62,
+        "tension_end": 0.14
+      },
+      {
+        "bar": 38,
+        "phrase_id": "P11",
+        "function": "resolution",
+        "tension_start": 0.62,
+        "tension_end": 0.14
+      }
+    ]
+  },
+  "checks": {
+    "seven_midi": true,
+    "seven_dry_stems": true,
+    "seven_spatial_stems": true,
+    "five_emotional_sections": true,
+    "phrase_plan_present": true,
+    "statement_response_development_resolution": true,
+    "mix_finite": true,
+    "mix_non_silent": true,
+    "mix_no_clipping": true
+  },
+  "mix": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-004\\LAISE_Phrase_Driven_Cinematic_001.wav",
+  "mix_sha256": "2e0c1987e38ecc8ff9d4d9d955a5de793565cac81e8bc89c4b02505694260e80",
+  "scene": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-004\\spatial_scene.json",
+  "asset_note": "Current GeneralUser GS SoundFont remains TEST_ONLY; this render is developmental evidence, not a production rights certification."
+}
