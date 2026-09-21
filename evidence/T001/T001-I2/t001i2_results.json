@@ -1,0 +1,177 @@
+{
+  "test_id": "T001-I2",
+  "timestamp_utc": "2026-09-20T23:38:34.974404+00:00",
+  "objective_result": "PASS",
+  "perceptual_result": "PENDING",
+  "environment": {
+    "python": "3.12.1",
+    "pedalboard": "0.9.25"
+  },
+  "render_records": [
+    {
+      "blind_id": "A",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-I2\\audio\\t001i2_A.wav",
+      "sha256": "038dcee6e482897fb138008817e4cbc43193eb7fbe0ad810ab4a22e65a910a23",
+      "metrics": {
+        "peak": 0.08163409680128098,
+        "overall_rms": 0.01666398160159588,
+        "left_rms": 0.0171190332621336,
+        "right_rms": 0.016196150332689285,
+        "ild_db": 0.4813487304927303,
+        "lr_correlation": 0.9243123398686497,
+        "finite": true,
+        "no_clipping": true
+      },
+      "observed_plugin_state": {
+        "coordinate_system": "<pedalboard.AudioProcessorParameter name=\"Coordinate System\" discrete raw_value=1 value=\"Polar\" (2 valid string values)>",
+        "azimuth": "<pedalboard.AudioProcessorParameter name=\"Azimuth\" discrete raw_value=0.5 value=\"0.0 deg\" (1001 valid string values)>",
+        "elevation": "<pedalboard.AudioProcessorParameter name=\"Elevation\" discrete raw_value=0.5 value=\"0.0 deg\" (1001 valid string values)>",
+        "distance": "<pedalboard.AudioProcessorParameter name=\"Distance\" discrete raw_value=0.09699 value=\"3.0 m\" (300 valid string values)>",
+        "virtual_acoustics": "<pedalboard.AudioProcessorParameter name=\"Virtual Acoustics\" discrete raw_value=0.106383 value=\"largeRoom\" (48 valid string values)>",
+        "reflection": "<pedalboard.AudioProcessorParameter name=\"Reflection\" discrete raw_value=1 value=ON boolean (\"False\" and \"True\")>",
+        "reverb": "<pedalboard.AudioProcessorParameter name=\"Reverb\" discrete raw_value=0 value=OFF boolean (\"False\" and \"True\")>",
+        "reflection_gain": "<pedalboard.AudioProcessorParameter name=\"Reflection Gain\" label=\" \" discrete raw_value=0.8 value=0.0 dB range=(-96.0, 24.0, ~0.15000000000000002)>"
+      },
+      "virtual_acoustics_raw": 0.10638297872340426
+    },
+    {
+      "blind_id": "B",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-I2\\audio\\t001i2_B.wav",
+      "sha256": "bfdbc7b146469b08566b88a01a6c9f84f187c241b7c0902aea8652843f90c915",
+      "metrics": {
+        "peak": 0.07822667807340622,
+        "overall_rms": 0.01640952378511429,
+        "left_rms": 0.016828812658786774,
+        "right_rms": 0.015979237854480743,
+        "ild_db": 0.44994828888728877,
+        "lr_correlation": 0.9386156544880736,
+        "finite": true,
+        "no_clipping": true
+      },
+      "observed_plugin_state": {
+        "coordinate_system": "<pedalboard.AudioProcessorParameter name=\"Coordinate System\" discrete raw_value=1 value=\"Polar\" (2 valid string values)>",
+        "azimuth": "<pedalboard.AudioProcessorParameter name=\"Azimuth\" discrete raw_value=0.5 value=\"0.0 deg\" (1001 valid string values)>",
+        "elevation": "<pedalboard.AudioProcessorParameter name=\"Elevation\" discrete raw_value=0.5 value=\"0.0 deg\" (1001 valid string values)>",
+        "distance": "<pedalboard.AudioProcessorParameter name=\"Distance\" discrete raw_value=0.09699 value=\"3.0 m\" (300 valid string values)>",
+        "virtual_acoustics": "<pedalboard.AudioProcessorParameter name=\"Virtual Acoustics\" discrete raw_value=0 value=\"DirectSignal\" (48 valid string values)>",
+        "reflection": "<pedalboard.AudioProcessorParameter name=\"Reflection\" discrete raw_value=0 value=OFF boolean (\"False\" and \"True\")>",
+        "reverb": "<pedalboard.AudioProcessorParameter name=\"Reverb\" discrete raw_value=0 value=OFF boolean (\"False\" and \"True\")>",
+        "reflection_gain": "<pedalboard.AudioProcessorParameter name=\"Reflection Gain\" label=\" \" discrete raw_value=0.8 value=0.0 dB range=(-96.0, 24.0, ~0.15000000000000002)>"
+      },
+      "virtual_acoustics_raw": 0.0
+    },
+    {
+      "blind_id": "C",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-I2\\audio\\t001i2_C.wav",
+      "sha256": "75ce01acaa9a2fecb918855a41ff156eac0d30e81755cac754bd97f0ea04cb5b",
+      "metrics": {
+        "peak": 0.08521553874015808,
+        "overall_rms": 0.017471829429268837,
+        "left_rms": 0.01790286786854267,
+        "right_rms": 0.017029885202646255,
+        "ild_db": 0.43421771920934815,
+        "lr_correlation": 0.8312593672912757,
+        "finite": true,
+        "no_clipping": true
+      },
+      "observed_plugin_state": {
+        "coordinate_system": "<pedalboard.AudioProcessorParameter name=\"Coordinate System\" discrete raw_value=1 value=\"Polar\" (2 valid string values)>",
+        "azimuth": "<pedalboard.AudioProcessorParameter name=\"Azimuth\" raw_value=0.5 value=\"0.0 deg\" (1001 valid string values)>",
+        "elevation": "<pedalboard.AudioProcessorParameter name=\"Elevation\" discrete raw_value=0.5 value=\"0.0 deg\" (1001 valid string values)>",
+        "distance": "<pedalboard.AudioProcessorParameter name=\"Distance\" discrete raw_value=0.09699 value=\"3.0 m\" (300 valid string values)>",
+        "virtual_acoustics": "<pedalboard.AudioProcessorParameter name=\"Virtual Acoustics\" raw_value=0.106383 value=\"largeRoom\" (48 valid string values)>",
+        "reflection": "<pedalboard.AudioProcessorParameter name=\"Reflection\" raw_value=1 value=ON boolean (\"False\" and \"True\")>",
+        "reverb": "<pedalboard.AudioProcessorParameter name=\"Reverb\" raw_value=1 value=ON boolean (\"False\" and \"True\")>",
+        "reflection_gain": "<pedalboard.AudioProcessorParameter name=\"Reflection Gain\" label=\" \" raw_value=0.8 value=0.0 dB range=(-96.0, 24.0, ~0.15000000000000002)>"
+      },
+      "virtual_acoustics_raw": 0.10638297872340426
+    },
+    {
+      "blind_id": "D",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-I2\\audio\\t001i2_D.wav",
+      "sha256": "fb6f5b192b44bb96d6ad62d97e364326abbc016305a6b9753fe96d0e98ede2c4",
+      "metrics": {
+        "peak": 0.06596903502941132,
+        "overall_rms": 0.013247842900454998,
+        "left_rms": 0.012438660487532616,
+        "right_rms": 0.01401036698371172,
+        "ild_db": -1.0335179456217112,
+        "lr_correlation": 0.6044802843997434,
+        "finite": true,
+        "no_clipping": true
+      },
+      "observed_plugin_state": {
+        "coordinate_system": "<pedalboard.AudioProcessorParameter name=\"Coordinate System\" discrete raw_value=1 value=\"Polar\" (2 valid string values)>",
+        "azimuth": "<pedalboard.AudioProcessorParameter name=\"Azimuth\" discrete raw_value=1 value=\"180.0 deg\" (1001 valid string values)>",
+        "elevation": "<pedalboard.AudioProcessorParameter name=\"Elevation\" discrete raw_value=0.5 value=\"0.0 deg\" (1001 valid string values)>",
+        "distance": "<pedalboard.AudioProcessorParameter name=\"Distance\" raw_value=0.09699 value=\"3.0 m\" (300 valid string values)>",
+        "virtual_acoustics": "<pedalboard.AudioProcessorParameter name=\"Virtual Acoustics\" discrete raw_value=0 value=\"DirectSignal\" (48 valid string values)>",
+        "reflection": "<pedalboard.AudioProcessorParameter name=\"Reflection\" discrete raw_value=0 value=OFF boolean (\"False\" and \"True\")>",
+        "reverb": "<pedalboard.AudioProcessorParameter name=\"Reverb\" discrete raw_value=0 value=OFF boolean (\"False\" and \"True\")>",
+        "reflection_gain": "<pedalboard.AudioProcessorParameter name=\"Reflection Gain\" label=\" \" discrete raw_value=0.8 value=0.0 dB range=(-96.0, 24.0, ~0.15000000000000002)>"
+      },
+      "virtual_acoustics_raw": 0.0
+    },
+    {
+      "blind_id": "E",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-I2\\audio\\t001i2_E.wav",
+      "sha256": "9eee59634da74adfb33df6161a472ea67af7344723e04d41115a215850d75329",
+      "metrics": {
+        "peak": 0.1319950520992279,
+        "overall_rms": 0.027994701638817787,
+        "left_rms": 0.028703393414616585,
+        "right_rms": 0.02726759947836399,
+        "ild_db": 0.4457267470383971,
+        "lr_correlation": 0.9285409629158855,
+        "finite": true,
+        "no_clipping": true
+      },
+      "observed_plugin_state": {
+        "coordinate_system": "<pedalboard.AudioProcessorParameter name=\"Coordinate System\" discrete raw_value=1 value=\"Polar\" (2 valid string values)>",
+        "azimuth": "<pedalboard.AudioProcessorParameter name=\"Azimuth\" discrete raw_value=0.5 value=\"0.0 deg\" (1001 valid string values)>",
+        "elevation": "<pedalboard.AudioProcessorParameter name=\"Elevation\" discrete raw_value=0.5 value=\"0.0 deg\" (1001 valid string values)>",
+        "distance": "<pedalboard.AudioProcessorParameter name=\"Distance\" discrete raw_value=0.0301003 value=\"1.0 m\" (300 valid string values)>",
+        "virtual_acoustics": "<pedalboard.AudioProcessorParameter name=\"Virtual Acoustics\" discrete raw_value=0 value=\"DirectSignal\" (48 valid string values)>",
+        "reflection": "<pedalboard.AudioProcessorParameter name=\"Reflection\" discrete raw_value=0 value=OFF boolean (\"False\" and \"True\")>",
+        "reverb": "<pedalboard.AudioProcessorParameter name=\"Reverb\" discrete raw_value=0 value=OFF boolean (\"False\" and \"True\")>",
+        "reflection_gain": "<pedalboard.AudioProcessorParameter name=\"Reflection Gain\" label=\" \" discrete raw_value=0.8 value=0.0 dB range=(-96.0, 24.0, ~0.15000000000000002)>"
+      },
+      "virtual_acoustics_raw": 0.0
+    },
+    {
+      "blind_id": "F",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-I2\\audio\\t001i2_F.wav",
+      "sha256": "5bcc23e7b17095805c7440fb23884a90b56b2083d76be43845dc18ee77900457",
+      "metrics": {
+        "peak": 0.07827724516391754,
+        "overall_rms": 0.01642375998198986,
+        "left_rms": 0.01684531755745411,
+        "right_rms": 0.0159910935908556,
+        "ild_db": 0.45202074736680053,
+        "lr_correlation": 0.9376962963472275,
+        "finite": true,
+        "no_clipping": true
+      },
+      "observed_plugin_state": {
+        "coordinate_system": "<pedalboard.AudioProcessorParameter name=\"Coordinate System\" discrete raw_value=1 value=\"Polar\" (2 valid string values)>",
+        "azimuth": "<pedalboard.AudioProcessorParameter name=\"Azimuth\" discrete raw_value=0.5 value=\"0.0 deg\" (1001 valid string values)>",
+        "elevation": "<pedalboard.AudioProcessorParameter name=\"Elevation\" discrete raw_value=0.5 value=\"0.0 deg\" (1001 valid string values)>",
+        "distance": "<pedalboard.AudioProcessorParameter name=\"Distance\" discrete raw_value=0.09699 value=\"3.0 m\" (300 valid string values)>",
+        "virtual_acoustics": "<pedalboard.AudioProcessorParameter name=\"Virtual Acoustics\" discrete raw_value=0.106383 value=\"largeRoom\" (48 valid string values)>",
+        "reflection": "<pedalboard.AudioProcessorParameter name=\"Reflection\" discrete raw_value=1 value=ON boolean (\"False\" and \"True\")>",
+        "reverb": "<pedalboard.AudioProcessorParameter name=\"Reverb\" discrete raw_value=0 value=OFF boolean (\"False\" and \"True\")>",
+        "reflection_gain": "<pedalboard.AudioProcessorParameter name=\"Reflection Gain\" label=\" \" discrete raw_value=0.7 value=-12.0 dB range=(-96.0, 24.0, ~0.15000000000000002)>"
+      },
+      "virtual_acoustics_raw": 0.10638297872340426
+    }
+  ],
+  "validations": {
+    "six_audio_files_created": true,
+    "all_outputs_finite": true,
+    "all_outputs_non_silent": true,
+    "no_clipping": true,
+    "all_outputs_distinct": true
+  },
+  "blind_key_file": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-I2\\t001i2_calibration_key.json",
+  "listening_sheet_file": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-I2\\t001i2_blind_listening_sheet.json"
+}

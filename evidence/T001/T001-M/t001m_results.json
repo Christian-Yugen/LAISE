@@ -1,0 +1,2021 @@
+{
+  "test_id": "T001-M",
+  "timestamp_utc": "2026-09-21T03:07:21.691317+00:00",
+  "objective_result": "PASS",
+  "human_result": "PENDING",
+  "candidate_count": 51,
+  "reference_features": {
+    "peak": 0.07822667807340622,
+    "rms": 0.01640952378511429,
+    "left_rms": 0.016828812658786774,
+    "right_rms": 0.015979237854480743,
+    "ild_db": 0.44994828888728877,
+    "itd_us": 0.0,
+    "lr_correlation": 0.9386156544880736,
+    "mid_rms": 0.016150496900081635,
+    "side_rms": 0.002904122229665518,
+    "side_mid_ratio": 0.17981627732277528,
+    "spectral_centroid_hz": 8707.979394154021,
+    "hf_ratio_above_4khz": 0.6572675704956055,
+    "finite": true,
+    "no_clipping": true
+  },
+  "validations": {
+    "candidate_count_correct": true,
+    "all_finite": true,
+    "no_clipping": true,
+    "shortlist_has_8": true,
+    "blind_files_created": true
+  },
+  "ranked_candidates": [
+    {
+      "candidate": {
+        "candidate_id": "M040",
+        "distance_m": 3.0,
+        "reflection_gain_db": 0.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.08163409680128098,
+        "rms": 0.01666398160159588,
+        "left_rms": 0.0171190332621336,
+        "right_rms": 0.016196150332689285,
+        "ild_db": 0.4813487304927303,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9243123398686497,
+        "mid_rms": 0.016339605674147606,
+        "side_rms": 0.0032719415612518787,
+        "side_mid_ratio": 0.20024605405431986,
+        "spectral_centroid_hz": 8691.466301514807,
+        "hf_ratio_above_4khz": 0.65924072265625,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.6329865032003035,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7254964109575295,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.9908680118486793,
+        "decorrelation_signal": 0.05721325847769565
+      },
+      "sha256": "038dcee6e482897fb138008817e4cbc43193eb7fbe0ad810ab4a22e65a910a23",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M040.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M039",
+        "distance_m": 3.0,
+        "reflection_gain_db": -3.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.07851347327232361,
+        "rms": 0.016537737101316452,
+        "left_rms": 0.016975203529000282,
+        "right_rms": 0.01608838140964508,
+        "ild_db": 0.4660527296865792,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9313430032543727,
+        "mid_rms": 0.01624576561152935,
+        "side_rms": 0.003093840554356575,
+        "side_mid_ratio": 0.19043981232688031,
+        "spectral_centroid_hz": 8699.495640750154,
+        "hf_ratio_above_4khz": 0.6583349108695984,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.6276664769161726,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7329323892224974,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.9952978933449121,
+        "decorrelation_signal": 0.029090604934803643
+      },
+      "sha256": "d2f2cfcf6315986250d2e5d27e6f89f4717cbfa07730beff51effd8a29a8d285",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M039.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M038",
+        "distance_m": 3.0,
+        "reflection_gain_db": -6.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.07837115228176117,
+        "rms": 0.01647404581308365,
+        "left_rms": 0.016902564093470573,
+        "right_rms": 0.0160340815782547,
+        "ild_db": 0.4581700511117836,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9349469978776253,
+        "mid_rms": 0.016198469325900078,
+        "side_rms": 0.0030006335582584143,
+        "side_mid_ratio": 0.18524179647489258,
+        "spectral_centroid_hz": 8703.586922464498,
+        "hf_ratio_above_4khz": 0.6578532457351685,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.6249531828362996,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.736794174366361,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.9975627129692664,
+        "decorrelation_signal": 0.014674626441793404
+      },
+      "sha256": "6ac998cdc343b74a41e21c264521e3288e4e9d0e73917ce5899fd5bb8b719e9b",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M038.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M037",
+        "distance_m": 3.0,
+        "reflection_gain_db": -9.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.07832899689674377,
+        "rms": 0.016441993415355682,
+        "left_rms": 0.01686597615480423,
+        "right_rms": 0.01600678265094757,
+        "ild_db": 0.45414868191019614,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9367731346412561,
+        "mid_rms": 0.016174668446183205,
+        "side_rms": 0.0029528348241001368,
+        "side_mid_ratio": 0.1825592180601618,
+        "spectral_centroid_hz": 8705.677845827151,
+        "hf_ratio_above_4khz": 0.6575955152511597,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.6235870912799126,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7387721054458761,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.998722179149844,
+        "decorrelation_signal": 0.007370079387269968
+      },
+      "sha256": "cd94fbe9a82eaa7b4fa96453205dd675413e1976413b206c3fa5309642748e63",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M037.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M036",
+        "distance_m": 3.0,
+        "reflection_gain_db": -12.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.07829910516738892,
+        "rms": 0.016425874084234238,
+        "left_rms": 0.016847562044858932,
+        "right_rms": 0.01599307358264923,
+        "ild_db": 0.452102580650712,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9376927830362283,
+        "mid_rms": 0.0161626935005188,
+        "side_rms": 0.0029286001808941364,
+        "side_mid_ratio": 0.18119505765662994,
+        "spectral_centroid_hz": 8706.755524618462,
+        "hf_ratio_above_4khz": 0.65745609998703,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.6229056648853541,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7397805280914115,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.9993203035785814,
+        "decorrelation_signal": 0.003691485807381323
+      },
+      "sha256": "733188273181240d06e5092dc5946c30afd86bcd4df0e3f6ac11f995b87b021d",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M036.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M035",
+        "distance_m": 3.0,
+        "reflection_gain_db": -15.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.07827798277139664,
+        "rms": 0.016417771577835083,
+        "left_rms": 0.01683829165995121,
+        "right_rms": 0.015986191108822823,
+        "ild_db": 0.4510605454522387,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9381543650124596,
+        "mid_rms": 0.016156665980815887,
+        "side_rms": 0.0029163893777877092,
+        "side_mid_ratio": 0.18050688063181272,
+        "spectral_centroid_hz": 8707.317868415395,
+        "hf_ratio_above_4khz": 0.6573790907859802,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.6225684454777094,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7402946248726613,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.9996325532258712,
+        "decorrelation_signal": 0.001845157902455874
+      },
+      "sha256": "446382219bdd8a334c9fe66685002cf7ae6400b806cb63af212a7bcfb71cc868",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M035.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M034",
+        "distance_m": 3.0,
+        "reflection_gain_db": -18.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.07826294004917145,
+        "rms": 0.016413692384958267,
+        "left_rms": 0.016833622008562088,
+        "right_rms": 0.015982735902071,
+        "ild_db": 0.45052895609616417,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9383855559677712,
+        "mid_rms": 0.016153628006577492,
+        "side_rms": 0.0029102580156177282,
+        "side_mid_ratio": 0.18016126248868414,
+        "spectral_centroid_hz": 8707.612780222265,
+        "hf_ratio_above_4khz": 0.6573354601860046,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.622402495449657,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7405570265285184,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.999796346333693,
+        "decorrelation_signal": 0.0009203940812096967
+      },
+      "sha256": "c7c512024767818274ea199521ec7adf7178b32719ddf82ba14c7ad39b0f7694",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M034.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M033",
+        "distance_m": 3.0,
+        "reflection_gain_db": -24.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.07824486494064331,
+        "rms": 0.016410602256655693,
+        "left_rms": 0.016830069944262505,
+        "right_rms": 0.015980128198862076,
+        "ild_db": 0.4501132358873644,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9385588694232755,
+        "mid_rms": 0.016151318326592445,
+        "side_rms": 0.002905648434534669,
+        "side_mid_ratio": 0.17990162633168733,
+        "spectral_centroid_hz": 8707.85745115293,
+        "hf_ratio_above_4khz": 0.6572948098182678,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.6222832827104074,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7407622979868334,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.9999322561829985,
+        "decorrelation_signal": 0.00022714025919245984
+      },
+      "sha256": "f760ec607760371d6e655799ad6e5d47fe305e484629948fb84fc21ae3c1ed90",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M033.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M050",
+        "distance_m": 3.0,
+        "reflection_gain_db": null,
+        "virtual_acoustics": "DirectSignal",
+        "reflection": false,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "dry_control"
+      },
+      "features": {
+        "peak": 0.07822667807340622,
+        "rms": 0.01640952378511429,
+        "left_rms": 0.016828812658786774,
+        "right_rms": 0.015979237854480743,
+        "ild_db": 0.44994828888728877,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9386156544880736,
+        "mid_rms": 0.016150496900081635,
+        "side_rms": 0.002904122229665518,
+        "side_mid_ratio": 0.17981627732277528,
+        "spectral_centroid_hz": 8707.979394154021,
+        "hf_ratio_above_4khz": 0.6572675704956055,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.6222531280434836,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7408437601449455,
+        "itd_center": 1.0,
+        "spectral_preservation": 1.0,
+        "decorrelation_signal": 0.0
+      },
+      "sha256": "bfdbc7b146469b08566b88a01a6c9f84f187c241b7c0902aea8652843f90c915",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M050.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M032",
+        "distance_m": 2.0,
+        "reflection_gain_db": 0.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.09918452799320221,
+        "rms": 0.020769894123077393,
+        "left_rms": 0.021319003775715828,
+        "right_rms": 0.020205864682793617,
+        "ild_db": 0.4657893256406134,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9237047350429314,
+        "mid_rms": 0.0203628558665514,
+        "side_rms": 0.004091769922524691,
+        "side_mid_ratio": 0.20094283184732475,
+        "spectral_centroid_hz": 8944.914193422655,
+        "hf_ratio_above_4khz": 0.6693447232246399,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.6131444173561573,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7330611054281168,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.876664911967758,
+        "decorrelation_signal": 0.05964367778056889
+      },
+      "sha256": "01062eed130f25a448390212747213368d505d79cae98286935f612bd440ad62",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M032.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M031",
+        "distance_m": 2.0,
+        "reflection_gain_db": -3.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.09844164550304413,
+        "rms": 0.020667672157287598,
+        "left_rms": 0.02120237424969673,
+        "right_rms": 0.02011876180768013,
+        "ild_db": 0.4556649438097135,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9282892834834985,
+        "mid_rms": 0.020287051796913147,
+        "side_rms": 0.0039481911808252335,
+        "side_mid_ratio": 0.19461631094328696,
+        "spectral_centroid_hz": 8950.649834570462,
+        "hf_ratio_above_4khz": 0.6688109636306763,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.6085745343948106,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7380257014268151,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.8738758938063791,
+        "decorrelation_signal": 0.041305484018300476
+      },
+      "sha256": "586b38db1f45eb107bf29aed0c6642d3dd44f69b01ccfa7a5f15ea6795e23d28",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M031.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M030",
+        "distance_m": 2.0,
+        "reflection_gain_db": -6.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.09833598881959915,
+        "rms": 0.020616207271814346,
+        "left_rms": 0.021143600344657898,
+        "right_rms": 0.020074965432286263,
+        "ild_db": 0.4504827012033075,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9306196876019486,
+        "mid_rms": 0.020248902961611748,
+        "side_rms": 0.0038742711767554283,
+        "side_mid_ratio": 0.19133239879261668,
+        "spectral_centroid_hz": 8953.568270870679,
+        "hf_ratio_above_4khz": 0.6685255169868469,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.606261155217446,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7405798631378958,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.8724601800636353,
+        "decorrelation_signal": 0.03198386754450011
+      },
+      "sha256": "e65b25138140ff9063b931c402b886ad01a2afe7dd02abeb2dbafbd7aba2e69d",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M030.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M029",
+        "distance_m": 2.0,
+        "reflection_gain_db": -9.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.0982612669467926,
+        "rms": 0.020590336993336678,
+        "left_rms": 0.021114030852913857,
+        "right_rms": 0.020052971318364143,
+        "ild_db": 0.44784838373452174,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9317951430081338,
+        "mid_rms": 0.020229721441864967,
+        "side_rms": 0.003836716990917921,
+        "side_mid_ratio": 0.1896574306153451,
+        "spectral_centroid_hz": 8955.066898084266,
+        "hf_ratio_above_4khz": 0.6683710217475891,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.6050959195558765,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7418816208646838,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.871734097602718,
+        "decorrelation_signal": 0.027282045919759135
+      },
+      "sha256": "e1a9ccbf9993619f2f62931567395819724c4407d6729fd65879d8b5e1bd4a67",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M029.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M028",
+        "distance_m": 2.0,
+        "reflection_gain_db": -12.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.09820830821990967,
+        "rms": 0.020577332004904747,
+        "left_rms": 0.02109915018081665,
+        "right_rms": 0.0200419332832098,
+        "ild_db": 0.44650702597259295,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9323855120219711,
+        "mid_rms": 0.020220069214701653,
+        "side_rms": 0.0038177771493792534,
+        "side_mid_ratio": 0.18881127995420532,
+        "spectral_centroid_hz": 8955.843688994717,
+        "hf_ratio_above_4khz": 0.6682862043380737,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.6045113682624851,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7425453366943008,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.8713579814743588,
+        "decorrelation_signal": 0.024920569864410158
+      },
+      "sha256": "a6c772fc5b26d6557e11dc95a12e48499038e104a4e5aac30cffd8f5b2e9684d",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M028.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M027",
+        "distance_m": 2.0,
+        "reflection_gain_db": -15.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.09817091375589371,
+        "rms": 0.020570795983076096,
+        "left_rms": 0.021091662347316742,
+        "right_rms": 0.020036395639181137,
+        "ild_db": 0.4458242295705128,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9326812619632409,
+        "mid_rms": 0.020215211436152458,
+        "side_rms": 0.0038082641549408436,
+        "side_mid_ratio": 0.18838606594743987,
+        "spectral_centroid_hz": 8956.250741953409,
+        "hf_ratio_above_4khz": 0.6682384014129639,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.6042184874563132,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7428834184916588,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.8711609543950813,
+        "decorrelation_signal": 0.023737570099330974
+      },
+      "sha256": "69fe6b528d2fc6e2b558b620f3cc3ec774e30b8b93724c61e2655bab2e16e68a",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M027.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M026",
+        "distance_m": 2.0,
+        "reflection_gain_db": -18.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.09814424812793732,
+        "rms": 0.020567508414387703,
+        "left_rms": 0.0210878886282444,
+        "right_rms": 0.020033614709973335,
+        "ild_db": 0.4454756436710674,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9328291471463812,
+        "mid_rms": 0.02021276205778122,
+        "side_rms": 0.0038034976460039616,
+        "side_mid_ratio": 0.18817307772895753,
+        "spectral_centroid_hz": 8956.465550539224,
+        "hf_ratio_above_4khz": 0.6682107448577881,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.6040720316933316,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7430560776761461,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.871056997902284,
+        "decorrelation_signal": 0.02314602936676957
+      },
+      "sha256": "538d5c0132caf240ec6d92572a3968f0245c636054f54b9a76163bb8c3292f83",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M026.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M025",
+        "distance_m": 2.0,
+        "reflection_gain_db": -24.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.09811224788427353,
+        "rms": 0.020565014332532883,
+        "left_rms": 0.021085014566779137,
+        "right_rms": 0.0200315210968256,
+        "ild_db": 0.4451995323630743,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9329396950419243,
+        "mid_rms": 0.02021089754998684,
+        "side_rms": 0.0037999239284545183,
+        "side_mid_ratio": 0.18801361586581192,
+        "spectral_centroid_hz": 8956.64642805398,
+        "hf_ratio_above_4khz": 0.6681839823722839,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.6039629060426933,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7431928677225323,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.8709694719527722,
+        "decorrelation_signal": 0.02270383778459717
+      },
+      "sha256": "038825e4a5b09c298532b63fe293cc1b6e55c0c732dd8905dd1715648814dea0",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M025.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M024",
+        "distance_m": 1.5,
+        "reflection_gain_db": 0.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.11290892958641052,
+        "rms": 0.023829087615013123,
+        "left_rms": 0.024452583864331245,
+        "right_rms": 0.02318883314728737,
+        "ild_db": 0.4609172280461058,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9235330077774129,
+        "mid_rms": 0.023361222818493843,
+        "side_rms": 0.004698796197772026,
+        "side_mid_ratio": 0.20113656866673527,
+        "spectral_centroid_hz": 9066.306256579835,
+        "hf_ratio_above_4khz": 0.6739166975021362,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.6026314048907658,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7354460066541705,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.8194921342086091,
+        "decorrelation_signal": 0.06033058684264292
+      },
+      "sha256": "2ca231c022e0f0312fbf963e7ec608ac7354e3176c0d6d0a145cf08d14946457",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M024.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M048",
+        "distance_m": 4.0,
+        "reflection_gain_db": 0.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.06903728097677231,
+        "rms": 0.0139906732365489,
+        "left_rms": 0.014392578043043613,
+        "right_rms": 0.013576876372098923,
+        "ild_db": 0.5067745927476676,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9249435779813798,
+        "mid_rms": 0.013720034621655941,
+        "side_rms": 0.0027385379653424025,
+        "side_mid_ratio": 0.1996013888201306,
+        "spectral_centroid_hz": 8427.03950709134,
+        "hf_ratio_above_4khz": 0.647909939289093,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.6014957730998997,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7133024688780184,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.855492703142308,
+        "decorrelation_signal": 0.0546883060267751
+      },
+      "sha256": "c36e0cca4522d603fb20cc863475041740fa052d45167de10a959870d6302a0b",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M048.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M041",
+        "distance_m": 4.0,
+        "reflection_gain_db": -24.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.06456771492958069,
+        "rms": 0.01369180716574192,
+        "left_rms": 0.014052394777536392,
+        "right_rms": 0.013321463949978352,
+        "ild_db": 0.4639677637641253,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9449534969766877,
+        "mid_rms": 0.013497396372258663,
+        "side_rms": 0.0022991031873971224,
+        "side_mid_ratio": 0.17033679117197417,
+        "spectral_centroid_hz": 8447.758507677998,
+        "hf_ratio_above_4khz": 0.6448994278907776,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.6008703262975176,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7339518569468424,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.8653967911356399,
+        "decorrelation_signal": 0.025351369954456526
+      },
+      "sha256": "72456019a85a6da42b525ff90098e52547d72069340eb9997ad5ee6011499ffa",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M041.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M042",
+        "distance_m": 4.0,
+        "reflection_gain_db": -18.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.06443234533071518,
+        "rms": 0.013695468194782734,
+        "left_rms": 0.014056587591767311,
+        "right_rms": 0.013324565254151821,
+        "ild_db": 0.4645371031567674,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9447062326913154,
+        "mid_rms": 0.013500136323273182,
+        "side_rms": 0.0023048140574246645,
+        "side_mid_ratio": 0.17072524321703475,
+        "spectral_centroid_hz": 8447.455157146758,
+        "hf_ratio_above_4khz": 0.6449581384658813,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.6004608851997758,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.733673331339078,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.8652509597708111,
+        "decorrelation_signal": 0.02436231281296708
+      },
+      "sha256": "db6a8db31ddadf6bd032397f8b2bc79aca510ef221cf26f1172cf8561c2b8b55",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M042.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M043",
+        "distance_m": 4.0,
+        "reflection_gain_db": -15.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.06443712115287781,
+        "rms": 0.013700295239686966,
+        "left_rms": 0.01406210195273161,
+        "right_rms": 0.013328669592738152,
+        "ild_db": 0.46526880093042394,
+        "itd_us": 0.0,
+        "lr_correlation": 0.944377003854904,
+        "mid_rms": 0.01350373774766922,
+        "side_rms": 0.0023123938590288162,
+        "side_mid_ratio": 0.17124102245370548,
+        "spectral_centroid_hz": 8447.086725213727,
+        "hf_ratio_above_4khz": 0.645022988319397,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5999230542983665,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7333155338506265,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.8650738745149105,
+        "decorrelation_signal": 0.023045397467321482
+      },
+      "sha256": "0391dd22d64bb88fd92d5b0f79fabff4c636bb849f0ec76d81b8c9fdba7c18ca",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M043.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M023",
+        "distance_m": 1.5,
+        "reflection_gain_db": -3.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.1127251461148262,
+        "rms": 0.023739639669656754,
+        "left_rms": 0.024350469931960106,
+        "right_rms": 0.023112673312425613,
+        "ild_db": 0.45314332332720725,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9270350067959241,
+        "mid_rms": 0.023294957354664803,
+        "side_rms": 0.004573351703584194,
+        "side_mid_ratio": 0.19632367785691865,
+        "spectral_centroid_hz": 9070.876684474015,
+        "hf_ratio_above_4khz": 0.6735262870788574,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5991598007098677,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7392674253367569,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.8174139793913067,
+        "decorrelation_signal": 0.046322590768598015
+      },
+      "sha256": "8cb738364274475253e8c9b340557ce99a632cfb32b3cafab8d6819d5d307bda",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M023.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M044",
+        "distance_m": 4.0,
+        "reflection_gain_db": -12.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.06444379687309265,
+        "rms": 0.013709885068237782,
+        "left_rms": 0.014073047786951065,
+        "right_rms": 0.01333683729171753,
+        "ild_db": 0.4667061905022216,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9437205526817805,
+        "mid_rms": 0.01351088099181652,
+        "side_rms": 0.0023274545092135668,
+        "side_mid_ratio": 0.1722651920663819,
+        "spectral_centroid_hz": 8446.380990033487,
+        "hf_ratio_above_4khz": 0.6451392769813538,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5988567803556897,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7326131636967553,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.8647347670710741,
+        "decorrelation_signal": 0.02041959277482741
+      },
+      "sha256": "7fe6a018eda3136a8b8718bdb16b3b6988067317215ac53cc972b0b3ef714f98",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M044.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M022",
+        "distance_m": 1.5,
+        "reflection_gain_db": -6.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.11259417980909348,
+        "rms": 0.02369464747607708,
+        "left_rms": 0.024299057200551033,
+        "right_rms": 0.02307441271841526,
+        "ild_db": 0.44917534072733845,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9288084224886921,
+        "mid_rms": 0.023261627182364464,
+        "side_rms": 0.004509214777499437,
+        "side_mid_ratio": 0.19384777951923327,
+        "spectral_centroid_hz": 9073.207014393347,
+        "hf_ratio_above_4khz": 0.6733161807060242,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5974076461811219,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7412256144018208,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.8163564173065891,
+        "decorrelation_signal": 0.039228927997525975
+      },
+      "sha256": "202b880398472190a47e3f05839092dc792d7569cec61121f59e9f06ea49ce48",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M022.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M045",
+        "distance_m": 4.0,
+        "reflection_gain_db": -9.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.06445321440696716,
+        "rms": 0.013728948310017586,
+        "left_rms": 0.014094785787165165,
+        "right_rms": 0.013353092595934868,
+        "ild_db": 0.4695323849497933,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9424149195319956,
+        "mid_rms": 0.013525068759918213,
+        "side_rms": 0.0023572316858917475,
+        "side_mid_ratio": 0.17428611473704003,
+        "spectral_centroid_hz": 8445.022170186665,
+        "hf_ratio_above_4khz": 0.6453527212142944,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5967458006165359,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7312341250781716,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.8640822252018896,
+        "decorrelation_signal": 0.015197060175688115
+      },
+      "sha256": "addb4139cc1372d7b8203154fa2f5e720a9d9e35c684d8be2e231cd8efb9a879",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M045.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M021",
+        "distance_m": 1.5,
+        "reflection_gain_db": -9.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.11250156164169312,
+        "rms": 0.023672038689255714,
+        "left_rms": 0.02427319809794426,
+        "right_rms": 0.02305520884692669,
+        "ild_db": 0.4471587921329214,
+        "itd_us": 0.0,
+        "lr_correlation": 0.929701041445739,
+        "mid_rms": 0.02324487268924713,
+        "side_rms": 0.004476757254451513,
+        "side_mid_ratio": 0.19259117114157523,
+        "spectral_centroid_hz": 9074.405715018474,
+        "hf_ratio_above_4khz": 0.6732015609741211,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5965269544966906,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7422227628316405,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.8158129499819844,
+        "decorrelation_signal": 0.035658452169338606
+      },
+      "sha256": "0617bbf9bab25124b003be8404059fa5c66e31cb61a66686880a292c493c1049",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M021.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M020",
+        "distance_m": 1.5,
+        "reflection_gain_db": -12.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.11243594437837601,
+        "rms": 0.023660676553845406,
+        "left_rms": 0.02426018938422203,
+        "right_rms": 0.023045573383569717,
+        "ild_db": 0.4461333757085539,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9301487430753738,
+        "mid_rms": 0.023236442357301712,
+        "side_rms": 0.004460425116121769,
+        "side_mid_ratio": 0.19195817704547133,
+        "spectral_centroid_hz": 9075.030563035865,
+        "hf_ratio_above_4khz": 0.6731378436088562,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5960853519933682,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.742730327908094,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.8155297996285004,
+        "decorrelation_signal": 0.03386764565079936
+      },
+      "sha256": "6dabaeb1cd5c3a03e49f3f157e09b4370c2cb3c43455b490abe70d40d9749af7",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M020.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M019",
+        "distance_m": 1.5,
+        "reflection_gain_db": -15.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.11238957941532135,
+        "rms": 0.023654963821172714,
+        "left_rms": 0.024253640323877335,
+        "right_rms": 0.023040739819407463,
+        "ild_db": 0.4456102594437447,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9303727785052702,
+        "mid_rms": 0.023232197389006615,
+        "side_rms": 0.0044522336684167385,
+        "side_mid_ratio": 0.19164066117705583,
+        "spectral_centroid_hz": 9075.358817697706,
+        "hf_ratio_above_4khz": 0.673101544380188,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5958644879974473,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7429893959563021,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.8153810901559627,
+        "decorrelation_signal": 0.03297150393121351
+      },
+      "sha256": "d4b2faa43bec757ef4a520f4db48bf0633c8373db286c559343d586732cb57e7",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M019.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M018",
+        "distance_m": 1.5,
+        "reflection_gain_db": -18.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.1123565286397934,
+        "rms": 0.023649079725146294,
+        "left_rms": 0.024247298017144203,
+        "right_rms": 0.023035332560539246,
+        "ild_db": 0.44537727520338405,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9304872670017541,
+        "mid_rms": 0.023227112367749214,
+        "side_rms": 0.004447493236511946,
+        "side_mid_ratio": 0.19147852586685724,
+        "spectral_centroid_hz": 9075.529314563315,
+        "hf_ratio_above_4khz": 0.6730576157569885,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5957462795282615,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7431048081324847,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.8153038605246632,
+        "decorrelation_signal": 0.032513549945278
+      },
+      "sha256": "41f59cb40ce0d9d2880658fe41bf6d59c923ac1cb8dc479ed7fc1d7b2b23faf6",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M018.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M017",
+        "distance_m": 1.5,
+        "reflection_gain_db": -24.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.11231686919927597,
+        "rms": 0.02364991419017315,
+        "left_rms": 0.024247823283076286,
+        "right_rms": 0.023036489263176918,
+        "ild_db": 0.4451292896723464,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9305681484201309,
+        "mid_rms": 0.02322842739522457,
+        "side_rms": 0.004445066675543785,
+        "side_mid_ratio": 0.19136322057972222,
+        "spectral_centroid_hz": 9075.682676700371,
+        "hf_ratio_above_4khz": 0.6730592250823975,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5956721883414959,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7432276711152598,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.8152343986269341,
+        "decorrelation_signal": 0.032190024271770756
+      },
+      "sha256": "0101e9ff347b0a4720d77f102f32f73eb395fad57a6c74db50c4db708b6dd479",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M017.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M047",
+        "distance_m": 4.0,
+        "reflection_gain_db": -3.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.06590878218412399,
+        "rms": 0.013842012733221054,
+        "left_rms": 0.014223537407815456,
+        "right_rms": 0.013449670746922493,
+        "ild_db": 0.48591933037036095,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9347529618564451,
+        "mid_rms": 0.013609212823212147,
+        "side_rms": 0.002527975244447589,
+        "side_mid_ratio": 0.18575469993018764,
+        "spectral_centroid_hz": 8437.197697728969,
+        "hf_ratio_above_4khz": 0.6465003490447998,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5936888276391726,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7232891396452351,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.860334272938239,
+        "decorrelation_signal": 0.015450770526514113
+      },
+      "sha256": "bb99710bf05ffeab23675f7dfb545ef0996dd29a096ac9852c171993c8f6c690",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M047.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M016",
+        "distance_m": 1.0,
+        "reflection_gain_db": 0.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.1327734887599945,
+        "rms": 0.028151994571089745,
+        "left_rms": 0.028882693499326706,
+        "right_rms": 0.027401814237236977,
+        "ild_db": 0.45716747499346766,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9234711112664287,
+        "mid_rms": 0.02759896032512188,
+        "side_rms": 0.0055526746436953545,
+        "side_mid_ratio": 0.20119144265155003,
+        "spectral_centroid_hz": 9183.026035750596,
+        "hf_ratio_above_4khz": 0.678138792514801,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5929672866302643,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7372868004753015,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.7680389731084996,
+        "decorrelation_signal": 0.06057817288657974
+      },
+      "sha256": "67815dbb696212b11891f6198570e175be7c1cba400b81097f01f7bcddcb347c",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M016.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M046",
+        "distance_m": 4.0,
+        "reflection_gain_db": -6.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.06446652114391327,
+        "rms": 0.013766833581030369,
+        "left_rms": 0.014137949794530869,
+        "right_rms": 0.013385430909693241,
+        "ild_db": 0.4750815669943247,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9398295689748309,
+        "mid_rms": 0.013553254306316376,
+        "side_rms": 0.00241556903347373,
+        "side_mid_ratio": 0.17822797231582582,
+        "spectral_centroid_hz": 8442.380284787498,
+        "hf_ratio_above_4khz": 0.6457509994506836,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.592579869903064,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7285339552175878,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.8628149297683942,
+        "decorrelation_signal": 0.004855657947029357
+      },
+      "sha256": "0b97865e9b11109f549c64432c65e2fba626d6ed31883d7ca03ef528985b395f",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M046.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M015",
+        "distance_m": 1.0,
+        "reflection_gain_db": -3.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.13255293667316437,
+        "rms": 0.028076007962226868,
+        "left_rms": 0.028795897960662842,
+        "right_rms": 0.027337167412042618,
+        "ild_db": 0.45154227134579733,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9259921809334904,
+        "mid_rms": 0.027542708441615105,
+        "side_rms": 0.005446226801723242,
+        "side_mid_ratio": 0.19773751782873455,
+        "spectral_centroid_hz": 9186.456504700376,
+        "hf_ratio_above_4khz": 0.6778671741485596,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5904805685621729,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7400569169849436,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.7665766260059501,
+        "decorrelation_signal": 0.05049389421833261
+      },
+      "sha256": "c354a42d253a278eb6c07261a03c0c84c1d546eee2fc1bb7eb3e800264faa4f5",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M015.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M014",
+        "distance_m": 1.0,
+        "reflection_gain_db": -6.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.1323956847190857,
+        "rms": 0.028037814423441887,
+        "left_rms": 0.02875223010778427,
+        "right_rms": 0.027304712682962418,
+        "ild_db": 0.4486784902276694,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9272643780009828,
+        "mid_rms": 0.02751442976295948,
+        "side_rms": 0.005392138380557299,
+        "side_mid_ratio": 0.1959749275858276,
+        "spectral_centroid_hz": 9188.212270076236,
+        "hf_ratio_above_4khz": 0.6777197122573853,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5892287344490451,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7414711739462918,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.7658292524032426,
+        "decorrelation_signal": 0.04540510594836311
+      },
+      "sha256": "66c0d1f1b1a8d3aa41af25a886b3cc5f3cb87cef1552bece88144e20d083e21b",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M014.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M013",
+        "distance_m": 1.0,
+        "reflection_gain_db": -9.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.132284477353096,
+        "rms": 0.02801862731575966,
+        "left_rms": 0.028730273246765137,
+        "right_rms": 0.02728842943906784,
+        "ild_db": 0.4472243103940696,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9279033947153418,
+        "mid_rms": 0.02750021405518055,
+        "side_rms": 0.0053648618049919605,
+        "side_mid_ratio": 0.19508436530828502,
+        "spectral_centroid_hz": 9189.118848478816,
+        "hf_ratio_above_4khz": 0.6776382923126221,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5886005421686513,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7421903441097815,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.7654436360421937,
+        "decorrelation_signal": 0.0428490390909273
+      },
+      "sha256": "b6f7a7f7a2be940ff9d4ab02cc44c28716037bbdedc220111dbdde8f5643e98c",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M013.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M012",
+        "distance_m": 1.0,
+        "reflection_gain_db": -12.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.13220569491386414,
+        "rms": 0.02800898626446724,
+        "left_rms": 0.0287192240357399,
+        "right_rms": 0.027280261740088463,
+        "ild_db": 0.4464833739100541,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9282234313117157,
+        "mid_rms": 0.027493057772517204,
+        "side_rms": 0.005351165775209665,
+        "side_mid_ratio": 0.19463698142606012,
+        "spectral_centroid_hz": 9189.59208874066,
+        "hf_ratio_above_4khz": 0.6775925159454346,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5882862651426225,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7425570452724388,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.7652424187463063,
+        "decorrelation_signal": 0.041568892705431626
+      },
+      "sha256": "cc1d04debac40da331bb3cab6be8ddf1f4206407db6e8f0fe52edc6184c15bfb",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M012.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M011",
+        "distance_m": 1.0,
+        "reflection_gain_db": -15.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.13215003907680511,
+        "rms": 0.02800413779914379,
+        "left_rms": 0.028713660314679146,
+        "right_rms": 0.027276165783405304,
+        "ild_db": 0.44610473853729826,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9283833696101751,
+        "mid_rms": 0.02748945541679859,
+        "side_rms": 0.00534430705010891,
+        "side_mid_ratio": 0.19441298377444874,
+        "spectral_centroid_hz": 9189.844085485485,
+        "hf_ratio_above_4khz": 0.67756587266922,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5881291529437133,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7427445078405159,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.7651352936904011,
+        "decorrelation_signal": 0.04092913951159405
+      },
+      "sha256": "c18a77fef921cc6ea4073b2c65602eb2399b1024110ee0e3e55f8cb7701cb62f",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M011.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M010",
+        "distance_m": 1.0,
+        "reflection_gain_db": -18.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.1321103572845459,
+        "rms": 0.028001699596643448,
+        "left_rms": 0.028710855171084404,
+        "right_rms": 0.027274109423160553,
+        "ild_db": 0.44591099754901087,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9284631415488652,
+        "mid_rms": 0.027487635612487793,
+        "side_rms": 0.005340879317373037,
+        "side_mid_ratio": 0.19430115388870856,
+        "spectral_centroid_hz": 9189.979487160055,
+        "hf_ratio_above_4khz": 0.6775499582290649,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5880506977421471,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7428404474061874,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.7650777399662043,
+        "decorrelation_signal": 0.04061005175683352
+      },
+      "sha256": "36abe0393d8b7fd46c59f897dd741ff107bdc6aa5204348543603a68b79489c0",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M010.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M009",
+        "distance_m": 1.0,
+        "reflection_gain_db": -24.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.13199563324451447,
+        "rms": 0.027996299788355827,
+        "left_rms": 0.028705058619379997,
+        "right_rms": 0.02726912498474121,
+        "ild_db": 0.4457447124277586,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9285248224925003,
+        "mid_rms": 0.027482781559228897,
+        "side_rms": 0.005337555427104235,
+        "side_mid_ratio": 0.19421452720886015,
+        "spectral_centroid_hz": 9190.043214850895,
+        "hf_ratio_above_4khz": 0.6775195002555847,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5879959693336603,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7429228008467323,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.7650506534247629,
+        "decorrelation_signal": 0.04036332798229303
+      },
+      "sha256": "a1209ad801bf0d1b21fa40289b5cc045d4b95834d45c7a3cc82b281ef81ec2f2",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M009.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M049",
+        "distance_m": 1.0,
+        "reflection_gain_db": null,
+        "virtual_acoustics": "DirectSignal",
+        "reflection": false,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "dry_control"
+      },
+      "features": {
+        "peak": 0.13201481103897095,
+        "rms": 0.02799919992685318,
+        "left_rms": 0.028707945719361305,
+        "right_rms": 0.027272040024399757,
+        "ild_db": 0.445689816206469,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9285411605763093,
+        "mid_rms": 0.027485748752951622,
+        "side_rms": 0.005337498150765896,
+        "side_mid_ratio": 0.19419147713771212,
+        "spectral_centroid_hz": 9190.159981980787,
+        "hf_ratio_above_4khz": 0.6775215864181519,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5879745949719613,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.742949990447249,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.765001025718347,
+        "decorrelation_signal": 0.04029797564705717
+      },
+      "sha256": "3f4a51a7605ee2190ffa9bd4756fe4247c37eb0a850e2e717ac2f45a18206c91",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M049.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M008",
+        "distance_m": 0.75,
+        "reflection_gain_db": 0.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.14958901703357697,
+        "rms": 0.03176978603005409,
+        "left_rms": 0.032590944319963455,
+        "right_rms": 0.030926832929253578,
+        "ild_db": 0.45522992117021077,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9234792386092403,
+        "mid_rms": 0.031145833432674408,
+        "side_rms": 0.00626548333093524,
+        "side_mid_ratio": 0.20116601934180683,
+        "spectral_centroid_hz": 9250.466637397652,
+        "hf_ratio_above_4khz": 0.6804925203323364,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5875946831032616,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7382397710594639,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.7397952636541121,
+        "decorrelation_signal": 0.06054566351533319
+      },
+      "sha256": "3d5ce9038aee3e96bbcb76452dd5b5b14cc84799c25c9a58b0a31556f03c64f4",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M008.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M007",
+        "distance_m": 0.75,
+        "reflection_gain_db": -3.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.1489405333995819,
+        "rms": 0.03169812634587288,
+        "left_rms": 0.03250957652926445,
+        "right_rms": 0.030865352600812912,
+        "ild_db": 0.45080139514932555,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9254718669621507,
+        "mid_rms": 0.03109186328947544,
+        "side_rms": 0.006169875152409077,
+        "side_mid_ratio": 0.19844018657766105,
+        "spectral_centroid_hz": 9253.310391854078,
+        "hf_ratio_above_4khz": 0.6802637577056885,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5856247874873022,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7404225343057864,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.7386274108222938,
+        "decorrelation_signal": 0.05257515010369174
+      },
+      "sha256": "4db3e24122c895386d976bda42e5a7c929c4d054846203f2e9d3fa1b01e9f0e8",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M007.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M006",
+        "distance_m": 0.75,
+        "reflection_gain_db": -6.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.1487550437450409,
+        "rms": 0.03166840970516205,
+        "left_rms": 0.0324750691652298,
+        "right_rms": 0.030840661376714706,
+        "ild_db": 0.44852803594674295,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9264631397707095,
+        "mid_rms": 0.031070806086063385,
+        "side_rms": 0.006123180501163006,
+        "side_mid_ratio": 0.197071826331292,
+        "spectral_centroid_hz": 9254.66084599842,
+        "hf_ratio_above_4khz": 0.6801659464836121,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.584661374812871,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7415455493511313,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.7380734617334731,
+        "decorrelation_signal": 0.04861005886945646
+      },
+      "sha256": "eb1245994850cd64d9ab350225199103b384ff37b9caf533623b922373f50afe",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M006.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M005",
+        "distance_m": 0.75,
+        "reflection_gain_db": -9.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.14863254129886627,
+        "rms": 0.03165138512849808,
+        "left_rms": 0.032455574721097946,
+        "right_rms": 0.03082622028887272,
+        "ild_db": 0.447380527445593,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9269645226477684,
+        "mid_rms": 0.031058188527822495,
+        "side_rms": 0.006099103484302759,
+        "side_mid_ratio": 0.19637666500229703,
+        "spectral_centroid_hz": 9255.396783802102,
+        "hf_ratio_above_4khz": 0.6801016330718994,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5841696258671519,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7421130529431001,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.7377717588792782,
+        "decorrelation_signal": 0.04660452736122078
+      },
+      "sha256": "2d2a5d6fd411a85b328b019563838436cc2e9f6097012f3b59712490cb1c0f1f",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M005.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M004",
+        "distance_m": 0.75,
+        "reflection_gain_db": -12.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.1485457420349121,
+        "rms": 0.03164282441139221,
+        "left_rms": 0.0324457585811615,
+        "right_rms": 0.03081897459924221,
+        "ild_db": 0.4467949503378341,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9272153792479161,
+        "mid_rms": 0.031051835045218468,
+        "side_rms": 0.0060870288871228695,
+        "side_mid_ratio": 0.1960279924862011,
+        "spectral_centroid_hz": 9255.784500664417,
+        "hf_ratio_above_4khz": 0.6800650358200073,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.583923748269537,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7424028191096796,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.73761286124222,
+        "decorrelation_signal": 0.04560110096063008
+      },
+      "sha256": "af89568ab34052a21c29fd7570d71426d911ab54944761159dddca56258ba503",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M004.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M003",
+        "distance_m": 0.75,
+        "reflection_gain_db": -15.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.14848443865776062,
+        "rms": 0.03163851797580719,
+        "left_rms": 0.03244081884622574,
+        "right_rms": 0.03081534057855606,
+        "ild_db": 0.4464967156824546,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9273406309889006,
+        "mid_rms": 0.03104863129556179,
+        "side_rms": 0.006080987863242626,
+        "side_mid_ratio": 0.19585365310180394,
+        "spectral_centroid_hz": 9255.990192652614,
+        "hf_ratio_above_4khz": 0.6800435185432434,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5838008757006382,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7425504406170831,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.7375285765825286,
+        "decorrelation_signal": 0.0451000939966919
+      },
+      "sha256": "93c68b49b4ea643def0077e6cc0ca06a874ee4908d8ac932a821ed8f31670d7e",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M003.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M002",
+        "distance_m": 0.75,
+        "reflection_gain_db": -18.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.14844070374965668,
+        "rms": 0.031636353582143784,
+        "left_rms": 0.03243832290172577,
+        "right_rms": 0.030813518911600113,
+        "ild_db": 0.44634189821915726,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9274030243657925,
+        "mid_rms": 0.031047016382217407,
+        "side_rms": 0.006077972706407309,
+        "side_mid_ratio": 0.19576672461489028,
+        "spectral_centroid_hz": 9256.101584181695,
+        "hf_ratio_above_4khz": 0.6800304651260376,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5837398688018328,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7426270844226728,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.7374829366414682,
+        "decorrelation_signal": 0.044850520489124523
+      },
+      "sha256": "4c903d786b66ba0ffcdf4b661bd8aaee0b2420016d17503268ce691791c4744b",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M002.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M001",
+        "distance_m": 0.75,
+        "reflection_gain_db": -24.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.14838829636573792,
+        "rms": 0.03163470700383186,
+        "left_rms": 0.032436419278383255,
+        "right_rms": 0.03081214614212513,
+        "ild_db": 0.4462191297596227,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9274493254239411,
+        "mid_rms": 0.03104577772319317,
+        "side_rms": 0.006075724493712187,
+        "side_mid_ratio": 0.19570211922819805,
+        "spectral_centroid_hz": 9256.198966695218,
+        "hf_ratio_above_4khz": 0.6800172924995422,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5836945629594195,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7426878676988373,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.7374430388640462,
+        "decorrelation_signal": 0.04466531625653003
+      },
+      "sha256": "4f5929a09e236eb2263aa33cd17a2406a207d9870084d9a886976b4f78dfe0c5",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M001.wav"
+    },
+    {
+      "candidate": {
+        "candidate_id": "M051",
+        "distance_m": 6.0,
+        "reflection_gain_db": null,
+        "virtual_acoustics": "DirectSignal",
+        "reflection": false,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "dry_control"
+      },
+      "features": {
+        "peak": 0.04906816780567169,
+        "rms": 0.010266260243952274,
+        "left_rms": 0.01056154165416956,
+        "right_rms": 0.009962230920791626,
+        "ild_db": 0.5074142382544115,
+        "itd_us": 0.0,
+        "lr_correlation": 0.957940729537947,
+        "mid_rms": 0.010153504088521004,
+        "side_rms": 0.0015173853607848287,
+        "side_mid_ratio": 0.1494445018592997,
+        "spectral_centroid_hz": 7901.565384258138,
+        "hf_ratio_above_4khz": 0.6155118942260742,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5648695402890161,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7129983599104934,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.6388997112801003,
+        "decorrelation_signal": 0.07730030019949341
+      },
+      "sha256": "f4ef642c6bec8bf0c8f9c9fc5b8292c39853632e2701db25ce4fc4e05d5a47c3",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-M\\all_candidates\\M051.wav"
+    }
+  ]
+}

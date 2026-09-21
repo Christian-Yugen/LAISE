@@ -1,0 +1,75 @@
+{
+  "test_id": "T001-I2",
+  "instructions": [
+    "Use headphones.",
+    "Do not open the calibration key.",
+    "Classify perceived direction, not which configuration you think it is.",
+    "Do not force FRONT/BACK.",
+    "AMBIGUOUS is a valid answer."
+  ],
+  "allowed_directions": [
+    "FRONT",
+    "FRONT_RIGHT",
+    "RIGHT",
+    "BACK_RIGHT",
+    "BACK",
+    "BACK_LEFT",
+    "LEFT",
+    "FRONT_LEFT",
+    "ABOVE",
+    "ABOVE_RIGHT",
+    "ABOVE_LEFT",
+    "INSIDE_HEAD",
+    "AMBIGUOUS"
+  ],
+  "samples": [
+    {
+      "blind_id": "A",
+      "file": "audio/t001i2_A.wav",
+      "perceived_direction": null,
+      "confidence_0_to_5": null,
+      "externalization_0_to_5": null,
+      "notes": null
+    },
+    {
+      "blind_id": "B",
+      "file": "audio/t001i2_B.wav",
+      "perceived_direction": null,
+      "confidence_0_to_5": null,
+      "externalization_0_to_5": null,
+      "notes": null
+    },
+    {
+      "blind_id": "C",
+      "file": "audio/t001i2_C.wav",
+      "perceived_direction": null,
+      "confidence_0_to_5": null,
+      "externalization_0_to_5": null,
+      "notes": null
+    },
+    {
+      "blind_id": "D",
+      "file": "audio/t001i2_D.wav",
+      "perceived_direction": null,
+      "confidence_0_to_5": null,
+      "externalization_0_to_5": null,
+      "notes": null
+    },
+    {
+      "blind_id": "E",
+      "file": "audio/t001i2_E.wav",
+      "perceived_direction": null,
+      "confidence_0_to_5": null,
+      "externalization_0_to_5": null,
+      "notes": null
+    },
+    {
+      "blind_id": "F",
+      "file": "audio/t001i2_F.wav",
+      "perceived_direction": null,
+      "confidence_0_to_5": null,
+      "externalization_0_to_5": null,
+      "notes": null
+    }
+  ]
+}

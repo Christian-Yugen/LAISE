@@ -1,0 +1,82 @@
+{
+  "WARNING": "DO NOT OPEN BEFORE BOTH LISTENERS COMPLETE T001-L.",
+  "seed": 20262120,
+  "mapping": {
+    "A": {
+      "id": "BILATERAL_15",
+      "family": "bilateral",
+      "type": "bilateral",
+      "angle": 15.0,
+      "dist": 3.0
+    },
+    "B": {
+      "id": "BILATERAL_45",
+      "family": "bilateral",
+      "type": "bilateral",
+      "angle": 45.0,
+      "dist": 3.0
+    },
+    "C": {
+      "id": "FRONT_CLOSE_DIRECT",
+      "family": "distance",
+      "type": "single",
+      "az": 0.0,
+      "dist": 1.0,
+      "va": "DirectSignal",
+      "reflection": false,
+      "reverb": false,
+      "rg": null
+    },
+    "D": {
+      "id": "FRONT_REFLECTION",
+      "family": "acoustics",
+      "type": "single",
+      "az": 0.0,
+      "dist": 3.0,
+      "va": "MediumRecordingHall",
+      "reflection": true,
+      "reverb": false,
+      "rg": null
+    },
+    "E": {
+      "id": "FRONT_FAR_DIRECT",
+      "family": "distance",
+      "type": "single",
+      "az": 0.0,
+      "dist": 6.0,
+      "va": "DirectSignal",
+      "reflection": false,
+      "reverb": false,
+      "rg": null
+    },
+    "F": {
+      "id": "BILATERAL_30",
+      "family": "bilateral",
+      "type": "bilateral",
+      "angle": 30.0,
+      "dist": 3.0
+    },
+    "G": {
+      "id": "FRONT_REFLECTION_REDUCED",
+      "family": "acoustics",
+      "type": "single",
+      "az": 0.0,
+      "dist": 3.0,
+      "va": "MediumRecordingHall",
+      "reflection": true,
+      "reverb": false,
+      "rg": -12.0
+    },
+    "H": {
+      "id": "FRONT_DIRECT_CONTROL",
+      "family": "control",
+      "type": "single",
+      "az": 0.0,
+      "dist": 3.0,
+      "va": "DirectSignal",
+      "reflection": false,
+      "reverb": false,
+      "rg": null
+    }
+  }
+}

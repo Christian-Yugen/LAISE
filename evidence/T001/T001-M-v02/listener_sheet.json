@@ -1,0 +1,74 @@
+{
+  "test_id": "T001-M",
+  "status": "PENDING_HUMAN_EVALUATION",
+  "scale": {
+    "externalization": "0 inside head ... 5 convincing external FRONT",
+    "centrality": "0 clearly lateral ... 5 perfectly central"
+  },
+  "samples": [
+    {
+      "blind_id": "A",
+      "externalization_0_to_5": null,
+      "centrality_0_to_5": null,
+      "perceived_position": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "blind_id": "B",
+      "externalization_0_to_5": null,
+      "centrality_0_to_5": null,
+      "perceived_position": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "blind_id": "C",
+      "externalization_0_to_5": null,
+      "centrality_0_to_5": null,
+      "perceived_position": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "blind_id": "D",
+      "externalization_0_to_5": null,
+      "centrality_0_to_5": null,
+      "perceived_position": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "blind_id": "E",
+      "externalization_0_to_5": null,
+      "centrality_0_to_5": null,
+      "perceived_position": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "blind_id": "F",
+      "externalization_0_to_5": null,
+      "centrality_0_to_5": null,
+      "perceived_position": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "blind_id": "G",
+      "externalization_0_to_5": null,
+      "centrality_0_to_5": null,
+      "perceived_position": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "blind_id": "H",
+      "externalization_0_to_5": null,
+      "centrality_0_to_5": null,
+      "perceived_position": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    }
+  ]
+}

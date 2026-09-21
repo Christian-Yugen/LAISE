@@ -1,0 +1,338 @@
+{
+  "WARNING": "DO NOT OPEN BEFORE HUMAN RATINGS ARE FROZEN.",
+  "selection_policy": "exploration_exploitation_v0.2",
+  "shortlist_diagnostics": {
+    "count": 8,
+    "unique_distances": [
+      0.75,
+      1.0,
+      1.5,
+      2.0,
+      3.0,
+      4.0
+    ],
+    "unique_distance_count": 6,
+    "families": [
+      "dry_control",
+      "early_reflection"
+    ],
+    "has_reflected_candidates": true,
+    "has_dry_controls": true,
+    "reflected_distance_coverage": [
+      0.75,
+      1.0,
+      1.5,
+      2.0,
+      3.0,
+      4.0
+    ],
+    "reflected_distance_coverage_count": 6,
+    "passes_diversity_gate": true
+  },
+  "mapping": {
+    "A": {
+      "candidate": {
+        "candidate_id": "M040",
+        "distance_m": 3.0,
+        "reflection_gain_db": 0.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.08163409680128098,
+        "rms": 0.01666398160159588,
+        "left_rms": 0.0171190332621336,
+        "right_rms": 0.016196150332689285,
+        "ild_db": 0.4813487304927303,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9243123398686497,
+        "mid_rms": 0.016339605674147606,
+        "side_rms": 0.0032719415612518787,
+        "side_mid_ratio": 0.20024605405431986,
+        "spectral_centroid_hz": 8691.466301514807,
+        "hf_ratio_above_4khz": 0.65924072265625,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.6329865032003035,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7254964109575295,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.9908680118486793,
+        "decorrelation_signal": 0.05721325847769565
+      },
+      "source_candidate_id": "M040"
+    },
+    "B": {
+      "candidate": {
+        "candidate_id": "M008",
+        "distance_m": 0.75,
+        "reflection_gain_db": 0.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.14958901703357697,
+        "rms": 0.03176978603005409,
+        "left_rms": 0.032590944319963455,
+        "right_rms": 0.030926832929253578,
+        "ild_db": 0.45522992117021077,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9234792386092403,
+        "mid_rms": 0.031145833432674408,
+        "side_rms": 0.00626548333093524,
+        "side_mid_ratio": 0.20116601934180683,
+        "spectral_centroid_hz": 9250.466637397652,
+        "hf_ratio_above_4khz": 0.6804925203323364,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5875946831032616,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7382397710594639,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.7397952636541121,
+        "decorrelation_signal": 0.06054566351533319
+      },
+      "source_candidate_id": "M008"
+    },
+    "C": {
+      "candidate": {
+        "candidate_id": "M050",
+        "distance_m": 3.0,
+        "reflection_gain_db": null,
+        "virtual_acoustics": "DirectSignal",
+        "reflection": false,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "dry_control"
+      },
+      "features": {
+        "peak": 0.07822667807340622,
+        "rms": 0.01640952378511429,
+        "left_rms": 0.016828812658786774,
+        "right_rms": 0.015979237854480743,
+        "ild_db": 0.44994828888728877,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9386156544880736,
+        "mid_rms": 0.016150496900081635,
+        "side_rms": 0.002904122229665518,
+        "side_mid_ratio": 0.17981627732277528,
+        "spectral_centroid_hz": 8707.979394154021,
+        "hf_ratio_above_4khz": 0.6572675704956055,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.6222531280434836,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7408437601449455,
+        "itd_center": 1.0,
+        "spectral_preservation": 1.0,
+        "decorrelation_signal": 0.0
+      },
+      "source_candidate_id": "M050"
+    },
+    "D": {
+      "candidate": {
+        "candidate_id": "M049",
+        "distance_m": 1.0,
+        "reflection_gain_db": null,
+        "virtual_acoustics": "DirectSignal",
+        "reflection": false,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "dry_control"
+      },
+      "features": {
+        "peak": 0.13201481103897095,
+        "rms": 0.02799919992685318,
+        "left_rms": 0.028707945719361305,
+        "right_rms": 0.027272040024399757,
+        "ild_db": 0.445689816206469,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9285411605763093,
+        "mid_rms": 0.027485748752951622,
+        "side_rms": 0.005337498150765896,
+        "side_mid_ratio": 0.19419147713771212,
+        "spectral_centroid_hz": 9190.159981980787,
+        "hf_ratio_above_4khz": 0.6775215864181519,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5879745949719613,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.742949990447249,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.765001025718347,
+        "decorrelation_signal": 0.04029797564705717
+      },
+      "source_candidate_id": "M049"
+    },
+    "E": {
+      "candidate": {
+        "candidate_id": "M024",
+        "distance_m": 1.5,
+        "reflection_gain_db": 0.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.11290892958641052,
+        "rms": 0.023829087615013123,
+        "left_rms": 0.024452583864331245,
+        "right_rms": 0.02318883314728737,
+        "ild_db": 0.4609172280461058,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9235330077774129,
+        "mid_rms": 0.023361222818493843,
+        "side_rms": 0.004698796197772026,
+        "side_mid_ratio": 0.20113656866673527,
+        "spectral_centroid_hz": 9066.306256579835,
+        "hf_ratio_above_4khz": 0.6739166975021362,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.6026314048907658,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7354460066541705,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.8194921342086091,
+        "decorrelation_signal": 0.06033058684264292
+      },
+      "source_candidate_id": "M024"
+    },
+    "F": {
+      "candidate": {
+        "candidate_id": "M032",
+        "distance_m": 2.0,
+        "reflection_gain_db": 0.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.09918452799320221,
+        "rms": 0.020769894123077393,
+        "left_rms": 0.021319003775715828,
+        "right_rms": 0.020205864682793617,
+        "ild_db": 0.4657893256406134,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9237047350429314,
+        "mid_rms": 0.0203628558665514,
+        "side_rms": 0.004091769922524691,
+        "side_mid_ratio": 0.20094283184732475,
+        "spectral_centroid_hz": 8944.914193422655,
+        "hf_ratio_above_4khz": 0.6693447232246399,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.6131444173561573,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7330611054281168,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.876664911967758,
+        "decorrelation_signal": 0.05964367778056889
+      },
+      "source_candidate_id": "M032"
+    },
+    "G": {
+      "candidate": {
+        "candidate_id": "M016",
+        "distance_m": 1.0,
+        "reflection_gain_db": 0.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.1327734887599945,
+        "rms": 0.028151994571089745,
+        "left_rms": 0.028882693499326706,
+        "right_rms": 0.027401814237236977,
+        "ild_db": 0.45716747499346766,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9234711112664287,
+        "mid_rms": 0.02759896032512188,
+        "side_rms": 0.0055526746436953545,
+        "side_mid_ratio": 0.20119144265155003,
+        "spectral_centroid_hz": 9183.026035750596,
+        "hf_ratio_above_4khz": 0.678138792514801,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.5929672866302643,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7372868004753015,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.7680389731084996,
+        "decorrelation_signal": 0.06057817288657974
+      },
+      "source_candidate_id": "M016"
+    },
+    "H": {
+      "candidate": {
+        "candidate_id": "M048",
+        "distance_m": 4.0,
+        "reflection_gain_db": 0.0,
+        "virtual_acoustics": "MediumRecordingHall",
+        "reflection": true,
+        "reverb": false,
+        "azimuth_deg": 0.0,
+        "elevation_deg": 0.0,
+        "family": "early_reflection"
+      },
+      "features": {
+        "peak": 0.06903728097677231,
+        "rms": 0.0139906732365489,
+        "left_rms": 0.014392578043043613,
+        "right_rms": 0.013576876372098923,
+        "ild_db": 0.5067745927476676,
+        "itd_us": 0.0,
+        "lr_correlation": 0.9249435779813798,
+        "mid_rms": 0.013720034621655941,
+        "side_rms": 0.0027385379653424025,
+        "side_mid_ratio": 0.1996013888201306,
+        "spectral_centroid_hz": 8427.03950709134,
+        "hf_ratio_above_4khz": 0.647909939289093,
+        "finite": true,
+        "no_clipping": true
+      },
+      "acoustic_candidate_score": 0.6014957730998997,
+      "score_components": {
+        "rejected": false,
+        "balance": 0.7133024688780184,
+        "itd_center": 1.0,
+        "spectral_preservation": 0.855492703142308,
+        "decorrelation_signal": 0.0546883060267751
+      },
+      "source_candidate_id": "M048"
+    }
+  }
+}

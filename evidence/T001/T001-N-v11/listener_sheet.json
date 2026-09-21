@@ -1,0 +1,70 @@
+{
+  "test_id": "T001-N-v1.1",
+  "WARNING": "Do not open PRIVATE/t001n_v11_blind_key.json before all ratings are frozen.",
+  "scale_externalization": {
+    "0": "completely inside head",
+    "1": "predominantly inside",
+    "2": "near forehead/face",
+    "3": "beginning to externalize in front",
+    "4": "clearly outside and in front",
+    "5": "convincing external frontal source"
+  },
+  "scale_centrality": {
+    "0": "clearly displaced to one side",
+    "1": "strongly lateral",
+    "2": "slightly lateral",
+    "3": "approximately central",
+    "4": "central",
+    "5": "perfectly central"
+  },
+  "ratings": {
+    "A": {
+      "externalization": null,
+      "centrality": null,
+      "perceived_position": "",
+      "confidence_0_to_3": null
+    },
+    "B": {
+      "externalization": null,
+      "centrality": null,
+      "perceived_position": "",
+      "confidence_0_to_3": null
+    },
+    "C": {
+      "externalization": null,
+      "centrality": null,
+      "perceived_position": "",
+      "confidence_0_to_3": null
+    },
+    "D": {
+      "externalization": null,
+      "centrality": null,
+      "perceived_position": "",
+      "confidence_0_to_3": null
+    },
+    "E": {
+      "externalization": null,
+      "centrality": null,
+      "perceived_position": "",
+      "confidence_0_to_3": null
+    },
+    "F": {
+      "externalization": null,
+      "centrality": null,
+      "perceived_position": "",
+      "confidence_0_to_3": null
+    },
+    "G": {
+      "externalization": null,
+      "centrality": null,
+      "perceived_position": "",
+      "confidence_0_to_3": null
+    },
+    "H": {
+      "externalization": null,
+      "centrality": null,
+      "perceived_position": "",
+      "confidence_0_to_3": null
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "test_id": "T001-L",
+  "listener_id": "listener_01",
+  "instructions": [
+    "Use the same headphones and normal L/R orientation.",
+    "Do not open PRIVATE/t001l_blind_key.json.",
+    "Do not discuss ratings with the other listener until both finish.",
+    "Rate perception, not what you think FRONT should sound like.",
+    "Externalization: 0=inside head; 5=convincingly outside and in front.",
+    "Centrality: 0=clearly lateral; 5=perfectly centered."
+  ],
+  "samples": [
+    {
+      "blind_id": "A",
+      "file": "audio/t001l_A.wav",
+      "externalization_0_to_5": null,
+      "centrality_0_to_5": null,
+      "perceived_position": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "blind_id": "B",
+      "file": "audio/t001l_B.wav",
+      "externalization_0_to_5": null,
+      "centrality_0_to_5": null,
+      "perceived_position": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "blind_id": "C",
+      "file": "audio/t001l_C.wav",
+      "externalization_0_to_5": null,
+      "centrality_0_to_5": null,
+      "perceived_position": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "blind_id": "D",
+      "file": "audio/t001l_D.wav",
+      "externalization_0_to_5": null,
+      "centrality_0_to_5": null,
+      "perceived_position": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "blind_id": "E",
+      "file": "audio/t001l_E.wav",
+      "externalization_0_to_5": null,
+      "centrality_0_to_5": null,
+      "perceived_position": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "blind_id": "F",
+      "file": "audio/t001l_F.wav",
+      "externalization_0_to_5": null,
+      "centrality_0_to_5": null,
+      "perceived_position": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "blind_id": "G",
+      "file": "audio/t001l_G.wav",
+      "externalization_0_to_5": null,
+      "centrality_0_to_5": null,
+      "perceived_position": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "blind_id": "H",
+      "file": "audio/t001l_H.wav",
+      "externalization_0_to_5": null,
+      "centrality_0_to_5": null,
+      "perceived_position": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    }
+  ]
+}

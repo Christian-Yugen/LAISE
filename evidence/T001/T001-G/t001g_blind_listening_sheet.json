@@ -1,0 +1,115 @@
+{
+  "test_id": "T001-G",
+  "purpose": "Blind perceptual azimuth calibration",
+  "instructions": [
+    "Do not inspect t001g_calibration_key.json before completing the listening test.",
+    "Use the same headphones, orientation, volume and listening environment for all samples.",
+    "Do not use speaker playback. Use headphones.",
+    "For each file, identify the perceived direction without consulting the expected software position."
+  ],
+  "allowed_responses": [
+    "FRONT",
+    "FRONT_RIGHT",
+    "RIGHT",
+    "BACK_RIGHT",
+    "BACK",
+    "BACK_LEFT",
+    "LEFT",
+    "FRONT_LEFT",
+    "AMBIGUOUS"
+  ],
+  "presentation_order": [
+    "F",
+    "H",
+    "C",
+    "E",
+    "G",
+    "B",
+    "A",
+    "D"
+  ],
+  "listener_1": {
+    "F": {
+      "perceived_direction": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    "H": {
+      "perceived_direction": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    "C": {
+      "perceived_direction": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    "E": {
+      "perceived_direction": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    "G": {
+      "perceived_direction": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    "B": {
+      "perceived_direction": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    "A": {
+      "perceived_direction": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    "D": {
+      "perceived_direction": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    }
+  },
+  "listener_2": {
+    "F": {
+      "perceived_direction": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    "H": {
+      "perceived_direction": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    "C": {
+      "perceived_direction": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    "E": {
+      "perceived_direction": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    "G": {
+      "perceived_direction": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    "B": {
+      "perceived_direction": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    "A": {
+      "perceived_direction": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    "D": {
+      "perceived_direction": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    }
+  }
+}

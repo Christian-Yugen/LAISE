@@ -1,0 +1,220 @@
+{
+  "test_id": "T002-A",
+  "test_name": "Deterministic Procedural MIDI Generation",
+  "status": "PASS",
+  "timestamp_utc": "2026-09-20T18:29:57.040085+00:00",
+  "environment": {
+    "python_version": "3.12.1",
+    "mido": "installed"
+  },
+  "musical_configuration": {
+    "bpm": 120,
+    "meter": {
+      "numerator": 4,
+      "denominator": 4
+    },
+    "key_signature": "C",
+    "mode": "major",
+    "bars": 4,
+    "ticks_per_beat": 480,
+    "ticks_per_bar": 1920,
+    "expected_total_ticks": 7680,
+    "expected_duration_seconds": 8.0,
+    "channel": 0,
+    "program_number": 0,
+    "velocity": 90
+  },
+  "generated_notes": [
+    {
+      "bar": 1,
+      "note_name": "C4",
+      "midi_note": 60,
+      "velocity": 90,
+      "duration_ticks": 1920
+    },
+    {
+      "bar": 2,
+      "note_name": "E4",
+      "midi_note": 64,
+      "velocity": 90,
+      "duration_ticks": 1920
+    },
+    {
+      "bar": 3,
+      "note_name": "G4",
+      "midi_note": 67,
+      "velocity": 90,
+      "duration_ticks": 1920
+    },
+    {
+      "bar": 4,
+      "note_name": "C5",
+      "midi_note": 72,
+      "velocity": 90,
+      "duration_ticks": 1920
+    }
+  ],
+  "observed": {
+    "midi_type": 1,
+    "track_count": 1,
+    "ticks_per_beat": 480,
+    "note_on_count": 4,
+    "note_off_count": 4,
+    "note_sequence": [
+      60,
+      64,
+      67,
+      72
+    ],
+    "total_ticks": 7680,
+    "duration_seconds": 8.0
+  },
+  "validation": {
+    "file_exists": true,
+    "file_not_empty": true,
+    "midi_type_is_1": true,
+    "track_count_is_1": true,
+    "ticks_per_beat_correct": true,
+    "note_on_count_correct": true,
+    "note_off_count_correct": true,
+    "total_ticks_correct": true,
+    "duration_correct": true,
+    "note_sequence_correct": true
+  },
+  "midi_file": {
+    "path": "C:\\Projetos2026\\LAISE\\evidence\\T002\\T002-A\\t002a_procedural_midi.mid",
+    "size_bytes": 118,
+    "sha256": "3f011da7bfd6c3026575765c95e14aaf2f8db20450e2969b328128dfc6f7d7a0"
+  },
+  "events": [
+    {
+      "track_index": 0,
+      "message_index": 0,
+      "absolute_tick": 0,
+      "delta_ticks": 0,
+      "type": "track_name",
+      "name": "LAISE T002-A Procedural Test"
+    },
+    {
+      "track_index": 0,
+      "message_index": 1,
+      "absolute_tick": 0,
+      "delta_ticks": 0,
+      "type": "set_tempo",
+      "tempo": 500000
+    },
+    {
+      "track_index": 0,
+      "message_index": 2,
+      "absolute_tick": 0,
+      "delta_ticks": 0,
+      "type": "time_signature",
+      "numerator": 4,
+      "denominator": 4
+    },
+    {
+      "track_index": 0,
+      "message_index": 3,
+      "absolute_tick": 0,
+      "delta_ticks": 0,
+      "type": "key_signature",
+      "key": "C"
+    },
+    {
+      "track_index": 0,
+      "message_index": 4,
+      "absolute_tick": 0,
+      "delta_ticks": 0,
+      "type": "program_change",
+      "channel": 0,
+      "program": 0
+    },
+    {
+      "track_index": 0,
+      "message_index": 5,
+      "absolute_tick": 0,
+      "delta_ticks": 0,
+      "type": "note_on",
+      "channel": 0,
+      "note": 60,
+      "velocity": 90
+    },
+    {
+      "track_index": 0,
+      "message_index": 6,
+      "absolute_tick": 1920,
+      "delta_ticks": 1920,
+      "type": "note_off",
+      "channel": 0,
+      "note": 60,
+      "velocity": 0
+    },
+    {
+      "track_index": 0,
+      "message_index": 7,
+      "absolute_tick": 1920,
+      "delta_ticks": 0,
+      "type": "note_on",
+      "channel": 0,
+      "note": 64,
+      "velocity": 90
+    },
+    {
+      "track_index": 0,
+      "message_index": 8,
+      "absolute_tick": 3840,
+      "delta_ticks": 1920,
+      "type": "note_off",
+      "channel": 0,
+      "note": 64,
+      "velocity": 0
+    },
+    {
+      "track_index": 0,
+      "message_index": 9,
+      "absolute_tick": 3840,
+      "delta_ticks": 0,
+      "type": "note_on",
+      "channel": 0,
+      "note": 67,
+      "velocity": 90
+    },
+    {
+      "track_index": 0,
+      "message_index": 10,
+      "absolute_tick": 5760,
+      "delta_ticks": 1920,
+      "type": "note_off",
+      "channel": 0,
+      "note": 67,
+      "velocity": 0
+    },
+    {
+      "track_index": 0,
+      "message_index": 11,
+      "absolute_tick": 5760,
+      "delta_ticks": 0,
+      "type": "note_on",
+      "channel": 0,
+      "note": 72,
+      "velocity": 90
+    },
+    {
+      "track_index": 0,
+      "message_index": 12,
+      "absolute_tick": 7680,
+      "delta_ticks": 1920,
+      "type": "note_off",
+      "channel": 0,
+      "note": 72,
+      "velocity": 0
+    },
+    {
+      "track_index": 0,
+      "message_index": 13,
+      "absolute_tick": 7680,
+      "delta_ticks": 0,
+      "type": "end_of_track"
+    }
+  ]
+}

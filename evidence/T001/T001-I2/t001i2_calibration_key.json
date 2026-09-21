@@ -1,0 +1,66 @@
+{
+  "WARNING": "DO NOT OPEN BEFORE PERCEPTUAL LISTENING.",
+  "mapping": {
+    "A": {
+      "id": "FRONT_REFLECTION_ONLY",
+      "direction": "FRONT",
+      "azimuth_deg": 0.0,
+      "virtual_acoustics": "MediumRecordingHall",
+      "reflection": true,
+      "reverb": false,
+      "reflection_gain_db": null,
+      "description": "FRONT with early reflections but no late reverb."
+    },
+    "B": {
+      "id": "FRONT_DIRECT",
+      "direction": "FRONT",
+      "azimuth_deg": 0.0,
+      "virtual_acoustics": "DirectSignal",
+      "reflection": false,
+      "reverb": false,
+      "reflection_gain_db": null,
+      "description": "Pure direct binaural FRONT control."
+    },
+    "C": {
+      "id": "FRONT_HALL_DEFAULT",
+      "direction": "FRONT",
+      "azimuth_deg": 0.0,
+      "virtual_acoustics": "MediumRecordingHall",
+      "reflection": true,
+      "reverb": true,
+      "reflection_gain_db": null,
+      "description": "Current MediumRecordingHall-style FRONT."
+    },
+    "D": {
+      "id": "BACK_DIRECT_CONTROL",
+      "direction": "BACK",
+      "azimuth_deg": 180.0,
+      "virtual_acoustics": "DirectSignal",
+      "reflection": false,
+      "reverb": false,
+      "reflection_gain_db": null,
+      "description": "Pure direct BACK control."
+    },
+    "E": {
+      "id": "FRONT_CLOSE_DIRECT",
+      "direction": "FRONT",
+      "azimuth_deg": 0.0,
+      "virtual_acoustics": "DirectSignal",
+      "reflection": false,
+      "reverb": false,
+      "reflection_gain_db": null,
+      "distance_m": 1.0,
+      "description": "Closer direct FRONT at 1 metre."
+    },
+    "F": {
+      "id": "FRONT_REFLECTION_REDUCED",
+      "direction": "FRONT",
+      "azimuth_deg": 0.0,
+      "virtual_acoustics": "MediumRecordingHall",
+      "reflection": true,
+      "reverb": false,
+      "reflection_gain_db": -12.0,
+      "description": "FRONT with lower-level early reflections."
+    }
+  }
+}

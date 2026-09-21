@@ -1,0 +1,14 @@
+{
+  "test_id": "T001-G",
+  "warning": "Do not inspect this mapping until blind listening is complete.",
+  "mapping": {
+    "F": 0.625,
+    "H": 0.875,
+    "C": 0.25,
+    "E": 0.5,
+    "G": 0.75,
+    "B": 0.125,
+    "A": 0.0,
+    "D": 0.375
+  }
+}

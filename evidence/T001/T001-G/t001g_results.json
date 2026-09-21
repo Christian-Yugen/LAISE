@@ -1,0 +1,141 @@
+{
+  "test_id": "T001-G",
+  "test_name": "Blind Azimuth / Front-Back Perceptual Calibration",
+  "timestamp_utc": "2026-09-20T19:32:37.611592+00:00",
+  "objective_render_result": "PASS",
+  "perceptual_result": "PENDING",
+  "environment": {
+    "python_version": "3.12.1",
+    "numpy_version": "2.5.3",
+    "sample_rate_hz": 48000,
+    "duration_seconds": 4.0,
+    "block_size": 256,
+    "seed": 20260920
+  },
+  "plugin": {
+    "path": "C:\\Program Files\\Common Files\\VST3\\dearVR PRO 2.vst3\\Contents\\x86_64-win\\dearVR PRO 2.vst3",
+    "coordinate_system_raw": 1.0,
+    "elevation_raw": 0.5,
+    "distance_raw": 0.0969899744
+  },
+  "stimulus": {
+    "type": "deterministic_broadband_noise",
+    "amplitude": 0.1,
+    "dual_mono": true
+  },
+  "renders": [
+    {
+      "blind_id": "F",
+      "raw_azimuth": 0.625,
+      "output_file": "evidence\\T001\\T001-G\\audio\\t001g_F.wav",
+      "sha256": "8D351537EC70C9462E247A165778633269681DFA66F9A3E475C0932955592FA7",
+      "peak": 0.1102253794670105,
+      "overall_rms": 0.01868324728387459,
+      "left_rms": 0.010984166109346574,
+      "right_rms": 0.02403072102586805,
+      "ild_db_left_over_right": -6.799994195396551,
+      "finite": true,
+      "clipping": false
+    },
+    {
+      "blind_id": "H",
+      "raw_azimuth": 0.875,
+      "output_file": "evidence\\T001\\T001-G\\audio\\t001g_H.wav",
+      "sha256": "CAFEF5F206B64AE15F15861B600E76BBD33365EA02415D98F058105676732C32",
+      "peak": 0.10790795832872391,
+      "overall_rms": 0.017479794620144054,
+      "left_rms": 0.009325594539281326,
+      "right_rms": 0.022893661271490857,
+      "ild_db_left_over_right": -7.800774473384565,
+      "finite": true,
+      "clipping": false
+    },
+    {
+      "blind_id": "C",
+      "raw_azimuth": 0.25,
+      "output_file": "evidence\\T001\\T001-G\\audio\\t001g_C.wav",
+      "sha256": "CE996EAA9A8C5366287CAA02170B2A117674B311F6E1F02091A165EE219ED62E",
+      "peak": 0.1563584953546524,
+      "overall_rms": 0.02378011052232851,
+      "left_rms": 0.032307482809244975,
+      "right_rms": 0.009338836514184127,
+      "ild_db_left_over_right": 10.78020698414125,
+      "finite": true,
+      "clipping": false
+    },
+    {
+      "blind_id": "E",
+      "raw_azimuth": 0.5,
+      "output_file": "evidence\\T001\\T001-G\\audio\\t001g_E.wav",
+      "sha256": "0902EC8B56A3A3AF358635AA07379D95038CCD76F8DB83764C0A04FDAA2ED4C8",
+      "peak": 0.08106721192598343,
+      "overall_rms": 0.017960830668927185,
+      "left_rms": 0.01835710566881329,
+      "right_rms": 0.01755561300837352,
+      "ild_db_left_over_right": 0.38776418101618015,
+      "finite": true,
+      "clipping": false
+    },
+    {
+      "blind_id": "G",
+      "raw_azimuth": 0.75,
+      "output_file": "evidence\\T001\\T001-G\\audio\\t001g_G.wav",
+      "sha256": "32A04F32E83E81CE4671B7BC1DF21EBC61350AB61659A0701C63F0FFF7B7FA51",
+      "peak": 0.1414460390806198,
+      "overall_rms": 0.022190589363738255,
+      "left_rms": 0.00947256655073104,
+      "right_rms": 0.02991847248042718,
+      "ild_db_left_over_right": -9.989435024808298,
+      "finite": true,
+      "clipping": false
+    },
+    {
+      "blind_id": "B",
+      "raw_azimuth": 0.125,
+      "output_file": "evidence\\T001\\T001-G\\audio\\t001g_B.wav",
+      "sha256": "B1BF38FC2C3408B17D4762793782FC803C8DC62E66959422EA7EFDD21634C260",
+      "peak": 0.104225754737854,
+      "overall_rms": 0.017546179664990353,
+      "left_rms": 0.02289729394660795,
+      "right_rms": 0.009562989678697387,
+      "ild_db_left_over_right": 7.58380944871588,
+      "finite": true,
+      "clipping": false
+    },
+    {
+      "blind_id": "A",
+      "raw_azimuth": 0.0,
+      "output_file": "evidence\\T001\\T001-G\\audio\\t001g_A.wav",
+      "sha256": "3CD6992520F8E2F5C050AEE8DA6750C94A3F2D082F46630D31FD0462AFA8145B",
+      "peak": 0.079160675406456,
+      "overall_rms": 0.015059002772514103,
+      "left_rms": 0.014345245598020875,
+      "right_rms": 0.015740427495390258,
+      "ild_db_left_over_right": -0.8061707045246824,
+      "finite": true,
+      "clipping": false
+    },
+    {
+      "blind_id": "D",
+      "raw_azimuth": 0.375,
+      "output_file": "evidence\\T001\\T001-G\\audio\\t001g_D.wav",
+      "sha256": "DE68FCE8F053F76AEED0E72F622A516A373F9D6F70BCC6AABB5AB26A0311F87E",
+      "peak": 0.11599354445934296,
+      "overall_rms": 0.01962512409834907,
+      "left_rms": 0.025331048248062475,
+      "right_rms": 0.011341471968202966,
+      "ild_db_left_over_right": 6.979674768086327,
+      "finite": true,
+      "clipping": false
+    }
+  ],
+  "validations": {
+    "eight_audio_files_created": true,
+    "all_outputs_finite": true,
+    "all_outputs_non_silent": true,
+    "no_clipping": true,
+    "all_eight_outputs_distinct": true
+  },
+  "blind_listening_sheet": "evidence\\T001\\T001-G\\t001g_blind_listening_sheet.json",
+  "calibration_key": "evidence\\T001\\T001-G\\t001g_calibration_key.json"
+}

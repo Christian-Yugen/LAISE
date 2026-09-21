@@ -1,0 +1,164 @@
+{
+  "test_id": "T001-K3",
+  "design": "ABX FRONT vs BACK",
+  "A": {
+    "label": "FRONT",
+    "file": "A_FRONT.wav",
+    "azimuth_deg": 0.0
+  },
+  "B": {
+    "label": "BACK",
+    "file": "B_BACK.wav",
+    "azimuth_deg": 180.0
+  },
+  "instructions": [
+    "Use the same headphones and listening configuration for the whole test.",
+    "First complete K2 guided training and repeat the labelled references as needed.",
+    "In K3, A is the known FRONT reference and B is the known BACK reference.",
+    "For each X file, decide only whether X matches A or B.",
+    "Do not open PRIVATE/abx_key.json before all answers are recorded.",
+    "Do not use waveform editors, hashes, file comparison tools, or metadata to answer."
+  ],
+  "trials": [
+    {
+      "trial": 1,
+      "file": "X01.wav",
+      "listener_answer_A_or_B": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "trial": 2,
+      "file": "X02.wav",
+      "listener_answer_A_or_B": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "trial": 3,
+      "file": "X03.wav",
+      "listener_answer_A_or_B": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "trial": 4,
+      "file": "X04.wav",
+      "listener_answer_A_or_B": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "trial": 5,
+      "file": "X05.wav",
+      "listener_answer_A_or_B": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "trial": 6,
+      "file": "X06.wav",
+      "listener_answer_A_or_B": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "trial": 7,
+      "file": "X07.wav",
+      "listener_answer_A_or_B": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "trial": 8,
+      "file": "X08.wav",
+      "listener_answer_A_or_B": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "trial": 9,
+      "file": "X09.wav",
+      "listener_answer_A_or_B": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "trial": 10,
+      "file": "X10.wav",
+      "listener_answer_A_or_B": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "trial": 11,
+      "file": "X11.wav",
+      "listener_answer_A_or_B": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "trial": 12,
+      "file": "X12.wav",
+      "listener_answer_A_or_B": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "trial": 13,
+      "file": "X13.wav",
+      "listener_answer_A_or_B": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "trial": 14,
+      "file": "X14.wav",
+      "listener_answer_A_or_B": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "trial": 15,
+      "file": "X15.wav",
+      "listener_answer_A_or_B": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "trial": 16,
+      "file": "X16.wav",
+      "listener_answer_A_or_B": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "trial": 17,
+      "file": "X17.wav",
+      "listener_answer_A_or_B": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "trial": 18,
+      "file": "X18.wav",
+      "listener_answer_A_or_B": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "trial": 19,
+      "file": "X19.wav",
+      "listener_answer_A_or_B": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    },
+    {
+      "trial": 20,
+      "file": "X20.wav",
+      "listener_answer_A_or_B": null,
+      "confidence_0_to_5": null,
+      "notes": null
+    }
+  ]
+}

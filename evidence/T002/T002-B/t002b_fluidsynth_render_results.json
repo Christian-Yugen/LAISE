@@ -1,0 +1,90 @@
+{
+  "test_id": "T002-B",
+  "test_name": "FluidSynth MIDI to Dry WAV Validation",
+  "timestamp_utc": "2026-09-20T19:12:21.148640+00:00",
+  "result": "PASS",
+  "environment": {
+    "python_version": "3.12.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "fluidsynth_expected_version": "2.6.1",
+    "fluidsynth_version_output": "FluidSynth runtime version 2.6.1\nCopyright (C) 2000-2026 Peter Hanappe and others.\nDistributed under the LGPL license.\nSoundFont(R) is a registered trademark of Creative Technology Ltd.\n\nFluidSynth executable version 2.6.1\nSample type=float",
+    "target_sample_rate_hz": 48000
+  },
+  "input_midi": {
+    "path": "evidence\\T002\\T002-A\\t002a_procedural_midi.mid",
+    "size_bytes": 118,
+    "sha256": "3F011DA7BFD6C3026575765C95E14AAF2F8DB20450E2969B328128DFC6F7D7A0",
+    "expected_duration_seconds": 8.0
+  },
+  "soundfont": {
+    "asset_id": "LAISE-SF-TEST-0001",
+    "path": "assets\\soundfonts\\GeneralUser GS v1.471.sf2",
+    "filename": "GeneralUser GS v1.471.sf2",
+    "size_bytes": 31281186,
+    "sha256": "F45B6B4A68B6BF3D792FCBB6D7DE24DC701A0F89C5900A21EF3AAECE993B839A",
+    "governance_status": "TEST_ONLY",
+    "production_allowed": false
+  },
+  "render": {
+    "dry": true,
+    "reverb": false,
+    "chorus": false,
+    "command": [
+      "C:\\Projetos2026\\LAISE\\tools\\fluidsynth\\bin\\fluidsynth.exe",
+      "-i",
+      "-n",
+      "-R",
+      "0",
+      "-C",
+      "0",
+      "-r",
+      "48000",
+      "-F",
+      "C:\\Projetos2026\\LAISE\\evidence\\T002\\T002-B\\t002b_fluidsynth_dry.wav",
+      "-T",
+      "wav",
+      "-O",
+      "s16",
+      "C:\\Projetos2026\\LAISE\\assets\\soundfonts\\GeneralUser GS v1.471.sf2",
+      "C:\\Projetos2026\\LAISE\\evidence\\T002\\T002-A\\t002a_procedural_midi.mid"
+    ],
+    "return_code": 0,
+    "stdout": "FluidSynth runtime version 2.6.1\nCopyright (C) 2000-2026 Peter Hanappe and others.\nDistributed under the LGPL license.\nSoundFont(R) is a registered trademark of Creative Technology Ltd.\n\nRendering audio to file 'C:\\Projetos2026\\LAISE\\evidence\\T002\\T002-B\\t002b_fluidsynth_dry.wav'..",
+    "stderr": ""
+  },
+  "output_wav": {
+    "path": "evidence\\T002\\T002-B\\t002b_fluidsynth_dry.wav",
+    "size_bytes": 2086956,
+    "sha256": "7686FE1C4F92763F33A95E9A4D247DFD728CD67CA8614DE2B13DF6B0D5FF535B",
+    "channels": 2,
+    "sample_width_bytes": 2,
+    "sample_rate_hz": 48000,
+    "frame_count": 521728,
+    "duration_seconds": 10.869333333333334,
+    "compression": "NONE",
+    "peak_linear": 0.061065673828125,
+    "peak_dbfs": -24.284056926470132,
+    "rms_linear": 0.007738915396715332,
+    "rms_dbfs": -42.22639802207291,
+    "left_rms": 0.007210291091795669,
+    "right_rms": 0.008233670226976988,
+    "nonzero_samples": 821975,
+    "nonzero_ratio": 0.7877428468473994,
+    "finite_samples": true
+  },
+  "validations": {
+    "fluidsynth_version_correct": true,
+    "soundfont_size_correct": true,
+    "soundfont_sha256_correct": true,
+    "render_return_code_zero": true,
+    "wav_created": true,
+    "wav_not_empty": true,
+    "sample_rate_48000": true,
+    "stereo_output": true,
+    "pcm_output": true,
+    "duration_at_least_midi_duration": true,
+    "audio_not_silent": true,
+    "no_clipping": true,
+    "numerical_integrity": true
+  }
+}

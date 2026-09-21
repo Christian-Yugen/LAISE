@@ -1,0 +1,196 @@
+{
+  "test_id": "T001-K1",
+  "front": {
+    "azimuth_deg": 0.0,
+    "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-K\\K1_OBJECTIVE\\front_0deg.wav",
+    "sha256": "bfdbc7b146469b08566b88a01a6c9f84f187c241b7c0902aea8652843f90c915",
+    "plugin_state": {
+      "coordinate_system": "<pedalboard.AudioProcessorParameter name=\"Coordinate System\" discrete raw_value=1 value=\"Polar\" (2 valid string values)>",
+      "azimuth": "<pedalboard.AudioProcessorParameter name=\"Azimuth\" discrete raw_value=0.5 value=\"0.0 deg\" (1001 valid string values)>",
+      "elevation": "<pedalboard.AudioProcessorParameter name=\"Elevation\" discrete raw_value=0.5 value=\"0.0 deg\" (1001 valid string values)>",
+      "distance": "<pedalboard.AudioProcessorParameter name=\"Distance\" discrete raw_value=0.09699 value=\"3.0 m\" (300 valid string values)>",
+      "virtual_acoustics": "<pedalboard.AudioProcessorParameter name=\"Virtual Acoustics\" discrete raw_value=0 value=\"DirectSignal\" (48 valid string values)>",
+      "reflection": "<pedalboard.AudioProcessorParameter name=\"Reflection\" discrete raw_value=0 value=OFF boolean (\"False\" and \"True\")>",
+      "reverb": "<pedalboard.AudioProcessorParameter name=\"Reverb\" discrete raw_value=0 value=OFF boolean (\"False\" and \"True\")>"
+    },
+    "metrics": {
+      "peak": 0.07822667807340622,
+      "overall_rms": 0.01640952378511429,
+      "left_rms": 0.016828812658786774,
+      "right_rms": 0.015979237854480743,
+      "ild_db": 0.44994828888728877,
+      "lr_correlation": 0.9386156544880736,
+      "finite": true,
+      "no_clipping": true
+    },
+    "itd": {
+      "lag_samples_L_vs_R": 0,
+      "lag_microseconds_L_vs_R": 0.0,
+      "normalized_xcorr_at_best_lag": 0.9386156544880734,
+      "search_window_ms": 1.5
+    },
+    "spectral_bands": {
+      "80-250_Hz": {
+        "left_db": 14.229182085686379,
+        "right_db": 14.244523860544206,
+        "ild_db": -0.015341774857827062
+      },
+      "250-500_Hz": {
+        "left_db": 14.102052703962034,
+        "right_db": 13.89315168537405,
+        "ild_db": 0.2089010185879836
+      },
+      "500-1000_Hz": {
+        "left_db": 15.19944069500565,
+        "right_db": 14.478276874868794,
+        "ild_db": 0.7211638201368569
+      },
+      "1000-2000_Hz": {
+        "left_db": 12.718028504631157,
+        "right_db": 12.110239586028655,
+        "ild_db": 0.6077889186025018
+      },
+      "2000-4000_Hz": {
+        "left_db": 18.722347936286667,
+        "right_db": 18.699660604927676,
+        "ild_db": 0.02268733135899126
+      },
+      "4000-8000_Hz": {
+        "left_db": 16.033479085122163,
+        "right_db": 15.588337952394888,
+        "ild_db": 0.44514113272727585
+      },
+      "8000-16000_Hz": {
+        "left_db": 14.182035388571737,
+        "right_db": 13.620649639752074,
+        "ild_db": 0.5613857488196636
+      },
+      "16000-22000_Hz": {
+        "left_db": 8.740990210907066,
+        "right_db": 7.319328236468204,
+        "ild_db": 1.4216619744388623
+      }
+    }
+  },
+  "back": {
+    "azimuth_deg": 180.0,
+    "wav": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-K\\K1_OBJECTIVE\\back_180deg.wav",
+    "sha256": "b50a7803501fcd7594f5146f74c05665e580b15051f69e98563c603ce2b9e5ba",
+    "plugin_state": {
+      "coordinate_system": "<pedalboard.AudioProcessorParameter name=\"Coordinate System\" discrete raw_value=1 value=\"Polar\" (2 valid string values)>",
+      "azimuth": "<pedalboard.AudioProcessorParameter name=\"Azimuth\" discrete raw_value=1 value=\"180.0 deg\" (1001 valid string values)>",
+      "elevation": "<pedalboard.AudioProcessorParameter name=\"Elevation\" discrete raw_value=0.5 value=\"0.0 deg\" (1001 valid string values)>",
+      "distance": "<pedalboard.AudioProcessorParameter name=\"Distance\" discrete raw_value=0.09699 value=\"3.0 m\" (300 valid string values)>",
+      "virtual_acoustics": "<pedalboard.AudioProcessorParameter name=\"Virtual Acoustics\" discrete raw_value=0 value=\"DirectSignal\" (48 valid string values)>",
+      "reflection": "<pedalboard.AudioProcessorParameter name=\"Reflection\" discrete raw_value=0 value=OFF boolean (\"False\" and \"True\")>",
+      "reverb": "<pedalboard.AudioProcessorParameter name=\"Reverb\" discrete raw_value=0 value=OFF boolean (\"False\" and \"True\")>"
+    },
+    "metrics": {
+      "peak": 0.06599463522434235,
+      "overall_rms": 0.013249550946056843,
+      "left_rms": 0.012440306134521961,
+      "right_rms": 0.014012137427926064,
+      "ild_db": -1.0334664080054174,
+      "lr_correlation": 0.604479246749604,
+      "finite": true,
+      "no_clipping": true
+    },
+    "itd": {
+      "lag_samples_L_vs_R": 1,
+      "lag_microseconds_L_vs_R": 20.833333333333332,
+      "normalized_xcorr_at_best_lag": 0.8875662379598314,
+      "search_window_ms": 1.5
+    },
+    "spectral_bands": {
+      "80-250_Hz": {
+        "left_db": 14.077474454641816,
+        "right_db": 14.160680321631261,
+        "ild_db": -0.0832058669894451
+      },
+      "250-500_Hz": {
+        "left_db": 13.81719182951263,
+        "right_db": 13.885301900454854,
+        "ild_db": -0.06811007094222354
+      },
+      "500-1000_Hz": {
+        "left_db": 15.744162121513085,
+        "right_db": 15.905527013897704,
+        "ild_db": -0.16136489238461849
+      },
+      "1000-2000_Hz": {
+        "left_db": 11.94133296350609,
+        "right_db": 12.18206283445822,
+        "ild_db": -0.24072987095212994
+      },
+      "2000-4000_Hz": {
+        "left_db": 15.183074381695022,
+        "right_db": 15.678383049864607,
+        "ild_db": -0.4953086681695851
+      },
+      "4000-8000_Hz": {
+        "left_db": 10.296723358912821,
+        "right_db": 11.217134528143138,
+        "ild_db": -0.9204111692303165
+      },
+      "8000-16000_Hz": {
+        "left_db": 13.398993550888605,
+        "right_db": 14.860287489573068,
+        "ild_db": -1.461293938684463
+      },
+      "16000-22000_Hz": {
+        "left_db": -8.543792496230168,
+        "right_db": -8.416895271468256,
+        "ild_db": -0.1268972247619118
+      }
+    }
+  },
+  "front_vs_back": {
+    "sample_rms_difference": 0.020316748263115064,
+    "difference_vs_mean_signal_rms_ratio": 1.3700189769297406,
+    "flattened_cosine_similarity": 0.07371221482753754,
+    "sample_identical": false,
+    "allclose_1e-7": false
+  },
+  "spectral_band_differences": {
+    "80-250_Hz": {
+      "front_minus_back_left_db": 0.15170763104456242,
+      "front_minus_back_right_db": 0.08384353891294438,
+      "front_minus_back_ild_db": 0.06786409213161804
+    },
+    "250-500_Hz": {
+      "front_minus_back_left_db": 0.28486087444940367,
+      "front_minus_back_right_db": 0.007849784919196523,
+      "front_minus_back_ild_db": 0.27701108953020714
+    },
+    "500-1000_Hz": {
+      "front_minus_back_left_db": -0.5447214265074347,
+      "front_minus_back_right_db": -1.42725013902891,
+      "front_minus_back_ild_db": 0.8825287125214754
+    },
+    "1000-2000_Hz": {
+      "front_minus_back_left_db": 0.7766955411250667,
+      "front_minus_back_right_db": -0.07182324842956511,
+      "front_minus_back_ild_db": 0.8485187895546318
+    },
+    "2000-4000_Hz": {
+      "front_minus_back_left_db": 3.539273554591645,
+      "front_minus_back_right_db": 3.021277555063069,
+      "front_minus_back_ild_db": 0.5179959995285763
+    },
+    "4000-8000_Hz": {
+      "front_minus_back_left_db": 5.736755726209342,
+      "front_minus_back_right_db": 4.37120342425175,
+      "front_minus_back_ild_db": 1.3655523019575924
+    },
+    "8000-16000_Hz": {
+      "front_minus_back_left_db": 0.7830418376831325,
+      "front_minus_back_right_db": -1.2396378498209941,
+      "front_minus_back_ild_db": 2.0226796875041266
+    },
+    "16000-22000_Hz": {
+      "front_minus_back_left_db": 17.284782707137232,
+      "front_minus_back_right_db": 15.73622350793646,
+      "front_minus_back_ild_db": 1.5485591992007741
+    }
+  }
+}

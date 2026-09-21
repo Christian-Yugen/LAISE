@@ -1,0 +1,118 @@
+{
+  "test_id": "T001-D",
+  "test_name": "Cardinal Spatial Positions",
+  "status": "PASS",
+  "sample_rate_hz": 48000,
+  "duration_seconds": 5.0,
+  "source": {
+    "type": "deterministic broadband noise",
+    "random_seed": 20260920,
+    "amplitude": 0.12,
+    "input_layout": "dual-mono stereo"
+  },
+  "plugin": {
+    "name": "dearVR PRO 2",
+    "manufacturer": "Dear Reality",
+    "identifier": "VST3-dearVR PRO 2-66a6aaee-d73d6aaa",
+    "latency_samples": 1024
+  },
+  "mapping_status": "experimental_not_canonical",
+  "results": [
+    {
+      "position": "front",
+      "angle_degrees": 0.0,
+      "azimuth_raw": 0.5,
+      "elevation_raw": 0.5,
+      "distance_raw": 0.09698997437953949,
+      "output_file": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-D\\t001d_front_000.wav",
+      "output_shape": [
+        2,
+        240000
+      ],
+      "peak_overall": 0.10559098422527313,
+      "left_peak": 0.10559098422527313,
+      "right_peak": 0.09733989834785461,
+      "left_rms": 0.021914910525083542,
+      "right_rms": 0.020945636555552483,
+      "ild_db_left_over_right": 0.3929227673536511,
+      "mean_abs_left_right_difference": 0.011009708978235722,
+      "left_right_correlation": 0.7917130135666025,
+      "mean_abs_output_input_difference": 0.025338314473628998,
+      "sha256": "35e6c81947ad2ea606dcfc6c9042abd2169a3969d25d3e08aab16cf9451ebc94"
+    },
+    {
+      "position": "right",
+      "angle_degrees": 90.0,
+      "azimuth_raw": 0.75,
+      "elevation_raw": 0.5,
+      "distance_raw": 0.09698997437953949,
+      "output_file": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-D\\t001d_right_090.wav",
+      "output_shape": [
+        2,
+        240000
+      ],
+      "peak_overall": 0.17110876739025116,
+      "left_peak": 0.05623473972082138,
+      "right_peak": 0.17110876739025116,
+      "left_rms": 0.011324855498969555,
+      "right_rms": 0.035718634724617004,
+      "ild_db_left_over_right": -9.977243623286356,
+      "mean_abs_left_right_difference": 0.02993793599307537,
+      "left_right_correlation": -0.01814061523598923,
+      "mean_abs_output_input_difference": 0.027339909225702286,
+      "sha256": "0ec8c730ae918be9ab693c09ebd9d872a0f6b606752723c7c24aad11d1d9cd2a"
+    },
+    {
+      "position": "back",
+      "angle_degrees": 180.0,
+      "azimuth_raw": 1.0,
+      "elevation_raw": 0.5,
+      "distance_raw": 0.09698997437953949,
+      "output_file": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-D\\t001d_back_180.wav",
+      "output_shape": [
+        2,
+        240000
+      ],
+      "peak_overall": 0.09504802525043488,
+      "left_peak": 0.08101145923137665,
+      "right_peak": 0.09504802525043488,
+      "left_rms": 0.017151277512311935,
+      "right_rms": 0.01879088208079338,
+      "ild_db_left_over_right": -0.7930138643404487,
+      "mean_abs_left_right_difference": 0.01465233601629734,
+      "left_right_correlation": 0.4773202590833027,
+      "mean_abs_output_input_difference": 0.023524902760982513,
+      "sha256": "9f04a354fcf613d300a9c0060588dd98848d6d8b450c8f7ed56cca6f1736945a"
+    },
+    {
+      "position": "left",
+      "angle_degrees": -90.0,
+      "azimuth_raw": 0.25,
+      "elevation_raw": 0.5,
+      "distance_raw": 0.09698997437953949,
+      "output_file": "C:\\Projetos2026\\LAISE\\evidence\\T001\\T001-D\\t001d_left_minus090.wav",
+      "output_shape": [
+        2,
+        240000
+      ],
+      "peak_overall": 0.18763253092765808,
+      "left_peak": 0.18763253092765808,
+      "right_peak": 0.05373735725879669,
+      "left_rms": 0.038580272346735,
+      "right_rms": 0.011175824329257011,
+      "ild_db_left_over_right": 10.76171445016957,
+      "mean_abs_left_right_difference": 0.032159652560949326,
+      "left_right_correlation": -0.02604688958834325,
+      "mean_abs_output_input_difference": 0.028277724981307983,
+      "sha256": "ecb7c5f6f199333ba9533566ad491e31cc4dca9904dc08cc4a2d314e73044ec4"
+    }
+  ],
+  "pairwise_differences": {
+    "front_vs_right": 0.02550581470131874,
+    "front_vs_back": 0.019383544102311134,
+    "front_vs_left": 0.02596384659409523,
+    "right_vs_back": 0.022057678550481796,
+    "right_vs_left": 0.02961897850036621,
+    "back_vs_left": 0.02293301932513714
+  }
+}
