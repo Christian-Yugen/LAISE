@@ -1,0 +1,117 @@
+{
+  "test": "T010",
+  "engine": "LAISE Production Instrument Asset Pipeline v0.1",
+  "objective_result": "PASS",
+  "asset_verification": {
+    "asset_id": "LAISE-SF-TEST-0001",
+    "path": "C:\\Projetos2026\\LAISE\\assets\\soundfonts\\GeneralUser GS v1.471.sf2",
+    "exists": true,
+    "expected_sha256": "f45b6b4a68b6bf3d792fcbb6d7de24dc701a0f89c5900a21ef3aaece993b839a",
+    "actual_sha256": "f45b6b4a68b6bf3d792fcbb6d7de24dc701a0f89c5900a21ef3aaece993b839a",
+    "hash_match": true,
+    "status": "TEST_ONLY",
+    "license_state": "UNVERIFIED"
+  },
+  "development_routes": {
+    "piano": {
+      "role": "piano",
+      "requested_articulation": "sustain",
+      "resolved_articulation": "performance_simulated",
+      "asset_id": "LAISE-SF-TEST-0001",
+      "renderer": "fluidsynth",
+      "program": 0,
+      "channel": 0,
+      "articulation_mode": "performance_simulation",
+      "path": "C:\\Projetos2026\\LAISE\\assets\\soundfonts\\GeneralUser GS v1.471.sf2"
+    },
+    "strings": {
+      "role": "strings",
+      "requested_articulation": "legato",
+      "resolved_articulation": "performance_simulated",
+      "asset_id": "LAISE-SF-TEST-0001",
+      "renderer": "fluidsynth",
+      "program": 48,
+      "channel": 0,
+      "articulation_mode": "performance_simulation",
+      "path": "C:\\Projetos2026\\LAISE\\assets\\soundfonts\\GeneralUser GS v1.471.sf2"
+    },
+    "brass": {
+      "role": "brass",
+      "requested_articulation": "marcato",
+      "resolved_articulation": "performance_simulated",
+      "asset_id": "LAISE-SF-TEST-0001",
+      "renderer": "fluidsynth",
+      "program": 61,
+      "channel": 0,
+      "articulation_mode": "performance_simulation",
+      "path": "C:\\Projetos2026\\LAISE\\assets\\soundfonts\\GeneralUser GS v1.471.sf2"
+    },
+    "percussion": {
+      "role": "percussion",
+      "requested_articulation": "hit",
+      "resolved_articulation": "performance_simulated",
+      "asset_id": "LAISE-SF-TEST-0001",
+      "renderer": "fluidsynth",
+      "program": 0,
+      "channel": 9,
+      "articulation_mode": "performance_simulation",
+      "path": "C:\\Projetos2026\\LAISE\\assets\\soundfonts\\GeneralUser GS v1.471.sf2"
+    },
+    "countermelody": {
+      "role": "countermelody",
+      "requested_articulation": "legato",
+      "resolved_articulation": "performance_simulated",
+      "asset_id": "LAISE-SF-TEST-0001",
+      "renderer": "fluidsynth",
+      "program": 40,
+      "channel": 0,
+      "articulation_mode": "performance_simulation",
+      "path": "C:\\Projetos2026\\LAISE\\assets\\soundfonts\\GeneralUser GS v1.471.sf2"
+    }
+  },
+  "production_gate": {
+    "blocked": true,
+    "reason": "LAISE asset gate blocked production render/release for: LAISE-SF-TEST-0001"
+  },
+  "renderer_command_example": [
+    "C:\\Projetos2026\\LAISE\\tools\\fluidsynth\\bin\\fluidsynth.exe",
+    "-ni",
+    "-g",
+    "0.8",
+    "-r",
+    "48000",
+    "-F",
+    "C:\\Projetos2026\\LAISE\\evidence\\T010\\example.wav",
+    "C:\\Projetos2026\\LAISE\\assets\\soundfonts\\GeneralUser GS v1.471.sf2",
+    "C:\\Projetos2026\\LAISE\\evidence\\T010\\example.mid"
+  ],
+  "provenance_snapshot": [
+    {
+      "asset_id": "LAISE-SF-TEST-0001",
+      "name": "GeneralUser GS",
+      "version": "1.471",
+      "renderer": "fluidsynth",
+      "status": "TEST_ONLY",
+      "license_state": "UNVERIFIED",
+      "license_name": "",
+      "license_note": "Development asset only. Provenance/licensing not yet approved for LAISE production release.",
+      "source": "Existing LAISE development asset",
+      "path": "C:\\Projetos2026\\LAISE\\assets\\soundfonts\\GeneralUser GS v1.471.sf2",
+      "sha256": "f45b6b4a68b6bf3d792fcbb6d7de24dc701a0f89c5900a21ef3aaece993b839a",
+      "hash_verified": true
+    }
+  ],
+  "checks": {
+    "manifest_loaded": true,
+    "asset_file_exists": true,
+    "asset_hash_verified": true,
+    "test_asset_development_allowed": true,
+    "test_asset_production_blocked": true,
+    "router_resolves_five_roles": true,
+    "articulation_fallback_explicit": true,
+    "renderer_adapter_selected": true,
+    "renderer_command_constructed": true,
+    "provenance_snapshot_created": true
+  },
+  "next_gate": "register first PRODUCTION_APPROVED orchestral asset(s)"
+}

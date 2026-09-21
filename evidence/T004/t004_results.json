@@ -1,0 +1,20 @@
+{
+  "test_id": "T004",
+  "objective_result": "PASS",
+  "perceptual_result": "PENDING",
+  "duration_seconds": 87.136,
+  "pre_normalization_peak": 0.26083678007125854,
+  "normalization_gain": 1.0,
+  "validations": {
+    "four_midi": true,
+    "four_dry_stems": true,
+    "four_spatial_stems": true,
+    "five_sections": true,
+    "all_section_aware": true,
+    "mix_finite": true,
+    "mix_non_silent": true,
+    "mix_no_clipping": true
+  },
+  "mix": "C:\\Projetos2026\\LAISE\\evidence\\T004\\laise_t004_musical_spatial_mix.wav",
+  "scene": "C:\\Projetos2026\\LAISE\\evidence\\T004\\spatial_scene_v02.json"
+}

@@ -1,0 +1,726 @@
+{
+  "test": "T006",
+  "engine": "LAISE Musical Intelligence / Phrase Engine v0.1",
+  "seed": 20260924,
+  "motif": [
+    0,
+    2,
+    4,
+    2,
+    1,
+    0,
+    -2,
+    1
+  ],
+  "transformations": {
+    "transpose_up_2": [
+      2,
+      4,
+      6,
+      4,
+      3,
+      2,
+      0,
+      3
+    ],
+    "inversion": [
+      0,
+      -2,
+      -4,
+      -2,
+      -1,
+      0,
+      2,
+      -1
+    ],
+    "sequence_fragment": [
+      0,
+      2,
+      4,
+      2,
+      2,
+      4,
+      6,
+      4,
+      4,
+      6,
+      8,
+      6
+    ],
+    "answer": [
+      0,
+      4,
+      2,
+      -1
+    ]
+  },
+  "phrases": [
+    {
+      "phrase_id": "P1",
+      "function": "statement",
+      "bars": 2,
+      "tension_start": 0.22,
+      "tension_end": 0.52,
+      "notes": [
+        {
+          "beat": 0.0,
+          "duration": 0.9,
+          "degree": 0,
+          "velocity": 52,
+          "articulation": "legato"
+        },
+        {
+          "beat": 1.0,
+          "duration": 0.65,
+          "degree": 2,
+          "velocity": 59,
+          "articulation": "legato"
+        },
+        {
+          "beat": 1.75,
+          "duration": 0.65,
+          "degree": 4,
+          "velocity": 58,
+          "articulation": "legato"
+        },
+        {
+          "beat": 2.5,
+          "duration": 1.25,
+          "degree": 2,
+          "velocity": 63,
+          "articulation": "legato"
+        },
+        {
+          "beat": 4.0,
+          "duration": 0.9,
+          "degree": 1,
+          "velocity": 63,
+          "articulation": "legato"
+        },
+        {
+          "beat": 5.0,
+          "duration": 0.7,
+          "degree": 0,
+          "velocity": 59,
+          "articulation": "legato"
+        },
+        {
+          "beat": 6.0,
+          "duration": 0.9,
+          "degree": -2,
+          "velocity": 62,
+          "articulation": "legato"
+        },
+        {
+          "beat": 7.0,
+          "duration": 0.75,
+          "degree": 1,
+          "velocity": 59,
+          "articulation": "legato"
+        }
+      ],
+      "roles": [
+        {
+          "role": "piano",
+          "relation": "present",
+          "density": 0.45,
+          "register": "mid",
+          "anticipation_beats": 0,
+          "release_beats": 0.15,
+          "dynamic_scale": 0.72
+        },
+        {
+          "role": "strings",
+          "relation": "sustain",
+          "density": 0.18,
+          "register": "mid_high",
+          "anticipation_beats": 0,
+          "release_beats": 0.45,
+          "dynamic_scale": 0.38
+        },
+        {
+          "role": "bass",
+          "relation": "root_support",
+          "density": 0.16,
+          "register": "low",
+          "anticipation_beats": 0,
+          "release_beats": 0.2,
+          "dynamic_scale": 0.34
+        }
+      ],
+      "expressive_events": [
+        {
+          "beat": 0.0,
+          "timing_offset_ticks": -3,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 52
+        },
+        {
+          "beat": 1.0,
+          "timing_offset_ticks": 9,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 56
+        },
+        {
+          "beat": 1.75,
+          "timing_offset_ticks": 10,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 59
+        },
+        {
+          "beat": 2.5,
+          "timing_offset_ticks": 8,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 62
+        },
+        {
+          "beat": 4.0,
+          "timing_offset_ticks": 2,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 63
+        },
+        {
+          "beat": 5.0,
+          "timing_offset_ticks": -4,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 62
+        },
+        {
+          "beat": 6.0,
+          "timing_offset_ticks": -10,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 61
+        },
+        {
+          "beat": 7.0,
+          "timing_offset_ticks": -5,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 59
+        }
+      ]
+    },
+    {
+      "phrase_id": "P2",
+      "function": "response",
+      "bars": 2,
+      "tension_start": 0.48,
+      "tension_end": 0.26,
+      "notes": [
+        {
+          "beat": 0.0,
+          "duration": 0.7,
+          "degree": 0,
+          "velocity": 61,
+          "articulation": "legato"
+        },
+        {
+          "beat": 0.75,
+          "duration": 0.7,
+          "degree": 4,
+          "velocity": 63,
+          "articulation": "legato"
+        },
+        {
+          "beat": 1.5,
+          "duration": 0.85,
+          "degree": 2,
+          "velocity": 65,
+          "articulation": "legato"
+        },
+        {
+          "beat": 2.5,
+          "duration": 1.2,
+          "degree": 0,
+          "velocity": 63,
+          "articulation": "legato"
+        },
+        {
+          "beat": 4.0,
+          "duration": 0.7,
+          "degree": 2,
+          "velocity": 63,
+          "articulation": "legato"
+        },
+        {
+          "beat": 4.75,
+          "duration": 0.7,
+          "degree": 2,
+          "velocity": 62,
+          "articulation": "legato"
+        },
+        {
+          "beat": 5.5,
+          "duration": 0.9,
+          "degree": 0,
+          "velocity": 61,
+          "articulation": "legato"
+        },
+        {
+          "beat": 6.5,
+          "duration": 1.35,
+          "degree": -2,
+          "velocity": 56,
+          "articulation": "legato"
+        }
+      ],
+      "roles": [
+        {
+          "role": "piano",
+          "relation": "answer",
+          "density": 0.38,
+          "register": "mid",
+          "anticipation_beats": 0,
+          "release_beats": 0.2,
+          "dynamic_scale": 0.68
+        },
+        {
+          "role": "strings",
+          "relation": "counter_sustain",
+          "density": 0.28,
+          "register": "mid_high",
+          "anticipation_beats": -0.1,
+          "release_beats": 0.55,
+          "dynamic_scale": 0.48
+        },
+        {
+          "role": "bass",
+          "relation": "voice_lead",
+          "density": 0.22,
+          "register": "low",
+          "anticipation_beats": 0,
+          "release_beats": 0.25,
+          "dynamic_scale": 0.42
+        }
+      ],
+      "expressive_events": [
+        {
+          "beat": 0.0,
+          "timing_offset_ticks": 1,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 61
+        },
+        {
+          "beat": 0.75,
+          "timing_offset_ticks": 7,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 63
+        },
+        {
+          "beat": 1.5,
+          "timing_offset_ticks": 9,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 65
+        },
+        {
+          "beat": 2.5,
+          "timing_offset_ticks": 10,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 66
+        },
+        {
+          "beat": 4.0,
+          "timing_offset_ticks": -3,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 65
+        },
+        {
+          "beat": 4.75,
+          "timing_offset_ticks": -1,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 63
+        },
+        {
+          "beat": 5.5,
+          "timing_offset_ticks": -7,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 60
+        },
+        {
+          "beat": 6.5,
+          "timing_offset_ticks": -8,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 56
+        }
+      ]
+    },
+    {
+      "phrase_id": "P3",
+      "function": "development",
+      "bars": 2,
+      "tension_start": 0.48,
+      "tension_end": 0.84,
+      "notes": [
+        {
+          "beat": 0,
+          "duration": 0.46,
+          "degree": 2,
+          "velocity": 63,
+          "articulation": "accent"
+        },
+        {
+          "beat": 0.5,
+          "duration": 0.46,
+          "degree": 4,
+          "velocity": 67,
+          "articulation": "legato"
+        },
+        {
+          "beat": 1,
+          "duration": 0.46,
+          "degree": 6,
+          "velocity": 68,
+          "articulation": "legato"
+        },
+        {
+          "beat": 1.5,
+          "duration": 0.8,
+          "degree": 4,
+          "velocity": 71,
+          "articulation": "legato"
+        },
+        {
+          "beat": 2.5,
+          "duration": 0.46,
+          "degree": 4,
+          "velocity": 70,
+          "articulation": "accent"
+        },
+        {
+          "beat": 3,
+          "duration": 0.46,
+          "degree": 6,
+          "velocity": 71,
+          "articulation": "legato"
+        },
+        {
+          "beat": 3.5,
+          "duration": 0.46,
+          "degree": 8,
+          "velocity": 76,
+          "articulation": "legato"
+        },
+        {
+          "beat": 4,
+          "duration": 0.8,
+          "degree": 7,
+          "velocity": 74,
+          "articulation": "legato"
+        },
+        {
+          "beat": 5,
+          "duration": 0.46,
+          "degree": 5,
+          "velocity": 75,
+          "articulation": "accent"
+        },
+        {
+          "beat": 5.5,
+          "duration": 0.46,
+          "degree": 4,
+          "velocity": 73,
+          "articulation": "legato"
+        },
+        {
+          "beat": 6,
+          "duration": 0.8,
+          "degree": 3,
+          "velocity": 70,
+          "articulation": "legato"
+        },
+        {
+          "beat": 7,
+          "duration": 0.9,
+          "degree": 5,
+          "velocity": 71,
+          "articulation": "legato"
+        }
+      ],
+      "roles": [
+        {
+          "role": "piano",
+          "relation": "motif_fragment",
+          "density": 0.62,
+          "register": "mid_high",
+          "anticipation_beats": -0.05,
+          "release_beats": 0.12,
+          "dynamic_scale": 0.82
+        },
+        {
+          "role": "strings",
+          "relation": "expand",
+          "density": 0.56,
+          "register": "mid_high",
+          "anticipation_beats": -0.12,
+          "release_beats": 0.65,
+          "dynamic_scale": 0.76
+        },
+        {
+          "role": "bass",
+          "relation": "propel",
+          "density": 0.48,
+          "register": "low",
+          "anticipation_beats": 0,
+          "release_beats": 0.18,
+          "dynamic_scale": 0.67
+        },
+        {
+          "role": "ostinato",
+          "relation": "derive_rhythm",
+          "density": 0.68,
+          "register": "mid",
+          "anticipation_beats": 0,
+          "release_beats": 0.08,
+          "dynamic_scale": 0.6
+        },
+        {
+          "role": "percussion",
+          "relation": "punctuate",
+          "density": 0.46,
+          "register": "wide",
+          "anticipation_beats": 0,
+          "release_beats": 0.05,
+          "dynamic_scale": 0.68
+        },
+        {
+          "role": "brass",
+          "relation": "punctuate_peak",
+          "density": 0.24,
+          "register": "mid",
+          "anticipation_beats": 0,
+          "release_beats": 0.38,
+          "dynamic_scale": 0.58
+        }
+      ],
+      "expressive_events": [
+        {
+          "beat": 0,
+          "timing_offset_ticks": -5,
+          "duration_factor": 0.82,
+          "dynamic_velocity": 63
+        },
+        {
+          "beat": 0.5,
+          "timing_offset_ticks": 6,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 66
+        },
+        {
+          "beat": 1,
+          "timing_offset_ticks": 8,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 68
+        },
+        {
+          "beat": 1.5,
+          "timing_offset_ticks": 7,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 70
+        },
+        {
+          "beat": 2.5,
+          "timing_offset_ticks": 6,
+          "duration_factor": 0.82,
+          "dynamic_velocity": 72
+        },
+        {
+          "beat": 3,
+          "timing_offset_ticks": 7,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 74
+        },
+        {
+          "beat": 3.5,
+          "timing_offset_ticks": 2,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 74
+        },
+        {
+          "beat": 4,
+          "timing_offset_ticks": -1,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 74
+        },
+        {
+          "beat": 5,
+          "timing_offset_ticks": -10,
+          "duration_factor": 0.82,
+          "dynamic_velocity": 74
+        },
+        {
+          "beat": 5.5,
+          "timing_offset_ticks": -6,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 73
+        },
+        {
+          "beat": 6,
+          "timing_offset_ticks": -10,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 72
+        },
+        {
+          "beat": 7,
+          "timing_offset_ticks": -4,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 71
+        }
+      ]
+    },
+    {
+      "phrase_id": "P4",
+      "function": "resolution",
+      "bars": 2,
+      "tension_start": 0.62,
+      "tension_end": 0.14,
+      "notes": [
+        {
+          "beat": 0,
+          "duration": 0.9,
+          "degree": 0,
+          "velocity": 61,
+          "articulation": "legato"
+        },
+        {
+          "beat": 1,
+          "duration": 0.65,
+          "degree": 4,
+          "velocity": 60,
+          "articulation": "legato"
+        },
+        {
+          "beat": 1.75,
+          "duration": 0.65,
+          "degree": 2,
+          "velocity": 63,
+          "articulation": "legato"
+        },
+        {
+          "beat": 2.5,
+          "duration": 1.15,
+          "degree": 0,
+          "velocity": 63,
+          "articulation": "legato"
+        },
+        {
+          "beat": 4,
+          "duration": 0.85,
+          "degree": 2,
+          "velocity": 61,
+          "articulation": "legato"
+        },
+        {
+          "beat": 5,
+          "duration": 0.85,
+          "degree": 1,
+          "velocity": 59,
+          "articulation": "legato"
+        },
+        {
+          "beat": 6,
+          "duration": 0.85,
+          "degree": 0,
+          "velocity": 56,
+          "articulation": "legato"
+        },
+        {
+          "beat": 7,
+          "duration": 1.7,
+          "degree": 0,
+          "velocity": 52,
+          "articulation": "tenuto"
+        }
+      ],
+      "roles": [
+        {
+          "role": "piano",
+          "relation": "resolve",
+          "density": 0.34,
+          "register": "mid",
+          "anticipation_beats": 0,
+          "release_beats": 0.3,
+          "dynamic_scale": 0.58
+        },
+        {
+          "role": "strings",
+          "relation": "release",
+          "density": 0.32,
+          "register": "mid_high",
+          "anticipation_beats": -0.12,
+          "release_beats": 0.85,
+          "dynamic_scale": 0.5
+        },
+        {
+          "role": "bass",
+          "relation": "cadence",
+          "density": 0.2,
+          "register": "low",
+          "anticipation_beats": 0,
+          "release_beats": 0.4,
+          "dynamic_scale": 0.38
+        }
+      ],
+      "expressive_events": [
+        {
+          "beat": 0,
+          "timing_offset_ticks": -3,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 61
+        },
+        {
+          "beat": 1,
+          "timing_offset_ticks": 5,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 63
+        },
+        {
+          "beat": 1.75,
+          "timing_offset_ticks": 6,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 64
+        },
+        {
+          "beat": 2.5,
+          "timing_offset_ticks": 6,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 64
+        },
+        {
+          "beat": 4,
+          "timing_offset_ticks": 3,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 63
+        },
+        {
+          "beat": 5,
+          "timing_offset_ticks": -9,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 60
+        },
+        {
+          "beat": 6,
+          "timing_offset_ticks": -11,
+          "duration_factor": 1.08,
+          "dynamic_velocity": 56
+        },
+        {
+          "beat": 7,
+          "timing_offset_ticks": -2,
+          "duration_factor": 1.16,
+          "dynamic_velocity": 52
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "four_phrase_functions": true,
+    "development_has_more_events": true,
+    "development_increases_tension": true,
+    "resolution_reduces_tension": true,
+    "motif_transformations_distinct": true,
+    "voice_roles_change_by_phrase": true,
+    "expressive_timing_nonzero": true,
+    "articulation_changes_duration": true
+  },
+  "objective_result": "PASS",
+  "next_gate": "MUSIC-004 integration/perceptual comparison"
+}

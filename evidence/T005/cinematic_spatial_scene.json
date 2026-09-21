@@ -1,0 +1,683 @@
+{
+  "scene_version": "LAISE Cinematic Spatial v0.1",
+  "style": "Cinematic Epic",
+  "bpm": 86,
+  "duration_seconds": 137.62133333333333,
+  "sections": [
+    "Stillness",
+    "Awakening",
+    "Build",
+    "Acceleration",
+    "EpicClimax",
+    "Aftermath"
+  ],
+  "distance_policy": "FIXED_CALIBRATED_3M",
+  "sources": [
+    {
+      "source_id": "strings",
+      "trajectory": "cinematic_section_aware",
+      "gain_db": -7,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -20.16,
+          "elevation_deg": 10.2,
+          "distance_m": 3.0,
+          "section": "Stillness",
+          "energy": 0.22
+        },
+        {
+          "time_seconds": 11.468444444444444,
+          "azimuth_deg": 20.16,
+          "elevation_deg": 10.2,
+          "distance_m": 3.0,
+          "section": "Stillness",
+          "energy": 0.22
+        },
+        {
+          "time_seconds": 22.936888888888888,
+          "azimuth_deg": -24.64,
+          "elevation_deg": 11.8,
+          "distance_m": 3.0,
+          "section": "Awakening",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 34.40533333333333,
+          "azimuth_deg": 24.64,
+          "elevation_deg": 11.8,
+          "distance_m": 3.0,
+          "section": "Awakening",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 45.873777777777775,
+          "azimuth_deg": -30.24,
+          "elevation_deg": 13.8,
+          "distance_m": 3.0,
+          "section": "Build",
+          "energy": 0.58
+        },
+        {
+          "time_seconds": 63.07644444444444,
+          "azimuth_deg": 30.24,
+          "elevation_deg": 13.8,
+          "distance_m": 3.0,
+          "section": "Build",
+          "energy": 0.58
+        },
+        {
+          "time_seconds": 80.2791111111111,
+          "azimuth_deg": 35.84,
+          "elevation_deg": 15.8,
+          "distance_m": 3.0,
+          "section": "Acceleration",
+          "energy": 0.78
+        },
+        {
+          "time_seconds": 91.74755555555555,
+          "azimuth_deg": -35.84,
+          "elevation_deg": 15.8,
+          "distance_m": 3.0,
+          "section": "Acceleration",
+          "energy": 0.78
+        },
+        {
+          "time_seconds": 103.216,
+          "azimuth_deg": 42.0,
+          "elevation_deg": 18.0,
+          "distance_m": 3.0,
+          "section": "EpicClimax",
+          "energy": 1.0
+        },
+        {
+          "time_seconds": 114.68444444444444,
+          "azimuth_deg": -42.0,
+          "elevation_deg": 18.0,
+          "distance_m": 3.0,
+          "section": "EpicClimax",
+          "energy": 1.0
+        },
+        {
+          "time_seconds": 126.15288888888888,
+          "azimuth_deg": 21.0,
+          "elevation_deg": 10.5,
+          "distance_m": 3.0,
+          "section": "Aftermath",
+          "energy": 0.25
+        },
+        {
+          "time_seconds": 131.8871111111111,
+          "azimuth_deg": -21.0,
+          "elevation_deg": 10.5,
+          "distance_m": 3.0,
+          "section": "Aftermath",
+          "energy": 0.25
+        },
+        {
+          "time_seconds": 137.62133333333333,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Aftermath",
+          "energy": 0.15
+        }
+      ]
+    },
+    {
+      "source_id": "brass",
+      "trajectory": "cinematic_section_aware",
+      "gain_db": -9,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -15.280000000000001,
+          "elevation_deg": 5.54,
+          "distance_m": 3.0,
+          "section": "Stillness",
+          "energy": 0.22
+        },
+        {
+          "time_seconds": 11.468444444444444,
+          "azimuth_deg": 15.280000000000001,
+          "elevation_deg": 5.54,
+          "distance_m": 3.0,
+          "section": "Stillness",
+          "energy": 0.22
+        },
+        {
+          "time_seconds": 22.936888888888888,
+          "azimuth_deg": -19.12,
+          "elevation_deg": 6.66,
+          "distance_m": 3.0,
+          "section": "Awakening",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 34.40533333333333,
+          "azimuth_deg": 19.12,
+          "elevation_deg": 6.66,
+          "distance_m": 3.0,
+          "section": "Awakening",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 45.873777777777775,
+          "azimuth_deg": -23.919999999999998,
+          "elevation_deg": 8.059999999999999,
+          "distance_m": 3.0,
+          "section": "Build",
+          "energy": 0.58
+        },
+        {
+          "time_seconds": 63.07644444444444,
+          "azimuth_deg": 23.919999999999998,
+          "elevation_deg": 8.059999999999999,
+          "distance_m": 3.0,
+          "section": "Build",
+          "energy": 0.58
+        },
+        {
+          "time_seconds": 80.2791111111111,
+          "azimuth_deg": 28.72,
+          "elevation_deg": 9.46,
+          "distance_m": 3.0,
+          "section": "Acceleration",
+          "energy": 0.78
+        },
+        {
+          "time_seconds": 91.74755555555555,
+          "azimuth_deg": -28.72,
+          "elevation_deg": 9.46,
+          "distance_m": 3.0,
+          "section": "Acceleration",
+          "energy": 0.78
+        },
+        {
+          "time_seconds": 103.216,
+          "azimuth_deg": 34.0,
+          "elevation_deg": 11.0,
+          "distance_m": 3.0,
+          "section": "EpicClimax",
+          "energy": 1.0
+        },
+        {
+          "time_seconds": 114.68444444444444,
+          "azimuth_deg": -34.0,
+          "elevation_deg": 11.0,
+          "distance_m": 3.0,
+          "section": "EpicClimax",
+          "energy": 1.0
+        },
+        {
+          "time_seconds": 126.15288888888888,
+          "azimuth_deg": 16.0,
+          "elevation_deg": 5.75,
+          "distance_m": 3.0,
+          "section": "Aftermath",
+          "energy": 0.25
+        },
+        {
+          "time_seconds": 131.8871111111111,
+          "azimuth_deg": -16.0,
+          "elevation_deg": 5.75,
+          "distance_m": 3.0,
+          "section": "Aftermath",
+          "energy": 0.25
+        },
+        {
+          "time_seconds": 137.62133333333333,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Aftermath",
+          "energy": 0.15
+        }
+      ]
+    },
+    {
+      "source_id": "bass",
+      "trajectory": "cinematic_section_aware",
+      "gain_db": -4,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -3,
+          "elevation_deg": -4,
+          "distance_m": 3.0,
+          "section": "Stillness",
+          "energy": 0.22
+        },
+        {
+          "time_seconds": 11.468444444444444,
+          "azimuth_deg": 3,
+          "elevation_deg": -4,
+          "distance_m": 3.0,
+          "section": "Stillness",
+          "energy": 0.22
+        },
+        {
+          "time_seconds": 22.936888888888888,
+          "azimuth_deg": -3,
+          "elevation_deg": -4,
+          "distance_m": 3.0,
+          "section": "Awakening",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 34.40533333333333,
+          "azimuth_deg": 3,
+          "elevation_deg": -4,
+          "distance_m": 3.0,
+          "section": "Awakening",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 45.873777777777775,
+          "azimuth_deg": -3,
+          "elevation_deg": -4,
+          "distance_m": 3.0,
+          "section": "Build",
+          "energy": 0.58
+        },
+        {
+          "time_seconds": 63.07644444444444,
+          "azimuth_deg": 3,
+          "elevation_deg": -4,
+          "distance_m": 3.0,
+          "section": "Build",
+          "energy": 0.58
+        },
+        {
+          "time_seconds": 80.2791111111111,
+          "azimuth_deg": 3,
+          "elevation_deg": -4,
+          "distance_m": 3.0,
+          "section": "Acceleration",
+          "energy": 0.78
+        },
+        {
+          "time_seconds": 91.74755555555555,
+          "azimuth_deg": -3,
+          "elevation_deg": -4,
+          "distance_m": 3.0,
+          "section": "Acceleration",
+          "energy": 0.78
+        },
+        {
+          "time_seconds": 103.216,
+          "azimuth_deg": 3,
+          "elevation_deg": -4,
+          "distance_m": 3.0,
+          "section": "EpicClimax",
+          "energy": 1.0
+        },
+        {
+          "time_seconds": 114.68444444444444,
+          "azimuth_deg": -3,
+          "elevation_deg": -4,
+          "distance_m": 3.0,
+          "section": "EpicClimax",
+          "energy": 1.0
+        },
+        {
+          "time_seconds": 126.15288888888888,
+          "azimuth_deg": 3,
+          "elevation_deg": -4,
+          "distance_m": 3.0,
+          "section": "Aftermath",
+          "energy": 0.25
+        },
+        {
+          "time_seconds": 131.8871111111111,
+          "azimuth_deg": -3,
+          "elevation_deg": -4,
+          "distance_m": 3.0,
+          "section": "Aftermath",
+          "energy": 0.25
+        },
+        {
+          "time_seconds": 137.62133333333333,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Aftermath",
+          "energy": 0.15
+        }
+      ]
+    },
+    {
+      "source_id": "epic_percussion",
+      "trajectory": "cinematic_section_aware",
+      "gain_db": -6,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -27.240000000000002,
+          "elevation_deg": 3.54,
+          "distance_m": 3.0,
+          "section": "Stillness",
+          "energy": 0.22
+        },
+        {
+          "time_seconds": 11.468444444444444,
+          "azimuth_deg": 27.240000000000002,
+          "elevation_deg": 3.54,
+          "distance_m": 3.0,
+          "section": "Stillness",
+          "energy": 0.22
+        },
+        {
+          "time_seconds": 22.936888888888888,
+          "azimuth_deg": -33.96,
+          "elevation_deg": 4.66,
+          "distance_m": 3.0,
+          "section": "Awakening",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 34.40533333333333,
+          "azimuth_deg": 33.96,
+          "elevation_deg": 4.66,
+          "distance_m": 3.0,
+          "section": "Awakening",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 45.873777777777775,
+          "azimuth_deg": -42.36,
+          "elevation_deg": 6.06,
+          "distance_m": 3.0,
+          "section": "Build",
+          "energy": 0.58
+        },
+        {
+          "time_seconds": 63.07644444444444,
+          "azimuth_deg": 42.36,
+          "elevation_deg": 6.06,
+          "distance_m": 3.0,
+          "section": "Build",
+          "energy": 0.58
+        },
+        {
+          "time_seconds": 80.2791111111111,
+          "azimuth_deg": 50.76,
+          "elevation_deg": 7.46,
+          "distance_m": 3.0,
+          "section": "Acceleration",
+          "energy": 0.78
+        },
+        {
+          "time_seconds": 91.74755555555555,
+          "azimuth_deg": -50.76,
+          "elevation_deg": 7.46,
+          "distance_m": 3.0,
+          "section": "Acceleration",
+          "energy": 0.78
+        },
+        {
+          "time_seconds": 103.216,
+          "azimuth_deg": 60.0,
+          "elevation_deg": 9.0,
+          "distance_m": 3.0,
+          "section": "EpicClimax",
+          "energy": 1.0
+        },
+        {
+          "time_seconds": 114.68444444444444,
+          "azimuth_deg": -60.0,
+          "elevation_deg": 9.0,
+          "distance_m": 3.0,
+          "section": "EpicClimax",
+          "energy": 1.0
+        },
+        {
+          "time_seconds": 126.15288888888888,
+          "azimuth_deg": 28.5,
+          "elevation_deg": 3.75,
+          "distance_m": 3.0,
+          "section": "Aftermath",
+          "energy": 0.25
+        },
+        {
+          "time_seconds": 131.8871111111111,
+          "azimuth_deg": -28.5,
+          "elevation_deg": 3.75,
+          "distance_m": 3.0,
+          "section": "Aftermath",
+          "energy": 0.25
+        },
+        {
+          "time_seconds": 137.62133333333333,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Aftermath",
+          "energy": 0.15
+        }
+      ]
+    },
+    {
+      "source_id": "lead",
+      "trajectory": "cinematic_section_aware",
+      "gain_db": -4,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -30.560000000000002,
+          "elevation_deg": 6.98,
+          "distance_m": 3.0,
+          "section": "Stillness",
+          "energy": 0.22
+        },
+        {
+          "time_seconds": 11.468444444444444,
+          "azimuth_deg": 30.560000000000002,
+          "elevation_deg": 6.98,
+          "distance_m": 3.0,
+          "section": "Stillness",
+          "energy": 0.22
+        },
+        {
+          "time_seconds": 22.936888888888888,
+          "azimuth_deg": -38.24,
+          "elevation_deg": 8.42,
+          "distance_m": 3.0,
+          "section": "Awakening",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 34.40533333333333,
+          "azimuth_deg": 38.24,
+          "elevation_deg": 8.42,
+          "distance_m": 3.0,
+          "section": "Awakening",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 45.873777777777775,
+          "azimuth_deg": -47.839999999999996,
+          "elevation_deg": 10.219999999999999,
+          "distance_m": 3.0,
+          "section": "Build",
+          "energy": 0.58
+        },
+        {
+          "time_seconds": 63.07644444444444,
+          "azimuth_deg": 47.839999999999996,
+          "elevation_deg": 10.219999999999999,
+          "distance_m": 3.0,
+          "section": "Build",
+          "energy": 0.58
+        },
+        {
+          "time_seconds": 80.2791111111111,
+          "azimuth_deg": 57.44,
+          "elevation_deg": 12.02,
+          "distance_m": 3.0,
+          "section": "Acceleration",
+          "energy": 0.78
+        },
+        {
+          "time_seconds": 91.74755555555555,
+          "azimuth_deg": -57.44,
+          "elevation_deg": 12.02,
+          "distance_m": 3.0,
+          "section": "Acceleration",
+          "energy": 0.78
+        },
+        {
+          "time_seconds": 103.216,
+          "azimuth_deg": 68.0,
+          "elevation_deg": 14.0,
+          "distance_m": 3.0,
+          "section": "EpicClimax",
+          "energy": 1.0
+        },
+        {
+          "time_seconds": 114.68444444444444,
+          "azimuth_deg": -68.0,
+          "elevation_deg": 14.0,
+          "distance_m": 3.0,
+          "section": "EpicClimax",
+          "energy": 1.0
+        },
+        {
+          "time_seconds": 126.15288888888888,
+          "azimuth_deg": 32.0,
+          "elevation_deg": 7.25,
+          "distance_m": 3.0,
+          "section": "Aftermath",
+          "energy": 0.25
+        },
+        {
+          "time_seconds": 131.8871111111111,
+          "azimuth_deg": -32.0,
+          "elevation_deg": 7.25,
+          "distance_m": 3.0,
+          "section": "Aftermath",
+          "energy": 0.25
+        },
+        {
+          "time_seconds": 137.62133333333333,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Aftermath",
+          "energy": 0.15
+        }
+      ]
+    },
+    {
+      "source_id": "pulse_ostinato",
+      "trajectory": "cinematic_section_aware",
+      "gain_db": -11,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -19.7,
+          "elevation_deg": 5,
+          "distance_m": 3.0,
+          "section": "Stillness",
+          "energy": 0.22
+        },
+        {
+          "time_seconds": 11.468444444444444,
+          "azimuth_deg": 19.7,
+          "elevation_deg": 5,
+          "distance_m": 3.0,
+          "section": "Stillness",
+          "energy": 0.22
+        },
+        {
+          "time_seconds": 22.936888888888888,
+          "azimuth_deg": -25.3,
+          "elevation_deg": 5,
+          "distance_m": 3.0,
+          "section": "Awakening",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 34.40533333333333,
+          "azimuth_deg": 25.3,
+          "elevation_deg": 5,
+          "distance_m": 3.0,
+          "section": "Awakening",
+          "energy": 0.38
+        },
+        {
+          "time_seconds": 45.873777777777775,
+          "azimuth_deg": -32.3,
+          "elevation_deg": 5,
+          "distance_m": 3.0,
+          "section": "Build",
+          "energy": 0.58
+        },
+        {
+          "time_seconds": 63.07644444444444,
+          "azimuth_deg": 32.3,
+          "elevation_deg": 5,
+          "distance_m": 3.0,
+          "section": "Build",
+          "energy": 0.58
+        },
+        {
+          "time_seconds": 80.2791111111111,
+          "azimuth_deg": 39.3,
+          "elevation_deg": 5,
+          "distance_m": 3.0,
+          "section": "Acceleration",
+          "energy": 0.78
+        },
+        {
+          "time_seconds": 91.74755555555555,
+          "azimuth_deg": -39.3,
+          "elevation_deg": 5,
+          "distance_m": 3.0,
+          "section": "Acceleration",
+          "energy": 0.78
+        },
+        {
+          "time_seconds": 103.216,
+          "azimuth_deg": 47.0,
+          "elevation_deg": 5,
+          "distance_m": 3.0,
+          "section": "EpicClimax",
+          "energy": 1.0
+        },
+        {
+          "time_seconds": 114.68444444444444,
+          "azimuth_deg": -47.0,
+          "elevation_deg": 5,
+          "distance_m": 3.0,
+          "section": "EpicClimax",
+          "energy": 1.0
+        },
+        {
+          "time_seconds": 126.15288888888888,
+          "azimuth_deg": 20.75,
+          "elevation_deg": 5,
+          "distance_m": 3.0,
+          "section": "Aftermath",
+          "energy": 0.25
+        },
+        {
+          "time_seconds": 131.8871111111111,
+          "azimuth_deg": -20.75,
+          "elevation_deg": 5,
+          "distance_m": 3.0,
+          "section": "Aftermath",
+          "energy": 0.25
+        },
+        {
+          "time_seconds": 137.62133333333333,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Aftermath",
+          "energy": 0.15
+        }
+      ]
+    }
+  ]
+}

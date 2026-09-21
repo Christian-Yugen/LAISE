@@ -1,0 +1,31 @@
+{
+  "work_id": "LAISE-MUSIC-003",
+  "title": "Hopeful Cinematic 001",
+  "seed": 20260923,
+  "engine": "LAISE procedural thematic composition + spatial",
+  "style": "Hopeful Inspirational Cinematic",
+  "objective_result": "PASS",
+  "perceptual_result": "PENDING",
+  "duration_seconds": 85.376,
+  "bpm": 98,
+  "sections": [
+    "Intimate",
+    "Bloom",
+    "Lift",
+    "Crescendo",
+    "Peak"
+  ],
+  "design_note": "Single thematic cell drives melody, harmony support, ostinato, orchestration and dynamics. No source melody imported.",
+  "checks": {
+    "seven_midi": true,
+    "seven_dry_stems": true,
+    "seven_spatial_stems": true,
+    "five_sections": true,
+    "mix_finite": true,
+    "mix_non_silent": true,
+    "mix_no_clipping": true
+  },
+  "mix": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-003\\LAISE_Hopeful_Cinematic_001.wav",
+  "mix_sha256": "b9c5c612b9e1c112d0003c0c1a142295caacf1e5488d9e08e731186f35def1c0",
+  "scene": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-003\\spatial_scene.json"
+}

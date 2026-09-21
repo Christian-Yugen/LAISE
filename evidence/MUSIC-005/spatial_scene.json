@@ -1,0 +1,1679 @@
+{
+  "scene_version": "LAISE MUSIC-005 Spatial v0.1",
+  "duration_seconds": 103.776,
+  "sources": [
+    {
+      "source_id": "piano",
+      "trajectory": "narrative_driven",
+      "gain_db": -3,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -3.844416,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "stability",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 5.1888,
+          "azimuth_deg": 2.242576,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "stability",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 10.3776,
+          "azimuth_deg": 4.0794239999999995,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 15.566399999999998,
+          "azimuth_deg": -2.379664,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 20.7552,
+          "azimuth_deg": -4.373184,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.34
+        },
+        {
+          "time_seconds": 25.944,
+          "azimuth_deg": 2.5510240000000004,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.34
+        },
+        {
+          "time_seconds": 31.132799999999996,
+          "azimuth_deg": 4.637568,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.43
+        },
+        {
+          "time_seconds": 36.3216,
+          "azimuth_deg": -2.705248,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.43
+        },
+        {
+          "time_seconds": 41.5104,
+          "azimuth_deg": -4.99008,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.55
+        },
+        {
+          "time_seconds": 46.6992,
+          "azimuth_deg": 2.9108800000000006,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.55
+        },
+        {
+          "time_seconds": 51.888,
+          "azimuth_deg": 5.2544640000000005,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.64
+        },
+        {
+          "time_seconds": 57.0768,
+          "azimuth_deg": -3.0651040000000007,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.64
+        },
+        {
+          "time_seconds": 62.26559999999999,
+          "azimuth_deg": -5.5482239999999985,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.74
+        },
+        {
+          "time_seconds": 67.45439999999999,
+          "azimuth_deg": 3.236464,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.74
+        },
+        {
+          "time_seconds": 70.0488,
+          "azimuth_deg": -5.841984,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.84
+        },
+        {
+          "time_seconds": 75.2376,
+          "azimuth_deg": 3.407824,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.84
+        },
+        {
+          "time_seconds": 77.832,
+          "azimuth_deg": 6.135744000000001,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 83.0208,
+          "azimuth_deg": -3.579184000000001,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 83.0208,
+          "azimuth_deg": -6.311999999999999,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "breakthrough",
+          "energy": 1.0
+        },
+        {
+          "time_seconds": 88.2096,
+          "azimuth_deg": 3.682,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "breakthrough",
+          "energy": 1.0
+        },
+        {
+          "time_seconds": 88.2096,
+          "azimuth_deg": -5.43072,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.7
+        },
+        {
+          "time_seconds": 93.3984,
+          "azimuth_deg": 3.1679200000000005,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.7
+        },
+        {
+          "time_seconds": 93.3984,
+          "azimuth_deg": 4.725696,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.46
+        },
+        {
+          "time_seconds": 98.5872,
+          "azimuth_deg": -2.7566560000000004,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.46
+        },
+        {
+          "time_seconds": 98.5872,
+          "azimuth_deg": 4.1088000000000005,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.25
+        },
+        {
+          "time_seconds": 103.776,
+          "azimuth_deg": -2.3968000000000003,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.25
+        },
+        {
+          "time_seconds": 101.18159999999999,
+          "azimuth_deg": 3.8150399999999998,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.15
+        },
+        {
+          "time_seconds": 103.776,
+          "azimuth_deg": -2.22544,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.15
+        },
+        {
+          "time_seconds": 103.776,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.12
+        }
+      ]
+    },
+    {
+      "source_id": "theme",
+      "trajectory": "narrative_driven",
+      "gain_db": -4.5,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -5.3821824000000005,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "stability",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 5.1888,
+          "azimuth_deg": 3.139606400000001,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "stability",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 10.3776,
+          "azimuth_deg": 5.7111936,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 15.566399999999998,
+          "azimuth_deg": -3.3315296000000005,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 20.7552,
+          "azimuth_deg": -6.122457600000001,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.34
+        },
+        {
+          "time_seconds": 25.944,
+          "azimuth_deg": 3.5714336000000007,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.34
+        },
+        {
+          "time_seconds": 31.132799999999996,
+          "azimuth_deg": 6.492595199999999,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.43
+        },
+        {
+          "time_seconds": 36.3216,
+          "azimuth_deg": -3.7873472,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.43
+        },
+        {
+          "time_seconds": 41.5104,
+          "azimuth_deg": -6.986112,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.55
+        },
+        {
+          "time_seconds": 46.6992,
+          "azimuth_deg": 4.075232000000001,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.55
+        },
+        {
+          "time_seconds": 51.888,
+          "azimuth_deg": 7.3562496,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.64
+        },
+        {
+          "time_seconds": 57.0768,
+          "azimuth_deg": -4.291145600000001,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.64
+        },
+        {
+          "time_seconds": 62.26559999999999,
+          "azimuth_deg": -7.767513599999998,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.74
+        },
+        {
+          "time_seconds": 67.45439999999999,
+          "azimuth_deg": 4.531049599999999,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.74
+        },
+        {
+          "time_seconds": 70.0488,
+          "azimuth_deg": -8.1787776,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.84
+        },
+        {
+          "time_seconds": 75.2376,
+          "azimuth_deg": 4.7709536,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.84
+        },
+        {
+          "time_seconds": 77.832,
+          "azimuth_deg": 8.5900416,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 83.0208,
+          "azimuth_deg": -5.0108576000000005,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 83.0208,
+          "azimuth_deg": -8.8368,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "breakthrough",
+          "energy": 1.0
+        },
+        {
+          "time_seconds": 88.2096,
+          "azimuth_deg": 5.154800000000001,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "breakthrough",
+          "energy": 1.0
+        },
+        {
+          "time_seconds": 88.2096,
+          "azimuth_deg": -7.603007999999999,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.7
+        },
+        {
+          "time_seconds": 93.3984,
+          "azimuth_deg": 4.435088,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.7
+        },
+        {
+          "time_seconds": 93.3984,
+          "azimuth_deg": 6.615974400000001,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.46
+        },
+        {
+          "time_seconds": 98.5872,
+          "azimuth_deg": -3.8593184000000007,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.46
+        },
+        {
+          "time_seconds": 98.5872,
+          "azimuth_deg": 5.752320000000001,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.25
+        },
+        {
+          "time_seconds": 103.776,
+          "azimuth_deg": -3.3555200000000007,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.25
+        },
+        {
+          "time_seconds": 101.18159999999999,
+          "azimuth_deg": 5.341055999999999,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.15
+        },
+        {
+          "time_seconds": 103.776,
+          "azimuth_deg": -3.1156159999999997,
+          "elevation_deg": 7,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.15
+        },
+        {
+          "time_seconds": 103.776,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.12
+        }
+      ]
+    },
+    {
+      "source_id": "strings",
+      "trajectory": "narrative_driven",
+      "gain_db": -7,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -9.2265984,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "stability",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 5.1888,
+          "azimuth_deg": 5.382182400000001,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "stability",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 10.3776,
+          "azimuth_deg": 9.790617600000001,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 15.566399999999998,
+          "azimuth_deg": -5.7111936000000005,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 20.7552,
+          "azimuth_deg": -10.4956416,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.34
+        },
+        {
+          "time_seconds": 25.944,
+          "azimuth_deg": 6.1224576000000015,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.34
+        },
+        {
+          "time_seconds": 31.132799999999996,
+          "azimuth_deg": 11.1301632,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.43
+        },
+        {
+          "time_seconds": 36.3216,
+          "azimuth_deg": -6.492595200000001,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.43
+        },
+        {
+          "time_seconds": 41.5104,
+          "azimuth_deg": -11.976192000000001,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.55
+        },
+        {
+          "time_seconds": 46.6992,
+          "azimuth_deg": 6.986112000000001,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.55
+        },
+        {
+          "time_seconds": 51.888,
+          "azimuth_deg": 12.6107136,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.64
+        },
+        {
+          "time_seconds": 57.0768,
+          "azimuth_deg": -7.356249600000001,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.64
+        },
+        {
+          "time_seconds": 62.26559999999999,
+          "azimuth_deg": -13.315737599999997,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.74
+        },
+        {
+          "time_seconds": 67.45439999999999,
+          "azimuth_deg": 7.767513599999999,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.74
+        },
+        {
+          "time_seconds": 70.0488,
+          "azimuth_deg": -14.020761599999998,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.84
+        },
+        {
+          "time_seconds": 75.2376,
+          "azimuth_deg": 8.1787776,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.84
+        },
+        {
+          "time_seconds": 77.832,
+          "azimuth_deg": 14.7257856,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 83.0208,
+          "azimuth_deg": -8.590041600000001,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 83.0208,
+          "azimuth_deg": -15.1488,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "breakthrough",
+          "energy": 1.0
+        },
+        {
+          "time_seconds": 88.2096,
+          "azimuth_deg": 8.8368,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "breakthrough",
+          "energy": 1.0
+        },
+        {
+          "time_seconds": 88.2096,
+          "azimuth_deg": -13.033727999999998,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.7
+        },
+        {
+          "time_seconds": 93.3984,
+          "azimuth_deg": 7.603008,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.7
+        },
+        {
+          "time_seconds": 93.3984,
+          "azimuth_deg": 11.341670400000002,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.46
+        },
+        {
+          "time_seconds": 98.5872,
+          "azimuth_deg": -6.615974400000002,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.46
+        },
+        {
+          "time_seconds": 98.5872,
+          "azimuth_deg": 9.861120000000001,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.25
+        },
+        {
+          "time_seconds": 103.776,
+          "azimuth_deg": -5.752320000000002,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.25
+        },
+        {
+          "time_seconds": 101.18159999999999,
+          "azimuth_deg": 9.156096,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.15
+        },
+        {
+          "time_seconds": 103.776,
+          "azimuth_deg": -5.341056,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.15
+        },
+        {
+          "time_seconds": 103.776,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.12
+        }
+      ]
+    },
+    {
+      "source_id": "bass",
+      "trajectory": "narrative_driven",
+      "gain_db": -5,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -0.7688832000000001,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "stability",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 5.1888,
+          "azimuth_deg": 0.44851520000000006,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "stability",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 10.3776,
+          "azimuth_deg": 0.8158848,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 15.566399999999998,
+          "azimuth_deg": -0.47593280000000004,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 20.7552,
+          "azimuth_deg": -0.8746368000000001,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.34
+        },
+        {
+          "time_seconds": 25.944,
+          "azimuth_deg": 0.5102048000000001,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.34
+        },
+        {
+          "time_seconds": 31.132799999999996,
+          "azimuth_deg": 0.9275135999999999,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.43
+        },
+        {
+          "time_seconds": 36.3216,
+          "azimuth_deg": -0.5410496,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.43
+        },
+        {
+          "time_seconds": 41.5104,
+          "azimuth_deg": -0.998016,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.55
+        },
+        {
+          "time_seconds": 46.6992,
+          "azimuth_deg": 0.5821760000000001,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.55
+        },
+        {
+          "time_seconds": 51.888,
+          "azimuth_deg": 1.0508928,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.64
+        },
+        {
+          "time_seconds": 57.0768,
+          "azimuth_deg": -0.6130208000000001,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.64
+        },
+        {
+          "time_seconds": 62.26559999999999,
+          "azimuth_deg": -1.1096447999999997,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.74
+        },
+        {
+          "time_seconds": 67.45439999999999,
+          "azimuth_deg": 0.6472928,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.74
+        },
+        {
+          "time_seconds": 70.0488,
+          "azimuth_deg": -1.1683967999999998,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.84
+        },
+        {
+          "time_seconds": 75.2376,
+          "azimuth_deg": 0.6815648000000001,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.84
+        },
+        {
+          "time_seconds": 77.832,
+          "azimuth_deg": 1.2271488,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 83.0208,
+          "azimuth_deg": -0.7158368000000002,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 83.0208,
+          "azimuth_deg": -1.2624,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "breakthrough",
+          "energy": 1.0
+        },
+        {
+          "time_seconds": 88.2096,
+          "azimuth_deg": 0.7364,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "breakthrough",
+          "energy": 1.0
+        },
+        {
+          "time_seconds": 88.2096,
+          "azimuth_deg": -1.086144,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.7
+        },
+        {
+          "time_seconds": 93.3984,
+          "azimuth_deg": 0.633584,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.7
+        },
+        {
+          "time_seconds": 93.3984,
+          "azimuth_deg": 0.9451392000000001,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.46
+        },
+        {
+          "time_seconds": 98.5872,
+          "azimuth_deg": -0.5513312000000001,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.46
+        },
+        {
+          "time_seconds": 98.5872,
+          "azimuth_deg": 0.82176,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.25
+        },
+        {
+          "time_seconds": 103.776,
+          "azimuth_deg": -0.4793600000000001,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.25
+        },
+        {
+          "time_seconds": 101.18159999999999,
+          "azimuth_deg": 0.7630079999999999,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.15
+        },
+        {
+          "time_seconds": 103.776,
+          "azimuth_deg": -0.44508800000000004,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.15
+        },
+        {
+          "time_seconds": 103.776,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.12
+        }
+      ]
+    },
+    {
+      "source_id": "ostinato",
+      "trajectory": "narrative_driven",
+      "gain_db": -10,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -4.9977408,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "stability",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 5.1888,
+          "azimuth_deg": 2.9153488000000003,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "stability",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 10.3776,
+          "azimuth_deg": 5.303251199999999,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 15.566399999999998,
+          "azimuth_deg": -3.0935632,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 20.7552,
+          "azimuth_deg": -5.6851392,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.34
+        },
+        {
+          "time_seconds": 25.944,
+          "azimuth_deg": 3.316331200000001,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.34
+        },
+        {
+          "time_seconds": 31.132799999999996,
+          "azimuth_deg": 6.028838400000001,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.43
+        },
+        {
+          "time_seconds": 36.3216,
+          "azimuth_deg": -3.5168224000000006,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.43
+        },
+        {
+          "time_seconds": 41.5104,
+          "azimuth_deg": -6.487104,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.55
+        },
+        {
+          "time_seconds": 46.6992,
+          "azimuth_deg": 3.784144000000001,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.55
+        },
+        {
+          "time_seconds": 51.888,
+          "azimuth_deg": 6.8308032,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.64
+        },
+        {
+          "time_seconds": 57.0768,
+          "azimuth_deg": -3.9846352000000005,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.64
+        },
+        {
+          "time_seconds": 62.26559999999999,
+          "azimuth_deg": -7.212691199999998,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.74
+        },
+        {
+          "time_seconds": 67.45439999999999,
+          "azimuth_deg": 4.2074032,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.74
+        },
+        {
+          "time_seconds": 70.0488,
+          "azimuth_deg": -7.594579199999999,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.84
+        },
+        {
+          "time_seconds": 75.2376,
+          "azimuth_deg": 4.4301712,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.84
+        },
+        {
+          "time_seconds": 77.832,
+          "azimuth_deg": 7.9764672,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 83.0208,
+          "azimuth_deg": -4.6529392000000005,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 83.0208,
+          "azimuth_deg": -8.205599999999999,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "breakthrough",
+          "energy": 1.0
+        },
+        {
+          "time_seconds": 88.2096,
+          "azimuth_deg": 4.7866,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "breakthrough",
+          "energy": 1.0
+        },
+        {
+          "time_seconds": 88.2096,
+          "azimuth_deg": -7.0599359999999995,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.7
+        },
+        {
+          "time_seconds": 93.3984,
+          "azimuth_deg": 4.118296,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.7
+        },
+        {
+          "time_seconds": 93.3984,
+          "azimuth_deg": 6.143404800000001,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.46
+        },
+        {
+          "time_seconds": 98.5872,
+          "azimuth_deg": -3.5836528000000007,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.46
+        },
+        {
+          "time_seconds": 98.5872,
+          "azimuth_deg": 5.34144,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.25
+        },
+        {
+          "time_seconds": 103.776,
+          "azimuth_deg": -3.115840000000001,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.25
+        },
+        {
+          "time_seconds": 101.18159999999999,
+          "azimuth_deg": 4.9595519999999995,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.15
+        },
+        {
+          "time_seconds": 103.776,
+          "azimuth_deg": -2.893072,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.15
+        },
+        {
+          "time_seconds": 103.776,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.12
+        }
+      ]
+    },
+    {
+      "source_id": "percussion",
+      "trajectory": "narrative_driven",
+      "gain_db": -7.5,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -6.9199488,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "stability",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 5.1888,
+          "azimuth_deg": 4.0366368,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "stability",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 10.3776,
+          "azimuth_deg": 7.342963199999999,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 15.566399999999998,
+          "azimuth_deg": -4.2833952,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 20.7552,
+          "azimuth_deg": -7.871731200000001,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.34
+        },
+        {
+          "time_seconds": 25.944,
+          "azimuth_deg": 4.591843200000001,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.34
+        },
+        {
+          "time_seconds": 31.132799999999996,
+          "azimuth_deg": 8.347622399999999,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.43
+        },
+        {
+          "time_seconds": 36.3216,
+          "azimuth_deg": -4.8694464,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.43
+        },
+        {
+          "time_seconds": 41.5104,
+          "azimuth_deg": -8.982144,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.55
+        },
+        {
+          "time_seconds": 46.6992,
+          "azimuth_deg": 5.239584000000001,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.55
+        },
+        {
+          "time_seconds": 51.888,
+          "azimuth_deg": 9.458035200000001,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.64
+        },
+        {
+          "time_seconds": 57.0768,
+          "azimuth_deg": -5.517187200000001,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.64
+        },
+        {
+          "time_seconds": 62.26559999999999,
+          "azimuth_deg": -9.986803199999997,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.74
+        },
+        {
+          "time_seconds": 67.45439999999999,
+          "azimuth_deg": 5.8256352,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.74
+        },
+        {
+          "time_seconds": 70.0488,
+          "azimuth_deg": -10.515571199999998,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.84
+        },
+        {
+          "time_seconds": 75.2376,
+          "azimuth_deg": 6.1340832,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.84
+        },
+        {
+          "time_seconds": 77.832,
+          "azimuth_deg": 11.044339200000001,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 83.0208,
+          "azimuth_deg": -6.442531200000001,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 83.0208,
+          "azimuth_deg": -11.3616,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "breakthrough",
+          "energy": 1.0
+        },
+        {
+          "time_seconds": 88.2096,
+          "azimuth_deg": 6.6276,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "breakthrough",
+          "energy": 1.0
+        },
+        {
+          "time_seconds": 88.2096,
+          "azimuth_deg": -9.775295999999999,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.7
+        },
+        {
+          "time_seconds": 93.3984,
+          "azimuth_deg": 5.702256,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.7
+        },
+        {
+          "time_seconds": 93.3984,
+          "azimuth_deg": 8.5062528,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.46
+        },
+        {
+          "time_seconds": 98.5872,
+          "azimuth_deg": -4.961980800000001,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.46
+        },
+        {
+          "time_seconds": 98.5872,
+          "azimuth_deg": 7.395840000000001,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.25
+        },
+        {
+          "time_seconds": 103.776,
+          "azimuth_deg": -4.314240000000001,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.25
+        },
+        {
+          "time_seconds": 101.18159999999999,
+          "azimuth_deg": 6.867071999999999,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.15
+        },
+        {
+          "time_seconds": 103.776,
+          "azimuth_deg": -4.0057920000000005,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.15
+        },
+        {
+          "time_seconds": 103.776,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.12
+        }
+      ]
+    },
+    {
+      "source_id": "brass",
+      "trajectory": "narrative_driven",
+      "gain_db": -10,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -5.3821824000000005,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "stability",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 5.1888,
+          "azimuth_deg": 3.139606400000001,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "stability",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 10.3776,
+          "azimuth_deg": 5.7111936,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 15.566399999999998,
+          "azimuth_deg": -3.3315296000000005,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 20.7552,
+          "azimuth_deg": -6.122457600000001,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.34
+        },
+        {
+          "time_seconds": 25.944,
+          "azimuth_deg": 3.5714336000000007,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.34
+        },
+        {
+          "time_seconds": 31.132799999999996,
+          "azimuth_deg": 6.492595199999999,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.43
+        },
+        {
+          "time_seconds": 36.3216,
+          "azimuth_deg": -3.7873472,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "preparation",
+          "energy": 0.43
+        },
+        {
+          "time_seconds": 41.5104,
+          "azimuth_deg": -6.986112,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.55
+        },
+        {
+          "time_seconds": 46.6992,
+          "azimuth_deg": 4.075232000000001,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.55
+        },
+        {
+          "time_seconds": 51.888,
+          "azimuth_deg": 7.3562496,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.64
+        },
+        {
+          "time_seconds": 57.0768,
+          "azimuth_deg": -4.291145600000001,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "expectation",
+          "energy": 0.64
+        },
+        {
+          "time_seconds": 62.26559999999999,
+          "azimuth_deg": -7.767513599999998,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.74
+        },
+        {
+          "time_seconds": 67.45439999999999,
+          "azimuth_deg": 4.531049599999999,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.74
+        },
+        {
+          "time_seconds": 70.0488,
+          "azimuth_deg": -8.1787776,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.84
+        },
+        {
+          "time_seconds": 75.2376,
+          "azimuth_deg": 4.7709536,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "tension",
+          "energy": 0.84
+        },
+        {
+          "time_seconds": 77.832,
+          "azimuth_deg": 8.5900416,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 83.0208,
+          "azimuth_deg": -5.0108576000000005,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "suspension",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 83.0208,
+          "azimuth_deg": -8.8368,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "breakthrough",
+          "energy": 1.0
+        },
+        {
+          "time_seconds": 88.2096,
+          "azimuth_deg": 5.154800000000001,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "breakthrough",
+          "energy": 1.0
+        },
+        {
+          "time_seconds": 88.2096,
+          "azimuth_deg": -7.603007999999999,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.7
+        },
+        {
+          "time_seconds": 93.3984,
+          "azimuth_deg": 4.435088,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.7
+        },
+        {
+          "time_seconds": 93.3984,
+          "azimuth_deg": 6.615974400000001,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.46
+        },
+        {
+          "time_seconds": 98.5872,
+          "azimuth_deg": -3.8593184000000007,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.46
+        },
+        {
+          "time_seconds": 98.5872,
+          "azimuth_deg": 5.752320000000001,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.25
+        },
+        {
+          "time_seconds": 103.776,
+          "azimuth_deg": -3.3555200000000007,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.25
+        },
+        {
+          "time_seconds": 101.18159999999999,
+          "azimuth_deg": 5.341055999999999,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.15
+        },
+        {
+          "time_seconds": 103.776,
+          "azimuth_deg": -3.1156159999999997,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.15
+        },
+        {
+          "time_seconds": 103.776,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "resolution",
+          "energy": 0.12
+        }
+      ]
+    }
+  ]
+}

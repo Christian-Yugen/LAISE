@@ -1,0 +1,680 @@
+{
+  "scene_version": "LAISE MUSIC-004 Spatial v0.1",
+  "bpm": 96,
+  "duration_seconds": 103.81866666666667,
+  "sections": [
+    "Opening",
+    "Connection",
+    "Ascent",
+    "Breakthrough",
+    "Home"
+  ],
+  "distance_policy": "FIXED_CALIBRATED_3M",
+  "sources": [
+    {
+      "source_id": "piano",
+      "trajectory": "phrase_supportive",
+      "gain_db": -3.0,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -5.28,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Opening",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 10.381866666666667,
+          "azimuth_deg": 3.36,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Opening",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 20.763733333333334,
+          "azimuth_deg": -6.16,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Connection",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 31.1456,
+          "azimuth_deg": 3.9199999999999995,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Connection",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 41.52746666666667,
+          "azimuth_deg": -7.480000000000001,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Ascent",
+          "energy": 0.56
+        },
+        {
+          "time_seconds": 54.5048,
+          "azimuth_deg": 4.76,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Ascent",
+          "energy": 0.56
+        },
+        {
+          "time_seconds": 67.48213333333334,
+          "azimuth_deg": -9.13,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Breakthrough",
+          "energy": 0.86
+        },
+        {
+          "time_seconds": 77.864,
+          "azimuth_deg": 5.8100000000000005,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Breakthrough",
+          "energy": 0.86
+        },
+        {
+          "time_seconds": 88.24586666666667,
+          "azimuth_deg": -5.720000000000001,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Home",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 96.03226666666667,
+          "azimuth_deg": 3.6399999999999997,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Home",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 103.81866666666667,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Home",
+          "energy": 0.16
+        }
+      ]
+    },
+    {
+      "source_id": "theme",
+      "trajectory": "phrase_supportive",
+      "gain_db": -4.5,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -7.8100000000000005,
+          "elevation_deg": 5.8,
+          "distance_m": 3.0,
+          "section": "Opening",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 10.381866666666667,
+          "azimuth_deg": 4.97,
+          "elevation_deg": 5.8,
+          "distance_m": 3.0,
+          "section": "Opening",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 20.763733333333334,
+          "azimuth_deg": -9.57,
+          "elevation_deg": 6.6,
+          "distance_m": 3.0,
+          "section": "Connection",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 31.1456,
+          "azimuth_deg": 6.089999999999999,
+          "elevation_deg": 6.6,
+          "distance_m": 3.0,
+          "section": "Connection",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 41.52746666666667,
+          "azimuth_deg": -12.210000000000003,
+          "elevation_deg": 7.800000000000001,
+          "distance_m": 3.0,
+          "section": "Ascent",
+          "energy": 0.56
+        },
+        {
+          "time_seconds": 54.5048,
+          "azimuth_deg": 7.7700000000000005,
+          "elevation_deg": 7.800000000000001,
+          "distance_m": 3.0,
+          "section": "Ascent",
+          "energy": 0.56
+        },
+        {
+          "time_seconds": 67.48213333333334,
+          "azimuth_deg": -15.510000000000002,
+          "elevation_deg": 9.3,
+          "distance_m": 3.0,
+          "section": "Breakthrough",
+          "energy": 0.86
+        },
+        {
+          "time_seconds": 77.864,
+          "azimuth_deg": 9.87,
+          "elevation_deg": 9.3,
+          "distance_m": 3.0,
+          "section": "Breakthrough",
+          "energy": 0.86
+        },
+        {
+          "time_seconds": 88.24586666666667,
+          "azimuth_deg": -8.690000000000001,
+          "elevation_deg": 6.2,
+          "distance_m": 3.0,
+          "section": "Home",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 96.03226666666667,
+          "azimuth_deg": 5.53,
+          "elevation_deg": 6.2,
+          "distance_m": 3.0,
+          "section": "Home",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 103.81866666666667,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Home",
+          "energy": 0.16
+        }
+      ]
+    },
+    {
+      "source_id": "strings",
+      "trajectory": "phrase_supportive",
+      "gain_db": -7.0,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -12.100000000000001,
+          "elevation_deg": 9.48,
+          "distance_m": 3.0,
+          "section": "Opening",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 10.381866666666667,
+          "azimuth_deg": 7.699999999999999,
+          "elevation_deg": 9.48,
+          "distance_m": 3.0,
+          "section": "Opening",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 20.763733333333334,
+          "azimuth_deg": -14.3,
+          "elevation_deg": 9.96,
+          "distance_m": 3.0,
+          "section": "Connection",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 31.1456,
+          "azimuth_deg": 9.1,
+          "elevation_deg": 9.96,
+          "distance_m": 3.0,
+          "section": "Connection",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 41.52746666666667,
+          "azimuth_deg": -17.6,
+          "elevation_deg": 10.68,
+          "distance_m": 3.0,
+          "section": "Ascent",
+          "energy": 0.56
+        },
+        {
+          "time_seconds": 54.5048,
+          "azimuth_deg": 11.2,
+          "elevation_deg": 10.68,
+          "distance_m": 3.0,
+          "section": "Ascent",
+          "energy": 0.56
+        },
+        {
+          "time_seconds": 67.48213333333334,
+          "azimuth_deg": -21.725,
+          "elevation_deg": 11.58,
+          "distance_m": 3.0,
+          "section": "Breakthrough",
+          "energy": 0.86
+        },
+        {
+          "time_seconds": 77.864,
+          "azimuth_deg": 13.825,
+          "elevation_deg": 11.58,
+          "distance_m": 3.0,
+          "section": "Breakthrough",
+          "energy": 0.86
+        },
+        {
+          "time_seconds": 88.24586666666667,
+          "azimuth_deg": -13.200000000000001,
+          "elevation_deg": 9.72,
+          "distance_m": 3.0,
+          "section": "Home",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 96.03226666666667,
+          "azimuth_deg": 8.399999999999999,
+          "elevation_deg": 9.72,
+          "distance_m": 3.0,
+          "section": "Home",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 103.81866666666667,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Home",
+          "energy": 0.16
+        }
+      ]
+    },
+    {
+      "source_id": "bass",
+      "trajectory": "phrase_supportive",
+      "gain_db": -5.0,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -1.1,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "Opening",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 10.381866666666667,
+          "azimuth_deg": 0.7,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "Opening",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 20.763733333333334,
+          "azimuth_deg": -1.1,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "Connection",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 31.1456,
+          "azimuth_deg": 0.7,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "Connection",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 41.52746666666667,
+          "azimuth_deg": -1.1,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "Ascent",
+          "energy": 0.56
+        },
+        {
+          "time_seconds": 54.5048,
+          "azimuth_deg": 0.7,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "Ascent",
+          "energy": 0.56
+        },
+        {
+          "time_seconds": 67.48213333333334,
+          "azimuth_deg": -1.1,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "Breakthrough",
+          "energy": 0.86
+        },
+        {
+          "time_seconds": 77.864,
+          "azimuth_deg": 0.7,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "Breakthrough",
+          "energy": 0.86
+        },
+        {
+          "time_seconds": 88.24586666666667,
+          "azimuth_deg": -1.1,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "Home",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 96.03226666666667,
+          "azimuth_deg": 0.7,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "Home",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 103.81866666666667,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Home",
+          "energy": 0.16
+        }
+      ]
+    },
+    {
+      "source_id": "ostinato",
+      "trajectory": "phrase_supportive",
+      "gain_db": -10.0,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -6.996000000000001,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "Opening",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 10.381866666666667,
+          "azimuth_deg": 4.452,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "Opening",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 20.763733333333334,
+          "azimuth_deg": -8.492,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "Connection",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 31.1456,
+          "azimuth_deg": 5.404,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "Connection",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 41.52746666666667,
+          "azimuth_deg": -10.736000000000002,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "Ascent",
+          "energy": 0.56
+        },
+        {
+          "time_seconds": 54.5048,
+          "azimuth_deg": 6.832000000000001,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "Ascent",
+          "energy": 0.56
+        },
+        {
+          "time_seconds": 67.48213333333334,
+          "azimuth_deg": -13.541,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "Breakthrough",
+          "energy": 0.86
+        },
+        {
+          "time_seconds": 77.864,
+          "azimuth_deg": 8.616999999999999,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "Breakthrough",
+          "energy": 0.86
+        },
+        {
+          "time_seconds": 88.24586666666667,
+          "azimuth_deg": -7.744000000000001,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "Home",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 96.03226666666667,
+          "azimuth_deg": 4.928,
+          "elevation_deg": 3,
+          "distance_m": 3.0,
+          "section": "Home",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 103.81866666666667,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Home",
+          "energy": 0.16
+        }
+      ]
+    },
+    {
+      "source_id": "percussion",
+      "trajectory": "phrase_supportive",
+      "gain_db": -7.5,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -8.8,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Opening",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 10.381866666666667,
+          "azimuth_deg": 5.6,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Opening",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 20.763733333333334,
+          "azimuth_deg": -11.0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Connection",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 31.1456,
+          "azimuth_deg": 7.0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Connection",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 41.52746666666667,
+          "azimuth_deg": -14.3,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Ascent",
+          "energy": 0.56
+        },
+        {
+          "time_seconds": 54.5048,
+          "azimuth_deg": 9.1,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Ascent",
+          "energy": 0.56
+        },
+        {
+          "time_seconds": 67.48213333333334,
+          "azimuth_deg": -18.425,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Breakthrough",
+          "energy": 0.86
+        },
+        {
+          "time_seconds": 77.864,
+          "azimuth_deg": 11.725,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Breakthrough",
+          "energy": 0.86
+        },
+        {
+          "time_seconds": 88.24586666666667,
+          "azimuth_deg": -9.9,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Home",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 96.03226666666667,
+          "azimuth_deg": 6.3,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Home",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 103.81866666666667,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Home",
+          "energy": 0.16
+        }
+      ]
+    },
+    {
+      "source_id": "brass",
+      "trajectory": "phrase_supportive",
+      "gain_db": -10.0,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -7.084,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "Opening",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 10.381866666666667,
+          "azimuth_deg": 4.507999999999999,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "Opening",
+          "energy": 0.16
+        },
+        {
+          "time_seconds": 20.763733333333334,
+          "azimuth_deg": -8.668000000000001,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "Connection",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 31.1456,
+          "azimuth_deg": 5.516,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "Connection",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 41.52746666666667,
+          "azimuth_deg": -11.044000000000002,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "Ascent",
+          "energy": 0.56
+        },
+        {
+          "time_seconds": 54.5048,
+          "azimuth_deg": 7.0280000000000005,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "Ascent",
+          "energy": 0.56
+        },
+        {
+          "time_seconds": 67.48213333333334,
+          "azimuth_deg": -14.014000000000001,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "Breakthrough",
+          "energy": 0.86
+        },
+        {
+          "time_seconds": 77.864,
+          "azimuth_deg": 8.918,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "Breakthrough",
+          "energy": 0.86
+        },
+        {
+          "time_seconds": 88.24586666666667,
+          "azimuth_deg": -7.876000000000001,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "Home",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 96.03226666666667,
+          "azimuth_deg": 5.012,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "Home",
+          "energy": 0.24
+        },
+        {
+          "time_seconds": 103.81866666666667,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Home",
+          "energy": 0.16
+        }
+      ]
+    }
+  ]
+}

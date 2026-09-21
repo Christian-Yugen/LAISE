@@ -1,0 +1,681 @@
+{
+  "scene_version": "LAISE Hopeful Spatial v0.1",
+  "style": "Hopeful Inspirational Cinematic",
+  "bpm": 98,
+  "duration_seconds": 85.376,
+  "sections": [
+    "Intimate",
+    "Bloom",
+    "Lift",
+    "Crescendo",
+    "Peak"
+  ],
+  "distance_policy": "FIXED_CALIBRATED_3M",
+  "sources": [
+    {
+      "source_id": "piano",
+      "trajectory": "phrase_supportive",
+      "gain_db": -3,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -11.4,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Intimate",
+          "energy": 0.14
+        },
+        {
+          "time_seconds": 7.761454545454546,
+          "azimuth_deg": 7.41,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Intimate",
+          "energy": 0.14
+        },
+        {
+          "time_seconds": 15.522909090909092,
+          "azimuth_deg": 13.2,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Bloom",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 25.871515151515155,
+          "azimuth_deg": -8.58,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Bloom",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 36.220121212121214,
+          "azimuth_deg": 15.2,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Lift",
+          "energy": 0.52
+        },
+        {
+          "time_seconds": 46.56872727272727,
+          "azimuth_deg": -9.879999999999999,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Lift",
+          "energy": 0.52
+        },
+        {
+          "time_seconds": 56.91733333333333,
+          "azimuth_deg": 17.6,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Crescendo",
+          "energy": 0.76
+        },
+        {
+          "time_seconds": 65.97236363636364,
+          "azimuth_deg": -11.440000000000001,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Crescendo",
+          "energy": 0.76
+        },
+        {
+          "time_seconds": 75.02739393939395,
+          "azimuth_deg": 19.4,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Peak",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 80.20169696969697,
+          "azimuth_deg": -12.61,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Peak",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 85.376,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Peak",
+          "energy": 0.35
+        }
+      ]
+    },
+    {
+      "source_id": "theme",
+      "trajectory": "phrase_supportive",
+      "gain_db": -5,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -19.36,
+          "elevation_deg": 5.7,
+          "distance_m": 3.0,
+          "section": "Intimate",
+          "energy": 0.14
+        },
+        {
+          "time_seconds": 7.761454545454546,
+          "azimuth_deg": 12.584,
+          "elevation_deg": 5.7,
+          "distance_m": 3.0,
+          "section": "Intimate",
+          "energy": 0.14
+        },
+        {
+          "time_seconds": 15.522909090909092,
+          "azimuth_deg": 23.68,
+          "elevation_deg": 6.6,
+          "distance_m": 3.0,
+          "section": "Bloom",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 25.871515151515155,
+          "azimuth_deg": -15.392,
+          "elevation_deg": 6.6,
+          "distance_m": 3.0,
+          "section": "Bloom",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 36.220121212121214,
+          "azimuth_deg": 28.48,
+          "elevation_deg": 7.6,
+          "distance_m": 3.0,
+          "section": "Lift",
+          "energy": 0.52
+        },
+        {
+          "time_seconds": 46.56872727272727,
+          "azimuth_deg": -18.512,
+          "elevation_deg": 7.6,
+          "distance_m": 3.0,
+          "section": "Lift",
+          "energy": 0.52
+        },
+        {
+          "time_seconds": 56.91733333333333,
+          "azimuth_deg": 34.24,
+          "elevation_deg": 8.8,
+          "distance_m": 3.0,
+          "section": "Crescendo",
+          "energy": 0.76
+        },
+        {
+          "time_seconds": 65.97236363636364,
+          "azimuth_deg": -22.256000000000004,
+          "elevation_deg": 8.8,
+          "distance_m": 3.0,
+          "section": "Crescendo",
+          "energy": 0.76
+        },
+        {
+          "time_seconds": 75.02739393939395,
+          "azimuth_deg": 38.56,
+          "elevation_deg": 9.7,
+          "distance_m": 3.0,
+          "section": "Peak",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 80.20169696969697,
+          "azimuth_deg": -25.064000000000004,
+          "elevation_deg": 9.7,
+          "distance_m": 3.0,
+          "section": "Peak",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 85.376,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Peak",
+          "energy": 0.35
+        }
+      ]
+    },
+    {
+      "source_id": "strings",
+      "trajectory": "phrase_supportive",
+      "gain_db": -7,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -23.92,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "Intimate",
+          "energy": 0.14
+        },
+        {
+          "time_seconds": 7.761454545454546,
+          "azimuth_deg": 15.548000000000002,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "Intimate",
+          "energy": 0.14
+        },
+        {
+          "time_seconds": 15.522909090909092,
+          "azimuth_deg": 28.96,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "Bloom",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 25.871515151515155,
+          "azimuth_deg": -18.824,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "Bloom",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 36.220121212121214,
+          "azimuth_deg": 34.56,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "Lift",
+          "energy": 0.52
+        },
+        {
+          "time_seconds": 46.56872727272727,
+          "azimuth_deg": -22.464000000000002,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "Lift",
+          "energy": 0.52
+        },
+        {
+          "time_seconds": 56.91733333333333,
+          "azimuth_deg": 41.28,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "Crescendo",
+          "energy": 0.76
+        },
+        {
+          "time_seconds": 65.97236363636364,
+          "azimuth_deg": -26.832,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "Crescendo",
+          "energy": 0.76
+        },
+        {
+          "time_seconds": 75.02739393939395,
+          "azimuth_deg": 46.32,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "Peak",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 80.20169696969697,
+          "azimuth_deg": -30.108,
+          "elevation_deg": 11,
+          "distance_m": 3.0,
+          "section": "Peak",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 85.376,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Peak",
+          "energy": 0.35
+        }
+      ]
+    },
+    {
+      "source_id": "cello_bass",
+      "trajectory": "phrase_supportive",
+      "gain_db": -5,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -3,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "Intimate",
+          "energy": 0.14
+        },
+        {
+          "time_seconds": 7.761454545454546,
+          "azimuth_deg": 1.9500000000000002,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "Intimate",
+          "energy": 0.14
+        },
+        {
+          "time_seconds": 15.522909090909092,
+          "azimuth_deg": 3,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "Bloom",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 25.871515151515155,
+          "azimuth_deg": -1.9500000000000002,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "Bloom",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 36.220121212121214,
+          "azimuth_deg": 3,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "Lift",
+          "energy": 0.52
+        },
+        {
+          "time_seconds": 46.56872727272727,
+          "azimuth_deg": -1.9500000000000002,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "Lift",
+          "energy": 0.52
+        },
+        {
+          "time_seconds": 56.91733333333333,
+          "azimuth_deg": 3,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "Crescendo",
+          "energy": 0.76
+        },
+        {
+          "time_seconds": 65.97236363636364,
+          "azimuth_deg": -1.9500000000000002,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "Crescendo",
+          "energy": 0.76
+        },
+        {
+          "time_seconds": 75.02739393939395,
+          "azimuth_deg": 3,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "Peak",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 80.20169696969697,
+          "azimuth_deg": -1.9500000000000002,
+          "elevation_deg": -5,
+          "distance_m": 3.0,
+          "section": "Peak",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 85.376,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Peak",
+          "energy": 0.35
+        }
+      ]
+    },
+    {
+      "source_id": "ostinato",
+      "trajectory": "phrase_supportive",
+      "gain_db": -10,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -15.08,
+          "elevation_deg": 4,
+          "distance_m": 3.0,
+          "section": "Intimate",
+          "energy": 0.14
+        },
+        {
+          "time_seconds": 7.761454545454546,
+          "azimuth_deg": 9.802,
+          "elevation_deg": 4,
+          "distance_m": 3.0,
+          "section": "Intimate",
+          "energy": 0.14
+        },
+        {
+          "time_seconds": 15.522909090909092,
+          "azimuth_deg": 19.04,
+          "elevation_deg": 4,
+          "distance_m": 3.0,
+          "section": "Bloom",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 25.871515151515155,
+          "azimuth_deg": -12.376,
+          "elevation_deg": 4,
+          "distance_m": 3.0,
+          "section": "Bloom",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 36.220121212121214,
+          "azimuth_deg": 23.44,
+          "elevation_deg": 4,
+          "distance_m": 3.0,
+          "section": "Lift",
+          "energy": 0.52
+        },
+        {
+          "time_seconds": 46.56872727272727,
+          "azimuth_deg": -15.236,
+          "elevation_deg": 4,
+          "distance_m": 3.0,
+          "section": "Lift",
+          "energy": 0.52
+        },
+        {
+          "time_seconds": 56.91733333333333,
+          "azimuth_deg": 28.72,
+          "elevation_deg": 4,
+          "distance_m": 3.0,
+          "section": "Crescendo",
+          "energy": 0.76
+        },
+        {
+          "time_seconds": 65.97236363636364,
+          "azimuth_deg": -18.668,
+          "elevation_deg": 4,
+          "distance_m": 3.0,
+          "section": "Crescendo",
+          "energy": 0.76
+        },
+        {
+          "time_seconds": 75.02739393939395,
+          "azimuth_deg": 32.68,
+          "elevation_deg": 4,
+          "distance_m": 3.0,
+          "section": "Peak",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 80.20169696969697,
+          "azimuth_deg": -21.242,
+          "elevation_deg": 4,
+          "distance_m": 3.0,
+          "section": "Peak",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 85.376,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Peak",
+          "energy": 0.35
+        }
+      ]
+    },
+    {
+      "source_id": "percussion",
+      "trajectory": "phrase_supportive",
+      "gain_db": -7,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -18.92,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Intimate",
+          "energy": 0.14
+        },
+        {
+          "time_seconds": 7.761454545454546,
+          "azimuth_deg": 12.298000000000002,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Intimate",
+          "energy": 0.14
+        },
+        {
+          "time_seconds": 15.522909090909092,
+          "azimuth_deg": 23.96,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Bloom",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 25.871515151515155,
+          "azimuth_deg": -15.574000000000002,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Bloom",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 36.220121212121214,
+          "azimuth_deg": 29.560000000000002,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Lift",
+          "energy": 0.52
+        },
+        {
+          "time_seconds": 46.56872727272727,
+          "azimuth_deg": -19.214000000000002,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Lift",
+          "energy": 0.52
+        },
+        {
+          "time_seconds": 56.91733333333333,
+          "azimuth_deg": 36.28,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Crescendo",
+          "energy": 0.76
+        },
+        {
+          "time_seconds": 65.97236363636364,
+          "azimuth_deg": -23.582,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Crescendo",
+          "energy": 0.76
+        },
+        {
+          "time_seconds": 75.02739393939395,
+          "azimuth_deg": 41.32,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Peak",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 80.20169696969697,
+          "azimuth_deg": -26.858,
+          "elevation_deg": 1,
+          "distance_m": 3.0,
+          "section": "Peak",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 85.376,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Peak",
+          "energy": 0.35
+        }
+      ]
+    },
+    {
+      "source_id": "brass",
+      "trajectory": "phrase_supportive",
+      "gain_db": -10,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg": -14.8,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "Intimate",
+          "energy": 0.14
+        },
+        {
+          "time_seconds": 7.761454545454546,
+          "azimuth_deg": 9.620000000000001,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "Intimate",
+          "energy": 0.14
+        },
+        {
+          "time_seconds": 15.522909090909092,
+          "azimuth_deg": 18.4,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "Bloom",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 25.871515151515155,
+          "azimuth_deg": -11.959999999999999,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "Bloom",
+          "energy": 0.32
+        },
+        {
+          "time_seconds": 36.220121212121214,
+          "azimuth_deg": 22.4,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "Lift",
+          "energy": 0.52
+        },
+        {
+          "time_seconds": 46.56872727272727,
+          "azimuth_deg": -14.559999999999999,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "Lift",
+          "energy": 0.52
+        },
+        {
+          "time_seconds": 56.91733333333333,
+          "azimuth_deg": 27.2,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "Crescendo",
+          "energy": 0.76
+        },
+        {
+          "time_seconds": 65.97236363636364,
+          "azimuth_deg": -17.68,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "Crescendo",
+          "energy": 0.76
+        },
+        {
+          "time_seconds": 75.02739393939395,
+          "azimuth_deg": 30.799999999999997,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "Peak",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 80.20169696969697,
+          "azimuth_deg": -20.02,
+          "elevation_deg": 6,
+          "distance_m": 3.0,
+          "section": "Peak",
+          "energy": 0.94
+        },
+        {
+          "time_seconds": 85.376,
+          "azimuth_deg": 0,
+          "elevation_deg": 0,
+          "distance_m": 3.0,
+          "section": "Peak",
+          "energy": 0.35
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "work_id": "LAISE-T002-CDF-0001",
+  "test_id": "T002-C/D/F",
+  "engine": "LAISE Procedural Composition Engine v0.1",
+  "created_utc": "2026-09-21T05:12:53.583582+00:00",
+  "result": "PASS",
+  "composition": {
+    "seed": 20260921,
+    "bpm": 96,
+    "meter": "4/4",
+    "key": "A",
+    "mode": "natural_minor",
+    "bars": 32,
+    "duration_seconds": 80.0,
+    "sections": [
+      {
+        "name": "Intro",
+        "start_bar": 1,
+        "end_bar": 4,
+        "bars": 4
+      },
+      {
+        "name": "Development",
+        "start_bar": 5,
+        "end_bar": 12,
+        "bars": 8
+      },
+      {
+        "name": "Crescendo",
+        "start_bar": 13,
+        "end_bar": 20,
+        "bars": 8
+      },
+      {
+        "name": "Climax",
+        "start_bar": 21,
+        "end_bar": 28,
+        "bars": 8
+      },
+      {
+        "name": "Resolution",
+        "start_bar": 29,
+        "end_bar": 32,
+        "bars": 4
+      }
+    ]
+  },
+  "roles": [
+    "strings_pad",
+    "bass_sub",
+    "drums_impacts",
+    "lead_melody"
+  ],
+  "synthesis": {
+    "engine": "FluidSynth",
+    "sample_rate": 48000,
+    "soundfont": {
+      "path": "C:\\Projetos2026\\LAISE\\assets\\soundfonts\\GeneralUser GS v1.471.sf2",
+      "sha256": "f45b6b4a68b6bf3d792fcbb6d7de24dc701a0f89c5900a21ef3aaece993b839a",
+      "status": "TEST_ONLY"
+    }
+  },
+  "artifacts": {
+    "strings_pad": {
+      "note_count": 104,
+      "midi": {
+        "path": "C:\\Projetos2026\\LAISE\\evidence\\T002\\T002-CDF\\midi\\01_strings_pad.mid",
+        "sha256": "e0144645a9654d9a18c06603a3e796713e3a2edcccba17e5f68a166391b3805e"
+      },
+      "dry_wav": {
+        "path": "C:\\Projetos2026\\LAISE\\evidence\\T002\\T002-CDF\\stems\\01_strings_pad_dry.wav",
+        "sha256": "a08055a51fca268bacad3ff5acffda0cbaa48b4edce8d8aa89b359721740e175",
+        "metrics": {
+          "channels": 2,
+          "sample_width_bits": 16,
+          "sample_rate": 48000,
+          "frames": 4016128,
+          "duration_seconds": 83.66933333333333,
+          "peak": 0.278076171875,
+          "peak_dbfs": -11.116724477773479,
+          "rms": 0.04245617253684345,
+          "rms_dbfs": -27.441183209077668,
+          "not_silent": true,
+          "no_clipping": true
+        }
+      }
+    },
+    "bass_sub": {
+      "note_count": 92,
+      "midi": {
+        "path": "C:\\Projetos2026\\LAISE\\evidence\\T002\\T002-CDF\\midi\\02_bass_sub.mid",
+        "sha256": "ac0c7a299c90078adde2d34db63670305040283e1116248f5219d7605d5e1f79"
+      },
+      "dry_wav": {
+        "path": "C:\\Projetos2026\\LAISE\\evidence\\T002\\T002-CDF\\stems\\02_bass_sub_dry.wav",
+        "sha256": "43062ac57fdb2b42a64889e94cbace432d9ac6e68242afd316ff085465545e2c",
+        "metrics": {
+          "channels": 2,
+          "sample_width_bits": 16,
+          "sample_rate": 48000,
+          "frames": 3952128,
+          "duration_seconds": 82.336,
+          "peak": 0.162200927734375,
+          "peak_dbfs": -15.798933322008047,
+          "rms": 0.04940745000980831,
+          "rms_dbfs": -26.12415120201216,
+          "not_silent": true,
+          "no_clipping": true
+        }
+      }
+    },
+    "drums_impacts": {
+      "note_count": 444,
+      "midi": {
+        "path": "C:\\Projetos2026\\LAISE\\evidence\\T002\\T002-CDF\\midi\\03_drums_impacts.mid",
+        "sha256": "fc73aa6a132be4350fcc50ede9121b29a515768126cbb899440b99d2710bb0fd"
+      },
+      "dry_wav": {
+        "path": "C:\\Projetos2026\\LAISE\\evidence\\T002\\T002-CDF\\stems\\03_drums_impacts_dry.wav",
+        "sha256": "b95117c768f899cda7fbff5efd55e562f84563bc1a94e8442a15a3b2549a56c7",
+        "metrics": {
+          "channels": 2,
+          "sample_width_bits": 16,
+          "sample_rate": 48000,
+          "frames": 3931648,
+          "duration_seconds": 81.90933333333334,
+          "peak": 0.551849365234375,
+          "peak_dbfs": -5.163589053216695,
+          "rms": 0.04066421846052611,
+          "rms_dbfs": -27.81575140274578,
+          "not_silent": true,
+          "no_clipping": true
+        }
+      }
+    },
+    "lead_melody": {
+      "note_count": 156,
+      "midi": {
+        "path": "C:\\Projetos2026\\LAISE\\evidence\\T002\\T002-CDF\\midi\\04_lead_melody.mid",
+        "sha256": "d921cf6a8f2cd573f2120225e09a9e0738ed52cb57d9b5316a87ac37580aa26c"
+      },
+      "dry_wav": {
+        "path": "C:\\Projetos2026\\LAISE\\evidence\\T002\\T002-CDF\\stems\\04_lead_melody_dry.wav",
+        "sha256": "ce4b63b88c0aa4a99ccc40a38e6a1979d9c64a85ae4d69a560b258d829e680d6",
+        "metrics": {
+          "channels": 2,
+          "sample_width_bits": 16,
+          "sample_rate": 48000,
+          "frames": 3954688,
+          "duration_seconds": 82.38933333333334,
+          "peak": 0.116363525390625,
+          "peak_dbfs": -18.683662593720946,
+          "rms": 0.020265437953763486,
+          "rms_dbfs": -33.86488012677777,
+          "not_silent": true,
+          "no_clipping": true
+        }
+      }
+    }
+  },
+  "validations": {
+    "four_midi_files": true,
+    "four_dry_stems": true,
+    "all_48khz": true,
+    "all_stereo": true,
+    "all_non_silent": true,
+    "no_clipping": true,
+    "duration_consistent": true,
+    "distinct_midi_hashes": true
+  },
+  "next_stage": "T003 Spatial Composer"
+}
