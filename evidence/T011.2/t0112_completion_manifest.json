@@ -1,0 +1,10 @@
+{
+  "milestone": "T011.2",
+  "objective_result": "PASS",
+  "music": "LAISE-MUSIC-011",
+  "music_manifest": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-011\\generation_manifest.json",
+  "master": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-011\\LAISE_MUSIC011_HORIZONTE_DE_LUZ.wav",
+  "master_sha256": "ea86af3a9571a17aeefabe40a5582f30c17d7cdd42e7515f01eaf3d9f4733a99",
+  "score_fingerprint": "762b6d78c9af2e2c9cc90e8141475bcbadb1c3417a01cd1f8e5a71cd76c39edd",
+  "new_score_from_request": true
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Horizonte de Luz",
+  "style": "cinematic_epic",
+  "duration_seconds": 96.0,
+  "emotion": "hopeful",
+  "intensity": 0.74,
+  "seed": 11011,
+  "bpm": null,
+  "key": null,
+  "density": 0.68,
+  "variation": 0.82,
+  "spatial_profile": "cinematic_wide"
+}

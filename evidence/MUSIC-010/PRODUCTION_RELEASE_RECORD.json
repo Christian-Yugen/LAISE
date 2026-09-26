@@ -1,0 +1,37 @@
+{
+  "schema_version": "LAISE-RELEASE-RECORD-1.0",
+  "work_id": "LAISE-MUSIC-010",
+  "release_status": "PRODUCTION_READY",
+  "approval_result": "PASS",
+  "approved_at_utc": "2026-09-21T20:27:38.127960+00:00",
+  "final_audio": {
+    "path": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-010\\LAISE_PRODUCTION_CANDIDATE_001.wav",
+    "sha256": "0dee7e1d5b1034f492a03376e0d45a56bf0d8615cd50e7e492ea1752fa36de48"
+  },
+  "lipp_manifest": {
+    "path": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-010\\LAISE_LIPP_FINAL_MANIFEST.json",
+    "sha256": "555783e7039bc82c336e1b26da189d2db822d930e1d19f18fd879a0fadf52d0f"
+  },
+  "production_asset_registry": {
+    "path": "C:\\Projetos2026\\LAISE\\governance\\production_asset_registry.json",
+    "sha256": "1527a346fb545c239b9a0331d931ce57a17982b34f205aa44aeb4833bf888d5e"
+  },
+  "attribution": {
+    "path": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-010\\ATTRIBUTION.txt",
+    "sha256": "66afcc20a586e49616d38ea18020e651b22eb2fdfeb809f7992b5ee16abb3911"
+  },
+  "checks": {
+    "required_evidence_files_exist": true,
+    "t0103_release_is_production_candidate": true,
+    "t0103_all_objective_checks_pass": true,
+    "generation_manifest_objective_pass": true,
+    "generation_manifest_release_candidate": true,
+    "human_perceptual_review_pass": true,
+    "all_asset_promotions_eligible": true,
+    "mix_exists": true,
+    "mix_hash_matches_governance": true,
+    "attribution_exists": true,
+    "license_policy_exists": true
+  },
+  "note": "This record confirms successful completion of LAISE technical and perceptual production gates."
+}

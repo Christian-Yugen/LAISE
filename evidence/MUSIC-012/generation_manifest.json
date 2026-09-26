@@ -1,0 +1,397 @@
+{
+  "work_id": "LAISE-MUSIC-012",
+  "title": "Ecos da Tempestade",
+  "purpose": "First completely new composition generated after adding T011.2.1 Harmonic, Dynamic & Transition Safety.",
+  "request": {
+    "title": "Ecos da Tempestade",
+    "style": "cinematic_suspense",
+    "duration_seconds": 94.0,
+    "emotion": "dark",
+    "intensity": 0.78,
+    "seed": 12012,
+    "bpm": null,
+    "key": null,
+    "density": 0.72,
+    "variation": 0.88,
+    "spatial_profile": "cinematic_wide"
+  },
+  "composition_plan": {
+    "title": "Ecos da Tempestade",
+    "request_seed": 12012,
+    "key": "D",
+    "mode": "minor",
+    "bpm": 66.0,
+    "total_bars": 26,
+    "requested_duration_seconds": 94.0,
+    "nominal_duration_seconds": 94.545,
+    "motif_degrees": [
+      4,
+      3,
+      2,
+      0
+    ],
+    "motif_rhythm_beats": [
+      0.75,
+      0.75,
+      0.5,
+      2.0
+    ],
+    "sections": [
+      {
+        "name": "awakening",
+        "start_bar": 0,
+        "bars": 4,
+        "energy": 0.259,
+        "harmonic_function": "stability"
+      },
+      {
+        "name": "departure",
+        "start_bar": 4,
+        "bars": 5,
+        "energy": 0.4963,
+        "harmonic_function": "preparation"
+      },
+      {
+        "name": "ascent",
+        "start_bar": 9,
+        "bars": 5,
+        "energy": 0.7121,
+        "harmonic_function": "expectation"
+      },
+      {
+        "name": "breakthrough",
+        "start_bar": 14,
+        "bars": 7,
+        "energy": 1.0,
+        "harmonic_function": "climax"
+      },
+      {
+        "name": "homecoming",
+        "start_bar": 21,
+        "bars": 5,
+        "energy": 0.41,
+        "harmonic_function": "resolution"
+      }
+    ],
+    "progression_by_section": {
+      "awakening": [
+        0,
+        6,
+        5,
+        6
+      ],
+      "departure": [
+        0,
+        5,
+        3,
+        6
+      ],
+      "ascent": [
+        5,
+        3,
+        0,
+        6
+      ],
+      "breakthrough": [
+        0,
+        3,
+        6,
+        0
+      ],
+      "homecoming": [
+        2,
+        6,
+        0,
+        0
+      ]
+    },
+    "score_fingerprint": "18d89b33cbd05a97ebb36786802ee43917aeb87ede27b40166a4d9bc80e51663"
+  },
+  "raw_score_fingerprint": "18d89b33cbd05a97ebb36786802ee43917aeb87ede27b40166a4d9bc80e51663",
+  "safe_score_fingerprint": "ebc8db5786d554d652a52da268f7dea814475b26a292eaa29350c9b739b3aca4",
+  "score_note_count": 537,
+  "rendered_assets": {
+    "piano": {
+      "renderer": "sfizz_render",
+      "family": "keys",
+      "instrument": "piano",
+      "asset_id": "LAISE-SFZ-PIANO-SALAMANDER-V3",
+      "asset_path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Salamander Grand Piano V3.sfz",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-012\\dry_stems\\piano.wav",
+      "wav_sha256": "5c9925369383a0085bbdb990a234ffb095460d1104a4ea45f03bca26b6817350",
+      "audio_info": {
+        "audio_format": 1,
+        "channels_original": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "frames": 4536320,
+        "duration_seconds": 94.50666666666666,
+        "peak": 0.08099365234375,
+        "rms": 0.00971463205035591,
+        "finite": true
+      }
+    },
+    "theme": {
+      "renderer": "sfizz_render",
+      "family": "woodwinds",
+      "instrument": "oboe",
+      "asset_id": "LAISE-VSCO2CE-THEME",
+      "asset_path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\OboeSusNV.sfz",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-012\\dry_stems\\theme.wav",
+      "wav_sha256": "c0ff2ae267b8ed92400f6e72c168e36fec02c84bde98247a07a8d0ec2b649bd5",
+      "audio_info": {
+        "audio_format": 1,
+        "channels_original": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "frames": 4531200,
+        "duration_seconds": 94.4,
+        "peak": 0.029632568359375,
+        "rms": 0.004800185955456732,
+        "finite": true
+      }
+    },
+    "strings": {
+      "renderer": "sfizz_render",
+      "family": "strings",
+      "instrument": "violin",
+      "asset_id": "LAISE-VSCO2CE-STRINGS",
+      "asset_path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\ViolinEnsSusVib.sfz",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-012\\dry_stems\\strings.wav",
+      "wav_sha256": "6354d0e0ad6ae0c2cd3b1d70cfc3253b0786a06c6ca9a8f0c9d1c2645a5ff616",
+      "audio_info": {
+        "audio_format": 1,
+        "channels_original": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "frames": 4544512,
+        "duration_seconds": 94.67733333333334,
+        "peak": 0.08856201171875,
+        "rms": 0.011367592113578339,
+        "finite": true
+      }
+    },
+    "bass": {
+      "renderer": "sfizz_render",
+      "family": "strings",
+      "instrument": "cello",
+      "asset_id": "LAISE-VSCO2CE-BASS",
+      "asset_path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\CelloEnsSusVib.sfz",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-012\\dry_stems\\bass.wav",
+      "wav_sha256": "bcbe66d991ed85918d200072ffa8e94c5c19b0794d9c5636626ea8a24c886dd1",
+      "audio_info": {
+        "audio_format": 1,
+        "channels_original": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "frames": 4538368,
+        "duration_seconds": 94.54933333333334,
+        "peak": 0.13641357421875,
+        "rms": 0.017550277006067226,
+        "finite": true
+      }
+    },
+    "ostinato": {
+      "renderer": "sfizz_render",
+      "family": "strings",
+      "instrument": "violin",
+      "asset_id": "LAISE-VSCO2CE-OSTINATO",
+      "asset_path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\ViolinEnsSpic.sfz",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-012\\dry_stems\\ostinato.wav",
+      "wav_sha256": "9a3adc4d767cc81a551d6c9ded8776b0af6e1f6e9d205c5b768423313327395c",
+      "audio_info": {
+        "audio_format": 1,
+        "channels_original": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "frames": 3659776,
+        "duration_seconds": 76.24533333333333,
+        "peak": 0.10986328125,
+        "rms": 0.0071998524814812295,
+        "finite": true
+      }
+    },
+    "brass": {
+      "renderer": "sfizz_render",
+      "family": "brass",
+      "instrument": "french_horn",
+      "asset_id": "LAISE-VSCO2CE-BRASS",
+      "asset_path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\FHornSus.sfz",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-012\\dry_stems\\brass.wav",
+      "wav_sha256": "55d92c001b314a66a083958c9f176e94402995280956a43ac832290262e74ddb",
+      "audio_info": {
+        "audio_format": 1,
+        "channels_original": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "frames": 3665920,
+        "duration_seconds": 76.37333333333333,
+        "peak": 0.201446533203125,
+        "rms": 0.030152612857140687,
+        "finite": true
+      }
+    },
+    "countermelody": {
+      "renderer": "sfizz_render",
+      "family": "strings",
+      "instrument": "violin",
+      "asset_id": "LAISE-VSCO2CE-COUNTERMELODY",
+      "asset_path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\SViolinVib.sfz",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-012\\dry_stems\\countermelody.wav",
+      "wav_sha256": "8bc3b4f64f902f31019a234fb8daadbf20fe132ee46ab8643241ba0f98be3643",
+      "audio_info": {
+        "audio_format": 1,
+        "channels_original": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "frames": 4364288,
+        "duration_seconds": 90.92266666666667,
+        "peak": 0.081787109375,
+        "rms": 0.006492420809614838,
+        "finite": true
+      }
+    },
+    "brass_attack": {
+      "renderer": "sfizz_render",
+      "family": "brass",
+      "instrument": "french_horn",
+      "asset_id": "LAISE-VSCO2CE-BRASS_ATTACK",
+      "asset_path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\FHornStac.sfz",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-012\\dry_stems\\brass_attack.wav",
+      "wav_sha256": "a5e6dec244b274de068ec563d4b30a212ca10a59fa316e1e63362cbbb538e53a",
+      "audio_info": {
+        "audio_format": 1,
+        "channels_original": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "frames": 3513344,
+        "duration_seconds": 73.19466666666666,
+        "peak": 0.3489990234375,
+        "rms": 0.010043301621075503,
+        "finite": true
+      }
+    },
+    "percussion_low": {
+      "renderer": "sfizz_render",
+      "family": "percussion",
+      "instrument": "timpani",
+      "asset_id": "LAISE-VSCO2CE-PERCUSSION_LOW",
+      "asset_path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Timpani.sfz",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-012\\dry_stems\\percussion_low.wav",
+      "wav_sha256": "fc743aa375959b8ac63566317b9315f6b823f7920203e08f489ed1fc874baa3e",
+      "audio_info": {
+        "audio_format": 1,
+        "channels_original": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "frames": 3513344,
+        "duration_seconds": 73.19466666666666,
+        "peak": 0.04400634765625,
+        "rms": 0.0023636170062838807,
+        "finite": true
+      }
+    },
+    "percussion_snare": {
+      "renderer": "sfizz_render",
+      "family": "percussion",
+      "instrument": "snare",
+      "asset_id": "LAISE-VSCO2CE-PERCUSSION_SNARE",
+      "asset_path": "C:\\Projetos2026\\LAISE\\assets\\generated_sfz\\vsco2ce_percussion\\LAISE_VSCO2CE_Snare.sfz",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-012\\dry_stems\\percussion_snare.wav",
+      "wav_sha256": "dec013238297a1a52a02a6e80ff80a5d762c8c8c276736918e1717a6d3f15175",
+      "audio_info": {
+        "audio_format": 1,
+        "channels_original": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "frames": 3593216,
+        "duration_seconds": 74.85866666666666,
+        "peak": 0.10296630859375,
+        "rms": 0.003774812037635595,
+        "finite": true
+      }
+    },
+    "percussion_cymbal": {
+      "renderer": "sfizz_render",
+      "family": "percussion",
+      "instrument": "cymbal",
+      "asset_id": "LAISE-VSCO2CE-PERCUSSION_CYMBAL",
+      "asset_path": "C:\\Projetos2026\\LAISE\\assets\\generated_sfz\\vsco2ce_percussion\\LAISE_VSCO2CE_Cymbal.sfz",
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-012\\dry_stems\\percussion_cymbal.wav",
+      "wav_sha256": "a8355a392ca9158b9ff8fe4e285d4dbeb6a6b83a11a7a000848f416848c2f37c",
+      "audio_info": {
+        "audio_format": 1,
+        "channels_original": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "frames": 3709952,
+        "duration_seconds": 77.29066666666667,
+        "peak": 0.08245849609375,
+        "rms": 0.0009681154524704502,
+        "finite": true
+      }
+    }
+  },
+  "impact_diagnostics": [
+    {
+      "role": "braam",
+      "start_tick": 26880,
+      "start_seconds": 50.909091,
+      "section": "breakthrough",
+      "context_rms_db": -35.117,
+      "orchestral_post_rms_db": -35.59,
+      "raw_fx_rms_db": -7.998,
+      "allowed_delta_db": 8.0,
+      "applied_gain_db": -18.947,
+      "final_fx_rms_db": -26.945
+    },
+    {
+      "role": "braam",
+      "start_tick": 32640,
+      "start_seconds": 61.818182,
+      "section": "breakthrough",
+      "context_rms_db": -32.548,
+      "orchestral_post_rms_db": -34.689,
+      "raw_fx_rms_db": -7.998,
+      "allowed_delta_db": 8.0,
+      "applied_gain_db": -17.369,
+      "final_fx_rms_db": -25.367
+    },
+    {
+      "role": "ping",
+      "start_tick": 40320,
+      "start_seconds": 76.363636,
+      "section": "homecoming",
+      "context_rms_db": -32.639,
+      "orchestral_post_rms_db": -39.648,
+      "raw_fx_rms_db": -10.272,
+      "allowed_delta_db": 4.0,
+      "applied_gain_db": -20.525,
+      "final_fx_rms_db": -30.797
+    }
+  ],
+  "master": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-012\\LAISE_MUSIC012_ECOS_DA_TEMPESTADE.wav",
+  "master_sha256": "7c8a2e1de2eeee74014d8f085ab885dbe965503536f6af6cdf2ccc28189f744e",
+  "objective_result": "PASS",
+  "perceptual_result": "PENDING",
+  "checks": {
+    "new_music_request_valid": true,
+    "music012_is_new_seed_and_new_score": true,
+    "raw_and_safe_fingerprints_recorded": true,
+    "harmonic_guard_no_out_of_key_melodic_notes": true,
+    "homecoming_no_exposed_minor_second_collisions": true,
+    "fx_tonal_guard_all_fx_match_current_chord": true,
+    "no_braam_in_homecoming": true,
+    "accent_collision_guard_max_two_strong_roles": true,
+    "dynamic_impact_guard_pass": true,
+    "impact_diagnostics_finite": true,
+    "all_orchestral_roles_rendered": true,
+    "all_orchestral_wavs_non_silent": true,
+    "all_orchestral_wavs_48khz": true,
+    "shared_room_bus_active": true,
+    "light_glue_bus_active": true,
+    "master_finite": true,
+    "master_non_silent": true,
+    "master_no_clipping": true
+  }
+}

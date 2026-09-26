@@ -1,0 +1,3957 @@
+{
+  "governance_version": "LAISE-T010.3-1.0",
+  "work_id": "LAISE-MUSIC-010",
+  "release_status": "PRODUCTION_CANDIDATE",
+  "assets": [
+    {
+      "asset_id": "LAISE-SFZ-PIANO-SALAMANDER-V3",
+      "asset_type": "SFZ_BUNDLE",
+      "entrypoint": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Salamander Grand Piano V3.sfz",
+      "status_before": "ONBOARDING_VALIDATED",
+      "policy": {
+        "asset_family": "SALAMANDER",
+        "license_id": "CC-BY-3.0",
+        "license_state": "VERIFIED_REPOSITORY_LICENSE",
+        "attribution_required": true,
+        "source_url": "https://github.com/sfzinstruments/SalamanderGrandPiano",
+        "production_eligible": true,
+        "notice": "Salamander Grand Piano v3 — Alexander Holm — CC BY 3.0. Preserve attribution in project/distribution documentation."
+      },
+      "dependency_count": 215,
+      "dependencies": [
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Data\\hammer.txt",
+          "exists": true,
+          "size_bytes": 4497,
+          "sha256": "8258e15e6058f88a3a3b1ef9a587411dd327c01b11486183caad3b8f1fe96297"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Data\\notes.txt",
+          "exists": true,
+          "size_bytes": 1306,
+          "sha256": "6d8a8b978a442e582b6b7fa31b2afa76e033efcdf2f70c811a0d7a09060f5471"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Data\\pedal.txt",
+          "exists": true,
+          "size_bytes": 502,
+          "sha256": "ac027c0c658d9a74f74644013f141e7d8c524a35dab38d44ddb9b8a8c8b790c5"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Data\\region.txt",
+          "exists": true,
+          "size_bytes": 3787,
+          "sha256": "f6341fe2e2a5417f4e7f3499a7dfdf0a4327a58bd6f12201d63d63ed7d557193"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Data\\str_res.txt",
+          "exists": true,
+          "size_bytes": 6484,
+          "sha256": "1dc2c4d84668140eab1f206f0116aec5deefc818ae48d04374277d09a680f8f8"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Data\\tune_nat.txt",
+          "exists": true,
+          "size_bytes": 539,
+          "sha256": "85d40bf0956baceb99ec739b5270ea2d5957b73845e397a5d99ab10a08297337"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Data\\tune_ret.txt",
+          "exists": true,
+          "size_bytes": 576,
+          "sha256": "e19f23ad8e94dee71a4deda6b1f8aef85e8f79720a9dbcd165b189cbae8b9d50"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Data\\vel_01.txt",
+          "exists": true,
+          "size_bytes": 621,
+          "sha256": "89a44c1dbfa579e230fbc596a1ec45f12d3221ba6ecf5a1d409dcd2aa0c6dbeb"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Data\\vel_02.txt",
+          "exists": true,
+          "size_bytes": 620,
+          "sha256": "34078b907fc8cf0be93aa8de28084c0008654da5fee96a100ae90684b5107848"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Data\\vel_03.txt",
+          "exists": true,
+          "size_bytes": 624,
+          "sha256": "88690274780cd64185977ed0eefbab3f71ec7a0a1475728312b983815045d1cb"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Data\\vel_04.txt",
+          "exists": true,
+          "size_bytes": 622,
+          "sha256": "6512f0f95577a5bf94dd1ff373f3dcda95af0ebdd3f1966da6516395f906514b"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Data\\vel_05.txt",
+          "exists": true,
+          "size_bytes": 622,
+          "sha256": "76eef30708b4d4d8df5f78bd326da3a74bbd8a7ba5e2070e7baee6d06317d779"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Data\\vel_06.txt",
+          "exists": true,
+          "size_bytes": 622,
+          "sha256": "b1fddc8e11a778771095593e8ce39730c58b850cb01ee87ab34c770bb76bb77e"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Data\\vel_07.txt",
+          "exists": true,
+          "size_bytes": 620,
+          "sha256": "00798045ef7302f426e06d3dc6e3acef8c349ac54d70074be68dabd083013fa8"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Data\\vel_08.txt",
+          "exists": true,
+          "size_bytes": 621,
+          "sha256": "078cd53266fcca6421e830b3c176ad94b03c08d25247701cb7d2f534c0bf4ec7"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Data\\vel_09.txt",
+          "exists": true,
+          "size_bytes": 621,
+          "sha256": "eed3917e6bb92f921543360607d3a24189e223d818a02164e1b9916430a70e1d"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Data\\vel_10.txt",
+          "exists": true,
+          "size_bytes": 622,
+          "sha256": "a1f0ff3b7c975cc4bf2bfbf2a4d0fc594c181c97d354f5c9e838d6898e73ed4f"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Data\\vel_11.txt",
+          "exists": true,
+          "size_bytes": 622,
+          "sha256": "ac0e7ddda1871a6b89a410f2fb4d6317120996cc14b670f1bab496a5f79800c6"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Data\\vel_12.txt",
+          "exists": true,
+          "size_bytes": 622,
+          "sha256": "9814c0f9e44583b834b2a2b0a5a14c59d0dd1c7ce1bbc58eda697ea07c429d9d"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Data\\vel_13.txt",
+          "exists": true,
+          "size_bytes": 622,
+          "sha256": "4c71135aa3cc3e42c8c7b4980d0a9a66bbcd2f8eea31314f85fd3afaaf6ead26"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Data\\vel_14.txt",
+          "exists": true,
+          "size_bytes": 624,
+          "sha256": "f004d41dc10c69b11691fecacb6a2e4dafda0a7fec88a055290aa06f97f71090"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Data\\vel_15.txt",
+          "exists": true,
+          "size_bytes": 622,
+          "sha256": "ed0979ed6da8bd248d8b1fe5822a052aa3086d6ac2d2ae99a918ff8238cd72c5"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Data\\vel_16.txt",
+          "exists": true,
+          "size_bytes": 623,
+          "sha256": "0338becd5b2c87467c5ca6c1328d421bb56c7713d3352a17a3885088b531a7d7"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Salamander Grand Piano V3.sfz",
+          "exists": true,
+          "size_bytes": 2113,
+          "sha256": "c8b282f03fdb2d9e6be24a99df0d97a05e7ece718d1a14e0b882c518161f7837"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\A0v1.flac",
+          "exists": true,
+          "size_bytes": 2164885,
+          "sha256": "cf54142b888af252af90d7da0394a5dfb52f2bdfd21ed2add0b3292c17bc97b1"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\A1v1.flac",
+          "exists": true,
+          "size_bytes": 2166601,
+          "sha256": "50d0294ff0a63c0014d85899424e65082848b39cdde81b67c469ad963d8b3338"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\A2v1.flac",
+          "exists": true,
+          "size_bytes": 1823625,
+          "sha256": "be89b30ee2f9f433b4d31652cc1e66adee0779d9a2064ef6a60945bd361a55b4"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\A3v1.flac",
+          "exists": true,
+          "size_bytes": 1423583,
+          "sha256": "d92ad57a5e67a12c159738399bbe407b60d4f0820a41426094165b3b001e64dc"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\A4v1.flac",
+          "exists": true,
+          "size_bytes": 1302933,
+          "sha256": "b20e925aa7393ecffd84a5a25c465ad343f06611407d37ae3a034665a93e2ab7"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\A5v1.flac",
+          "exists": true,
+          "size_bytes": 697245,
+          "sha256": "867b8f9cde668b7ee9b1a7ad19a3dc4ac75a40e45a74cb3de1c9e31c0f0cf301"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\A6v1.flac",
+          "exists": true,
+          "size_bytes": 526856,
+          "sha256": "bc6ed6d433f54c872327de1f122ca5892ff56b4fcee0d493154d9c1334aafacb"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\A7v1.flac",
+          "exists": true,
+          "size_bytes": 241393,
+          "sha256": "c65953d0469488c361766c8457fd549fc70e480da147f412c5df39de0e7a4256"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\C1v1.flac",
+          "exists": true,
+          "size_bytes": 2438456,
+          "sha256": "d60dc7ebc5217aba8e8798980140037451ae21c5b03889c2a1c3044b287e6f2f"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\C2v1.flac",
+          "exists": true,
+          "size_bytes": 1980907,
+          "sha256": "6240272e3506ffbdf83b734477b8ce8d9af2808ecf971651f67e6fb7f91f70e3"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\C3v1.flac",
+          "exists": true,
+          "size_bytes": 1624899,
+          "sha256": "82888e21aa0b342b92c3fbbd898e3546b82ce91f00f6475ae2701b748a4b740c"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\C4v1.flac",
+          "exists": true,
+          "size_bytes": 1265676,
+          "sha256": "ca44d2e906110ebc2f67ae4c233e84cbbf0e657fe53e1c6724e4f31409478f11"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\C5v1.flac",
+          "exists": true,
+          "size_bytes": 1238975,
+          "sha256": "1bbb83ea4dd14a97e8d06b8d8e448e09f612975d4d68ce7a27aa19995d554c60"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\C6v1.flac",
+          "exists": true,
+          "size_bytes": 567727,
+          "sha256": "da29681675ab7a2b35e761ec82923a2564e66acfe0280fcf458e7b542d295979"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\C7v1.flac",
+          "exists": true,
+          "size_bytes": 405957,
+          "sha256": "c5444165462f3b8da599394c634def16cc59a4f2b427ffd58b1517d3cda1297f"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\C8v1.flac",
+          "exists": true,
+          "size_bytes": 331147,
+          "sha256": "9fd397f3013a3d572b330301ccb1cba291272a0eb7461640b16c35d0852e6bb0"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\D#1v1.flac",
+          "exists": true,
+          "size_bytes": 2169326,
+          "sha256": "7667078df4d7560055c41ef9d020525da894a4062271e75492d1d36e6fd99337"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\D#2v1.flac",
+          "exists": true,
+          "size_bytes": 2087725,
+          "sha256": "cc057a690e71b8f20ac340f968327ee768e8ad38af940703b5658f6402482bcf"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\D#3v1.flac",
+          "exists": true,
+          "size_bytes": 1381434,
+          "sha256": "0411144df641c1a8da592808c7f81feabcbe1c7a81bd415556b3423480f11c97"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\D#4v1.flac",
+          "exists": true,
+          "size_bytes": 1329951,
+          "sha256": "605c37f94f6e37951443af31a366d6fe93033be55d36bfdbe33e0aab01804171"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\D#5v1.flac",
+          "exists": true,
+          "size_bytes": 1198920,
+          "sha256": "d0a661e7512dd0be3f5eae077e9e336d5888091fc9f139f37cae0bf0b3957dd8"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\D#6v1.flac",
+          "exists": true,
+          "size_bytes": 767576,
+          "sha256": "4ee6af367215079199055021dc9a305e0da62c64d005ac14989a9faa41fe0ec7"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\D#7v1.flac",
+          "exists": true,
+          "size_bytes": 486944,
+          "sha256": "009ee7d58dba9b58e513ac5cf6705aa5f75eba47d82d4337ba6aa6389b456f0a"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\F#1v1.flac",
+          "exists": true,
+          "size_bytes": 1768820,
+          "sha256": "1afa2f82ea8e69048dcbaa3580e97334bbd0aeaa3e76cc67608288993289e6d9"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\F#2v1.flac",
+          "exists": true,
+          "size_bytes": 1846818,
+          "sha256": "a8b1fe4fa7a249cad2a571e567f45115d2a20605dc362a9d60ab830568437eaf"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\F#3v1.flac",
+          "exists": true,
+          "size_bytes": 1664654,
+          "sha256": "c93c93297522839b8ecc4782e9e493a248dd29703a002633525c9bb85ee2df97"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\F#4v1.flac",
+          "exists": true,
+          "size_bytes": 1199292,
+          "sha256": "0affd0a349717ffd35fbd71b039e8f4d2eaf15234e696719984ed09343ebc120"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\F#5v1.flac",
+          "exists": true,
+          "size_bytes": 1040868,
+          "sha256": "1ec9e9d2fdff12cf54e1d951ec9ddbe03f7974daac23a6fbca5e63cc8d22a72c"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\F#6v1.flac",
+          "exists": true,
+          "size_bytes": 458733,
+          "sha256": "4d9ae87b595e0af271a0c3aae17905c24ec47213e11adf20b3fee7617ade5885"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\F#7v1.flac",
+          "exists": true,
+          "size_bytes": 585050,
+          "sha256": "24276ac211819fffbf22d8b2353ffaf1588f706ed2cc221a1756e57c5672d085"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmLA0.flac",
+          "exists": true,
+          "size_bytes": 255386,
+          "sha256": "91811b6006232a1426ef6d78a0d2527862e48eda8eb540180f32ed5217d118fc"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmLA1.flac",
+          "exists": true,
+          "size_bytes": 272244,
+          "sha256": "7fb2183e455be99e6d09052934522e197d2fdc533d54ff6543d6cc1380754ca2"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmLA2.flac",
+          "exists": true,
+          "size_bytes": 263110,
+          "sha256": "c9dc35931473b4773641f7b20a135584395ea4dd42604d121c08fea03f04f4d9"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmLA3.flac",
+          "exists": true,
+          "size_bytes": 252726,
+          "sha256": "5ff086dc7af66b5a19ec25e061ad3cfe8890aa6b9b56913c01c484773b25278a"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmLA4.flac",
+          "exists": true,
+          "size_bytes": 264718,
+          "sha256": "a24ff4a4c3a364331af85084ff152a0c90c252dc343528b2740f2b229460af35"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmLA5.flac",
+          "exists": true,
+          "size_bytes": 259336,
+          "sha256": "e6e223f9110628a313fef569cef51a65681ce63771d7c9a5ee26ca978887ee06"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmLC1.flac",
+          "exists": true,
+          "size_bytes": 263110,
+          "sha256": "a78241fe2c74783cd83575cdeb577140e89b861894c1de19d2d21a5de87de887"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmLC2.flac",
+          "exists": true,
+          "size_bytes": 258318,
+          "sha256": "cd171dd36c1ce7d7271fbbbab2655fb5561bee683a2b248a8cb4e68c35c80fd3"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmLC3.flac",
+          "exists": true,
+          "size_bytes": 253633,
+          "sha256": "4133db0ebced0a801c3c25ff97c40f6cb83a000a2c14eb9596c374367b4bb95f"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmLC4.flac",
+          "exists": true,
+          "size_bytes": 259274,
+          "sha256": "92c6b1db832090bdbb4590c00fcbb143ebd17b8c1995539381822dc32f5728a0"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmLC5.flac",
+          "exists": true,
+          "size_bytes": 256165,
+          "sha256": "ebe6f9af87f6bac2490233040baa06c22863ea021065dcf53bf592171b2fbc78"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmLC6.flac",
+          "exists": true,
+          "size_bytes": 250074,
+          "sha256": "2109b5e6cfc24e9d1a58ecc7c0279c05ca0dad38b3861f4a5c37754d4ea683a9"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmLD#1.flac",
+          "exists": true,
+          "size_bytes": 257266,
+          "sha256": "98e2d9a66b8cc6f7fb67bbe80d8c3263ccda00965dbf503146b5fa023d8d0d3e"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmLD#2.flac",
+          "exists": true,
+          "size_bytes": 261928,
+          "sha256": "826141adee36cd46ff5d8874b1ab191ba041eb0a2b6bac4492ce100d4a91a723"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmLD#3.flac",
+          "exists": true,
+          "size_bytes": 261096,
+          "sha256": "7e7727d3c2aa3477d80436b10902a332a3f53b4dd967f962ad7fac9d1813cca0"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmLD#4.flac",
+          "exists": true,
+          "size_bytes": 256379,
+          "sha256": "4084acaa52cb206f2d07204cc6818f6aeceb54ea9f677e788dcacfea80a49f98"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmLD#5.flac",
+          "exists": true,
+          "size_bytes": 263332,
+          "sha256": "73fd3b93973d14c2d4d20c7d0a36d53c97185bd5c352fd953d14c8d708a0c3b2"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmLD#6.flac",
+          "exists": true,
+          "size_bytes": 256813,
+          "sha256": "e108180a446bbb53cfbd6e17ad8cb47434993870f342056643cbecb6afe79b90"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmLF#1.flac",
+          "exists": true,
+          "size_bytes": 262524,
+          "sha256": "699fde866989998793c79b7794d635019c00261ee2512aae648aa38b524be2e2"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmLF#2.flac",
+          "exists": true,
+          "size_bytes": 271060,
+          "sha256": "e714047d395497c55547aacd4827b3595f26f4a848eefcd9bb7568714949b055"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmLF#3.flac",
+          "exists": true,
+          "size_bytes": 258166,
+          "sha256": "999d6eee587854f78a18d8b4ec8c085c9e8c5f7acb079639206ae9994c2e94c7"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmLF#4.flac",
+          "exists": true,
+          "size_bytes": 257975,
+          "sha256": "48d3c3438cdf9db26f9967f93791ad8ebf8f415fe63c0c6c0576e71be1c78268"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmLF#5.flac",
+          "exists": true,
+          "size_bytes": 267374,
+          "sha256": "5dde9ffcfbfc8c0b9c849613b80570176b5959a046b198a028454d2c36c6e161"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmSA0.flac",
+          "exists": true,
+          "size_bytes": 178862,
+          "sha256": "75b1a63d84afdbb2056f696f766ef56910be4fc19d2757ff8e52098b4962e8e9"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmSA1.flac",
+          "exists": true,
+          "size_bytes": 186159,
+          "sha256": "b4c024a718141771420149d1fce0129b1684ab9358e587a4da513ecbd222396a"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmSA2.flac",
+          "exists": true,
+          "size_bytes": 185981,
+          "sha256": "12675d1f06674f11cb48b2134fb786c110354e2c27772cddf518bf5683b77a5c"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmSA3.flac",
+          "exists": true,
+          "size_bytes": 186379,
+          "sha256": "1cf052585e62f8e83866501b39605797662ade6b2b2e0ebcd6e074ea35d538fc"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmSA4.flac",
+          "exists": true,
+          "size_bytes": 156974,
+          "sha256": "ec15ad72cdcf5efd6d9ca6b11e44de37d9a57c152494dac6c8fa199f74584cea"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmSA5.flac",
+          "exists": true,
+          "size_bytes": 169211,
+          "sha256": "ff47442daeb673a5858be6cb52e7fdaae08f90b04cb675d295a96aef307de247"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmSC1.flac",
+          "exists": true,
+          "size_bytes": 185044,
+          "sha256": "fc554b4c652ac2ed4be230af6082d2a574c6d641c20024b651657d2e08fff204"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmSC2.flac",
+          "exists": true,
+          "size_bytes": 184590,
+          "sha256": "de17563a53319c909da42409fecea564ec2d230d0e1d4c27863eed08c944ac9f"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmSC3.flac",
+          "exists": true,
+          "size_bytes": 185015,
+          "sha256": "dd855a581302f81fc527da129691184d42607c51f3a53f593ca00d0f1a81ee76"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmSC4.flac",
+          "exists": true,
+          "size_bytes": 171481,
+          "sha256": "1a0afc50b38296c0198501261dd48172465694b5ed0988b60273967157de9406"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmSC5.flac",
+          "exists": true,
+          "size_bytes": 176373,
+          "sha256": "9645934868c92b3227dd60cf3c436bcaaabdbd4b9bf4d7f279c090c76d63f3ec"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmSC6.flac",
+          "exists": true,
+          "size_bytes": 182397,
+          "sha256": "c87018d94fff3c2e355d24cc4d0137715d84f86c4bb2a053feb04b4e4d5cbc10"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmSD#1.flac",
+          "exists": true,
+          "size_bytes": 175943,
+          "sha256": "cce22078749581244160c1f909d95857ee8b519aab4a6ff629d96429a611ff50"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmSD#2.flac",
+          "exists": true,
+          "size_bytes": 173444,
+          "sha256": "59070f69ef2aa16a6146aa95306b7dcd6eb70f98a41b823ed2ff75e9fba6c2ce"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmSD#3.flac",
+          "exists": true,
+          "size_bytes": 174563,
+          "sha256": "6e3db4a357d7494755c2bdfea79a6f585989891803cb90e2354b151713d7355c"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmSD#4.flac",
+          "exists": true,
+          "size_bytes": 171557,
+          "sha256": "713c998a16c03dbb4cd5b8d316bbd2d7bdc20aec2afa718e2fe6800d30f4c0d2"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmSD#5.flac",
+          "exists": true,
+          "size_bytes": 180487,
+          "sha256": "6946bcefaaf7bc6174fca398b29178e28f8a2cc76a979e7e774aa6d1cc96aa96"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmSD#6.flac",
+          "exists": true,
+          "size_bytes": 189071,
+          "sha256": "d935d9804987ab9d13fdc0e8d02697caad3d79f48db243600d634d255e227bdc"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmSF#1.flac",
+          "exists": true,
+          "size_bytes": 180952,
+          "sha256": "4f2216c4ba4de73031dffd7ac0a5dfbf0ebfd394e6d809fb4f87abe2973244ff"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmSF#2.flac",
+          "exists": true,
+          "size_bytes": 179729,
+          "sha256": "38eed305e0a18bcb186754a1d72bf0b9e7101093fbae5e2a97a7a7ea86024f90"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmSF#3.flac",
+          "exists": true,
+          "size_bytes": 176537,
+          "sha256": "4ee05cc200e790d107fac790eb2ebf827dd5ae96ac72e7cfb23f638241d6f985"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmSF#4.flac",
+          "exists": true,
+          "size_bytes": 174543,
+          "sha256": "fa9fe3482b1feeb051be2854c934b5c0ec4debe7835c84362a41399474a1fdc3"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmSF#5.flac",
+          "exists": true,
+          "size_bytes": 169559,
+          "sha256": "d56d0059781fd54d38d14e278f3651043b24b8ff06fa72f22df9df1204e9360f"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmV3A0.flac",
+          "exists": true,
+          "size_bytes": 172285,
+          "sha256": "93bce4e1d36dbff75e066e1f1b4590247cfe5c53c03334a9e03a39ba6f873d14"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmV3A1.flac",
+          "exists": true,
+          "size_bytes": 173285,
+          "sha256": "2b69e9eb8544c010d92e41ecd32331d74b3191c1c7a366ec924eaaa99a48ffa5"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmV3A2.flac",
+          "exists": true,
+          "size_bytes": 171899,
+          "sha256": "12d75262b4918e43731b506d5d1a85a360bd48bbf47818b28524f9833d80ecb1"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmV3A3.flac",
+          "exists": true,
+          "size_bytes": 171560,
+          "sha256": "3728bcede44f80e1fae328b52d8e7431c5db8d3a3a5ddd449ceb3342e786044a"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmV3A4.flac",
+          "exists": true,
+          "size_bytes": 168681,
+          "sha256": "ddc2623e74035aa102eed490b8d39e2d665a518241c7392a8cbcdd9410e8da84"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmV3A5.flac",
+          "exists": true,
+          "size_bytes": 169457,
+          "sha256": "44e4cf62c77e51afbc8dea4ea2d3963243fe1202076d0193cb0945b1cf1c6b82"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmV3C1.flac",
+          "exists": true,
+          "size_bytes": 168114,
+          "sha256": "f640264c753f4353d8e71639b7720bb60b25373bdb5cc7167a67e73c1e58969c"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmV3C2.flac",
+          "exists": true,
+          "size_bytes": 173135,
+          "sha256": "da8b161e85cdf79601610060ca73254adfc47982a0b5ecb69d887864ed08efb3"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmV3C3.flac",
+          "exists": true,
+          "size_bytes": 166101,
+          "sha256": "344252ce2892554c4a0c5f2c3c1a10ebbf6cfa649ac9fa2fef417d0de0e212f4"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmV3C4.flac",
+          "exists": true,
+          "size_bytes": 170533,
+          "sha256": "c91cc6144428187ad953918986b31db5915a3e8269af9148d3a3aff991c46993"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmV3C5.flac",
+          "exists": true,
+          "size_bytes": 172604,
+          "sha256": "c9a9dd788467909467daf6c1ff1f84839f1f1f538966ac45df8db91b45f458b0"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmV3C6.flac",
+          "exists": true,
+          "size_bytes": 169923,
+          "sha256": "dca505944576f7eb70d92d7707a7021106bee46f5c0f5f7d28d0c91cdcc91257"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmV3D#1.flac",
+          "exists": true,
+          "size_bytes": 170194,
+          "sha256": "57def0fd79a8e558090647eb1a1cbcea4ffb0abf4fb3d16196fd2732d5933bb0"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmV3D#2.flac",
+          "exists": true,
+          "size_bytes": 169058,
+          "sha256": "217b2653cd19aad1c3b1b9dec4e2a3bb6449e4c69829e8f0659b9b245ff969a7"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmV3D#3.flac",
+          "exists": true,
+          "size_bytes": 172741,
+          "sha256": "b54d60cb3e098681ee5972d8ba88c35a7c7cb90f7d84e8b18256519afdb665a3"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmV3D#4.flac",
+          "exists": true,
+          "size_bytes": 172222,
+          "sha256": "1a2eef0197e6779db8bc91ae2b16d06eca3f87b2c6cd066f6e957a78bbd50a96"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmV3D#5.flac",
+          "exists": true,
+          "size_bytes": 167875,
+          "sha256": "1a394b0b6294aa09d7cfa2bf6d142b30d152490b134177b8cbd1b7235b85c732"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmV3D#6.flac",
+          "exists": true,
+          "size_bytes": 177184,
+          "sha256": "49be9a34b717566cd26b1456bd56984e364984a0f5b21fea27dc09d10e15bff9"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmV3F#1.flac",
+          "exists": true,
+          "size_bytes": 173150,
+          "sha256": "20ac8363a31bcc3761b54a8282685ded0ee6c714c80715188285ce3448ce67b3"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmV3F#2.flac",
+          "exists": true,
+          "size_bytes": 168882,
+          "sha256": "f9edc9a1834b3dfedcc341a9dc60ba477f17b6a23a235d4de0ed19d3da70d69c"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmV3F#3.flac",
+          "exists": true,
+          "size_bytes": 168930,
+          "sha256": "28516fdfcf144ec7ebdb79d35ce746ba64309526869bfa79a6e8fccc54851048"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmV3F#4.flac",
+          "exists": true,
+          "size_bytes": 174028,
+          "sha256": "3ee240e99ec55c9ecfa72ef2053ee1ac5d2c04268388b924f1bca743db5b9c3d"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\harmV3F#5.flac",
+          "exists": true,
+          "size_bytes": 171059,
+          "sha256": "16921aef69e84c063194749ba5ba36dd738e263f155cb36f59efa8c9d4803f71"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\pedalD1.flac",
+          "exists": true,
+          "size_bytes": 824409,
+          "sha256": "cbd65f1156cdca61cfd0e68dfa1e843fb20f5878b50e81bb5390a65a25305556"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\pedalD2.flac",
+          "exists": true,
+          "size_bytes": 832915,
+          "sha256": "75c36caa371fd18089e4c0337cc34b7365c0b7f4d50e4866acbcd6c0bd095802"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\pedalU1.flac",
+          "exists": true,
+          "size_bytes": 77855,
+          "sha256": "ff8805226a3c07cbce67e2638a99cdcad4ca8e67aa999a8b47aaa41645a21cf9"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\pedalU2.flac",
+          "exists": true,
+          "size_bytes": 67694,
+          "sha256": "6a57c32b116d86735080d6b08d094af21d40c0b632ec09b04310a5da76f33459"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel1.flac",
+          "exists": true,
+          "size_bytes": 65800,
+          "sha256": "327ce163e169dd9881806716a804772e0e9b156788714a43240242448d96c787"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel10.flac",
+          "exists": true,
+          "size_bytes": 64739,
+          "sha256": "d027697c3d4a5279e74618e075fc0fa85f6bafb2b8e37308244a71004bb586e2"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel11.flac",
+          "exists": true,
+          "size_bytes": 62880,
+          "sha256": "3f4380500ae05a186c65013adb72e880f8a8f9626bfed53659ff8f5642444dd1"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel12.flac",
+          "exists": true,
+          "size_bytes": 65049,
+          "sha256": "3739aa49083794701d6ff429055f27b764d8e3695e461d70c562d3841629a56d"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel13.flac",
+          "exists": true,
+          "size_bytes": 63589,
+          "sha256": "86e0dd8e7874d1fb5d7b872370f6d4ae9461c251df4a14cfc9529c35db43527d"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel14.flac",
+          "exists": true,
+          "size_bytes": 65184,
+          "sha256": "a97f15b827cfcb6c678f62a4c960ff96e658c72ec43f6d022fc3bfb23ba35ecb"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel15.flac",
+          "exists": true,
+          "size_bytes": 64733,
+          "sha256": "4b853516e1eefae885545fec993ee07bcc101c076e1c3cf281608b3668489362"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel16.flac",
+          "exists": true,
+          "size_bytes": 64941,
+          "sha256": "9f71349d0e5667572c5a341ca68f07d680017d0194c3ec4a062846f03ffb9e44"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel17.flac",
+          "exists": true,
+          "size_bytes": 63124,
+          "sha256": "d1c7d5846fc843770e7080006146b37e488afd1d3e6e3db0787767740abb7687"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel18.flac",
+          "exists": true,
+          "size_bytes": 64463,
+          "sha256": "0deb3628cefe6b99a87b9d02ce58d3819ab6552249716a9b6974ce8db483ddb0"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel19.flac",
+          "exists": true,
+          "size_bytes": 65818,
+          "sha256": "7c2685f58af89bb08ed8ee0df6134fb642371ef1e3b349ba3e2c1f640d978042"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel2.flac",
+          "exists": true,
+          "size_bytes": 65814,
+          "sha256": "a28dc742efe8ccc20003ad2334c78fc149bc5e1a0e66f18082aa6a1590aeedec"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel20.flac",
+          "exists": true,
+          "size_bytes": 63266,
+          "sha256": "7c786c2ae4008227adea0173c11f54708c747082d3a504843055ee9bcad70e4b"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel21.flac",
+          "exists": true,
+          "size_bytes": 61488,
+          "sha256": "10f7c5e6fbfcc0cb2808d370c91c14cedadf0962a961e20a154e11fc27321f4d"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel22.flac",
+          "exists": true,
+          "size_bytes": 62347,
+          "sha256": "6162f569d57f8b82f1739455d14cf6a4a011cb435b7dbf72b3f1e76e1434dba6"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel23.flac",
+          "exists": true,
+          "size_bytes": 63501,
+          "sha256": "5f61573d5b8138b4728d961cc13288ccf192ee5f72667ba210f9b8d92de01757"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel24.flac",
+          "exists": true,
+          "size_bytes": 63789,
+          "sha256": "9eb9452cb62064ef564e28552f07218a8452b1d9957e2f43b9d3db4320dc5f22"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel25.flac",
+          "exists": true,
+          "size_bytes": 63836,
+          "sha256": "e974dab8f3e7cc51a96363c8f156fea0d9e639cc92bc2ed9f5e863b3b582af4f"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel26.flac",
+          "exists": true,
+          "size_bytes": 64540,
+          "sha256": "66ea7055c16c6479710b8bb9e63c9f4276792b5a2c26400f85dcf5a9948535dc"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel27.flac",
+          "exists": true,
+          "size_bytes": 63514,
+          "sha256": "5602d3dd56b12264bab2c4c3b7435abfc46a0294e029c58020631733bc475a8b"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel28.flac",
+          "exists": true,
+          "size_bytes": 62755,
+          "sha256": "b1a84429a7c54f63714dceb60a8559561c683790febc10155dd1f56380635dbe"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel29.flac",
+          "exists": true,
+          "size_bytes": 64416,
+          "sha256": "a40a6b76bdd081457cba2f517055fc159585956582758a4afc5716e56c0b41f9"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel3.flac",
+          "exists": true,
+          "size_bytes": 62713,
+          "sha256": "d5e5b8227dcf5c95ce10e269e7563e152ee776e734837c412dc924b0ee709258"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel30.flac",
+          "exists": true,
+          "size_bytes": 62281,
+          "sha256": "2434c25b3ee68037ed7307fdbc4b4cc5b6b5a6606b342797b83d89e871dfeb54"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel31.flac",
+          "exists": true,
+          "size_bytes": 64405,
+          "sha256": "54906dc8fe01b54d93bb405c6b74b06285cc37eec1739791eb9f1570e0895101"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel32.flac",
+          "exists": true,
+          "size_bytes": 63896,
+          "sha256": "10d326f957446ac94359035b4aeaa573a3e351b5a6cf2ba89503c137749ed315"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel33.flac",
+          "exists": true,
+          "size_bytes": 65237,
+          "sha256": "894b311135937f21b8175a92c572334c50617394bfda11b622e1953553ac74ce"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel34.flac",
+          "exists": true,
+          "size_bytes": 65028,
+          "sha256": "c96370dc17983c314ab56f89207f59a376b762a123ecdaa2267b256b94802635"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel35.flac",
+          "exists": true,
+          "size_bytes": 62480,
+          "sha256": "1f9d22babbcc587a5a1ce80000cc14beb4bfa45f73bc0ccc2b82938f4f1c3c11"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel36.flac",
+          "exists": true,
+          "size_bytes": 63338,
+          "sha256": "a3e85f0f62db2d7cb5c621b7b9076e2b88d0d2faaa0e1678d37e336a62b1a259"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel37.flac",
+          "exists": true,
+          "size_bytes": 63314,
+          "sha256": "d89d309bd22630bea58d97cc8981c2705792f7d4bedbc6f92a9f661763de5ac1"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel38.flac",
+          "exists": true,
+          "size_bytes": 62182,
+          "sha256": "2136b99daa064e44c31e1ee6ff7ab2ee4e4cf357b1a59000de8fd58d7ef10775"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel39.flac",
+          "exists": true,
+          "size_bytes": 62861,
+          "sha256": "c9d8a0e3872a95c74f0f36330384baab85cce9a9b6f07ea5c17cbda48c55627b"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel4.flac",
+          "exists": true,
+          "size_bytes": 65645,
+          "sha256": "a94471ec71e75567d756ab3eb26759c2b5b77590d76f51d5ded86eff4c3937e5"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel40.flac",
+          "exists": true,
+          "size_bytes": 63966,
+          "sha256": "d0a86cfa6578475e97a66d6a717ded7a2f24877e7c9fdc67e71181c9272332bd"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel41.flac",
+          "exists": true,
+          "size_bytes": 62226,
+          "sha256": "c2779c5b0c731146e3bd8f4d8bd0bf9610bd0906e4d0f350ad33ffff3da65f76"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel42.flac",
+          "exists": true,
+          "size_bytes": 63106,
+          "sha256": "21f3a94e47b92aad67e6e601ae6e466510399afbac9c2d568e17f38eafd9039f"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel43.flac",
+          "exists": true,
+          "size_bytes": 61000,
+          "sha256": "276f5083f2f48d3d74a1e28d8d8588835ece85a1cbd1138203ea631a9c25cfcb"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel44.flac",
+          "exists": true,
+          "size_bytes": 64654,
+          "sha256": "8a955107ae3dd89d090eda8c5abf8c03471f6a15f45a7fe35358bbed979686dd"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel45.flac",
+          "exists": true,
+          "size_bytes": 64774,
+          "sha256": "757b1a4ad1ea7588e5ddcf2774e7b613a211ba89f56eff340c22a3c4295ea213"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel46.flac",
+          "exists": true,
+          "size_bytes": 60464,
+          "sha256": "a0b141be68d003a2772dcf9176362002f547effe2b35205e3945a66fb271d351"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel47.flac",
+          "exists": true,
+          "size_bytes": 63775,
+          "sha256": "f83b4a7ea768c7f1a8d0b8c39bdab8a4f1147b7d15f0e8d3f880c818c69f2ead"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel48.flac",
+          "exists": true,
+          "size_bytes": 62870,
+          "sha256": "7ce5156dac06420aeddd66c621fa8b0231450fba0581aab497db97685b29d9f8"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel49.flac",
+          "exists": true,
+          "size_bytes": 65187,
+          "sha256": "3d894b27ecfb9f2ff8feaa26ce0eb2d325c96c45b3a349f9cadc046161eada50"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel5.flac",
+          "exists": true,
+          "size_bytes": 67904,
+          "sha256": "85d473fba621eda92db4cb9ba702616f782998455e7d58f5c06ea5cc3a4bff96"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel50.flac",
+          "exists": true,
+          "size_bytes": 64851,
+          "sha256": "78b7be6d969c7ee451c5c37b81108e05a743647df4f8d2c88b79ef6d2e6b63a2"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel51.flac",
+          "exists": true,
+          "size_bytes": 64456,
+          "sha256": "602da5184c9b6a119dd1c492f84b1875d9f73a0854aef810abd9620ddc7e676a"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel52.flac",
+          "exists": true,
+          "size_bytes": 61757,
+          "sha256": "312842c281c46849841af3b7f1a6c627810b8c747b483b85185018445ac16ba5"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel53.flac",
+          "exists": true,
+          "size_bytes": 65363,
+          "sha256": "3ed501d556ac325ea8b05f1d76e0fce442da7fb12d7b96c5a12e2ce08280aa19"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel54.flac",
+          "exists": true,
+          "size_bytes": 64475,
+          "sha256": "9a452d47bdc30af7b4ccfe1cc3a09bd4d709cd0907d8df0725de454018e5022e"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel55.flac",
+          "exists": true,
+          "size_bytes": 60317,
+          "sha256": "bd4dcf0b7b73c74c388a4dffbaa5339d4d5cbc30728302b909e38c4cd78a3338"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel56.flac",
+          "exists": true,
+          "size_bytes": 60661,
+          "sha256": "af971ba6d230ccf1b4abf7458c96d738a06cf87e7b173795f8dfeacbc2f8680e"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel57.flac",
+          "exists": true,
+          "size_bytes": 62320,
+          "sha256": "a54a1991796d32bc578db016a40c758291ce67d12d97bd5aa97f5dd1597448ac"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel58.flac",
+          "exists": true,
+          "size_bytes": 62869,
+          "sha256": "08f83069b2529fd94657a41d0c1b5c65a86ff12cb80915bc9ba49f6187c43839"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel59.flac",
+          "exists": true,
+          "size_bytes": 64365,
+          "sha256": "eb3fea6af87288be8e48ccf2503047241e3a809d4b26e6e01f14c6129468bca0"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel6.flac",
+          "exists": true,
+          "size_bytes": 64228,
+          "sha256": "0290c29032fdb8b0af667d8a4abcb08039c71d737d0882aca595c83de733b83b"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel60.flac",
+          "exists": true,
+          "size_bytes": 62794,
+          "sha256": "a0c5a8d2923abf8ed80ff58f13652be5647f973487c5d937332f8270315d9a17"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel61.flac",
+          "exists": true,
+          "size_bytes": 62634,
+          "sha256": "5be63f9d53ecb71b6eb137061198e82b5e6c2bdede3a06afa4462cc951847f4f"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel62.flac",
+          "exists": true,
+          "size_bytes": 64289,
+          "sha256": "26372e34309fa5e67fd2234fe823c1a162a7ee9826684cba645240d5d760f333"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel63.flac",
+          "exists": true,
+          "size_bytes": 63445,
+          "sha256": "c2178ccc1af0b49aad2c9f23c103d8b3de6e9f243e0a46c1793b5b7600f8cc3d"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel64.flac",
+          "exists": true,
+          "size_bytes": 61812,
+          "sha256": "c6708f58139d039739b48809d06cc24a37cfeade8250d7a034445928945a6dfa"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel65.flac",
+          "exists": true,
+          "size_bytes": 63777,
+          "sha256": "eca4a7ca4c088b77f126a55accb26211e53a1e2d799c7ab5bf9bf1a59b786c8b"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel66.flac",
+          "exists": true,
+          "size_bytes": 63113,
+          "sha256": "614845e07359ea793e68e3e9dbfea960fd5dcb2fbe07b65ef1098ddada65244b"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel67.flac",
+          "exists": true,
+          "size_bytes": 62209,
+          "sha256": "02de648c2c60a0b679aa3cee1b8f4335656581a783977102fb1da6c667226332"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel68.flac",
+          "exists": true,
+          "size_bytes": 63016,
+          "sha256": "6417c6c0c7372e36a5a0735e6a953f7981671309a5b6b9182aaac86a1dc63873"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel69.flac",
+          "exists": true,
+          "size_bytes": 63634,
+          "sha256": "c8e2e971407da76c728b4a4310d5334dee32405d3dff6f7a4690b03c9059efd7"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel7.flac",
+          "exists": true,
+          "size_bytes": 65815,
+          "sha256": "5fa3b0e4e271bc884b27769115c082b7c8d0ccdeb0d1f270e065cb3eecc7e2d3"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel70.flac",
+          "exists": true,
+          "size_bytes": 62235,
+          "sha256": "591fe364fd2869c618452a5fe765cb67a2ba31b61e7feacf957eb6afb03d21c3"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel71.flac",
+          "exists": true,
+          "size_bytes": 64302,
+          "sha256": "5bb5e7a1d622ecca5439b87ec9fcb6e898f6007443cd4bf855352d61f7648737"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel72.flac",
+          "exists": true,
+          "size_bytes": 64955,
+          "sha256": "d93913305dfed3343a61f2b70480d011da39e795813fe6248ac0ddb2df5cb236"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel73.flac",
+          "exists": true,
+          "size_bytes": 65240,
+          "sha256": "c0ab77b84339baf3fe1e722f4e06ae08849cc1a3a1eb3efbe2e92713df4f1f72"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel74.flac",
+          "exists": true,
+          "size_bytes": 63103,
+          "sha256": "9d5b5b3d908fddef2b6bfe15172052ccd50c6579baedbfd23330ed8b4eb86731"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel75.flac",
+          "exists": true,
+          "size_bytes": 62389,
+          "sha256": "b6815fd97614595a8875e7926aee9e11bd2fa5928bf8d2c9ecbbf7bce986f145"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel76.flac",
+          "exists": true,
+          "size_bytes": 55686,
+          "sha256": "5bd1ec2313209d92f9ec7b9252d9f7fef3e6257371c7173fcbc5b38916ea6760"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel77.flac",
+          "exists": true,
+          "size_bytes": 64076,
+          "sha256": "042251dc000e87150cf4561af785254edf3b77984af3225a48811d50b865c3ab"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel78.flac",
+          "exists": true,
+          "size_bytes": 64028,
+          "sha256": "c9cb2481811f1d1c2a0219db79f76ddfa3048e4822aa84f6d7e88e51d68696b0"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel79.flac",
+          "exists": true,
+          "size_bytes": 65881,
+          "sha256": "148becf4c929a4750d7fcf232337a5e39cd5ab91af8d534ce3f61a1776cffc77"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel8.flac",
+          "exists": true,
+          "size_bytes": 66131,
+          "sha256": "46c6192313458dd4df376e0fefb4a457ae4212bb6ea0e048475ac8ecba530093"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel80.flac",
+          "exists": true,
+          "size_bytes": 66306,
+          "sha256": "31cc0923939e73a9d70c36195ce993814fb208d6e50d910dd9ffbd6c8edd83d2"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel81.flac",
+          "exists": true,
+          "size_bytes": 58584,
+          "sha256": "042493a8a0c027cbfb31aa095c8b17cdd0e61b4a642da772c369da22124c3e12"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel82.flac",
+          "exists": true,
+          "size_bytes": 67693,
+          "sha256": "c050215667ef216c7df8831d845776f7636b61a9af2fc7a64decac0f4867664d"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel83.flac",
+          "exists": true,
+          "size_bytes": 65751,
+          "sha256": "faaec23cb83e0ca81f54010b3f8d1725ee6c0913a42feb037e4c9aac446ac4f4"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel84.flac",
+          "exists": true,
+          "size_bytes": 65091,
+          "sha256": "88e6fb33d25c92a986f849b7dd3b49eeb23e2e4c9f738fa9d4d91a52e210770b"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel85.flac",
+          "exists": true,
+          "size_bytes": 64606,
+          "sha256": "4b7a5bb72ceeb55b0816cad8e4a05c64a705dec6e811b356dd88d10c3ede85c4"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel86.flac",
+          "exists": true,
+          "size_bytes": 66664,
+          "sha256": "e4d27a45e338c141067c77d2e93d863b084bd4ffcf6aff639cffb47359d7300a"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel87.flac",
+          "exists": true,
+          "size_bytes": 64663,
+          "sha256": "fba2ea06e951a46d8b547836bbe3fab1e95e8a79a12969aff6f6f9964cbed93f"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel88.flac",
+          "exists": true,
+          "size_bytes": 63299,
+          "sha256": "ee4f483f5e2da6fa405642054897eb4b93878e2db8ec7c193b4225d765cf32df"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Samples\\rel9.flac",
+          "exists": true,
+          "size_bytes": 63913,
+          "sha256": "25804ac45a766937f0c9025276aa38f79bbcaf5e95a235af8f159c71eec1c6a4"
+        }
+      ],
+      "unresolved_references": [],
+      "macro_snapshot": {
+        "$EXT": "flac",
+        "$HAMMER": "21",
+        "$NATURAL": "C0",
+        "$OFF01": "1754",
+        "$OFF02": "2163",
+        "$OFF03": "1318",
+        "$OFF04": "1134",
+        "$OFF05": "699",
+        "$OFF06": "820",
+        "$OFF07": "788",
+        "$OFF08": "975",
+        "$OFF09": "917",
+        "$OFF10": "935",
+        "$OFF11": "870",
+        "$OFF12": "879",
+        "$OFF13": "839",
+        "$OFF14": "727",
+        "$OFF15": "690",
+        "$OFF16": "602",
+        "$OFF17": "664",
+        "$OFF18": "720",
+        "$OFF19": "707",
+        "$OFF20": "693",
+        "$OFF21": "1522",
+        "$OFF22": "626",
+        "$OFF23": "621",
+        "$OFF24": "620",
+        "$OFF25": "635",
+        "$OFF26": "554",
+        "$OFF27": "524",
+        "$OFF28": "771",
+        "$OFF29": "688",
+        "$OFF30": "716",
+        "$OFFSET": "98",
+        "$PEDAL": "22",
+        "$RELEASE": "72",
+        "$RETUNED": "C#0",
+        "$STR_RES": "20",
+        "$TUNE01": "10",
+        "$TUNE02": "13",
+        "$TUNE03": "11",
+        "$TUNE04": "-3",
+        "$TUNE05": "-9",
+        "$TUNE06": "-9",
+        "$TUNE07": "-11",
+        "$TUNE08": "-7",
+        "$TUNE09": "-4",
+        "$TUNE10": "0",
+        "$TUNE11": "-6",
+        "$TUNE12": "-3",
+        "$TUNE13": "-3",
+        "$TUNE14": "-6",
+        "$TUNE15": "-3",
+        "$TUNE16": "0",
+        "$TUNE17": "-4",
+        "$TUNE18": "-8",
+        "$TUNE19": "-8",
+        "$TUNE20": "-5",
+        "$TUNE21": "-7",
+        "$TUNE22": "-8",
+        "$TUNE23": "-12",
+        "$TUNE24": "-13",
+        "$TUNE25": "-12",
+        "$TUNE26": "-17",
+        "$TUNE27": "-17",
+        "$TUNE28": "-27",
+        "$TUNE29": "-38",
+        "$TUNE30": "-38",
+        "$VEL": "v16",
+        "$VELTRACK": "99"
+      },
+      "effective_default_path": "Samples/",
+      "dependency_closure_complete": true
+    },
+    {
+      "asset_id": "LAISE-VSCO2CE-THEME",
+      "asset_type": "SFZ_BUNDLE",
+      "entrypoint": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\OboeSusNV.sfz",
+      "status_before": "ONBOARDING_VALIDATED",
+      "policy": {
+        "asset_family": "VSCO2CE",
+        "license_id": "CC0-1.0",
+        "license_state": "VERIFIED_OFFICIAL_SOURCE",
+        "attribution_required": false,
+        "source_url": "https://versilian-studios.com/vsco-community/",
+        "production_eligible": true,
+        "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+      },
+      "dependency_count": 19,
+      "dependencies": [
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\OboeSusNV.sfz",
+          "exists": true,
+          "size_bytes": 2105,
+          "sha256": "d3963e2b65ff608ee3728666ac0764fd680a6c51339c8ee858f426c5a94e51ee"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Woodwinds\\Oboe\\Sus\\Oboe_Sus_A#2_v1_Main.wav",
+          "exists": true,
+          "size_bytes": 4783096,
+          "sha256": "6f943c1e5d87d6782e9ff12e4b79c6cae9a396ffa1def8d10d975adfe6050df2"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Woodwinds\\Oboe\\Sus\\Oboe_Sus_A#2_v3_Main.wav",
+          "exists": true,
+          "size_bytes": 2377080,
+          "sha256": "78333824a35f1187a8d30e039ca1965113ee194cd9710afe2c3a1e9eb5a486b6"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Woodwinds\\Oboe\\Sus\\Oboe_Sus_A#3_v1_Main.wav",
+          "exists": true,
+          "size_bytes": 1899732,
+          "sha256": "07a36bd18290315aee1a98221c4d40935f1d926c85ba6f29017e59f7b450444a"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Woodwinds\\Oboe\\Sus\\Oboe_Sus_A#3_v3_Main.wav",
+          "exists": true,
+          "size_bytes": 1793592,
+          "sha256": "fcd9b2165297d50d1968bea121226450f78838b9d18087f3925ce92b6e9798b9"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Woodwinds\\Oboe\\Sus\\Oboe_Sus_A#4_v1_Main.wav",
+          "exists": true,
+          "size_bytes": 1855232,
+          "sha256": "b22a4feac3fb400fa5cd8454f9c45b3ca008b7ac22bdbbe18616161c3235a928"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Woodwinds\\Oboe\\Sus\\Oboe_Sus_A#4_v3_Main.wav",
+          "exists": true,
+          "size_bytes": 1546676,
+          "sha256": "dc9a1faae5ccaea8aea2b67438b9efde2c1b1b7f422c97b70d493445e07009e8"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Woodwinds\\Oboe\\Sus\\Oboe_Sus_D3_v1_Main.wav",
+          "exists": true,
+          "size_bytes": 1966552,
+          "sha256": "a9ebaf19502bde43fe8409debddf8d326c0843980598f978e521ce3526750350"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Woodwinds\\Oboe\\Sus\\Oboe_Sus_D3_v3_Main.wav",
+          "exists": true,
+          "size_bytes": 2219916,
+          "sha256": "8016596d214a18c814bd19e9c9c61a4e902f6d067ddeeeaa7b5e4e2ff2238a7c"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Woodwinds\\Oboe\\Sus\\Oboe_Sus_D4_v1_Main.wav",
+          "exists": true,
+          "size_bytes": 1747332,
+          "sha256": "cbc9cdf1b6ca5765ec67918cd4a19669f792f9c6f755837ab807d3b8e0f3dfa9"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Woodwinds\\Oboe\\Sus\\Oboe_Sus_D4_v3_Main.wav",
+          "exists": true,
+          "size_bytes": 1699340,
+          "sha256": "d8ffaa22803a6238ae8c9d4664e9659e717916d70a2f2c48742f3eb519815497"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Woodwinds\\Oboe\\Sus\\Oboe_Sus_D5_v1_Main.wav",
+          "exists": true,
+          "size_bytes": 1564292,
+          "sha256": "e276fa641f2074b97da41289e1cc99caf6facfec83225fd8b086295b9f14f3a0"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Woodwinds\\Oboe\\Sus\\Oboe_Sus_D5_v3_Main.wav",
+          "exists": true,
+          "size_bytes": 1650952,
+          "sha256": "13fb1986bbde4d6e61c13c39d0fb18eec4d0bbffd2f8c9fcda11d9874f5cbe92"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Woodwinds\\Oboe\\Sus\\Oboe_Sus_F3_v1_Main.wav",
+          "exists": true,
+          "size_bytes": 1542764,
+          "sha256": "cae24d6d4c5733067dca85203c2cec5c2eaabfcb210e3a71d9e88b5810fef9f0"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Woodwinds\\Oboe\\Sus\\Oboe_Sus_F3_v3_Main.wav",
+          "exists": true,
+          "size_bytes": 1717152,
+          "sha256": "58d69a9cb3cd71dae917b83afe2efc3dbee1ab6c1d330fe2c3faf89b269f673c"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Woodwinds\\Oboe\\Sus\\Oboe_Sus_F4_v1_Main.wav",
+          "exists": true,
+          "size_bytes": 1666300,
+          "sha256": "e4d1bf4166f77f42ad1f113f23c758db109e860c4764d5dd19705c70917a7c43"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Woodwinds\\Oboe\\Sus\\Oboe_Sus_F4_v3_Main.wav",
+          "exists": true,
+          "size_bytes": 1452368,
+          "sha256": "ff2d3e89da82b3fa184e0a6a1ebe817f73879f5e01833e44f9ee6c0991632bae"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Woodwinds\\Oboe\\Sus\\Oboe_Sus_F5_v1_Main.wav",
+          "exists": true,
+          "size_bytes": 1652712,
+          "sha256": "4b9f2e24f15aafa331c43040967bc8238988a201dae23006819c190dea397a16"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Woodwinds\\Oboe\\Sus\\Oboe_Sus_F5_v3_Main.wav",
+          "exists": true,
+          "size_bytes": 1722672,
+          "sha256": "9c24e524a1c8fdaf82a5874c944db46de26ff8ce4a0eb209d3e12fd65634e2f3"
+        }
+      ],
+      "unresolved_references": [],
+      "macro_snapshot": {},
+      "effective_default_path": "Woodwinds\\Oboe\\Sus\\",
+      "dependency_closure_complete": true
+    },
+    {
+      "asset_id": "LAISE-VSCO2CE-STRINGS",
+      "asset_type": "SFZ_BUNDLE",
+      "entrypoint": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\ViolinEnsSusVib.sfz",
+      "status_before": "ONBOARDING_VALIDATED",
+      "policy": {
+        "asset_family": "VSCO2CE",
+        "license_id": "CC0-1.0",
+        "license_state": "VERIFIED_OFFICIAL_SOURCE",
+        "attribution_required": false,
+        "source_url": "https://versilian-studios.com/vsco-community/",
+        "production_eligible": true,
+        "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+      },
+      "dependency_count": 23,
+      "dependencies": [
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\susVib\\VlnEns_susVib_A2_v1.wav",
+          "exists": true,
+          "size_bytes": 1979216,
+          "sha256": "5b3ff9f991642a6dc2fdad56a7d94f581077d2c4082cc1ed89156737716ff22c"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\susVib\\VlnEns_susVib_A2_v2.wav",
+          "exists": true,
+          "size_bytes": 2231504,
+          "sha256": "db6bad06c78577a105f6c2a5dc5c7ac0643c36e6904742411f0506dd9d6fa84b"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\susVib\\VlnEns_susVib_A3_v1.wav",
+          "exists": true,
+          "size_bytes": 1890316,
+          "sha256": "72817a53dfd2eb61eca94658c14e1cab6017629ca2f27bab8e394c6675bfaad7"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\susVib\\VlnEns_susVib_A3_v2.wav",
+          "exists": true,
+          "size_bytes": 1671704,
+          "sha256": "3fc4a9e22037643fce11e755da72c61c664893f83e637c24a7b5c2d3824ab986"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\susVib\\VlnEns_susVib_B2_v1.wav",
+          "exists": true,
+          "size_bytes": 2314360,
+          "sha256": "1a873970a86da78ed8c9aa068303958496c34eee6fa94fcab39d499dbdfb7826"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\susVib\\VlnEns_susVib_B2_v2.wav",
+          "exists": true,
+          "size_bytes": 2373380,
+          "sha256": "a822fd195e60881afac5e0801d8d494b782a8f6787a08f3c711f5e00290b3fb6"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\susVib\\VlnEns_susVib_B4_v1.wav",
+          "exists": true,
+          "size_bytes": 2056964,
+          "sha256": "ec4cea41ac77f251bf5f4158fe9cbeeae13755e3785106e505808de18fdddc0d"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\susVib\\VlnEns_susVib_B4_v2.wav",
+          "exists": true,
+          "size_bytes": 1923744,
+          "sha256": "bdb85532f47e4ebd681f9617a415116e7e5aeb786dce2eeab5ab9b93c1b31644"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\susVib\\VlnEns_susVib_C4_v1.wav",
+          "exists": true,
+          "size_bytes": 2063320,
+          "sha256": "c07edd5b2119fa1da2207aba996961b50dd616f69bbcf2300ab271bc6c16239f"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\susVib\\VlnEns_susVib_C4_v2.wav",
+          "exists": true,
+          "size_bytes": 2017512,
+          "sha256": "5857387b40c412f756ef281c1171247664432a4e5078c98142d595d15cd92ef9"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\susVib\\VlnEns_susVib_D3_v1.wav",
+          "exists": true,
+          "size_bytes": 2061808,
+          "sha256": "583e660bc5daa4e094aef5fc014fbb92751040be8741ed7a16847306a1fe0a99"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\susVib\\VlnEns_susVib_D3_v2.wav",
+          "exists": true,
+          "size_bytes": 2457908,
+          "sha256": "77893dbf1ea1be8c40ad756d16b916298e6b1b0742495e9853e020375592357c"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\susVib\\VlnEns_susVib_D5_v1.wav",
+          "exists": true,
+          "size_bytes": 2116352,
+          "sha256": "f8d870457826c94270b9c3ead8e8ec02cb7e6c4a3481cded055641b7fab7df62"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\susVib\\VlnEns_susVib_D5_v2.wav",
+          "exists": true,
+          "size_bytes": 1976276,
+          "sha256": "0c2ca9de723bed0a0968e32126b934f778cd678b367a29e7fde91004daf84daf"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\susVib\\VlnEns_susVib_E4_v1.wav",
+          "exists": true,
+          "size_bytes": 2315540,
+          "sha256": "787fb4bcfb47d5c88ee1573c8db15f32d345386301be4a8eea6a825847413ae2"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\susVib\\VlnEns_susVib_E4_v2.wav",
+          "exists": true,
+          "size_bytes": 1702620,
+          "sha256": "030c09a631ebbc7304fc0b47bb5c346cd646e7451d9fdc531870f2534c60d9e9"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\susVib\\VlnEns_susVib_F#3_v1.wav",
+          "exists": true,
+          "size_bytes": 1585612,
+          "sha256": "8dc13d197373f0d1fe1b0744de57796800bde372906d3667398c55d473a383ea"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\susVib\\VlnEns_susVib_F#3_v2.wav",
+          "exists": true,
+          "size_bytes": 1720800,
+          "sha256": "d7bc6b4c259b9543de4fe66228ee107205b8f539c8d7c1de71f5781d45a14fc7"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\susVib\\VlnEns_susVib_G2_v1.wav",
+          "exists": true,
+          "size_bytes": 2341712,
+          "sha256": "feb96c5064fbef43087c495d61a9cab9f70ff1be5b22905147c1f86d5f89547c"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\susVib\\VlnEns_susVib_G2_v2.wav",
+          "exists": true,
+          "size_bytes": 2681324,
+          "sha256": "c0b06a23f0245c042f0609dc0db704adc14bfc9ea8a34cb5c97d80096715a0e6"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\susVib\\VlnEns_susVib_G4_v1.wav",
+          "exists": true,
+          "size_bytes": 2330236,
+          "sha256": "ed2a89cf254432d2af073699fa43ebfa16cfbc5552c7fc964a184fc434eaaa39"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\susVib\\VlnEns_susVib_G4_v2.wav",
+          "exists": true,
+          "size_bytes": 2150136,
+          "sha256": "a1d6d5a0397541692e2f88a0cd9820eabe90407784ee631aa3bfa74772637a65"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\ViolinEnsSusVib.sfz",
+          "exists": true,
+          "size_bytes": 2538,
+          "sha256": "4591e212cccf1cbcff0c78cf8429a8221bb0820b70cb7c8dd6685f470ace4eaa"
+        }
+      ],
+      "unresolved_references": [],
+      "macro_snapshot": {},
+      "effective_default_path": "Strings\\Violin Section\\susVib\\",
+      "dependency_closure_complete": true
+    },
+    {
+      "asset_id": "LAISE-VSCO2CE-BASS",
+      "asset_type": "SFZ_BUNDLE",
+      "entrypoint": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\CelloEnsSusVib.sfz",
+      "status_before": "ONBOARDING_VALIDATED",
+      "policy": {
+        "asset_family": "VSCO2CE",
+        "license_id": "CC0-1.0",
+        "license_state": "VERIFIED_OFFICIAL_SOURCE",
+        "attribution_required": false,
+        "source_url": "https://versilian-studios.com/vsco-community/",
+        "production_eligible": true,
+        "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+      },
+      "dependency_count": 28,
+      "dependencies": [
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\CelloEnsSusVib.sfz",
+          "exists": true,
+          "size_bytes": 2933,
+          "sha256": "276352639dda425dd12a4fdb3acdf545867fdb0ff4f89876319f4ec3cf12a19f"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Cello Section\\susvib\\susvib_A2_v1_1.wav",
+          "exists": true,
+          "size_bytes": 2336738,
+          "sha256": "c97a003184fdcb153d6b6c0bae8d82a90592a1b04b06bd7caaeda8b9776d5284"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Cello Section\\susvib\\susvib_A2_v3_1.wav",
+          "exists": true,
+          "size_bytes": 3082676,
+          "sha256": "b7f226f19b9616abe5fa4a27ef50116667e19eb0127f30eacfa6d1a83e9149f0"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Cello Section\\susvib\\susvib_B1_v1_1.wav",
+          "exists": true,
+          "size_bytes": 2372492,
+          "sha256": "4f95c087c4b8d87ee591e9d39c3c9caf085c6f1b9125eac3ca9e4e637da628ee"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Cello Section\\susvib\\susvib_B1_v3_1.wav",
+          "exists": true,
+          "size_bytes": 3372962,
+          "sha256": "8331a0e13f41243efab111f9b5e9185524c27ee48631269acecafc954ab7eaa8"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Cello Section\\susvib\\susvib_B3_v1_1.wav",
+          "exists": true,
+          "size_bytes": 1690082,
+          "sha256": "bd25d66c1c4e73f5827bf3b931244e51ec8388594d8004529a762be81258097f"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Cello Section\\susvib\\susvib_B3_v3_1.wav",
+          "exists": true,
+          "size_bytes": 2865086,
+          "sha256": "1c8b571516ac503df871bbea74756dfc3813b4bc10a76921d231afb0175cdbf1"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Cello Section\\susvib\\susvib_C1_v1_1.wav",
+          "exists": true,
+          "size_bytes": 2347376,
+          "sha256": "abdcea431f384e135c469b0f3e4ac2a437f282f521dc5bcbe22abc221536e8de"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Cello Section\\susvib\\susvib_C1_v3_1.wav",
+          "exists": true,
+          "size_bytes": 3335948,
+          "sha256": "19195ab85ab71626bd11e7100febdaeeba1c237ff5887b934fd0ffd8dfad82cb"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Cello Section\\susvib\\susvib_C3_v1_1.wav",
+          "exists": true,
+          "size_bytes": 2444174,
+          "sha256": "a614ee7ca821b44660236e47b89620cf914ec6ad27a99bc0d9764f47dbe512e1"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Cello Section\\susvib\\susvib_C3_v3_1.wav",
+          "exists": true,
+          "size_bytes": 3019394,
+          "sha256": "51e884d54eea3bf4ba7ee35289a09f15ddb6a52cd849248d01bf18477ccbd07b"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Cello Section\\susvib\\susvib_D2_v1_1.wav",
+          "exists": true,
+          "size_bytes": 2550956,
+          "sha256": "e8640dec9febc6e39fcf06b19d2c95a85d5ff8c38f13c9879e69f551eaf38ab8"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Cello Section\\susvib\\susvib_D2_v3_1.wav",
+          "exists": true,
+          "size_bytes": 3291368,
+          "sha256": "fc946615cd6550570c8f05d61c0d59b9079bf9daba8bf25be7943487fea5a7ae"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Cello Section\\susvib\\susvib_D4_v1_1.wav",
+          "exists": true,
+          "size_bytes": 2153228,
+          "sha256": "b4aa3a7fec1f0e783fa560f493868c17045feb271738e3d6834d1b00594b1c38"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Cello Section\\susvib\\susvib_D4_v3_1.wav",
+          "exists": true,
+          "size_bytes": 2801210,
+          "sha256": "2ea7f580738dbcf143b9c9f72703071aa7a8f6bfa33cdd2c2e5da961df1805bb"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Cello Section\\susvib\\susvib_E1_v1_1.wav",
+          "exists": true,
+          "size_bytes": 2468348,
+          "sha256": "de31a61b02d4e1d5a79b8bc432b0f35fe2e434290ad34402cc0f2dd7dc278cde"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Cello Section\\susvib\\susvib_E1_v1_2.wav",
+          "exists": true,
+          "size_bytes": 2439512,
+          "sha256": "3f8c250028d5364fc9c5584ad204d7a1d4c8c02ae41e90ad482e7b0d7d1bc674"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Cello Section\\susvib\\susvib_E1_v3_1.wav",
+          "exists": true,
+          "size_bytes": 3080426,
+          "sha256": "ee190b95be4f2416b9f41d248d255a4d7067b722f9b21482b30bc9872a9bb0d1"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Cello Section\\susvib\\susvib_E3_v1_1.wav",
+          "exists": true,
+          "size_bytes": 2456672,
+          "sha256": "d2f961e30bf64021cf4acbd88e0e7a1fd1840943ae78c62a711bcce3d109216e"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Cello Section\\susvib\\susvib_E3_v3_1.wav",
+          "exists": true,
+          "size_bytes": 3278270,
+          "sha256": "24a7ffdc23087026c4ef2d421441253c71490df9cf0757e93ffb14b4e61481ef"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Cello Section\\susvib\\susvib_F2_v1_1.wav",
+          "exists": true,
+          "size_bytes": 2186012,
+          "sha256": "162054eab4ba118924f8f8986cf1b17ccfd65211d1945743ffbae30b4953f901"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Cello Section\\susvib\\susvib_F2_v3_1.wav",
+          "exists": true,
+          "size_bytes": 3062696,
+          "sha256": "d965197faf2e6ab8675f1d65505e5ba934a5ab769412d314bad94133e18f24d0"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Cello Section\\susvib\\susvib_F4_v1_1.wav",
+          "exists": true,
+          "size_bytes": 1922948,
+          "sha256": "a9888547b4b684c7649a882e693d61964848f18401a18e4646a8449b40c08bad"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Cello Section\\susvib\\susvib_F4_v3_1.wav",
+          "exists": true,
+          "size_bytes": 2726342,
+          "sha256": "24ea4a0f892cb60c4a52d6a5b1ef8281e4e9a9f78b5f938e078da7cbbfd5ba19"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Cello Section\\susvib\\susvib_G1_v1_1.wav",
+          "exists": true,
+          "size_bytes": 2161700,
+          "sha256": "9e5d24e8e28d6c7f650f9bb2b33d43c13e341a8bd33124c64e23881378b181ba"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Cello Section\\susvib\\susvib_G1_v3_1.wav",
+          "exists": true,
+          "size_bytes": 3370496,
+          "sha256": "e4c61d4ab855ec20ddb69ff608a1c066ff8a779ddd08d1dfe1d534d3a4563ad0"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Cello Section\\susvib\\susvib_G3_v1_1.wav",
+          "exists": true,
+          "size_bytes": 2431598,
+          "sha256": "8d658346b8d2054fd534b3222b5d7a23196d22a83a68c3a04ffb76b21853a3db"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Cello Section\\susvib\\susvib_G3_v3_1.wav",
+          "exists": true,
+          "size_bytes": 3335768,
+          "sha256": "17df597c259a849870aa25e9fbfa6093371851f83ba7b9deb9cb9e1ec11463a7"
+        }
+      ],
+      "unresolved_references": [],
+      "macro_snapshot": {},
+      "effective_default_path": "Strings\\Cello Section\\susvib\\",
+      "dependency_closure_complete": true
+    },
+    {
+      "asset_id": "LAISE-VSCO2CE-OSTINATO",
+      "asset_type": "SFZ_BUNDLE",
+      "entrypoint": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\ViolinEnsSpic.sfz",
+      "status_before": "ONBOARDING_VALIDATED",
+      "policy": {
+        "asset_family": "VSCO2CE",
+        "license_id": "CC0-1.0",
+        "license_state": "VERIFIED_OFFICIAL_SOURCE",
+        "attribution_required": false,
+        "source_url": "https://versilian-studios.com/vsco-community/",
+        "production_eligible": true,
+        "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+      },
+      "dependency_count": 45,
+      "dependencies": [
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_A2_v1_rr1.wav",
+          "exists": true,
+          "size_bytes": 327090,
+          "sha256": "6f2e19935c0a9d57df4a28ba99e700aacc01fbfa605855851c142f36a1bf0c8f"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_A2_v1_rr2.wav",
+          "exists": true,
+          "size_bytes": 339302,
+          "sha256": "686c2300b47a54df419a0d69ec2e914b3c61f9b5e461ef73f5515bc06b60676d"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_A2_v2_rr1.wav",
+          "exists": true,
+          "size_bytes": 347066,
+          "sha256": "e90695e2a2a3d6ba9a043c8cfa9317fb6a9e6273f50e1fabdd40f55c4b137eba"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_A2_v2_rr2.wav",
+          "exists": true,
+          "size_bytes": 272346,
+          "sha256": "72f7fac30e46c9ce76a5386f621b6783b9c998e724f708108e7db693193750e7"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_A3_v1_rr1.wav",
+          "exists": true,
+          "size_bytes": 167582,
+          "sha256": "63ac2de6113b1f12822ea84a30a49c4a326e89027139b8a5e0369542ce6f74ad"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_A3_v1_rr2.wav",
+          "exists": true,
+          "size_bytes": 158622,
+          "sha256": "bbbd7d67ea45c17958828efe4c3a5059d85e67be80bbdb637031bcce01bc412c"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_A3_v2_rr1.wav",
+          "exists": true,
+          "size_bytes": 213126,
+          "sha256": "ce5d025e7c2ac71e220a3f6487c5a2ce431a150e808c93276570f19536568a5e"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_A3_v2_rr2.wav",
+          "exists": true,
+          "size_bytes": 246210,
+          "sha256": "f64465f4248514f785abab573a3b1440ee016b525f6550612c0fcb189e67ba47"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_B2_v1_rr1.wav",
+          "exists": true,
+          "size_bytes": 115554,
+          "sha256": "1fce12df9044e8d1d297d1da19f4e51c46bdbdf980523063bb338cd06b6ecc1f"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_B2_v1_rr2.wav",
+          "exists": true,
+          "size_bytes": 131774,
+          "sha256": "1afaa65435782188b63357bfa355cc79a93d63f7255da427523ac4562d71ed1d"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_B2_v2_rr1.wav",
+          "exists": true,
+          "size_bytes": 160826,
+          "sha256": "ee4aa779919171e33053b71c02691f026fd0b13c299da86f84c066e52ce3a4ec"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_B2_v2_rr2.wav",
+          "exists": true,
+          "size_bytes": 172390,
+          "sha256": "a67bd97acd98c3e22c70b1ec2ff9090ab4355ddc76bae87dcdf1a4adf1c2208f"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_B4_v1_rr1.wav",
+          "exists": true,
+          "size_bytes": 182342,
+          "sha256": "353576c3522c85181ecb77fb116580553f4b49c0851afc6bb4ae1eb655b743a4"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_B4_v1_rr2.wav",
+          "exists": true,
+          "size_bytes": 153682,
+          "sha256": "18321d0b6be58012b9b3fc50f3a334d37deeb67ad33c853ea58c3567ccf6444d"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_B4_v2_rr1.wav",
+          "exists": true,
+          "size_bytes": 199926,
+          "sha256": "d1495f4eaff7b3e4bd8d86b886dc81ccb52b113fb93630e8f68792ed452dc822"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_B4_v2_rr2.wav",
+          "exists": true,
+          "size_bytes": 168810,
+          "sha256": "94f256b01d2c37eb429336d32385d8b05072e4e896f387731178d2a33a7a9b78"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_C4_v1_rr1.wav",
+          "exists": true,
+          "size_bytes": 130390,
+          "sha256": "b734950875dff1dd7cda7c4721901516560b99f5655c3ffd40b6dc43c16e9c2f"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_C4_v1_rr2.wav",
+          "exists": true,
+          "size_bytes": 110434,
+          "sha256": "ba73270a400a25b78ff59b5ad15cd9ba1dc2b010f32ef8913a223518bc327cc0"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_C4_v2_rr1.wav",
+          "exists": true,
+          "size_bytes": 167454,
+          "sha256": "a14e9795677e0c418f1e18f7b640bc27b8cb3aef4cfef766e18caf38549ffe56"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_C4_v2_rr2.wav",
+          "exists": true,
+          "size_bytes": 124626,
+          "sha256": "a6dbe1a0118aceb93665afb4d8bf1fab249d0842c75801745bf9d3526bddcf73"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_D3_v1_rr1.wav",
+          "exists": true,
+          "size_bytes": 212730,
+          "sha256": "d94e088560784d6ecd6a927e8101d7e460e6d79168ab9eb52842c58891fae8da"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_D3_v1_rr2.wav",
+          "exists": true,
+          "size_bytes": 251726,
+          "sha256": "bb8a8c6661e060c3fddf5d66880c6789c16139747caaa121133f2a03a27fe605"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_D3_v2_rr1.wav",
+          "exists": true,
+          "size_bytes": 311850,
+          "sha256": "36105c7bc208181a10b41a468aab1e8ca4f31a9eae43834dd90d8d533a48e650"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_D3_v2_rr2.wav",
+          "exists": true,
+          "size_bytes": 290746,
+          "sha256": "d456becd26000dce6e7b9551f4d2b0ce6160f823d49a21d1580a26ad260d5a71"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_D5_v1_rr1.wav",
+          "exists": true,
+          "size_bytes": 107654,
+          "sha256": "32775e9472faeb816701b633949ce7870a405b7ef24ff6ec28023eb441f2b9c6"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_D5_v1_rr2.wav",
+          "exists": true,
+          "size_bytes": 124034,
+          "sha256": "806aa46d43684b33e0e608c439ecf5f6d25617558b17ab8789d40ea7947f5053"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_D5_v2_rr1.wav",
+          "exists": true,
+          "size_bytes": 136734,
+          "sha256": "959a93165a9271657b4bc97c75eded62deab37b03128f71f0f1f4c8903e50b84"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_D5_v2_rr2.wav",
+          "exists": true,
+          "size_bytes": 124686,
+          "sha256": "703d7eda8a0e6502a95eee3a1f3bbdcdea28a74211762a0a409525482b44009d"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_E4_v1_rr1.wav",
+          "exists": true,
+          "size_bytes": 87666,
+          "sha256": "67314bb58fcf351654874664f253257c66d5d4e0ef5a3f36d7249c472faf85d3"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_E4_v1_rr2.wav",
+          "exists": true,
+          "size_bytes": 183402,
+          "sha256": "28ddf685682bda79004708c2edf7d60df4a9830b2962e2356b6f6e2efec53b38"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_E4_v2_rr1.wav",
+          "exists": true,
+          "size_bytes": 106314,
+          "sha256": "db063e7e21abb2d3271d0e96068601fbb48a91f2f0bfde8dea773ce1a6bacfb0"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_E4_v2_rr2.wav",
+          "exists": true,
+          "size_bytes": 134190,
+          "sha256": "4acf30d89e77aedaa2c69d0ae8a475abe98539134c8b72985f860658daa8630d"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_F#3_v1_rr1.wav",
+          "exists": true,
+          "size_bytes": 126294,
+          "sha256": "ea4dca06c96de2c0f5fd88c4dcd75ecc505898b648b2847810bf1a0817333de8"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_F#3_v1_rr2.wav",
+          "exists": true,
+          "size_bytes": 112254,
+          "sha256": "ce6cb6f8fe7be4d70e602e38f5cf3dd85390ef7d0e9522d76ed5c62ae5176c31"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_F#3_v2_rr1.wav",
+          "exists": true,
+          "size_bytes": 166870,
+          "sha256": "b24b5f833660b73c9ea8beade5faa73989a7016916cf5f1bece93bdb4938b221"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_F#3_v2_rr2.wav",
+          "exists": true,
+          "size_bytes": 192442,
+          "sha256": "c310364866ff7e0c15a442bf23ba2d4b2bc874682d35a44817d1b00d19e215a7"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_G2_v1_rr1.wav",
+          "exists": true,
+          "size_bytes": 544838,
+          "sha256": "3b0784e5d90da698df7b02cfb312b87ff0090ed503f85c125dc7017683c0a447"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_G2_v1_rr2.wav",
+          "exists": true,
+          "size_bytes": 565874,
+          "sha256": "79b19927e7189fa0a51bca73d4f7f02d50da99861a28b70c05a6d91343736f97"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_G2_v2_rr1.wav",
+          "exists": true,
+          "size_bytes": 435542,
+          "sha256": "a6bee065f0a171d3fabc42b218e941f66916a6de53a55809da724eeefeae2653"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_G2_v2_rr2.wav",
+          "exists": true,
+          "size_bytes": 428774,
+          "sha256": "287b66d9a215ce5ea1787a8b691f61d58a482eef0320eea9cf792a6f1ff8f7e8"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_G4_v1_rr1.wav",
+          "exists": true,
+          "size_bytes": 193166,
+          "sha256": "ae748a8421f32e0e490fbf298b6bc32ec5534c2210ba2d6d9f65fd77726e1107"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_G4_v1_rr2.wav",
+          "exists": true,
+          "size_bytes": 221382,
+          "sha256": "17fed4ff1985b556e9153fe0b00c6e8650b84f7249ff720d58dc1aa770212dde"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_G4_v2_rr1.wav",
+          "exists": true,
+          "size_bytes": 162898,
+          "sha256": "3345451be62b9bdfbbf6bb03f22f410484abb75585992336d530215fc4df7141"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Violin Section\\Spic\\VlnEns_Spic_G4_v2_rr2.wav",
+          "exists": true,
+          "size_bytes": 154078,
+          "sha256": "f41d60066c6d0fa7d21308e97f237a34d6ac2765e477cc330ffb7e8821e4cc3c"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\ViolinEnsSpic.sfz",
+          "exists": true,
+          "size_bytes": 5085,
+          "sha256": "3616554873bf3e0b6c6af0a4a593d519219d0774ab03af323daf9e70a098a847"
+        }
+      ],
+      "unresolved_references": [],
+      "macro_snapshot": {},
+      "effective_default_path": "Strings\\Violin Section\\Spic\\",
+      "dependency_closure_complete": true
+    },
+    {
+      "asset_id": "LAISE-VSCO2CE-BRASS",
+      "asset_type": "SFZ_BUNDLE",
+      "entrypoint": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\FHornSus.sfz",
+      "status_before": "ONBOARDING_VALIDATED",
+      "policy": {
+        "asset_family": "VSCO2CE",
+        "license_id": "CC0-1.0",
+        "license_state": "VERIFIED_OFFICIAL_SOURCE",
+        "attribution_required": false,
+        "source_url": "https://versilian-studios.com/vsco-community/",
+        "production_eligible": true,
+        "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+      },
+      "dependency_count": 30,
+      "dependencies": [
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_A#1_v1_1.wav",
+          "exists": true,
+          "size_bytes": 2417592,
+          "sha256": "134f9c522ea928e5bfebb49c649b5eeb809075f1b9f42ac6b984f16ff7457fec"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_A#1_v2_1.wav",
+          "exists": true,
+          "size_bytes": 2740036,
+          "sha256": "1a65415731a0be8a1a51ce31f7989180fde674173821acceaceef0f3511d5f35"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_A#1_v3_1.wav",
+          "exists": true,
+          "size_bytes": 1829064,
+          "sha256": "d30b661831843acb75220ae59549daec1557102cd6271414e54bff28da9f6766"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_A0_v1_1.wav",
+          "exists": true,
+          "size_bytes": 947196,
+          "sha256": "cf71214116045722b401d12867c1c4ea0c52314834e5fc0538eeae8b7da6acad"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_A2_v1_1.wav",
+          "exists": true,
+          "size_bytes": 2672192,
+          "sha256": "897ffa7cfdf4e0413e4c80e7fa935f28e0a0971691e112f1516c6102da61809f"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_A2_v2_1.wav",
+          "exists": true,
+          "size_bytes": 2542000,
+          "sha256": "8fab29daee8570e8a272b373e7ad906bbe6b4845c1994897e45112e71233c708"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_A2_v3_1.wav",
+          "exists": true,
+          "size_bytes": 1305440,
+          "sha256": "7ca89d390ac4f9d680d8052a0df0adac9051d844f6fca9154f29cc7aa8b4095a"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_C1_v1_1.wav",
+          "exists": true,
+          "size_bytes": 1093856,
+          "sha256": "886fd6f490b64f7f2a597f45fe6af01e8c90da9e01d0bf8bdcaceb540a071283"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_C1_v2_1.wav",
+          "exists": true,
+          "size_bytes": 807756,
+          "sha256": "23b4446037378ea0145019a6f9902101e690c82d68e603d8070bec6fc6f3df1f"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_C1_v3_1.wav",
+          "exists": true,
+          "size_bytes": 704216,
+          "sha256": "ab9e142f880687083e8f6fa72d37a60f3d1a067065feb457028e7f254490d2b7"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_C3_v1_1.wav",
+          "exists": true,
+          "size_bytes": 2519448,
+          "sha256": "d96bc1821e46352e620fc0e3eaa9bbc415824e0f84f19aac6373c54c6aaa34da"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_C3_v2_1.wav",
+          "exists": true,
+          "size_bytes": 2240888,
+          "sha256": "c0c0b157dcde094c4417b7c165d645897cde9ea6d74247bbab0c0e75355e78c3"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_C3_v3_1.wav",
+          "exists": true,
+          "size_bytes": 2114316,
+          "sha256": "75156ce041d9c60e4de0099b4c6d81cafffd34f45be7bca3e6fa7ebff0eadb80"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_C3_v4_1.wav",
+          "exists": true,
+          "size_bytes": 1761688,
+          "sha256": "e8668437838648d4cb6a0fd9e7b207de399bfb87ab1e0e025b5d14e3175aff7d"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_D#1_v1_1.wav",
+          "exists": true,
+          "size_bytes": 1425196,
+          "sha256": "b5568812f0ed56900071c55cae86518d030b2eb23f9ee094b0706e47984b16d8"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_D#1_v2_1.wav",
+          "exists": true,
+          "size_bytes": 970468,
+          "sha256": "da8b40f36b165fcc1f97d174ef6334acdc1e505cba9d966c7af8fb91563ab8a7"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_D#1_v3_1.wav",
+          "exists": true,
+          "size_bytes": 927292,
+          "sha256": "cab9954a651d0aa23becff6910f149442f6bc29c05a1843b2389445822f124f8"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_D2_v1_1.wav",
+          "exists": true,
+          "size_bytes": 2500360,
+          "sha256": "c8a320cff7c6d19f7089c374e3041b1cbbc73718ba9de37149a82a1117866015"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_D2_v2_1.wav",
+          "exists": true,
+          "size_bytes": 2583372,
+          "sha256": "9155ef0c33c06ebe55daeaaaca7dec4090578af6cf3d6a028fbfa7b7f2ec876e"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_D2_v3_1.wav",
+          "exists": true,
+          "size_bytes": 1746204,
+          "sha256": "0ed065bfe87f9391c175850bb898132b7deb0e834ee10310819198382dacfd7b"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_D2_v4_1.wav",
+          "exists": true,
+          "size_bytes": 1166236,
+          "sha256": "0acdf87ea416c52dd5178a62279f03b2014f32c98a6a2ea517a481c7365cf292"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_D4_v1_1.wav",
+          "exists": true,
+          "size_bytes": 1445100,
+          "sha256": "2866520e737f3826ee9f53693f148109a9cc2d2e54235db0b92f78b2c100b8f7"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_F2_v1_1.wav",
+          "exists": true,
+          "size_bytes": 2163124,
+          "sha256": "d3dcfb6c90cb76954887eb56a85041d5e758bad21234ec0ed11e476d6f05352b"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_F2_v2_1.wav",
+          "exists": true,
+          "size_bytes": 2558276,
+          "sha256": "2e487a49c834ff2d76aff1c9755875fc03013bf202b949a5c5fe354d0c2123c2"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_F2_v3_1.wav",
+          "exists": true,
+          "size_bytes": 1692688,
+          "sha256": "87351ffabbfb953553edb38d0f53c5f2a3f95a9085024461346ea977afb296bc"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_F4_v1_1.wav",
+          "exists": true,
+          "size_bytes": 1477536,
+          "sha256": "580b2e57aa42f5fd6e4ecb65dcb79f01dfe510e98ddc2bea0a77fca1cba8d424"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_G1_v1_1.wav",
+          "exists": true,
+          "size_bytes": 2038728,
+          "sha256": "f26c86c4ed934343c37291c33324c4797db1de62f5030dee1670d2d6e64dcb65"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_G1_v2_1.wav",
+          "exists": true,
+          "size_bytes": 1300556,
+          "sha256": "5f0c30569c0e6b77dc0d70a84cb13e1423dbc8bdbf6c47b54bd8a1f46518aa68"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\sus\\MOHorn_sus_G1_v3_1.wav",
+          "exists": true,
+          "size_bytes": 941656,
+          "sha256": "10bf965bc7ea2db883983e93bf52fa44590ec8dc812801b564863640ee3cedce"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\FHornSus.sfz",
+          "exists": true,
+          "size_bytes": 3250,
+          "sha256": "52a8ccef8baaf0dbea4b3e528b8096c89ffb5c8aafba2b69c4c38af1d64587a5"
+        }
+      ],
+      "unresolved_references": [],
+      "macro_snapshot": {},
+      "effective_default_path": "Brass\\F Horn\\sus\\",
+      "dependency_closure_complete": true
+    },
+    {
+      "asset_id": "LAISE-VSCO2CE-COUNTERMELODY",
+      "asset_type": "SFZ_BUNDLE",
+      "entrypoint": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\SViolinVib.sfz",
+      "status_before": "ONBOARDING_VALIDATED",
+      "policy": {
+        "asset_family": "VSCO2CE",
+        "license_id": "CC0-1.0",
+        "license_state": "VERIFIED_OFFICIAL_SOURCE",
+        "attribution_required": false,
+        "source_url": "https://versilian-studios.com/vsco-community/",
+        "production_eligible": true,
+        "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+      },
+      "dependency_count": 31,
+      "dependencies": [
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_A3_f.wav",
+          "exists": true,
+          "size_bytes": 2864482,
+          "sha256": "76934f3a85e4ba3b6518132c2fe6effa340c33fbb02f94e88c60b00073dc722f"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_A3_p.wav",
+          "exists": true,
+          "size_bytes": 2911130,
+          "sha256": "8daa4ca0eba8a834814435047e36b47826e730a7796c325966323f53debc9e46"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_A4_f.wav",
+          "exists": true,
+          "size_bytes": 2488526,
+          "sha256": "19e5374658351508a9e2c929e871a43caff41e62d5e3363ead6f88428a9ab863"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_A4_p.wav",
+          "exists": true,
+          "size_bytes": 2612122,
+          "sha256": "0d05607b46b78690893006d5aa7923ac304c7fb497df1e96536dc88ac5ac487f"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_A5_f.wav",
+          "exists": true,
+          "size_bytes": 1986834,
+          "sha256": "0558d79d23db55c710e664e6283b62619f5a582ce261a5c082700a0d01536627"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_A5_p.wav",
+          "exists": true,
+          "size_bytes": 2562122,
+          "sha256": "204834bfb91ee62d53d3b2c9e9d37928617f643922f434323508a15a70ee591c"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_A6_f.wav",
+          "exists": true,
+          "size_bytes": 2052254,
+          "sha256": "37f6cc2f12b1b443a77d3ee370178da4a002a2ac3b6529663cc7ee002728ddcf"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_A6_p.wav",
+          "exists": true,
+          "size_bytes": 2614110,
+          "sha256": "0f212759660b2fb0d645b2089adbf4222eebc829927c1e002caa434ecd804f0b"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_C4_f.wav",
+          "exists": true,
+          "size_bytes": 2334170,
+          "sha256": "4169605b51a72454f11bc2c34efc66c1d9993fd2b7d5f097a025ef9d3a2dbdfa"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_C4_p.wav",
+          "exists": true,
+          "size_bytes": 3096650,
+          "sha256": "592ebf4404ccafc7164c13cc543911ba9a2fe5f5e70dbb200807e2ae37b25035"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_C5_f.wav",
+          "exists": true,
+          "size_bytes": 2497990,
+          "sha256": "af72f852ef2892233699851dacf5f8d97d446822d8eb4ce9e0ec27d5a721b118"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_C5_p.wav",
+          "exists": true,
+          "size_bytes": 2498790,
+          "sha256": "77a2133b5f97e1ec0edb759c0c552fc3efa7caf4ce1e0a4aa22625cf4c9da130"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_C6_f.wav",
+          "exists": true,
+          "size_bytes": 2162774,
+          "sha256": "7ec8e0c2dde75282a4aaacccc713c84faa3e84daa9cf43df45ffc0e209964d46"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_C6_p.wav",
+          "exists": true,
+          "size_bytes": 2358906,
+          "sha256": "48039f28964328d0b8235b8d61e39b06f8d22f836a6940fa036fe7004fc58e6c"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_C7_f.wav",
+          "exists": true,
+          "size_bytes": 2176486,
+          "sha256": "f8223aed62911ef3f6937111bf3cdcc36fc25a636d4f99480b97029c4d28f393"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_C7_p.wav",
+          "exists": true,
+          "size_bytes": 2274706,
+          "sha256": "02b077cecc5002156fb439c5e0edfb75dbed94a97502a0252e57a76930415889"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_E4_f.wav",
+          "exists": true,
+          "size_bytes": 2416566,
+          "sha256": "418512905f3294a23cf999f0587bf8e04d60192fe317ea8c80c150a85670eda2"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_E4_p.wav",
+          "exists": true,
+          "size_bytes": 2600174,
+          "sha256": "57c5aec0678a5d582d87ab33cd2f8954fea26ffd04c932eb6753d6a78e08736b"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_E5_f.wav",
+          "exists": true,
+          "size_bytes": 2365174,
+          "sha256": "5c278e263fd59650190fc58294945cd291906eb1abd8293f728a96a878d1d478"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_E5_p.wav",
+          "exists": true,
+          "size_bytes": 2517094,
+          "sha256": "c60c3bcfc64ea00ebf8d97b16f2876c892393839a017a945c5e557359b6369a4"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_E6_f.wav",
+          "exists": true,
+          "size_bytes": 2363554,
+          "sha256": "8d1712f5659274a83aa90807132084559633e4817027c8a5b5f40826b3d9bc84"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_E6_p.wav",
+          "exists": true,
+          "size_bytes": 2514702,
+          "sha256": "f1f0f8062eda1af6147852bf61b39e6b8734d4b0236737810c9d660297a34f0c"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_G3_f.wav",
+          "exists": true,
+          "size_bytes": 2936890,
+          "sha256": "80bae3776b0ccd3d4774f47429e829c7764f5fe6061ff844a8affc6ac68b7899"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_G3_p.wav",
+          "exists": true,
+          "size_bytes": 2788822,
+          "sha256": "c52d8ef3e2882984c09da1b7c7ef40b82e997bc78cfdd380fe167bbcb94b03de"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_G4_f.wav",
+          "exists": true,
+          "size_bytes": 2366050,
+          "sha256": "14e3ea3d5172722d4d2686bae5da3d603800a7a474fa295d98275a9410913822"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_G4_p.wav",
+          "exists": true,
+          "size_bytes": 2594066,
+          "sha256": "ad1ba8442a6b40919093c9c831a8171c7030f7e651fbe075ab87764665deef88"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_G5_f.wav",
+          "exists": true,
+          "size_bytes": 2222106,
+          "sha256": "b5bb27541d6187e6eeb20baf50625ca35fc9d44c7f113936a9369bc7ce490a68"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_G5_p.wav",
+          "exists": true,
+          "size_bytes": 2596714,
+          "sha256": "537df6072b0922a0231a6b3fad117e84bcaaa3e60ca68c665776a83c9bd9062d"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_G6_f.wav",
+          "exists": true,
+          "size_bytes": 2164026,
+          "sha256": "68c49e55565810ea822866e3d39e51c1a5ad53cfa1a67bc25836ca7feac3fe0c"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Strings\\Solo Violin\\Arco Vib\\LLVln_ArcoVib_G6_p.wav",
+          "exists": true,
+          "size_bytes": 2417222,
+          "sha256": "eb40e796d0e40ff4a729fd93dc9436ac08b30de308a8191e944351fee49aef9d"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\SViolinVib.sfz",
+          "exists": true,
+          "size_bytes": 3366,
+          "sha256": "a2ca3611463547ac9371aa9d13a693af9cd10804f9232d2c602d65937387a992"
+        }
+      ],
+      "unresolved_references": [],
+      "macro_snapshot": {},
+      "effective_default_path": "Strings\\Solo Violin\\Arco Vib\\",
+      "dependency_closure_complete": true
+    },
+    {
+      "asset_id": "LAISE-VSCO2CE-BRASS_ATTACK",
+      "asset_type": "SFZ_BUNDLE",
+      "entrypoint": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\FHornStac.sfz",
+      "status_before": "ONBOARDING_VALIDATED",
+      "policy": {
+        "asset_family": "VSCO2CE",
+        "license_id": "CC0-1.0",
+        "license_state": "VERIFIED_OFFICIAL_SOURCE",
+        "attribution_required": false,
+        "source_url": "https://versilian-studios.com/vsco-community/",
+        "production_eligible": true,
+        "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+      },
+      "dependency_count": 55,
+      "dependencies": [
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_A#1_v1_rr1.wav",
+          "exists": true,
+          "size_bytes": 224480,
+          "sha256": "1d5023c33d32600268aa2394b98cfc618069191cd506734cb13dc08302b5b1d4"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_A#1_v2_rr1.wav",
+          "exists": true,
+          "size_bytes": 170144,
+          "sha256": "21ff086ea3846becf0374f3e3a575707b8debbc4b9a94b7b2675fe53a87807fb"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_A#1_v2_rr2.wav",
+          "exists": true,
+          "size_bytes": 200052,
+          "sha256": "94f1e43904b4334e3fbdcf3df8365395a0bdcd1cd0913d8c9e554516a281e71e"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_A#1_v3_rr1.wav",
+          "exists": true,
+          "size_bytes": 259404,
+          "sha256": "828c665405c5e8a2cca132ab64d351d29d9a6b3a8a0a44a67953fcd8e79d904b"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_A#1_v3_rr2.wav",
+          "exists": true,
+          "size_bytes": 203944,
+          "sha256": "8d6e6d0755d6cf474b1a2e002f3ffe42469686c27436ec1d9d5221d213670461"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_A0_v1_rr1.wav",
+          "exists": true,
+          "size_bytes": 243804,
+          "sha256": "a34f47c1b1c71ae6c782e0ca348892375321e98b991424de97b87b59a725e02b"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_A0_v1_rr2.wav",
+          "exists": true,
+          "size_bytes": 295924,
+          "sha256": "5aeea07a1130b0a675f9ae6806c4447bb5e5395454b9e5ff7642cf48baac2d5a"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_A2_v1_rr1.wav",
+          "exists": true,
+          "size_bytes": 318380,
+          "sha256": "61b46b009e4225c4784e76ef0b4bb04e017dba343f3fe591dad5396220545ae2"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_A2_v1_rr2.wav",
+          "exists": true,
+          "size_bytes": 295352,
+          "sha256": "206449bdea184458f8ee30b5ddc26bf388bb565711afb6454a9445b2cb5753f7"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_A2_v2_rr1.wav",
+          "exists": true,
+          "size_bytes": 258348,
+          "sha256": "1f7159887489a01fe61a53c47ed09c3f460d59e25f391a1bd851e725c039228c"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_A2_v2_rr2.wav",
+          "exists": true,
+          "size_bytes": 397316,
+          "sha256": "bdfcde94e020d394761d7055eb7dc6f03683184d0ec8750cfa0b24a28b07b04b"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_A2_v3_rr1.wav",
+          "exists": true,
+          "size_bytes": 275300,
+          "sha256": "71941b2d1ee773e2330aba86d0dc02985cac76cd3ea59d2f6a083935dc8d8410"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_A2_v3_rr2.wav",
+          "exists": true,
+          "size_bytes": 333348,
+          "sha256": "b5ad95cae32d0c9a3f30ecc9baafa7de8fe7dd7cb731db0be9873fce45e5b1fe"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_C1_v1_rr1.wav",
+          "exists": true,
+          "size_bytes": 217668,
+          "sha256": "65fb7c746fc41f0133ed5b230abf76fc6df60b16b43fc2d338b49c0a364c2551"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_C1_v1_rr2.wav",
+          "exists": true,
+          "size_bytes": 236328,
+          "sha256": "5de81f1f31dbe7724127fa16a8ea9aac918710c9f69e1c41bd42cbc811be970e"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_C1_v2_rr1.wav",
+          "exists": true,
+          "size_bytes": 217880,
+          "sha256": "52ecbed088857dc7e94c395e506e2dadda7ba66f1c7ebea13b5ed4197a7240c7"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_C1_v2_rr2.wav",
+          "exists": true,
+          "size_bytes": 226988,
+          "sha256": "62da75f0d8ed99a1fda922eac4dec9684dd2e23dd8adc71c259ecbb571588d14"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_C3_v1_rr1.wav",
+          "exists": true,
+          "size_bytes": 311768,
+          "sha256": "207dfd22aa76f803e52db44eda3ab76d6700bd86482be3c552b3d185bb14b014"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_C3_v1_rr2.wav",
+          "exists": true,
+          "size_bytes": 270908,
+          "sha256": "edfb1457b6c5f0589eda0c8d72695634605a52e5483ee379fb0fbb678b94f2a8"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_C3_v2_rr1.wav",
+          "exists": true,
+          "size_bytes": 116584,
+          "sha256": "fdaf3d5ad1e732a6e8e466ee232b101fe83b4cc79e79941315fba3037666eedf"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_C3_v2_rr2.wav",
+          "exists": true,
+          "size_bytes": 185020,
+          "sha256": "5c030d793aea9e7f07c31b8ed6f9b65ad183bfca87f424bf8c1545843aa734b1"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_C3_v3_rr1.wav",
+          "exists": true,
+          "size_bytes": 280932,
+          "sha256": "7ea5a48590310d32b29aa3046f7ca2708b8f233067352001e6043095d6dac1b6"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_C3_v3_rr2.wav",
+          "exists": true,
+          "size_bytes": 293568,
+          "sha256": "404a4a516d397bc64f2dd1986dc3efa69ab361763ff814c562ce29e6d64ba3d8"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_D#1_v1_rr1.wav",
+          "exists": true,
+          "size_bytes": 224960,
+          "sha256": "b7a3cd969bbfeee74874650fa76b2ad90241c3cec5bda22bcbf485ae4525cfa2"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_D#1_v1_rr2.wav",
+          "exists": true,
+          "size_bytes": 200716,
+          "sha256": "d32126845978d41c1b068c9836d446790aa4b7df310ff62378aaadfa98a12792"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_D#1_v2_rr1.wav",
+          "exists": true,
+          "size_bytes": 231760,
+          "sha256": "53db1abfcc4bc920707b8a8bad3bc4e84ac90b6319239f771cac6bda49bfe28e"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_D#1_v2_rr2.wav",
+          "exists": true,
+          "size_bytes": 262668,
+          "sha256": "fdee561fc22fc4ceef9a1916539bf12b83adfffa18f9d5b3a8585623e963980f"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_D2_v1_rr1.wav",
+          "exists": true,
+          "size_bytes": 198688,
+          "sha256": "a253fa6b7e27762e81e7ca255c687fdb738a420e98bb9adb7a20082e4ce44cff"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_D2_v1_rr2.wav",
+          "exists": true,
+          "size_bytes": 214420,
+          "sha256": "56e68aaa4a3e8fbfe9505eed99908e669abc018ca08a0a8268e25afe67dc8c5d"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_D2_v2_rr1.wav",
+          "exists": true,
+          "size_bytes": 227660,
+          "sha256": "aa488c9a79b1ddca82d82e216b912be61a33c649a1d58841882556883d1b0654"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_D2_v2_rr2.wav",
+          "exists": true,
+          "size_bytes": 284172,
+          "sha256": "5bcc9100969986ec20b7252096c2ee5d8769cb8dc86ac8e236d3fe997e1adc1c"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_D2_v3_rr1.wav",
+          "exists": true,
+          "size_bytes": 141252,
+          "sha256": "1960b9d7f8c3cd4e0532fc540d60c3b323e8c91e9e5d3a0b0bf2fbf0803f0951"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_D2_v3_rr2.wav",
+          "exists": true,
+          "size_bytes": 294828,
+          "sha256": "27bb5ce82f25a12ca7cc0ef3cd6e38ff3dc8288fc5e6725c7c5160e73e192ecd"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_D4_v1_rr1.wav",
+          "exists": true,
+          "size_bytes": 261348,
+          "sha256": "40e0ddc7e92c5c5d73241bb78795c03ce902cb8ef1219ea4f62761f5385f2f5f"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_D4_v1_rr2.wav",
+          "exists": true,
+          "size_bytes": 254328,
+          "sha256": "ba9639f822b58d97263298a7e60042fb72de0f78770e76ed9b4470d8ea153c92"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_D4_v2_rr1.wav",
+          "exists": true,
+          "size_bytes": 258364,
+          "sha256": "06003ac8bfaa154949296447bf6b5cf74df9656137402564ab0717e91bd00714"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_D4_v2_rr2.wav",
+          "exists": true,
+          "size_bytes": 299504,
+          "sha256": "e96e04228c61ec6895e9b1c3f7c9e742e4e5e4e0a3761ee0d2a8ba09dedab456"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_D4_v3_rr1.wav",
+          "exists": true,
+          "size_bytes": 206752,
+          "sha256": "14724f3fc89936848381cd8a2399653bacd551364f8118673c0b98ce4d16160f"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_D4_v3_rr2.wav",
+          "exists": true,
+          "size_bytes": 256428,
+          "sha256": "39dd7864c154d126a549eb075e67a8e2b4894bf4341b7593365625f917a627fe"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_F2_v1_rr1.wav",
+          "exists": true,
+          "size_bytes": 301428,
+          "sha256": "7322d138d3699b59b7441b9f240d5262b1151b8a97d4918efb8233a1c6d4086b"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_F2_v1_rr2.wav",
+          "exists": true,
+          "size_bytes": 185692,
+          "sha256": "9d44f0dffe59dcb872a73fdeb43c41ac397a99c99c5d1afb3b4f99f50ae885a5"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_F2_v2_rr1.wav",
+          "exists": true,
+          "size_bytes": 203892,
+          "sha256": "13e10aa9d65c9dfac0926db82b87b83eae460c8806b8c909f537f684db05c0af"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_F2_v2_rr2.wav",
+          "exists": true,
+          "size_bytes": 271464,
+          "sha256": "a8d056d5e0333417b97e89814c899b02e2d1b83abaa0358c6d616fc872251941"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_F2_v3_rr1.wav",
+          "exists": true,
+          "size_bytes": 302936,
+          "sha256": "1f6df484f8b62e31f1add13ea2599ecfcfeec5ecbe4701b26480f13478df7ba8"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_F2_v3_rr2.wav",
+          "exists": true,
+          "size_bytes": 220860,
+          "sha256": "c9b75a0334b160b068c259319255fd9b37329c4d84ad909ab0006eb68b1185ef"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_F4_v1_rr1.wav",
+          "exists": true,
+          "size_bytes": 258680,
+          "sha256": "e79f38f75f32035966dc7630d9ef0eb747ef6a6b165425eea47f3c82d35d118b"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_F4_v1_rr2.wav",
+          "exists": true,
+          "size_bytes": 275956,
+          "sha256": "4b2f9dd64b2c2f8f6ff8e9eb68d699e1fa1d80947df991c4dab419cc0c437cc9"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_F4_v2_rr1.wav",
+          "exists": true,
+          "size_bytes": 155352,
+          "sha256": "a8abc312d5fc44ccc2b076aaf22932a0011c1c30c35a57565c8f584df1d75e92"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_F4_v2_rr2.wav",
+          "exists": true,
+          "size_bytes": 285776,
+          "sha256": "06ab406082fac50d40d3520ec880c676af6aa686f0b0695638653a70091f8f44"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_F4_v3_rr1.wav",
+          "exists": true,
+          "size_bytes": 176088,
+          "sha256": "22cf85150dd1f1d4bc60b83fd63109c2e434afa19c9eb94e961a14c10711dc7b"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_G1_v1_rr1.wav",
+          "exists": true,
+          "size_bytes": 248164,
+          "sha256": "4f6809debdca46493c7e477cff6258eb2ea78ec89287c34d0b45e74489e649af"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_G1_v1_rr2.wav",
+          "exists": true,
+          "size_bytes": 266484,
+          "sha256": "a8b79e56de5e6c5a5d9c94e6c3b9df018ca56f959d5ddf1a315a66c6afa1a4cd"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_G1_v2_rr1.wav",
+          "exists": true,
+          "size_bytes": 203244,
+          "sha256": "2c63af39d2de44df7f6ceb1dabded4b1c640566a5c7e7966eaaaea6e8b7f7bfe"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Brass\\F Horn\\stac\\MOHorn_stac_G1_v2_rr2.wav",
+          "exists": true,
+          "size_bytes": 185444,
+          "sha256": "8a936669bf49b77d461e5d71657dcf7ffaad9d28c2ec1fbf2a1d36f040f99d45"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\FHornStac.sfz",
+          "exists": true,
+          "size_bytes": 6263,
+          "sha256": "cdb75af40a2fc88f0e4f311e46677e74346004f2946606fd8905323543ca9201"
+        }
+      ],
+      "unresolved_references": [],
+      "macro_snapshot": {},
+      "effective_default_path": "Brass\\F Horn\\stac\\",
+      "dependency_closure_complete": true
+    },
+    {
+      "asset_id": "LAISE-VSCO2CE-PERCUSSION_LOW",
+      "asset_type": "SFZ_BUNDLE",
+      "entrypoint": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Timpani.sfz",
+      "status_before": "ONBOARDING_VALIDATED",
+      "policy": {
+        "asset_family": "VSCO2CE",
+        "license_id": "CC0-1.0",
+        "license_state": "VERIFIED_OFFICIAL_SOURCE",
+        "attribution_required": false,
+        "source_url": "https://versilian-studios.com/vsco-community/",
+        "production_eligible": true,
+        "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+      },
+      "dependency_count": 29,
+      "dependencies": [
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani1_Hit_v1_rr1_Sum.wav",
+          "exists": true,
+          "size_bytes": 559976,
+          "sha256": "a43d60795e9eab808866c22b6b6b42a64d3a13f6754838f0100a0a1e9a3029cd"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani1_Hit_v1_rr2_Sum.wav",
+          "exists": true,
+          "size_bytes": 542456,
+          "sha256": "8f0e0367321f1bfae71f2ef776957ea625d0a48d618fee6f9d42a160222e59c5"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani1_Hit_v3_rr1_Sum.wav",
+          "exists": true,
+          "size_bytes": 1602676,
+          "sha256": "8b39a785901d08dee14dd89914bdf2201e16ee418965e4d903fdb8e280a14d24"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani1_Hit_v3_rr2_Sum.wav",
+          "exists": true,
+          "size_bytes": 2026620,
+          "sha256": "ac6ae66048e162024d188f1ea01f6b8b6bd9184d35e164258bab6a383eb7ff93"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani2_Hit_v1_rr1_Sum.wav",
+          "exists": true,
+          "size_bytes": 1150296,
+          "sha256": "19b6e335811edd38d7ecc180d9d6e4adada12ff7a882f83e5153f093a912ae85"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani2_Hit_v1_rr2_Sum.wav",
+          "exists": true,
+          "size_bytes": 1325164,
+          "sha256": "702eb08bffe0a8029c2454c7fac6d35a9371d1c9af29e90f38cc00e472a0cfd2"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani2_Hit_v3_rr1_Sum.wav",
+          "exists": true,
+          "size_bytes": 1895164,
+          "sha256": "69e5d604effd3f29c86117d22ad2335f73e43f5d47868dc57d8fa593975ee241"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani2_Hit_v3_rr2_Sum.wav",
+          "exists": true,
+          "size_bytes": 1816436,
+          "sha256": "828019517a0475cb9b42d1e40e2cb0a62159f3a9de1d67a5c238f3687e41761e"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani2_Hit_v4_rr1_Sum.wav",
+          "exists": true,
+          "size_bytes": 1638140,
+          "sha256": "b737b4bde0c2f54f57866ea7cdce79bc2e67162e37906a6820614fbc57324940"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani2_Hit_v4_rr2_Sum.wav",
+          "exists": true,
+          "size_bytes": 1805072,
+          "sha256": "d2a6e02a97f484147ab52e779477398e9a91a408fe455df7ff203996dd3adc81"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani3_Hit_v1_rr1_Sum.wav",
+          "exists": true,
+          "size_bytes": 929172,
+          "sha256": "00319863ade67b49ec64566eecc801ac7c95e101860b7bb3263f25c7d6757392"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani3_Hit_v1_rr2_Sum.wav",
+          "exists": true,
+          "size_bytes": 1434376,
+          "sha256": "cee412e52e189f4b893431a3efc6737b8221efd3c113a4ea9aaeeed57721be23"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani3_Hit_v3_rr1_Sum.wav",
+          "exists": true,
+          "size_bytes": 1608252,
+          "sha256": "46cd2ba3798f9e3a6be515b13dbc37d2ef65c82afb0d0e9e34121e4524bfcd3a"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani3_Hit_v3_rr2_Sum.wav",
+          "exists": true,
+          "size_bytes": 1474164,
+          "sha256": "8eb961265ed1e07249dd2fc164f20b82f3e544c3e19ab3c9efef43a51e1c9575"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani3_Hit_v4_rr1_Sum.wav",
+          "exists": true,
+          "size_bytes": 1813928,
+          "sha256": "59a58eb828dc109e3cc7b7744a0f84e47182cadf2cf548a0c0b94ae5581cdc60"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani3_Hit_v4_rr2_Sum.wav",
+          "exists": true,
+          "size_bytes": 1844480,
+          "sha256": "cd85951fa4e74ce9128bc10c58365538b041d71dd28de21ac21048ab7a8f37dd"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani4_Hit_v1_rr1_Sum.wav",
+          "exists": true,
+          "size_bytes": 1183312,
+          "sha256": "0c2929ae4fa59e0cbd2a43ee1abb187cce99dc41713bcb012ea71eac39fe6c35"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani4_Hit_v1_rr2_Sum.wav",
+          "exists": true,
+          "size_bytes": 751128,
+          "sha256": "a9e2679b5fad104b051375c877977a28a75cf1cb04337186c204c8baffc39a11"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani4_Hit_v3_rr1_Sum.wav",
+          "exists": true,
+          "size_bytes": 1012976,
+          "sha256": "05170757d30297aa680bfbc082c6e438deb1d1d72c5e757610d0b1bbd525968f"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani4_Hit_v3_rr2_Sum.wav",
+          "exists": true,
+          "size_bytes": 1278328,
+          "sha256": "ff4a34bdf6c98489dbe496c92671020bac7b3e92331f310fc8542085fb75d014"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani4_Hit_v4_rr1_Sum.wav",
+          "exists": true,
+          "size_bytes": 1599356,
+          "sha256": "71161169062458913095b6d87d0eacb1bc344622e28832fef9458c7f142c8860"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani4_Hit_v4_rr2_Sum.wav",
+          "exists": true,
+          "size_bytes": 1765536,
+          "sha256": "fa78ee249f1011bf5a66522bfa8387eb0cc952a637701fc924ed98e0a9b51600"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani5_Hit_v1_rr1_Sum.wav",
+          "exists": true,
+          "size_bytes": 327568,
+          "sha256": "c6fc35883ec63df83250b9eb92b05763504a3a484fffad5e82eb95945cab32cf"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani5_Hit_v1_rr2_Sum.wav",
+          "exists": true,
+          "size_bytes": 262192,
+          "sha256": "612b09a6c13aaa3e32ce4849564c150001c859a6fad0e1c90e0df79d7509cca1"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani5_Hit_v3_rr1_Sum.wav",
+          "exists": true,
+          "size_bytes": 1036528,
+          "sha256": "da8212316bb05e3c06c730d6a67ae4b3c8ed90ca5ec8c52410cb9d0cde1bddb4"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani5_Hit_v3_rr2_Sum.wav",
+          "exists": true,
+          "size_bytes": 986304,
+          "sha256": "e1195b473349412495d9c398840dc19b3fb1bf7530b4b85ab78a6d448caa9c40"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani5_Hit_v4_rr1_Sum.wav",
+          "exists": true,
+          "size_bytes": 1213880,
+          "sha256": "520bcf3b2f5d974076d0eb0eb3ba5201de0be5098860e9d752c6deaa295ae3ba"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Timpani\\Timpani5_Hit_v4_rr2_Sum.wav",
+          "exists": true,
+          "size_bytes": 1141072,
+          "sha256": "1f34a78ec7d5ce9f1a5ded7ccffd04da806507f43503b6ba9f380d315623a6ce"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Timpani.sfz",
+          "exists": true,
+          "size_bytes": 3415,
+          "sha256": "8debc0fa6da4344abb48b625cbaaa85ffcf3a7d0a946fe57ddbb16a49aab9fa5"
+        }
+      ],
+      "unresolved_references": [],
+      "macro_snapshot": {},
+      "effective_default_path": "Percussion\\Timpani\\",
+      "dependency_closure_complete": true
+    },
+    {
+      "asset_id": "LAISE-VSCO2CE-PERCUSSION_SNARE",
+      "asset_type": "SFZ_BUNDLE",
+      "entrypoint": "C:\\Projetos2026\\LAISE\\assets\\generated_sfz\\vsco2ce_percussion\\LAISE_VSCO2CE_Snare.sfz",
+      "status_before": "ONBOARDING_VALIDATED",
+      "policy": {
+        "asset_family": "VSCO2CE",
+        "license_id": "CC0-1.0",
+        "license_state": "VERIFIED_OFFICIAL_SOURCE",
+        "attribution_required": false,
+        "source_url": "https://versilian-studios.com/vsco-community/",
+        "production_eligible": true,
+        "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+      },
+      "dependency_count": 6,
+      "dependencies": [
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\generated_sfz\\vsco2ce_percussion\\LAISE_VSCO2CE_Snare.sfz",
+          "exists": true,
+          "size_bytes": 1052,
+          "sha256": "3b86bfdb93365b79dc838a271d3a6416c606a5a5b44e8e5f665699b277cc0d9a"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Snare2-HitNS_v1_rr1_Sum.wav",
+          "exists": true,
+          "size_bytes": 237194,
+          "sha256": "cb715753d4ff2ae82670d658b273731d4b38afb51143e9e38c3b393094ab40a4"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Snare2-HitNS_v3_rr1_Sum.wav",
+          "exists": true,
+          "size_bytes": 243176,
+          "sha256": "c3f813560bd8a9bcdb8d5384a4237ba9fd143e5a99653afeb0f1348fbab08352"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Snare2-HitNS_v5_rr1_Sum.wav",
+          "exists": true,
+          "size_bytes": 252338,
+          "sha256": "b9849b49d0c440ff5aa189d80b89e0f865410b2c67f808d62293c2a1a9b19369"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Snare2-HitNS_v6_rr1_Sum.wav",
+          "exists": true,
+          "size_bytes": 294740,
+          "sha256": "99eb971d52c61be663b8da57701b6476726a669a2457705d8469ad638394c998"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\Snare2-HitSN_v9_rr1_Sum.wav",
+          "exists": true,
+          "size_bytes": 442280,
+          "sha256": "af1e5609991b5a840c3b9affefa2c65fae98df518de770c05a1eec73dab118e1"
+        }
+      ],
+      "unresolved_references": [],
+      "macro_snapshot": {},
+      "effective_default_path": "",
+      "dependency_closure_complete": true
+    },
+    {
+      "asset_id": "LAISE-VSCO2CE-PERCUSSION_CYMBAL",
+      "asset_type": "SFZ_BUNDLE",
+      "entrypoint": "C:\\Projetos2026\\LAISE\\assets\\generated_sfz\\vsco2ce_percussion\\LAISE_VSCO2CE_Cymbal.sfz",
+      "status_before": "ONBOARDING_VALIDATED",
+      "policy": {
+        "asset_family": "VSCO2CE",
+        "license_id": "CC0-1.0",
+        "license_state": "VERIFIED_OFFICIAL_SOURCE",
+        "attribution_required": false,
+        "source_url": "https://versilian-studios.com/vsco-community/",
+        "production_eligible": true,
+        "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+      },
+      "dependency_count": 2,
+      "dependencies": [
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\generated_sfz\\vsco2ce_percussion\\LAISE_VSCO2CE_Cymbal.sfz",
+          "exists": true,
+          "size_bytes": 290,
+          "sha256": "bf87a96ce34a6d494d26cd762166203ad36afd6c80942c472b162cfcf5b8b3dd"
+        },
+        {
+          "kind": "sfz_dependency",
+          "path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Percussion\\cymbal-crashshort_v1.wav",
+          "exists": true,
+          "size_bytes": 335222,
+          "sha256": "af0d5f0eb7f2226a1c592e5cda8e2dc0588cadbc851999ed39e3f36276acc7c9"
+        }
+      ],
+      "unresolved_references": [],
+      "macro_snapshot": {},
+      "effective_default_path": "",
+      "dependency_closure_complete": true
+    },
+    {
+      "asset_id": "LAISE-NATIVE-BRAAM-001",
+      "asset_type": "LAISE_NATIVE_SYNTHESIS",
+      "role": "braam",
+      "seed": 20260929,
+      "status_before": "FIRST_PARTY",
+      "policy": {
+        "asset_family": "LAISE_NATIVE",
+        "license_id": "LAISE-NATIVE",
+        "license_state": "FIRST_PARTY_GENERATED",
+        "attribution_required": false,
+        "source_url": "",
+        "production_eligible": true,
+        "notice": "Deterministic waveform generated by LAISE code; no third-party sampled audio asset."
+      },
+      "code": {
+        "kind": "native_fx_engine",
+        "path": "C:\\Projetos2026\\LAISE\\backend\\sound_design\\t0103_native_fx.py",
+        "exists": true,
+        "size_bytes": 4062,
+        "sha256": "591666daa00c29510eb60c44a5911b38f81e7336b14c539e0b4fcf483f583211"
+      },
+      "dependency_closure_complete": true
+    },
+    {
+      "asset_id": "LAISE-NATIVE-PING-001",
+      "asset_type": "LAISE_NATIVE_SYNTHESIS",
+      "role": "ping",
+      "seed": 20260929,
+      "status_before": "FIRST_PARTY",
+      "policy": {
+        "asset_family": "LAISE_NATIVE",
+        "license_id": "LAISE-NATIVE",
+        "license_state": "FIRST_PARTY_GENERATED",
+        "attribution_required": false,
+        "source_url": "",
+        "production_eligible": true,
+        "notice": "Deterministic waveform generated by LAISE code; no third-party sampled audio asset."
+      },
+      "code": {
+        "kind": "native_fx_engine",
+        "path": "C:\\Projetos2026\\LAISE\\backend\\sound_design\\t0103_native_fx.py",
+        "exists": true,
+        "size_bytes": 4062,
+        "sha256": "591666daa00c29510eb60c44a5911b38f81e7336b14c539e0b4fcf483f583211"
+      },
+      "dependency_closure_complete": true
+    }
+  ],
+  "promotion_decisions": [
+    {
+      "asset_id": "LAISE-SFZ-PIANO-SALAMANDER-V3",
+      "eligible": true,
+      "promoted_status": "PRODUCTION_APPROVED",
+      "attribution_required": true,
+      "notice": "Salamander Grand Piano v3 — Alexander Holm — CC BY 3.0. Preserve attribution in project/distribution documentation."
+    },
+    {
+      "asset_id": "LAISE-VSCO2CE-THEME",
+      "eligible": true,
+      "promoted_status": "PRODUCTION_APPROVED",
+      "attribution_required": false,
+      "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+    },
+    {
+      "asset_id": "LAISE-VSCO2CE-STRINGS",
+      "eligible": true,
+      "promoted_status": "PRODUCTION_APPROVED",
+      "attribution_required": false,
+      "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+    },
+    {
+      "asset_id": "LAISE-VSCO2CE-BASS",
+      "eligible": true,
+      "promoted_status": "PRODUCTION_APPROVED",
+      "attribution_required": false,
+      "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+    },
+    {
+      "asset_id": "LAISE-VSCO2CE-OSTINATO",
+      "eligible": true,
+      "promoted_status": "PRODUCTION_APPROVED",
+      "attribution_required": false,
+      "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+    },
+    {
+      "asset_id": "LAISE-VSCO2CE-BRASS",
+      "eligible": true,
+      "promoted_status": "PRODUCTION_APPROVED",
+      "attribution_required": false,
+      "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+    },
+    {
+      "asset_id": "LAISE-VSCO2CE-COUNTERMELODY",
+      "eligible": true,
+      "promoted_status": "PRODUCTION_APPROVED",
+      "attribution_required": false,
+      "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+    },
+    {
+      "asset_id": "LAISE-VSCO2CE-BRASS_ATTACK",
+      "eligible": true,
+      "promoted_status": "PRODUCTION_APPROVED",
+      "attribution_required": false,
+      "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+    },
+    {
+      "asset_id": "LAISE-VSCO2CE-PERCUSSION_LOW",
+      "eligible": true,
+      "promoted_status": "PRODUCTION_APPROVED",
+      "attribution_required": false,
+      "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+    },
+    {
+      "asset_id": "LAISE-VSCO2CE-PERCUSSION_SNARE",
+      "eligible": true,
+      "promoted_status": "PRODUCTION_APPROVED",
+      "attribution_required": false,
+      "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+    },
+    {
+      "asset_id": "LAISE-VSCO2CE-PERCUSSION_CYMBAL",
+      "eligible": true,
+      "promoted_status": "PRODUCTION_APPROVED",
+      "attribution_required": false,
+      "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+    },
+    {
+      "asset_id": "LAISE-NATIVE-BRAAM-001",
+      "eligible": true,
+      "promoted_status": "PRODUCTION_APPROVED",
+      "attribution_required": false,
+      "notice": "Deterministic waveform generated by LAISE code; no third-party sampled audio asset."
+    },
+    {
+      "asset_id": "LAISE-NATIVE-PING-001",
+      "eligible": true,
+      "promoted_status": "PRODUCTION_APPROVED",
+      "attribution_required": false,
+      "notice": "Deterministic waveform generated by LAISE code; no third-party sampled audio asset."
+    }
+  ],
+  "runtime_snapshot": {
+    "sfizz_render": {
+      "kind": "renderer_binary",
+      "path": "C:\\Projetos2026\\LAISE\\tools\\sfizz\\bin\\Release\\sfizz_render.exe",
+      "exists": true,
+      "size_bytes": 1874432,
+      "sha256": "655a7a0da623bedbe67687b2d9f6fc7d257406733160e1b3bca13a09d6e496fd"
+    },
+    "dearvr_pro2": {
+      "kind": "spatial_renderer_binary",
+      "path": "C:\\Program Files\\Common Files\\VST3\\dearVR PRO 2.vst3\\Contents\\x86_64-win\\dearVR PRO 2.vst3",
+      "exists": true,
+      "size_bytes": 26186312,
+      "sha256": "c1f6c17958eb79200f2fe08556d031a89bee22ccdab98f97e31c7ce6ea78602f"
+    },
+    "sfizz_license": {
+      "license_id": "BSD-2-Clause",
+      "source_url": "https://github.com/sfztools/sfizz/blob/develop/LICENSE",
+      "note": "Runtime dependency. If redistributed with LAISE, preserve the BSD 2-Clause notice in distribution materials."
+    },
+    "dearvr_license_note": "Commercial/proprietary runtime dependency. This snapshot records the installed binary for reproducibility; distribution/use rights remain governed by the user's dearVR license."
+  },
+  "engine_snapshot": [
+    {
+      "kind": "engine_source",
+      "path": "C:\\Projetos2026\\LAISE\\backend\\composition\\phrase_engine.py",
+      "exists": true,
+      "size_bytes": 3731,
+      "sha256": "3e4e09124e3ad2488bea32c921d2f77776bca284d52b3690a041381ba46b647b"
+    },
+    {
+      "kind": "engine_source",
+      "path": "C:\\Projetos2026\\LAISE\\backend\\composition\\harmonic_narrative.py",
+      "exists": true,
+      "size_bytes": 3893,
+      "sha256": "0e09f7dc870a564307f3b6e6ceea425df30dab077afe87ba0041dc08b156415b"
+    },
+    {
+      "kind": "engine_source",
+      "path": "C:\\Projetos2026\\LAISE\\backend\\composition\\t008_orchestration.py",
+      "exists": true,
+      "size_bytes": 2834,
+      "sha256": "8d8885f9c887e10e7ce4164091af9b43730f6bc305044b14b7f70a79a5ffba05"
+    },
+    {
+      "kind": "engine_source",
+      "path": "C:\\Projetos2026\\LAISE\\backend\\composition\\t008_mix_intelligence.py",
+      "exists": true,
+      "size_bytes": 3852,
+      "sha256": "aa5fff3b704d7a0a16b00c8c19024ad1aa1ef136e61e4482fe00d295246f03d8"
+    },
+    {
+      "kind": "engine_source",
+      "path": "C:\\Projetos2026\\LAISE\\backend\\composition\\t009_instrument_realism.py",
+      "exists": true,
+      "size_bytes": 6027,
+      "sha256": "bd0d65e65205b2d6bab4d18baf2eb9d81c4d42583dc9725bdbd82ae231146fac"
+    },
+    {
+      "kind": "engine_source",
+      "path": "C:\\Projetos2026\\LAISE\\backend\\asset_pipeline\\t0102_semantic_catalog.py",
+      "exists": true,
+      "size_bytes": 9417,
+      "sha256": "381a23436384f5c4411bbed3bafbb612b3eb643f360c1230a00dcf71648b09fd"
+    },
+    {
+      "kind": "engine_source",
+      "path": "C:\\Projetos2026\\LAISE\\backend\\asset_pipeline\\t0102_semantic_router.py",
+      "exists": true,
+      "size_bytes": 6935,
+      "sha256": "83e6b7c0e8060bd0b490ddac736b9c4fa22bfd143e0d8708bf43a206b1a62290"
+    },
+    {
+      "kind": "engine_source",
+      "path": "C:\\Projetos2026\\LAISE\\backend\\asset_pipeline\\t0103_governance.py",
+      "exists": true,
+      "size_bytes": 15607,
+      "sha256": "e23f16ac8f31eb9e8ae80d68d7eb323776985909ff9e9d552447cc6cf3ffe44a"
+    },
+    {
+      "kind": "engine_source",
+      "path": "C:\\Projetos2026\\LAISE\\backend\\sound_design\\t0103_native_fx.py",
+      "exists": true,
+      "size_bytes": 4062,
+      "sha256": "591666daa00c29510eb60c44a5911b38f81e7336b14c539e0b4fcf483f583211"
+    },
+    {
+      "kind": "engine_source",
+      "path": "C:\\Projetos2026\\LAISE\\backend\\spatial\\dearvr_adapter.py",
+      "exists": true,
+      "size_bytes": 4346,
+      "sha256": "4bc50f67b0ffeedcf3ea788f397d75e27b5ee3de305b57e24afc0ea927c10684"
+    }
+  ],
+  "attribution_file": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-010\\ATTRIBUTION.txt",
+  "mix": {
+    "path": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-010\\LAISE_PRODUCTION_CANDIDATE_001.wav",
+    "sha256": "0dee7e1d5b1034f492a03376e0d45a56bf0d8615cd50e7e492ea1752fa36de48"
+  },
+  "checks": {
+    "no_generaluser_audio_dependency": true,
+    "native_braam_active": true,
+    "native_ping_active": true,
+    "all_sfz_dependency_closures_complete": true,
+    "all_assets_promotion_eligible": true,
+    "required_attribution_file_created": true,
+    "renderer_runtime_hashes_frozen": "c1f6c17958eb79200f2fe08556d031a89bee22ccdab98f97e31c7ce6ea78602f",
+    "engine_source_hashes_frozen": true,
+    "t008_lowmid_cleanup_preserved": true,
+    "t008_percussion_ducking_preserved": true,
+    "mix_finite": true,
+    "mix_non_silent": true,
+    "mix_no_clipping": true
+  },
+  "note": "PRODUCTION_CANDIDATE means the automated LAISE governance gate passed. It is not a legal opinion or guarantee of third-party rights."
+}

@@ -1,0 +1,223 @@
+{
+  "schema_version": "LAISE-LIPP-1.0",
+  "work_id": "LAISE-MUSIC-010",
+  "title": "LAISE Production Candidate 001",
+  "lifecycle_state": "PRODUCTION_READY",
+  "approval_time_utc": "2026-09-21T20:27:38.127960+00:00",
+  "validation": {
+    "t0103_objective": "PASS",
+    "t0103_perceptual": "PASS",
+    "music010_objective": "PASS",
+    "music010_perceptual": "PASS",
+    "production_approval": "PASS"
+  },
+  "creation_lineage": {
+    "T006": "Musical Intelligence / Phrase Engine",
+    "T007": "Harmonic & Emotional Narrative Engine",
+    "T008": "Cinematic Orchestration & Mix Intelligence",
+    "T009": "Instrument Realism & Articulation Intelligence",
+    "T010": "Production Instrument Asset Pipeline",
+    "T010.1": "SFZ Renderer + Asset Onboarding",
+    "T010.2": "Full Orchestral Asset Migration",
+    "T010.3": "Production Governance Closure",
+    "T010.4": "Production Approval + Final LIPP"
+  },
+  "final_audio": {
+    "path": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-010\\LAISE_PRODUCTION_CANDIDATE_001.wav",
+    "sha256": "0dee7e1d5b1034f492a03376e0d45a56bf0d8615cd50e7e492ea1752fa36de48"
+  },
+  "asset_registry": {
+    "path": "C:\\Projetos2026\\LAISE\\governance\\production_asset_registry.json",
+    "sha256": "1527a346fb545c239b9a0331d931ce57a17982b34f205aa44aeb4833bf888d5e",
+    "approved_asset_ids": [
+      "LAISE-NATIVE-BRAAM-001",
+      "LAISE-NATIVE-PING-001",
+      "LAISE-SFZ-PIANO-SALAMANDER-V3",
+      "LAISE-VSCO2CE-BASS",
+      "LAISE-VSCO2CE-BRASS",
+      "LAISE-VSCO2CE-BRASS_ATTACK",
+      "LAISE-VSCO2CE-COUNTERMELODY",
+      "LAISE-VSCO2CE-OSTINATO",
+      "LAISE-VSCO2CE-PERCUSSION_CYMBAL",
+      "LAISE-VSCO2CE-PERCUSSION_LOW",
+      "LAISE-VSCO2CE-PERCUSSION_SNARE",
+      "LAISE-VSCO2CE-STRINGS",
+      "LAISE-VSCO2CE-THEME"
+    ]
+  },
+  "runtime_snapshot": {
+    "sfizz_render": {
+      "kind": "renderer_binary",
+      "path": "C:\\Projetos2026\\LAISE\\tools\\sfizz\\bin\\Release\\sfizz_render.exe",
+      "exists": true,
+      "size_bytes": 1874432,
+      "sha256": "655a7a0da623bedbe67687b2d9f6fc7d257406733160e1b3bca13a09d6e496fd"
+    },
+    "dearvr_pro2": {
+      "kind": "spatial_renderer_binary",
+      "path": "C:\\Program Files\\Common Files\\VST3\\dearVR PRO 2.vst3\\Contents\\x86_64-win\\dearVR PRO 2.vst3",
+      "exists": true,
+      "size_bytes": 26186312,
+      "sha256": "c1f6c17958eb79200f2fe08556d031a89bee22ccdab98f97e31c7ce6ea78602f"
+    },
+    "sfizz_license": {
+      "license_id": "BSD-2-Clause",
+      "source_url": "https://github.com/sfztools/sfizz/blob/develop/LICENSE",
+      "note": "Runtime dependency. If redistributed with LAISE, preserve the BSD 2-Clause notice in distribution materials."
+    },
+    "dearvr_license_note": "Commercial/proprietary runtime dependency. This snapshot records the installed binary for reproducibility; distribution/use rights remain governed by the user's dearVR license."
+  },
+  "engine_snapshot": [
+    {
+      "kind": "engine_source",
+      "path": "C:\\Projetos2026\\LAISE\\backend\\composition\\phrase_engine.py",
+      "exists": true,
+      "size_bytes": 3731,
+      "sha256": "3e4e09124e3ad2488bea32c921d2f77776bca284d52b3690a041381ba46b647b"
+    },
+    {
+      "kind": "engine_source",
+      "path": "C:\\Projetos2026\\LAISE\\backend\\composition\\harmonic_narrative.py",
+      "exists": true,
+      "size_bytes": 3893,
+      "sha256": "0e09f7dc870a564307f3b6e6ceea425df30dab077afe87ba0041dc08b156415b"
+    },
+    {
+      "kind": "engine_source",
+      "path": "C:\\Projetos2026\\LAISE\\backend\\composition\\t008_orchestration.py",
+      "exists": true,
+      "size_bytes": 2834,
+      "sha256": "8d8885f9c887e10e7ce4164091af9b43730f6bc305044b14b7f70a79a5ffba05"
+    },
+    {
+      "kind": "engine_source",
+      "path": "C:\\Projetos2026\\LAISE\\backend\\composition\\t008_mix_intelligence.py",
+      "exists": true,
+      "size_bytes": 3852,
+      "sha256": "aa5fff3b704d7a0a16b00c8c19024ad1aa1ef136e61e4482fe00d295246f03d8"
+    },
+    {
+      "kind": "engine_source",
+      "path": "C:\\Projetos2026\\LAISE\\backend\\composition\\t009_instrument_realism.py",
+      "exists": true,
+      "size_bytes": 6027,
+      "sha256": "bd0d65e65205b2d6bab4d18baf2eb9d81c4d42583dc9725bdbd82ae231146fac"
+    },
+    {
+      "kind": "engine_source",
+      "path": "C:\\Projetos2026\\LAISE\\backend\\asset_pipeline\\t0102_semantic_catalog.py",
+      "exists": true,
+      "size_bytes": 9417,
+      "sha256": "381a23436384f5c4411bbed3bafbb612b3eb643f360c1230a00dcf71648b09fd"
+    },
+    {
+      "kind": "engine_source",
+      "path": "C:\\Projetos2026\\LAISE\\backend\\asset_pipeline\\t0102_semantic_router.py",
+      "exists": true,
+      "size_bytes": 6935,
+      "sha256": "83e6b7c0e8060bd0b490ddac736b9c4fa22bfd143e0d8708bf43a206b1a62290"
+    },
+    {
+      "kind": "engine_source",
+      "path": "C:\\Projetos2026\\LAISE\\backend\\asset_pipeline\\t0103_governance.py",
+      "exists": true,
+      "size_bytes": 15607,
+      "sha256": "e23f16ac8f31eb9e8ae80d68d7eb323776985909ff9e9d552447cc6cf3ffe44a"
+    },
+    {
+      "kind": "engine_source",
+      "path": "C:\\Projetos2026\\LAISE\\backend\\sound_design\\t0103_native_fx.py",
+      "exists": true,
+      "size_bytes": 4062,
+      "sha256": "591666daa00c29510eb60c44a5911b38f81e7336b14c539e0b4fcf483f583211"
+    },
+    {
+      "kind": "engine_source",
+      "path": "C:\\Projetos2026\\LAISE\\backend\\spatial\\dearvr_adapter.py",
+      "exists": true,
+      "size_bytes": 4346,
+      "sha256": "4bc50f67b0ffeedcf3ea788f397d75e27b5ee3de305b57e24afc0ea927c10684"
+    }
+  ],
+  "licenses": {
+    "schema_version": "LAISE-T010.3-LICENSE-POLICY-1.0",
+    "verified_public_sources": {
+      "VSCO2CE": {
+        "license_id": "CC0-1.0",
+        "official_source": "https://versilian-studios.com/vsco-community/",
+        "attribution_required": false
+      },
+      "SALAMANDER": {
+        "license_id": "CC-BY-3.0",
+        "official_source": "https://github.com/sfzinstruments/SalamanderGrandPiano",
+        "attribution_required": true,
+        "attribution_notice": "Salamander Grand Piano v3 — Alexander Holm — CC BY 3.0"
+      },
+      "SFIZZ": {
+        "license_id": "BSD-2-Clause",
+        "official_source": "https://github.com/sfztools/sfizz/blob/develop/LICENSE",
+        "redistribution_notice_required": true
+      }
+    },
+    "policy": {
+      "production_audio_may_not_depend_on_TEST_ONLY_assets": true,
+      "freeze_renderer_hashes": true,
+      "freeze_engine_hashes": true,
+      "freeze_sfz_dependency_closure": true,
+      "preserve_required_attribution": true,
+      "production_candidate_is_not_legal_opinion": true
+    }
+  },
+  "attribution": {
+    "path": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-010\\ATTRIBUTION.txt",
+    "sha256": "66afcc20a586e49616d38ea18020e651b22eb2fdfeb809f7992b5ee16abb3911"
+  },
+  "human_review": {
+    "schema_version": "LAISE-PERCEPTUAL-REVIEW-1.0",
+    "work_id": "LAISE-MUSIC-010",
+    "review_scope": "MUSIC-009 versus MUSIC-010 A/B",
+    "overall_result": "PASS",
+    "t0103_result": "PASS",
+    "music010_result": "PASS",
+    "observations": {
+      "braam": "Integrated as a harmonic extension of low brass and percussion; visceral cinematic impact without masking orchestral space.",
+      "ping": "Organic high-frequency punctuation with diffuse tail and no generic-bank harshness.",
+      "orchestral_integration": "Hybrid sound-design textures merge coherently with VSCO and Salamander acoustic timbres without audible seams.",
+      "global_production": "Result presents a coherent trailer/film-score post-production language and passed the human perceptual gate."
+    },
+    "review_note": "Human perceptual PASS supplied after direct A/B audition of MUSIC-009 and MUSIC-010."
+  },
+  "evidence_hashes": {
+    "final_audio": {
+      "path": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-010\\LAISE_PRODUCTION_CANDIDATE_001.wav",
+      "sha256": "0dee7e1d5b1034f492a03376e0d45a56bf0d8615cd50e7e492ea1752fa36de48"
+    },
+    "production_governance_snapshot": {
+      "path": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-010\\production_governance_snapshot.json",
+      "sha256": "2cfb7974b3ba95f591b4fdc631a3dad14760eb2fce7091ffd600364e2ba607fe"
+    },
+    "generation_manifest": {
+      "path": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-010\\generation_manifest.json",
+      "sha256": "7a00b7ea8cc7983d3c180b234e7ffda6bcf1098e07d8b2f8ad82ef9ffb876bc8"
+    },
+    "attribution": {
+      "path": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-010\\ATTRIBUTION.txt",
+      "sha256": "66afcc20a586e49616d38ea18020e651b22eb2fdfeb809f7992b5ee16abb3911"
+    },
+    "license_policy": {
+      "path": "C:\\Projetos2026\\LAISE\\governance\\t0103_license_policy.json",
+      "sha256": "6d2716cff28051069c9239b1bc6dd901fb87efb62116fbdeecda283dede16a50"
+    },
+    "perceptual_review": {
+      "path": "C:\\Projetos2026\\LAISE\\governance\\music010_perceptual_review.json",
+      "sha256": "b3d67c096001047e91eb99c98ba7d85fd301381718715c9793611e6aa3bb7b9e"
+    },
+    "production_asset_registry": {
+      "path": "C:\\Projetos2026\\LAISE\\governance\\production_asset_registry.json",
+      "sha256": "1527a346fb545c239b9a0331d931ce57a17982b34f205aa44aeb4833bf888d5e"
+    }
+  },
+  "governance_snapshot_sha256": "2cfb7974b3ba95f591b4fdc631a3dad14760eb2fce7091ffd600364e2ba607fe",
+  "provenance_chain_sha256": "df11ab40ea95f7122d42ae75ae4ea8e235a563550ac319b85220b36e8b1bd273",
+  "governance_note": "PRODUCTION_READY and PRODUCTION_APPROVED are internal LAISE governance states backed by the frozen evidence listed in this manifest. They do not replace legal review or constitute a warranty regarding third-party rights."
+}

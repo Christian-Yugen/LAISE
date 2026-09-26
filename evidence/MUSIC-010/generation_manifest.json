@@ -1,0 +1,32 @@
+{
+  "work_id": "LAISE-MUSIC-010",
+  "title": "Production Candidate 001",
+  "engine": "T006+T007+T008+T009+T010.2+T010.3",
+  "objective_result": "PASS",
+  "perceptual_result": "PENDING",
+  "release_status": "PRODUCTION_CANDIDATE",
+  "no_test_only_audio_assets": true,
+  "native_fx": {
+    "braam": "LAISE-NATIVE-BRAAM-001",
+    "ping": "LAISE-NATIVE-PING-001"
+  },
+  "mix": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-010\\LAISE_PRODUCTION_CANDIDATE_001.wav",
+  "mix_sha256": "0dee7e1d5b1034f492a03376e0d45a56bf0d8615cd50e7e492ea1752fa36de48",
+  "governance_snapshot": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-010\\production_governance_snapshot.json",
+  "attribution": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-010\\ATTRIBUTION.txt",
+  "checks": {
+    "no_generaluser_audio_dependency": true,
+    "native_braam_active": true,
+    "native_ping_active": true,
+    "all_sfz_dependency_closures_complete": true,
+    "all_assets_promotion_eligible": true,
+    "required_attribution_file_created": true,
+    "renderer_runtime_hashes_frozen": "c1f6c17958eb79200f2fe08556d031a89bee22ccdab98f97e31c7ce6ea78602f",
+    "engine_source_hashes_frozen": true,
+    "t008_lowmid_cleanup_preserved": true,
+    "t008_percussion_ducking_preserved": true,
+    "mix_finite": true,
+    "mix_non_silent": true,
+    "mix_no_clipping": true
+  }
+}
