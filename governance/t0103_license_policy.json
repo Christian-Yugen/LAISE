@@ -1,0 +1,29 @@
+{
+  "schema_version": "LAISE-T010.3-LICENSE-POLICY-1.0",
+  "verified_public_sources": {
+    "VSCO2CE": {
+      "license_id": "CC0-1.0",
+      "official_source": "https://versilian-studios.com/vsco-community/",
+      "attribution_required": false
+    },
+    "SALAMANDER": {
+      "license_id": "CC-BY-3.0",
+      "official_source": "https://github.com/sfzinstruments/SalamanderGrandPiano",
+      "attribution_required": true,
+      "attribution_notice": "Salamander Grand Piano v3 — Alexander Holm — CC BY 3.0"
+    },
+    "SFIZZ": {
+      "license_id": "BSD-2-Clause",
+      "official_source": "https://github.com/sfztools/sfizz/blob/develop/LICENSE",
+      "redistribution_notice_required": true
+    }
+  },
+  "policy": {
+    "production_audio_may_not_depend_on_TEST_ONLY_assets": true,
+    "freeze_renderer_hashes": true,
+    "freeze_engine_hashes": true,
+    "freeze_sfz_dependency_closure": true,
+    "preserve_required_attribution": true,
+    "production_candidate_is_not_legal_opinion": true
+  }
+}

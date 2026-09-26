@@ -1,0 +1,108 @@
+{
+  "test": "T010.1",
+  "engine": "LAISE SFZ Production Renderer + Asset Onboarding v0.1",
+  "objective_result": "PASS",
+  "renderer": {
+    "path": "C:\\Projetos2026\\LAISE\\tools\\sfizz\\bin\\Release\\sfizz_render.exe",
+    "sha256": "655a7a0da623bedbe67687b2d9f6fc7d257406733160e1b3bca13a09d6e496fd"
+  },
+  "assets": [
+    {
+      "candidate_asset_id": "LAISE-SFZ-PIANO-SALAMANDER-V3",
+      "role": "piano",
+      "sfz": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Salamander Grand Piano V3.sfz",
+      "sfz_sha256": "c8b282f03fdb2d9e6be24a99df0d97a05e7ece718d1a14e0b882c518161f7837",
+      "status": "ONBOARDING",
+      "production_approved": false
+    },
+    {
+      "candidate_asset_id": "LAISE-SFZ-VSCO2CE-STRINGS-001",
+      "role": "strings",
+      "sfz": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\ViolinEnsSusVib.sfz",
+      "sfz_sha256": "4591e212cccf1cbcff0c78cf8429a8221bb0820b70cb7c8dd6685f470ace4eaa",
+      "status": "ONBOARDING",
+      "production_approved": false
+    }
+  ],
+  "renders": {
+    "piano": {
+      "process": {
+        "returncode": 0,
+        "command": [
+          "C:\\Projetos2026\\LAISE\\tools\\sfizz\\bin\\Release\\sfizz_render.exe",
+          "--sfz",
+          "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Salamander Grand Piano V3.sfz",
+          "--midi",
+          "C:\\Projetos2026\\LAISE\\evidence\\T010.1\\midi\\01_piano_test.mid",
+          "--wav",
+          "C:\\Projetos2026\\LAISE\\evidence\\T010.1\\wav\\01_salamander_piano.wav",
+          "--samplerate",
+          "48000",
+          "--use-eot"
+        ],
+        "console_tail": "Enabling freewheeling\nChanging default sample path to Samples/\n"
+      },
+      "audio": {
+        "channels": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "frames": 489472,
+        "duration_seconds": 10.197333333333333,
+        "peak": 0.137298583984375,
+        "rms": 0.012584872115992145,
+        "finite": true,
+        "non_silent": true
+      },
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T010.1\\wav\\01_salamander_piano.wav",
+      "wav_sha256": "9739bee36ef3b078559ebf656ca04d607705848e0e81b6b1a5209cbb9c30d956"
+    },
+    "strings": {
+      "process": {
+        "returncode": 0,
+        "command": [
+          "C:\\Projetos2026\\LAISE\\tools\\sfizz\\bin\\Release\\sfizz_render.exe",
+          "--sfz",
+          "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\ViolinEnsSusVib.sfz",
+          "--midi",
+          "C:\\Projetos2026\\LAISE\\evidence\\T010.1\\midi\\02_strings_test.mid",
+          "--wav",
+          "C:\\Projetos2026\\LAISE\\evidence\\T010.1\\wav\\02_vsco_strings.wav",
+          "--samplerate",
+          "48000",
+          "--use-eot"
+        ],
+        "console_tail": "Enabling freewheeling\nChanging default sample path to Strings/Violin Section/susVib/\n"
+      },
+      "audio": {
+        "channels": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "frames": 505856,
+        "duration_seconds": 10.538666666666666,
+        "peak": 0.04437255859375,
+        "rms": 0.007828733579664305,
+        "finite": true,
+        "non_silent": true
+      },
+      "wav": "C:\\Projetos2026\\LAISE\\evidence\\T010.1\\wav\\02_vsco_strings.wav",
+      "wav_sha256": "c09af7d6a52fbedbc225a73698ece7e8dd44ec8fa900e4c368fb8d4a21eb6ccc"
+    }
+  },
+  "checks": {
+    "sfizz_renderer_found": true,
+    "salamander_sfz_found": true,
+    "vsco_strings_sfz_found": true,
+    "sfizz_piano_render_exit_zero": true,
+    "sfizz_strings_render_exit_zero": true,
+    "piano_wav_created": true,
+    "strings_wav_created": true,
+    "piano_48khz": true,
+    "strings_48khz": true,
+    "piano_non_silent": true,
+    "strings_non_silent": true,
+    "piano_finite": true,
+    "strings_finite": true,
+    "onboarding_not_auto_approved": true
+  },
+  "next_gate": "listen to dry piano/strings, then freeze exact bundle hashes and license evidence"
+}

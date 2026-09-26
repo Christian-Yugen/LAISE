@@ -1,0 +1,290 @@
+{
+  "schema_version": "LAISE-PRODUCTION-ASSET-REGISTRY-1.0",
+  "registry_status": "ACTIVE",
+  "assets": {
+    "LAISE-SFZ-PIANO-SALAMANDER-V3": {
+      "asset_id": "LAISE-SFZ-PIANO-SALAMANDER-V3",
+      "status": "PRODUCTION_APPROVED",
+      "approved_at_utc": "2026-09-21T20:27:38.127960+00:00",
+      "approval_basis": "T010.3_OBJECTIVE_PASS_PLUS_HUMAN_PERCEPTUAL_PASS",
+      "asset_type": "SFZ_BUNDLE",
+      "entrypoint": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Salamander Grand Piano V3.sfz",
+      "role": null,
+      "seed": null,
+      "license": {
+        "license_id": "CC-BY-3.0",
+        "license_state": "VERIFIED_REPOSITORY_LICENSE",
+        "source_url": "https://github.com/sfzinstruments/SalamanderGrandPiano",
+        "attribution_required": true,
+        "notice": "Salamander Grand Piano v3 — Alexander Holm — CC BY 3.0. Preserve attribution in project/distribution documentation."
+      },
+      "dependency_closure_complete": true,
+      "bundle_sha256": "9f08ed17179df50be49be852925b9317d9210f30407b3dd50a3c104bd5366137",
+      "source_governance_work_id": "LAISE-MUSIC-010"
+    },
+    "LAISE-VSCO2CE-THEME": {
+      "asset_id": "LAISE-VSCO2CE-THEME",
+      "status": "PRODUCTION_APPROVED",
+      "approved_at_utc": "2026-09-21T20:27:38.127960+00:00",
+      "approval_basis": "T010.3_OBJECTIVE_PASS_PLUS_HUMAN_PERCEPTUAL_PASS",
+      "asset_type": "SFZ_BUNDLE",
+      "entrypoint": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\OboeSusNV.sfz",
+      "role": null,
+      "seed": null,
+      "license": {
+        "license_id": "CC0-1.0",
+        "license_state": "VERIFIED_OFFICIAL_SOURCE",
+        "source_url": "https://versilian-studios.com/vsco-community/",
+        "attribution_required": false,
+        "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+      },
+      "dependency_closure_complete": true,
+      "bundle_sha256": "3f769870d4567ca76c7e500037b284c77033ed676b2fcb250ef657938aef9da7",
+      "source_governance_work_id": "LAISE-MUSIC-010"
+    },
+    "LAISE-VSCO2CE-STRINGS": {
+      "asset_id": "LAISE-VSCO2CE-STRINGS",
+      "status": "PRODUCTION_APPROVED",
+      "approved_at_utc": "2026-09-21T20:27:38.127960+00:00",
+      "approval_basis": "T010.3_OBJECTIVE_PASS_PLUS_HUMAN_PERCEPTUAL_PASS",
+      "asset_type": "SFZ_BUNDLE",
+      "entrypoint": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\ViolinEnsSusVib.sfz",
+      "role": null,
+      "seed": null,
+      "license": {
+        "license_id": "CC0-1.0",
+        "license_state": "VERIFIED_OFFICIAL_SOURCE",
+        "source_url": "https://versilian-studios.com/vsco-community/",
+        "attribution_required": false,
+        "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+      },
+      "dependency_closure_complete": true,
+      "bundle_sha256": "1c8911f383211d4af75d0a234ab1cc07ef45b013097ff27ff19118d5cf724c06",
+      "source_governance_work_id": "LAISE-MUSIC-010"
+    },
+    "LAISE-VSCO2CE-BASS": {
+      "asset_id": "LAISE-VSCO2CE-BASS",
+      "status": "PRODUCTION_APPROVED",
+      "approved_at_utc": "2026-09-21T20:27:38.127960+00:00",
+      "approval_basis": "T010.3_OBJECTIVE_PASS_PLUS_HUMAN_PERCEPTUAL_PASS",
+      "asset_type": "SFZ_BUNDLE",
+      "entrypoint": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\CelloEnsSusVib.sfz",
+      "role": null,
+      "seed": null,
+      "license": {
+        "license_id": "CC0-1.0",
+        "license_state": "VERIFIED_OFFICIAL_SOURCE",
+        "source_url": "https://versilian-studios.com/vsco-community/",
+        "attribution_required": false,
+        "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+      },
+      "dependency_closure_complete": true,
+      "bundle_sha256": "477259b913cfc46e48549b34e29ea94c802c2e0696558cdb844ee2d18fdb0d6e",
+      "source_governance_work_id": "LAISE-MUSIC-010"
+    },
+    "LAISE-VSCO2CE-OSTINATO": {
+      "asset_id": "LAISE-VSCO2CE-OSTINATO",
+      "status": "PRODUCTION_APPROVED",
+      "approved_at_utc": "2026-09-21T20:27:38.127960+00:00",
+      "approval_basis": "T010.3_OBJECTIVE_PASS_PLUS_HUMAN_PERCEPTUAL_PASS",
+      "asset_type": "SFZ_BUNDLE",
+      "entrypoint": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\ViolinEnsSpic.sfz",
+      "role": null,
+      "seed": null,
+      "license": {
+        "license_id": "CC0-1.0",
+        "license_state": "VERIFIED_OFFICIAL_SOURCE",
+        "source_url": "https://versilian-studios.com/vsco-community/",
+        "attribution_required": false,
+        "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+      },
+      "dependency_closure_complete": true,
+      "bundle_sha256": "812387ed9d69d454520fb41e875a1455f1ade707a5006b5567d1b174b9d61f07",
+      "source_governance_work_id": "LAISE-MUSIC-010"
+    },
+    "LAISE-VSCO2CE-BRASS": {
+      "asset_id": "LAISE-VSCO2CE-BRASS",
+      "status": "PRODUCTION_APPROVED",
+      "approved_at_utc": "2026-09-21T20:27:38.127960+00:00",
+      "approval_basis": "T010.3_OBJECTIVE_PASS_PLUS_HUMAN_PERCEPTUAL_PASS",
+      "asset_type": "SFZ_BUNDLE",
+      "entrypoint": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\FHornSus.sfz",
+      "role": null,
+      "seed": null,
+      "license": {
+        "license_id": "CC0-1.0",
+        "license_state": "VERIFIED_OFFICIAL_SOURCE",
+        "source_url": "https://versilian-studios.com/vsco-community/",
+        "attribution_required": false,
+        "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+      },
+      "dependency_closure_complete": true,
+      "bundle_sha256": "06c3a380f3c10ab78fe01c54e62d9250e635a41e209cb5e2dd5ee3ad774fa5e0",
+      "source_governance_work_id": "LAISE-MUSIC-010"
+    },
+    "LAISE-VSCO2CE-COUNTERMELODY": {
+      "asset_id": "LAISE-VSCO2CE-COUNTERMELODY",
+      "status": "PRODUCTION_APPROVED",
+      "approved_at_utc": "2026-09-21T20:27:38.127960+00:00",
+      "approval_basis": "T010.3_OBJECTIVE_PASS_PLUS_HUMAN_PERCEPTUAL_PASS",
+      "asset_type": "SFZ_BUNDLE",
+      "entrypoint": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\SViolinVib.sfz",
+      "role": null,
+      "seed": null,
+      "license": {
+        "license_id": "CC0-1.0",
+        "license_state": "VERIFIED_OFFICIAL_SOURCE",
+        "source_url": "https://versilian-studios.com/vsco-community/",
+        "attribution_required": false,
+        "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+      },
+      "dependency_closure_complete": true,
+      "bundle_sha256": "0b12de18cfa633faeca726200c1332eed6c54930929c287ed640a7ff7044fc39",
+      "source_governance_work_id": "LAISE-MUSIC-010"
+    },
+    "LAISE-VSCO2CE-BRASS_ATTACK": {
+      "asset_id": "LAISE-VSCO2CE-BRASS_ATTACK",
+      "status": "PRODUCTION_APPROVED",
+      "approved_at_utc": "2026-09-21T20:27:38.127960+00:00",
+      "approval_basis": "T010.3_OBJECTIVE_PASS_PLUS_HUMAN_PERCEPTUAL_PASS",
+      "asset_type": "SFZ_BUNDLE",
+      "entrypoint": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\FHornStac.sfz",
+      "role": null,
+      "seed": null,
+      "license": {
+        "license_id": "CC0-1.0",
+        "license_state": "VERIFIED_OFFICIAL_SOURCE",
+        "source_url": "https://versilian-studios.com/vsco-community/",
+        "attribution_required": false,
+        "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+      },
+      "dependency_closure_complete": true,
+      "bundle_sha256": "10e0750ef3f4805a4b00b730f1fd6828d0f1069cedd5b7ae3d89c9b475992d69",
+      "source_governance_work_id": "LAISE-MUSIC-010"
+    },
+    "LAISE-VSCO2CE-PERCUSSION_LOW": {
+      "asset_id": "LAISE-VSCO2CE-PERCUSSION_LOW",
+      "status": "PRODUCTION_APPROVED",
+      "approved_at_utc": "2026-09-21T20:27:38.127960+00:00",
+      "approval_basis": "T010.3_OBJECTIVE_PASS_PLUS_HUMAN_PERCEPTUAL_PASS",
+      "asset_type": "SFZ_BUNDLE",
+      "entrypoint": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\Timpani.sfz",
+      "role": null,
+      "seed": null,
+      "license": {
+        "license_id": "CC0-1.0",
+        "license_state": "VERIFIED_OFFICIAL_SOURCE",
+        "source_url": "https://versilian-studios.com/vsco-community/",
+        "attribution_required": false,
+        "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+      },
+      "dependency_closure_complete": true,
+      "bundle_sha256": "07f29d79c91964fcb8992fded1d63e26dc1dddaf0733301c52b94d757a00620c",
+      "source_governance_work_id": "LAISE-MUSIC-010"
+    },
+    "LAISE-VSCO2CE-PERCUSSION_SNARE": {
+      "asset_id": "LAISE-VSCO2CE-PERCUSSION_SNARE",
+      "status": "PRODUCTION_APPROVED",
+      "approved_at_utc": "2026-09-21T20:27:38.127960+00:00",
+      "approval_basis": "T010.3_OBJECTIVE_PASS_PLUS_HUMAN_PERCEPTUAL_PASS",
+      "asset_type": "SFZ_BUNDLE",
+      "entrypoint": "C:\\Projetos2026\\LAISE\\assets\\generated_sfz\\vsco2ce_percussion\\LAISE_VSCO2CE_Snare.sfz",
+      "role": null,
+      "seed": null,
+      "license": {
+        "license_id": "CC0-1.0",
+        "license_state": "VERIFIED_OFFICIAL_SOURCE",
+        "source_url": "https://versilian-studios.com/vsco-community/",
+        "attribution_required": false,
+        "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+      },
+      "dependency_closure_complete": true,
+      "bundle_sha256": "18c427b2d8a11b4cfa8e248e396ede1d8e3f943220246481d5405e60f240df0b",
+      "source_governance_work_id": "LAISE-MUSIC-010"
+    },
+    "LAISE-VSCO2CE-PERCUSSION_CYMBAL": {
+      "asset_id": "LAISE-VSCO2CE-PERCUSSION_CYMBAL",
+      "status": "PRODUCTION_APPROVED",
+      "approved_at_utc": "2026-09-21T20:27:38.127960+00:00",
+      "approval_basis": "T010.3_OBJECTIVE_PASS_PLUS_HUMAN_PERCEPTUAL_PASS",
+      "asset_type": "SFZ_BUNDLE",
+      "entrypoint": "C:\\Projetos2026\\LAISE\\assets\\generated_sfz\\vsco2ce_percussion\\LAISE_VSCO2CE_Cymbal.sfz",
+      "role": null,
+      "seed": null,
+      "license": {
+        "license_id": "CC0-1.0",
+        "license_state": "VERIFIED_OFFICIAL_SOURCE",
+        "source_url": "https://versilian-studios.com/vsco-community/",
+        "attribution_required": false,
+        "notice": "VSCO 2 Community Edition samples: CC0 according to the official Versilian Studios source."
+      },
+      "dependency_closure_complete": true,
+      "bundle_sha256": "4a8341e63bda95031473150bdfe32d6ca8f72e7ed1469a57583e513ba61d78d9",
+      "source_governance_work_id": "LAISE-MUSIC-010"
+    },
+    "LAISE-NATIVE-BRAAM-001": {
+      "asset_id": "LAISE-NATIVE-BRAAM-001",
+      "status": "PRODUCTION_APPROVED",
+      "approved_at_utc": "2026-09-21T20:27:38.127960+00:00",
+      "approval_basis": "T010.3_OBJECTIVE_PASS_PLUS_HUMAN_PERCEPTUAL_PASS",
+      "asset_type": "LAISE_NATIVE_SYNTHESIS",
+      "entrypoint": null,
+      "role": "braam",
+      "seed": 20260929,
+      "license": {
+        "license_id": "LAISE-NATIVE",
+        "license_state": "FIRST_PARTY_GENERATED",
+        "source_url": "",
+        "attribution_required": false,
+        "notice": "Deterministic waveform generated by LAISE code; no third-party sampled audio asset."
+      },
+      "dependency_closure_complete": true,
+      "bundle_sha256": "3bec029fcb2dd78285383e8fd0232d4da629ce3fe8f071f14f25539c519dbea7",
+      "source_governance_work_id": "LAISE-MUSIC-010"
+    },
+    "LAISE-NATIVE-PING-001": {
+      "asset_id": "LAISE-NATIVE-PING-001",
+      "status": "PRODUCTION_APPROVED",
+      "approved_at_utc": "2026-09-21T20:27:38.127960+00:00",
+      "approval_basis": "T010.3_OBJECTIVE_PASS_PLUS_HUMAN_PERCEPTUAL_PASS",
+      "asset_type": "LAISE_NATIVE_SYNTHESIS",
+      "entrypoint": null,
+      "role": "ping",
+      "seed": 20260929,
+      "license": {
+        "license_id": "LAISE-NATIVE",
+        "license_state": "FIRST_PARTY_GENERATED",
+        "source_url": "",
+        "attribution_required": false,
+        "notice": "Deterministic waveform generated by LAISE code; no third-party sampled audio asset."
+      },
+      "dependency_closure_complete": true,
+      "bundle_sha256": "3bec029fcb2dd78285383e8fd0232d4da629ce3fe8f071f14f25539c519dbea7",
+      "source_governance_work_id": "LAISE-MUSIC-010"
+    }
+  },
+  "history": [
+    {
+      "event": "PRODUCTION_APPROVAL",
+      "work_id": "LAISE-MUSIC-010",
+      "timestamp_utc": "2026-09-21T20:27:38.127960+00:00",
+      "promoted_assets": [
+        "LAISE-SFZ-PIANO-SALAMANDER-V3",
+        "LAISE-VSCO2CE-THEME",
+        "LAISE-VSCO2CE-STRINGS",
+        "LAISE-VSCO2CE-BASS",
+        "LAISE-VSCO2CE-OSTINATO",
+        "LAISE-VSCO2CE-BRASS",
+        "LAISE-VSCO2CE-COUNTERMELODY",
+        "LAISE-VSCO2CE-BRASS_ATTACK",
+        "LAISE-VSCO2CE-PERCUSSION_LOW",
+        "LAISE-VSCO2CE-PERCUSSION_SNARE",
+        "LAISE-VSCO2CE-PERCUSSION_CYMBAL",
+        "LAISE-NATIVE-BRAAM-001",
+        "LAISE-NATIVE-PING-001"
+      ],
+      "source_snapshot": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-010\\production_governance_snapshot.json"
+    }
+  ],
+  "last_updated_utc": "2026-09-21T20:27:38.127960+00:00"
+}

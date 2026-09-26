@@ -1,0 +1,539 @@
+{
+  "work_id": "LAISE-MUSIC-008",
+  "title": "MUSIC-007 SFZ Asset Upgrade A/B",
+  "comparison_basis": "MUSIC-007 frozen score/performance/mix/spatial architecture",
+  "engine": "T006 + T007 + T008 + T009 frozen + T010.1 hybrid SFZ assets",
+  "objective_result": "PASS",
+  "perceptual_result": "PENDING",
+  "rendered_assets": {
+    "piano": {
+      "role": "piano",
+      "renderer": "sfizz_render",
+      "asset_id": "LAISE-SFZ-PIANO-SALAMANDER-V3",
+      "asset_status": "ONBOARDING_VALIDATED",
+      "asset_path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\SalamanderGrandPiano-master\\Salamander Grand Piano V3.sfz",
+      "asset_sha256": "c8b282f03fdb2d9e6be24a99df0d97a05e7ece718d1a14e0b882c518161f7837",
+      "wav_path": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-008\\dry_stems\\piano.wav",
+      "wav_sha256": "9666ffa1667fa9b656be1e4b781113b912843e476ddd44a4f71c06547662ef32",
+      "audio_info": {
+        "audio_format": 1,
+        "channels_original": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "frames": 4791296,
+        "duration_seconds": 99.81866666666667,
+        "peak": 0.073638916015625,
+        "rms": 0.009617468511738286,
+        "finite": true
+      },
+      "console_tail": "Enabling freewheeling\nChanging default sample path to Samples/\n"
+    },
+    "theme": {
+      "role": "theme",
+      "renderer": "fluidsynth",
+      "asset_id": "LAISE-SF-TEST-0001",
+      "asset_status": "TEST_ONLY",
+      "asset_path": "C:\\Projetos2026\\LAISE\\assets\\soundfonts\\GeneralUser GS v1.471.sf2",
+      "asset_sha256": "f45b6b4a68b6bf3d792fcbb6d7de24dc701a0f89c5900a21ef3aaece993b839a",
+      "wav_path": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-008\\dry_stems\\theme.wav",
+      "wav_sha256": "f1c488b5b1f4296c232a2277b6bdd02cd9759a06c26259c22951faf0684f34c7",
+      "audio_info": {
+        "audio_format": 1,
+        "channels_original": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "frames": 4928512,
+        "duration_seconds": 102.67733333333334,
+        "peak": 0.173583984375,
+        "rms": 0.025036870622199975,
+        "finite": true
+      },
+      "console_tail": "FluidSynth runtime version 2.6.1\nCopyright (C) 2000-2026 Peter Hanappe and others.\nDistributed under the LGPL license.\nSoundFont(R) is a registered trademark of Creative Technology Ltd.\n\nRendering audio to file 'C:\\Projetos2026\\LAISE\\evidence\\MUSIC-008\\dry_stems\\theme.wav'..\n"
+    },
+    "strings": {
+      "role": "strings",
+      "renderer": "sfizz_render",
+      "asset_id": "LAISE-SFZ-VSCO2CE-STRINGS-SUS-001",
+      "asset_status": "ONBOARDING_VALIDATED",
+      "asset_path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\ViolinEnsSusVib.sfz",
+      "asset_sha256": "4591e212cccf1cbcff0c78cf8429a8221bb0820b70cb7c8dd6685f470ace4eaa",
+      "wav_path": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-008\\dry_stems\\strings.wav",
+      "wav_sha256": "756f53f549d16e2f62bbd305f2df9fe617c4e8ca054503637fe81eb01d1a944b",
+      "audio_info": {
+        "audio_format": 1,
+        "channels_original": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "frames": 4678656,
+        "duration_seconds": 97.472,
+        "peak": 0.06591796875,
+        "rms": 0.004404189924535153,
+        "finite": true
+      },
+      "console_tail": "Enabling freewheeling\nChanging default sample path to Strings/Violin Section/susVib/\n"
+    },
+    "bass": {
+      "role": "bass",
+      "renderer": "fluidsynth",
+      "asset_id": "LAISE-SF-TEST-0001",
+      "asset_status": "TEST_ONLY",
+      "asset_path": "C:\\Projetos2026\\LAISE\\assets\\soundfonts\\GeneralUser GS v1.471.sf2",
+      "asset_sha256": "f45b6b4a68b6bf3d792fcbb6d7de24dc701a0f89c5900a21ef3aaece993b839a",
+      "wav_path": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-008\\dry_stems\\bass.wav",
+      "wav_sha256": "069efd26e3b327dc61cc54c08f6205c611d36dfec477c3771c64b49d30b817a3",
+      "audio_info": {
+        "audio_format": 1,
+        "channels_original": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "frames": 4894208,
+        "duration_seconds": 101.96266666666666,
+        "peak": 0.149322509765625,
+        "rms": 0.02716636704977987,
+        "finite": true
+      },
+      "console_tail": "FluidSynth runtime version 2.6.1\nCopyright (C) 2000-2026 Peter Hanappe and others.\nDistributed under the LGPL license.\nSoundFont(R) is a registered trademark of Creative Technology Ltd.\n\nRendering audio to file 'C:\\Projetos2026\\LAISE\\evidence\\MUSIC-008\\dry_stems\\bass.wav'..\n"
+    },
+    "ostinato": {
+      "role": "ostinato",
+      "renderer": "sfizz_render",
+      "asset_id": "LAISE-SFZ-VSCO2CE-STRINGS-SHORT-001",
+      "asset_status": "ONBOARDING_CANDIDATE",
+      "asset_path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\ViolinEnsSpic.sfz",
+      "asset_sha256": "3616554873bf3e0b6c6af0a4a593d519219d0774ab03af323daf9e70a098a847",
+      "wav_path": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-008\\dry_stems\\ostinato.wav",
+      "wav_sha256": "06bca7edad15ed802e1dc4743bedc15c18607d98386cabc1471eec32a85447c6",
+      "audio_info": {
+        "audio_format": 1,
+        "channels_original": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "frames": 4302848,
+        "duration_seconds": 89.64266666666667,
+        "peak": 0.0540771484375,
+        "rms": 0.004282114810884128,
+        "finite": true
+      },
+      "console_tail": "Enabling freewheeling\nChanging default sample path to Strings/Violin Section/Spic/\n"
+    },
+    "percussion": {
+      "role": "percussion",
+      "renderer": "fluidsynth",
+      "asset_id": "LAISE-SF-TEST-0001",
+      "asset_status": "TEST_ONLY",
+      "asset_path": "C:\\Projetos2026\\LAISE\\assets\\soundfonts\\GeneralUser GS v1.471.sf2",
+      "asset_sha256": "f45b6b4a68b6bf3d792fcbb6d7de24dc701a0f89c5900a21ef3aaece993b839a",
+      "wav_path": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-008\\dry_stems\\percussion.wav",
+      "wav_sha256": "5aeeca2f410c200f0636824808a2c1dd1082d4885b0e4304f71944b2de2a29aa",
+      "audio_info": {
+        "audio_format": 1,
+        "channels_original": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "frames": 4517376,
+        "duration_seconds": 94.112,
+        "peak": 0.357269287109375,
+        "rms": 0.01515747742579795,
+        "finite": true
+      },
+      "console_tail": "FluidSynth runtime version 2.6.1\nCopyright (C) 2000-2026 Peter Hanappe and others.\nDistributed under the LGPL license.\nSoundFont(R) is a registered trademark of Creative Technology Ltd.\n\nRendering audio to file 'C:\\Projetos2026\\LAISE\\evidence\\MUSIC-008\\dry_stems\\percussion.wav'..\n"
+    },
+    "brass": {
+      "role": "brass",
+      "renderer": "fluidsynth",
+      "asset_id": "LAISE-SF-TEST-0001",
+      "asset_status": "TEST_ONLY",
+      "asset_path": "C:\\Projetos2026\\LAISE\\assets\\soundfonts\\GeneralUser GS v1.471.sf2",
+      "asset_sha256": "f45b6b4a68b6bf3d792fcbb6d7de24dc701a0f89c5900a21ef3aaece993b839a",
+      "wav_path": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-008\\dry_stems\\brass.wav",
+      "wav_sha256": "9e4a4686f1c81b5f71a9a5f3da76432dff374ac0eb7985a0b8cdc4bba6ddfc71",
+      "audio_info": {
+        "audio_format": 1,
+        "channels_original": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "frames": 3999744,
+        "duration_seconds": 83.328,
+        "peak": 0.3701171875,
+        "rms": 0.012932024623232962,
+        "finite": true
+      },
+      "console_tail": "FluidSynth runtime version 2.6.1\nCopyright (C) 2000-2026 Peter Hanappe and others.\nDistributed under the LGPL license.\nSoundFont(R) is a registered trademark of Creative Technology Ltd.\n\nRendering audio to file 'C:\\Projetos2026\\LAISE\\evidence\\MUSIC-008\\dry_stems\\brass.wav'..\n"
+    },
+    "countermelody": {
+      "role": "countermelody",
+      "renderer": "sfizz_render",
+      "asset_id": "LAISE-SFZ-VSCO2CE-STRINGS-SUS-001",
+      "asset_status": "ONBOARDING_VALIDATED",
+      "asset_path": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\ViolinEnsSusVib.sfz",
+      "asset_sha256": "4591e212cccf1cbcff0c78cf8429a8221bb0820b70cb7c8dd6685f470ace4eaa",
+      "wav_path": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-008\\dry_stems\\countermelody.wav",
+      "wav_sha256": "bfb7a6bc7e0ea49798c1b5bd9ea03572bfa99642e035004c26d783cdac154940",
+      "audio_info": {
+        "audio_format": 1,
+        "channels_original": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "frames": 4071424,
+        "duration_seconds": 84.82133333333333,
+        "peak": 0.043121337890625,
+        "rms": 0.0038522230413569566,
+        "finite": true
+      },
+      "console_tail": "Enabling freewheeling\nChanging default sample path to Strings/Violin Section/susVib/\n"
+    },
+    "brass_attack": {
+      "role": "brass_attack",
+      "renderer": "fluidsynth",
+      "asset_id": "LAISE-SF-TEST-0001",
+      "asset_status": "TEST_ONLY",
+      "asset_path": "C:\\Projetos2026\\LAISE\\assets\\soundfonts\\GeneralUser GS v1.471.sf2",
+      "asset_sha256": "f45b6b4a68b6bf3d792fcbb6d7de24dc701a0f89c5900a21ef3aaece993b839a",
+      "wav_path": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-008\\dry_stems\\brass_attack.wav",
+      "wav_sha256": "186818dbd32ad95a5cdd8e16efaf4bf5ed2e60fd724671809872bc9fbc269458",
+      "audio_info": {
+        "audio_format": 1,
+        "channels_original": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "frames": 4086784,
+        "duration_seconds": 85.14133333333334,
+        "peak": 0.513153076171875,
+        "rms": 0.006759659517420208,
+        "finite": true
+      },
+      "console_tail": "FluidSynth runtime version 2.6.1\nCopyright (C) 2000-2026 Peter Hanappe and others.\nDistributed under the LGPL license.\nSoundFont(R) is a registered trademark of Creative Technology Ltd.\n\nRendering audio to file 'C:\\Projetos2026\\LAISE\\evidence\\MUSIC-008\\dry_stems\\brass_attack.wav'..\n"
+    },
+    "braam": {
+      "role": "braam",
+      "renderer": "fluidsynth",
+      "asset_id": "LAISE-SF-TEST-0001",
+      "asset_status": "TEST_ONLY",
+      "asset_path": "C:\\Projetos2026\\LAISE\\assets\\soundfonts\\GeneralUser GS v1.471.sf2",
+      "asset_sha256": "f45b6b4a68b6bf3d792fcbb6d7de24dc701a0f89c5900a21ef3aaece993b839a",
+      "wav_path": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-008\\dry_stems\\braam.wav",
+      "wav_sha256": "4670221b898e1898d248c7106b6ded7ab516a5da6b1487c132c054c3ea28e2f0",
+      "audio_info": {
+        "audio_format": 1,
+        "channels_original": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "frames": 4001792,
+        "duration_seconds": 83.37066666666666,
+        "peak": 0.415069580078125,
+        "rms": 0.0068851308861381955,
+        "finite": true
+      },
+      "console_tail": "FluidSynth runtime version 2.6.1\nCopyright (C) 2000-2026 Peter Hanappe and others.\nDistributed under the LGPL license.\nSoundFont(R) is a registered trademark of Creative Technology Ltd.\n\nRendering audio to file 'C:\\Projetos2026\\LAISE\\evidence\\MUSIC-008\\dry_stems\\braam.wav'..\n"
+    },
+    "ping": {
+      "role": "ping",
+      "renderer": "fluidsynth",
+      "asset_id": "LAISE-SF-TEST-0001",
+      "asset_status": "TEST_ONLY",
+      "asset_path": "C:\\Projetos2026\\LAISE\\assets\\soundfonts\\GeneralUser GS v1.471.sf2",
+      "asset_sha256": "f45b6b4a68b6bf3d792fcbb6d7de24dc701a0f89c5900a21ef3aaece993b839a",
+      "wav_path": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-008\\dry_stems\\ping.wav",
+      "wav_sha256": "3672f17d88b37ebdcf2b220afd784047ab4cc545a32cb3fe922ff189a15c5679",
+      "audio_info": {
+        "audio_format": 1,
+        "channels_original": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "frames": 3751424,
+        "duration_seconds": 78.15466666666667,
+        "peak": 0.19012451171875,
+        "rms": 0.002134463323147022,
+        "finite": true
+      },
+      "console_tail": "FluidSynth runtime version 2.6.1\nCopyright (C) 2000-2026 Peter Hanappe and others.\nDistributed under the LGPL license.\nSoundFont(R) is a registered trademark of Creative Technology Ltd.\n\nRendering audio to file 'C:\\Projetos2026\\LAISE\\evidence\\MUSIC-008\\dry_stems\\ping.wav'..\n"
+    }
+  },
+  "routing_summary": {
+    "sfz_roles": [
+      "piano",
+      "strings",
+      "ostinato",
+      "countermelody"
+    ],
+    "generaluser_fallback_roles": [
+      "theme",
+      "bass",
+      "percussion",
+      "brass",
+      "brass_attack",
+      "braam",
+      "ping"
+    ],
+    "vsco_short_candidate": "C:\\Projetos2026\\LAISE\\assets\\sfz\\VSCO-2-CE-1.1.0\\ViolinEnsSpic.sfz"
+  },
+  "performance_manifest": {
+    "piano": {
+      "role": "piano",
+      "family": "keyboard",
+      "profile": {
+        "family": "keyboard",
+        "timing_jitter_ms": 5.5,
+        "timing_bias_ms": 0.0,
+        "velocity_jitter": 3,
+        "duration_factor": 0.92,
+        "overlap_ms": 0.0,
+        "accent_gain": 2,
+        "phrase_end_release": 0.78
+      },
+      "notes": 276,
+      "timing_changes": 243,
+      "velocity_changes": 238,
+      "duration_changes": 276,
+      "phrase_breaths": 0
+    },
+    "theme": {
+      "role": "theme",
+      "family": "solo_wind",
+      "profile": {
+        "family": "solo_wind",
+        "timing_jitter_ms": 3.0,
+        "timing_bias_ms": -2.0,
+        "velocity_jitter": 2,
+        "duration_factor": 0.96,
+        "overlap_ms": 34.0,
+        "accent_gain": 2,
+        "phrase_end_release": 0.84
+      },
+      "notes": 136,
+      "timing_changes": 112,
+      "velocity_changes": 119,
+      "duration_changes": 136,
+      "phrase_breaths": 13
+    },
+    "strings": {
+      "role": "strings",
+      "family": "strings",
+      "profile": {
+        "family": "strings",
+        "timing_jitter_ms": 2.6,
+        "timing_bias_ms": -1.5,
+        "velocity_jitter": 2,
+        "duration_factor": 0.98,
+        "overlap_ms": 58.0,
+        "accent_gain": 2,
+        "phrase_end_release": 0.88
+      },
+      "notes": 114,
+      "timing_changes": 78,
+      "velocity_changes": 97,
+      "duration_changes": 114,
+      "phrase_breaths": 73
+    },
+    "bass": {
+      "role": "bass",
+      "family": "low_strings",
+      "profile": {
+        "family": "low_strings",
+        "timing_jitter_ms": 4.0,
+        "timing_bias_ms": 5.0,
+        "velocity_jitter": 2,
+        "duration_factor": 0.94,
+        "overlap_ms": 18.0,
+        "accent_gain": 2,
+        "phrase_end_release": 0.8
+      },
+      "notes": 61,
+      "timing_changes": 61,
+      "velocity_changes": 56,
+      "duration_changes": 61,
+      "phrase_breaths": 0
+    },
+    "ostinato": {
+      "role": "ostinato",
+      "family": "strings_short",
+      "profile": {
+        "family": "strings_short",
+        "timing_jitter_ms": 3.2,
+        "timing_bias_ms": 1.5,
+        "velocity_jitter": 3,
+        "duration_factor": 0.72,
+        "overlap_ms": 0.0,
+        "accent_gain": 3,
+        "phrase_end_release": 0.72
+      },
+      "notes": 105,
+      "timing_changes": 86,
+      "velocity_changes": 96,
+      "duration_changes": 105,
+      "phrase_breaths": 0
+    },
+    "percussion": {
+      "role": "percussion",
+      "family": "percussion",
+      "profile": {
+        "family": "percussion",
+        "timing_jitter_ms": 1.8,
+        "timing_bias_ms": 0.0,
+        "velocity_jitter": 3,
+        "duration_factor": 0.72,
+        "overlap_ms": 0.0,
+        "accent_gain": 5,
+        "phrase_end_release": 0.7
+      },
+      "notes": 149,
+      "timing_changes": 67,
+      "velocity_changes": 136,
+      "duration_changes": 149,
+      "phrase_breaths": 0
+    },
+    "brass": {
+      "role": "brass",
+      "family": "brass_sustain",
+      "profile": {
+        "family": "brass_sustain",
+        "timing_jitter_ms": 2.2,
+        "timing_bias_ms": -3.0,
+        "velocity_jitter": 2,
+        "duration_factor": 0.9,
+        "overlap_ms": 22.0,
+        "accent_gain": 4,
+        "phrase_end_release": 0.76
+      },
+      "notes": 12,
+      "timing_changes": 12,
+      "velocity_changes": 12,
+      "duration_changes": 12,
+      "phrase_breaths": 0
+    },
+    "countermelody": {
+      "role": "countermelody",
+      "family": "solo_strings",
+      "profile": {
+        "family": "solo_strings",
+        "timing_jitter_ms": 2.2,
+        "timing_bias_ms": -2.5,
+        "velocity_jitter": 2,
+        "duration_factor": 0.98,
+        "overlap_ms": 72.0,
+        "accent_gain": 2,
+        "phrase_end_release": 0.9
+      },
+      "notes": 7,
+      "timing_changes": 6,
+      "velocity_changes": 7,
+      "duration_changes": 7,
+      "phrase_breaths": 0
+    },
+    "brass_attack": {
+      "role": "brass_attack",
+      "family": "brass_short",
+      "profile": {
+        "family": "brass_short",
+        "timing_jitter_ms": 1.5,
+        "timing_bias_ms": -4.0,
+        "velocity_jitter": 2,
+        "duration_factor": 0.48,
+        "overlap_ms": 0.0,
+        "accent_gain": 8,
+        "phrase_end_release": 0.62
+      },
+      "notes": 12,
+      "timing_changes": 12,
+      "velocity_changes": 12,
+      "duration_changes": 12,
+      "phrase_breaths": 0
+    },
+    "braam": {
+      "role": "braam",
+      "family": "cinematic_hit",
+      "profile": {
+        "family": "cinematic_hit",
+        "timing_jitter_ms": 0.5,
+        "timing_bias_ms": 0.0,
+        "velocity_jitter": 1,
+        "duration_factor": 0.95,
+        "overlap_ms": 0.0,
+        "accent_gain": 6,
+        "phrase_end_release": 0.8
+      },
+      "notes": 1,
+      "timing_changes": 0,
+      "velocity_changes": 1,
+      "duration_changes": 1,
+      "phrase_breaths": 0
+    },
+    "ping": {
+      "role": "ping",
+      "family": "cinematic_ping",
+      "profile": {
+        "family": "cinematic_ping",
+        "timing_jitter_ms": 1.0,
+        "timing_bias_ms": -1.0,
+        "velocity_jitter": 1,
+        "duration_factor": 0.82,
+        "overlap_ms": 0.0,
+        "accent_gain": 3,
+        "phrase_end_release": 0.78
+      },
+      "notes": 1,
+      "timing_changes": 1,
+      "velocity_changes": 1,
+      "duration_changes": 1,
+      "phrase_breaths": 0
+    }
+  },
+  "t008_preserved": {
+    "predrop": {
+      "climax_bar": 32,
+      "cut_at_tick": 60720,
+      "resume_tick": 61440,
+      "silence_beats": 1.5,
+      "roles": [
+        "strings",
+        "bass",
+        "ostinato",
+        "percussion",
+        "brass"
+      ]
+    },
+    "lowmid_processed_frames": 2396,
+    "lowmid_analysis": {
+      "strings": {
+        "processed_frames": 313,
+        "activity_threshold": 0.0007877564822499794,
+        "max_dominance": 0.6566228218621384,
+        "dominance_threshold": 0.18
+      },
+      "bass": {
+        "processed_frames": 1843,
+        "activity_threshold": 0.00896310165441913,
+        "max_dominance": 0.9443633459014896,
+        "dominance_threshold": 0.18
+      },
+      "brass": {
+        "processed_frames": 240,
+        "activity_threshold": 7.471051554205598e-06,
+        "max_dominance": 0.5244730361623371,
+        "dominance_threshold": 0.18
+      }
+    },
+    "minimum_duck_gain": 0.7943282127380371
+  },
+  "checks": {
+    "music007_score_preserved": true,
+    "salamander_piano_active": true,
+    "vsco_sustain_strings_active": true,
+    "vsco_countermelody_active": true,
+    "ostinato_asset_semantically_strings": true,
+    "sfz_renderer_used": true,
+    "hybrid_fallback_preserved": true,
+    "all_dry_stems_non_silent": true,
+    "all_dry_stems_48khz": true,
+    "t008_lowmid_cleanup_preserved": true,
+    "t008_percussion_ducking_preserved": true,
+    "mix_finite": true,
+    "mix_non_silent": true,
+    "mix_no_clipping": true,
+    "onboarding_assets_not_declared_production_approved": true
+  },
+  "mix": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-008\\LAISE_MUSIC007_SFZ_ASSET_AB.wav",
+  "mix_sha256": "50cdfe8d0ed01c3270d4d6e9190cf74830460a3523e7f5d300927e6520aec140",
+  "release_status": "DEVELOPMENT_ONLY",
+  "release_note": "MUSIC-008 validates real asset substitution. SFZ assets remain ONBOARDING/ONBOARDING_VALIDATED until license/provenance snapshot is frozen and promoted through the T010 production gate."
+}

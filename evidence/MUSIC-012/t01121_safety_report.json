@@ -1,0 +1,134 @@
+{
+  "milestone": "T011.2.1",
+  "work_id": "LAISE-MUSIC-012",
+  "title": "Ecos da Tempestade",
+  "objective_result": "PASS",
+  "raw_score_fingerprint": "18d89b33cbd05a97ebb36786802ee43917aeb87ede27b40166a4d9bc80e51663",
+  "safe_score_fingerprint": "ebc8db5786d554d652a52da268f7dea814475b26a292eaa29350c9b739b3aca4",
+  "score_safety": {
+    "correction_count": 7,
+    "corrections": [
+      {
+        "role": "countermelody",
+        "start_tick": 33600,
+        "original_pitch": 80,
+        "corrected_pitch": 81,
+        "reason": "OUT_OF_KEY",
+        "detail": "breakthrough: snapped chromatic note to nearest in-key pitch."
+      },
+      {
+        "role": "countermelody",
+        "start_tick": 46080,
+        "original_pitch": 82,
+        "corrected_pitch": 81,
+        "reason": "RESOLUTION_MINOR_SECOND",
+        "detail": "Homecoming exposed semitone collision re-voiced to a stable chord tone."
+      },
+      {
+        "role": "countermelody",
+        "start_tick": 47040,
+        "original_pitch": 80,
+        "corrected_pitch": 79,
+        "reason": "OUT_OF_KEY",
+        "detail": "homecoming: snapped chromatic note to nearest in-key pitch."
+      },
+      {
+        "role": "braam",
+        "start_tick": 26880,
+        "original_pitch": 48,
+        "corrected_pitch": 38,
+        "reason": "FX_RETUNED_TO_HARMONY",
+        "detail": "breakthrough: FX retuned to current harmonic context."
+      },
+      {
+        "role": "braam",
+        "start_tick": 32640,
+        "original_pitch": 48,
+        "corrected_pitch": 38,
+        "reason": "FX_RETUNED_TO_HARMONY",
+        "detail": "breakthrough: FX retuned to current harmonic context."
+      },
+      {
+        "role": "brass_attack",
+        "start_tick": 26880,
+        "original_pitch": 55,
+        "corrected_pitch": 55,
+        "reason": "ACCENT_COLLISION",
+        "detail": "Accent cluster >2 roles: shifted by 240 ticks and reduced velocity."
+      },
+      {
+        "role": "brass_attack",
+        "start_tick": 26880,
+        "original_pitch": 58,
+        "corrected_pitch": 58,
+        "reason": "ACCENT_COLLISION",
+        "detail": "Accent cluster >2 roles: shifted by 240 ticks and reduced velocity."
+      }
+    ],
+    "max_accent_roles_after_guard": 2
+  },
+  "post_guard_metrics": {
+    "out_of_key_melodic_notes": 0,
+    "homecoming_minor_second_collisions": 0,
+    "fx_tonal_mismatches": 0,
+    "max_simultaneous_strong_accent_roles": 2
+  },
+  "impact_diagnostics": [
+    {
+      "role": "braam",
+      "start_tick": 26880,
+      "start_seconds": 50.909091,
+      "section": "breakthrough",
+      "context_rms_db": -35.117,
+      "orchestral_post_rms_db": -35.59,
+      "raw_fx_rms_db": -7.998,
+      "allowed_delta_db": 8.0,
+      "applied_gain_db": -18.947,
+      "final_fx_rms_db": -26.945
+    },
+    {
+      "role": "braam",
+      "start_tick": 32640,
+      "start_seconds": 61.818182,
+      "section": "breakthrough",
+      "context_rms_db": -32.548,
+      "orchestral_post_rms_db": -34.689,
+      "raw_fx_rms_db": -7.998,
+      "allowed_delta_db": 8.0,
+      "applied_gain_db": -17.369,
+      "final_fx_rms_db": -25.367
+    },
+    {
+      "role": "ping",
+      "start_tick": 40320,
+      "start_seconds": 76.363636,
+      "section": "homecoming",
+      "context_rms_db": -32.639,
+      "orchestral_post_rms_db": -39.648,
+      "raw_fx_rms_db": -10.272,
+      "allowed_delta_db": 4.0,
+      "applied_gain_db": -20.525,
+      "final_fx_rms_db": -30.797
+    }
+  ],
+  "checks": {
+    "new_music_request_valid": true,
+    "music012_is_new_seed_and_new_score": true,
+    "raw_and_safe_fingerprints_recorded": true,
+    "harmonic_guard_no_out_of_key_melodic_notes": true,
+    "homecoming_no_exposed_minor_second_collisions": true,
+    "fx_tonal_guard_all_fx_match_current_chord": true,
+    "no_braam_in_homecoming": true,
+    "accent_collision_guard_max_two_strong_roles": true,
+    "dynamic_impact_guard_pass": true,
+    "impact_diagnostics_finite": true,
+    "all_orchestral_roles_rendered": true,
+    "all_orchestral_wavs_non_silent": true,
+    "all_orchestral_wavs_48khz": true,
+    "shared_room_bus_active": true,
+    "light_glue_bus_active": true,
+    "master_finite": true,
+    "master_non_silent": true,
+    "master_no_clipping": true
+  }
+}

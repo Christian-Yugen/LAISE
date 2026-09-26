@@ -15,3 +15,13 @@ __pycache__/
 # Operating system files
 Thumbs.db
 .DS_Store
+
+# Large local audio assets and generated renders
+*.wav
+*.flac
+*.mp3
+*.zip
+assets/sfz/
+
+# Local renderer binaries and build artifacts
+tools/sfizz/

@@ -1,0 +1,18 @@
+{
+  "milestone": "T011.2.1",
+  "objective_result": "PASS",
+  "music": "LAISE-MUSIC-012",
+  "new_composition": true,
+  "request_seed": 12012,
+  "safety_report": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-012\\t01121_safety_report.json",
+  "master": "C:\\Projetos2026\\LAISE\\evidence\\MUSIC-012\\LAISE_MUSIC012_ECOS_DA_TEMPESTADE.wav",
+  "master_sha256": "7c8a2e1de2eeee74014d8f085ab885dbe965503536f6af6cdf2ccc28189f744e",
+  "guards": [
+    "harmonic_guard",
+    "fx_tonal_guard",
+    "accent_collision_guard",
+    "dynamic_impact_guard",
+    "shared_scoring_stage",
+    "light_glue_bus"
+  ]
+}

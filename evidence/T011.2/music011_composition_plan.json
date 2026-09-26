@@ -1,0 +1,92 @@
+{
+  "title": "Horizonte de Luz",
+  "request_seed": 11011,
+  "key": "Eb",
+  "mode": "major",
+  "bpm": 82.0,
+  "total_bars": 33,
+  "requested_duration_seconds": 96.0,
+  "nominal_duration_seconds": 96.585,
+  "motif_degrees": [
+    0,
+    1,
+    4,
+    7
+  ],
+  "motif_rhythm_beats": [
+    0.75,
+    0.75,
+    0.5,
+    2.0
+  ],
+  "sections": [
+    {
+      "name": "awakening",
+      "start_bar": 0,
+      "bars": 4,
+      "energy": 0.2537,
+      "harmonic_function": "stability"
+    },
+    {
+      "name": "departure",
+      "start_bar": 4,
+      "bars": 7,
+      "energy": 0.4862,
+      "harmonic_function": "preparation"
+    },
+    {
+      "name": "ascent",
+      "start_bar": 11,
+      "bars": 7,
+      "energy": 0.6976,
+      "harmonic_function": "expectation"
+    },
+    {
+      "name": "breakthrough",
+      "start_bar": 18,
+      "bars": 9,
+      "energy": 1.0,
+      "harmonic_function": "climax"
+    },
+    {
+      "name": "homecoming",
+      "start_bar": 27,
+      "bars": 6,
+      "energy": 0.4017,
+      "harmonic_function": "resolution"
+    }
+  ],
+  "progression_by_section": {
+    "awakening": [
+      0,
+      4,
+      5,
+      3
+    ],
+    "departure": [
+      0,
+      5,
+      1,
+      4
+    ],
+    "ascent": [
+      5,
+      3,
+      0,
+      4
+    ],
+    "breakthrough": [
+      0,
+      3,
+      4,
+      0
+    ],
+    "homecoming": [
+      1,
+      4,
+      0,
+      0
+    ]
+  },
+  "score_fingerprint": "762b6d78c9af2e2c9cc90e8141475bcbadb1c3417a01cd1f8e5a71cd76c39edd"
+}

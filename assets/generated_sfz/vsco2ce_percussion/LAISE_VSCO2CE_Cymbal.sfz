@@ -1,0 +1,12 @@
+// LAISE generated SFZ wrapper
+// Derived mapping only; source WAV files remain unmodified.
+<control>
+
+<region>
+sample=C:/Projetos2026/LAISE/assets/sfz/VSCO-2-CE-1.1.0/Percussion/cymbal-crashshort_v1.wav
+key=60
+lovel=0
+hivel=127
+loop_mode=one_shot
+ampeg_release=2.8
+volume=-3.0
