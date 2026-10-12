@@ -1,0 +1,678 @@
+{
+  "test_id": "T018-PARAMETER-AUDIT",
+  "plugin_path": "C:\\Program Files\\Common Files\\VST3\\dearVR PRO 2.vst3\\Contents\\x86_64-win\\dearVR PRO 2.vst3",
+  "all_parameter_names": [
+    "coordinate_system",
+    "azimuth",
+    "elevation",
+    "distance",
+    "x",
+    "y",
+    "z",
+    "direct_gain",
+    "azimuth_scale",
+    "distance_scale",
+    "occlusion",
+    "virtual_acoustics",
+    "room_size",
+    "reverb",
+    "reverb_gain",
+    "reverb_low_pass",
+    "reverb_high_pass",
+    "reflection",
+    "reflection_gain",
+    "reflection_low_pass",
+    "reflection_high_pass",
+    "real_time_auralization",
+    "top_wall",
+    "bottom_wall",
+    "front_wall",
+    "back_wall",
+    "left_wall",
+    "right_wall",
+    "bypass",
+    "bass_boost",
+    "performance_mode",
+    "stereo_width",
+    "master_gain_db",
+    "lfe_gain_db",
+    "clarity"
+  ],
+  "parameters": {
+    "coordinate_system": {
+      "raw_default_observed": 0.0,
+      "min_value": null,
+      "max_value": null,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 2,
+      "valid_value_samples": [
+        "Cartesian",
+        "Polar"
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null
+    },
+    "azimuth": {
+      "raw_default_observed": 0.5,
+      "min_value": null,
+      "max_value": null,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 1001,
+      "valid_value_samples": [
+        "-180.0 deg",
+        "-90.0 deg",
+        "0.0 deg",
+        "90.0 deg",
+        "180.0 deg"
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null
+    },
+    "elevation": {
+      "raw_default_observed": 0.5,
+      "min_value": null,
+      "max_value": null,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 1001,
+      "valid_value_samples": [
+        "-90.0 deg",
+        "-45.0 deg",
+        "0.0 deg",
+        "45.0 deg",
+        "90.0 deg"
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null
+    },
+    "distance": {
+      "raw_default_observed": 0.09698997437953949,
+      "min_value": null,
+      "max_value": null,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 300,
+      "valid_value_samples": [
+        "0.1 m",
+        "7.6 m",
+        "15.1 m",
+        "22.6 m",
+        "30.0 m"
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null,
+      "unit": "meters",
+      "physical_range": [
+        0.1,
+        30.0
+      ],
+      "mapping": "linear raw=(meters-0.1)/29.9"
+    },
+    "x": {
+      "raw_default_observed": 0.5,
+      "min_value": null,
+      "max_value": null,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 1001,
+      "valid_value_samples": [
+        "-30.00 m",
+        "-15.00 m",
+        "0.00 m",
+        "15.00 m",
+        "30.00 m"
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null
+    },
+    "y": {
+      "raw_default_observed": 0.5,
+      "min_value": null,
+      "max_value": null,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 1001,
+      "valid_value_samples": [
+        "-30.00 m",
+        "-15.00 m",
+        "0.00 m",
+        "15.00 m",
+        "30.00 m"
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null
+    },
+    "z": {
+      "raw_default_observed": 0.550000011920929,
+      "min_value": null,
+      "max_value": null,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 1001,
+      "valid_value_samples": [
+        "-30.00 m",
+        "-15.00 m",
+        "0.00 m",
+        "15.00 m",
+        "30.00 m"
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null
+    },
+    "direct_gain": {
+      "raw_default_observed": 0.800000011920929,
+      "min_value": -96.0,
+      "max_value": 24.0,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 1001,
+      "valid_value_samples": [
+        -96.0,
+        -66.0,
+        -36.0,
+        -6.0,
+        24.0
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null,
+      "unit": "dB"
+    },
+    "azimuth_scale": {
+      "raw_default_observed": 0.23076921701431274,
+      "min_value": 0.1,
+      "max_value": 4.0,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 40,
+      "valid_value_samples": [
+        0.1,
+        1.1,
+        2.1,
+        3.1,
+        4.0
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null
+    },
+    "distance_scale": {
+      "raw_default_observed": 0.09909909963607788,
+      "min_value": 0.01,
+      "max_value": 10.0,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 1000,
+      "valid_value_samples": [
+        0.01,
+        2.51,
+        5.01,
+        7.51,
+        10.0
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null,
+      "unit": "scale factor"
+    },
+    "occlusion": {
+      "raw_default_observed": 0.0,
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 101,
+      "valid_value_samples": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null,
+      "unit": "normalized"
+    },
+    "virtual_acoustics": {
+      "raw_default_observed": 0.05400000140070915,
+      "min_value": null,
+      "max_value": null,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 48,
+      "valid_value_samples": [
+        "DirectSignal",
+        "SmallRoom",
+        "Car1",
+        "MediumAmbience",
+        "StringPlate"
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null
+    },
+    "room_size": {
+      "raw_default_observed": 1.0,
+      "min_value": 50.0,
+      "max_value": 100.0,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 51,
+      "valid_value_samples": [
+        50.0,
+        62.0,
+        75.0,
+        88.0,
+        100.0
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null,
+      "unit": "percent"
+    },
+    "reverb": {
+      "raw_default_observed": 1.0,
+      "min_value": false,
+      "max_value": true,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 2,
+      "valid_value_samples": [
+        false,
+        true
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null
+    },
+    "reverb_gain": {
+      "raw_default_observed": 0.800000011920929,
+      "min_value": -96.0,
+      "max_value": 24.0,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 1001,
+      "valid_value_samples": [
+        -96.0,
+        -66.0,
+        -36.0,
+        -6.0,
+        24.0
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null,
+      "unit": "dB"
+    },
+    "reverb_low_pass": {
+      "raw_default_observed": 1.0,
+      "min_value": 20.0,
+      "max_value": 20000.0,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 1001,
+      "valid_value_samples": [
+        20.0,
+        5015.0,
+        10010.0,
+        15005.0,
+        20000.0
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null,
+      "unit": "Hz"
+    },
+    "reverb_high_pass": {
+      "raw_default_observed": 0.0,
+      "min_value": 20.0,
+      "max_value": 20000.0,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 1001,
+      "valid_value_samples": [
+        20.0,
+        5015.0,
+        10010.0,
+        15005.0,
+        20000.0
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null,
+      "unit": "Hz"
+    },
+    "reflection": {
+      "raw_default_observed": 1.0,
+      "min_value": false,
+      "max_value": true,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 2,
+      "valid_value_samples": [
+        false,
+        true
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null
+    },
+    "reflection_gain": {
+      "raw_default_observed": 0.800000011920929,
+      "min_value": -96.0,
+      "max_value": 24.0,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 1001,
+      "valid_value_samples": [
+        -96.0,
+        -66.0,
+        -36.0,
+        -6.0,
+        24.0
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null,
+      "unit": "dB"
+    },
+    "reflection_low_pass": {
+      "raw_default_observed": 1.0,
+      "min_value": 20.0,
+      "max_value": 20000.0,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 1001,
+      "valid_value_samples": [
+        20.0,
+        5015.0,
+        10010.0,
+        15005.0,
+        20000.0
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null,
+      "unit": "Hz"
+    },
+    "reflection_high_pass": {
+      "raw_default_observed": 0.0,
+      "min_value": 20.0,
+      "max_value": 20000.0,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 1001,
+      "valid_value_samples": [
+        20.0,
+        5015.0,
+        10010.0,
+        15005.0,
+        20000.0
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null,
+      "unit": "Hz"
+    },
+    "real_time_auralization": {
+      "raw_default_observed": 0.0,
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 2,
+      "valid_value_samples": [
+        0.0,
+        1.0
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null
+    },
+    "top_wall": {
+      "raw_default_observed": 0.18333333730697632,
+      "min_value": null,
+      "max_value": null,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 301,
+      "valid_value_samples": [
+        "0.0 m",
+        "7.5 m",
+        "15.0 m",
+        "22.5 m",
+        "30.0 m"
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null
+    },
+    "bottom_wall": {
+      "raw_default_observed": 0.05999999865889549,
+      "min_value": null,
+      "max_value": null,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 301,
+      "valid_value_samples": [
+        "0.0 m",
+        "7.5 m",
+        "15.0 m",
+        "22.5 m",
+        "30.0 m"
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null
+    },
+    "front_wall": {
+      "raw_default_observed": 0.28333333134651184,
+      "min_value": null,
+      "max_value": null,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 301,
+      "valid_value_samples": [
+        "0.0 m",
+        "7.5 m",
+        "15.0 m",
+        "22.5 m",
+        "30.0 m"
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null
+    },
+    "back_wall": {
+      "raw_default_observed": 0.2666666805744171,
+      "min_value": null,
+      "max_value": null,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 301,
+      "valid_value_samples": [
+        "0.0 m",
+        "7.5 m",
+        "15.0 m",
+        "22.5 m",
+        "30.0 m"
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null
+    },
+    "left_wall": {
+      "raw_default_observed": 0.36666667461395264,
+      "min_value": null,
+      "max_value": null,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 301,
+      "valid_value_samples": [
+        "0.0 m",
+        "7.5 m",
+        "15.0 m",
+        "22.5 m",
+        "30.0 m"
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null
+    },
+    "right_wall": {
+      "raw_default_observed": 0.3499999940395355,
+      "min_value": null,
+      "max_value": null,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 301,
+      "valid_value_samples": [
+        "0.0 m",
+        "7.5 m",
+        "15.0 m",
+        "22.5 m",
+        "30.0 m"
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null
+    },
+    "bypass": {
+      "raw_default_observed": 0.0,
+      "min_value": false,
+      "max_value": true,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 2,
+      "valid_value_samples": [
+        false,
+        true
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null
+    },
+    "bass_boost": {
+      "raw_default_observed": 0.0,
+      "min_value": false,
+      "max_value": true,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 2,
+      "valid_value_samples": [
+        false,
+        true
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null
+    },
+    "performance_mode": {
+      "raw_default_observed": 0.0,
+      "min_value": false,
+      "max_value": true,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 2,
+      "valid_value_samples": [
+        false,
+        true
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null
+    },
+    "stereo_width": {
+      "raw_default_observed": 0.3333333432674408,
+      "min_value": null,
+      "max_value": null,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 1001,
+      "valid_value_samples": [
+        "0.0 deg",
+        "45.0 deg",
+        "90.0 deg",
+        "135.0 deg",
+        "180.0 deg"
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null,
+      "unit": "degrees"
+    },
+    "master_gain_db": {
+      "raw_default_observed": 0.800000011920929,
+      "min_value": -96.0,
+      "max_value": 24.0,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 1001,
+      "valid_value_samples": [
+        -96.0,
+        -66.0,
+        -36.0,
+        -6.0,
+        24.0
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null
+    },
+    "lfe_gain_db": {
+      "raw_default_observed": 0.0,
+      "min_value": -96.0,
+      "max_value": 24.0,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 1001,
+      "valid_value_samples": [
+        -96.0,
+        -66.0,
+        -36.0,
+        -6.0,
+        24.0
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null
+    },
+    "clarity": {
+      "raw_default_observed": 0.0,
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "is_discrete": true,
+      "is_boolean": false,
+      "valid_value_count": 1001,
+      "valid_value_samples": [
+        0.0,
+        25.0,
+        50.0,
+        75.0,
+        100.0
+      ],
+      "raw_value_settable": true,
+      "automation_probe_error": null,
+      "unit": "percent"
+    }
+  },
+  "distance_behavior": {
+    "probe_responses": {
+      "1.5": {
+        "raw": 0.046822741627693176,
+        "output_rms_dbfs": -30.964097125094042,
+        "output_peak_dbfs": -12.21578327486948
+      },
+      "3.0": {
+        "raw": 0.09698996692895889,
+        "output_rms_dbfs": -34.11298231900379,
+        "output_peak_dbfs": -15.026366667029155
+      },
+      "5.0": {
+        "raw": 0.1638796031475067,
+        "output_rms_dbfs": -37.04672599507444,
+        "output_peak_dbfs": -18.021401962907166
+      }
+    },
+    "pose_update_preserves_distance": true,
+    "block_automation": "supported through raw_value updates before each process block",
+    "resolution_meters": 0.1
+  },
+  "scope_decision": {
+    "test_1_enabled": [
+      "distance"
+    ],
+    "held_constant_or_disabled": [
+      "distance_scale",
+      "clarity",
+      "stereo_width",
+      "occlusion",
+      "reflection",
+      "reverb",
+      "virtual_acoustics"
+    ],
+    "deferred_until_human_approval": [
+      "early reflections",
+      "clarity/HRTF",
+      "width",
+      "occlusion",
+      "acoustic reality"
+    ]
+  }
+}

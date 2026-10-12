@@ -1,0 +1,16 @@
+{
+  "review_id": "T014-HUMAN-001",
+  "preview_interval_seconds": [127.0, 172.0],
+  "result": "PASS",
+  "responses": {
+    "binaural_immersion_clear": true,
+    "lead_vocal_front_and_intelligible": true,
+    "percussion_woodwinds_atmospheres_distinguishable": true,
+    "binaural_preferred_over_dry": true,
+    "clicks_distortion_abrupt_gain_or_uncomfortable_motion": false,
+    "perceived_approach_and_recession": true
+  },
+  "scope": "Approval applies to the T014 45-second preview.",
+  "dynamic_physical_distance": "PENDING",
+  "global_front_back_validation": "PENDING"
+}

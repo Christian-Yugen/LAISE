@@ -1,0 +1,75 @@
+{
+  "test_id": "T013",
+  "objective_result": "PASS",
+  "perceptual_result": "PENDING",
+  "validations": {
+    "angles_wrap_equivalently": true,
+    "composer_angle_preserved": true,
+    "crosses_wrapped_boundary": true,
+    "circular_step_is_small": true,
+    "two_sources_sample_aligned": true,
+    "all_audio_finite": true,
+    "no_clipping": true,
+    "no_large_boundary_click": true,
+    "distance_fixed_at_3m": true,
+    "wrap_reference": true
+  },
+  "observed": {
+    "preview_interval": {
+      "start_seconds": 136.0,
+      "end_seconds": 143.0
+    },
+    "output": "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\tukana_preview_180_crossing.wav",
+    "sample_rate": 48000,
+    "block_size": 256,
+    "distance_policy": {
+      "meters": 3.0,
+      "raw": 0.0969899744,
+      "dynamic": false
+    },
+    "angular_validation": {
+      "unwrapped_start_deg": 161.01694915254234,
+      "unwrapped_end_deg": 208.45649717519916,
+      "wrapped_boundary_crossings": 1,
+      "max_circular_step_deg": 0.036158192090510965,
+      "monotonic_unwrapped": true
+    },
+    "sources": {
+      "percussion": {
+        "frames": 336000,
+        "finite": true,
+        "peak": 0.3488728106021881,
+        "peak_dbfs": -9.14665751935307,
+        "rms": 0.04690776746228059,
+        "rms_dbfs": -26.575104729197946,
+        "max_sample_delta": 0.16294153034687042,
+        "p999_sample_delta": 0.08745051175355911,
+        "max_block_boundary_delta": 0.12712745368480682
+      },
+      "woodwinds": {
+        "frames": 336000,
+        "finite": true,
+        "peak": 0.49933871626853943,
+        "peak_dbfs": -6.03209519161873,
+        "rms": 0.136200550218685,
+        "rms_dbfs": -17.31642275941092,
+        "max_sample_delta": 0.10811924934387207,
+        "p999_sample_delta": 0.0730828195810318,
+        "max_block_boundary_delta": 0.09096387773752213
+      }
+    },
+    "mix": {
+      "frames": 336000,
+      "finite": true,
+      "peak": 0.2778312861919403,
+      "peak_dbfs": -11.124377011027782,
+      "rms": 0.07208290621198894,
+      "rms_dbfs": -22.843354239029864,
+      "max_sample_delta": 0.08456692844629288,
+      "p999_sample_delta": 0.04825292155146599,
+      "max_block_boundary_delta": 0.060016680508852005,
+      "pre_safety_peak": 0.2778312861919403,
+      "safety_gain": 1.0
+    }
+  }
+}

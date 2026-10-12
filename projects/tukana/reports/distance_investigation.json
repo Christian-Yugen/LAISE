@@ -1,0 +1,12 @@
+{
+  "test_id": "T013-DISTANCE",
+  "objective_result": "PASS",
+  "dynamic_distance": "BLOCKED_PENDING_MAPPING_AND_HUMAN_VALIDATION",
+  "fixed_distance_m": 3.0,
+  "raw_before_pose": 0.09698997437953949,
+  "raw_after_pose": 0.09698997437953949,
+  "validations": {
+    "calibrated_state_applied": true,
+    "pose_preserves_distance": true
+  }
+}

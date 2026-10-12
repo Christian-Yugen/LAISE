@@ -1,0 +1,13 @@
+{
+  "test_id": "T018-TEST-1-HUMAN",
+  "technical_status": "PASS",
+  "perceptual_replacement_status": "NOT_APPROVED",
+  "baseline_retained": "T017/B2",
+  "observations": {
+    "clear_depth_perception": true,
+    "muffling_or_relevant_technical_loss": false,
+    "preferred_version": "T017/B2",
+    "preference_reason": "The closer instruments in B2 create greater realism and presence for the listener."
+  },
+  "decision": "Do not proceed with the previous Test 2 using the rejected distance curves. Investigate proximal acoustic depth with isolated variables."
+}

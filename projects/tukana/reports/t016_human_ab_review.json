@@ -1,0 +1,19 @@
+{
+  "test_id": "T016-HUMAN",
+  "status": "PASS",
+  "approved_reference": "Master B — YouTube Optimized Candidate",
+  "responses": {
+    "spatial_3d_immersion_preference": "Master B",
+    "drum_impact_and_naturalness_preference": "Master A",
+    "movements_360_depth_and_localization": "similar",
+    "voice_instrument_balance": "similar",
+    "overall_preference": "Master B"
+  },
+  "interpretation": "Master B is the approved reference for T017. It is not replaced by B2 without a new listening approval.",
+  "preservation_required": [
+    "T015 original master candidate",
+    "T016 Master A",
+    "T016 Master B",
+    "all prior evidence"
+  ]
+}

@@ -1,0 +1,467 @@
+{
+  "test_id": "T018-TEST-1",
+  "status": "PASS",
+  "human_review": "PENDING",
+  "scope": "dynamic distance only",
+  "preview": {
+    "start_seconds": 145.0,
+    "end_seconds": 160.0,
+    "absolute_timeline_preserved": true
+  },
+  "method": {
+    "baseline": "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\mastering\\t017\\TUKANA_B2_transient_refinement_24bit.wav",
+    "delta_transplant": true,
+    "description": "Dynamic-minus-fixed dearVR render delta added to the approved B2 excerpt.",
+    "clarity_compensation_policy": "35% of geometric distance attenuation, stereo-linked, capped at +1.8 dB",
+    "reflections": false,
+    "reverb": false,
+    "clarity_change": false,
+    "width_change": false,
+    "occlusion": false,
+    "common_safety_gain": 1.0,
+    "perceptual_level_match": "equal full-preview RMS plus EBU verification"
+  },
+  "distance_profiles": {
+    "lead_vocal": [
+      3.0,
+      3.0
+    ],
+    "bass": [
+      3.0,
+      3.0
+    ],
+    "drums": [
+      3.0,
+      3.0
+    ],
+    "other": [
+      3.0,
+      3.0
+    ],
+    "backing_vocals": [
+      3.0,
+      3.8
+    ],
+    "guitar": [
+      3.0,
+      3.7
+    ],
+    "keyboards": [
+      3.0,
+      4.1
+    ],
+    "percussion": [
+      3.0,
+      4.6
+    ],
+    "synth": [
+      3.0,
+      4.8
+    ],
+    "woodwinds": [
+      3.0,
+      4.4
+    ]
+  },
+  "fixed_render": {
+    "lead_vocal": {
+      "requested_range_m": [
+        3.0,
+        3.0
+      ],
+      "observed_raw_min": 0.09698996692895889,
+      "observed_raw_max": 0.09698996692895889,
+      "max_raw_step_per_block": 0.0,
+      "automation_continuous": true,
+      "maximum_clarity_compensation_db": 0.0
+    },
+    "backing_vocals": {
+      "requested_range_m": [
+        3.0,
+        3.0
+      ],
+      "observed_raw_min": 0.09698996692895889,
+      "observed_raw_max": 0.09698996692895889,
+      "max_raw_step_per_block": 0.0,
+      "automation_continuous": true,
+      "maximum_clarity_compensation_db": 0.0
+    },
+    "drums": {
+      "requested_range_m": [
+        3.0,
+        3.0
+      ],
+      "observed_raw_min": 0.09698996692895889,
+      "observed_raw_max": 0.09698996692895889,
+      "max_raw_step_per_block": 0.0,
+      "automation_continuous": true,
+      "maximum_clarity_compensation_db": 0.0
+    },
+    "bass": {
+      "requested_range_m": [
+        3.0,
+        3.0
+      ],
+      "observed_raw_min": 0.09698996692895889,
+      "observed_raw_max": 0.09698996692895889,
+      "max_raw_step_per_block": 0.0,
+      "automation_continuous": true,
+      "maximum_clarity_compensation_db": 0.0
+    },
+    "guitar": {
+      "requested_range_m": [
+        3.0,
+        3.0
+      ],
+      "observed_raw_min": 0.09698996692895889,
+      "observed_raw_max": 0.09698996692895889,
+      "max_raw_step_per_block": 0.0,
+      "automation_continuous": true,
+      "maximum_clarity_compensation_db": 0.0
+    },
+    "keyboards": {
+      "requested_range_m": [
+        3.0,
+        3.0
+      ],
+      "observed_raw_min": 0.09698996692895889,
+      "observed_raw_max": 0.09698996692895889,
+      "max_raw_step_per_block": 0.0,
+      "automation_continuous": true,
+      "maximum_clarity_compensation_db": 0.0
+    },
+    "percussion": {
+      "requested_range_m": [
+        3.0,
+        3.0
+      ],
+      "observed_raw_min": 0.09698996692895889,
+      "observed_raw_max": 0.09698996692895889,
+      "max_raw_step_per_block": 0.0,
+      "automation_continuous": true,
+      "maximum_clarity_compensation_db": 0.0
+    },
+    "synth": {
+      "requested_range_m": [
+        3.0,
+        3.0
+      ],
+      "observed_raw_min": 0.09698996692895889,
+      "observed_raw_max": 0.09698996692895889,
+      "max_raw_step_per_block": 0.0,
+      "automation_continuous": true,
+      "maximum_clarity_compensation_db": 0.0
+    },
+    "other": {
+      "requested_range_m": [
+        3.0,
+        3.0
+      ],
+      "observed_raw_min": 0.09698996692895889,
+      "observed_raw_max": 0.09698996692895889,
+      "max_raw_step_per_block": 0.0,
+      "automation_continuous": true,
+      "maximum_clarity_compensation_db": 0.0
+    },
+    "woodwinds": {
+      "requested_range_m": [
+        3.0,
+        3.0
+      ],
+      "observed_raw_min": 0.09698996692895889,
+      "observed_raw_max": 0.09698996692895889,
+      "max_raw_step_per_block": 0.0,
+      "automation_continuous": true,
+      "maximum_clarity_compensation_db": 0.0
+    }
+  },
+  "dynamic_render": {
+    "lead_vocal": {
+      "requested_range_m": [
+        3.0,
+        3.0
+      ],
+      "observed_raw_min": 0.09698996692895889,
+      "observed_raw_max": 0.09698996692895889,
+      "max_raw_step_per_block": 0.0,
+      "automation_continuous": true,
+      "maximum_clarity_compensation_db": 0.0
+    },
+    "backing_vocals": {
+      "requested_range_m": [
+        3.0,
+        3.8
+      ],
+      "observed_raw_min": 0.09698996692895889,
+      "observed_raw_max": 0.12374581396579742,
+      "max_raw_step_per_block": 2.98917293548584e-05,
+      "automation_continuous": true,
+      "maximum_clarity_compensation_db": 0.7186363441471627
+    },
+    "drums": {
+      "requested_range_m": [
+        3.0,
+        3.0
+      ],
+      "observed_raw_min": 0.09698996692895889,
+      "observed_raw_max": 0.09698996692895889,
+      "max_raw_step_per_block": 0.0,
+      "automation_continuous": true,
+      "maximum_clarity_compensation_db": 0.0
+    },
+    "bass": {
+      "requested_range_m": [
+        3.0,
+        3.0
+      ],
+      "observed_raw_min": 0.09698996692895889,
+      "observed_raw_max": 0.09698996692895889,
+      "max_raw_step_per_block": 0.0,
+      "automation_continuous": true,
+      "maximum_clarity_compensation_db": 0.0
+    },
+    "guitar": {
+      "requested_range_m": [
+        3.0,
+        3.7
+      ],
+      "observed_raw_min": 0.09698996692895889,
+      "observed_raw_max": 0.12040133774280548,
+      "max_raw_step_per_block": 2.6151537895202637e-05,
+      "automation_continuous": true,
+      "maximum_clarity_compensation_db": 0.6375632412781396
+    },
+    "keyboards": {
+      "requested_range_m": [
+        3.0,
+        4.1
+      ],
+      "observed_raw_min": 0.09698996692895889,
+      "observed_raw_max": 0.13377925753593445,
+      "max_raw_step_per_block": 4.1097402572631836e-05,
+      "automation_continuous": true,
+      "maximum_clarity_compensation_db": 0.9496381513860592
+    },
+    "percussion": {
+      "requested_range_m": [
+        3.0,
+        4.6
+      ],
+      "observed_raw_min": 0.09698996692895889,
+      "observed_raw_max": 0.15050166845321655,
+      "max_raw_step_per_block": 5.977600812911987e-05,
+      "automation_continuous": true,
+      "maximum_clarity_compensation_db": 1.2994559575573332
+    },
+    "synth": {
+      "requested_range_m": [
+        3.0,
+        4.8
+      ],
+      "observed_raw_min": 0.09698996692895889,
+      "observed_raw_max": 0.15719063580036163,
+      "max_raw_step_per_block": 6.724894046783447e-05,
+      "automation_continuous": true,
+      "maximum_clarity_compensation_db": 1.4288397910735458
+    },
+    "other": {
+      "requested_range_m": [
+        3.0,
+        3.0
+      ],
+      "observed_raw_min": 0.09698996692895889,
+      "observed_raw_max": 0.09698996692895889,
+      "max_raw_step_per_block": 0.0,
+      "automation_continuous": true,
+      "maximum_clarity_compensation_db": 0.0
+    },
+    "woodwinds": {
+      "requested_range_m": [
+        3.0,
+        4.4
+      ],
+      "observed_raw_min": 0.09698996692895889,
+      "observed_raw_max": 0.14381270110607147,
+      "max_raw_step_per_block": 5.2303075790405273e-05,
+      "automation_continuous": true,
+      "maximum_clarity_compensation_db": 1.1643198781080397
+    }
+  },
+  "spectral_comparison": {
+    "band_delta_db": {
+      "20-60_hz_db": -0.005205165635937092,
+      "60-250_hz_db": 0.04438502655552279,
+      "250-2000_hz_db": -0.2092317604879952,
+      "2000-6000_hz_db": -0.04295735014857982,
+      "6000-20000_hz_db": -0.3272771038586946
+    },
+    "maximum_absolute_band_delta_db": 0.3272771038586946
+  },
+  "artifacts": {
+    "b2_baseline": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\t018\\TUKANA_T018_test1_B2_baseline_145_160_level_matched_24bit.wav",
+      "sha256": "5d738e0b9f90eb91b2c216d6fb9c63ac98c2263ec362b428ddb51a636245849a",
+      "format": {
+        "codec_name": "pcm_s24le",
+        "sample_fmt": "s32",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "15.000000"
+      },
+      "signal": {
+        "frames": 720000,
+        "duration_seconds": 15.0,
+        "finite": true,
+        "sample_peak": 0.6470432281494141,
+        "sample_peak_dbfs": -3.7813340738094805,
+        "rms_dbfs": -18.29496995785405,
+        "crest_factor_db": 14.513635884044572,
+        "left_rms_dbfs": -18.07175259456174,
+        "right_rms_dbfs": -18.530284767618163,
+        "channel_balance_db": 0.4585321730564228,
+        "lr_correlation": 0.8895799831819806,
+        "mono_rms_change_db": -0.24949373845804854,
+        "max_adjacent_sample_delta": 0.2807720899581909,
+        "transient_151_92_peak": 0.0,
+        "spectral_distribution": {
+          "20-60_hz_db": -4.23450727415821,
+          "60-250_hz_db": -2.8866831537306648,
+          "250-2000_hz_db": -10.447658603068897,
+          "2000-6000_hz_db": -19.360157156695234,
+          "6000-20000_hz_db": -21.889252410138734
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -17.5,
+        "loudness_range_lu": 1.0,
+        "true_peak_dbtp": -3.7,
+        "momentary_lufs": {
+          "minimum": -21.9,
+          "median": -17.5,
+          "maximum": -14.9
+        },
+        "short_term_lufs": {
+          "minimum": -18.1,
+          "median": -17.7,
+          "maximum": -16.5
+        }
+      }
+    },
+    "dynamic_distance": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\t018\\TUKANA_T018_test1_dynamic_distance_145_160_level_matched_24bit.wav",
+      "sha256": "d0e2c16a94f981f579a587bac37d5f6e7a4f2c30703ef413b49cd5913370610c",
+      "format": {
+        "codec_name": "pcm_s24le",
+        "sample_fmt": "s32",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "15.000000"
+      },
+      "signal": {
+        "frames": 720000,
+        "duration_seconds": 15.0,
+        "finite": true,
+        "sample_peak": 0.6409451961517334,
+        "sample_peak_dbfs": -3.8635820625537516,
+        "rms_dbfs": -18.294970103622624,
+        "crest_factor_db": 14.431388041068873,
+        "left_rms_dbfs": -18.094944915099212,
+        "right_rms_dbfs": -18.504654627223584,
+        "channel_balance_db": 0.4097097121243692,
+        "lr_correlation": 0.8941317714067252,
+        "mono_rms_change_db": -0.23847726068766523,
+        "max_adjacent_sample_delta": 0.2809797525405884,
+        "transient_151_92_peak": 0.0,
+        "spectral_distribution": {
+          "20-60_hz_db": -4.239712439794147,
+          "60-250_hz_db": -2.842298127175142,
+          "250-2000_hz_db": -10.656890363556892,
+          "2000-6000_hz_db": -19.403114506843814,
+          "6000-20000_hz_db": -22.21652951399743
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -17.6,
+        "loudness_range_lu": 1.1,
+        "true_peak_dbtp": -3.8,
+        "momentary_lufs": {
+          "minimum": -21.8,
+          "median": -17.6,
+          "maximum": -14.8
+        },
+        "short_term_lufs": {
+          "minimum": -18.0,
+          "median": -17.8,
+          "maximum": -16.5
+        }
+      }
+    },
+    "distance_delta_monitor": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\t018\\TUKANA_T018_test1_distance_delta_monitor_145_160_24bit.wav",
+      "sha256": "596ff15d6ce6d6f9e6660df0e496d3ca52cfb0774555583bb7febb5dacd8441a",
+      "format": {
+        "codec_name": "pcm_s24le",
+        "sample_fmt": "s32",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "15.000000"
+      },
+      "signal": {
+        "frames": 720000,
+        "duration_seconds": 15.0,
+        "finite": true,
+        "sample_peak": 0.0710526704788208,
+        "sample_peak_dbfs": -22.968391893809503,
+        "rms_dbfs": -48.71024507343013,
+        "crest_factor_db": 25.741853179620623,
+        "left_rms_dbfs": -47.35844091569548,
+        "right_rms_dbfs": -50.683534744856765,
+        "channel_balance_db": 3.3250938291612755,
+        "lr_correlation": 0.5371498476210872,
+        "mono_rms_change_db": -1.2492165103384094,
+        "max_adjacent_sample_delta": 0.06588852405548096,
+        "transient_151_92_peak": 0.0,
+        "spectral_distribution": {
+          "20-60_hz_db": -4.5307224030405475,
+          "60-250_hz_db": -7.920714225109636,
+          "250-2000_hz_db": -5.272099468978101,
+          "2000-6000_hz_db": -16.75707096218661,
+          "6000-20000_hz_db": -7.765496106010456
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -44.1,
+        "loudness_range_lu": 11.2,
+        "true_peak_dbtp": -23.0,
+        "momentary_lufs": {
+          "minimum": -68.2,
+          "median": -46.2,
+          "maximum": -40.1
+        },
+        "short_term_lufs": {
+          "minimum": -55.6,
+          "median": -45.1,
+          "maximum": -41.1
+        }
+      }
+    }
+  },
+  "tests": {
+    "b2_baseline_preserved": true,
+    "preview_exact_frames": true,
+    "pcm24_48khz_stereo": true,
+    "finite_no_clipping": true,
+    "true_peak_headroom": true,
+    "loudness_matched": true,
+    "automation_continuous": true,
+    "channel_balance_stable": true,
+    "correlation_stable": true,
+    "spectral_loss_within_limit": true,
+    "transients_preserved": true,
+    "no_large_new_discontinuity": true
+  },
+  "next_step": "Await human A/B review before Test 2 early reflections."
+}

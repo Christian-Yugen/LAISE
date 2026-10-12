@@ -1,0 +1,776 @@
+{
+  "test_id": "T015",
+  "delivery_status": "MASTER_CANDIDATE",
+  "human_approval_required": true,
+  "duration_seconds": 267.60002083333336,
+  "frames": 12844801,
+  "sample_rate": 48000,
+  "block_size": 256,
+  "processing": {
+    "float32": true,
+    "incremental": true,
+    "independent_dearvr_instances": true,
+    "distance_m": 3.0,
+    "dynamic_distance": false,
+    "peak_working_set_mb": 0.0
+  },
+  "headroom_policy": {
+    "target_sample_peak_dbfs": -3.0,
+    "uniform_spatial_mix_gain": 0.5301487996513322,
+    "dry_level_match_gain": 0.47128720363351934
+  },
+  "source_reports": {
+    "lead_vocal": {
+      "input": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\01_lead_vocal.wav",
+      "output": "C:\\Projetos2026\\LAISE\\projects\\tukana\\spatial_stems\\full\\lead_vocal_spatial.wav",
+      "metrics": {
+        "frames": 12844801,
+        "finite": true,
+        "peak": 0.5003207921981812,
+        "peak_dbfs": -6.01502896894376,
+        "rms": 0.03233576547531111,
+        "rms_dbfs": -29.80633707332679,
+        "max_sample_delta": 0.269479364156723,
+        "max_block_boundary_delta": 0.17738881707191467
+      },
+      "sha256": "b358ea6d2400cc4edb98bff1744c2ee6bcbe9d1080c283f7e62c197685427541",
+      "elapsed_seconds": 33.31402325630188
+    },
+    "backing_vocals": {
+      "input": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\02_backing_vocals.wav",
+      "output": "C:\\Projetos2026\\LAISE\\projects\\tukana\\spatial_stems\\full\\backing_vocals_spatial.wav",
+      "metrics": {
+        "frames": 12844801,
+        "finite": true,
+        "peak": 0.8437751531600952,
+        "peak_dbfs": -1.4754653506955095,
+        "rms": 0.04297793803257413,
+        "rms_dbfs": -27.335088492832163,
+        "max_sample_delta": 0.27740103006362915,
+        "max_block_boundary_delta": 0.14806939661502838
+      },
+      "sha256": "721a050f16582b2c000de8d3004af01a2821eff3a4cfd4687cc8a6604455ac4c",
+      "elapsed_seconds": 45.89174723625183
+    },
+    "drums": {
+      "input": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\03_drums.wav",
+      "output": "C:\\Projetos2026\\LAISE\\projects\\tukana\\spatial_stems\\full\\drums_spatial.wav",
+      "metrics": {
+        "frames": 12844801,
+        "finite": true,
+        "peak": 0.5158576369285583,
+        "peak_dbfs": -5.749402712686258,
+        "rms": 0.07654921880077628,
+        "rms_dbfs": -22.321184740005005,
+        "max_sample_delta": 0.2175917774438858,
+        "max_block_boundary_delta": 0.12481669336557388
+      },
+      "sha256": "d7549de7830c144306cbe6f141689a430411617f7dd77565d2fe656209b30778",
+      "elapsed_seconds": 44.28116035461426
+    },
+    "bass": {
+      "input": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\04_bass.wav",
+      "output": "C:\\Projetos2026\\LAISE\\projects\\tukana\\spatial_stems\\full\\bass_spatial.wav",
+      "metrics": {
+        "frames": 12844801,
+        "finite": true,
+        "peak": 0.359252393245697,
+        "peak_dbfs": -8.892006600551811,
+        "rms": 0.048605178857883645,
+        "rms_dbfs": -26.266349088180352,
+        "max_sample_delta": 0.08512061834335327,
+        "max_block_boundary_delta": 0.02862052619457245
+      },
+      "sha256": "79367ff95b26f6dbb96d0b19c30308632c7202c97188485531478659f0fbf02c",
+      "elapsed_seconds": 41.95708107948303
+    },
+    "guitar": {
+      "input": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\05_guitar.wav",
+      "output": "C:\\Projetos2026\\LAISE\\projects\\tukana\\spatial_stems\\full\\guitar_spatial.wav",
+      "metrics": {
+        "frames": 12844801,
+        "finite": true,
+        "peak": 0.3148246109485626,
+        "peak_dbfs": -10.038626493135613,
+        "rms": 0.008159493317918383,
+        "rms_dbfs": -41.76673617802133,
+        "max_sample_delta": 0.13509522378444672,
+        "max_block_boundary_delta": 0.045518338680267334
+      },
+      "sha256": "8849404a0656a373755f8e3e099669ec4122f1e3da7f4504e8ce0623582650d8",
+      "elapsed_seconds": 32.20364594459534
+    },
+    "keyboards": {
+      "input": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\06_keyboard.wav",
+      "output": "C:\\Projetos2026\\LAISE\\projects\\tukana\\spatial_stems\\full\\keyboards_spatial.wav",
+      "metrics": {
+        "frames": 12844801,
+        "finite": true,
+        "peak": 0.04470737278461456,
+        "peak_dbfs": -26.992417011348305,
+        "rms": 0.0016247806990985565,
+        "rms_dbfs": -55.78410497183825,
+        "max_sample_delta": 0.010171420872211456,
+        "max_block_boundary_delta": 0.004365239292383194
+      },
+      "sha256": "51ba63fe6803779573c63baf0ebdd243f71d9220ad4d3f0cee50649e73675647",
+      "elapsed_seconds": 43.42375588417053
+    },
+    "percussion": {
+      "input": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\07_percussion.wav",
+      "output": "C:\\Projetos2026\\LAISE\\projects\\tukana\\spatial_stems\\full\\percussion_spatial.wav",
+      "metrics": {
+        "frames": 12844801,
+        "finite": true,
+        "peak": 0.7150560021400452,
+        "peak_dbfs": -2.913198871168248,
+        "rms": 0.038226501099106254,
+        "rms_dbfs": -28.35270902936137,
+        "max_sample_delta": 0.3979882597923279,
+        "max_block_boundary_delta": 0.2762742042541504
+      },
+      "sha256": "092ae335b2aa9648907ede06577612416c96d6748491f1041bdad5feb10e504a",
+      "elapsed_seconds": 42.645052433013916
+    },
+    "synth": {
+      "input": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\08_synth.wav",
+      "output": "C:\\Projetos2026\\LAISE\\projects\\tukana\\spatial_stems\\full\\synth_spatial.wav",
+      "metrics": {
+        "frames": 12844801,
+        "finite": true,
+        "peak": 0.18479740619659424,
+        "peak_dbfs": -14.666082575999171,
+        "rms": 0.016088573587994943,
+        "rms_dbfs": -35.869649174356965,
+        "max_sample_delta": 0.06098252534866333,
+        "max_block_boundary_delta": 0.04109250009059906
+      },
+      "sha256": "0204d206bdeff6f1d903b4be621e101b5d9e85f5456c72a40981515c481c52f4",
+      "elapsed_seconds": 44.41491770744324
+    },
+    "other": {
+      "input": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\09_other.wav",
+      "output": "C:\\Projetos2026\\LAISE\\projects\\tukana\\spatial_stems\\full\\other_spatial.wav",
+      "metrics": {
+        "frames": 12844801,
+        "finite": true,
+        "peak": 0.5084136724472046,
+        "peak_dbfs": -5.875655575085503,
+        "rms": 0.008223346909559384,
+        "rms_dbfs": -41.69902776473183,
+        "max_sample_delta": 0.3446861505508423,
+        "max_block_boundary_delta": 0.22090166807174683
+      },
+      "sha256": "5ecf05ca35e75a1ce71d9de9cb7ed12cb889ba741b61e9e774b7568ff1c26e3b",
+      "elapsed_seconds": 28.764517545700073
+    },
+    "woodwinds": {
+      "input": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\10_woodwinds.wav",
+      "output": "C:\\Projetos2026\\LAISE\\projects\\tukana\\spatial_stems\\full\\woodwinds_spatial.wav",
+      "metrics": {
+        "frames": 12844801,
+        "finite": true,
+        "peak": 0.5498933792114258,
+        "peak_dbfs": -5.194430184985931,
+        "rms": 0.03788594082815451,
+        "rms_dbfs": -28.430438467405473,
+        "max_sample_delta": 0.11620015650987625,
+        "max_block_boundary_delta": 0.09096386283636093
+      },
+      "sha256": "572fad48c76c9da523bdbfe172d9d1d4f92e9b971073c157c18475731b92a4b1",
+      "elapsed_seconds": 21.64969253540039
+    }
+  },
+  "outputs": {
+    "binaural": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\TUKANA_binaural_full_master_candidate.wav",
+      "sha256": "218054e7f1310b9371a90fc97479ffece6acd8d2544846bb77c90c1342665f96",
+      "metrics": {
+        "frames": 12844801,
+        "finite": true,
+        "peak": 0.7079457640647888,
+        "peak_dbfs": -3.0000002493010487,
+        "rms": 0.0795538228218607,
+        "rms_dbfs": -21.98677892486113,
+        "max_sample_delta": 0.3178844451904297,
+        "max_block_boundary_delta": 0.07360925525426865
+      },
+      "ebu_r128": {
+        "method": "FFmpeg ebur128 peak=true",
+        "returncode": 0,
+        "integrated_lufs": -20.4,
+        "true_peak_dbtp": -3.0
+      }
+    },
+    "dry_comparison": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\TUKANA_dry_full_comparison.wav",
+      "sha256": "f6457f75e3bf85375be6e10ded8ab9950bc2cf3c53b9edddd53079451eb96bd9",
+      "metrics": {
+        "frames": 12844801,
+        "finite": true,
+        "peak": 0.7033317685127258,
+        "peak_dbfs": -3.0567953133790446,
+        "rms": 0.07955381999579475,
+        "rms_dbfs": -21.986779233418233,
+        "max_sample_delta": 0.2123381495475769,
+        "max_block_boundary_delta": 0.061733901500701904
+      },
+      "ebu_r128": {
+        "method": "FFmpeg ebur128 peak=true",
+        "returncode": 0,
+        "integrated_lufs": -20.7,
+        "true_peak_dbtp": -3.0
+      }
+    },
+    "effective_scene": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\TUKANA_effective_spatial_scene.json",
+      "sha256": "e97ce0e241ab3a5b694e9ba6beea056d729880cc3b5ef42238144cceb9ba9faf"
+    },
+    "rms_difference_db": 3.0855710761817814e-07
+  },
+  "progress_log": [
+    {
+      "source": "lead_vocal",
+      "percent": 10.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "lead_vocal",
+      "percent": 20.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "lead_vocal",
+      "percent": 30.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "lead_vocal",
+      "percent": 40.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "lead_vocal",
+      "percent": 50.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "lead_vocal",
+      "percent": 60.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "lead_vocal",
+      "percent": 70.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "lead_vocal",
+      "percent": 80.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "lead_vocal",
+      "percent": 90.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "lead_vocal",
+      "percent": 100.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "backing_vocals",
+      "percent": 10.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "backing_vocals",
+      "percent": 20.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "backing_vocals",
+      "percent": 30.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "backing_vocals",
+      "percent": 40.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "backing_vocals",
+      "percent": 50.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "backing_vocals",
+      "percent": 60.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "backing_vocals",
+      "percent": 70.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "backing_vocals",
+      "percent": 80.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "backing_vocals",
+      "percent": 90.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "backing_vocals",
+      "percent": 100.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "drums",
+      "percent": 10.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "drums",
+      "percent": 20.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "drums",
+      "percent": 30.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "drums",
+      "percent": 40.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "drums",
+      "percent": 50.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "drums",
+      "percent": 60.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "drums",
+      "percent": 70.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "drums",
+      "percent": 80.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "drums",
+      "percent": 90.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "drums",
+      "percent": 100.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "bass",
+      "percent": 10.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "bass",
+      "percent": 20.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "bass",
+      "percent": 30.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "bass",
+      "percent": 40.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "bass",
+      "percent": 50.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "bass",
+      "percent": 60.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "bass",
+      "percent": 70.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "bass",
+      "percent": 80.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "bass",
+      "percent": 90.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "bass",
+      "percent": 100.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "guitar",
+      "percent": 10.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "guitar",
+      "percent": 20.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "guitar",
+      "percent": 30.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "guitar",
+      "percent": 40.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "guitar",
+      "percent": 50.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "guitar",
+      "percent": 60.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "guitar",
+      "percent": 70.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "guitar",
+      "percent": 80.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "guitar",
+      "percent": 90.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "guitar",
+      "percent": 100.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "keyboards",
+      "percent": 10.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "keyboards",
+      "percent": 20.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "keyboards",
+      "percent": 30.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "keyboards",
+      "percent": 40.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "keyboards",
+      "percent": 50.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "keyboards",
+      "percent": 60.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "keyboards",
+      "percent": 70.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "keyboards",
+      "percent": 80.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "keyboards",
+      "percent": 90.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "keyboards",
+      "percent": 100.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "percussion",
+      "percent": 10.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "percussion",
+      "percent": 20.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "percussion",
+      "percent": 30.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "percussion",
+      "percent": 40.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "percussion",
+      "percent": 50.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "percussion",
+      "percent": 60.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "percussion",
+      "percent": 70.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "percussion",
+      "percent": 80.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "percussion",
+      "percent": 90.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "percussion",
+      "percent": 100.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "synth",
+      "percent": 10.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "synth",
+      "percent": 20.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "synth",
+      "percent": 30.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "synth",
+      "percent": 40.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "synth",
+      "percent": 50.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "synth",
+      "percent": 60.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "synth",
+      "percent": 70.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "synth",
+      "percent": 80.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "synth",
+      "percent": 90.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "synth",
+      "percent": 100.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "other",
+      "percent": 10.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "other",
+      "percent": 20.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "other",
+      "percent": 30.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "other",
+      "percent": 40.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "other",
+      "percent": 50.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "other",
+      "percent": 60.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "other",
+      "percent": 70.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "other",
+      "percent": 80.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "other",
+      "percent": 90.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "other",
+      "percent": 100.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "woodwinds",
+      "percent": 10.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "woodwinds",
+      "percent": 20.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "woodwinds",
+      "percent": 30.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "woodwinds",
+      "percent": 40.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "woodwinds",
+      "percent": 50.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "woodwinds",
+      "percent": 60.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "woodwinds",
+      "percent": 70.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "woodwinds",
+      "percent": 80.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "woodwinds",
+      "percent": 90.0,
+      "working_set_mb": null
+    },
+    {
+      "source": "woodwinds",
+      "percent": 100.0,
+      "working_set_mb": null
+    }
+  ],
+  "elapsed_seconds": 390.5059087276459,
+  "pending": [
+    "full human listening approval",
+    "dynamic distance validation",
+    "global front/back perceptual validation",
+    "final mastering",
+    "YouTube packaging"
+  ],
+  "objective_result": "PASS",
+  "human_result": "PENDING",
+  "validations": {
+    "ten_full_spatial_stems": true,
+    "all_stems_exact_frames": true,
+    "all_stems_finite": true,
+    "all_stems_no_clipping": true,
+    "no_boundary_discontinuity_outliers": true,
+    "mix_exact_frames": true,
+    "mix_finite": true,
+    "mix_headroom": true,
+    "mix_no_large_boundary_click": true,
+    "comparison_level_matched": true,
+    "ebu_r128_measured": true,
+    "true_peak_measured": true,
+    "incremental_processing": true,
+    "independent_instances": true,
+    "distance_fixed_at_3m": true,
+    "originals_unchanged": true,
+    "candidate_not_final_master": true
+  },
+  "diagnostics": {
+    "largest_individual_boundary_event": {
+      "source": "percussion",
+      "frame": 7292160,
+      "time_seconds": 151.92,
+      "spatial_boundary_delta": 0.2762451171875,
+      "dry_same_frame_delta": 0.087677001953125,
+      "spatial_max_sample_delta": 0.3979882597923279,
+      "full_mix_boundary_delta_max": 0.07360925525426865,
+      "interpretation": "musical transient, not a boundary-specific outlier",
+      "covered_by_t014_human_preview": true,
+      "t014_reported_clicks": false
+    }
+  }
+}

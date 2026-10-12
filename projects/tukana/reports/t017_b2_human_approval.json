@@ -1,0 +1,8 @@
+{
+  "test_id": "T017-HUMAN",
+  "status": "PASS",
+  "approved_reference": "TUKANA_B2_transient_refinement_24bit.wav",
+  "role": "T018 auditory baseline",
+  "interpretation": "B2 is the approved reference for acoustic-depth experiments. T018 outputs do not replace it without a new human review.",
+  "preservation_required": true
+}

@@ -1,0 +1,27 @@
+{
+  "profile_id": "TUKANA_SPATIAL",
+  "version": "0.1.0",
+  "project": "Tukãna: O Escudo da Criação",
+  "renderer_independent": true,
+  "distance_status": "ARTISTIC_INTENT_PENDING_RENDERER_CALIBRATION",
+  "variants": ["balanced", "cinematic", "immersive", "experimental"],
+  "sources": {
+    "lead_vocal": {"azimuth_deg": 0, "elevation_deg": 0, "distance_m": 1.5, "behavior": "stable_front"},
+    "backing_vocals": {"azimuth_deg": 0, "elevation_deg": 15, "distance_m": 4.0, "behavior": "chorus_expansion"},
+    "drums": {"azimuth_deg": 0, "elevation_deg": -5, "distance_m": 2.3, "behavior": "stable_front"},
+    "bass": {"azimuth_deg": 0, "elevation_deg": 0, "distance_m": 1.8, "behavior": "stable_center"},
+    "guitar": {"azimuth_deg": -50, "elevation_deg": 0, "distance_m": 3.0, "behavior": "discrete_transition_motion"},
+    "keyboards": {"azimuth_deg": 55, "elevation_deg": 20, "distance_m": 4.0, "behavior": "atmospheric_depth"},
+    "percussion": {"azimuth_deg": 100, "elevation_deg": 0, "distance_m": 3.8, "behavior": "phrase_synced_orbit_candidate"},
+    "synth": {"azimuth_deg": 145, "elevation_deg": 30, "distance_m": 6.0, "behavior": "slow_distant_elevation"},
+    "other": {"azimuth_deg": -145, "elevation_deg": -5, "distance_m": 7.0, "behavior": "content_review_required"},
+    "woodwinds": {"azimuth_deg": -60, "elevation_deg": 18, "distance_m": 4.5, "behavior": "smooth_traverse_and_vertical"}
+  },
+  "confirmed_renderer_constraints": {
+    "dearvr_distance_m": 3.0,
+    "dearvr_distance_raw": 0.0969899744,
+    "t003_buffer_size": 256,
+    "frontal_externalization": "UNRESOLVED",
+    "perceptual_validation": "PENDING"
+  }
+}

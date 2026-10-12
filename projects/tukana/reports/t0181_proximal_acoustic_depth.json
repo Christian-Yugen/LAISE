@@ -1,0 +1,1102 @@
+{
+  "test_id": "T018.1",
+  "status": "PASS",
+  "human_review": "PENDING",
+  "baseline": "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\mastering\\t017\\TUKANA_B2_transient_refinement_24bit.wav",
+  "preview": {
+    "start_seconds": 145.0,
+    "end_seconds": 160.0,
+    "pre_roll_seconds": 1.0
+  },
+  "isolation": {
+    "microdistance": {
+      "only_variable": "distance",
+      "profiles_m": {
+        "lead_vocal": [
+          3.0,
+          3.0
+        ],
+        "bass": [
+          3.0,
+          3.0
+        ],
+        "drums": [
+          3.0,
+          3.0
+        ],
+        "other": [
+          3.0,
+          3.0
+        ],
+        "backing_vocals": [
+          3.0,
+          3.3
+        ],
+        "guitar": [
+          3.0,
+          3.3
+        ],
+        "keyboards": [
+          3.0,
+          3.4
+        ],
+        "percussion": [
+          3.0,
+          3.6
+        ],
+        "synth": [
+          3.0,
+          3.6
+        ],
+        "woodwinds": [
+          3.0,
+          3.5
+        ]
+      },
+      "compensation": "25% geometric, maximum +0.6 dB"
+    },
+    "reflections": {
+      "only_variable": "early reflections",
+      "room": "SmallRoom",
+      "gain_db": -30.0,
+      "high_pass_hz": 120.0,
+      "low_pass_hz": 12000.0,
+      "reverb": false
+    },
+    "clarity": {
+      "only_variable": "clarity",
+      "per_role_percent": {
+        "lead_vocal": 6.0,
+        "backing_vocals": 8.0,
+        "drums": 4.0,
+        "bass": 3.0,
+        "guitar": 6.0,
+        "keyboards": 8.0,
+        "percussion": 10.0,
+        "synth": 8.0,
+        "other": 0.0,
+        "woodwinds": 10.0
+      }
+    },
+    "combined_version_created": false
+  },
+  "common_safety_gain": 1.0,
+  "level_match": "equal RMS across all four files plus EBU verification",
+  "source_reports": {
+    "fixed": {
+      "lead_vocal": {
+        "mode": "fixed",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 0.0
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "backing_vocals": {
+        "mode": "fixed",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 0.0
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "drums": {
+        "mode": "fixed",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 0.0
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "bass": {
+        "mode": "fixed",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 0.0
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "guitar": {
+        "mode": "fixed",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 0.0
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "keyboards": {
+        "mode": "fixed",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 0.0
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "percussion": {
+        "mode": "fixed",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 0.0
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "synth": {
+        "mode": "fixed",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 0.0
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "other": {
+        "mode": "fixed",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 0.0
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "woodwinds": {
+        "mode": "fixed",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 0.0
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      }
+    },
+    "microdistance": {
+      "lead_vocal": {
+        "mode": "microdistance",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 0.0
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "backing_vocals": {
+        "mode": "microdistance",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 0.0
+        },
+        "distance_range_m": [
+          3.0,
+          3.3
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.10702341049909592,
+        "maximum_distance_raw_step": 1.1213123798370361e-05,
+        "maximum_level_compensation_db": 0.20696341039695362
+      },
+      "drums": {
+        "mode": "microdistance",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 0.0
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "bass": {
+        "mode": "microdistance",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 0.0
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "guitar": {
+        "mode": "microdistance",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 0.0
+        },
+        "distance_range_m": [
+          3.0,
+          3.3
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.10702341049909592,
+        "maximum_distance_raw_step": 1.1213123798370361e-05,
+        "maximum_level_compensation_db": 0.20696341039695362
+      },
+      "keyboards": {
+        "mode": "microdistance",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 0.0
+        },
+        "distance_range_m": [
+          3.0,
+          3.4
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.11036789417266846,
+        "maximum_distance_raw_step": 1.49458646774292e-05,
+        "maximum_level_compensation_db": 0.2717882916910943
+      },
+      "percussion": {
+        "mode": "microdistance",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 0.0
+        },
+        "distance_range_m": [
+          3.0,
+          3.6
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.11705685406923294,
+        "maximum_distance_raw_step": 2.24187970161438e-05,
+        "maximum_level_compensation_db": 0.39590620201547655
+      },
+      "synth": {
+        "mode": "microdistance",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 0.0
+        },
+        "distance_range_m": [
+          3.0,
+          3.6
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.11705685406923294,
+        "maximum_distance_raw_step": 2.24187970161438e-05,
+        "maximum_level_compensation_db": 0.39590620201547655
+      },
+      "other": {
+        "mode": "microdistance",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 0.0
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "woodwinds": {
+        "mode": "microdistance",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 0.0
+        },
+        "distance_range_m": [
+          3.0,
+          3.5
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.1137123703956604,
+        "maximum_distance_raw_step": 1.868605613708496e-05,
+        "maximum_level_compensation_db": 0.3347339239622249
+      }
+    },
+    "reflections": {
+      "lead_vocal": {
+        "mode": "reflections",
+        "configuration": {
+          "reflection": true,
+          "reverb": false,
+          "clarity_percent": 0.0,
+          "virtual_acoustics": "SmallRoom",
+          "virtual_acoustics_raw": 0.25531914830207825,
+          "reflection_raw": 1.0,
+          "reflection_gain_db": -30.0,
+          "reflection_gain_raw": 0.550000011920929,
+          "reflection_high_pass_hz": 120.0,
+          "reflection_high_pass_raw": 0.004999999888241291,
+          "reflection_low_pass_hz": 12000.0,
+          "reflection_low_pass_raw": 0.6000000238418579
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "backing_vocals": {
+        "mode": "reflections",
+        "configuration": {
+          "reflection": true,
+          "reverb": false,
+          "clarity_percent": 0.0,
+          "virtual_acoustics": "SmallRoom",
+          "virtual_acoustics_raw": 0.25531914830207825,
+          "reflection_raw": 1.0,
+          "reflection_gain_db": -30.0,
+          "reflection_gain_raw": 0.550000011920929,
+          "reflection_high_pass_hz": 120.0,
+          "reflection_high_pass_raw": 0.004999999888241291,
+          "reflection_low_pass_hz": 12000.0,
+          "reflection_low_pass_raw": 0.6000000238418579
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "drums": {
+        "mode": "reflections",
+        "configuration": {
+          "reflection": true,
+          "reverb": false,
+          "clarity_percent": 0.0,
+          "virtual_acoustics": "SmallRoom",
+          "virtual_acoustics_raw": 0.25531914830207825,
+          "reflection_raw": 1.0,
+          "reflection_gain_db": -30.0,
+          "reflection_gain_raw": 0.550000011920929,
+          "reflection_high_pass_hz": 120.0,
+          "reflection_high_pass_raw": 0.004999999888241291,
+          "reflection_low_pass_hz": 12000.0,
+          "reflection_low_pass_raw": 0.6000000238418579
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "bass": {
+        "mode": "reflections",
+        "configuration": {
+          "reflection": true,
+          "reverb": false,
+          "clarity_percent": 0.0,
+          "virtual_acoustics": "SmallRoom",
+          "virtual_acoustics_raw": 0.25531914830207825,
+          "reflection_raw": 1.0,
+          "reflection_gain_db": -30.0,
+          "reflection_gain_raw": 0.550000011920929,
+          "reflection_high_pass_hz": 120.0,
+          "reflection_high_pass_raw": 0.004999999888241291,
+          "reflection_low_pass_hz": 12000.0,
+          "reflection_low_pass_raw": 0.6000000238418579
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "guitar": {
+        "mode": "reflections",
+        "configuration": {
+          "reflection": true,
+          "reverb": false,
+          "clarity_percent": 0.0,
+          "virtual_acoustics": "SmallRoom",
+          "virtual_acoustics_raw": 0.25531914830207825,
+          "reflection_raw": 1.0,
+          "reflection_gain_db": -30.0,
+          "reflection_gain_raw": 0.550000011920929,
+          "reflection_high_pass_hz": 120.0,
+          "reflection_high_pass_raw": 0.004999999888241291,
+          "reflection_low_pass_hz": 12000.0,
+          "reflection_low_pass_raw": 0.6000000238418579
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "keyboards": {
+        "mode": "reflections",
+        "configuration": {
+          "reflection": true,
+          "reverb": false,
+          "clarity_percent": 0.0,
+          "virtual_acoustics": "SmallRoom",
+          "virtual_acoustics_raw": 0.25531914830207825,
+          "reflection_raw": 1.0,
+          "reflection_gain_db": -30.0,
+          "reflection_gain_raw": 0.550000011920929,
+          "reflection_high_pass_hz": 120.0,
+          "reflection_high_pass_raw": 0.004999999888241291,
+          "reflection_low_pass_hz": 12000.0,
+          "reflection_low_pass_raw": 0.6000000238418579
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "percussion": {
+        "mode": "reflections",
+        "configuration": {
+          "reflection": true,
+          "reverb": false,
+          "clarity_percent": 0.0,
+          "virtual_acoustics": "SmallRoom",
+          "virtual_acoustics_raw": 0.25531914830207825,
+          "reflection_raw": 1.0,
+          "reflection_gain_db": -30.0,
+          "reflection_gain_raw": 0.550000011920929,
+          "reflection_high_pass_hz": 120.0,
+          "reflection_high_pass_raw": 0.004999999888241291,
+          "reflection_low_pass_hz": 12000.0,
+          "reflection_low_pass_raw": 0.6000000238418579
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "synth": {
+        "mode": "reflections",
+        "configuration": {
+          "reflection": true,
+          "reverb": false,
+          "clarity_percent": 0.0,
+          "virtual_acoustics": "SmallRoom",
+          "virtual_acoustics_raw": 0.25531914830207825,
+          "reflection_raw": 1.0,
+          "reflection_gain_db": -30.0,
+          "reflection_gain_raw": 0.550000011920929,
+          "reflection_high_pass_hz": 120.0,
+          "reflection_high_pass_raw": 0.004999999888241291,
+          "reflection_low_pass_hz": 12000.0,
+          "reflection_low_pass_raw": 0.6000000238418579
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "other": {
+        "mode": "reflections",
+        "configuration": {
+          "reflection": true,
+          "reverb": false,
+          "clarity_percent": 0.0,
+          "virtual_acoustics": "SmallRoom",
+          "virtual_acoustics_raw": 0.25531914830207825,
+          "reflection_raw": 1.0,
+          "reflection_gain_db": -30.0,
+          "reflection_gain_raw": 0.550000011920929,
+          "reflection_high_pass_hz": 120.0,
+          "reflection_high_pass_raw": 0.004999999888241291,
+          "reflection_low_pass_hz": 12000.0,
+          "reflection_low_pass_raw": 0.6000000238418579
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "woodwinds": {
+        "mode": "reflections",
+        "configuration": {
+          "reflection": true,
+          "reverb": false,
+          "clarity_percent": 0.0,
+          "virtual_acoustics": "SmallRoom",
+          "virtual_acoustics_raw": 0.25531914830207825,
+          "reflection_raw": 1.0,
+          "reflection_gain_db": -30.0,
+          "reflection_gain_raw": 0.550000011920929,
+          "reflection_high_pass_hz": 120.0,
+          "reflection_high_pass_raw": 0.004999999888241291,
+          "reflection_low_pass_hz": 12000.0,
+          "reflection_low_pass_raw": 0.6000000238418579
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      }
+    },
+    "clarity": {
+      "lead_vocal": {
+        "mode": "clarity",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 6.0,
+          "clarity_raw": 0.05999999865889549
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "backing_vocals": {
+        "mode": "clarity",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 8.0,
+          "clarity_raw": 0.07999999821186066
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "drums": {
+        "mode": "clarity",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 4.0,
+          "clarity_raw": 0.03999999910593033
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "bass": {
+        "mode": "clarity",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 3.0,
+          "clarity_raw": 0.029999999329447746
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "guitar": {
+        "mode": "clarity",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 6.0,
+          "clarity_raw": 0.05999999865889549
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "keyboards": {
+        "mode": "clarity",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 8.0,
+          "clarity_raw": 0.07999999821186066
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "percussion": {
+        "mode": "clarity",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 10.0,
+          "clarity_raw": 0.10000000149011612
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "synth": {
+        "mode": "clarity",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 8.0,
+          "clarity_raw": 0.07999999821186066
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "other": {
+        "mode": "clarity",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 0.0,
+          "clarity_raw": 0.0
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      },
+      "woodwinds": {
+        "mode": "clarity",
+        "configuration": {
+          "reflection": false,
+          "reverb": false,
+          "clarity_percent": 10.0,
+          "clarity_raw": 0.10000000149011612
+        },
+        "distance_range_m": [
+          3.0,
+          3.0
+        ],
+        "distance_raw_min": 0.09698996692895889,
+        "distance_raw_max": 0.09698996692895889,
+        "maximum_distance_raw_step": 0.0,
+        "maximum_level_compensation_db": 0.0
+      }
+    }
+  },
+  "artifacts": {
+    "B2_baseline": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\t018_1\\TUKANA_T0181_B2_baseline_145_160_level_matched_24bit.wav",
+      "sha256": "12d0d61d4b59563d057766fa95b48c6189661a02e670634c67b6c037fd9346db",
+      "format": {
+        "codec_name": "pcm_s24le",
+        "sample_fmt": "s32",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "15.000000"
+      },
+      "signal": {
+        "frames": 720000,
+        "duration_seconds": 15.0,
+        "finite": true,
+        "sample_peak": 0.6507903337478638,
+        "sample_peak_dbfs": -3.731178126109229,
+        "rms_dbfs": -18.2448147413738,
+        "crest_factor_db": 14.513636615264573,
+        "left_rms_dbfs": -18.021597380527943,
+        "right_rms_dbfs": -18.48012954841933,
+        "channel_balance_db": 0.45853216789138784,
+        "lr_correlation": 0.8895799824754203,
+        "mono_rms_change_db": -0.24949374001662472,
+        "max_adjacent_sample_delta": 0.282397985458374,
+        "transient_151_92_peak": 0.0,
+        "spectral_distribution": {
+          "20-60_hz_db": -4.234507275303995,
+          "60-250_hz_db": -2.886683156621264,
+          "250-2000_hz_db": -10.447658579390334,
+          "2000-6000_hz_db": -19.360157169551176,
+          "6000-20000_hz_db": -21.889252427261013
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -17.5,
+        "loudness_range_lu": 1.0,
+        "true_peak_dbtp": -3.6,
+        "momentary_lufs": {
+          "minimum": -21.8,
+          "median": -17.5,
+          "maximum": -14.8
+        },
+        "short_term_lufs": {
+          "minimum": -18.0,
+          "median": -17.6,
+          "maximum": -16.5
+        }
+      }
+    },
+    "microdistance": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\t018_1\\TUKANA_T0181_A_microdistance_145_160_level_matched_24bit.wav",
+      "sha256": "ebecc1e6e298edb321ebda24bc570cd0e27155c42746169893e71a24564c5a60",
+      "format": {
+        "codec_name": "pcm_s24le",
+        "sample_fmt": "s32",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "15.000000"
+      },
+      "signal": {
+        "frames": 720000,
+        "duration_seconds": 15.0,
+        "finite": true,
+        "sample_peak": 0.6473038196563721,
+        "sample_peak_dbfs": -3.777836605175432,
+        "rms_dbfs": -18.24481458145447,
+        "crest_factor_db": 14.466977976279038,
+        "left_rms_dbfs": -18.034043824591752,
+        "right_rms_dbfs": -18.466338502129062,
+        "channel_balance_db": 0.4322946775373109,
+        "lr_correlation": 0.8924997821086431,
+        "mono_rms_change_db": -0.24247633208942226,
+        "max_adjacent_sample_delta": 0.28258299827575684,
+        "transient_151_92_peak": 0.0,
+        "spectral_distribution": {
+          "20-60_hz_db": -4.230347702946202,
+          "60-250_hz_db": -2.8648529770641296,
+          "250-2000_hz_db": -10.574582001036873,
+          "2000-6000_hz_db": -19.391033488295854,
+          "6000-20000_hz_db": -22.075186488436216
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -17.5,
+        "loudness_range_lu": 1.1,
+        "true_peak_dbtp": -3.7,
+        "momentary_lufs": {
+          "minimum": -21.8,
+          "median": -17.5,
+          "maximum": -14.8
+        },
+        "short_term_lufs": {
+          "minimum": -18.0,
+          "median": -17.7,
+          "maximum": -16.5
+        }
+      }
+    },
+    "reflections": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\t018_1\\TUKANA_T0181_B_early_reflections_145_160_level_matched_24bit.wav",
+      "sha256": "005f558aa7a703a270c3ef55559bd699dfcc8b0b115f35c550d2e07faea833d3",
+      "format": {
+        "codec_name": "pcm_s24le",
+        "sample_fmt": "s32",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "15.000000"
+      },
+      "signal": {
+        "frames": 720000,
+        "duration_seconds": 15.0,
+        "finite": true,
+        "sample_peak": 0.6470228433609009,
+        "sample_peak_dbfs": -3.7816077229333285,
+        "rms_dbfs": -18.24481447611994,
+        "crest_factor_db": 14.463206753186613,
+        "left_rms_dbfs": -18.023230296946608,
+        "right_rms_dbfs": -18.47831495710558,
+        "channel_balance_db": 0.455084660158976,
+        "lr_correlation": 0.8901299752157447,
+        "mono_rms_change_db": -0.24818814878506093,
+        "max_adjacent_sample_delta": 0.28189516067504883,
+        "transient_151_92_peak": 0.0,
+        "spectral_distribution": {
+          "20-60_hz_db": -4.257965440868247,
+          "60-250_hz_db": -2.8551456754385485,
+          "250-2000_hz_db": -10.525242620730852,
+          "2000-6000_hz_db": -19.393286024054333,
+          "6000-20000_hz_db": -21.9101128609371
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -17.5,
+        "loudness_range_lu": 1.0,
+        "true_peak_dbtp": -3.7,
+        "momentary_lufs": {
+          "minimum": -21.8,
+          "median": -17.5,
+          "maximum": -14.8
+        },
+        "short_term_lufs": {
+          "minimum": -18.0,
+          "median": -17.6,
+          "maximum": -16.5
+        }
+      }
+    },
+    "clarity": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\t018_1\\TUKANA_T0181_C_clarity_145_160_level_matched_24bit.wav",
+      "sha256": "29eb7cf9962baa968b52c2b3ca1bf9bf73d272b17323c7e012bbb9651d471b53",
+      "format": {
+        "codec_name": "pcm_s24le",
+        "sample_fmt": "s32",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "15.000000"
+      },
+      "signal": {
+        "frames": 720000,
+        "duration_seconds": 15.0,
+        "finite": true,
+        "sample_peak": 0.6443915367126465,
+        "sample_peak_dbfs": -3.817003442745195,
+        "rms_dbfs": -18.24481488067252,
+        "crest_factor_db": 14.427811437927325,
+        "left_rms_dbfs": -18.032285277997403,
+        "right_rms_dbfs": -18.46828256011946,
+        "channel_balance_db": 0.43599728212205563,
+        "lr_correlation": 0.8923270301329018,
+        "mono_rms_change_db": -0.24291609422824162,
+        "max_adjacent_sample_delta": 0.27290940284729004,
+        "transient_151_92_peak": 0.0,
+        "spectral_distribution": {
+          "20-60_hz_db": -4.236094485471924,
+          "60-250_hz_db": -2.8780026897160074,
+          "250-2000_hz_db": -10.456651064839049,
+          "2000-6000_hz_db": -19.517902651087663,
+          "6000-20000_hz_db": -22.089017861051317
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -17.5,
+        "loudness_range_lu": 1.0,
+        "true_peak_dbtp": -3.7,
+        "momentary_lufs": {
+          "minimum": -21.8,
+          "median": -17.5,
+          "maximum": -14.9
+        },
+        "short_term_lufs": {
+          "minimum": -18.0,
+          "median": -17.6,
+          "maximum": -16.5
+        }
+      }
+    }
+  },
+  "comparisons_to_b2": {
+    "microdistance": {
+      "spectral": {
+        "band_delta_db": {
+          "20-60_hz_db": 0.004159572357793628,
+          "60-250_hz_db": 0.02183017955713451,
+          "250-2000_hz_db": -0.12692342164653958,
+          "2000-6000_hz_db": -0.03087631874467789,
+          "6000-20000_hz_db": -0.18593406117520317
+        },
+        "maximum_absolute_band_delta_db": 0.18593406117520317
+      },
+      "crest_delta_db": -0.04665863898553546,
+      "correlation_delta": 0.0029197996332228637,
+      "channel_balance_delta_db": -0.026237490354076964,
+      "max_sample_delta_change": 0.0001850128173828125
+    },
+    "reflections": {
+      "spectral": {
+        "band_delta_db": {
+          "20-60_hz_db": -0.023458165564251843,
+          "60-250_hz_db": 0.0315374811827156,
+          "250-2000_hz_db": -0.07758404134051844,
+          "2000-6000_hz_db": -0.03312885450315761,
+          "6000-20000_hz_db": -0.02086043367608781
+        },
+        "maximum_absolute_band_delta_db": 0.07758404134051844
+      },
+      "crest_delta_db": -0.05042986207796041,
+      "correlation_delta": 0.000549992740324412,
+      "channel_balance_delta_db": -0.0034475077324118697,
+      "max_sample_delta_change": -0.0005028247833251953
+    },
+    "clarity": {
+      "spectral": {
+        "band_delta_db": {
+          "20-60_hz_db": -0.001587210167928177,
+          "60-250_hz_db": 0.0086804669052567,
+          "250-2000_hz_db": -0.008992485448715115,
+          "2000-6000_hz_db": -0.15774548153648738,
+          "6000-20000_hz_db": -0.19976543379030431
+        },
+        "maximum_absolute_band_delta_db": 0.19976543379030431
+      },
+      "crest_delta_db": -0.0858251773372487,
+      "correlation_delta": 0.0027470476574815716,
+      "channel_balance_delta_db": -0.022534885769332214,
+      "max_sample_delta_change": -0.009488582611083984
+    }
+  },
+  "tests": {
+    "b2_preserved": true,
+    "four_outputs": true,
+    "exact_duration": true,
+    "pcm24_48khz_stereo": true,
+    "finite_no_clipping": true,
+    "true_peak_headroom": true,
+    "loudness_matched": true,
+    "spectral_change_conservative": true,
+    "transients_preserved": true,
+    "correlation_stable": true,
+    "channel_balance_stable": true,
+    "no_large_new_discontinuity": true
+  },
+  "next_step": "Await independent human comparison before combining any dimension."
+}

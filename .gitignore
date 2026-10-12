@@ -20,8 +20,12 @@ Thumbs.db
 *.wav
 *.flac
 *.mp3
+*.m4a
 *.zip
 assets/sfz/
 
 # Local renderer binaries and build artifacts
 tools/sfizz/
+
+# Isolated baseline regression outputs (never production inputs)
+projects/_baseline_validation/

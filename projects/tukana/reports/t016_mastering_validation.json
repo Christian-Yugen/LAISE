@@ -1,0 +1,429 @@
+{
+  "test_id": "T016",
+  "phase": "F",
+  "status": "PASS",
+  "human_review": "PENDING",
+  "t015_human_spatial_approval": "PASS",
+  "source_integrity": {
+    "sha256_before": "218054e7f1310b9371a90fc97479ffece6acd8d2544846bb77c90c1342665f96",
+    "sha256_after": "218054e7f1310b9371a90fc97479ffece6acd8d2544846bb77c90c1342665f96"
+  },
+  "mastering_manifest": {
+    "transparent": {
+      "processing": [
+        "stereo-linked gain +1.4 dB",
+        "PCM24 quantization"
+      ],
+      "excluded": [
+        "EQ",
+        "compression",
+        "widening",
+        "Mid/Side",
+        "limiting"
+      ]
+    },
+    "youtube": {
+      "processing": [
+        "EBU R128 two-pass loudnorm",
+        "true-peak limiting"
+      ],
+      "targets": {
+        "integrated_lufs": -16.0,
+        "true_peak_dbtp": -1.5,
+        "loudness_range_lu": 11.0
+      },
+      "first_pass": {
+        "input_i": "-20.46",
+        "input_tp": "-3.00",
+        "input_lra": "8.00",
+        "input_thresh": "-30.68",
+        "output_i": "-15.20",
+        "output_tp": "-1.50",
+        "output_lra": "6.20",
+        "output_thresh": "-25.32",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.80"
+      },
+      "excluded": [
+        "EQ",
+        "widening",
+        "Mid/Side",
+        "new spatialization"
+      ]
+    },
+    "justification": "No documented spectral defect required EQ. Linked processing preserves binaural inter-channel cues.",
+    "comparison_target_lufs": -19.0,
+    "lossy_test": "AAC-LC 256 kb/s encode and PCM24 round-trip analysis"
+  },
+  "artifacts": {
+    "source": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\TUKANA_binaural_full_master_candidate.wav",
+      "sha256": "218054e7f1310b9371a90fc97479ffece6acd8d2544846bb77c90c1342665f96",
+      "format": {
+        "codec_name": "pcm_s16le",
+        "sample_fmt": "s16",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "267.600021"
+      },
+      "signal": {
+        "frames": 12844801,
+        "duration_seconds": 267.60002083333336,
+        "finite": true,
+        "sample_peak": 0.707916259765625,
+        "sample_peak_dbfs": -3.0003622493859567,
+        "rms_dbfs": -21.988267258989094,
+        "crest_factor_db": 18.987905009603136,
+        "left_rms_dbfs": -21.73322014715772,
+        "right_rms_dbfs": -22.259232120764484,
+        "channel_balance_db": 0.5260119736067672,
+        "lr_correlation": 0.7941890207783314,
+        "mono_rms_change_db": -0.4751391671670397,
+        "max_adjacent_sample_delta": 0.31787109375,
+        "transient_151_92_peak": 0.335723876953125,
+        "spectral_distribution": {
+          "20-60_hz_db": -5.036988195562467,
+          "60-250_hz_db": -3.550905427548256,
+          "250-2000_hz_db": -6.8124983503743275,
+          "2000-6000_hz_db": -15.180355423020348,
+          "6000-20000_hz_db": -22.054297692775396
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -20.4,
+        "loudness_range_lu": 7.6,
+        "true_peak_dbtp": -3.0,
+        "momentary_lufs": {
+          "minimum": -43.6,
+          "median": -20.8,
+          "maximum": -14.5
+        },
+        "short_term_lufs": {
+          "minimum": -35.7,
+          "median": -20.7,
+          "maximum": -16.0
+        }
+      }
+    },
+    "transparent": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\mastering\\TUKANA_transparent_binaural_master_24bit.wav",
+      "sha256": "0a97e41448f3f65d887c7facb6630cccceb3a921c43f32cc67dfacfd8e734c94",
+      "format": {
+        "codec_name": "pcm_s24le",
+        "sample_fmt": "s32",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "267.600021"
+      },
+      "signal": {
+        "frames": 12844801,
+        "duration_seconds": 267.60002083333336,
+        "finite": true,
+        "sample_peak": 0.8317290544509888,
+        "sample_peak_dbfs": -1.600362544401186,
+        "rms_dbfs": -20.58826728394831,
+        "crest_factor_db": 18.987904739547123,
+        "left_rms_dbfs": -20.33322017328899,
+        "right_rms_dbfs": -20.85923214427551,
+        "channel_balance_db": 0.5260119709865226,
+        "lr_correlation": 0.7941890208387681,
+        "mono_rms_change_db": -0.4751391669882499,
+        "max_adjacent_sample_delta": 0.373465895652771,
+        "transient_151_92_peak": 0.3944411277770996,
+        "spectral_distribution": {
+          "20-60_hz_db": -5.036988197049156,
+          "60-250_hz_db": -3.5509054269406763,
+          "250-2000_hz_db": -6.812498351097897,
+          "2000-6000_hz_db": -15.180355413925339,
+          "6000-20000_hz_db": -22.054297688019386
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -19.0,
+        "loudness_range_lu": 7.6,
+        "true_peak_dbtp": -1.6,
+        "momentary_lufs": {
+          "minimum": -42.2,
+          "median": -19.4,
+          "maximum": -13.1
+        },
+        "short_term_lufs": {
+          "minimum": -34.3,
+          "median": -19.3,
+          "maximum": -14.6
+        }
+      }
+    },
+    "youtube": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\mastering\\TUKANA_youtube_optimized_candidate_24bit.wav",
+      "sha256": "f72bd61b85a1d4364d59a8abac0db8ee514e6c37941c3ecbed45ca8c91e4eee6",
+      "format": {
+        "codec_name": "pcm_s24le",
+        "sample_fmt": "s32",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "267.600021"
+      },
+      "signal": {
+        "frames": 12844801,
+        "duration_seconds": 267.60002083333336,
+        "finite": true,
+        "sample_peak": 0.8432830572128296,
+        "sample_peak_dbfs": -1.4805325039024706,
+        "rms_dbfs": -17.552454986399916,
+        "crest_factor_db": 16.071922482497445,
+        "left_rms_dbfs": -17.326980131124493,
+        "right_rms_dbfs": -17.790280050971404,
+        "channel_balance_db": 0.4632999198469113,
+        "lr_correlation": 0.7977998052163233,
+        "mono_rms_change_db": -0.46562587517491694,
+        "max_adjacent_sample_delta": 0.4769315719604492,
+        "transient_151_92_peak": 0.506158709526062,
+        "spectral_distribution": {
+          "20-60_hz_db": -5.022012373323122,
+          "60-250_hz_db": -3.5015122208173595,
+          "250-2000_hz_db": -6.954854496890393,
+          "2000-6000_hz_db": -15.074579048700071,
+          "6000-20000_hz_db": -22.166901950834557
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -16.0,
+        "loudness_range_lu": 7.3,
+        "true_peak_dbtp": -1.5,
+        "momentary_lufs": {
+          "minimum": -39.9,
+          "median": -16.6,
+          "maximum": -10.0
+        },
+        "short_term_lufs": {
+          "minimum": -28.9,
+          "median": -16.4,
+          "maximum": -11.2
+        }
+      }
+    },
+    "ab_a": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\mastering\\TUKANA_AB_A_transparent_level_matched_24bit.wav",
+      "sha256": "0a97e41448f3f65d887c7facb6630cccceb3a921c43f32cc67dfacfd8e734c94",
+      "format": {
+        "codec_name": "pcm_s24le",
+        "sample_fmt": "s32",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "267.600021"
+      },
+      "signal": {
+        "frames": 12844801,
+        "duration_seconds": 267.60002083333336,
+        "finite": true,
+        "sample_peak": 0.8317290544509888,
+        "sample_peak_dbfs": -1.600362544401186,
+        "rms_dbfs": -20.58826728394831,
+        "crest_factor_db": 18.987904739547123,
+        "left_rms_dbfs": -20.33322017328899,
+        "right_rms_dbfs": -20.85923214427551,
+        "channel_balance_db": 0.5260119709865226,
+        "lr_correlation": 0.7941890208387681,
+        "mono_rms_change_db": -0.4751391669882499,
+        "max_adjacent_sample_delta": 0.373465895652771,
+        "transient_151_92_peak": 0.3944411277770996,
+        "spectral_distribution": {
+          "20-60_hz_db": -5.036988197049156,
+          "60-250_hz_db": -3.5509054269406763,
+          "250-2000_hz_db": -6.812498351097897,
+          "2000-6000_hz_db": -15.180355413925339,
+          "6000-20000_hz_db": -22.054297688019386
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -19.0,
+        "loudness_range_lu": 7.6,
+        "true_peak_dbtp": -1.6,
+        "momentary_lufs": {
+          "minimum": -42.2,
+          "median": -19.4,
+          "maximum": -13.1
+        },
+        "short_term_lufs": {
+          "minimum": -34.3,
+          "median": -19.3,
+          "maximum": -14.6
+        }
+      }
+    },
+    "ab_b": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\mastering\\TUKANA_AB_B_youtube_level_matched_24bit.wav",
+      "sha256": "8c6fde9ca39cf2fb7fd01e87a4332927b7c42161e316c7bed2d7b7e0932469aa",
+      "format": {
+        "codec_name": "pcm_s24le",
+        "sample_fmt": "s32",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "267.600021"
+      },
+      "signal": {
+        "frames": 12844801,
+        "duration_seconds": 267.60002083333336,
+        "finite": true,
+        "sample_peak": 0.5969986915588379,
+        "sample_peak_dbfs": -4.480532414243416,
+        "rms_dbfs": -20.55245523558891,
+        "crest_factor_db": 16.07192282134549,
+        "left_rms_dbfs": -20.32698038047321,
+        "right_rms_dbfs": -20.790280299930753,
+        "channel_balance_db": 0.46329991945754445,
+        "lr_correlation": 0.7977998050912477,
+        "mono_rms_change_db": -0.4656258754734724,
+        "max_adjacent_sample_delta": 0.33764171600341797,
+        "transient_151_92_peak": 0.35833287239074707,
+        "spectral_distribution": {
+          "20-60_hz_db": -5.022012375822154,
+          "60-250_hz_db": -3.5015122213917973,
+          "250-2000_hz_db": -6.954854492438571,
+          "2000-6000_hz_db": -15.07457904851089,
+          "6000-20000_hz_db": -22.166901930948253
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -19.0,
+        "loudness_range_lu": 7.3,
+        "true_peak_dbtp": -4.5,
+        "momentary_lufs": {
+          "minimum": -42.9,
+          "median": -19.6,
+          "maximum": -13.0
+        },
+        "short_term_lufs": {
+          "minimum": -31.9,
+          "median": -19.4,
+          "maximum": -14.2
+        }
+      }
+    },
+    "aac": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\mastering\\TUKANA_youtube_candidate_aac_256k.m4a",
+      "sha256": "2f7418ef43f66d33e40d2415178617f7a74fe30422eaf5b86c6d1fbe0f0e0e9f",
+      "format": {
+        "codec_name": "aac",
+        "sample_fmt": "fltp",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "267.600000"
+      },
+      "signal": {
+        "frames": 12845056,
+        "duration_seconds": 267.6053333333333,
+        "finite": true,
+        "sample_peak": 0.8522464632987976,
+        "sample_peak_dbfs": -1.3886958471091069,
+        "rms_dbfs": -17.58587564730258,
+        "crest_factor_db": 16.197179800193474,
+        "left_rms_dbfs": -17.359229110803792,
+        "right_rms_dbfs": -17.82500466887526,
+        "channel_balance_db": 0.46577555807146487,
+        "lr_correlation": 0.7993097058236994,
+        "mono_rms_change_db": -0.46201217846590764,
+        "max_adjacent_sample_delta": 0.45340703427791595,
+        "transient_151_92_peak": 0.5074214339256287,
+        "spectral_distribution": {
+          "20-60_hz_db": -5.012695838925398,
+          "60-250_hz_db": -3.494229033777258,
+          "250-2000_hz_db": -6.970102766648695,
+          "2000-6000_hz_db": -15.151383454931215,
+          "6000-20000_hz_db": -22.30366151592471
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -16.1,
+        "loudness_range_lu": 7.3,
+        "true_peak_dbtp": -1.4,
+        "momentary_lufs": {
+          "minimum": -39.9,
+          "median": -16.6,
+          "maximum": -10.0
+        },
+        "short_term_lufs": {
+          "minimum": -28.9,
+          "median": -16.5,
+          "maximum": -11.3
+        }
+      }
+    },
+    "aac_roundtrip": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\mastering\\TUKANA_youtube_candidate_aac_roundtrip_24bit.wav",
+      "sha256": "8075e8ecfe74849221634f0abb0cc03acf98d4640650faf4e8765a08de2077db",
+      "format": {
+        "codec_name": "pcm_s24le",
+        "sample_fmt": "s32",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "267.605333"
+      },
+      "signal": {
+        "frames": 12845056,
+        "duration_seconds": 267.6053333333333,
+        "finite": true,
+        "sample_peak": 0.8522465229034424,
+        "sample_peak_dbfs": -1.3886952396330179,
+        "rms_dbfs": -17.585875644873227,
+        "crest_factor_db": 16.19718040524021,
+        "left_rms_dbfs": -17.359229108586216,
+        "right_rms_dbfs": -17.825004666131985,
+        "channel_balance_db": 0.46577555754576666,
+        "lr_correlation": 0.7993097058010148,
+        "mono_rms_change_db": -0.4620121785206726,
+        "max_adjacent_sample_delta": 0.45340704917907715,
+        "transient_151_92_peak": 0.5074213743209839,
+        "spectral_distribution": {
+          "20-60_hz_db": -5.012695837319644,
+          "60-250_hz_db": -3.4942290363171495,
+          "250-2000_hz_db": -6.9701027633413375,
+          "2000-6000_hz_db": -15.151383457672305,
+          "6000-20000_hz_db": -22.30366151258062
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -16.1,
+        "loudness_range_lu": 7.3,
+        "true_peak_dbtp": -1.4,
+        "momentary_lufs": {
+          "minimum": -39.9,
+          "median": -16.6,
+          "maximum": -10.0
+        },
+        "short_term_lufs": {
+          "minimum": -28.9,
+          "median": -16.5,
+          "maximum": -11.3
+        }
+      }
+    }
+  },
+  "tests": {
+    "source_unchanged": true,
+    "pcm_masters_24bit_48khz_stereo": true,
+    "duration_preserved": true,
+    "finite_and_no_sample_clipping": true,
+    "true_peak_conservative": true,
+    "channel_balance_preserved": true,
+    "stereo_correlation_preserved": true,
+    "mono_compatibility_preserved": true,
+    "ab_loudness_matched": true,
+    "transient_151_92_present": true,
+    "lossy_encode_no_clipping": true
+  },
+  "pending": [
+    "human A/B mastering approval",
+    "dynamic distance automation validation",
+    "global front/back perceptual validation",
+    "final YouTube video packaging"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "protocol_id": "TUKANA-PERCEPTUAL-001",
+  "status": "PENDING_HUMAN_EVALUATION",
+  "minimum_trials": 20,
+  "playback": {
+    "device": "conventional stereo headphones",
+    "head_tracking": false,
+    "level_matching_required": true,
+    "target_peak_difference_db_max": 0.1
+  },
+  "trial_plan": {
+    "front_back_trials": 8,
+    "left_right_trials": 4,
+    "height_trials": 4,
+    "externalization_comparison_trials": 4
+  },
+  "directions": ["front_0", "back_180", "left_-90", "right_90", "elevated_front"],
+  "response_fields": [
+    "perceived_direction",
+    "front_back_confusion",
+    "externalization_score_1_to_5",
+    "height_score_1_to_5",
+    "confidence_1_to_5",
+    "comfort_notes"
+  ],
+  "acceptance": {
+    "technical_audio_integrity": "must pass before listening",
+    "externalization": "cannot be approved from waveform metrics",
+    "current_result": "PENDING"
+  }
+}
