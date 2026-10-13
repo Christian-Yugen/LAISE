@@ -1,0 +1,269 @@
+{
+  "lead_relative_to_backing_rms_db": -17.62153930188652,
+  "interpretation": "The assessed interval has very weak Lead relative to Backing. Perceived left vocal may be dominated/masked by the original left-positioned Backing, not a left-heavy Lead.",
+  "original_full_file_balance_db": 0.03633329567471398,
+  "original_full_file_correlation": 0.6300037079359041,
+  "original_preview_correlation": -0.2734059255185426,
+  "original_preview_mono_average_loss_db": -4.388532668780099,
+  "warning": "The phase issue is excerpt-specific; do not impose mono/compact conditioning on the whole song automatically.",
+  "audition": {
+    "A_stereo": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T002\\renders\\audition_lead_diagnostics\\M02_T002_A_stereo_203.8_215.8_24bit.wav",
+      "sha256": "ea9b0f8efbffd791d81a03b53858100baf93b6c7d043c5271c2cd2bc356be9a0",
+      "signal": {
+        "frames": 576000,
+        "duration_seconds": 12.0,
+        "finite": true,
+        "sample_peak": 0.39807915687561035,
+        "sample_peak_dbfs": -8.000611223042144,
+        "rms_dbfs": -29.33497340427096,
+        "crest_factor_db": 21.33436218122882,
+        "left_rms_dbfs": -29.33872007456828,
+        "right_rms_dbfs": -29.33122996350352,
+        "channel_balance_db": -0.0074901110647610635,
+        "lr_correlation": -0.4709455382034072,
+        "mono_rms_change_db": -5.775294701010987,
+        "max_adjacent_sample_delta": 0.1433391571044922,
+        "spectral_distribution": {
+          "20-60_hz_db": -44.10847184925085,
+          "60-250_hz_db": -33.27693364136884,
+          "250-2000_hz_db": -1.9465145050653292,
+          "2000-6000_hz_db": -4.687032990552515,
+          "6000-20000_hz_db": -16.807447877085348
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -24.0,
+        "loudness_range_lu": 3.3,
+        "true_peak_dbtp": -8.0,
+        "momentary_lufs": {
+          "minimum": -61.2,
+          "median": -24.9,
+          "maximum": -21.1
+        },
+        "short_term_lufs": {
+          "minimum": -28.0,
+          "median": -24.7,
+          "maximum": -22.4
+        }
+      },
+      "common_safety_gain": 46.929049152109705,
+      "level_matched": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T002\\renders\\audition_lead_diagnostics\\M02_T002_A_stereo_203.8_215.8_level_matched_24bit.wav",
+        "sha256": "bc2a6b8347b7546118b9c9c9e7f10116b6ab0d7d231c9d7f3d00f9123df95938",
+        "signal": {
+          "frames": 576000,
+          "duration_seconds": 12.0,
+          "finite": true,
+          "sample_peak": 0.34671247005462646,
+          "sample_peak_dbfs": -9.200610759688882,
+          "rms_dbfs": -30.534973575544086,
+          "crest_factor_db": 21.334362815855204,
+          "left_rms_dbfs": -30.53872024786348,
+          "right_rms_dbfs": -30.531230132756665,
+          "channel_balance_db": -0.0074901151068157935,
+          "lr_correlation": -0.47094553929780464,
+          "mono_rms_change_db": -5.775294709992868,
+          "max_adjacent_sample_delta": 0.12484312057495117,
+          "spectral_distribution": {
+            "20-60_hz_db": -44.10846961713436,
+            "60-250_hz_db": -33.27693507597644,
+            "250-2000_hz_db": -1.9465145430580955,
+            "2000-6000_hz_db": -4.687032910943776,
+            "6000-20000_hz_db": -16.807447982417834
+          }
+        },
+        "loudness": {
+          "method": "FFmpeg ebur128 peak=true",
+          "integrated_lufs": -25.2,
+          "loudness_range_lu": 3.3,
+          "true_peak_dbtp": -9.2,
+          "momentary_lufs": {
+            "minimum": -62.4,
+            "median": -26.1,
+            "maximum": -22.3
+          },
+          "short_term_lufs": {
+            "minimum": -29.2,
+            "median": -25.9,
+            "maximum": -23.6
+          }
+        },
+        "linked_gain_db": -1.1999999999999993
+      }
+    },
+    "B_compact_side50": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T002\\renders\\audition_lead_diagnostics\\M02_T002_B_compact_side50_203.8_215.8_24bit.wav",
+      "sha256": "ae9bf5a068923ad3e532e4748060d31ed8bc2fa6b01f9ce6910c0de0c56d0824",
+      "signal": {
+        "frames": 576000,
+        "duration_seconds": 12.0,
+        "finite": true,
+        "sample_peak": 0.3981071710586548,
+        "sample_peak_dbfs": -7.999999988978489,
+        "rms_dbfs": -30.00205166443243,
+        "crest_factor_db": 22.00205167545394,
+        "left_rms_dbfs": -29.981676099009967,
+        "right_rms_dbfs": -30.022523275668128,
+        "channel_balance_db": 0.040847176658156785,
+        "lr_correlation": 0.17809798542382344,
+        "mono_rms_change_db": -2.298493082782929,
+        "max_adjacent_sample_delta": 0.20220887660980225,
+        "spectral_distribution": {
+          "20-60_hz_db": -44.09862756576467,
+          "60-250_hz_db": -33.26300435607153,
+          "250-2000_hz_db": -1.9520844399565114,
+          "2000-6000_hz_db": -4.67186555746393,
+          "6000-20000_hz_db": -16.88557058627934
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -24.6,
+        "loudness_range_lu": 3.1,
+        "true_peak_dbtp": -8.0,
+        "momentary_lufs": {
+          "minimum": -59.6,
+          "median": -25.3,
+          "maximum": -21.7
+        },
+        "short_term_lufs": {
+          "minimum": -28.5,
+          "median": -25.0,
+          "maximum": -23.2
+        }
+      },
+      "common_safety_gain": 46.929049152109705,
+      "level_matched": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T002\\renders\\audition_lead_diagnostics\\M02_T002_B_compact_side50_203.8_215.8_level_matched_24bit.wav",
+        "sha256": "99a744350ca09c8592a77b38c6d992b938bceb8b105c71915842d6be087e8cbe",
+        "signal": {
+          "frames": 576000,
+          "duration_seconds": 12.0,
+          "finite": true,
+          "sample_peak": 0.3715353012084961,
+          "sample_peak_dbfs": -8.599998314154654,
+          "rms_dbfs": -30.602051643100886,
+          "crest_factor_db": 22.002053328946232,
+          "left_rms_dbfs": -30.58167607362263,
+          "right_rms_dbfs": -30.622523258426494,
+          "channel_balance_db": 0.04084718480386036,
+          "lr_correlation": 0.178097982929894,
+          "mono_rms_change_db": -2.2984930919795725,
+          "max_adjacent_sample_delta": 0.18871235847473145,
+          "spectral_distribution": {
+            "20-60_hz_db": -44.098623879378486,
+            "60-250_hz_db": -33.26300509645843,
+            "250-2000_hz_db": -1.9520844514663809,
+            "2000-6000_hz_db": -4.671865535086873,
+            "6000-20000_hz_db": -16.88557059033835
+          }
+        },
+        "loudness": {
+          "method": "FFmpeg ebur128 peak=true",
+          "integrated_lufs": -25.2,
+          "loudness_range_lu": 3.1,
+          "true_peak_dbtp": -8.6,
+          "momentary_lufs": {
+            "minimum": -60.2,
+            "median": -25.9,
+            "maximum": -22.3
+          },
+          "short_term_lufs": {
+            "minimum": -29.1,
+            "median": -25.6,
+            "maximum": -23.8
+          }
+        },
+        "linked_gain_db": -0.5999999999999982
+      }
+    },
+    "C_dual_mono_diagnostic": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T002\\renders\\audition_lead_diagnostics\\M02_T002_C_dual_mono_diagnostic_203.8_215.8_24bit.wav",
+      "sha256": "72c89c3aa4a6ae48ebfe138e52071575876e97f697b62081d53ad951cb294469",
+      "signal": {
+        "frames": 576000,
+        "duration_seconds": 12.0,
+        "finite": true,
+        "sample_peak": 0.37167930603027344,
+        "sample_peak_dbfs": -8.59663236845666,
+        "rms_dbfs": -30.71583052636481,
+        "crest_factor_db": 22.11919815790815,
+        "left_rms_dbfs": -30.416580851759555,
+        "right_rms_dbfs": -31.037235987584513,
+        "channel_balance_db": 0.6206551358249557,
+        "lr_correlation": 0.9972113917186576,
+        "mono_rms_change_db": -0.011587292131270686,
+        "max_adjacent_sample_delta": 0.16411113739013672,
+        "spectral_distribution": {
+          "20-60_hz_db": -47.90228127933918,
+          "60-250_hz_db": -37.32800254022791,
+          "250-2000_hz_db": -1.9134931100646289,
+          "2000-6000_hz_db": -4.607081655669931,
+          "6000-20000_hz_db": -20.010926934894798
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -25.2,
+        "loudness_range_lu": 3.2,
+        "true_peak_dbtp": -8.6,
+        "momentary_lufs": {
+          "minimum": -62.5,
+          "median": -26.0,
+          "maximum": -22.3
+        },
+        "short_term_lufs": {
+          "minimum": -29.4,
+          "median": -25.3,
+          "maximum": -23.9
+        }
+      },
+      "common_safety_gain": 46.929049152109705,
+      "level_matched": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T002\\renders\\audition_lead_diagnostics\\M02_T002_C_dual_mono_diagnostic_203.8_215.8_level_matched_24bit.wav",
+        "sha256": "72c89c3aa4a6ae48ebfe138e52071575876e97f697b62081d53ad951cb294469",
+        "signal": {
+          "frames": 576000,
+          "duration_seconds": 12.0,
+          "finite": true,
+          "sample_peak": 0.37167930603027344,
+          "sample_peak_dbfs": -8.59663236845666,
+          "rms_dbfs": -30.71583052636481,
+          "crest_factor_db": 22.11919815790815,
+          "left_rms_dbfs": -30.416580851759555,
+          "right_rms_dbfs": -31.037235987584513,
+          "channel_balance_db": 0.6206551358249557,
+          "lr_correlation": 0.9972113917186576,
+          "mono_rms_change_db": -0.011587292131270686,
+          "max_adjacent_sample_delta": 0.16411113739013672,
+          "spectral_distribution": {
+            "20-60_hz_db": -47.90228127933918,
+            "60-250_hz_db": -37.32800254022791,
+            "250-2000_hz_db": -1.9134931100646289,
+            "2000-6000_hz_db": -4.607081655669931,
+            "6000-20000_hz_db": -20.010926934894798
+          }
+        },
+        "loudness": {
+          "method": "FFmpeg ebur128 peak=true",
+          "integrated_lufs": -25.2,
+          "loudness_range_lu": 3.2,
+          "true_peak_dbtp": -8.6,
+          "momentary_lufs": {
+            "minimum": -62.5,
+            "median": -26.0,
+            "maximum": -22.3
+          },
+          "short_term_lufs": {
+            "minimum": -29.4,
+            "median": -25.3,
+            "maximum": -23.9
+          }
+        },
+        "linked_gain_db": 0.0
+      }
+    }
+  }
+}

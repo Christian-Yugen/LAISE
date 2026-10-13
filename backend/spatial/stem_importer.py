@@ -17,7 +17,7 @@ ROLES = (
     "keyboards", "percussion", "synth", "other", "woodwinds",
 )
 ALIASES = {
-    "lead_vocal": ("lead vocal", "voz principal"),
+    "lead_vocal": ("lead vocals", "lead vocal", "voz principal"),
     "backing_vocals": ("backing vocals", "back vocal", "coro"),
     "drums": ("drums", "drum", "bateria", "tambores"),
     "bass": ("bass", "baixo"),
@@ -27,6 +27,7 @@ ALIASES = {
     "synth": ("synth", "sintetizador"),
     "other": ("other", "outros", "ambience", "ambiente", "fx"),
     "woodwinds": ("woodwinds", "woodwind", "flutes", "flautas"),
+    "brass": ("brass", "metais"),
 }
 
 
@@ -144,7 +145,8 @@ def iter_normalized_blocks(path: str | Path, target_rate: int = TARGET_RATE,
             next_output = last_output + 1
         previous = native[-1:]
 
-def identify_stems(folder: str | Path, aliases: dict | None = None) -> dict[str, Path]:
+def identify_stems(folder: str | Path, aliases: dict | None = None,
+                   required_roles: tuple[str, ...] | list[str] | None = None) -> dict[str, Path]:
     folder = Path(folder)
     if not folder.is_dir():
         raise StemImportError(f"folder not found: {folder}")
@@ -162,7 +164,7 @@ def identify_stems(folder: str | Path, aliases: dict | None = None) -> dict[str,
             if role in found:
                 raise StemImportError(f"duplicate {role}: {found[role].name}, {path.name}")
             found[role] = path.resolve()
-    missing = sorted(set(ROLES) - set(found))
+    missing = sorted(set(ROLES if required_roles is None else required_roles) - set(found))
     if missing:
         raise StemImportError(f"missing stems: {', '.join(missing)}")
     return found
@@ -217,8 +219,11 @@ def analyze_stem(path: Path, silence_dbfs: float = -60.0, block_frames: int = 40
     }
 
 
-def import_folder(folder: str | Path, manifest_path: str | Path, aliases: dict | None = None) -> dict:
-    records = {role: analyze_stem(path) for role, path in identify_stems(folder, aliases).items()}
+def import_folder(folder: str | Path, manifest_path: str | Path, aliases: dict | None = None,
+                  required_roles: tuple[str, ...] | list[str] | None = None) -> dict:
+    records = {role: analyze_stem(path) for role, path in identify_stems(folder, aliases, required_roles).items()}
+    if not records:
+        raise StemImportError("no recognized stems")
     durations = [record["wav"]["duration_seconds"] for record in records.values()]
     timeline = max(durations)
     aligned = max(durations) - min(durations) <= 1 / TARGET_RATE
@@ -229,7 +234,7 @@ def import_folder(folder: str | Path, manifest_path: str | Path, aliases: dict |
         }
     manifest = {
         "schema": "LAISE Stem Import Manifest v1.0", "source_folder": str(Path(folder).resolve()),
-        "required_roles": list(ROLES), "stem_count": len(records), "target_sample_rate": TARGET_RATE,
+        "required_roles": list(ROLES if required_roles is None else required_roles), "stem_count": len(records), "target_sample_rate": TARGET_RATE,
         "target_sample_type": "float32", "streaming_decode": True, "originals_modified": False,
         "timeline_duration_seconds": timeline, "sample_aligned": aligned,
         "status": "PASS" if aligned else "FAIL", "stems": records,

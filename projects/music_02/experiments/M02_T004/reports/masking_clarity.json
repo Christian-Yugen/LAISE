@@ -1,0 +1,1752 @@
+{
+  "bands_hz": [
+    [
+      60,
+      180
+    ],
+    [
+      180,
+      500
+    ],
+    [
+      500,
+      1500
+    ],
+    [
+      1500,
+      4000
+    ],
+    [
+      4000,
+      10000
+    ],
+    [
+      10000,
+      20000
+    ]
+  ],
+  "sections": [
+    {
+      "start_seconds": 200.0,
+      "end_seconds": 207.02,
+      "featured": "woodwinds",
+      "role_rms_dbfs": {
+        "lead_vocal": -39.72498353196846,
+        "backing_vocals": -25.502481334110428,
+        "woodwinds": -24.260617890264857,
+        "drums": -19.20517207639097,
+        "bass": -24.627813505319907,
+        "guitar": -32.30536710939461,
+        "keyboards": -49.79609771039529,
+        "percussion": -24.507168334389103,
+        "synth": -25.740072294077223,
+        "other": -46.35119643701814,
+        "brass": -50.02638839514512
+      },
+      "band_energy": {
+        "lead_vocal": [
+          38.24900053230472,
+          227.88711813018182,
+          82675.7510715778,
+          19142.728150630843,
+          4219.861453345837,
+          1047.2975718828873
+        ],
+        "backing_vocals": [
+          94.97377281693977,
+          4794.587596556042,
+          2189276.7821264043,
+          557062.4133039012,
+          132502.20822999472,
+          4459.191624823028
+        ],
+        "woodwinds": [
+          19.765349019336384,
+          2577.7624506718266,
+          3769912.8700651783,
+          75143.8459372581,
+          12395.081741545491,
+          1480.2537705419766
+        ],
+        "drums": [
+          5297907.846190218,
+          1351550.1379902284,
+          862055.2909271002,
+          84374.90480409996,
+          52261.77916047937,
+          42984.279682073284
+        ],
+        "bass": [
+          2763334.689603023,
+          694926.038387656,
+          3606.3680067517444,
+          611.437667132512,
+          11.339457817882597,
+          36.164841407278765
+        ],
+        "guitar": [
+          331870.3321704938,
+          105508.46978179766,
+          165413.2162250727,
+          4190.799748608811,
+          660.8553609974832,
+          108.76156532847425
+        ],
+        "keyboards": [
+          1286.6268282614576,
+          6807.489086624965,
+          1833.8368978372532,
+          554.6217812198404,
+          61.300166145474435,
+          34.93385783820576
+        ],
+        "percussion": [
+          1484457.2272929817,
+          932081.4000109293,
+          327346.15617302235,
+          68476.6069764886,
+          55881.02317606509,
+          55162.21155903561
+        ],
+        "synth": [
+          223190.29254178188,
+          122991.6559702826,
+          2277066.8692389126,
+          89489.89885102594,
+          18007.688603408587,
+          3666.131029011177
+        ],
+        "other": [
+          4412.957771220606,
+          1848.900426291099,
+          6222.936342389312,
+          5547.124940027318,
+          3118.4984864518756,
+          1571.1523073416377
+        ],
+        "brass": [
+          121.85859345632777,
+          81.80353665420073,
+          10044.788062209343,
+          194.0161217400917,
+          20.663233830534757,
+          1.688371869925184
+        ]
+      },
+      "potential_maskers": [
+        {
+          "role": "lead_vocal",
+          "band_cosine_overlap": 0.9774072617034444,
+          "relative_rms_db": -15.464365641703605,
+          "strongest_shared_band_hz": [
+            500,
+            1500
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 0.3125,
+          "temporal_coactive_seconds": 2.0,
+          "rms_envelope_correlation": -0.8410903066743713,
+          "selected_support_trim_temporally_supported": true
+        },
+        {
+          "role": "backing_vocals",
+          "band_cosine_overlap": 0.97235518442615,
+          "relative_rms_db": -1.2418634438455705,
+          "strongest_shared_band_hz": [
+            500,
+            1500
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 0.203125,
+          "temporal_coactive_seconds": 1.3,
+          "rms_envelope_correlation": -0.8624264708146646,
+          "selected_support_trim_temporally_supported": true
+        },
+        {
+          "role": "drums",
+          "band_cosine_overlap": 0.15619075512819944,
+          "relative_rms_db": 5.055445813873888,
+          "strongest_shared_band_hz": [
+            500,
+            1500
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 1.0,
+          "temporal_coactive_seconds": 6.4,
+          "rms_envelope_correlation": 0.07651455945399227,
+          "selected_support_trim_temporally_supported": true
+        },
+        {
+          "role": "bass",
+          "band_cosine_overlap": 0.001441517075028858,
+          "relative_rms_db": -0.3671956150550493,
+          "strongest_shared_band_hz": [
+            500,
+            1500
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 0.703125,
+          "temporal_coactive_seconds": 4.5,
+          "rms_envelope_correlation": -0.14709822480748985,
+          "selected_support_trim_temporally_supported": true
+        },
+        {
+          "role": "guitar",
+          "band_cosine_overlap": 0.42935711032341967,
+          "relative_rms_db": -8.044749219129752,
+          "strongest_shared_band_hz": [
+            500,
+            1500
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 0.96875,
+          "temporal_coactive_seconds": 6.2,
+          "rms_envelope_correlation": 0.4398596047668911,
+          "selected_support_trim_temporally_supported": true
+        },
+        {
+          "role": "keyboards",
+          "band_cosine_overlap": 0.25727491708187317,
+          "relative_rms_db": -25.53547982013043,
+          "strongest_shared_band_hz": [
+            500,
+            1500
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 1.0,
+          "temporal_coactive_seconds": 6.4,
+          "rms_envelope_correlation": -0.3486183771842546,
+          "selected_support_trim_temporally_supported": true
+        },
+        {
+          "role": "percussion",
+          "band_cosine_overlap": 0.18446981844615282,
+          "relative_rms_db": -0.24655044412424587,
+          "strongest_shared_band_hz": [
+            500,
+            1500
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 1.0,
+          "temporal_coactive_seconds": 6.4,
+          "rms_envelope_correlation": -0.04963599130874783,
+          "selected_support_trim_temporally_supported": true
+        },
+        {
+          "role": "synth",
+          "band_cosine_overlap": 0.9936453400710007,
+          "relative_rms_db": -1.4794544038123654,
+          "strongest_shared_band_hz": [
+            500,
+            1500
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 1.0,
+          "temporal_coactive_seconds": 6.4,
+          "rms_envelope_correlation": 0.9248197245411006,
+          "selected_support_trim_temporally_supported": true
+        },
+        {
+          "role": "other",
+          "band_cosine_overlap": 0.6203836254647749,
+          "relative_rms_db": -22.09057854675328,
+          "strongest_shared_band_hz": [
+            500,
+            1500
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 0.203125,
+          "temporal_coactive_seconds": 1.3,
+          "rms_envelope_correlation": -0.1990311633361227,
+          "selected_support_trim_temporally_supported": true
+        },
+        {
+          "role": "brass",
+          "band_cosine_overlap": 0.9998977320761689,
+          "relative_rms_db": -25.765770504880262,
+          "strongest_shared_band_hz": [
+            500,
+            1500
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 0.34375,
+          "temporal_coactive_seconds": 2.2,
+          "rms_envelope_correlation": 0.4748708691007879,
+          "selected_support_trim_temporally_supported": true
+        }
+      ],
+      "support_trims_db": {
+        "backing_vocals": -2.0,
+        "synth": -2.0
+      }
+    },
+    {
+      "start_seconds": 207.05,
+      "end_seconds": 218.5,
+      "featured": "percussion",
+      "role_rms_dbfs": {
+        "lead_vocal": -38.23045672634046,
+        "backing_vocals": -22.07361815469077,
+        "woodwinds": -90.35747844619236,
+        "drums": -20.770315889080745,
+        "bass": -17.55977492047674,
+        "guitar": -28.332971200403612,
+        "keyboards": -42.90826740800143,
+        "percussion": -24.996947013663686,
+        "synth": -35.981057356901644,
+        "other": -23.835195851144736,
+        "brass": -30.010786337166635
+      },
+      "band_energy": {
+        "lead_vocal": [
+          25.169550137653275,
+          1001.6181985739804,
+          161587.53485478245,
+          73093.1477030564,
+          14980.723975504747,
+          3205.782813674534
+        ],
+        "backing_vocals": [
+          229.28137681059673,
+          14046.612758657971,
+          7534961.029363964,
+          2380764.0427763322,
+          524558.634721577,
+          10575.37366988068
+        ],
+        "woodwinds": [
+          0.0022026349785428966,
+          0.2659434652385353,
+          1.1331359873140934,
+          0.06407829869168072,
+          0.024847441644984182,
+          0.04843162245423431
+        ],
+        "drums": [
+          5764933.401968559,
+          1909800.0751290987,
+          866435.3190588199,
+          335818.649335857,
+          167894.98580836336,
+          146242.12154901843
+        ],
+        "bass": [
+          3021520.7072765986,
+          921024.1500853094,
+          99355.7885622846,
+          21770.21442414902,
+          734.5105263777673,
+          39.1434774396989
+        ],
+        "guitar": [
+          1960005.2088911412,
+          505191.6063625565,
+          371.20764519752504,
+          69.19652289405971,
+          7.941154806138277,
+          2.6048425086451257
+        ],
+        "keyboards": [
+          29041.604311131618,
+          39512.58649502159,
+          13202.345471051318,
+          3660.1821301508944,
+          420.56477026237746,
+          167.78518571992632
+        ],
+        "percussion": [
+          1751261.475633665,
+          1599705.4252802324,
+          776698.5189377954,
+          260642.30545203527,
+          129371.87554074635,
+          129453.57228112932
+        ],
+        "synth": [
+          119887.81667783762,
+          171437.1135162829,
+          93537.38585971599,
+          29849.05998554293,
+          4348.640194942823,
+          719.3323324285547
+        ],
+        "other": [
+          311679.5990897224,
+          108510.46804574775,
+          30642.33901356158,
+          15210.248095139139,
+          3172.764968075856,
+          1257.9706656200408
+        ],
+        "brass": [
+          143852.47475201197,
+          41431.84039398026,
+          6262.5022244456895,
+          651.4786424249696,
+          57.755715959100826,
+          81.97552081311525
+        ]
+      },
+      "potential_maskers": [
+        {
+          "role": "lead_vocal",
+          "band_cosine_overlap": 0.33167342076499706,
+          "relative_rms_db": -13.233509712676778,
+          "strongest_shared_band_hz": [
+            500,
+            1500
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 0.7105263157894737,
+          "temporal_coactive_seconds": 8.1,
+          "rms_envelope_correlation": 0.023690676199038134,
+          "selected_support_trim_temporally_supported": true
+        },
+        {
+          "role": "backing_vocals",
+          "band_cosine_overlap": 0.32946680783625537,
+          "relative_rms_db": 2.9233288589729156,
+          "strongest_shared_band_hz": [
+            500,
+            1500
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 0.7280701754385965,
+          "temporal_coactive_seconds": 8.3,
+          "rms_envelope_correlation": 0.053662146563787705,
+          "selected_support_trim_temporally_supported": true
+        },
+        {
+          "role": "woodwinds",
+          "band_cosine_overlap": 0.4548716436295286,
+          "relative_rms_db": -65.36053143252867,
+          "strongest_shared_band_hz": [
+            180,
+            500
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 0.0,
+          "temporal_coactive_seconds": 0.0,
+          "rms_envelope_correlation": 0.0038952904579850393,
+          "selected_support_trim_temporally_supported": true
+        },
+        {
+          "role": "drums",
+          "band_cosine_overlap": 0.9019876075930838,
+          "relative_rms_db": 4.226631124582941,
+          "strongest_shared_band_hz": [
+            60,
+            180
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 1.0,
+          "temporal_coactive_seconds": 11.4,
+          "rms_envelope_correlation": 0.6535152895011159,
+          "selected_support_trim_temporally_supported": true
+        },
+        {
+          "role": "bass",
+          "band_cosine_overlap": 0.8611550937987332,
+          "relative_rms_db": 7.437172093186945,
+          "strongest_shared_band_hz": [
+            60,
+            180
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 0.8070175438596491,
+          "temporal_coactive_seconds": 9.200000000000001,
+          "rms_envelope_correlation": -0.2785951496683394,
+          "selected_support_trim_temporally_supported": true
+        },
+        {
+          "role": "guitar",
+          "band_cosine_overlap": 0.8327482891129658,
+          "relative_rms_db": -3.3360241867399267,
+          "strongest_shared_band_hz": [
+            60,
+            180
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 0.5087719298245614,
+          "temporal_coactive_seconds": 5.800000000000001,
+          "rms_envelope_correlation": -0.3893687985176316,
+          "selected_support_trim_temporally_supported": true
+        },
+        {
+          "role": "keyboards",
+          "band_cosine_overlap": 0.9784598871650648,
+          "relative_rms_db": -17.911320394337743,
+          "strongest_shared_band_hz": [
+            180,
+            500
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 1.0,
+          "temporal_coactive_seconds": 11.4,
+          "rms_envelope_correlation": -0.4690884343108599,
+          "selected_support_trim_temporally_supported": true
+        },
+        {
+          "role": "synth",
+          "band_cosine_overlap": 0.9720322777770445,
+          "relative_rms_db": -10.984110343237958,
+          "strongest_shared_band_hz": [
+            180,
+            500
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 1.0,
+          "temporal_coactive_seconds": 11.4,
+          "rms_envelope_correlation": -0.40855346854488445,
+          "selected_support_trim_temporally_supported": true
+        },
+        {
+          "role": "other",
+          "band_cosine_overlap": 0.8956527474851993,
+          "relative_rms_db": 1.16175116251895,
+          "strongest_shared_band_hz": [
+            60,
+            180
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 0.41228070175438597,
+          "temporal_coactive_seconds": 4.7,
+          "rms_envelope_correlation": -0.10231824725330213,
+          "selected_support_trim_temporally_supported": true
+        },
+        {
+          "role": "brass",
+          "band_cosine_overlap": 0.8574586032988119,
+          "relative_rms_db": -5.01383932350295,
+          "strongest_shared_band_hz": [
+            60,
+            180
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 0.38596491228070173,
+          "temporal_coactive_seconds": 4.4,
+          "rms_envelope_correlation": -0.09658221020126691,
+          "selected_support_trim_temporally_supported": true
+        }
+      ],
+      "support_trims_db": {
+        "guitar": -2.0,
+        "other": -1.5,
+        "brass": -2.0
+      }
+    },
+    {
+      "start_seconds": 218.709333,
+      "end_seconds": 224.426667,
+      "featured": "woodwinds",
+      "role_rms_dbfs": {
+        "lead_vocal": -84.56502666478947,
+        "backing_vocals": -114.87919824333753,
+        "woodwinds": -23.047073950504245,
+        "drums": -22.891547550040396,
+        "bass": -36.41905450399605,
+        "guitar": -45.71580865627202,
+        "keyboards": -64.47218213697613,
+        "percussion": -25.349916816812417,
+        "synth": -29.764909936458864,
+        "other": -43.166572826114155,
+        "brass": -50.470602086428535
+      },
+      "band_energy": {
+        "lead_vocal": [
+          0.412398658507926,
+          0.05081735562368686,
+          0.5979856879205441,
+          0.036435885528887484,
+          0.015074639941975481,
+          1.322160290542874
+        ],
+        "backing_vocals": [
+          1.0685793551838637e-05,
+          2.6029958457798667e-05,
+          8.850683144101063e-05,
+          0.0002393278325327884,
+          0.0007290489387002829,
+          0.0012367963490591844
+        ],
+        "woodwinds": [
+          22.79411059519978,
+          63.72892575515623,
+          4131191.8713449636,
+          21951.00578138764,
+          3033.1351317906956,
+          369.5690717870945
+        ],
+        "drums": [
+          1940226.3200275833,
+          539620.5854516712,
+          205331.4313058852,
+          76611.84677684327,
+          27915.08848938343,
+          18933.140997918574
+        ],
+        "bass": [
+          135604.99544165225,
+          33473.081653187925,
+          3081.4580929702906,
+          1175.645621576069,
+          61.564525955305655,
+          15.579522240104223
+        ],
+        "guitar": [
+          15394.007207736739,
+          6719.890632301359,
+          142.6837873718198,
+          17.796695966017094,
+          2.687648612648068,
+          0.7580100973377009
+        ],
+        "keyboards": [
+          16.17222498307838,
+          62.12842378745553,
+          157.4803798134328,
+          24.127288042810235,
+          2.709608879461333,
+          2.632225391300239
+        ],
+        "percussion": [
+          798386.7399589088,
+          533779.4906017629,
+          254930.46809537013,
+          87835.5614999439,
+          38282.45645584252,
+          24245.135960595097
+        ],
+        "synth": [
+          323566.4954722293,
+          114903.92261461553,
+          427938.6147918391,
+          5349.9593006849045,
+          485.7436168388404,
+          38.03100826774829
+        ],
+        "other": [
+          9194.557077510375,
+          3038.05534659549,
+          8653.177265864964,
+          2232.034474889931,
+          443.4956779260009,
+          165.7998091515538
+        ],
+        "brass": [
+          160.47941282450603,
+          6.218926088488536,
+          5916.6419552026055,
+          36.712318904877534,
+          21.972730857941073,
+          0.5267672876696674
+        ]
+      },
+      "potential_maskers": [
+        {
+          "role": "lead_vocal",
+          "band_cosine_overlap": 0.3962441882554385,
+          "relative_rms_db": -61.51795271428523,
+          "strongest_shared_band_hz": [
+            500,
+            1500
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 0.0,
+          "temporal_coactive_seconds": 0.0,
+          "rms_envelope_correlation": -0.44926260748403335,
+          "selected_support_trim_temporally_supported": true
+        },
+        {
+          "role": "backing_vocals",
+          "band_cosine_overlap": 0.061999710269657934,
+          "relative_rms_db": -91.83212429283329,
+          "strongest_shared_band_hz": [
+            500,
+            1500
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 0.0,
+          "temporal_coactive_seconds": 0.0,
+          "rms_envelope_correlation": 0.34505069251817977,
+          "selected_support_trim_temporally_supported": true
+        },
+        {
+          "role": "drums",
+          "band_cosine_overlap": 0.1015660108538468,
+          "relative_rms_db": 0.1555264004638488,
+          "strongest_shared_band_hz": [
+            500,
+            1500
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 0.26,
+          "temporal_coactive_seconds": 1.3,
+          "rms_envelope_correlation": -0.9188691471784984,
+          "selected_support_trim_temporally_supported": true
+        },
+        {
+          "role": "bass",
+          "band_cosine_overlap": 0.022109225114315057,
+          "relative_rms_db": -13.371980553491806,
+          "strongest_shared_band_hz": [
+            500,
+            1500
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 0.08,
+          "temporal_coactive_seconds": 0.4,
+          "rms_envelope_correlation": -0.755100135025002,
+          "selected_support_trim_temporally_supported": true
+        },
+        {
+          "role": "guitar",
+          "band_cosine_overlap": 0.008511247355710348,
+          "relative_rms_db": -22.668734705767772,
+          "strongest_shared_band_hz": [
+            500,
+            1500
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 0.1,
+          "temporal_coactive_seconds": 0.5,
+          "rms_envelope_correlation": -0.7330175675291571,
+          "selected_support_trim_temporally_supported": true
+        },
+        {
+          "role": "keyboards",
+          "band_cosine_overlap": 0.9173594466653209,
+          "relative_rms_db": -41.42510818647189,
+          "strongest_shared_band_hz": [
+            500,
+            1500
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 0.14,
+          "temporal_coactive_seconds": 0.7000000000000001,
+          "rms_envelope_correlation": 0.2166206843185741,
+          "selected_support_trim_temporally_supported": true
+        },
+        {
+          "role": "percussion",
+          "band_cosine_overlap": 0.2558076191219415,
+          "relative_rms_db": -2.302842866308172,
+          "strongest_shared_band_hz": [
+            500,
+            1500
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 0.26,
+          "temporal_coactive_seconds": 1.3,
+          "rms_envelope_correlation": -0.8341218126473011,
+          "selected_support_trim_temporally_supported": true
+        },
+        {
+          "role": "synth",
+          "band_cosine_overlap": 0.7799784432755604,
+          "relative_rms_db": -6.717835985954618,
+          "strongest_shared_band_hz": [
+            500,
+            1500
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 1.0,
+          "temporal_coactive_seconds": 5.0,
+          "rms_envelope_correlation": -0.3761071988501517,
+          "selected_support_trim_temporally_supported": true
+        },
+        {
+          "role": "other",
+          "band_cosine_overlap": 0.6571956390433885,
+          "relative_rms_db": -20.11949887560991,
+          "strongest_shared_band_hz": [
+            500,
+            1500
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 0.3,
+          "temporal_coactive_seconds": 1.5,
+          "rms_envelope_correlation": -0.505932607980725,
+          "selected_support_trim_temporally_supported": true
+        },
+        {
+          "role": "brass",
+          "band_cosine_overlap": 0.9996271626600952,
+          "relative_rms_db": -27.42352813592429,
+          "strongest_shared_band_hz": [
+            500,
+            1500
+          ],
+          "temporal_coactive_fraction_of_featured_active_bins": 0.1,
+          "temporal_coactive_seconds": 0.5,
+          "rms_envelope_correlation": 0.369240486893747,
+          "selected_support_trim_temporally_supported": true
+        }
+      ],
+      "support_trims_db": {
+        "synth": -2.0
+      }
+    },
+    {
+      "start_seconds": 224.5,
+      "end_seconds": 230.0,
+      "featured": null,
+      "role_rms_dbfs": {
+        "lead_vocal": -65.77365149015635,
+        "backing_vocals": -81.5033125070088,
+        "woodwinds": -75.34014886858358,
+        "drums": -16.00199951921596,
+        "bass": -28.811143692874573,
+        "guitar": -36.545422381969246,
+        "keyboards": -76.75072638749373,
+        "percussion": -20.22210802002195,
+        "synth": -25.490026598140588,
+        "other": -42.374027956274524,
+        "brass": -84.37440519194277
+      },
+      "band_energy": {
+        "lead_vocal": [
+          20.13621826584855,
+          25.151976580967133,
+          144.5503884830157,
+          8.776807423081948,
+          1.078598055429501,
+          5.021811243603995
+        ],
+        "backing_vocals": [
+          0.9892784147499033,
+          0.1248485329810404,
+          4.060741972746914,
+          0.09331482283217671,
+          0.006281851581854254,
+          0.05676994340069396
+        ],
+        "woodwinds": [
+          1.7362743632198394,
+          0.7501876436534178,
+          14.40153899408552,
+          1.0807624565579497,
+          0.5475681015207966,
+          1.9758956511981989
+        ],
+        "drums": [
+          9953378.422246208,
+          2865031.2098041135,
+          933974.8360244296,
+          322310.35224401805,
+          122405.72935767975,
+          98285.74287181889
+        ],
+        "bass": [
+          827447.6640016274,
+          181514.35609891638,
+          11979.969867756987,
+          4934.712186170025,
+          171.7987804877578,
+          45.16748153648523
+        ],
+        "guitar": [
+          128023.35971832555,
+          46074.747675298306,
+          552.0710230169926,
+          68.01187947774476,
+          6.133622781897926,
+          1.2876746772128032
+        ],
+        "keyboards": [
+          0.7593378785475804,
+          1.3298386192721994,
+          3.660907066396147,
+          5.106976106692635,
+          1.9553947812690766,
+          3.634933498198932
+        ],
+        "percussion": [
+          2687444.343466182,
+          1877422.3646279194,
+          706177.600341198,
+          288602.29842617305,
+          110416.9109636241,
+          80404.29221104787
+        ],
+        "synth": [
+          1636274.7653561067,
+          564387.3991126246,
+          27991.939241039683,
+          4249.10085713942,
+          443.06361647439064,
+          41.8412888493509
+        ],
+        "other": [
+          6233.639551179967,
+          8563.389646464024,
+          21556.31669870663,
+          7686.9654787511845,
+          1061.8616838161242,
+          210.93932879278427
+        ],
+        "brass": [
+          1.2582859452129207,
+          1.4266663428727666,
+          0.4536877389115974,
+          0.012531275389913436,
+          0.0030091330201149433,
+          0.009686808507217346
+        ]
+      },
+      "potential_maskers": [],
+      "support_trims_db": {}
+    }
+  ],
+  "method": "4096-point Hann STFT, 2048 hop; stereo summed power, RMS after existing role gain",
+  "policy": "Only non-anchor support with band overlap >.75 and relative RMS >-8dB receives modest linked attenuation, 250ms ramps. No global or corrective EQ.",
+  "limitation": "Band overlap and coactivity indicate potential competition, not a measured psychoacoustic masking threshold. Musical usefulness requires listening.",
+  "temporal_method": "100ms stereo RMS bins, active >= own-role preview peak RMS minus 30dB; coactivity measured relative to featured active bins. Correlation and activity are diagnostic, not proof of masking.",
+  "full_song_read_only_section_analysis": [
+    {
+      "section_id": "m02_section_01",
+      "label": "intro_candidate",
+      "start_seconds": 0,
+      "end_seconds": 22.3,
+      "role_rms_dbfs": {
+        "lead_vocal": -29.532835716209945,
+        "backing_vocals": -81.35146707281989,
+        "woodwinds": -28.536787254011404,
+        "drums": -27.481920268042707,
+        "bass": -44.60164457590605,
+        "guitar": -70.16232819274099,
+        "keyboards": -72.04228367449048,
+        "percussion": -29.659701751301352,
+        "synth": -33.590636048675194,
+        "other": -32.63919619015574,
+        "brass": -82.230521876268
+      },
+      "potential_competing_pairs": [
+        {
+          "roles": [
+            "lead_vocal",
+            "woodwinds"
+          ],
+          "band_cosine_overlap": 0.957585633243721,
+          "coactive_fraction": 0.3602150537634409,
+          "relative_rms_db": -0.9960484621985408
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "synth"
+          ],
+          "band_cosine_overlap": 0.9603856904169832,
+          "coactive_fraction": 0.4,
+          "relative_rms_db": 4.0578003324652485
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "synth"
+          ],
+          "band_cosine_overlap": 0.9956507241625463,
+          "coactive_fraction": 0.6628571428571428,
+          "relative_rms_db": 5.053848794663789
+        },
+        {
+          "roles": [
+            "drums",
+            "percussion"
+          ],
+          "band_cosine_overlap": 0.9996336884227711,
+          "coactive_fraction": 0.9263157894736842,
+          "relative_rms_db": 2.177781483258645
+        },
+        {
+          "roles": [
+            "drums",
+            "other"
+          ],
+          "band_cosine_overlap": 0.9977771755340419,
+          "coactive_fraction": 0.8627450980392157,
+          "relative_rms_db": 5.15727592211303
+        },
+        {
+          "roles": [
+            "bass",
+            "other"
+          ],
+          "band_cosine_overlap": 0.9773712230345535,
+          "coactive_fraction": 0.49612403100775193,
+          "relative_rms_db": -11.962448385750314
+        },
+        {
+          "roles": [
+            "percussion",
+            "other"
+          ],
+          "band_cosine_overlap": 0.998549579733184,
+          "coactive_fraction": 0.9313725490196079,
+          "relative_rms_db": 2.9794944388543847
+        }
+      ],
+      "automatic_audio_edits": false
+    },
+    {
+      "section_id": "m02_section_02",
+      "label": "texture_section_candidate",
+      "start_seconds": 22.3,
+      "end_seconds": 53.6,
+      "role_rms_dbfs": {
+        "lead_vocal": -25.43096738817048,
+        "backing_vocals": -27.380927220318977,
+        "woodwinds": -45.41530105992696,
+        "drums": -26.53085934282298,
+        "bass": -41.58976577985409,
+        "guitar": -35.12406909020238,
+        "keyboards": -43.51826735321858,
+        "percussion": -28.5536227362229,
+        "synth": -39.982975973927005,
+        "other": -37.93249990439483,
+        "brass": -300.0
+      },
+      "potential_competing_pairs": [
+        {
+          "roles": [
+            "lead_vocal",
+            "backing_vocals"
+          ],
+          "band_cosine_overlap": 0.9992021725003111,
+          "coactive_fraction": 0.7574750830564784,
+          "relative_rms_db": 1.9499598321484974
+        },
+        {
+          "roles": [
+            "drums",
+            "guitar"
+          ],
+          "band_cosine_overlap": 0.8897675724942179,
+          "coactive_fraction": 0.8240740740740741,
+          "relative_rms_db": 8.593209747379404
+        },
+        {
+          "roles": [
+            "drums",
+            "percussion"
+          ],
+          "band_cosine_overlap": 0.9991032471226822,
+          "coactive_fraction": 0.981042654028436,
+          "relative_rms_db": 2.02276339339992
+        },
+        {
+          "roles": [
+            "drums",
+            "other"
+          ],
+          "band_cosine_overlap": 0.995851237702054,
+          "coactive_fraction": 0.5502392344497608,
+          "relative_rms_db": 11.401640561571853
+        },
+        {
+          "roles": [
+            "bass",
+            "guitar"
+          ],
+          "band_cosine_overlap": 0.8326902682572975,
+          "coactive_fraction": 0.30851063829787234,
+          "relative_rms_db": -6.465696689651708
+        },
+        {
+          "roles": [
+            "bass",
+            "keyboards"
+          ],
+          "band_cosine_overlap": 0.8718253889355273,
+          "coactive_fraction": 0.31891891891891894,
+          "relative_rms_db": 1.9285015733644926
+        },
+        {
+          "roles": [
+            "bass",
+            "synth"
+          ],
+          "band_cosine_overlap": 0.9648329447951642,
+          "coactive_fraction": 0.28095238095238095,
+          "relative_rms_db": -1.606789805927086
+        },
+        {
+          "roles": [
+            "guitar",
+            "keyboards"
+          ],
+          "band_cosine_overlap": 0.996767668414236,
+          "coactive_fraction": 0.9787234042553191,
+          "relative_rms_db": 8.3941982630162
+        },
+        {
+          "roles": [
+            "guitar",
+            "percussion"
+          ],
+          "band_cosine_overlap": 0.9016040611223968,
+          "coactive_fraction": 0.8425925925925926,
+          "relative_rms_db": -6.570446353979484
+        },
+        {
+          "roles": [
+            "guitar",
+            "synth"
+          ],
+          "band_cosine_overlap": 0.9486675044071587,
+          "coactive_fraction": 0.863849765258216,
+          "relative_rms_db": 4.858906883724622
+        },
+        {
+          "roles": [
+            "guitar",
+            "other"
+          ],
+          "band_cosine_overlap": 0.8577578462768743,
+          "coactive_fraction": 0.3944954128440367,
+          "relative_rms_db": 2.808430814192448
+        },
+        {
+          "roles": [
+            "keyboards",
+            "synth"
+          ],
+          "band_cosine_overlap": 0.9699043732916194,
+          "coactive_fraction": 0.8809523809523809,
+          "relative_rms_db": -3.5352913792915786
+        },
+        {
+          "roles": [
+            "keyboards",
+            "other"
+          ],
+          "band_cosine_overlap": 0.8955220587468455,
+          "coactive_fraction": 0.4046511627906977,
+          "relative_rms_db": -5.585767448823752
+        },
+        {
+          "roles": [
+            "percussion",
+            "synth"
+          ],
+          "band_cosine_overlap": 0.9869835707824679,
+          "coactive_fraction": 0.9223744292237442,
+          "relative_rms_db": 11.429353237704106
+        },
+        {
+          "roles": [
+            "percussion",
+            "other"
+          ],
+          "band_cosine_overlap": 0.9939779522370923,
+          "coactive_fraction": 0.539906103286385,
+          "relative_rms_db": 9.378877168171933
+        },
+        {
+          "roles": [
+            "synth",
+            "other"
+          ],
+          "band_cosine_overlap": 0.966763849971849,
+          "coactive_fraction": 0.4796380090497738,
+          "relative_rms_db": -2.0504760695321735
+        }
+      ],
+      "automatic_audio_edits": false
+    },
+    {
+      "section_id": "m02_section_03",
+      "label": "texture_section_candidate",
+      "start_seconds": 53.6,
+      "end_seconds": 115.1,
+      "role_rms_dbfs": {
+        "lead_vocal": -23.09941061758537,
+        "backing_vocals": -24.182692161329157,
+        "woodwinds": -33.216032090525644,
+        "drums": -18.95551980287451,
+        "bass": -25.34119609175884,
+        "guitar": -51.25272278576703,
+        "keyboards": -50.99782503423317,
+        "percussion": -25.369633321988424,
+        "synth": -37.469003762952575,
+        "other": -42.24043106176594,
+        "brass": -96.15085082901395
+      },
+      "potential_competing_pairs": [
+        {
+          "roles": [
+            "lead_vocal",
+            "backing_vocals"
+          ],
+          "band_cosine_overlap": 0.998429571261373,
+          "coactive_fraction": 0.8666666666666667,
+          "relative_rms_db": 1.0832815437437873
+        },
+        {
+          "roles": [
+            "drums",
+            "bass"
+          ],
+          "band_cosine_overlap": 0.9621914783665899,
+          "coactive_fraction": 0.7762478485370051,
+          "relative_rms_db": 6.38567628888433
+        },
+        {
+          "roles": [
+            "drums",
+            "percussion"
+          ],
+          "band_cosine_overlap": 0.9982112337927658,
+          "coactive_fraction": 0.9509001636661211,
+          "relative_rms_db": 6.414113519113915
+        },
+        {
+          "roles": [
+            "bass",
+            "percussion"
+          ],
+          "band_cosine_overlap": 0.9532934422646098,
+          "coactive_fraction": 0.7381342062193126,
+          "relative_rms_db": 0.028437230229584998
+        },
+        {
+          "roles": [
+            "guitar",
+            "keyboards"
+          ],
+          "band_cosine_overlap": 0.9733711503721724,
+          "coactive_fraction": 0.7170731707317073,
+          "relative_rms_db": -0.2548977515338535
+        },
+        {
+          "roles": [
+            "guitar",
+            "other"
+          ],
+          "band_cosine_overlap": 0.8901918235837294,
+          "coactive_fraction": 0.2889344262295082,
+          "relative_rms_db": -9.012291724001088
+        },
+        {
+          "roles": [
+            "keyboards",
+            "other"
+          ],
+          "band_cosine_overlap": 0.8794291324465163,
+          "coactive_fraction": 0.4031936127744511,
+          "relative_rms_db": -8.757393972467234
+        },
+        {
+          "roles": [
+            "synth",
+            "other"
+          ],
+          "band_cosine_overlap": 0.9002007491248669,
+          "coactive_fraction": 0.44315992292870904,
+          "relative_rms_db": 4.771427298813364
+        }
+      ],
+      "automatic_audio_edits": false
+    },
+    {
+      "section_id": "m02_section_04",
+      "label": "texture_section_candidate",
+      "start_seconds": 115.1,
+      "end_seconds": 134.2,
+      "role_rms_dbfs": {
+        "lead_vocal": -38.10142821237449,
+        "backing_vocals": -38.24629386997283,
+        "woodwinds": -25.574240010430167,
+        "drums": -17.721719755710886,
+        "bass": -29.80470226161743,
+        "guitar": -59.442333225936,
+        "keyboards": -51.92251619385401,
+        "percussion": -23.71063190037959,
+        "synth": -22.450577665209956,
+        "other": -36.95326401056687,
+        "brass": -42.77971515750426
+      },
+      "potential_competing_pairs": [
+        {
+          "roles": [
+            "lead_vocal",
+            "backing_vocals"
+          ],
+          "band_cosine_overlap": 0.9946215176011437,
+          "coactive_fraction": 0.43333333333333335,
+          "relative_rms_db": 0.1448656575983378
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "synth"
+          ],
+          "band_cosine_overlap": 0.9326706344577864,
+          "coactive_fraction": 1.0,
+          "relative_rms_db": -3.123662345220211
+        },
+        {
+          "roles": [
+            "drums",
+            "percussion"
+          ],
+          "band_cosine_overlap": 0.9986217510992467,
+          "coactive_fraction": 0.9947368421052631,
+          "relative_rms_db": 5.988912144668703
+        },
+        {
+          "roles": [
+            "bass",
+            "percussion"
+          ],
+          "band_cosine_overlap": 0.9551964049034162,
+          "coactive_fraction": 0.8148148148148148,
+          "relative_rms_db": -6.09407036123784
+        },
+        {
+          "roles": [
+            "bass",
+            "other"
+          ],
+          "band_cosine_overlap": 0.8327485851731229,
+          "coactive_fraction": 0.45664739884393063,
+          "relative_rms_db": 7.14856174894944
+        },
+        {
+          "roles": [
+            "guitar",
+            "keyboards"
+          ],
+          "band_cosine_overlap": 0.9838911710480942,
+          "coactive_fraction": 0.4631578947368421,
+          "relative_rms_db": -7.519817032081988
+        }
+      ],
+      "automatic_audio_edits": false
+    },
+    {
+      "section_id": "m02_section_05",
+      "label": "texture_section_candidate",
+      "start_seconds": 134.2,
+      "end_seconds": 179.8,
+      "role_rms_dbfs": {
+        "lead_vocal": -24.634969117522346,
+        "backing_vocals": -25.51334531722634,
+        "woodwinds": -69.07199958451105,
+        "drums": -19.919776277869495,
+        "bass": -29.593083896148844,
+        "guitar": -34.18010140880411,
+        "keyboards": -41.4507676312859,
+        "percussion": -24.600539740261027,
+        "synth": -34.61714110570064,
+        "other": -31.30278697168967,
+        "brass": -76.99041894386296
+      },
+      "potential_competing_pairs": [
+        {
+          "roles": [
+            "lead_vocal",
+            "backing_vocals"
+          ],
+          "band_cosine_overlap": 0.9684951791611086,
+          "coactive_fraction": 0.45524296675191817,
+          "relative_rms_db": 0.8783761997039932
+        },
+        {
+          "roles": [
+            "drums",
+            "bass"
+          ],
+          "band_cosine_overlap": 0.9853257331949165,
+          "coactive_fraction": 0.5887850467289719,
+          "relative_rms_db": 9.673307618279349
+        },
+        {
+          "roles": [
+            "drums",
+            "percussion"
+          ],
+          "band_cosine_overlap": 0.9001076291751391,
+          "coactive_fraction": 0.7101769911504425,
+          "relative_rms_db": 4.680763462391532
+        },
+        {
+          "roles": [
+            "drums",
+            "other"
+          ],
+          "band_cosine_overlap": 0.9911327856712489,
+          "coactive_fraction": 0.3944954128440367,
+          "relative_rms_db": 11.383010693820175
+        },
+        {
+          "roles": [
+            "bass",
+            "percussion"
+          ],
+          "band_cosine_overlap": 0.8133624713521725,
+          "coactive_fraction": 0.41814159292035397,
+          "relative_rms_db": -4.992544155887817
+        },
+        {
+          "roles": [
+            "bass",
+            "synth"
+          ],
+          "band_cosine_overlap": 0.881409132460289,
+          "coactive_fraction": 0.4790575916230366,
+          "relative_rms_db": 5.0240572095517955
+        },
+        {
+          "roles": [
+            "guitar",
+            "keyboards"
+          ],
+          "band_cosine_overlap": 0.9802496621145494,
+          "coactive_fraction": 0.8345070422535211,
+          "relative_rms_db": 7.270666222481786
+        },
+        {
+          "roles": [
+            "percussion",
+            "synth"
+          ],
+          "band_cosine_overlap": 0.9527229617849271,
+          "coactive_fraction": 0.8278145695364238,
+          "relative_rms_db": 10.016601365439612
+        },
+        {
+          "roles": [
+            "percussion",
+            "other"
+          ],
+          "band_cosine_overlap": 0.8524552847401572,
+          "coactive_fraction": 0.29867256637168144,
+          "relative_rms_db": 6.702247231428643
+        }
+      ],
+      "automatic_audio_edits": false
+    },
+    {
+      "section_id": "m02_section_06",
+      "label": "texture_section_candidate",
+      "start_seconds": 179.8,
+      "end_seconds": 219.7,
+      "role_rms_dbfs": {
+        "lead_vocal": -42.060854120983954,
+        "backing_vocals": -26.421285787799313,
+        "woodwinds": -27.319976547902705,
+        "drums": -19.453814553684946,
+        "bass": -22.2313472088152,
+        "guitar": -27.244997910392144,
+        "keyboards": -32.51325491649466,
+        "percussion": -24.946606070208684,
+        "synth": -29.469711031423728,
+        "other": -29.12567861887066,
+        "brass": -35.35207929110164
+      },
+      "potential_competing_pairs": [
+        {
+          "roles": [
+            "lead_vocal",
+            "keyboards"
+          ],
+          "band_cosine_overlap": 0.9006815218676547,
+          "coactive_fraction": 0.26409495548961426,
+          "relative_rms_db": -9.547599204489295
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "synth"
+          ],
+          "band_cosine_overlap": 0.9247495745059334,
+          "coactive_fraction": 0.27440633245382584,
+          "relative_rms_db": 3.048425243624415
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "keyboards"
+          ],
+          "band_cosine_overlap": 0.7727471424957012,
+          "coactive_fraction": 0.3133159268929504,
+          "relative_rms_db": 5.193278368591955
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "synth"
+          ],
+          "band_cosine_overlap": 0.9535738303100583,
+          "coactive_fraction": 0.44862155388471175,
+          "relative_rms_db": 2.149734483521023
+        },
+        {
+          "roles": [
+            "drums",
+            "bass"
+          ],
+          "band_cosine_overlap": 0.9800713355071107,
+          "coactive_fraction": 0.6333333333333333,
+          "relative_rms_db": 2.777532655130255
+        },
+        {
+          "roles": [
+            "drums",
+            "percussion"
+          ],
+          "band_cosine_overlap": 0.9732725531230337,
+          "coactive_fraction": 0.9137055837563451,
+          "relative_rms_db": 5.492791516523738
+        },
+        {
+          "roles": [
+            "drums",
+            "other"
+          ],
+          "band_cosine_overlap": 0.9956085423929497,
+          "coactive_fraction": 0.30978260869565216,
+          "relative_rms_db": 9.671864065185712
+        },
+        {
+          "roles": [
+            "bass",
+            "percussion"
+          ],
+          "band_cosine_overlap": 0.9430911604345031,
+          "coactive_fraction": 0.5786802030456852,
+          "relative_rms_db": 2.715258861393483
+        },
+        {
+          "roles": [
+            "bass",
+            "other"
+          ],
+          "band_cosine_overlap": 0.9743316104466546,
+          "coactive_fraction": 0.25448028673835127,
+          "relative_rms_db": 6.894331410055457
+        },
+        {
+          "roles": [
+            "guitar",
+            "percussion"
+          ],
+          "band_cosine_overlap": 0.8249104579748712,
+          "coactive_fraction": 0.7088607594936709,
+          "relative_rms_db": -2.2983918401834593
+        },
+        {
+          "roles": [
+            "guitar",
+            "synth"
+          ],
+          "band_cosine_overlap": 0.8511652160609031,
+          "coactive_fraction": 0.7142857142857143,
+          "relative_rms_db": 2.2247131210315843
+        },
+        {
+          "roles": [
+            "keyboards",
+            "synth"
+          ],
+          "band_cosine_overlap": 0.7799733998276234,
+          "coactive_fraction": 0.7117794486215538,
+          "relative_rms_db": -3.0435438850709318
+        },
+        {
+          "roles": [
+            "percussion",
+            "other"
+          ],
+          "band_cosine_overlap": 0.9835626762867564,
+          "coactive_fraction": 0.30632911392405066,
+          "relative_rms_db": 4.179072548661974
+        },
+        {
+          "roles": [
+            "other",
+            "brass"
+          ],
+          "band_cosine_overlap": 0.990133555479202,
+          "coactive_fraction": 0.36363636363636365,
+          "relative_rms_db": 6.22640067223098
+        }
+      ],
+      "automatic_audio_edits": false
+    },
+    {
+      "section_id": "m02_section_07",
+      "label": "texture_section_candidate",
+      "start_seconds": 219.7,
+      "end_seconds": 233.1,
+      "role_rms_dbfs": {
+        "lead_vocal": -37.52567829051502,
+        "backing_vocals": -81.28070818916947,
+        "woodwinds": -27.80850842277584,
+        "drums": -17.44705291391594,
+        "bass": -24.40287134421141,
+        "guitar": -39.46548605332138,
+        "keyboards": -72.54573003930062,
+        "percussion": -21.912294260626286,
+        "synth": -26.93555741491958,
+        "other": -42.87423265406503,
+        "brass": -62.32391804480065
+      },
+      "potential_competing_pairs": [
+        {
+          "roles": [
+            "drums",
+            "bass"
+          ],
+          "band_cosine_overlap": 0.9908795382998853,
+          "coactive_fraction": 0.7549019607843137,
+          "relative_rms_db": 6.955818430295469
+        },
+        {
+          "roles": [
+            "drums",
+            "percussion"
+          ],
+          "band_cosine_overlap": 0.9637294246958635,
+          "coactive_fraction": 1.0,
+          "relative_rms_db": 4.4652413467103464
+        },
+        {
+          "roles": [
+            "drums",
+            "synth"
+          ],
+          "band_cosine_overlap": 0.9969353111526481,
+          "coactive_fraction": 0.7196969696969697,
+          "relative_rms_db": 9.48850450100364
+        },
+        {
+          "roles": [
+            "bass",
+            "percussion"
+          ],
+          "band_cosine_overlap": 0.9196107675291384,
+          "coactive_fraction": 0.7549019607843137,
+          "relative_rms_db": -2.490577083585123
+        },
+        {
+          "roles": [
+            "bass",
+            "synth"
+          ],
+          "band_cosine_overlap": 0.9798595854411488,
+          "coactive_fraction": 0.6030534351145038,
+          "relative_rms_db": 2.53268607070817
+        },
+        {
+          "roles": [
+            "percussion",
+            "synth"
+          ],
+          "band_cosine_overlap": 0.9770622098123201,
+          "coactive_fraction": 0.7196969696969697,
+          "relative_rms_db": 5.023263154293293
+        }
+      ],
+      "automatic_audio_edits": false
+    },
+    {
+      "section_id": "m02_section_08",
+      "label": "texture_section_candidate",
+      "start_seconds": 233.1,
+      "end_seconds": 242.0,
+      "role_rms_dbfs": {
+        "lead_vocal": -22.817142500193984,
+        "backing_vocals": -58.382554625709986,
+        "woodwinds": -31.54054446027154,
+        "drums": -23.00641481893051,
+        "bass": -17.783802508875194,
+        "guitar": -74.0576399730431,
+        "keyboards": -72.21406400313697,
+        "percussion": -25.176610087825612,
+        "synth": -53.54533020317234,
+        "other": -42.394637971644045,
+        "brass": -95.78467668845802
+      },
+      "potential_competing_pairs": [
+        {
+          "roles": [
+            "lead_vocal",
+            "woodwinds"
+          ],
+          "band_cosine_overlap": 0.9999976048931126,
+          "coactive_fraction": 0.8767123287671232,
+          "relative_rms_db": 8.723401960077556
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "synth"
+          ],
+          "band_cosine_overlap": 0.9248337432494974,
+          "coactive_fraction": 0.6164383561643836,
+          "relative_rms_db": -4.837224422537645
+        },
+        {
+          "roles": [
+            "drums",
+            "percussion"
+          ],
+          "band_cosine_overlap": 0.9993340599361336,
+          "coactive_fraction": 1.0,
+          "relative_rms_db": 2.170195268895103
+        }
+      ],
+      "automatic_audio_edits": false
+    },
+    {
+      "section_id": "m02_section_09",
+      "label": "outro_candidate",
+      "start_seconds": 242.0,
+      "end_seconds": 247.60002083333333,
+      "role_rms_dbfs": {
+        "lead_vocal": -30.176120742162542,
+        "backing_vocals": -76.13321954845236,
+        "woodwinds": -32.72038273647609,
+        "drums": -32.508092996896465,
+        "bass": -12.974017938008632,
+        "guitar": -76.0643856791432,
+        "keyboards": -54.81166419667056,
+        "percussion": -35.68988591750478,
+        "synth": -35.4636094371657,
+        "other": -59.67910687880309,
+        "brass": -65.44764969992345
+      },
+      "potential_competing_pairs": [
+        {
+          "roles": [
+            "lead_vocal",
+            "woodwinds"
+          ],
+          "band_cosine_overlap": 0.9999633259188703,
+          "coactive_fraction": 0.7692307692307693,
+          "relative_rms_db": 2.5442619943135476
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "synth"
+          ],
+          "band_cosine_overlap": 0.9997102497412318,
+          "coactive_fraction": 0.5263157894736842,
+          "relative_rms_db": 5.287488695003159
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "brass"
+          ],
+          "band_cosine_overlap": 0.8480261470021518,
+          "coactive_fraction": 1.0,
+          "relative_rms_db": -10.685569848528914
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "synth"
+          ],
+          "band_cosine_overlap": 0.9998729672435732,
+          "coactive_fraction": 0.6842105263157895,
+          "relative_rms_db": 2.743226700689611
+        },
+        {
+          "roles": [
+            "drums",
+            "percussion"
+          ],
+          "band_cosine_overlap": 0.999933335332481,
+          "coactive_fraction": 0.7777777777777778,
+          "relative_rms_db": 3.1817929206083164
+        },
+        {
+          "roles": [
+            "keyboards",
+            "other"
+          ],
+          "band_cosine_overlap": 0.8470339306438011,
+          "coactive_fraction": 0.2857142857142857,
+          "relative_rms_db": 4.867442682132527
+        }
+      ],
+      "automatic_audio_edits": false
+    }
+  ],
+  "full_song_section_method": "Inherited tentative T001 section map; same STFT bands plus 100ms coactivity; report pairs only when overlap >.75, coactive union fraction >.25 and RMS difference <12dB. Activity floor -70dBFS. No full-song audio processed or exported."
+}

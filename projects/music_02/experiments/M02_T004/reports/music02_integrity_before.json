@@ -1,0 +1,1142 @@
+{
+  "analysis\\brass_analysis.json": {
+    "size": 31349,
+    "mtime_ns": 1791778078542249400,
+    "sha256": "9ff64a7d28f224e3fc7c156a78f9c579e21ac784d05fbc7a523fd679d890d136"
+  },
+  "analysis\\gain_staging.json": {
+    "size": 485,
+    "mtime_ns": 1791777178323789000,
+    "sha256": "6bf0b9698516cc90d751375554bda935788883784536867cb16ff55b0eef72e3"
+  },
+  "analysis\\musical_map.json": {
+    "size": 792999,
+    "mtime_ns": 1791778078538223900,
+    "sha256": "1b3ebcb279d8150bd70da9a31531c737f7923d0da7b7b5a11b1958bd9dcf503a"
+  },
+  "analysis\\other_content_analysis.json": {
+    "size": 637,
+    "mtime_ns": 1791777178940023200,
+    "sha256": "defc33bb086e5374acac57937fde9be46067881111e7bb5f830f61c8011abb66"
+  },
+  "analysis\\stem_import_manifest.json": {
+    "size": 66588,
+    "mtime_ns": 1791777162981055700,
+    "sha256": "46e78c8b29feb6327d2a2448908a17923da4bf40c55510f2577faffe505b686b"
+  },
+  "experiments\\M02_T002\\README.md": {
+    "size": 12211,
+    "mtime_ns": 1791781346310766100,
+    "sha256": "a584b120dcb750d78e0bf0fecbc8cf743754077708c619a4aeeccce6da93ae83"
+  },
+  "experiments\\M02_T002\\renders\\audition_backing_vocals_proximity\\M02_T002_baseline_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780788883641600,
+    "sha256": "98f50737773d5dc13fc7a9aca8f3b064580298181cc4bf3b92234fb37cdd381c"
+  },
+  "experiments\\M02_T002\\renders\\audition_backing_vocals_proximity\\M02_T002_baseline_200_230_level_matched_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780790168177300,
+    "sha256": "f42460bc7f696637ae4a7ec4eff63f476bc024dd65bce6bbf130a88e9d4e1e43"
+  },
+  "experiments\\M02_T002\\renders\\audition_backing_vocals_proximity\\M02_T002_proximity_candidate_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780789497787200,
+    "sha256": "ef29d7641a580bbe6c84cbea8a725b0deef896e270abddb2f82319afe1ed22a2"
+  },
+  "experiments\\M02_T002\\renders\\audition_backing_vocals_proximity\\M02_T002_proximity_candidate_200_230_level_matched_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780790868194500,
+    "sha256": "ef29d7641a580bbe6c84cbea8a725b0deef896e270abddb2f82319afe1ed22a2"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_backing_vocals\\M02_T002_backing_vocals_0.35m_205.4_213.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780779174371600,
+    "sha256": "111356767ca3f48031062b642121736359d7f7b22fcbe9fdea54c244dd68f6a2"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_backing_vocals\\M02_T002_backing_vocals_0.35m_205.4_213.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780780967500600,
+    "sha256": "40d5053e86d46ccbd0fc8dd58e5ee5fb58dc78ee6bc159a935e7bf1adcf122e3"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_backing_vocals\\M02_T002_backing_vocals_0.50m_205.4_213.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780779418909700,
+    "sha256": "32b5dcd228f8ea7ac050c052eb910256c08796505c17377949d977378858f7e7"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_backing_vocals\\M02_T002_backing_vocals_0.50m_205.4_213.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780781216424000,
+    "sha256": "f880ba137337760c58a096e05a60a9b40b3bf855328d8c15a0948949dc34e666"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_backing_vocals\\M02_T002_backing_vocals_0.75m_205.4_213.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780779673668700,
+    "sha256": "4df69c82fb247245c546eef9faf3c2ee59d0236583a779516346aa0ac869361e"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_backing_vocals\\M02_T002_backing_vocals_0.75m_205.4_213.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780781498448600,
+    "sha256": "f3435f1b4191e459084ad26ae911d048a3256ddad1316d46318e58fa55b78a83"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_backing_vocals\\M02_T002_backing_vocals_1.00m_205.4_213.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780779908687200,
+    "sha256": "20cea8d9a84558c9a66b4c815a579672487a87267204a54c4412a13bbbb9eefe"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_backing_vocals\\M02_T002_backing_vocals_1.00m_205.4_213.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780781785575700,
+    "sha256": "7c3ff6d4d871b19103094925bf6001c724f1b5044f114147056ad5fa7fbc0a5a"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_backing_vocals\\M02_T002_backing_vocals_1.50m_205.4_213.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780780167064800,
+    "sha256": "8bd144f1b23f6cc1ecec157b167ec467d7cc5da22e2cf8d131dc13b862e9f4c0"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_backing_vocals\\M02_T002_backing_vocals_1.50m_205.4_213.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780782062570700,
+    "sha256": "637b61605e57458f397e3d701610349c5ebc3a4afce94c733c276813240a6e37"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_backing_vocals\\M02_T002_backing_vocals_2.00m_205.4_213.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780780433260500,
+    "sha256": "97458286341bdd2318d3d17524794db427ee894d37ba02a8d25fc56fe89e9915"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_backing_vocals\\M02_T002_backing_vocals_2.00m_205.4_213.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780782362814500,
+    "sha256": "58f0aa14ee4578056a2217811afac757cd32b2f4f2cc72a1fa2d21453235b7be"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_backing_vocals\\M02_T002_backing_vocals_3.00m_205.4_213.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780780686373300,
+    "sha256": "7d6301f28304776d3fae128d347d8993115ca2df1b26019717efaa763a3dae76"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_backing_vocals\\M02_T002_backing_vocals_3.00m_205.4_213.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780782668852500,
+    "sha256": "7d6301f28304776d3fae128d347d8993115ca2df1b26019717efaa763a3dae76"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_woodwinds\\M02_T002_woodwinds_0.35m_218.4_226.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780775475245000,
+    "sha256": "ae90d6c8831d0730102cf46daa64392421caa49a4b1fd3e643d9d519a4d20a8e"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_woodwinds\\M02_T002_woodwinds_0.35m_218.4_226.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780777351088600,
+    "sha256": "b2a4146e2e277c342b0bdaf3197c9c345467b2d230410da500dd63df4fb5afd4"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_woodwinds\\M02_T002_woodwinds_0.50m_218.4_226.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780775745307300,
+    "sha256": "920302001d938248284144c20978d2916b20c4cbe52e10eecfeeaf517df36b9c"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_woodwinds\\M02_T002_woodwinds_0.50m_218.4_226.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780777588837500,
+    "sha256": "f4bac7951257bc288ef650368af1ef098e17350e5314c28695058bd66decfca5"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_woodwinds\\M02_T002_woodwinds_0.75m_218.4_226.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780776017327300,
+    "sha256": "5f0558a5178bd54cc9dc57f3fe978e8d4fe5141ad6f59249c1cf43420e3d3943"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_woodwinds\\M02_T002_woodwinds_0.75m_218.4_226.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780777837374900,
+    "sha256": "73c950063032a86cd41af35971c8617f6fa428411a29a7ffa80c5259f94914c4"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_woodwinds\\M02_T002_woodwinds_1.00m_218.4_226.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780776272184100,
+    "sha256": "cbca7efcd55414c46693ef9db391b886d5b1210669c380ac77dd7816a015f00a"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_woodwinds\\M02_T002_woodwinds_1.00m_218.4_226.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780778076928200,
+    "sha256": "5bd597738a09d0846ec52cc35bb4369d546144f2e4a039d70777f9c60f62291d"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_woodwinds\\M02_T002_woodwinds_1.50m_218.4_226.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780776541647700,
+    "sha256": "0574373605c6a3f789c3747680b43e5225bc54fbd0752210fbce2f7be72793d8"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_woodwinds\\M02_T002_woodwinds_1.50m_218.4_226.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780778315832100,
+    "sha256": "ef98ea77cfa583216b6a28720bcdfd58dc0163f6326521f3eeba2b86c259e85c"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_woodwinds\\M02_T002_woodwinds_2.00m_218.4_226.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780776827273800,
+    "sha256": "17bcd4922739b38f122ad02b469952db5aee88b59abfe1bc518c7637a66eb253"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_woodwinds\\M02_T002_woodwinds_2.00m_218.4_226.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780778554067500,
+    "sha256": "2fdf2b1da854b8a23b517c4c65a299776aaa6b743b229dd15f4ceb2ff4e89b6a"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_woodwinds\\M02_T002_woodwinds_3.00m_218.4_226.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780777069928700,
+    "sha256": "4af03cbc9e77071c7691a03ef91d923b83150ba0a39936b3ea9e818081e0b840"
+  },
+  "experiments\\M02_T002\\renders\\audition_distance_woodwinds\\M02_T002_woodwinds_3.00m_218.4_226.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780778798777900,
+    "sha256": "4af03cbc9e77071c7691a03ef91d923b83150ba0a39936b3ea9e818081e0b840"
+  },
+  "experiments\\M02_T002\\renders\\audition_lead_diagnostics\\M02_T002_A_stereo_203.8_215.8_24bit.wav": {
+    "size": 3456044,
+    "mtime_ns": 1791780773114411000,
+    "sha256": "ea9b0f8efbffd791d81a03b53858100baf93b6c7d043c5271c2cd2bc356be9a0"
+  },
+  "experiments\\M02_T002\\renders\\audition_lead_diagnostics\\M02_T002_A_stereo_203.8_215.8_level_matched_24bit.wav": {
+    "size": 3456044,
+    "mtime_ns": 1791780774250136800,
+    "sha256": "bc2a6b8347b7546118b9c9c9e7f10116b6ab0d7d231c9d7f3d00f9123df95938"
+  },
+  "experiments\\M02_T002\\renders\\audition_lead_diagnostics\\M02_T002_B_compact_side50_203.8_215.8_24bit.wav": {
+    "size": 3456044,
+    "mtime_ns": 1791780773468895100,
+    "sha256": "ae9bf5a068923ad3e532e4748060d31ed8bc2fa6b01f9ce6910c0de0c56d0824"
+  },
+  "experiments\\M02_T002\\renders\\audition_lead_diagnostics\\M02_T002_B_compact_side50_203.8_215.8_level_matched_24bit.wav": {
+    "size": 3456044,
+    "mtime_ns": 1791780774611277800,
+    "sha256": "99a744350ca09c8592a77b38c6d992b938bceb8b105c71915842d6be087e8cbe"
+  },
+  "experiments\\M02_T002\\renders\\audition_lead_diagnostics\\M02_T002_C_dual_mono_diagnostic_203.8_215.8_24bit.wav": {
+    "size": 3456044,
+    "mtime_ns": 1791780773867535200,
+    "sha256": "72c89c3aa4a6ae48ebfe138e52071575876e97f697b62081d53ad951cb294469"
+  },
+  "experiments\\M02_T002\\renders\\audition_lead_diagnostics\\M02_T002_C_dual_mono_diagnostic_203.8_215.8_level_matched_24bit.wav": {
+    "size": 3456044,
+    "mtime_ns": 1791780774936013900,
+    "sha256": "72c89c3aa4a6ae48ebfe138e52071575876e97f697b62081d53ad951cb294469"
+  },
+  "experiments\\M02_T002\\renders\\audition_lead_full_preview\\M02_T002_baseline_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780783139927300,
+    "sha256": "87bd850477bd65e5b2d97ca48c1af830f4f87ce9247087797b9cc2afaa70ab36"
+  },
+  "experiments\\M02_T002\\renders\\audition_lead_full_preview\\M02_T002_baseline_200_230_level_matched_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780784455195300,
+    "sha256": "462abfc2a2cc468c3bf6d21afaabe3427209f101b046c7ac566aac93bb14c983"
+  },
+  "experiments\\M02_T002\\renders\\audition_lead_full_preview\\M02_T002_compact_candidate_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780783834946000,
+    "sha256": "1372aa2545a1bc2cae4e772ccdd67bc58515f6450159a5759895028d3c5cbd86"
+  },
+  "experiments\\M02_T002\\renders\\audition_lead_full_preview\\M02_T002_compact_candidate_200_230_level_matched_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780785036325600,
+    "sha256": "1372aa2545a1bc2cae4e772ccdd67bc58515f6450159a5759895028d3c5cbd86"
+  },
+  "experiments\\M02_T002\\renders\\audition_main_energy_controlled\\M02_T002_T001_baseline_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780795007705600,
+    "sha256": "cab3a24c2e8eebd7a87a6f4be89c25ea48564959d9e657859ca8c15a842a73da"
+  },
+  "experiments\\M02_T002\\renders\\audition_main_energy_controlled\\M02_T002_T001_baseline_200_230_level_matched_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780796932804600,
+    "sha256": "cab3a24c2e8eebd7a87a6f4be89c25ea48564959d9e657859ca8c15a842a73da"
+  },
+  "experiments\\M02_T002\\renders\\audition_main_energy_controlled\\M02_T002_T002_proximity_compact_lead_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780795694818900,
+    "sha256": "ce9b09ad02d5432a135d05b647fa6fdfad929e7389d4789e2e2049635c6bd850"
+  },
+  "experiments\\M02_T002\\renders\\audition_main_energy_controlled\\M02_T002_T002_proximity_compact_lead_200_230_level_matched_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780797498654900,
+    "sha256": "c757500cf50dd649874f39fc0d7cb9b7fb275405886f9bc42c94e73cc02a52b8"
+  },
+  "experiments\\M02_T002\\renders\\audition_main_energy_controlled\\M02_T002_T002_proximity_original_lead_control_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780796367345500,
+    "sha256": "218528f3854ea28277a9c051e07b198f9db26df1f5eafeca5241b6ce9a9e082c"
+  },
+  "experiments\\M02_T002\\renders\\audition_main_energy_controlled\\M02_T002_T002_proximity_original_lead_control_200_230_level_matched_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780798050252800,
+    "sha256": "ca0da2f2b08270da909239e7deb6645420e061c65d5531f58c35329cc667d318"
+  },
+  "experiments\\M02_T002\\renders\\audition_percussion_orbit\\M02_T002_compact_orbit_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780791654929800,
+    "sha256": "61e10e42a5b76687a4148aa6d49fcb3c77abc1851aca3b1f493b08754d41fd9d"
+  },
+  "experiments\\M02_T002\\renders\\audition_percussion_orbit\\M02_T002_compact_orbit_200_230_level_matched_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780792920039100,
+    "sha256": "41fe974c11979213fece661fea7b03b944ea26a3939c48460240c9b9037d3cbc"
+  },
+  "experiments\\M02_T002\\renders\\audition_percussion_orbit\\M02_T002_original_orbit_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780792251547100,
+    "sha256": "26088ef60aea5e899517b31ad502988f3c46697fbadff24cd619bddd6c47f2f4"
+  },
+  "experiments\\M02_T002\\renders\\audition_percussion_orbit\\M02_T002_original_orbit_200_230_level_matched_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780793557914300,
+    "sha256": "26088ef60aea5e899517b31ad502988f3c46697fbadff24cd619bddd6c47f2f4"
+  },
+  "experiments\\M02_T002\\renders\\audition_woodwinds_proximity\\M02_T002_baseline_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780785765612200,
+    "sha256": "62fe5e68ca11801ad63fb71e049075adc15555ed8b7d2758b16e057d996fa03b"
+  },
+  "experiments\\M02_T002\\renders\\audition_woodwinds_proximity\\M02_T002_baseline_200_230_level_matched_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780787263415200,
+    "sha256": "62fe5e68ca11801ad63fb71e049075adc15555ed8b7d2758b16e057d996fa03b"
+  },
+  "experiments\\M02_T002\\renders\\audition_woodwinds_proximity\\M02_T002_proximity_candidate_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780786507794800,
+    "sha256": "db5ac116c712fe716b1d155f38a6e770c72ad361a8fe2a04eb33589880e171df"
+  },
+  "experiments\\M02_T002\\renders\\audition_woodwinds_proximity\\M02_T002_proximity_candidate_200_230_level_matched_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780788032819100,
+    "sha256": "db5ac116c712fe716b1d155f38a6e770c72ad361a8fe2a04eb33589880e171df"
+  },
+  "experiments\\M02_T002\\renders\\backing_vocals_proximity\\M02_T002_baseline_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780383384054400,
+    "sha256": "79bf369fce1b3da57179fffd89fb6752627cfaffbd745ba667929975f54e51c3"
+  },
+  "experiments\\M02_T002\\renders\\backing_vocals_proximity\\M02_T002_baseline_200_230_level_matched_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780385619221000,
+    "sha256": "da3dc3551fee44bd25e3af3cae8f3df3b706117c94678e47817064fd841e4555"
+  },
+  "experiments\\M02_T002\\renders\\backing_vocals_proximity\\M02_T002_proximity_candidate_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780384443653400,
+    "sha256": "34d9c6c092b583f3cc6dbd3ad73ac9dae3baf954ca4ee3c0c2f1042acf31eb1e"
+  },
+  "experiments\\M02_T002\\renders\\backing_vocals_proximity\\M02_T002_proximity_candidate_200_230_level_matched_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780386808789000,
+    "sha256": "34d9c6c092b583f3cc6dbd3ad73ac9dae3baf954ca4ee3c0c2f1042acf31eb1e"
+  },
+  "experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_0.35m_205.4_213.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780300599624400,
+    "sha256": "c31f1cfb36f75d612dca6d44a91fedef19a4c6208e24380a86686dbc42c0372b"
+  },
+  "experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_0.35m_205.4_213.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780303859530200,
+    "sha256": "f7c8e001256a9266ca2177f550f323a7357446e61940739cf13f6382bea9316e"
+  },
+  "experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_0.50m_205.4_213.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780301092116700,
+    "sha256": "7ae6a583377b0d2ace61dbc1f612b49a213cabad267104faedf7e4ecf8cc312c"
+  },
+  "experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_0.50m_205.4_213.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780304397346000,
+    "sha256": "6de7938475b57da9320c5bfdabdbad591e0ff4d36590de9b8b3d2a8a6313d252"
+  },
+  "experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_0.75m_205.4_213.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780301561749700,
+    "sha256": "9f9d51f6b73d4259b7863b0dab2e6f23f2f69c1703dd11c8f5f617f2919044fe"
+  },
+  "experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_0.75m_205.4_213.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780304884834200,
+    "sha256": "01eb6f61b45bda1aa337860ff42cc88e1841cac47656429ea76a3a9a7723b240"
+  },
+  "experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_1.00m_205.4_213.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780302110211700,
+    "sha256": "ec83170ad79e55f40fc094980129ed2a17d8fad7c6191aa23507e497b05105c1"
+  },
+  "experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_1.00m_205.4_213.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780305332848300,
+    "sha256": "9f747f2a401d6de4948a6d76dc206faceede1d28c5fc2c2762201150ce44fb01"
+  },
+  "experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_1.50m_205.4_213.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780302526378600,
+    "sha256": "4691f65e1de5400f290b62492fa1a410f6aefc7fe2cc071fcc37f8466c9b93a4"
+  },
+  "experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_1.50m_205.4_213.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780305856876800,
+    "sha256": "314beea9890afbf462276e109a995bdb4412bbca96eb161311786cd3eeee9ada"
+  },
+  "experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_2.00m_205.4_213.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780302968798400,
+    "sha256": "a92bb53e9de59c197c6cd6155c4cc4d712cb76299314451d1d2c9ead017cb22e"
+  },
+  "experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_2.00m_205.4_213.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780306312614500,
+    "sha256": "f2aaffa78595d1e9fe567739c12ed077e341ae1b586c9674af706f60bf98a61e"
+  },
+  "experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_3.00m_205.4_213.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780303416563000,
+    "sha256": "3c3db6eb90366be521c964bbecd5972f066f44bc6510b23c85b1000b88502046"
+  },
+  "experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_3.00m_205.4_213.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780306826462100,
+    "sha256": "3c3db6eb90366be521c964bbecd5972f066f44bc6510b23c85b1000b88502046"
+  },
+  "experiments\\M02_T002\\renders\\distance_woodwinds\\M02_T002_woodwinds_0.35m_218.4_226.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780258466485900,
+    "sha256": "0e6094f309748b54d10dfbece8a18daa6aca667cb061dc443804fc4f6e237efa"
+  },
+  "experiments\\M02_T002\\renders\\distance_woodwinds\\M02_T002_woodwinds_0.35m_218.4_226.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780260152517900,
+    "sha256": "e9c265fcc30507bc504b1669fbb550170ecff26f20c2cc4d60a9872a822f90e4"
+  },
+  "experiments\\M02_T002\\renders\\distance_woodwinds\\M02_T002_woodwinds_0.50m_218.4_226.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780258701730400,
+    "sha256": "e7708681fdd8ecb863b7ccb5e8f28ca9fe83e9768ac8a400daa1ff2d47b7d989"
+  },
+  "experiments\\M02_T002\\renders\\distance_woodwinds\\M02_T002_woodwinds_0.50m_218.4_226.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780260378730400,
+    "sha256": "32f35e03ff680b981ad1795b08d9011e34f1a76afb7fa70ffeb2f4ce666a8946"
+  },
+  "experiments\\M02_T002\\renders\\distance_woodwinds\\M02_T002_woodwinds_0.75m_218.4_226.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780258928968000,
+    "sha256": "8317c1ae83fda521ffeebcf8bd8de4d181020e9766cf1ab99f219103abd0c3dc"
+  },
+  "experiments\\M02_T002\\renders\\distance_woodwinds\\M02_T002_woodwinds_0.75m_218.4_226.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780260609487100,
+    "sha256": "aac1b25ed590bb52cc8d9da01255a19759b3ad3536d51e5e2dea69e45c7ca524"
+  },
+  "experiments\\M02_T002\\renders\\distance_woodwinds\\M02_T002_woodwinds_1.00m_218.4_226.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780259176169500,
+    "sha256": "063fd8194b97f342af77abd55cc7334e2336445b526090b674d514ef6130767a"
+  },
+  "experiments\\M02_T002\\renders\\distance_woodwinds\\M02_T002_woodwinds_1.00m_218.4_226.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780260849351900,
+    "sha256": "8f7dcce0da8c060c601a40c009a84506ca0476b6c29231b8f55e5ad2f872e0d0"
+  },
+  "experiments\\M02_T002\\renders\\distance_woodwinds\\M02_T002_woodwinds_1.50m_218.4_226.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780259399791700,
+    "sha256": "19c22814be4aca4a9c81c6a5953186aa759342ccba1b3245fc44bf37cc3646d2"
+  },
+  "experiments\\M02_T002\\renders\\distance_woodwinds\\M02_T002_woodwinds_1.50m_218.4_226.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780261112727800,
+    "sha256": "53b2c4eefa0e879fbf7e71bcccdebe142d7751da8d5c4aa2bc0c434e01cfa20a"
+  },
+  "experiments\\M02_T002\\renders\\distance_woodwinds\\M02_T002_woodwinds_2.00m_218.4_226.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780259663402000,
+    "sha256": "86953569a1810cf651e915001786d475a469c48165585b100bebdda01acdc523"
+  },
+  "experiments\\M02_T002\\renders\\distance_woodwinds\\M02_T002_woodwinds_2.00m_218.4_226.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780261343585300,
+    "sha256": "e0d97a27c25b75489ac3578d1873c48bc542a25545898626f46119296d47619d"
+  },
+  "experiments\\M02_T002\\renders\\distance_woodwinds\\M02_T002_woodwinds_3.00m_218.4_226.4_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780259908991600,
+    "sha256": "2363c16fec10afccc64b4a25a3ae9042d97b92b876a8dedf5c87111689f31808"
+  },
+  "experiments\\M02_T002\\renders\\distance_woodwinds\\M02_T002_woodwinds_3.00m_218.4_226.4_level_matched_24bit.wav": {
+    "size": 2304044,
+    "mtime_ns": 1791780261578317800,
+    "sha256": "2363c16fec10afccc64b4a25a3ae9042d97b92b876a8dedf5c87111689f31808"
+  },
+  "experiments\\M02_T002\\renders\\lead_diagnostics\\M02_T002_A_stereo_203.8_215.8_24bit.wav": {
+    "size": 3456044,
+    "mtime_ns": 1791780241338296900,
+    "sha256": "322d2bcc9c570b3a2c2c539bbe1c3eff18625e3c161768e09ac28fe3ca3c84aa"
+  },
+  "experiments\\M02_T002\\renders\\lead_diagnostics\\M02_T002_A_stereo_203.8_215.8_level_matched_24bit.wav": {
+    "size": 3456044,
+    "mtime_ns": 1791780243412900600,
+    "sha256": "bd417e99fb314e35ec622f695230f5fcea1fe339c79d9656f09e582917a1ec2b"
+  },
+  "experiments\\M02_T002\\renders\\lead_diagnostics\\M02_T002_B_compact_side50_203.8_215.8_24bit.wav": {
+    "size": 3456044,
+    "mtime_ns": 1791780242800708800,
+    "sha256": "c550eb15287fdd70988e0c2a60fa06e40e5dfa78a25974e228842bccaa512c1f"
+  },
+  "experiments\\M02_T002\\renders\\lead_diagnostics\\M02_T002_B_compact_side50_203.8_215.8_level_matched_24bit.wav": {
+    "size": 3456044,
+    "mtime_ns": 1791780243702525700,
+    "sha256": "9df38ba476e51e73eba8ef08190791f09401764ac7526442fb1286a0dce5ab09"
+  },
+  "experiments\\M02_T002\\renders\\lead_diagnostics\\M02_T002_C_dual_mono_diagnostic_203.8_215.8_24bit.wav": {
+    "size": 3456044,
+    "mtime_ns": 1791780243077942600,
+    "sha256": "b6e76cd3a42071b3d67aceadd2c6d07ca5eaae44fbac4a09a4e210b3860dcc9f"
+  },
+  "experiments\\M02_T002\\renders\\lead_diagnostics\\M02_T002_C_dual_mono_diagnostic_203.8_215.8_level_matched_24bit.wav": {
+    "size": 3456044,
+    "mtime_ns": 1791780244007752500,
+    "sha256": "b6e76cd3a42071b3d67aceadd2c6d07ca5eaae44fbac4a09a4e210b3860dcc9f"
+  },
+  "experiments\\M02_T002\\renders\\lead_full_preview\\M02_T002_baseline_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780341169315800,
+    "sha256": "979dff3281b6b747076a152a53ea4e8858b6ab3c896e202ebc04782fdccdd05c"
+  },
+  "experiments\\M02_T002\\renders\\lead_full_preview\\M02_T002_baseline_200_230_level_matched_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780343873226500,
+    "sha256": "12a5deb489db437b2bff8f801450abfcdb4515ee322be1657f0aab325cf96742"
+  },
+  "experiments\\M02_T002\\renders\\lead_full_preview\\M02_T002_compact_candidate_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780342470981700,
+    "sha256": "2d96aa52f10874743be9b657895f549deb2e33dcd46fb24ed50120d4cfe413b3"
+  },
+  "experiments\\M02_T002\\renders\\lead_full_preview\\M02_T002_compact_candidate_200_230_level_matched_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780345350419000,
+    "sha256": "2d96aa52f10874743be9b657895f549deb2e33dcd46fb24ed50120d4cfe413b3"
+  },
+  "experiments\\M02_T002\\renders\\lead_inputs\\M02_T002_A_stereo_pre_dearVR_24bit.wav": {
+    "size": 3456044,
+    "mtime_ns": 1791780236792230000,
+    "sha256": "9f74fd45618ce4594cda9a525d5146b2832410bb4d847c8335cca8cfc404a6d3"
+  },
+  "experiments\\M02_T002\\renders\\lead_inputs\\M02_T002_B_compact_side50_pre_dearVR_24bit.wav": {
+    "size": 3456044,
+    "mtime_ns": 1791780239015568500,
+    "sha256": "6fde9ba340e740b2066a4080f5f45fe9c8fc0b02e05252d8bdb5954649f07c05"
+  },
+  "experiments\\M02_T002\\renders\\lead_inputs\\M02_T002_C_dual_mono_diagnostic_pre_dearVR_24bit.wav": {
+    "size": 3456044,
+    "mtime_ns": 1791780241306136800,
+    "sha256": "f1e755817bc5002e6480bbab7e11af74a3a321c8be11a2190defa6a3586a9218"
+  },
+  "experiments\\M02_T002\\renders\\main_comparison\\M02_T002_T001_baseline_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780409388774300,
+    "sha256": "714e9309ad61168b3df8c4f382a7dc8eeece97a488552360f2d5cd62001647fb"
+  },
+  "experiments\\M02_T002\\renders\\main_comparison\\M02_T002_T001_baseline_200_230_level_matched_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780412568409800,
+    "sha256": "80fe5ffd12e2803508d396e71956d5f82b8727d9637dfdc9650859b5d5ffa811"
+  },
+  "experiments\\M02_T002\\renders\\main_comparison\\M02_T002_T002_proximity_compact_lead_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780410485448200,
+    "sha256": "8fb1c05a00f42011babc57d340299a8c6c99c2add9acfb2b6d49bd3e4cf7cc95"
+  },
+  "experiments\\M02_T002\\renders\\main_comparison\\M02_T002_T002_proximity_compact_lead_200_230_level_matched_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780413605610200,
+    "sha256": "8fb1c05a00f42011babc57d340299a8c6c99c2add9acfb2b6d49bd3e4cf7cc95"
+  },
+  "experiments\\M02_T002\\renders\\main_comparison\\M02_T002_T002_proximity_original_lead_control_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780411516494000,
+    "sha256": "b69dde4650163558652af03739181741014c9e609cbb6e9195d9384690242fa6"
+  },
+  "experiments\\M02_T002\\renders\\main_comparison\\M02_T002_T002_proximity_original_lead_control_200_230_level_matched_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780414707516000,
+    "sha256": "b69dde4650163558652af03739181741014c9e609cbb6e9195d9384690242fa6"
+  },
+  "experiments\\M02_T002\\renders\\percussion_orbit\\M02_T002_compact_orbit_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780404590531500,
+    "sha256": "06f0fd6a3b079c5b8ed3475eef6c9d45479f1a1ce018f3ce6d2ace18c9740d29"
+  },
+  "experiments\\M02_T002\\renders\\percussion_orbit\\M02_T002_compact_orbit_200_230_level_matched_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780406858762200,
+    "sha256": "06f0fd6a3b079c5b8ed3475eef6c9d45479f1a1ce018f3ce6d2ace18c9740d29"
+  },
+  "experiments\\M02_T002\\renders\\percussion_orbit\\M02_T002_original_orbit_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780403552586500,
+    "sha256": "b3c194ec62657941c956a00e01dca7358beabf9d39be91324eb4510ce928853f"
+  },
+  "experiments\\M02_T002\\renders\\percussion_orbit\\M02_T002_original_orbit_200_230_level_matched_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780405744487800,
+    "sha256": "b3c194ec62657941c956a00e01dca7358beabf9d39be91324eb4510ce928853f"
+  },
+  "experiments\\M02_T002\\renders\\woodwinds_proximity\\M02_T002_baseline_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780361783346000,
+    "sha256": "8dc3cc774742ad6c3da6b8f7a773b4889eae671c7435f3889e0abb5a92130738"
+  },
+  "experiments\\M02_T002\\renders\\woodwinds_proximity\\M02_T002_baseline_200_230_level_matched_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780364357633500,
+    "sha256": "8dc3cc774742ad6c3da6b8f7a773b4889eae671c7435f3889e0abb5a92130738"
+  },
+  "experiments\\M02_T002\\renders\\woodwinds_proximity\\M02_T002_proximity_candidate_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780363098681700,
+    "sha256": "d055955708f3da9be34e7ab31335391153687eb53859185d57c2d7655bcbe9cd"
+  },
+  "experiments\\M02_T002\\renders\\woodwinds_proximity\\M02_T002_proximity_candidate_200_230_level_matched_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780365601570700,
+    "sha256": "d055955708f3da9be34e7ab31335391153687eb53859185d57c2d7655bcbe9cd"
+  },
+  "experiments\\M02_T002\\reports\\distance_backing_vocals.json": {
+    "size": 46086,
+    "mtime_ns": 1791780307228089100,
+    "sha256": "f54e2056454b34f49094b5ea0ab3a5af388c5b8dd55c0a158dca8246f9ff1c0f"
+  },
+  "experiments\\M02_T002\\reports\\distance_parameter_audit.json": {
+    "size": 2573,
+    "mtime_ns": 1791780234113888700,
+    "sha256": "3047c44b99b3922ff0763e5a8a79006d9a9b97c19e8e04fe9f4ad22fcfb6d2ab"
+  },
+  "experiments\\M02_T002\\reports\\distance_woodwinds.json": {
+    "size": 46003,
+    "mtime_ns": 1791780261794337000,
+    "sha256": "a924dae2bbef64e988ccd37fb1b78f6ee20d9e7fd799ff09fc4a5328b2215811"
+  },
+  "experiments\\M02_T002\\reports\\lead_diagnosis.json": {
+    "size": 16303,
+    "mtime_ns": 1791780246647558700,
+    "sha256": "f8e03d654281c5f3702cde86b5bbc23cecb6b02b6e410275c32a7c685734a591"
+  },
+  "experiments\\M02_T002\\reports\\lead_diagnosis_addendum.json": {
+    "size": 10891,
+    "mtime_ns": 1791780869511941100,
+    "sha256": "58432efa717a9e6d154e41fe9a7d4508ef7a870887097424100e9274a9c584cb"
+  },
+  "experiments\\M02_T002\\reports\\M02_T001_human_review.json": {
+    "size": 617,
+    "mtime_ns": 1791780234114896400,
+    "sha256": "0d6ec91ed151f350685b47380b3df530d994b7928bded21e9483ff5c581fa275"
+  },
+  "experiments\\M02_T002\\reports\\M02_T002_encoded_regression.json": {
+    "size": 401,
+    "mtime_ns": 1791781277959301500,
+    "sha256": "6f19a3ffff2dd0353ba538f94a438d65bc3d2785b83f57f81b13e24f1c875218"
+  },
+  "experiments\\M02_T002\\reports\\M02_T002_validation.json": {
+    "size": 322073,
+    "mtime_ns": 1791780869562267600,
+    "sha256": "e319d106fa91c14080f2e2438197a01dc63baa5865d33da30d2553d5f7d02f8a"
+  },
+  "experiments\\M02_T002\\reports\\music02_existing_integrity_after.json": {
+    "size": 7855,
+    "mtime_ns": 1791780869562267600,
+    "sha256": "c3a3ff16236f5df7a3489e9665f069b425e6b0ec0199c25339cffb179f89b603"
+  },
+  "experiments\\M02_T002\\reports\\music02_integrity_before.json": {
+    "size": 7855,
+    "mtime_ns": 1791780228183913100,
+    "sha256": "c3a3ff16236f5df7a3489e9665f069b425e6b0ec0199c25339cffb179f89b603"
+  },
+  "experiments\\M02_T002\\reports\\percussion_orbit_diagnosis.json": {
+    "size": 1497,
+    "mtime_ns": 1791780417490378300,
+    "sha256": "92a94e6b661de17ebc657e5df46767d7734f48c83d54e893b1cc98b002ecbd4c"
+  },
+  "experiments\\M02_T002\\reports\\tukana_integrity_after.json": {
+    "size": 16168,
+    "mtime_ns": 1791780869570415800,
+    "sha256": "5a8adc448993d9e4e421d532e4fb8d94372a05b9671dedac3714509e837267bf"
+  },
+  "experiments\\M02_T002\\reports\\tukana_integrity_before.json": {
+    "size": 16168,
+    "mtime_ns": 1791780228185627200,
+    "sha256": "5a8adc448993d9e4e421d532e4fb8d94372a05b9671dedac3714509e837267bf"
+  },
+  "experiments\\M02_T002\\spatial_scenes\\M02_T002_proximity_centering_scene.json": {
+    "size": 46160,
+    "mtime_ns": 1791780307340140300,
+    "sha256": "61a59901e0c6abdf23bb039652b31f1c2bdd867e4c1f9c53a61ce13acf6803d8"
+  },
+  "experiments\\M02_T002\\spatial_stems\\M02_T002_backing_vocals_candidate_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780416128459300,
+    "sha256": "34d9c6c092b583f3cc6dbd3ad73ac9dae3baf954ca4ee3c0c2f1042acf31eb1e"
+  },
+  "experiments\\M02_T002\\spatial_stems\\M02_T002_lead_vocal_candidate_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780415793635000,
+    "sha256": "2d96aa52f10874743be9b657895f549deb2e33dcd46fb24ed50120d4cfe413b3"
+  },
+  "experiments\\M02_T002\\spatial_stems\\M02_T002_woodwinds_candidate_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791780415955281900,
+    "sha256": "d055955708f3da9be34e7ab31335391153687eb53859185d57c2d7655bcbe9cd"
+  },
+  "experiments\\M02_T003\\monitors\\direction_segments\\M02_T003_D1_raw_24bit.wav": {
+    "size": 576044,
+    "mtime_ns": 1791836672147457300,
+    "sha256": "7f8a0bc0ab82ed9c57d23f4d496f20d1a1324a0f0bbdb53a8961dfec7f44831a"
+  },
+  "experiments\\M02_T003\\monitors\\direction_segments\\M02_T003_D2_raw_24bit.wav": {
+    "size": 576044,
+    "mtime_ns": 1791836673930459700,
+    "sha256": "7ac8ab3e99f5d5fc9ca2aefaa9167b99aba912da36e5bf0839892b624806d8a5"
+  },
+  "experiments\\M02_T003\\monitors\\direction_segments\\M02_T003_D3_raw_24bit.wav": {
+    "size": 576044,
+    "mtime_ns": 1791836675594039800,
+    "sha256": "303a707338946429e363390e12211aa5bd47a65c601a733c4d03a169d4952297"
+  },
+  "experiments\\M02_T003\\monitors\\direction_segments\\M02_T003_D4_raw_24bit.wav": {
+    "size": 576044,
+    "mtime_ns": 1791836677223381400,
+    "sha256": "eee3fb2c9cabee880b5a473de6dfc993785c4cea1aea43e42163f9a35daaa7b5"
+  },
+  "experiments\\M02_T003\\monitors\\direction_segments\\M02_T003_D5_raw_24bit.wav": {
+    "size": 576044,
+    "mtime_ns": 1791836678565336300,
+    "sha256": "bbca1ab5864055f5e2a1146b456a200f9125d1641b4c5695291e3b95604e55b1"
+  },
+  "experiments\\M02_T003\\monitors\\direction_segments\\M02_T003_D6_raw_24bit.wav": {
+    "size": 576044,
+    "mtime_ns": 1791836679977961700,
+    "sha256": "49c8a48ae76787f75c98d65b6ada1238b4240dd252bba04d6770e5d902f58042"
+  },
+  "experiments\\M02_T003\\monitors\\direction_segments\\M02_T003_D7_raw_24bit.wav": {
+    "size": 576044,
+    "mtime_ns": 1791836681017432400,
+    "sha256": "ac12ea8d1769fd97354a6171f9ed95b01ae7a8b0f260cd56543bd9366e6d40c9"
+  },
+  "experiments\\M02_T003\\monitors\\direction_segments\\M02_T003_D8_raw_24bit.wav": {
+    "size": 576044,
+    "mtime_ns": 1791836682892540600,
+    "sha256": "5a34e57c644fce2bd41d5362834b4677b54617c9b98a4289cd80f24d7605d109"
+  },
+  "experiments\\M02_T003\\monitors\\direction_segments\\M02_T003_H1_raw_24bit.wav": {
+    "size": 576044,
+    "mtime_ns": 1791836684234070000,
+    "sha256": "8f0dfe19bfcf5791bc3915636c0d61bb4c56c72c8b4cd915781d3134ed170762"
+  },
+  "experiments\\M02_T003\\monitors\\direction_segments\\M02_T003_H2_raw_24bit.wav": {
+    "size": 576044,
+    "mtime_ns": 1791836685409692500,
+    "sha256": "5a34e57c644fce2bd41d5362834b4677b54617c9b98a4289cd80f24d7605d109"
+  },
+  "experiments\\M02_T003\\monitors\\direction_segments\\M02_T003_H3_raw_24bit.wav": {
+    "size": 576044,
+    "mtime_ns": 1791836686529472800,
+    "sha256": "4e3f435d4a0ee61e8676794472f0198c375502c689a1b472658835df267da372"
+  },
+  "experiments\\M02_T003\\monitors\\four_sources\\M02_T003_A_isolated_200_215_24bit.wav": {
+    "size": 4320044,
+    "mtime_ns": 1791836690032948300,
+    "sha256": "372eda33ceb63acd7f5d86025e12ff1ce3899e79267ba7392c6deb2c9249d9c4"
+  },
+  "experiments\\M02_T003\\monitors\\four_sources\\M02_T003_B_isolated_200_215_24bit.wav": {
+    "size": 4320044,
+    "mtime_ns": 1791836693735370900,
+    "sha256": "ecbf4bb2a99517efad45c77905639f4722a9554ba47261057272bbc1f4ba2a2a"
+  },
+  "experiments\\M02_T003\\monitors\\four_sources\\M02_T003_C_isolated_200_215_24bit.wav": {
+    "size": 4320044,
+    "mtime_ns": 1791836697240896300,
+    "sha256": "11430380da0a2618403c47050c4b6b77d84e5ad223675ca967b5cd66f6739ddf"
+  },
+  "experiments\\M02_T003\\monitors\\four_sources\\M02_T003_D_isolated_200_215_24bit.wav": {
+    "size": 4320044,
+    "mtime_ns": 1791836700170585700,
+    "sha256": "b40f2c1a5f0161acb30f4b48a785a319589482c4ff0537ffc036cb9f259f666e"
+  },
+  "experiments\\M02_T003\\monitors\\M02_T003_four_positions_200_215_24bit.wav": {
+    "size": 4320044,
+    "mtime_ns": 1791836700541543500,
+    "sha256": "e78c0c2e1c75e4c67843fc5c172daf8269efb898c588243a51dea210b24b1779"
+  },
+  "experiments\\M02_T003\\monitors\\M02_T003_percussion_eight_sectors_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836700999755300,
+    "sha256": "29d0d2e5283c71e6af83630c2b461be54f6256d1a1a72b6e17e1a9fa5e8dc797"
+  },
+  "experiments\\M02_T003\\monitors\\M02_T003_positions_same_sound_27_5s_24bit.wav": {
+    "size": 7920044,
+    "mtime_ns": 1791836686787655200,
+    "sha256": "31f7bd8721f41db2fcdeb566c9fdddf451ee2fe34a5d65fdbfcddd172a6ea387"
+  },
+  "experiments\\M02_T003\\README.md": {
+    "size": 8722,
+    "mtime_ns": 1791836987907432100,
+    "sha256": "cb5bd49b6ca6b6ad63958a7d3f774f4a724e2e7f53019be328e03fdc58832935"
+  },
+  "experiments\\M02_T003\\renders\\comparison\\M02_T003_T001_reference_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836659259602600,
+    "sha256": "aa54d484a8a0eb16c474a09e6d4996680195ab0fafbbe238e8d2006afb92a71e"
+  },
+  "experiments\\M02_T003\\renders\\comparison\\M02_T003_T001_reference_200_230_level_matched_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836660921875700,
+    "sha256": "aa54d484a8a0eb16c474a09e6d4996680195ab0fafbbe238e8d2006afb92a71e"
+  },
+  "experiments\\M02_T003\\renders\\comparison\\M02_T003_T002_reference_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836659803608200,
+    "sha256": "ab3e9178f8c80ebc8fec3e009becd997c8681611f25834feeb8c2fc83c2baad6"
+  },
+  "experiments\\M02_T003\\renders\\comparison\\M02_T003_T002_reference_200_230_level_matched_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836661411733300,
+    "sha256": "ab3e9178f8c80ebc8fec3e009becd997c8681611f25834feeb8c2fc83c2baad6"
+  },
+  "experiments\\M02_T003\\renders\\comparison\\M02_T003_T003_near_field_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836660346226900,
+    "sha256": "11f9703eda890c6f6c4108b40af672e4c1a238b492e8021517f2bca2dc0d4d4d"
+  },
+  "experiments\\M02_T003\\renders\\comparison\\M02_T003_T003_near_field_200_230_level_matched_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836661957864400,
+    "sha256": "ffc06d93fbfc97785e84d32b03216be90baad33f67f7fbec253f738398d7747b"
+  },
+  "experiments\\M02_T003\\reports\\angular_separation.json": {
+    "size": 12309,
+    "mtime_ns": 1791836702100038100,
+    "sha256": "4cfeff6286b38046d59972e69d7085e2e39e237d5da214cd681b7f3ba0d6677b"
+  },
+  "experiments\\M02_T003\\reports\\M02_T003_encoded_regression.json": {
+    "size": 359,
+    "mtime_ns": 1791836979967244100,
+    "sha256": "5e9d2d5736775cb0ebaa400274808a880aca30ef6f94031085280f052ee0900b"
+  },
+  "experiments\\M02_T003\\reports\\M02_T003_validation.json": {
+    "size": 137674,
+    "mtime_ns": 1791836725663502800,
+    "sha256": "7dac6f262c26fa76a918f8535a0a69cd95f687ead54d52f384572ca33b22e1e4"
+  },
+  "experiments\\M02_T003\\reports\\music02_existing_integrity_after.json": {
+    "size": 42569,
+    "mtime_ns": 1791836708482099600,
+    "sha256": "c871c6d84de77348deacddebd99b936b01d1de98513c59c11b93a2dc75843f50"
+  },
+  "experiments\\M02_T003\\reports\\music02_integrity_before.json": {
+    "size": 42569,
+    "mtime_ns": 1791836588946160400,
+    "sha256": "c871c6d84de77348deacddebd99b936b01d1de98513c59c11b93a2dc75843f50"
+  },
+  "experiments\\M02_T003\\reports\\simplified_monitor.json": {
+    "size": 7403,
+    "mtime_ns": 1791836700869426000,
+    "sha256": "407c6dc05516ede5ff3174d63d0c5eda44819f5fa1d043936856477aa760b48a"
+  },
+  "experiments\\M02_T003\\reports\\tukana_integrity_after.json": {
+    "size": 16168,
+    "mtime_ns": 1791836708484100500,
+    "sha256": "5a8adc448993d9e4e421d532e4fb8d94372a05b9671dedac3714509e837267bf"
+  },
+  "experiments\\M02_T003\\reports\\tukana_integrity_before.json": {
+    "size": 16168,
+    "mtime_ns": 1791836588948159300,
+    "sha256": "5a8adc448993d9e4e421d532e4fb8d94372a05b9671dedac3714509e837267bf"
+  },
+  "experiments\\M02_T003\\spatial_scenes\\M02_T003_scene.json": {
+    "size": 29021,
+    "mtime_ns": 1791836593802343000,
+    "sha256": "0314dc057b0eddf07bf125e7da81974321c3d02a26c7ec613189d4c5916f4cd2"
+  },
+  "experiments\\M02_T003\\spatial_stems\\M02_T003_backing_vocals_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836663023274000,
+    "sha256": "306ef77317c64308129c156bcc9be9b1f9b276c755025229db4395d63632cc7d"
+  },
+  "experiments\\M02_T003\\spatial_stems\\M02_T003_bass_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836664837139000,
+    "sha256": "c3319351582e25af0b4d2d1ad7641a39c1dbf0ca6bdef8fe0be6ac41c8dd5974"
+  },
+  "experiments\\M02_T003\\spatial_stems\\M02_T003_brass_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836669408038400,
+    "sha256": "35fa359c2b8f9bc0150c4e6ca7e55c0198146ec52be2eb1fe39773c9b48d2283"
+  },
+  "experiments\\M02_T003\\spatial_stems\\M02_T003_drums_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836664251893500,
+    "sha256": "396d3f36563e18026aca10348aeddf03d8f8404cecfddb77ab3b8f9c29d1bdab"
+  },
+  "experiments\\M02_T003\\spatial_stems\\M02_T003_guitar_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836665376798600,
+    "sha256": "634ed24535fddba72c76eda659e8c6b480fcab71a4a4e098acdba307e00bfa18"
+  },
+  "experiments\\M02_T003\\spatial_stems\\M02_T003_keyboards_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836666027863400,
+    "sha256": "5b07ed161cfab6dc054368a5c6e70388e7a185bebfb05eefab431c0a217b999d"
+  },
+  "experiments\\M02_T003\\spatial_stems\\M02_T003_lead_vocal_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836662510527600,
+    "sha256": "51ded7a770cc44ba39ff161d848e94274321af28729b73cf0049e76e855f34e3"
+  },
+  "experiments\\M02_T003\\spatial_stems\\M02_T003_other_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836668055388700,
+    "sha256": "1e6bdb56b5312f90e46c7aeb03ef082e30281896a3af0ba175ad86888109c061"
+  },
+  "experiments\\M02_T003\\spatial_stems\\M02_T003_percussion_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836666612008400,
+    "sha256": "ac4b0e9e057282f51658502a4f3ddd0a509ae437912d3af064a8259f7b7014ad"
+  },
+  "experiments\\M02_T003\\spatial_stems\\M02_T003_synth_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836667270301800,
+    "sha256": "59df2c23c9caa041707cc9ad6be1df78851f3192e83af9c7230db026247fa434"
+  },
+  "experiments\\M02_T003\\spatial_stems\\M02_T003_woodwinds_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836663605718700,
+    "sha256": "099ce5e35b2fe4c9219899520018ef71ec9fa3d2f05f07f52639340120d3d83e"
+  },
+  "experiments\\M02_T003\\spatial_stems\\measured\\M02_T003_backing_vocals_200_230_raw_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836603779747600,
+    "sha256": "4807e797cc8028e1941362b5f7573e9daf76fe048bd122480a85e243f7440bdd"
+  },
+  "experiments\\M02_T003\\spatial_stems\\measured\\M02_T003_bass_200_230_raw_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836621305931300,
+    "sha256": "ccf072ec954ec6097e4dc73ab5c18c3127e4f7e9b6afce22f23e65523ea957ca"
+  },
+  "experiments\\M02_T003\\spatial_stems\\measured\\M02_T003_brass_200_230_raw_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836658120800200,
+    "sha256": "d9e70030388f39b047e870474f969c2517d3539c42734ba2a654ee1ebcb34afa"
+  },
+  "experiments\\M02_T003\\spatial_stems\\measured\\M02_T003_drums_200_230_raw_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836615215544500,
+    "sha256": "df4858d2fb58a13cb27f717ad2cc24e80c7eb01f44bf2c2b6c10bb18306f2eb3"
+  },
+  "experiments\\M02_T003\\spatial_stems\\measured\\M02_T003_guitar_200_230_raw_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836627643446000,
+    "sha256": "32f231e75083b54428e50f2be083a68931f3b4c4158bd1a9bf45cb8bc6f070b6"
+  },
+  "experiments\\M02_T003\\spatial_stems\\measured\\M02_T003_keyboards_200_230_raw_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836633125276900,
+    "sha256": "38c08b228028f30941a45e2eebe64f9ca349073d4a59e29a86081d225c6999b4"
+  },
+  "experiments\\M02_T003\\spatial_stems\\measured\\M02_T003_lead_vocal_200_230_raw_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836598001019500,
+    "sha256": "7271f00beac106d09ff72d9c7e8e1f149b1cdabdb424297dc88986aada2bc86a"
+  },
+  "experiments\\M02_T003\\spatial_stems\\measured\\M02_T003_other_200_230_raw_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836651763475600,
+    "sha256": "9f6e8054e620cd77a4e14dc39e75a5fb894e378db205daa51070e89b54a5ff2e"
+  },
+  "experiments\\M02_T003\\spatial_stems\\measured\\M02_T003_percussion_200_230_raw_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836641052042900,
+    "sha256": "ed9d17c1f0913c41e9c1d73fffde65e6812fce314a0ff35b7d54434f979b5e2a"
+  },
+  "experiments\\M02_T003\\spatial_stems\\measured\\M02_T003_synth_200_230_raw_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836646537421300,
+    "sha256": "43a7ae5df2a2b0821654fa9be19497f3899d427d1a212a2ea8d41f50bfee9a8a"
+  },
+  "experiments\\M02_T003\\spatial_stems\\measured\\M02_T003_woodwinds_200_230_raw_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791836609444440400,
+    "sha256": "dbddaaacf6e038a52d11ee28473eca88562891a3a26c4962edf8c2a4812aed0d"
+  },
+  "renders\\M02_T001_binaural_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791777683631844400,
+    "sha256": "ecdb036d76da2f4a9e7fb7ebcae07a502d58229cf3cc96a381b6ac83c6747e37"
+  },
+  "renders\\M02_T001_binaural_200_230_level_matched_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791777684906005600,
+    "sha256": "ecdb036d76da2f4a9e7fb7ebcae07a502d58229cf3cc96a381b6ac83c6747e37"
+  },
+  "renders\\M02_T001_dry_comparison_200_230_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791777684303651200,
+    "sha256": "ec9c1336ec7f02be7205d92ecc1dd9032304e9366f2f3d418cdaf53cb4fe0928"
+  },
+  "renders\\M02_T001_dry_comparison_200_230_level_matched_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791777685526428800,
+    "sha256": "b32f04e6e68298c431b4d01ac214e92cd7f0130241020312f886fe2df10df798"
+  },
+  "renders\\M02_T001_Other_identification_200_230_raw.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791777680455037400,
+    "sha256": "711cda3d2a82286feb1fef6e1c2994b567516c4cffe1ab984685d4911a064f29"
+  },
+  "reports\\M02_T001_delivery.md": {
+    "size": 9637,
+    "mtime_ns": 1791778078544222900,
+    "sha256": "9c47f203f802fc439e521926f101408e7dda2e8ec8d646e1ec12809dc3a85f75"
+  },
+  "reports\\M02_T001_encoded_artifacts_validation.json": {
+    "size": 3842,
+    "mtime_ns": 1791778167275997200,
+    "sha256": "37a518684c2c95c7fc9f40354ca42f04e64ecc643af55a6282f7598edb865fc4"
+  },
+  "reports\\M02_T001_preflight.json": {
+    "size": 416,
+    "mtime_ns": 1791778078543223900,
+    "sha256": "457dab6918f28ddf6e9d532a3fd3f9e131ce62bbc84e941755672e41d30c4aa7"
+  },
+  "reports\\M02_T001_preview_validation.json": {
+    "size": 26980,
+    "mtime_ns": 1791778167275093100,
+    "sha256": "319ef5ee8f72b0340f8ea7ce55f48ef22b26fa406116baef9d45d5f66b219498"
+  },
+  "reports\\tukana_integrity_after.json": {
+    "size": 16168,
+    "mtime_ns": 1791777691345473400,
+    "sha256": "5a8adc448993d9e4e421d532e4fb8d94372a05b9671dedac3714509e837267bf"
+  },
+  "reports\\tukana_integrity_before.json": {
+    "size": 16168,
+    "mtime_ns": 1791777159356124600,
+    "sha256": "5a8adc448993d9e4e421d532e4fb8d94372a05b9671dedac3714509e837267bf"
+  },
+  "spatial_scenes\\M02_T001_initial_scene.json": {
+    "size": 41848,
+    "mtime_ns": 1791777651302421700,
+    "sha256": "19696124e61f43da443cf96d59a7434a2092e25a114dcb07a4e4b880c9866a2b"
+  },
+  "spatial_stems\\M02_T001_preview_200_230\\backing_vocals_spatial_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791777686194002500,
+    "sha256": "79bf369fce1b3da57179fffd89fb6752627cfaffbd745ba667929975f54e51c3"
+  },
+  "spatial_stems\\M02_T001_preview_200_230\\bass_spatial_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791777686573705700,
+    "sha256": "f9950fb1c600b98c2ea63cba65f062333d981fd08aee007cb1f225148d985bf8"
+  },
+  "spatial_stems\\M02_T001_preview_200_230\\brass_spatial_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791777687361031500,
+    "sha256": "61da98129e49b60ec6e77b1af52cd7a44487ebb45efd9ef72b273ddcb2897802"
+  },
+  "spatial_stems\\M02_T001_preview_200_230\\drums_spatial_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791777686440518100,
+    "sha256": "a366b22ad7354019cb1e108784fb2423e7059c29509b9f1b866117a6d4c024c4"
+  },
+  "spatial_stems\\M02_T001_preview_200_230\\guitar_spatial_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791777686725977200,
+    "sha256": "aab7a0e12f7576600a3858430486bd831b3b4061c4a59a2cebb60dbb65b8053f"
+  },
+  "spatial_stems\\M02_T001_preview_200_230\\keyboards_spatial_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791777686861719600,
+    "sha256": "5adf9cb912b9d56b037963583618886c7601b476cc437775cb66041ee08d6880"
+  },
+  "spatial_stems\\M02_T001_preview_200_230\\lead_vocal_spatial_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791777686076203100,
+    "sha256": "979dff3281b6b747076a152a53ea4e8858b6ab3c896e202ebc04782fdccdd05c"
+  },
+  "spatial_stems\\M02_T001_preview_200_230\\other_spatial_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791777687245641800,
+    "sha256": "626c24c250877885674e9fc4420ef6a57cf06075655390bfd6bc72abaf4acaed"
+  },
+  "spatial_stems\\M02_T001_preview_200_230\\percussion_spatial_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791777686988074900,
+    "sha256": "b3c194ec62657941c956a00e01dca7358beabf9d39be91324eb4510ce928853f"
+  },
+  "spatial_stems\\M02_T001_preview_200_230\\synth_spatial_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791777687109428700,
+    "sha256": "0cd7f5f0411e1469523facf8359270301e1fbbc618716804fde3ae05a188e68d"
+  },
+  "spatial_stems\\M02_T001_preview_200_230\\woodwinds_spatial_24bit.wav": {
+    "size": 8640044,
+    "mtime_ns": 1791777686304074100,
+    "sha256": "8dc3cc774742ad6c3da6b8f7a773b4889eae671c7435f3889e0abb5a92130738"
+  },
+  "stems_original\\0 Lead Vocals.wav": {
+    "size": 47539320,
+    "mtime_ns": 1791775761834715200,
+    "sha256": "129be5ea46725dbcae3e8c892d1ec8b3926f089846377043cd0118ce98577c09"
+  },
+  "stems_original\\1 Backing Vocals.wav": {
+    "size": 47539320,
+    "mtime_ns": 1791775762324976800,
+    "sha256": "988da51c233857a137830cc5be97502e73c0ed84acfab38ff80dedf070259032"
+  },
+  "stems_original\\10 Woodwinds.wav": {
+    "size": 47539320,
+    "mtime_ns": 1791775767217544100,
+    "sha256": "8e5320a183713ac6229bb69098ec659fd6319303aaeec6ae2862f70e8df8aa31"
+  },
+  "stems_original\\2 Drums.wav": {
+    "size": 47539320,
+    "mtime_ns": 1791775762951547700,
+    "sha256": "e9f75d4075444f51037bf5c533d69bb12c5a2e1646a9ce79db28672047376945"
+  },
+  "stems_original\\3 Bass.wav": {
+    "size": 47539320,
+    "mtime_ns": 1791775763495645200,
+    "sha256": "d4e60bd2b805db054275cba155c77b9b5532711c373f7ac909bd3585ecdd0ba2"
+  },
+  "stems_original\\4 Guitar.wav": {
+    "size": 47539320,
+    "mtime_ns": 1791775764041614100,
+    "sha256": "dc9025dc14e7060f8855d7792e45e6bb8880facdbd4b95f4a8e6ae847d14b503"
+  },
+  "stems_original\\5 Keyboard.wav": {
+    "size": 47539320,
+    "mtime_ns": 1791775764607238700,
+    "sha256": "b7a5e34f024de7682fc3da5a3604c5843ce8a34d45d24011f22e0ca7ed0962ab"
+  },
+  "stems_original\\6 Percussion.wav": {
+    "size": 47539320,
+    "mtime_ns": 1791775765246546100,
+    "sha256": "25f6a6d514b0fb2a4eedd5837c7f19681b1106b06b70a7d2c36a3f50b38747a4"
+  },
+  "stems_original\\7 Synth.wav": {
+    "size": 47539320,
+    "mtime_ns": 1791775765892532700,
+    "sha256": "70b4f1eef42aae192d3ca855ff87c12f4e36df04121ab6b0d3fd4e548ad3207a"
+  },
+  "stems_original\\8 Other.wav": {
+    "size": 47539320,
+    "mtime_ns": 1791775766520427100,
+    "sha256": "1e8f246094e9f6c9132a864f568ffe5b8c4ba80462ec76ec1aeddbc8b9c236de"
+  },
+  "stems_original\\9 Brass.wav": {
+    "size": 47539320,
+    "mtime_ns": 1791775766823845600,
+    "sha256": "7d1483ef72e6046bde4121fb5d3246a9ed49aa06b7c036f7da9b5a2296677f96"
+  }
+}

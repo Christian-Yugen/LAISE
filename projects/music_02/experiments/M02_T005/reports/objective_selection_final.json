@@ -1,0 +1,86 @@
+{
+  "selected_variant": "T004",
+  "scores": {
+    "T001": {
+      "score": 65.2074563561206,
+      "components": {
+        "spatial_discriminability": 57.395287126254914,
+        "clarity": 73.2350145809521,
+        "front_back": 34.831460674157306,
+        "elevation": 18.896833503575074,
+        "transient_preservation": 85.29762535384222,
+        "peak_safety": 100.0,
+        "mono_stability": 100.0,
+        "orbit_integrity": 82.06026470139325
+      }
+    },
+    "T002": {
+      "score": 65.10080746533828,
+      "components": {
+        "spatial_discriminability": 54.89077104193707,
+        "clarity": 73.25493795582179,
+        "front_back": 38.07106598984772,
+        "elevation": 20.81218274111675,
+        "transient_preservation": 85.29762535384222,
+        "peak_safety": 100.0,
+        "mono_stability": 100.0,
+        "orbit_integrity": 82.06026470139325
+      }
+    },
+    "T002_ORIGINAL_LEAD": {
+      "score": 64.89402153088498,
+      "components": {
+        "spatial_discriminability": 55.20283614651579,
+        "clarity": 73.21132677851818,
+        "front_back": 36.93877551020408,
+        "elevation": 19.183673469387752,
+        "transient_preservation": 85.29762535384222,
+        "peak_safety": 100.0,
+        "mono_stability": 100.0,
+        "orbit_integrity": 82.06026470139325
+      }
+    },
+    "T003": {
+      "score": 68.25174645803172,
+      "components": {
+        "spatial_discriminability": 63.208895931285795,
+        "clarity": 72.81847380423551,
+        "front_back": 26.175869120654394,
+        "elevation": 40.286298568507156,
+        "transient_preservation": 89.77024042448997,
+        "peak_safety": 100.0,
+        "mono_stability": 100.0,
+        "orbit_integrity": 81.7505793533201
+      }
+    },
+    "T004": {
+      "score": 71.1702779734957,
+      "components": {
+        "spatial_discriminability": 65.05371265465848,
+        "clarity": 73.76113402393743,
+        "front_back": 44.46742502585316,
+        "elevation": 45.70837642192348,
+        "transient_preservation": 88.11522140552006,
+        "peak_safety": 100.0,
+        "mono_stability": 100.0,
+        "orbit_integrity": 82.17013813142611
+      }
+    }
+  },
+  "weights": {
+    "spatial_discriminability": 0.25,
+    "clarity": 0.2,
+    "orbit_integrity": 0.15,
+    "front_back": 0.1,
+    "elevation": 0.1,
+    "transient_preservation": 0.1,
+    "peak_safety": 0.05,
+    "mono_stability": 0.05
+  },
+  "no_recency_bonus": true,
+  "hybrid_created": false,
+  "reason": "Highest measured weighted score across all candidates; no subjective promotion.",
+  "interpretation": "Spatial/clarity combine 65% actual 200–230s exports and 35% duration-weighted full-section architecture/input proxies. Other components measured from actual preview/reference trajectory. Final full output must independently pass QA.",
+  "metric_revision": "512-frame plugin latency removed from attack comparison. Original candidate reports preserved; no audio changed.",
+  "initial_selection_report": "reports/objective_selection.json"
+}

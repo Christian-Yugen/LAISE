@@ -1,0 +1,64 @@
+{
+  "test_id": "M02-T005-FINAL-DECISION",
+  "status": "TECHNICAL_FINAL_PASS_WITH_AAC_SPATIAL_DEGRADATION_DISCLOSED",
+  "automatic_scene_winner": "T004",
+  "automatic_preview_scores": {
+    "T001": 65.2074563561206,
+    "T002": 65.10080746533828,
+    "T002_ORIGINAL_LEAD": 64.89402153088498,
+    "T003": 68.25174645803172,
+    "T004": 71.1702779734957
+  },
+  "selected_master": "C",
+  "master_scores": {
+    "A": 96.88050972197091,
+    "B": 97.78198809755213,
+    "C": 97.84285836323764
+  },
+  "final_spatial_score": 71.88559179391228,
+  "AAC_spatial_signature_score": 88.56015294877521,
+  "pre_AAC_WAV_spatial_signature_score": 98.57520533508723,
+  "AAC_score_loss_points": 10.015052386312021,
+  "AAC_score_loss_by_master": {
+    "A": 11.448351291672864,
+    "B": 10.238643650547871,
+    "C": 10.015052386312021
+  },
+  "AAC_scores_across_masters": [
+    88.52213104101554,
+    88.18587996814631,
+    88.56015294877521
+  ],
+  "historical_mastering_report_status": "FAIL",
+  "historical_AAC_gate": false,
+  "gate_resolution": "All AAC signatures fall below the historical >=90 heuristic (range 88.19–88.56), while their file safety passes. That heuristic was not specified by M02-T005. Preserve the original FAIL report; final decision selects the highest objectively scored safe C master and explicitly discloses the measured AAC spatial-signature loss. No audible-universality claim.",
+  "final_artifacts": {
+    "wav": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T005\\final\\MUSIC02_FINAL_binaural_master_PCM24_48k.wav",
+      "sha256": "e5342108bb9de47aaabe2c111681f8055b714130a17356198a8e328c50f3ed17"
+    },
+    "aac": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T005\\final\\MUSIC02_FINAL_binaural_master_AAC_256k.m4a",
+      "sha256": "16c138554e08f3b753ac9dc7303bca98fa93ca7b02b5f234e02c5667d576992b"
+    },
+    "dry": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T005\\final\\MUSIC02_FINAL_dry_comparison_PCM24_48k.wav",
+      "sha256": "6901602648f6ac737f6635da85db2730592687629ab6198f92df1768e4df9d52"
+    }
+  },
+  "verified_preservation": {
+    "M02_existing_files": 310,
+    "Tukana_files": 79,
+    "all_original_hash_size_mtime_match": true
+  },
+  "tested_probe_positions": 504,
+  "measured_sections": 9,
+  "limitations": [
+    "Classifier holdout uses the same deterministic broadband reference split in time, not a separate HRTF dataset or human ground truth.",
+    "The position classifier reaches perfect accuracy on this controlled probe set; its confidence is not calibrated perceptual probability and performance can shift on musical spectra.",
+    "Pair scores, masking, clarity and transient measures are engineering proxies, not intelligibility or universal perception.",
+    "Distance is an auxiliary feature and adds no near-field score; the measured distance response is predominantly level-related.",
+    "AAC 256k passes true-peak/file-safety checks but lowers spatial-signature score by 10.02 points; WAV remains the highest-fidelity final master.",
+    "No mastering or transient method can establish universal naturalness, localization or comfort."
+  ]
+}

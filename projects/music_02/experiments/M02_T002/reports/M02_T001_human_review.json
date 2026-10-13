@@ -1,0 +1,16 @@
+{
+  "test_id": "M02-T001-HUMAN",
+  "status": "PASS_WITH_ADJUSTMENTS",
+  "preference": "BINAURAL",
+  "findings": {
+    "lead": "Intended front/center perceived toward left ear",
+    "bass_drums": "INCONCLUSIVE",
+    "percussion": "Right-left-right movement clear; front/back unconfirmed",
+    "woodwinds": "Angular motion convincing, wants closer",
+    "backing": "Helps envelopment; above left ear and too far",
+    "brass": "INCONCLUSIVE",
+    "other": "IDENTITY_PENDING",
+    "clicks_distortion_discomfort": false
+  },
+  "source": "User M02-T002 request; original M02-T001 reports remain unchanged"
+}

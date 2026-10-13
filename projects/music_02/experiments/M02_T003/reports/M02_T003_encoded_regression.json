@@ -1,0 +1,11 @@
+{
+  "test_id": "M02-T003-ENCODED-REGRESSION",
+  "status": "PASS",
+  "verified_pcm24_wavs": 46,
+  "musical_preview_frames": 1440000,
+  "comparison_loudness_spread_lu": 0.0,
+  "eight_ordered_sectors": true,
+  "same_sound_monitor_equal_distance": true,
+  "T001_T002_reference_hashes_preserved": true,
+  "perceptual_separation": "PENDING_HUMAN_REVIEW"
+}

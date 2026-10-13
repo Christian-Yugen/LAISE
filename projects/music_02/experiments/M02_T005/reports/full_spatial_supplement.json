@@ -1,0 +1,5914 @@
+{
+  "status": "PASS",
+  "actual_orbit": {
+    "ild_progression_correlation_against_same_content_static_probes": 0.9979637911352963,
+    "median_paired_signature_distance": 0.6095615144767303,
+    "windows": [
+      {
+        "time_seconds": 207.55,
+        "intended_azimuth_unwrapped_deg": 94.52380952380948,
+        "intended_elevation_deg": -12.0,
+        "actual_classification": {
+          "azimuth_deg": 90,
+          "elevation_deg": 0,
+          "front_rear": "lateral",
+          "elevation_band": "ear",
+          "confidence": 0.06490135733053908,
+          "coverage": 1.0,
+          "feature_distance": 0.8661705762822907,
+          "alternatives": [
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 0,
+              "distance": 0.8661705762822907
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 20,
+              "distance": 0.9262879195392705
+            },
+            {
+              "azimuth_deg": 120,
+              "elevation_deg": -20,
+              "distance": 1.0879696606947604
+            }
+          ]
+        },
+        "content_controlled_expected_classification": {
+          "azimuth_deg": 90,
+          "elevation_deg": 0,
+          "front_rear": "lateral",
+          "elevation_band": "ear",
+          "confidence": 0.0015377832643685356,
+          "coverage": 1.0,
+          "feature_distance": 0.9832223465272459,
+          "alternatives": [
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 0,
+              "distance": 0.9832223465272459
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 20,
+              "distance": 0.9847366580798513
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": -20,
+              "distance": 1.2052465128275849
+            }
+          ]
+        },
+        "paired_signature_distance": 0.6128995229649943,
+        "expected_ild": -2.6477931607415757,
+        "actual_ild": -2.6035576699138936,
+        "expected_itd_us": 730.165581440315,
+        "actual_itd_us": 537.7333230810788
+      },
+      {
+        "time_seconds": 208.05,
+        "intended_azimuth_unwrapped_deg": 113.57142857142844,
+        "intended_elevation_deg": -12.0,
+        "actual_classification": {
+          "azimuth_deg": 90,
+          "elevation_deg": 0,
+          "front_rear": "lateral",
+          "elevation_band": "ear",
+          "confidence": 0.02011149904556406,
+          "coverage": 1.0,
+          "feature_distance": 0.879249386539405,
+          "alternatives": [
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 0,
+              "distance": 0.879249386539405
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 20,
+              "distance": 0.897295340932151
+            },
+            {
+              "azimuth_deg": 120,
+              "elevation_deg": -20,
+              "distance": 0.9345387255774278
+            }
+          ]
+        },
+        "content_controlled_expected_classification": {
+          "azimuth_deg": 90,
+          "elevation_deg": 20,
+          "front_rear": "lateral",
+          "elevation_band": "high",
+          "confidence": 0.0013723748530811686,
+          "coverage": 1.0,
+          "feature_distance": 0.9800849327635516,
+          "alternatives": [
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 20,
+              "distance": 0.9800849327635516
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": -20,
+              "distance": 0.9814318251203603
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 0,
+              "distance": 0.9979005927511302
+            }
+          ]
+        },
+        "paired_signature_distance": 0.5819214227482334,
+        "expected_ild": -2.829435200563987,
+        "actual_ild": -2.777337716688014,
+        "expected_itd_us": 689.8361345659006,
+        "actual_itd_us": 439.02813048731946
+      },
+      {
+        "time_seconds": 208.55,
+        "intended_azimuth_unwrapped_deg": 130.0,
+        "intended_elevation_deg": -12.0,
+        "actual_classification": {
+          "azimuth_deg": 120,
+          "elevation_deg": -20,
+          "front_rear": "rear",
+          "elevation_band": "low",
+          "confidence": 0.1066728137876224,
+          "coverage": 1.0,
+          "feature_distance": 0.8272299533520109,
+          "alternatives": [
+            {
+              "azimuth_deg": 120,
+              "elevation_deg": -20,
+              "distance": 0.8272299533520109
+            },
+            {
+              "azimuth_deg": 120,
+              "elevation_deg": 20,
+              "distance": 0.9260100510982849
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 0,
+              "distance": 1.0442609286115228
+            }
+          ]
+        },
+        "content_controlled_expected_classification": {
+          "azimuth_deg": 120,
+          "elevation_deg": -20,
+          "front_rear": "rear",
+          "elevation_band": "low",
+          "confidence": 0.22313101693496623,
+          "coverage": 1.0,
+          "feature_distance": 0.7050566953013359,
+          "alternatives": [
+            {
+              "azimuth_deg": 120,
+              "elevation_deg": -20,
+              "distance": 0.7050566953013359
+            },
+            {
+              "azimuth_deg": 120,
+              "elevation_deg": 20,
+              "distance": 0.9075619064100461
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 0,
+              "distance": 0.9918560835793732
+            }
+          ]
+        },
+        "paired_signature_distance": 0.27492790564941716,
+        "expected_ild": -2.22879123459895,
+        "actual_ild": -2.2266466514166177,
+        "expected_itd_us": 604.7201923438379,
+        "actual_itd_us": 999.7589373458903
+      },
+      {
+        "time_seconds": 209.05,
+        "intended_azimuth_unwrapped_deg": 142.14285714285685,
+        "intended_elevation_deg": -12.0,
+        "actual_classification": {
+          "azimuth_deg": 60,
+          "elevation_deg": 45,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.02891145419602016,
+          "coverage": 1.0,
+          "feature_distance": 0.8253900497340929,
+          "alternatives": [
+            {
+              "azimuth_deg": 60,
+              "elevation_deg": 45,
+              "distance": 0.8253900497340929
+            },
+            {
+              "azimuth_deg": 150,
+              "elevation_deg": 60,
+              "distance": 0.8499637373960983
+            },
+            {
+              "azimuth_deg": 60,
+              "elevation_deg": 20,
+              "distance": 0.8879783242172249
+            }
+          ]
+        },
+        "content_controlled_expected_classification": {
+          "azimuth_deg": 60,
+          "elevation_deg": 45,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.0027744457638264807,
+          "coverage": 1.0,
+          "feature_distance": 0.845504535969936,
+          "alternatives": [
+            {
+              "azimuth_deg": 60,
+              "elevation_deg": 45,
+              "distance": 0.845504535969936
+            },
+            {
+              "azimuth_deg": 150,
+              "elevation_deg": 60,
+              "distance": 0.8478568688680983
+            },
+            {
+              "azimuth_deg": 60,
+              "elevation_deg": 20,
+              "distance": 0.8848612051352908
+            }
+          ]
+        },
+        "paired_signature_distance": 0.07404495613043349,
+        "expected_ild": -2.3496623130935688,
+        "actual_ild": -2.355871091162865,
+        "expected_itd_us": 252.35373403249574,
+        "actual_itd_us": 253.16492248373754
+      },
+      {
+        "time_seconds": 209.55,
+        "intended_azimuth_unwrapped_deg": 161.1904761904758,
+        "intended_elevation_deg": -12.0,
+        "actual_classification": {
+          "azimuth_deg": 0,
+          "elevation_deg": 20,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.04484294983023663,
+          "coverage": 1.0,
+          "feature_distance": 0.7149292301710114,
+          "alternatives": [
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": 20,
+              "distance": 0.7149292301710114
+            },
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": 0,
+              "distance": 0.7484939047918293
+            },
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": -20,
+              "distance": 0.7488119146721436
+            }
+          ]
+        },
+        "content_controlled_expected_classification": {
+          "azimuth_deg": 150,
+          "elevation_deg": -45,
+          "front_rear": "rear",
+          "elevation_band": "low",
+          "confidence": 0.09297940457889217,
+          "coverage": 1.0,
+          "feature_distance": 0.5803791357237064,
+          "alternatives": [
+            {
+              "azimuth_deg": 150,
+              "elevation_deg": -45,
+              "distance": 0.5803791357237064
+            },
+            {
+              "azimuth_deg": 60,
+              "elevation_deg": 60,
+              "distance": 0.6398742637748488
+            },
+            {
+              "azimuth_deg": 150,
+              "elevation_deg": 0,
+              "distance": 0.6728407697227381
+            }
+          ]
+        },
+        "paired_signature_distance": 0.5831123070239349,
+        "expected_ild": -1.5126686424309965,
+        "actual_ild": -1.2731794610359757,
+        "expected_itd_us": 127.09885392758929,
+        "actual_itd_us": 107.51778840385568
+      },
+      {
+        "time_seconds": 210.05,
+        "intended_azimuth_unwrapped_deg": 175.0,
+        "intended_elevation_deg": -12.0,
+        "actual_classification": {
+          "azimuth_deg": 0,
+          "elevation_deg": 20,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.12128445240281628,
+          "coverage": 1.0,
+          "feature_distance": 0.304387675007948,
+          "alternatives": [
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": 20,
+              "distance": 0.304387675007948
+            },
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": -20,
+              "distance": 0.3464006934215347
+            },
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": 0,
+              "distance": 0.4130439666231604
+            }
+          ]
+        },
+        "content_controlled_expected_classification": {
+          "azimuth_deg": 0,
+          "elevation_deg": 20,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.12274993657581976,
+          "coverage": 1.0,
+          "feature_distance": 0.44078477329265014,
+          "alternatives": [
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": 20,
+              "distance": 0.44078477329265014
+            },
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": -20,
+              "distance": 0.5024619451973932
+            },
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": 0,
+              "distance": 0.5745524326306372
+            }
+          ]
+        },
+        "paired_signature_distance": 0.22140066221439314,
+        "expected_ild": -0.444992690884577,
+        "actual_ild": -0.35884657007222254,
+        "expected_itd_us": 34.21468596781607,
+        "actual_itd_us": 27.08490418119765
+      },
+      {
+        "time_seconds": 210.55,
+        "intended_azimuth_unwrapped_deg": 189.76190476190462,
+        "intended_elevation_deg": -12.0,
+        "actual_classification": {
+          "azimuth_deg": -150,
+          "elevation_deg": 0,
+          "front_rear": "rear",
+          "elevation_band": "ear",
+          "confidence": 0.005197572247674604,
+          "coverage": 1.0,
+          "feature_distance": 0.7250788559006713,
+          "alternatives": [
+            {
+              "azimuth_deg": -150,
+              "elevation_deg": 0,
+              "distance": 0.7250788559006713
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 60,
+              "distance": 0.728867195809853
+            },
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": 60,
+              "distance": 0.7543022831289888
+            }
+          ]
+        },
+        "content_controlled_expected_classification": {
+          "azimuth_deg": 0,
+          "elevation_deg": -20,
+          "front_rear": "front",
+          "elevation_band": "low",
+          "confidence": 0.0006239369126119311,
+          "coverage": 1.0,
+          "feature_distance": 0.6436510291534948,
+          "alternatives": [
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": -20,
+              "distance": 0.6436510291534948
+            },
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": 0,
+              "distance": 0.6440528775174519
+            },
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": 20,
+              "distance": 0.7383467542084594
+            }
+          ]
+        },
+        "paired_signature_distance": 0.7298740001306872,
+        "expected_ild": 0.8025611208011708,
+        "actual_ild": 1.229286279972925,
+        "expected_itd_us": -73.09275492049063,
+        "actual_itd_us": -125.1299412561564
+      },
+      {
+        "time_seconds": 211.05,
+        "intended_azimuth_unwrapped_deg": 208.80952380952402,
+        "intended_elevation_deg": -12.0,
+        "actual_classification": {
+          "azimuth_deg": -150,
+          "elevation_deg": -45,
+          "front_rear": "rear",
+          "elevation_band": "low",
+          "confidence": 0.032969948029448214,
+          "coverage": 1.0,
+          "feature_distance": 0.6701132864905133,
+          "alternatives": [
+            {
+              "azimuth_deg": -150,
+              "elevation_deg": -45,
+              "distance": 0.6701132864905133
+            },
+            {
+              "azimuth_deg": -150,
+              "elevation_deg": 45,
+              "distance": 0.6929601465073391
+            },
+            {
+              "azimuth_deg": -30,
+              "elevation_deg": -45,
+              "distance": 0.7578119823899503
+            }
+          ]
+        },
+        "content_controlled_expected_classification": {
+          "azimuth_deg": -30,
+          "elevation_deg": -20,
+          "front_rear": "front",
+          "elevation_band": "low",
+          "confidence": 0.011121427465418577,
+          "coverage": 1.0,
+          "feature_distance": 0.7924341817560298,
+          "alternatives": [
+            {
+              "azimuth_deg": -30,
+              "elevation_deg": -20,
+              "distance": 0.7924341817560298
+            },
+            {
+              "azimuth_deg": -150,
+              "elevation_deg": 0,
+              "distance": 0.8013462964668678
+            },
+            {
+              "azimuth_deg": -150,
+              "elevation_deg": -20,
+              "distance": 0.8071214806457825
+            }
+          ]
+        },
+        "paired_signature_distance": 0.912620699548438,
+        "expected_ild": 1.020778851197159,
+        "actual_ild": 0.816277814177694,
+        "expected_itd_us": -199.10019636574765,
+        "actual_itd_us": -186.23993197152748
+      },
+      {
+        "time_seconds": 211.55,
+        "intended_azimuth_unwrapped_deg": 220.0,
+        "intended_elevation_deg": -12.0,
+        "actual_classification": {
+          "azimuth_deg": -120,
+          "elevation_deg": 45,
+          "front_rear": "rear",
+          "elevation_band": "high",
+          "confidence": 0.10645447030230407,
+          "coverage": 1.0,
+          "feature_distance": 0.8648379932433452,
+          "alternatives": [
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": 45,
+              "distance": 0.8648379932433452
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": 20,
+              "distance": 0.9678723293886736
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": -45,
+              "distance": 0.971269577104465
+            }
+          ]
+        },
+        "content_controlled_expected_classification": {
+          "azimuth_deg": -120,
+          "elevation_deg": 45,
+          "front_rear": "rear",
+          "elevation_band": "high",
+          "confidence": 0.07393858281821904,
+          "coverage": 1.0,
+          "feature_distance": 0.8928274434399256,
+          "alternatives": [
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": 45,
+              "distance": 0.8928274434399256
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": 20,
+              "distance": 0.9641125597878875
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": -45,
+              "distance": 0.9696586556863215
+            }
+          ]
+        },
+        "paired_signature_distance": 0.1439805563963971,
+        "expected_ild": 3.211650438698877,
+        "actual_ild": 3.2527082144127744,
+        "expected_itd_us": -274.27914962109844,
+        "actual_itd_us": -271.6915441389786
+      },
+      {
+        "time_seconds": 212.05,
+        "intended_azimuth_unwrapped_deg": 237.38095238095272,
+        "intended_elevation_deg": -12.0,
+        "actual_classification": {
+          "azimuth_deg": -120,
+          "elevation_deg": 45,
+          "front_rear": "rear",
+          "elevation_band": "high",
+          "confidence": 0.23786782473223494,
+          "coverage": 1.0,
+          "feature_distance": 0.6465083577234214,
+          "alternatives": [
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": 45,
+              "distance": 0.6465083577234214
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": 0,
+              "distance": 0.8482890221716191
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 20,
+              "distance": 0.8502777359374658
+            }
+          ]
+        },
+        "content_controlled_expected_classification": {
+          "azimuth_deg": -120,
+          "elevation_deg": 20,
+          "front_rear": "rear",
+          "elevation_band": "high",
+          "confidence": 0.0075863173097190165,
+          "coverage": 1.0,
+          "feature_distance": 0.5683966259886952,
+          "alternatives": [
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": 20,
+              "distance": 0.5683966259886952
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 0,
+              "distance": 0.5727416256977225
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": -20,
+              "distance": 0.8090729007743729
+            }
+          ]
+        },
+        "paired_signature_distance": 0.7049734059617146,
+        "expected_ild": 3.285683997672491,
+        "actual_ild": 3.0905874576793813,
+        "expected_itd_us": -276.31945228673135,
+        "actual_itd_us": -683.9812679537296
+      },
+      {
+        "time_seconds": 212.55,
+        "intended_azimuth_unwrapped_deg": 256.4285714285717,
+        "intended_elevation_deg": -12.0,
+        "actual_classification": {
+          "azimuth_deg": -90,
+          "elevation_deg": -20,
+          "front_rear": "lateral",
+          "elevation_band": "low",
+          "confidence": 0.16653587461845967,
+          "coverage": 1.0,
+          "feature_distance": 0.915521531707567,
+          "alternatives": [
+            {
+              "azimuth_deg": -90,
+              "elevation_deg": -20,
+              "distance": 0.915521531707567
+            },
+            {
+              "azimuth_deg": -90,
+              "elevation_deg": 0,
+              "distance": 1.0984534352794881
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": -20,
+              "distance": 1.115498076214646
+            }
+          ]
+        },
+        "content_controlled_expected_classification": {
+          "azimuth_deg": -90,
+          "elevation_deg": -20,
+          "front_rear": "lateral",
+          "elevation_band": "low",
+          "confidence": 0.00433374660451088,
+          "coverage": 1.0,
+          "feature_distance": 1.077536350409526,
+          "alternatives": [
+            {
+              "azimuth_deg": -90,
+              "elevation_deg": -20,
+              "distance": 1.077536350409526
+            },
+            {
+              "azimuth_deg": -90,
+              "elevation_deg": 0,
+              "distance": 1.0822264455934283
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": -20,
+              "distance": 1.1706796034969627
+            }
+          ]
+        },
+        "paired_signature_distance": 0.47412629434679376,
+        "expected_ild": 3.1217017944669605,
+        "actual_ild": 3.0177924818679642,
+        "expected_itd_us": -788.2317254623908,
+        "actual_itd_us": -610.5212618043437
+      },
+      {
+        "time_seconds": 213.05,
+        "intended_azimuth_unwrapped_deg": 265.9523809523812,
+        "intended_elevation_deg": -12.0,
+        "actual_classification": {
+          "azimuth_deg": -90,
+          "elevation_deg": 20,
+          "front_rear": "lateral",
+          "elevation_band": "high",
+          "confidence": 0.026409041418307355,
+          "coverage": 1.0,
+          "feature_distance": 0.829475754313153,
+          "alternatives": [
+            {
+              "azimuth_deg": -90,
+              "elevation_deg": 20,
+              "distance": 0.829475754313153
+            },
+            {
+              "azimuth_deg": -90,
+              "elevation_deg": -20,
+              "distance": 0.8519756135795635
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": -20,
+              "distance": 0.9688450718382686
+            }
+          ]
+        },
+        "content_controlled_expected_classification": {
+          "azimuth_deg": -90,
+          "elevation_deg": 0,
+          "front_rear": "lateral",
+          "elevation_band": "ear",
+          "confidence": 0.04444286189851077,
+          "coverage": 1.0,
+          "feature_distance": 0.8777176599643012,
+          "alternatives": [
+            {
+              "azimuth_deg": -90,
+              "elevation_deg": 0,
+              "distance": 0.8777176599643012
+            },
+            {
+              "azimuth_deg": -90,
+              "elevation_deg": 20,
+              "distance": 0.9185402159290649
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": -20,
+              "distance": 0.9359113861070577
+            }
+          ]
+        },
+        "paired_signature_distance": 0.36920977819377726,
+        "expected_ild": 3.4695602154679155,
+        "actual_ild": 3.4427185574743833,
+        "expected_itd_us": -507.2342762473655,
+        "actual_itd_us": -510.3106442169549
+      },
+      {
+        "time_seconds": 213.55,
+        "intended_azimuth_unwrapped_deg": 285.0000000000001,
+        "intended_elevation_deg": -12.0,
+        "actual_classification": {
+          "azimuth_deg": -120,
+          "elevation_deg": -20,
+          "front_rear": "rear",
+          "elevation_band": "low",
+          "confidence": 0.10025590023189909,
+          "coverage": 1.0,
+          "feature_distance": 0.8331835639047814,
+          "alternatives": [
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": -20,
+              "distance": 0.8331835639047814
+            },
+            {
+              "azimuth_deg": -90,
+              "elevation_deg": 0,
+              "distance": 0.9260228148420482
+            },
+            {
+              "azimuth_deg": -90,
+              "elevation_deg": 20,
+              "distance": 0.9814106490042674
+            }
+          ]
+        },
+        "content_controlled_expected_classification": {
+          "azimuth_deg": -90,
+          "elevation_deg": -20,
+          "front_rear": "lateral",
+          "elevation_band": "low",
+          "confidence": 0.07437792649761706,
+          "coverage": 1.0,
+          "feature_distance": 0.7923823465969149,
+          "alternatives": [
+            {
+              "azimuth_deg": -90,
+              "elevation_deg": -20,
+              "distance": 0.7923823465969149
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": -20,
+              "distance": 0.8560538574870913
+            },
+            {
+              "azimuth_deg": -90,
+              "elevation_deg": 20,
+              "distance": 1.0250046197940725
+            }
+          ]
+        },
+        "paired_signature_distance": 0.8469853127466005,
+        "expected_ild": 2.9062888591883773,
+        "actual_ild": 2.896703172690711,
+        "expected_itd_us": -351.86737349963624,
+        "actual_itd_us": -749.9038621311205
+      },
+      {
+        "time_seconds": 214.05,
+        "intended_azimuth_unwrapped_deg": 304.0476190476191,
+        "intended_elevation_deg": -12.0,
+        "actual_classification": {
+          "azimuth_deg": -120,
+          "elevation_deg": 45,
+          "front_rear": "rear",
+          "elevation_band": "high",
+          "confidence": 0.14838231451792727,
+          "coverage": 1.0,
+          "feature_distance": 0.7474967864180365,
+          "alternatives": [
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": 45,
+              "distance": 0.7474967864180365
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 45,
+              "distance": 0.8777375096372068
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": 20,
+              "distance": 0.8846008685644047
+            }
+          ]
+        },
+        "content_controlled_expected_classification": {
+          "azimuth_deg": -60,
+          "elevation_deg": 20,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.1728084693196851,
+          "coverage": 1.0,
+          "feature_distance": 0.5827621539425194,
+          "alternatives": [
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 20,
+              "distance": 0.5827621539425194
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": -20,
+              "distance": 0.7045069156634532
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": -20,
+              "distance": 0.8003698909032252
+            }
+          ]
+        },
+        "paired_signature_distance": 0.7550101727140535,
+        "expected_ild": 2.7748615226965208,
+        "actual_ild": 2.6313025280363633,
+        "expected_itd_us": -226.43498145694318,
+        "actual_itd_us": -176.1247784889513
+      },
+      {
+        "time_seconds": 214.55,
+        "intended_azimuth_unwrapped_deg": 313.5714285714286,
+        "intended_elevation_deg": -12.0,
+        "actual_classification": {
+          "azimuth_deg": -60,
+          "elevation_deg": -45,
+          "front_rear": "front",
+          "elevation_band": "low",
+          "confidence": 0.1579766099621607,
+          "coverage": 1.0,
+          "feature_distance": 0.5838945384905481,
+          "alternatives": [
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": -45,
+              "distance": 0.5838945384905481
+            },
+            {
+              "azimuth_deg": -150,
+              "elevation_deg": -45,
+              "distance": 0.6934421839092958
+            },
+            {
+              "azimuth_deg": -150,
+              "elevation_deg": 45,
+              "distance": 0.7543897096693207
+            }
+          ]
+        },
+        "content_controlled_expected_classification": {
+          "azimuth_deg": -60,
+          "elevation_deg": -45,
+          "front_rear": "front",
+          "elevation_band": "low",
+          "confidence": 0.46908083012863144,
+          "coverage": 1.0,
+          "feature_distance": 0.35857838217091326,
+          "alternatives": [
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": -45,
+              "distance": 0.35857838217091326
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": -20,
+              "distance": 0.6753916650961951
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 60,
+              "distance": 0.6979305341316192
+            }
+          ]
+        },
+        "paired_signature_distance": 0.44955282879362135,
+        "expected_ild": 4.641426133285424,
+        "actual_ild": 4.315075058318911,
+        "expected_itd_us": -128.09139239034255,
+        "actual_itd_us": -291.67373521678815
+      },
+      {
+        "time_seconds": 215.05,
+        "intended_azimuth_unwrapped_deg": 332.61904761904805,
+        "intended_elevation_deg": -12.0,
+        "actual_classification": {
+          "azimuth_deg": -30,
+          "elevation_deg": -45,
+          "front_rear": "front",
+          "elevation_band": "low",
+          "confidence": 0.17006298813205456,
+          "coverage": 1.0,
+          "feature_distance": 0.4582004117905233,
+          "alternatives": [
+            {
+              "azimuth_deg": -30,
+              "elevation_deg": -45,
+              "distance": 0.4582004117905233
+            },
+            {
+              "azimuth_deg": -30,
+              "elevation_deg": 0,
+              "distance": 0.5520905866810882
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": -45,
+              "distance": 0.6525104649790787
+            }
+          ]
+        },
+        "content_controlled_expected_classification": {
+          "azimuth_deg": -30,
+          "elevation_deg": -20,
+          "front_rear": "front",
+          "elevation_band": "low",
+          "confidence": 0.6337872132407502,
+          "coverage": 1.0,
+          "feature_distance": 0.18083583046303311,
+          "alternatives": [
+            {
+              "azimuth_deg": -30,
+              "elevation_deg": -20,
+              "distance": 0.18083583046303311
+            },
+            {
+              "azimuth_deg": -150,
+              "elevation_deg": -45,
+              "distance": 0.4937998808379006
+            },
+            {
+              "azimuth_deg": -150,
+              "elevation_deg": 0,
+              "distance": 0.5074589788970125
+            }
+          ]
+        },
+        "paired_signature_distance": 0.7877098238124774,
+        "expected_ild": 3.3368381513040206,
+        "actual_ild": 3.259070486847198,
+        "expected_itd_us": 42.49548778189332,
+        "actual_itd_us": -147.27451541229564
+      },
+      {
+        "time_seconds": 215.55,
+        "intended_azimuth_unwrapped_deg": 351.6666666666675,
+        "intended_elevation_deg": -12.0,
+        "actual_classification": {
+          "azimuth_deg": 0,
+          "elevation_deg": -20,
+          "front_rear": "front",
+          "elevation_band": "low",
+          "confidence": 0.003927654753579335,
+          "coverage": 1.0,
+          "feature_distance": 0.6182886286055574,
+          "alternatives": [
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": -20,
+              "distance": 0.6182886286055574
+            },
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": 60,
+              "distance": 0.6207266284986535
+            },
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": 60,
+              "distance": 0.6548354063905648
+            }
+          ]
+        },
+        "content_controlled_expected_classification": {
+          "azimuth_deg": 0,
+          "elevation_deg": 60,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.04515036006620656,
+          "coverage": 1.0,
+          "feature_distance": 0.5400016684579892,
+          "alternatives": [
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": 60,
+              "distance": 0.5400016684579892
+            },
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": 60,
+              "distance": 0.5655358140947002
+            },
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": -20,
+              "distance": 0.6053887840227475
+            }
+          ]
+        },
+        "paired_signature_distance": 0.1736397193414489,
+        "expected_ild": 0.7230303582510758,
+        "actual_ild": 0.886962215134721,
+        "expected_itd_us": -45.78511731028925,
+        "actual_itd_us": -50.87875741030367
+      },
+      {
+        "time_seconds": 216.05,
+        "intended_azimuth_unwrapped_deg": 361.190476190477,
+        "intended_elevation_deg": -12.0,
+        "actual_classification": {
+          "azimuth_deg": 180,
+          "elevation_deg": -20,
+          "front_rear": "rear",
+          "elevation_band": "low",
+          "confidence": 0.01928001704910788,
+          "coverage": 1.0,
+          "feature_distance": 0.3297340005030332,
+          "alternatives": [
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": -20,
+              "distance": 0.3297340005030332
+            },
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": 20,
+              "distance": 0.33621625564403745
+            },
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": 0,
+              "distance": 0.3498831917239055
+            }
+          ]
+        },
+        "content_controlled_expected_classification": {
+          "azimuth_deg": 0,
+          "elevation_deg": 20,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.09626251391950671,
+          "coverage": 1.0,
+          "feature_distance": 0.45466132026152234,
+          "alternatives": [
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": 20,
+              "distance": 0.45466132026152234
+            },
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": -20,
+              "distance": 0.5030900314132006
+            },
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": 0,
+              "distance": 0.6283422524246742
+            }
+          ]
+        },
+        "paired_signature_distance": 0.7729091256807631,
+        "expected_ild": -0.23548540578997218,
+        "actual_ild": -0.002741723349916754,
+        "expected_itd_us": 31.40578578244017,
+        "actual_itd_us": 0.593444721512823
+      },
+      {
+        "time_seconds": 216.55,
+        "intended_azimuth_unwrapped_deg": 380.238095238096,
+        "intended_elevation_deg": -12.0,
+        "actual_classification": {
+          "azimuth_deg": 120,
+          "elevation_deg": 60,
+          "front_rear": "rear",
+          "elevation_band": "high",
+          "confidence": 0.0808491906677108,
+          "coverage": 1.0,
+          "feature_distance": 0.557206009797808,
+          "alternatives": [
+            {
+              "azimuth_deg": 120,
+              "elevation_deg": 60,
+              "distance": 0.557206009797808
+            },
+            {
+              "azimuth_deg": 150,
+              "elevation_deg": 45,
+              "distance": 0.6062182659694185
+            },
+            {
+              "azimuth_deg": 150,
+              "elevation_deg": 60,
+              "distance": 0.6714546644560907
+            }
+          ]
+        },
+        "content_controlled_expected_classification": {
+          "azimuth_deg": 150,
+          "elevation_deg": 60,
+          "front_rear": "rear",
+          "elevation_band": "high",
+          "confidence": 0.011679992783813934,
+          "coverage": 1.0,
+          "feature_distance": 0.6301097274852526,
+          "alternatives": [
+            {
+              "azimuth_deg": 150,
+              "elevation_deg": 60,
+              "distance": 0.6301097274852526
+            },
+            {
+              "azimuth_deg": 30,
+              "elevation_deg": -45,
+              "distance": 0.637556381419507
+            },
+            {
+              "azimuth_deg": 150,
+              "elevation_deg": -20,
+              "distance": 0.6526036675224265
+            }
+          ]
+        },
+        "paired_signature_distance": 0.7388980105842956,
+        "expected_ild": -2.1815634079255837,
+        "actual_ild": -2.7525296153554315,
+        "expected_itd_us": -85.92692768899963,
+        "actual_itd_us": 2.905023145385708
+      },
+      {
+        "time_seconds": 217.05,
+        "intended_azimuth_unwrapped_deg": 399.28571428571496,
+        "intended_elevation_deg": -12.0,
+        "actual_classification": {
+          "azimuth_deg": 120,
+          "elevation_deg": 60,
+          "front_rear": "rear",
+          "elevation_band": "high",
+          "confidence": 0.13212802241519153,
+          "coverage": 1.0,
+          "feature_distance": 0.6342254469022065,
+          "alternatives": [
+            {
+              "azimuth_deg": 120,
+              "elevation_deg": 60,
+              "distance": 0.6342254469022065
+            },
+            {
+              "azimuth_deg": 120,
+              "elevation_deg": -45,
+              "distance": 0.7307822619958138
+            },
+            {
+              "azimuth_deg": 150,
+              "elevation_deg": 20,
+              "distance": 0.7763306362282897
+            }
+          ]
+        },
+        "content_controlled_expected_classification": {
+          "azimuth_deg": 120,
+          "elevation_deg": -45,
+          "front_rear": "rear",
+          "elevation_band": "low",
+          "confidence": 0.4616530525006971,
+          "coverage": 1.0,
+          "feature_distance": 0.3596583125215554,
+          "alternatives": [
+            {
+              "azimuth_deg": 120,
+              "elevation_deg": -45,
+              "distance": 0.3596583125215554
+            },
+            {
+              "azimuth_deg": 30,
+              "elevation_deg": -20,
+              "distance": 0.6680790412060823
+            },
+            {
+              "azimuth_deg": 60,
+              "elevation_deg": 45,
+              "distance": 0.6753453001420446
+            }
+          ]
+        },
+        "paired_signature_distance": 0.6062235059884665,
+        "expected_ild": -4.85607758095257,
+        "actual_ild": -4.611263083243236,
+        "expected_itd_us": 310.37968265240767,
+        "actual_itd_us": 84.73491974520341
+      },
+      {
+        "time_seconds": 217.55,
+        "intended_azimuth_unwrapped_deg": 408.8095238095244,
+        "intended_elevation_deg": -12.0,
+        "actual_classification": {
+          "azimuth_deg": 60,
+          "elevation_deg": -45,
+          "front_rear": "front",
+          "elevation_band": "low",
+          "confidence": 0.03766159329169793,
+          "coverage": 1.0,
+          "feature_distance": 0.7245349813215035,
+          "alternatives": [
+            {
+              "azimuth_deg": 60,
+              "elevation_deg": -45,
+              "distance": 0.7245349813215035
+            },
+            {
+              "azimuth_deg": 150,
+              "elevation_deg": 20,
+              "distance": 0.7528900190108696
+            },
+            {
+              "azimuth_deg": 60,
+              "elevation_deg": 45,
+              "distance": 0.7730630430496961
+            }
+          ]
+        },
+        "content_controlled_expected_classification": {
+          "azimuth_deg": 60,
+          "elevation_deg": 45,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.06111662146029192,
+          "coverage": 1.0,
+          "feature_distance": 0.5627811987192999,
+          "alternatives": [
+            {
+              "azimuth_deg": 60,
+              "elevation_deg": 45,
+              "distance": 0.5627811987192999
+            },
+            {
+              "azimuth_deg": 60,
+              "elevation_deg": -20,
+              "distance": 0.5994154456058445
+            },
+            {
+              "azimuth_deg": 120,
+              "elevation_deg": 45,
+              "distance": 0.6187062652441621
+            }
+          ]
+        },
+        "paired_signature_distance": 0.8108771173729727,
+        "expected_ild": -5.132828666381702,
+        "actual_ild": -5.066773100745,
+        "expected_itd_us": 169.26008554843955,
+        "actual_itd_us": 139.74077208843974
+      },
+      {
+        "time_seconds": 218.05,
+        "intended_azimuth_unwrapped_deg": 427.85714285714334,
+        "intended_elevation_deg": -12.0,
+        "actual_classification": {
+          "azimuth_deg": 60,
+          "elevation_deg": 20,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.08155978680695859,
+          "coverage": 1.0,
+          "feature_distance": 0.4359040612837807,
+          "alternatives": [
+            {
+              "azimuth_deg": 60,
+              "elevation_deg": 20,
+              "distance": 0.4359040612837807
+            },
+            {
+              "azimuth_deg": 60,
+              "elevation_deg": 0,
+              "distance": 0.4746134315790903
+            },
+            {
+              "azimuth_deg": 60,
+              "elevation_deg": -20,
+              "distance": 0.5583229954116314
+            }
+          ]
+        },
+        "content_controlled_expected_classification": {
+          "azimuth_deg": 120,
+          "elevation_deg": 20,
+          "front_rear": "rear",
+          "elevation_band": "high",
+          "confidence": 0.09992784533482883,
+          "coverage": 1.0,
+          "feature_distance": 0.6105562244141737,
+          "alternatives": [
+            {
+              "azimuth_deg": 120,
+              "elevation_deg": 20,
+              "distance": 0.6105562244141737
+            },
+            {
+              "azimuth_deg": 120,
+              "elevation_deg": -20,
+              "distance": 0.6783414210178538
+            },
+            {
+              "azimuth_deg": 60,
+              "elevation_deg": -20,
+              "distance": 0.7455778120686288
+            }
+          ]
+        },
+        "paired_signature_distance": 0.6634734041999694,
+        "expected_ild": -6.700315712233673,
+        "actual_ild": -6.541127739219082,
+        "expected_itd_us": 458.21514326517456,
+        "actual_itd_us": 430.9967669272601
+      }
+    ],
+    "actual_sector_order": "right → rear-right → rear → rear-left → left → front-left → front → front-right; cyclic rotation of the required eight sectors",
+    "nominal_start_unwrapped_deg": 85.0,
+    "nominal_end_unwrapped_deg": 445.0
+  },
+  "onset_collisions_by_section": [
+    {
+      "section_id": "m02_section_01",
+      "pairs": [
+        {
+          "roles": [
+            "lead_vocal",
+            "backing_vocals"
+          ],
+          "onset_collisions_10ms": 24,
+          "onset_collision_fraction_of_union": 0.1889763779527559,
+          "temporal_coactivity": 0.12466367713004484
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "woodwinds"
+          ],
+          "onset_collisions_10ms": 6,
+          "onset_collision_fraction_of_union": 0.03680981595092025,
+          "temporal_coactivity": 0.262780269058296
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "drums"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.06143497757847534
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "bass"
+          ],
+          "onset_collisions_10ms": 3,
+          "onset_collision_fraction_of_union": 0.022058823529411766,
+          "temporal_coactivity": 0.17623318385650225
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.01390134529147982
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 4,
+          "onset_collision_fraction_of_union": 0.023529411764705882,
+          "temporal_coactivity": 0.2932735426008969
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.07130044843049327
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "synth"
+          ],
+          "onset_collisions_10ms": 6,
+          "onset_collision_fraction_of_union": 0.02926829268292683,
+          "temporal_coactivity": 0.3237668161434978
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.131390134529148
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.03811659192825112
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "woodwinds"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.01031390134529148
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "drums"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.01569506726457399
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "bass"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.014925373134328358,
+          "temporal_coactivity": 0.1147982062780269
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.014798206278026907
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.011834319526627219,
+          "temporal_coactivity": 0.11165919282511211
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.017040358744394617
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "synth"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.05829596412556054
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.021524663677130046
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "drums"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.013333333333333334,
+          "temporal_coactivity": 0.12466367713004484
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "bass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.029596412556053813
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.017937219730941704
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.16681614349775784
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.011695906432748537,
+          "temporal_coactivity": 0.13318385650224215
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "synth"
+          ],
+          "onset_collisions_10ms": 61,
+          "onset_collision_fraction_of_union": 0.3696969696969697,
+          "temporal_coactivity": 0.47040358744394617
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.18654708520179372
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.03811659192825112
+        },
+        {
+          "roles": [
+            "drums",
+            "bass"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.016666666666666666,
+          "temporal_coactivity": 0.2282511210762332
+        },
+        {
+          "roles": [
+            "drums",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.012345679012345678,
+          "temporal_coactivity": 0.08071748878923767
+        },
+        {
+          "roles": [
+            "drums",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.00641025641025641,
+          "temporal_coactivity": 0.2641255605381166
+        },
+        {
+          "roles": [
+            "drums",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 54,
+          "onset_collision_fraction_of_union": 0.6206896551724138,
+          "temporal_coactivity": 0.3349775784753363
+        },
+        {
+          "roles": [
+            "drums",
+            "synth"
+          ],
+          "onset_collisions_10ms": 3,
+          "onset_collision_fraction_of_union": 0.015706806282722512,
+          "temporal_coactivity": 0.347085201793722
+        },
+        {
+          "roles": [
+            "drums",
+            "other"
+          ],
+          "onset_collisions_10ms": 29,
+          "onset_collision_fraction_of_union": 0.232,
+          "temporal_coactivity": 0.34484304932735427
+        },
+        {
+          "roles": [
+            "drums",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0
+        },
+        {
+          "roles": [
+            "bass",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.024390243902439025,
+          "temporal_coactivity": 0.06681614349775784
+        },
+        {
+          "roles": [
+            "bass",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 17,
+          "onset_collision_fraction_of_union": 0.11971830985915492,
+          "temporal_coactivity": 0.3412556053811659
+        },
+        {
+          "roles": [
+            "bass",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.014184397163120567,
+          "temporal_coactivity": 0.22869955156950672
+        },
+        {
+          "roles": [
+            "bass",
+            "synth"
+          ],
+          "onset_collisions_10ms": 24,
+          "onset_collision_fraction_of_union": 0.13953488372093023,
+          "temporal_coactivity": 0.2681614349775785
+        },
+        {
+          "roles": [
+            "bass",
+            "other"
+          ],
+          "onset_collisions_10ms": 15,
+          "onset_collision_fraction_of_union": 0.10638297872340426,
+          "temporal_coactivity": 0.23452914798206279
+        },
+        {
+          "roles": [
+            "bass",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0
+        },
+        {
+          "roles": [
+            "guitar",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 6,
+          "onset_collision_fraction_of_union": 0.05309734513274336,
+          "temporal_coactivity": 0.06502242152466367
+        },
+        {
+          "roles": [
+            "guitar",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 3,
+          "onset_collision_fraction_of_union": 0.03,
+          "temporal_coactivity": 0.08071748878923767
+        },
+        {
+          "roles": [
+            "guitar",
+            "synth"
+          ],
+          "onset_collisions_10ms": 7,
+          "onset_collision_fraction_of_union": 0.04697986577181208,
+          "temporal_coactivity": 0.08385650224215246
+        },
+        {
+          "roles": [
+            "guitar",
+            "other"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.008695652173913044,
+          "temporal_coactivity": 0.08026905829596413
+        },
+        {
+          "roles": [
+            "guitar",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0
+        },
+        {
+          "roles": [
+            "keyboards",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 3,
+          "onset_collision_fraction_of_union": 0.017142857142857144,
+          "temporal_coactivity": 0.2726457399103139
+        },
+        {
+          "roles": [
+            "keyboards",
+            "synth"
+          ],
+          "onset_collisions_10ms": 13,
+          "onset_collision_fraction_of_union": 0.05963302752293578,
+          "temporal_coactivity": 0.41748878923766813
+        },
+        {
+          "roles": [
+            "keyboards",
+            "other"
+          ],
+          "onset_collisions_10ms": 9,
+          "onset_collision_fraction_of_union": 0.04945054945054945,
+          "temporal_coactivity": 0.3376681614349776
+        },
+        {
+          "roles": [
+            "keyboards",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.03811659192825112
+        },
+        {
+          "roles": [
+            "percussion",
+            "synth"
+          ],
+          "onset_collisions_10ms": 4,
+          "onset_collision_fraction_of_union": 0.018957345971563982,
+          "temporal_coactivity": 0.3556053811659193
+        },
+        {
+          "roles": [
+            "percussion",
+            "other"
+          ],
+          "onset_collisions_10ms": 37,
+          "onset_collision_fraction_of_union": 0.26811594202898553,
+          "temporal_coactivity": 0.35336322869955156
+        },
+        {
+          "roles": [
+            "percussion",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0053811659192825115
+        },
+        {
+          "roles": [
+            "synth",
+            "other"
+          ],
+          "onset_collisions_10ms": 12,
+          "onset_collision_fraction_of_union": 0.05555555555555555,
+          "temporal_coactivity": 0.4233183856502242
+        },
+        {
+          "roles": [
+            "synth",
+            "brass"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.013793103448275862,
+          "temporal_coactivity": 0.03811659192825112
+        },
+        {
+          "roles": [
+            "other",
+            "brass"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.009433962264150943,
+          "temporal_coactivity": 0.02242152466367713
+        }
+      ],
+      "actual_spatial_outputs": true
+    },
+    {
+      "section_id": "m02_section_02",
+      "pairs": [
+        {
+          "roles": [
+            "lead_vocal",
+            "backing_vocals"
+          ],
+          "onset_collisions_10ms": 105,
+          "onset_collision_fraction_of_union": 0.3736654804270463,
+          "temporal_coactivity": 0.6539936102236422
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "woodwinds"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0009584664536741214
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "drums"
+          ],
+          "onset_collisions_10ms": 21,
+          "onset_collision_fraction_of_union": 0.06231454005934718,
+          "temporal_coactivity": 0.465814696485623
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "bass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.09616613418530351
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 29,
+          "onset_collision_fraction_of_union": 0.09634551495016612,
+          "temporal_coactivity": 0.5233226837060703
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 50,
+          "onset_collision_fraction_of_union": 0.13736263736263737,
+          "temporal_coactivity": 0.5715654952076678
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 38,
+          "onset_collision_fraction_of_union": 0.10826210826210826,
+          "temporal_coactivity": 0.44984025559105434
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "synth"
+          ],
+          "onset_collisions_10ms": 62,
+          "onset_collision_fraction_of_union": 0.13870246085011187,
+          "temporal_coactivity": 0.6172523961661341
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.23865814696485624
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "woodwinds"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.008945686900958467
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "drums"
+          ],
+          "onset_collisions_10ms": 6,
+          "onset_collision_fraction_of_union": 0.022058823529411766,
+          "temporal_coactivity": 0.3600638977635783
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "bass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.09776357827476038
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 12,
+          "onset_collision_fraction_of_union": 0.05042016806722689,
+          "temporal_coactivity": 0.44217252396166135
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 27,
+          "onset_collision_fraction_of_union": 0.08794788273615635,
+          "temporal_coactivity": 0.49616613418530353
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 14,
+          "onset_collision_fraction_of_union": 0.04745762711864407,
+          "temporal_coactivity": 0.3453674121405751
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "synth"
+          ],
+          "onset_collisions_10ms": 33,
+          "onset_collision_fraction_of_union": 0.08333333333333333,
+          "temporal_coactivity": 0.5012779552715655
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.16517571884984025
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "drums"
+          ],
+          "onset_collisions_10ms": 3,
+          "onset_collision_fraction_of_union": 0.022222222222222223,
+          "temporal_coactivity": 0.009904153354632588
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "bass"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.08333333333333333,
+          "temporal_coactivity": 0.009904153354632588
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.001597444089456869
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.005431309904153354
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.011976047904191617,
+          "temporal_coactivity": 0.009904153354632588
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "synth"
+          ],
+          "onset_collisions_10ms": 3,
+          "onset_collision_fraction_of_union": 0.01048951048951049,
+          "temporal_coactivity": 0.009904153354632588
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.009904153354632588
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0
+        },
+        {
+          "roles": [
+            "drums",
+            "bass"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.014705882352941176,
+          "temporal_coactivity": 0.08722044728434505
+        },
+        {
+          "roles": [
+            "drums",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 16,
+          "onset_collision_fraction_of_union": 0.07766990291262135,
+          "temporal_coactivity": 0.412779552715655
+        },
+        {
+          "roles": [
+            "drums",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 7,
+          "onset_collision_fraction_of_union": 0.023411371237458192,
+          "temporal_coactivity": 0.4329073482428115
+        },
+        {
+          "roles": [
+            "drums",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 106,
+          "onset_collision_fraction_of_union": 0.6057142857142858,
+          "temporal_coactivity": 0.48115015974440895
+        },
+        {
+          "roles": [
+            "drums",
+            "synth"
+          ],
+          "onset_collisions_10ms": 32,
+          "onset_collision_fraction_of_union": 0.08672086720867209,
+          "temporal_coactivity": 0.4894568690095847
+        },
+        {
+          "roles": [
+            "drums",
+            "other"
+          ],
+          "onset_collisions_10ms": 29,
+          "onset_collision_fraction_of_union": 0.2265625,
+          "temporal_coactivity": 0.2824281150159744
+        },
+        {
+          "roles": [
+            "drums",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0
+        },
+        {
+          "roles": [
+            "bass",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0939297124600639
+        },
+        {
+          "roles": [
+            "bass",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.10447284345047923
+        },
+        {
+          "roles": [
+            "bass",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 3,
+          "onset_collision_fraction_of_union": 0.018072289156626505,
+          "temporal_coactivity": 0.0817891373801917
+        },
+        {
+          "roles": [
+            "bass",
+            "synth"
+          ],
+          "onset_collisions_10ms": 8,
+          "onset_collision_fraction_of_union": 0.028469750889679714,
+          "temporal_coactivity": 0.11022364217252396
+        },
+        {
+          "roles": [
+            "bass",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.03801916932907348
+        },
+        {
+          "roles": [
+            "bass",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0
+        },
+        {
+          "roles": [
+            "guitar",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 49,
+          "onset_collision_fraction_of_union": 0.21397379912663755,
+          "temporal_coactivity": 0.5239616613418531
+        },
+        {
+          "roles": [
+            "guitar",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 20,
+          "onset_collision_fraction_of_union": 0.08583690987124463,
+          "temporal_coactivity": 0.39712460063897764
+        },
+        {
+          "roles": [
+            "guitar",
+            "synth"
+          ],
+          "onset_collisions_10ms": 70,
+          "onset_collision_fraction_of_union": 0.23102310231023102,
+          "temporal_coactivity": 0.5249201277955271
+        },
+        {
+          "roles": [
+            "guitar",
+            "other"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.0078125,
+          "temporal_coactivity": 0.18594249201277954
+        },
+        {
+          "roles": [
+            "guitar",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0
+        },
+        {
+          "roles": [
+            "keyboards",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 11,
+          "onset_collision_fraction_of_union": 0.03374233128834356,
+          "temporal_coactivity": 0.4194888178913738
+        },
+        {
+          "roles": [
+            "keyboards",
+            "synth"
+          ],
+          "onset_collisions_10ms": 107,
+          "onset_collision_fraction_of_union": 0.3057142857142857,
+          "temporal_coactivity": 0.5840255591054313
+        },
+        {
+          "roles": [
+            "keyboards",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.20511182108626197
+        },
+        {
+          "roles": [
+            "keyboards",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0
+        },
+        {
+          "roles": [
+            "percussion",
+            "synth"
+          ],
+          "onset_collisions_10ms": 34,
+          "onset_collision_fraction_of_union": 0.08542713567839195,
+          "temporal_coactivity": 0.4757188498402556
+        },
+        {
+          "roles": [
+            "percussion",
+            "other"
+          ],
+          "onset_collisions_10ms": 30,
+          "onset_collision_fraction_of_union": 0.189873417721519,
+          "temporal_coactivity": 0.2731629392971246
+        },
+        {
+          "roles": [
+            "percussion",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0
+        },
+        {
+          "roles": [
+            "synth",
+            "other"
+          ],
+          "onset_collisions_10ms": 5,
+          "onset_collision_fraction_of_union": 0.0165016501650165,
+          "temporal_coactivity": 0.2610223642172524
+        },
+        {
+          "roles": [
+            "synth",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0
+        },
+        {
+          "roles": [
+            "other",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0
+        }
+      ],
+      "actual_spatial_outputs": true
+    },
+    {
+      "section_id": "m02_section_03",
+      "pairs": [
+        {
+          "roles": [
+            "lead_vocal",
+            "backing_vocals"
+          ],
+          "onset_collisions_10ms": 186,
+          "onset_collision_fraction_of_union": 0.3223570190641248,
+          "temporal_coactivity": 0.7421138211382113
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "woodwinds"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.017723577235772357
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "drums"
+          ],
+          "onset_collisions_10ms": 24,
+          "onset_collision_fraction_of_union": 0.027210884353741496,
+          "temporal_coactivity": 0.7331707317073171
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "bass"
+          ],
+          "onset_collisions_10ms": 16,
+          "onset_collision_fraction_of_union": 0.020942408376963352,
+          "temporal_coactivity": 0.5743089430894309
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 6,
+          "onset_collision_fraction_of_union": 0.015503875968992248,
+          "temporal_coactivity": 0.32227642276422763
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 4,
+          "onset_collision_fraction_of_union": 0.009411764705882352,
+          "temporal_coactivity": 0.3982113821138211
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 13,
+          "onset_collision_fraction_of_union": 0.025793650793650792,
+          "temporal_coactivity": 0.7533333333333333
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "synth"
+          ],
+          "onset_collisions_10ms": 3,
+          "onset_collision_fraction_of_union": 0.0069605568445475635,
+          "temporal_coactivity": 0.5305691056910569
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "other"
+          ],
+          "onset_collisions_10ms": 6,
+          "onset_collision_fraction_of_union": 0.016853932584269662,
+          "temporal_coactivity": 0.4240650406504065
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0017886178861788618
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "woodwinds"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.012195121951219513
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "drums"
+          ],
+          "onset_collisions_10ms": 54,
+          "onset_collision_fraction_of_union": 0.05099150141643059,
+          "temporal_coactivity": 0.6926829268292682
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "bass"
+          ],
+          "onset_collisions_10ms": 48,
+          "onset_collision_fraction_of_union": 0.051118210862619806,
+          "temporal_coactivity": 0.5694308943089431
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 8,
+          "onset_collision_fraction_of_union": 0.013513513513513514,
+          "temporal_coactivity": 0.3159349593495935
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 16,
+          "onset_collision_fraction_of_union": 0.025806451612903226,
+          "temporal_coactivity": 0.3913821138211382
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 23,
+          "onset_collision_fraction_of_union": 0.03281027104136947,
+          "temporal_coactivity": 0.7029268292682926
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "synth"
+          ],
+          "onset_collisions_10ms": 7,
+          "onset_collision_fraction_of_union": 0.011041009463722398,
+          "temporal_coactivity": 0.5239024390243903
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "other"
+          ],
+          "onset_collisions_10ms": 15,
+          "onset_collision_fraction_of_union": 0.02707581227436823,
+          "temporal_coactivity": 0.4061788617886179
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0017886178861788618
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "drums"
+          ],
+          "onset_collisions_10ms": 35,
+          "onset_collision_fraction_of_union": 0.046419098143236075,
+          "temporal_coactivity": 0.14715447154471545
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "bass"
+          ],
+          "onset_collisions_10ms": 13,
+          "onset_collision_fraction_of_union": 0.02,
+          "temporal_coactivity": 0.14715447154471545
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 3,
+          "onset_collision_fraction_of_union": 0.01098901098901099,
+          "temporal_coactivity": 0.07317073170731707
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 7,
+          "onset_collision_fraction_of_union": 0.022950819672131147,
+          "temporal_coactivity": 0.14682926829268292
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 9,
+          "onset_collision_fraction_of_union": 0.023017902813299233,
+          "temporal_coactivity": 0.1469918699186992
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "synth"
+          ],
+          "onset_collisions_10ms": 19,
+          "onset_collision_fraction_of_union": 0.06375838926174497,
+          "temporal_coactivity": 0.14715447154471545
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.036585365853658534
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0
+        },
+        {
+          "roles": [
+            "drums",
+            "bass"
+          ],
+          "onset_collisions_10ms": 107,
+          "onset_collision_fraction_of_union": 0.10459433040078202,
+          "temporal_coactivity": 0.707479674796748
+        },
+        {
+          "roles": [
+            "drums",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 18,
+          "onset_collision_fraction_of_union": 0.02482758620689655,
+          "temporal_coactivity": 0.3884552845528455
+        },
+        {
+          "roles": [
+            "drums",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 18,
+          "onset_collision_fraction_of_union": 0.023653088042049936,
+          "temporal_coactivity": 0.5273170731707317
+        },
+        {
+          "roles": [
+            "drums",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 197,
+          "onset_collision_fraction_of_union": 0.29402985074626864,
+          "temporal_coactivity": 0.8824390243902439
+        },
+        {
+          "roles": [
+            "drums",
+            "synth"
+          ],
+          "onset_collisions_10ms": 45,
+          "onset_collision_fraction_of_union": 0.06089309878213803,
+          "temporal_coactivity": 0.683089430894309
+        },
+        {
+          "roles": [
+            "drums",
+            "other"
+          ],
+          "onset_collisions_10ms": 28,
+          "onset_collision_fraction_of_union": 0.04093567251461988,
+          "temporal_coactivity": 0.4510569105691057
+        },
+        {
+          "roles": [
+            "drums",
+            "brass"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.0031847133757961785,
+          "temporal_coactivity": 0.0017886178861788618
+        },
+        {
+          "roles": [
+            "bass",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 42,
+          "onset_collision_fraction_of_union": 0.07304347826086957,
+          "temporal_coactivity": 0.383739837398374
+        },
+        {
+          "roles": [
+            "bass",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 51,
+          "onset_collision_fraction_of_union": 0.08471760797342193,
+          "temporal_coactivity": 0.5273170731707317
+        },
+        {
+          "roles": [
+            "bass",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 11,
+          "onset_collision_fraction_of_union": 0.015068493150684932,
+          "temporal_coactivity": 0.7052032520325203
+        },
+        {
+          "roles": [
+            "bass",
+            "synth"
+          ],
+          "onset_collisions_10ms": 75,
+          "onset_collision_fraction_of_union": 0.12864493996569468,
+          "temporal_coactivity": 0.6560975609756098
+        },
+        {
+          "roles": [
+            "bass",
+            "other"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.003424657534246575,
+          "temporal_coactivity": 0.3434146341463415
+        },
+        {
+          "roles": [
+            "bass",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0016260162601626016
+        },
+        {
+          "roles": [
+            "guitar",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 18,
+          "onset_collision_fraction_of_union": 0.07258064516129033,
+          "temporal_coactivity": 0.30666666666666664
+        },
+        {
+          "roles": [
+            "guitar",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.0028328611898017,
+          "temporal_coactivity": 0.38715447154471544
+        },
+        {
+          "roles": [
+            "guitar",
+            "synth"
+          ],
+          "onset_collisions_10ms": 10,
+          "onset_collision_fraction_of_union": 0.038314176245210725,
+          "temporal_coactivity": 0.38341463414634147
+        },
+        {
+          "roles": [
+            "guitar",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.1551219512195122
+        },
+        {
+          "roles": [
+            "guitar",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0
+        },
+        {
+          "roles": [
+            "keyboards",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 3,
+          "onset_collision_fraction_of_union": 0.007751937984496124,
+          "temporal_coactivity": 0.5260162601626016
+        },
+        {
+          "roles": [
+            "keyboards",
+            "synth"
+          ],
+          "onset_collisions_10ms": 8,
+          "onset_collision_fraction_of_union": 0.026755852842809364,
+          "temporal_coactivity": 0.519349593495935
+        },
+        {
+          "roles": [
+            "keyboards",
+            "other"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.004273504273504274,
+          "temporal_coactivity": 0.2819512195121951
+        },
+        {
+          "roles": [
+            "keyboards",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0
+        },
+        {
+          "roles": [
+            "percussion",
+            "synth"
+          ],
+          "onset_collisions_10ms": 8,
+          "onset_collision_fraction_of_union": 0.020671834625323,
+          "temporal_coactivity": 0.6816260162601626
+        },
+        {
+          "roles": [
+            "percussion",
+            "other"
+          ],
+          "onset_collisions_10ms": 17,
+          "onset_collision_fraction_of_union": 0.05555555555555555,
+          "temporal_coactivity": 0.4530081300813008
+        },
+        {
+          "roles": [
+            "percussion",
+            "brass"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.008368200836820083,
+          "temporal_coactivity": 0.0017886178861788618
+        },
+        {
+          "roles": [
+            "synth",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.34243902439024393
+        },
+        {
+          "roles": [
+            "synth",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0
+        },
+        {
+          "roles": [
+            "other",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0017886178861788618
+        }
+      ],
+      "actual_spatial_outputs": true
+    },
+    {
+      "section_id": "m02_section_04",
+      "pairs": [
+        {
+          "roles": [
+            "lead_vocal",
+            "backing_vocals"
+          ],
+          "onset_collisions_10ms": 3,
+          "onset_collision_fraction_of_union": 0.3333333333333333,
+          "temporal_coactivity": 0.05706806282722513
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "woodwinds"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.040837696335078534
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "drums"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.06910994764397906
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "bass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.03717277486910995
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.024083769633507852
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.04502617801047121
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.06282722513089005
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "synth"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.04554973821989529
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.06858638743455497
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.02617801047120419
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "woodwinds"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.025130890052356022
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "drums"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.05340314136125655
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "bass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.025130890052356022
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.015706806282722512
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.030890052356020943
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.04712041884816754
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "synth"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.029842931937172777
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.05340314136125655
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "drums"
+          ],
+          "onset_collisions_10ms": 17,
+          "onset_collision_fraction_of_union": 0.06204379562043796,
+          "temporal_coactivity": 0.9502617801047121
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "bass"
+          ],
+          "onset_collisions_10ms": 31,
+          "onset_collision_fraction_of_union": 0.096875,
+          "temporal_coactivity": 0.6890052356020943
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.014388489208633094,
+          "temporal_coactivity": 0.218848167539267
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 7,
+          "onset_collision_fraction_of_union": 0.051470588235294115,
+          "temporal_coactivity": 0.36963350785340315
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 9,
+          "onset_collision_fraction_of_union": 0.03765690376569038,
+          "temporal_coactivity": 0.8989528795811519
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "synth"
+          ],
+          "onset_collisions_10ms": 42,
+          "onset_collision_fraction_of_union": 0.12280701754385964,
+          "temporal_coactivity": 0.9502617801047121
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "other"
+          ],
+          "onset_collisions_10ms": 5,
+          "onset_collision_fraction_of_union": 0.03225806451612903,
+          "temporal_coactivity": 0.5041884816753927
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.374869109947644
+        },
+        {
+          "roles": [
+            "drums",
+            "bass"
+          ],
+          "onset_collisions_10ms": 21,
+          "onset_collision_fraction_of_union": 0.05370843989769821,
+          "temporal_coactivity": 0.6905759162303665
+        },
+        {
+          "roles": [
+            "drums",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 6,
+          "onset_collision_fraction_of_union": 0.030612244897959183,
+          "temporal_coactivity": 0.218848167539267
+        },
+        {
+          "roles": [
+            "drums",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 7,
+          "onset_collision_fraction_of_union": 0.03553299492385787,
+          "temporal_coactivity": 0.37905759162303665
+        },
+        {
+          "roles": [
+            "drums",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 63,
+          "onset_collision_fraction_of_union": 0.25609756097560976,
+          "temporal_coactivity": 0.9246073298429319
+        },
+        {
+          "roles": [
+            "drums",
+            "synth"
+          ],
+          "onset_collisions_10ms": 33,
+          "onset_collision_fraction_of_union": 0.08009708737864078,
+          "temporal_coactivity": 0.9596858638743455
+        },
+        {
+          "roles": [
+            "drums",
+            "other"
+          ],
+          "onset_collisions_10ms": 10,
+          "onset_collision_fraction_of_union": 0.04739336492890995,
+          "temporal_coactivity": 0.5272251308900524
+        },
+        {
+          "roles": [
+            "drums",
+            "brass"
+          ],
+          "onset_collisions_10ms": 9,
+          "onset_collision_fraction_of_union": 0.04568527918781726,
+          "temporal_coactivity": 0.374869109947644
+        },
+        {
+          "roles": [
+            "bass",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 9,
+          "onset_collision_fraction_of_union": 0.03557312252964427,
+          "temporal_coactivity": 0.19267015706806281
+        },
+        {
+          "roles": [
+            "bass",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 10,
+          "onset_collision_fraction_of_union": 0.03937007874015748,
+          "temporal_coactivity": 0.31204188481675393
+        },
+        {
+          "roles": [
+            "bass",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 7,
+          "onset_collision_fraction_of_union": 0.019337016574585635,
+          "temporal_coactivity": 0.6397905759162303
+        },
+        {
+          "roles": [
+            "bass",
+            "synth"
+          ],
+          "onset_collisions_10ms": 87,
+          "onset_collision_fraction_of_union": 0.20813397129186603,
+          "temporal_coactivity": 0.6905759162303665
+        },
+        {
+          "roles": [
+            "bass",
+            "other"
+          ],
+          "onset_collisions_10ms": 3,
+          "onset_collision_fraction_of_union": 0.01079136690647482,
+          "temporal_coactivity": 0.3842931937172775
+        },
+        {
+          "roles": [
+            "bass",
+            "brass"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.007575757575757576,
+          "temporal_coactivity": 0.2743455497382199
+        },
+        {
+          "roles": [
+            "guitar",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 6,
+          "onset_collision_fraction_of_union": 0.125,
+          "temporal_coactivity": 0.2157068062827225
+        },
+        {
+          "roles": [
+            "guitar",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 6,
+          "onset_collision_fraction_of_union": 0.0392156862745098,
+          "temporal_coactivity": 0.21413612565445025
+        },
+        {
+          "roles": [
+            "guitar",
+            "synth"
+          ],
+          "onset_collisions_10ms": 4,
+          "onset_collision_fraction_of_union": 0.013745704467353952,
+          "temporal_coactivity": 0.218848167539267
+        },
+        {
+          "roles": [
+            "guitar",
+            "other"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.014285714285714285,
+          "temporal_coactivity": 0.20157068062827224
+        },
+        {
+          "roles": [
+            "guitar",
+            "brass"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.037037037037037035,
+          "temporal_coactivity": 0.11465968586387434
+        },
+        {
+          "roles": [
+            "keyboards",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 5,
+          "onset_collision_fraction_of_union": 0.03205128205128205,
+          "temporal_coactivity": 0.36910994764397903
+        },
+        {
+          "roles": [
+            "keyboards",
+            "synth"
+          ],
+          "onset_collisions_10ms": 11,
+          "onset_collision_fraction_of_union": 0.038461538461538464,
+          "temporal_coactivity": 0.3774869109947644
+        },
+        {
+          "roles": [
+            "keyboards",
+            "other"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.013888888888888888,
+          "temporal_coactivity": 0.312565445026178
+        },
+        {
+          "roles": [
+            "keyboards",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.20157068062827224
+        },
+        {
+          "roles": [
+            "percussion",
+            "synth"
+          ],
+          "onset_collisions_10ms": 15,
+          "onset_collision_fraction_of_union": 0.03875968992248062,
+          "temporal_coactivity": 0.9083769633507853
+        },
+        {
+          "roles": [
+            "percussion",
+            "other"
+          ],
+          "onset_collisions_10ms": 15,
+          "onset_collision_fraction_of_union": 0.09202453987730061,
+          "temporal_coactivity": 0.5073298429319372
+        },
+        {
+          "roles": [
+            "percussion",
+            "brass"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.012422360248447204,
+          "temporal_coactivity": 0.35287958115183243
+        },
+        {
+          "roles": [
+            "synth",
+            "other"
+          ],
+          "onset_collisions_10ms": 4,
+          "onset_collision_fraction_of_union": 0.012903225806451613,
+          "temporal_coactivity": 0.5136125654450262
+        },
+        {
+          "roles": [
+            "synth",
+            "brass"
+          ],
+          "onset_collisions_10ms": 4,
+          "onset_collision_fraction_of_union": 0.013559322033898305,
+          "temporal_coactivity": 0.374869109947644
+        },
+        {
+          "roles": [
+            "other",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.2350785340314136
+        }
+      ],
+      "actual_spatial_outputs": true
+    },
+    {
+      "section_id": "m02_section_05",
+      "pairs": [
+        {
+          "roles": [
+            "lead_vocal",
+            "backing_vocals"
+          ],
+          "onset_collisions_10ms": 50,
+          "onset_collision_fraction_of_union": 0.14925373134328357,
+          "temporal_coactivity": 0.375219298245614
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "woodwinds"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.01162280701754386
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "drums"
+          ],
+          "onset_collisions_10ms": 7,
+          "onset_collision_fraction_of_union": 0.013779527559055118,
+          "temporal_coactivity": 0.49100877192982456
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "bass"
+          ],
+          "onset_collisions_10ms": 4,
+          "onset_collision_fraction_of_union": 0.012084592145015106,
+          "temporal_coactivity": 0.3668859649122807
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 5,
+          "onset_collision_fraction_of_union": 0.025510204081632654,
+          "temporal_coactivity": 0.4131578947368421
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.3684210526315789
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 5,
+          "onset_collision_fraction_of_union": 0.02032520325203252,
+          "temporal_coactivity": 0.5495614035087719
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "synth"
+          ],
+          "onset_collisions_10ms": 17,
+          "onset_collision_fraction_of_union": 0.05362776025236593,
+          "temporal_coactivity": 0.6826754385964913
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.11885964912280701
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "brass"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.006802721088435374,
+          "temporal_coactivity": 0.01732456140350877
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "woodwinds"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.006798245614035088
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "drums"
+          ],
+          "onset_collisions_10ms": 22,
+          "onset_collision_fraction_of_union": 0.036065573770491806,
+          "temporal_coactivity": 0.3682017543859649
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "bass"
+          ],
+          "onset_collisions_10ms": 22,
+          "onset_collision_fraction_of_union": 0.05116279069767442,
+          "temporal_coactivity": 0.3473684210526316
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0625
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.08881578947368421
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 6,
+          "onset_collision_fraction_of_union": 0.016574585635359115,
+          "temporal_coactivity": 0.3392543859649123
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "synth"
+          ],
+          "onset_collisions_10ms": 9,
+          "onset_collision_fraction_of_union": 0.020361990950226245,
+          "temporal_coactivity": 0.3162280701754386
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.05592105263157895
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0010964912280701754
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "drums"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.0025906735751295338,
+          "temporal_coactivity": 0.030921052631578946
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "bass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.016228070175438595
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0059210526315789476
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0043859649122807015
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.029605263157894735
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "synth"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.03048245614035088
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "other"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.021505376344086023,
+          "temporal_coactivity": 0.030921052631578946
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.005482456140350877
+        },
+        {
+          "roles": [
+            "drums",
+            "bass"
+          ],
+          "onset_collisions_10ms": 41,
+          "onset_collision_fraction_of_union": 0.07578558225508318,
+          "temporal_coactivity": 0.37083333333333335
+        },
+        {
+          "roles": [
+            "drums",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 4,
+          "onset_collision_fraction_of_union": 0.009009009009009009,
+          "temporal_coactivity": 0.15
+        },
+        {
+          "roles": [
+            "drums",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.002531645569620253,
+          "temporal_coactivity": 0.14868421052631578
+        },
+        {
+          "roles": [
+            "drums",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 103,
+          "onset_collision_fraction_of_union": 0.2607594936708861,
+          "temporal_coactivity": 0.6348684210526315
+        },
+        {
+          "roles": [
+            "drums",
+            "synth"
+          ],
+          "onset_collisions_10ms": 26,
+          "onset_collision_fraction_of_union": 0.04684684684684685,
+          "temporal_coactivity": 0.4392543859649123
+        },
+        {
+          "roles": [
+            "drums",
+            "other"
+          ],
+          "onset_collisions_10ms": 47,
+          "onset_collision_fraction_of_union": 0.1111111111111111,
+          "temporal_coactivity": 0.2361842105263158
+        },
+        {
+          "roles": [
+            "drums",
+            "brass"
+          ],
+          "onset_collisions_10ms": 3,
+          "onset_collision_fraction_of_union": 0.007653061224489796,
+          "temporal_coactivity": 0.014912280701754385
+        },
+        {
+          "roles": [
+            "bass",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.06798245614035088
+        },
+        {
+          "roles": [
+            "bass",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.004651162790697674,
+          "temporal_coactivity": 0.09385964912280702
+        },
+        {
+          "roles": [
+            "bass",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.3399122807017544
+        },
+        {
+          "roles": [
+            "bass",
+            "synth"
+          ],
+          "onset_collisions_10ms": 65,
+          "onset_collision_fraction_of_union": 0.19345238095238096,
+          "temporal_coactivity": 0.33267543859649124
+        },
+        {
+          "roles": [
+            "bass",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.07083333333333333
+        },
+        {
+          "roles": [
+            "bass",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.005482456140350877
+        },
+        {
+          "roles": [
+            "guitar",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 12,
+          "onset_collision_fraction_of_union": 0.17142857142857143,
+          "temporal_coactivity": 0.35986842105263156
+        },
+        {
+          "roles": [
+            "guitar",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.01098901098901099,
+          "temporal_coactivity": 0.2388157894736842
+        },
+        {
+          "roles": [
+            "guitar",
+            "synth"
+          ],
+          "onset_collisions_10ms": 61,
+          "onset_collision_fraction_of_union": 0.2961165048543689,
+          "temporal_coactivity": 0.45219298245614037
+        },
+        {
+          "roles": [
+            "guitar",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.04342105263157895
+        },
+        {
+          "roles": [
+            "guitar",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.015789473684210527
+        },
+        {
+          "roles": [
+            "keyboards",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.007633587786259542,
+          "temporal_coactivity": 0.22982456140350876
+        },
+        {
+          "roles": [
+            "keyboards",
+            "synth"
+          ],
+          "onset_collisions_10ms": 14,
+          "onset_collision_fraction_of_union": 0.06965174129353234,
+          "temporal_coactivity": 0.39824561403508774
+        },
+        {
+          "roles": [
+            "keyboards",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.03684210526315789
+        },
+        {
+          "roles": [
+            "keyboards",
+            "brass"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.03571428571428571,
+          "temporal_coactivity": 0.015570175438596491
+        },
+        {
+          "roles": [
+            "percussion",
+            "synth"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.006349206349206349,
+          "temporal_coactivity": 0.506140350877193
+        },
+        {
+          "roles": [
+            "percussion",
+            "other"
+          ],
+          "onset_collisions_10ms": 9,
+          "onset_collision_fraction_of_union": 0.04568527918781726,
+          "temporal_coactivity": 0.2307017543859649
+        },
+        {
+          "roles": [
+            "percussion",
+            "brass"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.007692307692307693,
+          "temporal_coactivity": 0.01293859649122807
+        },
+        {
+          "roles": [
+            "synth",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.10679824561403509
+        },
+        {
+          "roles": [
+            "synth",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.01732456140350877
+        },
+        {
+          "roles": [
+            "other",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.01732456140350877
+        }
+      ],
+      "actual_spatial_outputs": true
+    },
+    {
+      "section_id": "m02_section_06",
+      "pairs": [
+        {
+          "roles": [
+            "lead_vocal",
+            "backing_vocals"
+          ],
+          "onset_collisions_10ms": 48,
+          "onset_collision_fraction_of_union": 0.24,
+          "temporal_coactivity": 0.24335839598997494
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "woodwinds"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.033583959899749376
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "drums"
+          ],
+          "onset_collisions_10ms": 3,
+          "onset_collision_fraction_of_union": 0.008771929824561403,
+          "temporal_coactivity": 0.2581453634085213
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "bass"
+          ],
+          "onset_collisions_10ms": 16,
+          "onset_collision_fraction_of_union": 0.03747072599531616,
+          "temporal_coactivity": 0.14385964912280702
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.13533834586466165
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.08847117794486216
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.00558659217877095,
+          "temporal_coactivity": 0.26340852130325815
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "synth"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.00411522633744856,
+          "temporal_coactivity": 0.274937343358396
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "other"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.0044444444444444444,
+          "temporal_coactivity": 0.07243107769423558
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.023809523809523808
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "woodwinds"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.022556390977443608
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "drums"
+          ],
+          "onset_collisions_10ms": 5,
+          "onset_collision_fraction_of_union": 0.011848341232227487,
+          "temporal_coactivity": 0.2506265664160401
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "bass"
+          ],
+          "onset_collisions_10ms": 36,
+          "onset_collision_fraction_of_union": 0.0736196319018405,
+          "temporal_coactivity": 0.14912280701754385
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.004310344827586207,
+          "temporal_coactivity": 0.10701754385964912
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.07368421052631578
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 3,
+          "onset_collision_fraction_of_union": 0.011583011583011582,
+          "temporal_coactivity": 0.2518796992481203
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "synth"
+          ],
+          "onset_collisions_10ms": 4,
+          "onset_collision_fraction_of_union": 0.012422360248447204,
+          "temporal_coactivity": 0.2513784461152882
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.057393483709273184
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.026566416040100252
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "drums"
+          ],
+          "onset_collisions_10ms": 28,
+          "onset_collision_fraction_of_union": 0.06666666666666667,
+          "temporal_coactivity": 0.47092731829573936
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "bass"
+          ],
+          "onset_collisions_10ms": 22,
+          "onset_collision_fraction_of_union": 0.04198473282442748,
+          "temporal_coactivity": 0.24611528822055137
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.2556390977443609
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 43,
+          "onset_collision_fraction_of_union": 0.14625850340136054,
+          "temporal_coactivity": 0.22781954887218045
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 11,
+          "onset_collision_fraction_of_union": 0.04044117647058824,
+          "temporal_coactivity": 0.46691729323308273
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "synth"
+          ],
+          "onset_collisions_10ms": 42,
+          "onset_collision_fraction_of_union": 0.1377049180327869,
+          "temporal_coactivity": 0.40651629072681705
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.07969924812030076
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.07443609022556391
+        },
+        {
+          "roles": [
+            "drums",
+            "bass"
+          ],
+          "onset_collisions_10ms": 29,
+          "onset_collision_fraction_of_union": 0.048903878583473864,
+          "temporal_coactivity": 0.47343358395989976
+        },
+        {
+          "roles": [
+            "drums",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 4,
+          "onset_collision_fraction_of_union": 0.012269938650306749,
+          "temporal_coactivity": 0.44837092731829575
+        },
+        {
+          "roles": [
+            "drums",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 18,
+          "onset_collision_fraction_of_union": 0.04556962025316456,
+          "temporal_coactivity": 0.43909774436090226
+        },
+        {
+          "roles": [
+            "drums",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 88,
+          "onset_collision_fraction_of_union": 0.3247232472324723,
+          "temporal_coactivity": 0.8779448621553885
+        },
+        {
+          "roles": [
+            "drums",
+            "synth"
+          ],
+          "onset_collisions_10ms": 24,
+          "onset_collision_fraction_of_union": 0.06015037593984962,
+          "temporal_coactivity": 0.806265664160401
+        },
+        {
+          "roles": [
+            "drums",
+            "other"
+          ],
+          "onset_collisions_10ms": 7,
+          "onset_collision_fraction_of_union": 0.017587939698492462,
+          "temporal_coactivity": 0.27669172932330827
+        },
+        {
+          "roles": [
+            "drums",
+            "brass"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.0029940119760479044,
+          "temporal_coactivity": 0.18521303258145363
+        },
+        {
+          "roles": [
+            "bass",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.00234192037470726,
+          "temporal_coactivity": 0.2661654135338346
+        },
+        {
+          "roles": [
+            "bass",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 5,
+          "onset_collision_fraction_of_union": 0.009881422924901186,
+          "temporal_coactivity": 0.23909774436090225
+        },
+        {
+          "roles": [
+            "bass",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.004395604395604396,
+          "temporal_coactivity": 0.47218045112781953
+        },
+        {
+          "roles": [
+            "bass",
+            "synth"
+          ],
+          "onset_collisions_10ms": 47,
+          "onset_collision_fraction_of_union": 0.09915611814345991,
+          "temporal_coactivity": 0.4714285714285714
+        },
+        {
+          "roles": [
+            "bass",
+            "other"
+          ],
+          "onset_collisions_10ms": 109,
+          "onset_collision_fraction_of_union": 0.2766497461928934,
+          "temporal_coactivity": 0.1631578947368421
+        },
+        {
+          "roles": [
+            "bass",
+            "brass"
+          ],
+          "onset_collisions_10ms": 55,
+          "onset_collision_fraction_of_union": 0.1455026455026455,
+          "temporal_coactivity": 0.15463659147869674
+        },
+        {
+          "roles": [
+            "guitar",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 52,
+          "onset_collision_fraction_of_union": 0.31137724550898205,
+          "temporal_coactivity": 0.3325814536340852
+        },
+        {
+          "roles": [
+            "guitar",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.012269938650306749,
+          "temporal_coactivity": 0.4614035087719298
+        },
+        {
+          "roles": [
+            "guitar",
+            "synth"
+          ],
+          "onset_collisions_10ms": 57,
+          "onset_collision_fraction_of_union": 0.3313953488372093,
+          "temporal_coactivity": 0.5390977443609023
+        },
+        {
+          "roles": [
+            "guitar",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.13157894736842105
+        },
+        {
+          "roles": [
+            "guitar",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.05263157894736842
+        },
+        {
+          "roles": [
+            "keyboards",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 7,
+          "onset_collision_fraction_of_union": 0.029045643153526972,
+          "temporal_coactivity": 0.45162907268170427
+        },
+        {
+          "roles": [
+            "keyboards",
+            "synth"
+          ],
+          "onset_collisions_10ms": 53,
+          "onset_collision_fraction_of_union": 0.20463320463320464,
+          "temporal_coactivity": 0.4598997493734336
+        },
+        {
+          "roles": [
+            "keyboards",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.18145363408521303
+        },
+        {
+          "roles": [
+            "keyboards",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.06716791979949875
+        },
+        {
+          "roles": [
+            "percussion",
+            "synth"
+          ],
+          "onset_collisions_10ms": 9,
+          "onset_collision_fraction_of_union": 0.03614457831325301,
+          "temporal_coactivity": 0.8172932330827067
+        },
+        {
+          "roles": [
+            "percussion",
+            "other"
+          ],
+          "onset_collisions_10ms": 4,
+          "onset_collision_fraction_of_union": 0.01694915254237288,
+          "temporal_coactivity": 0.2786967418546366
+        },
+        {
+          "roles": [
+            "percussion",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.18270676691729323
+        },
+        {
+          "roles": [
+            "synth",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.29974937343358393
+        },
+        {
+          "roles": [
+            "synth",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.19072681704260652
+        },
+        {
+          "roles": [
+            "other",
+            "brass"
+          ],
+          "onset_collisions_10ms": 56,
+          "onset_collision_fraction_of_union": 0.35,
+          "temporal_coactivity": 0.13383458646616542
+        }
+      ],
+      "actual_spatial_outputs": true
+    },
+    {
+      "section_id": "m02_section_07",
+      "pairs": [
+        {
+          "roles": [
+            "lead_vocal",
+            "backing_vocals"
+          ],
+          "onset_collisions_10ms": 4,
+          "onset_collision_fraction_of_union": 0.041666666666666664,
+          "temporal_coactivity": 0.09104477611940298
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "woodwinds"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0626865671641791
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "drums"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.007352941176470588,
+          "temporal_coactivity": 0.05
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "bass"
+          ],
+          "onset_collisions_10ms": 39,
+          "onset_collision_fraction_of_union": 0.3482142857142857,
+          "temporal_coactivity": 0.09104477611940298
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.002238805970149254
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 19,
+          "onset_collision_fraction_of_union": 0.19387755102040816,
+          "temporal_coactivity": 0.09179104477611941
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.041791044776119404
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "synth"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.048507462686567165
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "other"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.011695906432748537,
+          "temporal_coactivity": 0.09179104477611941
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.015671641791044775
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "woodwinds"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0626865671641791
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "drums"
+          ],
+          "onset_collisions_10ms": 6,
+          "onset_collision_fraction_of_union": 0.04316546762589928,
+          "temporal_coactivity": 0.25298507462686565
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "bass"
+          ],
+          "onset_collisions_10ms": 10,
+          "onset_collision_fraction_of_union": 0.06711409395973154,
+          "temporal_coactivity": 0.2417910447761194
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 10,
+          "onset_collision_fraction_of_union": 0.08547008547008547,
+          "temporal_coactivity": 0.09179104477611941
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 8,
+          "onset_collision_fraction_of_union": 0.06837606837606838,
+          "temporal_coactivity": 0.2947761194029851
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.009900990099009901,
+          "temporal_coactivity": 0.24477611940298508
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "synth"
+          ],
+          "onset_collisions_10ms": 10,
+          "onset_collision_fraction_of_union": 0.08403361344537816,
+          "temporal_coactivity": 0.22835820895522388
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "other"
+          ],
+          "onset_collisions_10ms": 5,
+          "onset_collision_fraction_of_union": 0.028409090909090908,
+          "temporal_coactivity": 0.2947761194029851
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.03507462686567164
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "drums"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0873134328358209
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "bass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.09179104477611941
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.030597014925373135
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 10,
+          "onset_collision_fraction_of_union": 0.08064516129032258,
+          "temporal_coactivity": 0.25223880597014925
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.00909090909090909,
+          "temporal_coactivity": 0.08059701492537313
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "synth"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.3276119402985075
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "other"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.005291005291005291,
+          "temporal_coactivity": 0.2171641791044776
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "brass"
+          ],
+          "onset_collisions_10ms": 12,
+          "onset_collision_fraction_of_union": 0.14814814814814814,
+          "temporal_coactivity": 0.16865671641791044
+        },
+        {
+          "roles": [
+            "drums",
+            "bass"
+          ],
+          "onset_collisions_10ms": 21,
+          "onset_collision_fraction_of_union": 0.12,
+          "temporal_coactivity": 0.45671641791044776
+        },
+        {
+          "roles": [
+            "drums",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 19,
+          "onset_collision_fraction_of_union": 0.1310344827586207,
+          "temporal_coactivity": 0.32238805970149254
+        },
+        {
+          "roles": [
+            "drums",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.006211180124223602,
+          "temporal_coactivity": 0.7119402985074627
+        },
+        {
+          "roles": [
+            "drums",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 39,
+          "onset_collision_fraction_of_union": 0.39,
+          "temporal_coactivity": 0.7082089552238806
+        },
+        {
+          "roles": [
+            "drums",
+            "synth"
+          ],
+          "onset_collisions_10ms": 21,
+          "onset_collision_fraction_of_union": 0.14482758620689656,
+          "temporal_coactivity": 0.6223880597014926
+        },
+        {
+          "roles": [
+            "drums",
+            "other"
+          ],
+          "onset_collisions_10ms": 23,
+          "onset_collision_fraction_of_union": 0.11794871794871795,
+          "temporal_coactivity": 0.7164179104477612
+        },
+        {
+          "roles": [
+            "drums",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.03731343283582089
+        },
+        {
+          "roles": [
+            "bass",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 38,
+          "onset_collision_fraction_of_union": 0.2714285714285714,
+          "temporal_coactivity": 0.282089552238806
+        },
+        {
+          "roles": [
+            "bass",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 23,
+          "onset_collision_fraction_of_union": 0.1503267973856209,
+          "temporal_coactivity": 0.49850746268656715
+        },
+        {
+          "roles": [
+            "bass",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 6,
+          "onset_collision_fraction_of_union": 0.04081632653061224,
+          "temporal_coactivity": 0.44850746268656716
+        },
+        {
+          "roles": [
+            "bass",
+            "synth"
+          ],
+          "onset_collisions_10ms": 37,
+          "onset_collision_fraction_of_union": 0.25874125874125875,
+          "temporal_coactivity": 0.44925373134328356
+        },
+        {
+          "roles": [
+            "bass",
+            "other"
+          ],
+          "onset_collisions_10ms": 5,
+          "onset_collision_fraction_of_union": 0.022026431718061675,
+          "temporal_coactivity": 0.49850746268656715
+        },
+        {
+          "roles": [
+            "bass",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.03731343283582089
+        },
+        {
+          "roles": [
+            "guitar",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 4,
+          "onset_collision_fraction_of_union": 0.02857142857142857,
+          "temporal_coactivity": 0.32238805970149254
+        },
+        {
+          "roles": [
+            "guitar",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 6,
+          "onset_collision_fraction_of_union": 0.05217391304347826,
+          "temporal_coactivity": 0.32238805970149254
+        },
+        {
+          "roles": [
+            "guitar",
+            "synth"
+          ],
+          "onset_collisions_10ms": 51,
+          "onset_collision_fraction_of_union": 0.5257731958762887,
+          "temporal_coactivity": 0.32164179104477614
+        },
+        {
+          "roles": [
+            "guitar",
+            "other"
+          ],
+          "onset_collisions_10ms": 4,
+          "onset_collision_fraction_of_union": 0.02040816326530612,
+          "temporal_coactivity": 0.32238805970149254
+        },
+        {
+          "roles": [
+            "guitar",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.020895522388059702
+        },
+        {
+          "roles": [
+            "keyboards",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.7037313432835821
+        },
+        {
+          "roles": [
+            "keyboards",
+            "synth"
+          ],
+          "onset_collisions_10ms": 4,
+          "onset_collision_fraction_of_union": 0.028169014084507043,
+          "temporal_coactivity": 0.7514925373134328
+        },
+        {
+          "roles": [
+            "keyboards",
+            "other"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.01020408163265306,
+          "temporal_coactivity": 0.8291044776119403
+        },
+        {
+          "roles": [
+            "keyboards",
+            "brass"
+          ],
+          "onset_collisions_10ms": 9,
+          "onset_collision_fraction_of_union": 0.09782608695652174,
+          "temporal_coactivity": 0.16492537313432837
+        },
+        {
+          "roles": [
+            "percussion",
+            "synth"
+          ],
+          "onset_collisions_10ms": 6,
+          "onset_collision_fraction_of_union": 0.05128205128205128,
+          "temporal_coactivity": 0.6171641791044776
+        },
+        {
+          "roles": [
+            "percussion",
+            "other"
+          ],
+          "onset_collisions_10ms": 18,
+          "onset_collision_fraction_of_union": 0.11464968152866242,
+          "temporal_coactivity": 0.7082089552238806
+        },
+        {
+          "roles": [
+            "percussion",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.03507462686567164
+        },
+        {
+          "roles": [
+            "synth",
+            "other"
+          ],
+          "onset_collisions_10ms": 7,
+          "onset_collision_fraction_of_union": 0.035897435897435895,
+          "temporal_coactivity": 0.7164179104477612
+        },
+        {
+          "roles": [
+            "synth",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.1962686567164179
+        },
+        {
+          "roles": [
+            "other",
+            "brass"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.00641025641025641,
+          "temporal_coactivity": 0.11492537313432835
+        }
+      ],
+      "actual_spatial_outputs": true
+    },
+    {
+      "section_id": "m02_section_08",
+      "pairs": [
+        {
+          "roles": [
+            "lead_vocal",
+            "backing_vocals"
+          ],
+          "onset_collisions_10ms": 19,
+          "onset_collision_fraction_of_union": 0.16521739130434782,
+          "temporal_coactivity": 0.648314606741573
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "woodwinds"
+          ],
+          "onset_collisions_10ms": 28,
+          "onset_collision_fraction_of_union": 0.27450980392156865,
+          "temporal_coactivity": 0.697752808988764
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "drums"
+          ],
+          "onset_collisions_10ms": 3,
+          "onset_collision_fraction_of_union": 0.024,
+          "temporal_coactivity": 0.12471910112359551
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "bass"
+          ],
+          "onset_collisions_10ms": 23,
+          "onset_collision_fraction_of_union": 0.125,
+          "temporal_coactivity": 0.5910112359550562
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 7,
+          "onset_collision_fraction_of_union": 0.06140350877192982,
+          "temporal_coactivity": 0.41123595505617977
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 10,
+          "onset_collision_fraction_of_union": 0.07407407407407407,
+          "temporal_coactivity": 0.5707865168539326
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.008264462809917356,
+          "temporal_coactivity": 0.12471910112359551
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "synth"
+          ],
+          "onset_collisions_10ms": 10,
+          "onset_collision_fraction_of_union": 0.08264462809917356,
+          "temporal_coactivity": 0.6955056179775281
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.35842696629213483
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.020224719101123594
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "woodwinds"
+          ],
+          "onset_collisions_10ms": 16,
+          "onset_collision_fraction_of_union": 0.20512820512820512,
+          "temporal_coactivity": 0.648314606741573
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "drums"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.015730337078651686
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "bass"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.0058823529411764705,
+          "temporal_coactivity": 0.5842696629213483
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.011904761904761904,
+          "temporal_coactivity": 0.3752808988764045
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.5640449438202247
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.015730337078651686
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "synth"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.6280898876404495
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.2595505617977528
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.020224719101123594
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "drums"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.033707865168539325
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "bass"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.012121212121212121,
+          "temporal_coactivity": 0.5910112359550562
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.3898876404494382
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.009615384615384616,
+          "temporal_coactivity": 0.5707865168539326
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.033707865168539325
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "synth"
+          ],
+          "onset_collisions_10ms": 5,
+          "onset_collision_fraction_of_union": 0.05813953488372093,
+          "temporal_coactivity": 0.6460674157303371
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.2752808988764045
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.020224719101123594
+        },
+        {
+          "roles": [
+            "drums",
+            "bass"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.012269938650306749,
+          "temporal_coactivity": 0.019101123595505618
+        },
+        {
+          "roles": [
+            "drums",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 4,
+          "onset_collision_fraction_of_union": 0.05333333333333334,
+          "temporal_coactivity": 0.048314606741573035
+        },
+        {
+          "roles": [
+            "drums",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.00980392156862745,
+          "temporal_coactivity": 0.016853932584269662
+        },
+        {
+          "roles": [
+            "drums",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 36,
+          "onset_collision_fraction_of_union": 0.8181818181818182,
+          "temporal_coactivity": 0.2550561797752809
+        },
+        {
+          "roles": [
+            "drums",
+            "synth"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.13820224719101123
+        },
+        {
+          "roles": [
+            "drums",
+            "other"
+          ],
+          "onset_collisions_10ms": 18,
+          "onset_collision_fraction_of_union": 0.4186046511627907,
+          "temporal_coactivity": 0.26179775280898876
+        },
+        {
+          "roles": [
+            "drums",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0
+        },
+        {
+          "roles": [
+            "bass",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 11,
+          "onset_collision_fraction_of_union": 0.07482993197278912,
+          "temporal_coactivity": 0.3741573033707865
+        },
+        {
+          "roles": [
+            "bass",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 42,
+          "onset_collision_fraction_of_union": 0.3,
+          "temporal_coactivity": 0.5865168539325842
+        },
+        {
+          "roles": [
+            "bass",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.012738853503184714,
+          "temporal_coactivity": 0.019101123595505618
+        },
+        {
+          "roles": [
+            "bass",
+            "synth"
+          ],
+          "onset_collisions_10ms": 24,
+          "onset_collision_fraction_of_union": 0.16666666666666666,
+          "temporal_coactivity": 0.6101123595505618
+        },
+        {
+          "roles": [
+            "bass",
+            "other"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.007194244604316547,
+          "temporal_coactivity": 0.26853932584269663
+        },
+        {
+          "roles": [
+            "bass",
+            "brass"
+          ],
+          "onset_collisions_10ms": 3,
+          "onset_collision_fraction_of_union": 0.02459016393442623,
+          "temporal_coactivity": 0.020224719101123594
+        },
+        {
+          "roles": [
+            "guitar",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 12,
+          "onset_collision_fraction_of_union": 0.14285714285714285,
+          "temporal_coactivity": 0.3741573033707865
+        },
+        {
+          "roles": [
+            "guitar",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 4,
+          "onset_collision_fraction_of_union": 0.057971014492753624,
+          "temporal_coactivity": 0.048314606741573035
+        },
+        {
+          "roles": [
+            "guitar",
+            "synth"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.025,
+          "temporal_coactivity": 0.41123595505617977
+        },
+        {
+          "roles": [
+            "guitar",
+            "other"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.038461538461538464,
+          "temporal_coactivity": 0.2595505617977528
+        },
+        {
+          "roles": [
+            "guitar",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.016853932584269662
+        },
+        {
+          "roles": [
+            "keyboards",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.010416666666666666,
+          "temporal_coactivity": 0.016853932584269662
+        },
+        {
+          "roles": [
+            "keyboards",
+            "synth"
+          ],
+          "onset_collisions_10ms": 9,
+          "onset_collision_fraction_of_union": 0.09278350515463918,
+          "temporal_coactivity": 0.5876404494382023
+        },
+        {
+          "roles": [
+            "keyboards",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.2662921348314607
+        },
+        {
+          "roles": [
+            "keyboards",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.020224719101123594
+        },
+        {
+          "roles": [
+            "percussion",
+            "synth"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.13707865168539327
+        },
+        {
+          "roles": [
+            "percussion",
+            "other"
+          ],
+          "onset_collisions_10ms": 17,
+          "onset_collision_fraction_of_union": 0.4473684210526316,
+          "temporal_coactivity": 0.23820224719101124
+        },
+        {
+          "roles": [
+            "percussion",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0
+        },
+        {
+          "roles": [
+            "synth",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.38764044943820225
+        },
+        {
+          "roles": [
+            "synth",
+            "brass"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.020833333333333332,
+          "temporal_coactivity": 0.020224719101123594
+        },
+        {
+          "roles": [
+            "other",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0022471910112359553
+        }
+      ],
+      "actual_spatial_outputs": true
+    },
+    {
+      "section_id": "m02_section_09",
+      "pairs": [
+        {
+          "roles": [
+            "lead_vocal",
+            "backing_vocals"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.02702702702702703,
+          "temporal_coactivity": 0.0017857142857142857
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "woodwinds"
+          ],
+          "onset_collisions_10ms": 31,
+          "onset_collision_fraction_of_union": 0.5,
+          "temporal_coactivity": 0.33035714285714285
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "drums"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0017857142857142857
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "bass"
+          ],
+          "onset_collisions_10ms": 10,
+          "onset_collision_fraction_of_union": 0.05813953488372093,
+          "temporal_coactivity": 0.33035714285714285
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.02702702702702703,
+          "temporal_coactivity": 0.0017857142857142857
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.014925373134328358,
+          "temporal_coactivity": 0.33035714285714285
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "synth"
+          ],
+          "onset_collisions_10ms": 17,
+          "onset_collision_fraction_of_union": 0.2698412698412698,
+          "temporal_coactivity": 0.33035714285714285
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "other"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.047619047619047616,
+          "temporal_coactivity": 0.3107142857142857
+        },
+        {
+          "roles": [
+            "lead_vocal",
+            "brass"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.02631578947368421,
+          "temporal_coactivity": 0.0017857142857142857
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "woodwinds"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.017857142857142856,
+          "temporal_coactivity": 0.005357142857142857
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "drums"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0017857142857142857
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "bass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.005357142857142857
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 1.0,
+          "temporal_coactivity": 0.0035714285714285713
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.03225806451612903,
+          "temporal_coactivity": 0.005357142857142857
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "synth"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.005357142857142857
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "other"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.14285714285714285,
+          "temporal_coactivity": 0.005357142857142857
+        },
+        {
+          "roles": [
+            "backing_vocals",
+            "brass"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.5,
+          "temporal_coactivity": 0.005357142857142857
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "drums"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0017857142857142857
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "bass"
+          ],
+          "onset_collisions_10ms": 14,
+          "onset_collision_fraction_of_union": 0.0748663101604278,
+          "temporal_coactivity": 0.42142857142857143
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.017857142857142856,
+          "temporal_coactivity": 0.0035714285714285713
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.023529411764705882,
+          "temporal_coactivity": 0.42142857142857143
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "synth"
+          ],
+          "onset_collisions_10ms": 19,
+          "onset_collision_fraction_of_union": 0.2375,
+          "temporal_coactivity": 0.42142857142857143
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "other"
+          ],
+          "onset_collisions_10ms": 3,
+          "onset_collision_fraction_of_union": 0.05,
+          "temporal_coactivity": 0.35
+        },
+        {
+          "roles": [
+            "woodwinds",
+            "brass"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.017543859649122806,
+          "temporal_coactivity": 0.005357142857142857
+        },
+        {
+          "roles": [
+            "drums",
+            "bass"
+          ],
+          "onset_collisions_10ms": 4,
+          "onset_collision_fraction_of_union": 0.026845637583892617,
+          "temporal_coactivity": 0.10535714285714286
+        },
+        {
+          "roles": [
+            "drums",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0017857142857142857
+        },
+        {
+          "roles": [
+            "drums",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.02631578947368421,
+          "temporal_coactivity": 0.10535714285714286
+        },
+        {
+          "roles": [
+            "drums",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 6,
+          "onset_collision_fraction_of_union": 0.75,
+          "temporal_coactivity": 0.09821428571428571
+        },
+        {
+          "roles": [
+            "drums",
+            "synth"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0017857142857142857
+        },
+        {
+          "roles": [
+            "drums",
+            "other"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.15384615384615385,
+          "temporal_coactivity": 0.10535714285714286
+        },
+        {
+          "roles": [
+            "drums",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0017857142857142857
+        },
+        {
+          "roles": [
+            "bass",
+            "guitar"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0035714285714285713
+        },
+        {
+          "roles": [
+            "bass",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 15,
+          "onset_collision_fraction_of_union": 0.09316770186335403,
+          "temporal_coactivity": 1.0
+        },
+        {
+          "roles": [
+            "bass",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 3,
+          "onset_collision_fraction_of_union": 0.02027027027027027,
+          "temporal_coactivity": 0.10357142857142858
+        },
+        {
+          "roles": [
+            "bass",
+            "synth"
+          ],
+          "onset_collisions_10ms": 14,
+          "onset_collision_fraction_of_union": 0.08045977011494253,
+          "temporal_coactivity": 0.6696428571428571
+        },
+        {
+          "roles": [
+            "bass",
+            "other"
+          ],
+          "onset_collisions_10ms": 3,
+          "onset_collision_fraction_of_union": 0.020134228187919462,
+          "temporal_coactivity": 0.5607142857142857
+        },
+        {
+          "roles": [
+            "bass",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.007142857142857143
+        },
+        {
+          "roles": [
+            "guitar",
+            "keyboards"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.03225806451612903,
+          "temporal_coactivity": 0.0035714285714285713
+        },
+        {
+          "roles": [
+            "guitar",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0
+        },
+        {
+          "roles": [
+            "guitar",
+            "synth"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0035714285714285713
+        },
+        {
+          "roles": [
+            "guitar",
+            "other"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.14285714285714285,
+          "temporal_coactivity": 0.0035714285714285713
+        },
+        {
+          "roles": [
+            "guitar",
+            "brass"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.5,
+          "temporal_coactivity": 0.0035714285714285713
+        },
+        {
+          "roles": [
+            "keyboards",
+            "percussion"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.027777777777777776,
+          "temporal_coactivity": 0.10357142857142858
+        },
+        {
+          "roles": [
+            "keyboards",
+            "synth"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.0136986301369863,
+          "temporal_coactivity": 0.6696428571428571
+        },
+        {
+          "roles": [
+            "keyboards",
+            "other"
+          ],
+          "onset_collisions_10ms": 3,
+          "onset_collision_fraction_of_union": 0.08571428571428572,
+          "temporal_coactivity": 0.5607142857142857
+        },
+        {
+          "roles": [
+            "keyboards",
+            "brass"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.06451612903225806,
+          "temporal_coactivity": 0.007142857142857143
+        },
+        {
+          "roles": [
+            "percussion",
+            "synth"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0
+        },
+        {
+          "roles": [
+            "percussion",
+            "other"
+          ],
+          "onset_collisions_10ms": 1,
+          "onset_collision_fraction_of_union": 0.08333333333333333,
+          "temporal_coactivity": 0.10357142857142858
+        },
+        {
+          "roles": [
+            "percussion",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.0
+        },
+        {
+          "roles": [
+            "synth",
+            "other"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.37142857142857144
+        },
+        {
+          "roles": [
+            "synth",
+            "brass"
+          ],
+          "onset_collisions_10ms": 0,
+          "onset_collision_fraction_of_union": 0.0,
+          "temporal_coactivity": 0.007142857142857143
+        },
+        {
+          "roles": [
+            "other",
+            "brass"
+          ],
+          "onset_collisions_10ms": 2,
+          "onset_collision_fraction_of_union": 0.2857142857142857,
+          "temporal_coactivity": 0.007142857142857143
+        }
+      ],
+      "actual_spatial_outputs": true
+    }
+  ],
+  "home_position_redundancies": [
+    {
+      "roles": [
+        "backing_vocals",
+        "guitar"
+      ],
+      "feature_distance": 0.30654265327707675,
+      "handling": "Flagged as technically redundant at nearest library grid; original exact geometry and actual pair scores remain available."
+    }
+  ],
+  "elevation_reference": {
+    "heldout_accuracy": 1.0,
+    "tested_degrees": [
+      -45,
+      -20,
+      0,
+      20,
+      45,
+      60
+    ],
+    "source_domain_shift": "Broadband reference heights distinguishable; actual music confidence and estimates are reported separately."
+  },
+  "limits": [
+    "Same-content static comparisons reduce instrument spectrum confounding but still do not establish human perception.",
+    "Eight-sector order is cyclic; selected T004 starts near right at 85 degrees, not a claimed front-right start.",
+    "Onset overlap counts are potential competition, not automatically undesirable musical collisions."
+  ]
+}

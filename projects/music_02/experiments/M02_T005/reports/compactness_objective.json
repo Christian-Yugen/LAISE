@@ -1,0 +1,278 @@
+{
+  "percussion": {
+    "variants": {
+      "A_original": {
+        "estimated": {
+          "azimuth_deg": 90,
+          "elevation_deg": -20,
+          "front_rear": "lateral",
+          "elevation_band": "low",
+          "confidence": 0.08725921075113532,
+          "coverage": 1.0,
+          "feature_distance": 0.8475926260374027,
+          "alternatives": [
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": -20,
+              "distance": 0.8475926260374027
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 0,
+              "distance": 0.9286235873548773
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 20,
+              "distance": 0.9489777369045358
+            }
+          ]
+        },
+        "distance_from_intended": 0.9286235873548773,
+        "width": 0.36689403292932793,
+        "mono_fold_db": -1.9852359320155275
+      },
+      "B_side65": {
+        "estimated": {
+          "azimuth_deg": 90,
+          "elevation_deg": -20,
+          "front_rear": "lateral",
+          "elevation_band": "low",
+          "confidence": 0.07889065340700732,
+          "coverage": 1.0,
+          "feature_distance": 0.8861821967975807,
+          "alternatives": [
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": -20,
+              "distance": 0.8861821967975807
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 0,
+              "distance": 0.9620814293931542
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 20,
+              "distance": 0.9818814507809728
+            }
+          ]
+        },
+        "distance_from_intended": 0.9620814293931542,
+        "width": 0.3663531177969112,
+        "mono_fold_db": -1.9815269769245767
+      }
+    },
+    "relative_position_fit_improvement": -0.03602949838220177,
+    "candidate_benefit": false,
+    "adoption": "Diagnostic evidence only; no full-song width change without hybrid score improvement and transient gate."
+  },
+  "woodwinds": {
+    "variants": {
+      "A_original": {
+        "estimated": {
+          "azimuth_deg": -120,
+          "elevation_deg": 0,
+          "front_rear": "rear",
+          "elevation_band": "ear",
+          "confidence": 0.025202539371505978,
+          "coverage": 0.3333333333333333,
+          "feature_distance": 1.389164741001903,
+          "alternatives": [
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": 0,
+              "distance": 1.389164741001903
+            },
+            {
+              "azimuth_deg": -150,
+              "elevation_deg": 0,
+              "distance": 1.5027868773306259
+            },
+            {
+              "azimuth_deg": -150,
+              "elevation_deg": 20,
+              "distance": 1.6144437148607549
+            }
+          ]
+        },
+        "distance_from_intended": 1.8113751102787574,
+        "width": 0.5491475503253423,
+        "mono_fold_db": -3.4596556627441872
+      },
+      "B_side65": {
+        "estimated": {
+          "azimuth_deg": -120,
+          "elevation_deg": 0,
+          "front_rear": "rear",
+          "elevation_band": "ear",
+          "confidence": 0.014033714288990293,
+          "coverage": 0.3333333333333333,
+          "feature_distance": 1.6612257225005835,
+          "alternatives": [
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": 0,
+              "distance": 1.6612257225005835
+            },
+            {
+              "azimuth_deg": -150,
+              "elevation_deg": 0,
+              "distance": 1.734239173718817
+            },
+            {
+              "azimuth_deg": -150,
+              "elevation_deg": 20,
+              "distance": 1.8625056997917855
+            }
+          ]
+        },
+        "distance_from_intended": 2.108278950064875,
+        "width": 0.55510512551453,
+        "mono_fold_db": -3.5174259761338433
+      }
+    },
+    "relative_position_fit_improvement": -0.1639107427839319,
+    "candidate_benefit": false,
+    "adoption": "Diagnostic evidence only; no full-song width change without hybrid score improvement and transient gate."
+  },
+  "brass": {
+    "variants": {
+      "A_original": {
+        "estimated": {
+          "azimuth_deg": 150,
+          "elevation_deg": 60,
+          "front_rear": "rear",
+          "elevation_band": "high",
+          "confidence": 0.0011717611981491394,
+          "coverage": 0.6666666666666666,
+          "feature_distance": 1.3304561700828044,
+          "alternatives": [
+            {
+              "azimuth_deg": 150,
+              "elevation_deg": 60,
+              "distance": 1.3304561700828044
+            },
+            {
+              "azimuth_deg": 30,
+              "elevation_deg": 0,
+              "distance": 1.3327987528781506
+            },
+            {
+              "azimuth_deg": 30,
+              "elevation_deg": -20,
+              "distance": 1.3482976767070087
+            }
+          ]
+        },
+        "distance_from_intended": 1.523258172410797,
+        "width": 0.01854588742944886,
+        "mono_fold_db": -0.08130000825328755
+      },
+      "B_side65": {
+        "estimated": {
+          "azimuth_deg": 30,
+          "elevation_deg": 20,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.0029618009108797355,
+          "coverage": 0.6666666666666666,
+          "feature_distance": 1.3382448011763803,
+          "alternatives": [
+            {
+              "azimuth_deg": 30,
+              "elevation_deg": 20,
+              "distance": 1.3382448011763803
+            },
+            {
+              "azimuth_deg": 150,
+              "elevation_deg": 60,
+              "distance": 1.3442167547895134
+            },
+            {
+              "azimuth_deg": 30,
+              "elevation_deg": 0,
+              "distance": 1.3485376626732812
+            }
+          ]
+        },
+        "distance_from_intended": 1.5032099806679642,
+        "width": 0.01805373062299276,
+        "mono_fold_db": -0.0791227550377218
+      }
+    },
+    "relative_position_fit_improvement": 0.01316138794194247,
+    "candidate_benefit": false,
+    "adoption": "Diagnostic evidence only; no full-song width change without hybrid score improvement and transient gate."
+  },
+  "backing_vocals": {
+    "variants": {
+      "A_original": {
+        "estimated": {
+          "azimuth_deg": -90,
+          "elevation_deg": -45,
+          "front_rear": "lateral",
+          "elevation_band": "low",
+          "confidence": 0.004673784048759611,
+          "coverage": 0.5,
+          "feature_distance": 0.8599065723200904,
+          "alternatives": [
+            {
+              "azimuth_deg": -90,
+              "elevation_deg": -45,
+              "distance": 0.8599065723200904
+            },
+            {
+              "azimuth_deg": -90,
+              "elevation_deg": 60,
+              "distance": 0.8680204526109103
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": -45,
+              "distance": 0.8716892526122647
+            }
+          ]
+        },
+        "distance_from_intended": 0.9211951095845201,
+        "width": 0.7113343198369964,
+        "mono_fold_db": -5.396048468841725
+      },
+      "B_side65": {
+        "estimated": {
+          "azimuth_deg": -120,
+          "elevation_deg": -45,
+          "front_rear": "rear",
+          "elevation_band": "low",
+          "confidence": 0.013357419817545794,
+          "coverage": 0.5,
+          "feature_distance": 0.8963922252658927,
+          "alternatives": [
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": -45,
+              "distance": 0.8963922252658927
+            },
+            {
+              "azimuth_deg": -90,
+              "elevation_deg": 60,
+              "distance": 0.9209964990422882
+            },
+            {
+              "azimuth_deg": -90,
+              "elevation_deg": -45,
+              "distance": 0.9368005249089397
+            }
+          ]
+        },
+        "distance_from_intended": 0.9512300503771837,
+        "width": 0.7233904884858362,
+        "mono_fold_db": -5.581328902892747
+      }
+    },
+    "relative_position_fit_improvement": -0.0326043207135674,
+    "candidate_benefit": false,
+    "adoption": "Diagnostic evidence only; no full-song width change without hybrid score improvement and transient gate."
+  }
+}

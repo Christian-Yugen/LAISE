@@ -1,0 +1,241 @@
+{
+  "same_sound_sequence": {
+    "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\monitors\\M02_T003_positions_same_sound_27_5s_24bit.wav",
+    "sha256": "31f7bd8721f41db2fcdeb566c9fdddf451ee2fe34a5d65fdbfcddd172a6ea387",
+    "signal": {
+      "frames": 1320000,
+      "duration_seconds": 27.5,
+      "finite": true,
+      "sample_peak": 0.3162277936935425,
+      "sample_peak_dbfs": -9.9999992397986,
+      "rms_dbfs": -41.66454548747971,
+      "crest_factor_db": 31.66454624768111,
+      "left_rms_dbfs": -41.60770141195694,
+      "right_rms_dbfs": -41.722143464153724,
+      "channel_balance_db": 0.11444205219678928,
+      "lr_correlation": 0.2546922490284797,
+      "mono_rms_change_db": -2.0250030873063056,
+      "max_adjacent_sample_delta": 0.061388373374938965,
+      "spectral_distribution": {
+        "20-60_hz_db": -16.50263434610127,
+        "60-250_hz_db": -10.030223265576033,
+        "250-2000_hz_db": -1.5710546995910692,
+        "2000-6000_hz_db": -7.921152069618599,
+        "6000-20000_hz_db": -16.965191229645026
+      }
+    },
+    "loudness": {
+      "method": "FFmpeg ebur128 peak=true",
+      "integrated_lufs": -37.9,
+      "loudness_range_lu": 2.2,
+      "true_peak_dbtp": -10.0,
+      "momentary_lufs": {
+        "minimum": -54.9,
+        "median": -41.9,
+        "maximum": -31.6
+      },
+      "short_term_lufs": {
+        "minimum": -39.3,
+        "median": -38.7,
+        "maximum": -36.6
+      }
+    }
+  },
+  "schedule": [
+    {
+      "cue": "D1",
+      "start_seconds": 0.0,
+      "end_seconds": 2.0,
+      "expected_direction": "front-right",
+      "azimuth_deg": 45,
+      "elevation_deg": 0,
+      "distance_m": 1.0,
+      "source_content": "Identical composite of own stems; naming is irrelevant"
+    },
+    {
+      "cue": "D2",
+      "start_seconds": 2.5,
+      "end_seconds": 4.5,
+      "expected_direction": "right",
+      "azimuth_deg": 90,
+      "elevation_deg": 0,
+      "distance_m": 1.0,
+      "source_content": "Identical composite of own stems; naming is irrelevant"
+    },
+    {
+      "cue": "D3",
+      "start_seconds": 5.0,
+      "end_seconds": 7.0,
+      "expected_direction": "rear-right",
+      "azimuth_deg": 135,
+      "elevation_deg": 0,
+      "distance_m": 1.0,
+      "source_content": "Identical composite of own stems; naming is irrelevant"
+    },
+    {
+      "cue": "D4",
+      "start_seconds": 7.5,
+      "end_seconds": 9.5,
+      "expected_direction": "rear",
+      "azimuth_deg": 180,
+      "elevation_deg": 0,
+      "distance_m": 1.0,
+      "source_content": "Identical composite of own stems; naming is irrelevant"
+    },
+    {
+      "cue": "D5",
+      "start_seconds": 10.0,
+      "end_seconds": 12.0,
+      "expected_direction": "rear-left",
+      "azimuth_deg": 225,
+      "elevation_deg": 0,
+      "distance_m": 1.0,
+      "source_content": "Identical composite of own stems; naming is irrelevant"
+    },
+    {
+      "cue": "D6",
+      "start_seconds": 12.5,
+      "end_seconds": 14.5,
+      "expected_direction": "left",
+      "azimuth_deg": 270,
+      "elevation_deg": 0,
+      "distance_m": 1.0,
+      "source_content": "Identical composite of own stems; naming is irrelevant"
+    },
+    {
+      "cue": "D7",
+      "start_seconds": 15.0,
+      "end_seconds": 17.0,
+      "expected_direction": "front-left",
+      "azimuth_deg": 315,
+      "elevation_deg": 0,
+      "distance_m": 1.0,
+      "source_content": "Identical composite of own stems; naming is irrelevant"
+    },
+    {
+      "cue": "D8",
+      "start_seconds": 17.5,
+      "end_seconds": 19.5,
+      "expected_direction": "front",
+      "azimuth_deg": 360,
+      "elevation_deg": 0,
+      "distance_m": 1.0,
+      "source_content": "Identical composite of own stems; naming is irrelevant"
+    },
+    {
+      "cue": "H1",
+      "start_seconds": 20.0,
+      "end_seconds": 22.0,
+      "expected_direction": "front-low",
+      "azimuth_deg": 0,
+      "elevation_deg": -35,
+      "distance_m": 1.0,
+      "source_content": "Identical composite of own stems; naming is irrelevant"
+    },
+    {
+      "cue": "H2",
+      "start_seconds": 22.5,
+      "end_seconds": 24.5,
+      "expected_direction": "front-level",
+      "azimuth_deg": 0,
+      "elevation_deg": 0,
+      "distance_m": 1.0,
+      "source_content": "Identical composite of own stems; naming is irrelevant"
+    },
+    {
+      "cue": "H3",
+      "start_seconds": 25.0,
+      "end_seconds": 27.0,
+      "expected_direction": "front-high",
+      "azimuth_deg": 0,
+      "elevation_deg": 45,
+      "distance_m": 1.0,
+      "source_content": "Identical composite of own stems; naming is irrelevant"
+    }
+  ],
+  "source_excerpt_seconds": [
+    214.3,
+    216.3
+  ],
+  "own_stems_used": [
+    "percussion",
+    "woodwinds",
+    "backing_vocals"
+  ],
+  "diagnostic_only_montage": true,
+  "mono_for_monitor_only": true,
+  "criterion": "Report direction and height, not instrument identity; equal distance and same composite timbre isolate angular/elevation cues.",
+  "four_source_mix": {
+    "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\monitors\\M02_T003_four_positions_200_215_24bit.wav",
+    "sha256": "e78c0c2e1c75e4c67843fc5c172daf8269efb898c588243a51dea210b24b1779",
+    "signal": {
+      "frames": 720000,
+      "duration_seconds": 15.0,
+      "finite": true,
+      "sample_peak": 0.3981071710586548,
+      "sample_peak_dbfs": -7.999999988978489,
+      "rms_dbfs": -27.625795240137943,
+      "crest_factor_db": 19.625795251159456,
+      "left_rms_dbfs": -27.277094162257892,
+      "right_rms_dbfs": -28.004957577134387,
+      "channel_balance_db": 0.727863414876498,
+      "lr_correlation": 0.3772274744655059,
+      "mono_rms_change_db": -1.6244095917124173,
+      "max_adjacent_sample_delta": 0.13498079776763916,
+      "spectral_distribution": {
+        "20-60_hz_db": -10.837462208672179,
+        "60-250_hz_db": -3.2490672906821025,
+        "250-2000_hz_db": -3.6979015044723496,
+        "2000-6000_hz_db": -19.88566448742032,
+        "6000-20000_hz_db": -21.43763392240816
+      }
+    },
+    "loudness": {
+      "method": "FFmpeg ebur128 peak=true",
+      "integrated_lufs": -25.3,
+      "loudness_range_lu": 2.2,
+      "true_peak_dbtp": -8.0,
+      "momentary_lufs": {
+        "minimum": -29.1,
+        "median": -25.5,
+        "maximum": -22.6
+      },
+      "short_term_lufs": {
+        "minimum": -26.5,
+        "median": -25.5,
+        "maximum": -23.9
+      }
+    }
+  },
+  "four_sources": [
+    {
+      "cue": "A",
+      "role": "percussion",
+      "azimuth_deg": 45,
+      "elevation_deg": 0,
+      "distance_m": 1.0
+    },
+    {
+      "cue": "B",
+      "role": "woodwinds",
+      "azimuth_deg": -45,
+      "elevation_deg": 15,
+      "distance_m": 1.0
+    },
+    {
+      "cue": "C",
+      "role": "backing_vocals",
+      "azimuth_deg": -135,
+      "elevation_deg": 0,
+      "distance_m": 1.0
+    },
+    {
+      "cue": "D",
+      "role": "keyboards",
+      "azimuth_deg": 135,
+      "elevation_deg": 35,
+      "distance_m": 1.0
+    }
+  ],
+  "interpretation": "Neither monitor is a complete-song render. Montage timing deliberately differs from music; four-source test preserves 200-215 absolute timing."
+}

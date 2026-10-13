@@ -1,0 +1,4173 @@
+{
+  "test_id": "M02-T003",
+  "objective_status": "PASS",
+  "human_status": "PENDING",
+  "checks": {
+    "T001_T002_all_existing_artifacts_preserved": true,
+    "Tukana_all_files_preserved": true,
+    "eleven_sources": true,
+    "baseline_regressions": true,
+    "exact_preview_frames": true,
+    "same_absolute_origin_all_stems": true,
+    "no_activity_trimming": true,
+    "near_field_range": true,
+    "fixed_anchor_poses": true,
+    "guitar_keyboard_opposite_front_sides": true,
+    "percussion_full_360": true,
+    "eight_distinct_sector_events": true,
+    "angular_continuity": true,
+    "no_block_discontinuity_outliers": true,
+    "woodwind_not_full_orbit": true,
+    "no_T018_imports": true,
+    "no_mastering_limiter_full_render": true,
+    "all_audio_finite_unclipped_headroom": true
+  },
+  "baseline_regressions": {
+    "head_is_approved_baseline": true,
+    "approved_DSP_composer_analyzer_unchanged": true,
+    "Tukana_10_role_import_exact": true,
+    "M02_11_roles": true,
+    "variable_3_role_import": true,
+    "fixed_distance_and_wrapping": true,
+    "keyframe_gain_orbit_interpolation": true,
+    "no_T018_imports": true,
+    "B2_original_hash": true
+  },
+  "comparison": {
+    "T001_reference": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\renders\\comparison\\M02_T003_T001_reference_200_230_24bit.wav",
+      "sha256": "aa54d484a8a0eb16c474a09e6d4996680195ab0fafbbe238e8d2006afb92a71e",
+      "signal": {
+        "frames": 1440000,
+        "duration_seconds": 30.0,
+        "finite": true,
+        "sample_peak": 0.4949347972869873,
+        "sample_peak_dbfs": -6.109040225111949,
+        "rms_dbfs": -21.965641505264607,
+        "crest_factor_db": 15.856601280152658,
+        "left_rms_dbfs": -21.934008318667296,
+        "right_rms_dbfs": -21.997506793589228,
+        "channel_balance_db": 0.06349847492193009,
+        "lr_correlation": 0.724462142736895,
+        "mono_rms_change_db": -0.6438120632600529,
+        "max_adjacent_sample_delta": 0.11432480812072754,
+        "spectral_distribution": {
+          "20-60_hz_db": -4.605080797101826,
+          "60-250_hz_db": -3.4597639791267083,
+          "250-2000_hz_db": -7.134300212337905,
+          "2000-6000_hz_db": -21.342920888538618,
+          "6000-20000_hz_db": -26.994371277170544
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -20.8,
+        "loudness_range_lu": 3.4,
+        "true_peak_dbtp": -6.1,
+        "momentary_lufs": {
+          "minimum": -28.5,
+          "median": -20.7,
+          "maximum": -18.3
+        },
+        "short_term_lufs": {
+          "minimum": -25.0,
+          "median": -20.6,
+          "maximum": -19.5
+        }
+      },
+      "level_matched": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\renders\\comparison\\M02_T003_T001_reference_200_230_level_matched_24bit.wav",
+        "sha256": "aa54d484a8a0eb16c474a09e6d4996680195ab0fafbbe238e8d2006afb92a71e",
+        "signal": {
+          "frames": 1440000,
+          "duration_seconds": 30.0,
+          "finite": true,
+          "sample_peak": 0.4949347972869873,
+          "sample_peak_dbfs": -6.109040225111949,
+          "rms_dbfs": -21.965641505264607,
+          "crest_factor_db": 15.856601280152658,
+          "left_rms_dbfs": -21.934008318667296,
+          "right_rms_dbfs": -21.997506793589228,
+          "channel_balance_db": 0.06349847492193009,
+          "lr_correlation": 0.724462142736895,
+          "mono_rms_change_db": -0.6438120632600529,
+          "max_adjacent_sample_delta": 0.11432480812072754,
+          "spectral_distribution": {
+            "20-60_hz_db": -4.605080797101826,
+            "60-250_hz_db": -3.4597639791267083,
+            "250-2000_hz_db": -7.134300212337905,
+            "2000-6000_hz_db": -21.342920888538618,
+            "6000-20000_hz_db": -26.994371277170544
+          }
+        },
+        "loudness": {
+          "method": "FFmpeg ebur128 peak=true",
+          "integrated_lufs": -20.8,
+          "loudness_range_lu": 3.4,
+          "true_peak_dbtp": -6.1,
+          "momentary_lufs": {
+            "minimum": -28.5,
+            "median": -20.7,
+            "maximum": -18.3
+          },
+          "short_term_lufs": {
+            "minimum": -25.0,
+            "median": -20.6,
+            "maximum": -19.5
+          }
+        }
+      }
+    },
+    "T002_reference": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\renders\\comparison\\M02_T003_T002_reference_200_230_24bit.wav",
+      "sha256": "ab3e9178f8c80ebc8fec3e009becd997c8681611f25834feeb8c2fc83c2baad6",
+      "signal": {
+        "frames": 1440000,
+        "duration_seconds": 30.0,
+        "finite": true,
+        "sample_peak": 0.489269495010376,
+        "sample_peak_dbfs": -6.209037216035801,
+        "rms_dbfs": -22.068650363548286,
+        "crest_factor_db": 15.859613147512485,
+        "left_rms_dbfs": -22.056830127216106,
+        "right_rms_dbfs": -22.080502858931112,
+        "channel_balance_db": 0.023672731715002806,
+        "lr_correlation": 0.7644309022553157,
+        "mono_rms_change_db": -0.5442603906107166,
+        "max_adjacent_sample_delta": 0.11296606063842773,
+        "spectral_distribution": {
+          "20-60_hz_db": -4.712070088729618,
+          "60-250_hz_db": -3.565761534062337,
+          "250-2000_hz_db": -6.756772964191635,
+          "2000-6000_hz_db": -20.424330396187568,
+          "6000-20000_hz_db": -26.9922474370956
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -20.8,
+        "loudness_range_lu": 3.3,
+        "true_peak_dbtp": -6.2,
+        "momentary_lufs": {
+          "minimum": -28.6,
+          "median": -20.8,
+          "maximum": -18.4
+        },
+        "short_term_lufs": {
+          "minimum": -25.1,
+          "median": -20.7,
+          "maximum": -19.6
+        }
+      },
+      "level_matched": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\renders\\comparison\\M02_T003_T002_reference_200_230_level_matched_24bit.wav",
+        "sha256": "ab3e9178f8c80ebc8fec3e009becd997c8681611f25834feeb8c2fc83c2baad6",
+        "signal": {
+          "frames": 1440000,
+          "duration_seconds": 30.0,
+          "finite": true,
+          "sample_peak": 0.489269495010376,
+          "sample_peak_dbfs": -6.209037216035801,
+          "rms_dbfs": -22.068650363548286,
+          "crest_factor_db": 15.859613147512485,
+          "left_rms_dbfs": -22.056830127216106,
+          "right_rms_dbfs": -22.080502858931112,
+          "channel_balance_db": 0.023672731715002806,
+          "lr_correlation": 0.7644309022553157,
+          "mono_rms_change_db": -0.5442603906107166,
+          "max_adjacent_sample_delta": 0.11296606063842773,
+          "spectral_distribution": {
+            "20-60_hz_db": -4.712070088729618,
+            "60-250_hz_db": -3.565761534062337,
+            "250-2000_hz_db": -6.756772964191635,
+            "2000-6000_hz_db": -20.424330396187568,
+            "6000-20000_hz_db": -26.9922474370956
+          }
+        },
+        "loudness": {
+          "method": "FFmpeg ebur128 peak=true",
+          "integrated_lufs": -20.8,
+          "loudness_range_lu": 3.3,
+          "true_peak_dbtp": -6.2,
+          "momentary_lufs": {
+            "minimum": -28.6,
+            "median": -20.8,
+            "maximum": -18.4
+          },
+          "short_term_lufs": {
+            "minimum": -25.1,
+            "median": -20.7,
+            "maximum": -19.6
+          }
+        }
+      }
+    },
+    "T003_near_field": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\renders\\comparison\\M02_T003_T003_near_field_200_230_24bit.wav",
+      "sha256": "11f9703eda890c6f6c4108b40af672e4c1a238b492e8021517f2bca2dc0d4d4d",
+      "signal": {
+        "frames": 1440000,
+        "duration_seconds": 30.0,
+        "finite": true,
+        "sample_peak": 0.5011872053146362,
+        "sample_peak_dbfs": -6.0000004906757844,
+        "rms_dbfs": -21.791497828177214,
+        "crest_factor_db": 15.79149733750143,
+        "left_rms_dbfs": -21.711670327876806,
+        "right_rms_dbfs": -21.872820153841484,
+        "channel_balance_db": 0.16114982596467795,
+        "lr_correlation": 0.7455771402710377,
+        "mono_rms_change_db": -0.5912287200232097,
+        "max_adjacent_sample_delta": 0.11653685569763184,
+        "spectral_distribution": {
+          "20-60_hz_db": -5.019548434850702,
+          "60-250_hz_db": -3.515149243549075,
+          "250-2000_hz_db": -6.328745546877704,
+          "2000-6000_hz_db": -22.793001437285696,
+          "6000-20000_hz_db": -27.297164854293065
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -20.5,
+        "loudness_range_lu": 3.7,
+        "true_peak_dbtp": -6.0,
+        "momentary_lufs": {
+          "minimum": -26.9,
+          "median": -20.2,
+          "maximum": -18.1
+        },
+        "short_term_lufs": {
+          "minimum": -25.6,
+          "median": -20.1,
+          "maximum": -19.2
+        }
+      },
+      "level_matched": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\renders\\comparison\\M02_T003_T003_near_field_200_230_level_matched_24bit.wav",
+        "sha256": "ffc06d93fbfc97785e84d32b03216be90baad33f67f7fbec253f738398d7747b",
+        "signal": {
+          "frames": 1440000,
+          "duration_seconds": 30.0,
+          "finite": true,
+          "sample_peak": 0.48417234420776367,
+          "sample_peak_dbfs": -6.300000419363619,
+          "rms_dbfs": -22.09149769560137,
+          "crest_factor_db": 15.791497276237749,
+          "left_rms_dbfs": -22.01167019410939,
+          "right_rms_dbfs": -22.172820022501206,
+          "channel_balance_db": 0.1611498283918164,
+          "lr_correlation": 0.7455771395360609,
+          "mono_rms_change_db": -0.5912287218612324,
+          "max_adjacent_sample_delta": 0.11258053779602051,
+          "spectral_distribution": {
+            "20-60_hz_db": -5.019548435827682,
+            "60-250_hz_db": -3.515149241002071,
+            "250-2000_hz_db": -6.328745549534876,
+            "2000-6000_hz_db": -22.793001465629594,
+            "6000-20000_hz_db": -27.29716488031037
+          }
+        },
+        "loudness": {
+          "method": "FFmpeg ebur128 peak=true",
+          "integrated_lufs": -20.8,
+          "loudness_range_lu": 3.7,
+          "true_peak_dbtp": -6.3,
+          "momentary_lufs": {
+            "minimum": -27.2,
+            "median": -20.5,
+            "maximum": -18.4
+          },
+          "short_term_lufs": {
+            "minimum": -25.9,
+            "median": -20.4,
+            "maximum": -19.5
+          }
+        }
+      }
+    }
+  },
+  "source_reports": {
+    "lead_vocal": {
+      "preprocessing": {
+        "method": "pre-dearVR mid/side attenuation",
+        "side_factor": 0.5,
+        "linked_rms_restore_gain": 1.3827183070965547
+      },
+      "trace": [
+        {
+          "time_seconds": 199.0,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 200.06666666666666,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 201.13333333333333,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 202.2,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 203.26666666666668,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 204.33333333333334,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 205.4,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 206.46666666666667,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 207.53333333333333,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 208.6,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 209.66666666666666,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 210.73333333333332,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 211.8,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 212.86666666666667,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 213.93333333333334,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 215.0,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 216.06666666666666,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 217.13333333333333,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 218.2,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 219.26666666666665,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 220.33333333333334,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 221.4,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 222.46666666666667,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 223.53333333333333,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 224.6,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 225.66666666666666,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 226.73333333333335,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 227.8,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 228.86666666666667,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 229.93333333333334,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        }
+      ],
+      "linked_level_trim_db": 18.0,
+      "target_reference_lufs": -40.1,
+      "unwrapped_azimuth_range_deg": [
+        0.0,
+        0.0
+      ],
+      "maximum_circular_step_deg": 0.0,
+      "wrapped_crossings": 0,
+      "distance_range_m": [
+        1.1,
+        1.1
+      ],
+      "metrics": {
+        "frames": 1440000,
+        "finite": true,
+        "peak": 0.06714290380477905,
+        "peak_dbfs": -23.45999760518538,
+        "rms": 0.0033771073999531603,
+        "rms_dbfs": -49.42910255119272,
+        "max_sample_delta": 0.034429967403411865,
+        "p999_sample_delta": 0.007436059415340424,
+        "max_block_boundary_delta": 0.012019794434309006,
+        "plugin_boundary_phase_frames": 128
+      },
+      "export": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\M02_T003_lead_vocal_200_230_24bit.wav",
+        "sha256": "51ded7a770cc44ba39ff161d848e94274321af28729b73cf0049e76e855f34e3",
+        "signal": {
+          "frames": 1440000,
+          "duration_seconds": 30.0,
+          "finite": true,
+          "sample_peak": 0.06630527973175049,
+          "sample_peak_dbfs": -23.569037767629624,
+          "rms_dbfs": -49.53814172150593,
+          "crest_factor_db": 25.969103953876306,
+          "left_rms_dbfs": -49.51711491214482,
+          "right_rms_dbfs": -49.55927082979613,
+          "channel_balance_db": 0.0421559176513098,
+          "lr_correlation": 0.18054777680043016,
+          "mono_rms_change_db": -2.2894721023633364,
+          "max_adjacent_sample_delta": 0.034000515937805176,
+          "spectral_distribution": {
+            "20-60_hz_db": -42.38002864877531,
+            "60-250_hz_db": -31.332522319818406,
+            "250-2000_hz_db": -1.976434088448372,
+            "2000-6000_hz_db": -4.6369207399766985,
+            "6000-20000_hz_db": -16.77518131456239
+          }
+        },
+        "loudness": {
+          "method": "FFmpeg ebur128 peak=true",
+          "integrated_lufs": -40.2,
+          "loudness_range_lu": 8.4,
+          "true_peak_dbtp": -23.6,
+          "momentary_lufs": {
+            "minimum": -69.8,
+            "median": -41.349999999999994,
+            "maximum": -37.2
+          },
+          "short_term_lufs": {
+            "minimum": -69.9,
+            "median": -41.349999999999994,
+            "maximum": -38.7
+          }
+        }
+      }
+    },
+    "backing_vocals": {
+      "preprocessing": null,
+      "trace": [
+        {
+          "time_seconds": 199.0,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 200.06666666666666,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 201.13333333333333,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 202.2,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 203.26666666666668,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 204.33333333333334,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 205.4,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 206.46666666666667,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 207.53333333333333,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 208.6,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 209.66666666666666,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 210.73333333333332,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 211.8,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 212.86666666666667,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 213.93333333333334,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 215.0,
+          "distance_m": 0.7,
+          "linked_gain_db": -5.382450954722079,
+          "display": "0.7 m"
+        },
+        {
+          "time_seconds": 216.06666666666666,
+          "distance_m": 0.7133333333333326,
+          "linked_gain_db": -5.330492424171018,
+          "display": "0.7 m"
+        },
+        {
+          "time_seconds": 217.13333333333333,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 218.2,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 219.26666666666665,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 220.33333333333334,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 221.4,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 222.46666666666667,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 223.53333333333333,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 224.6,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 225.66666666666666,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 226.73333333333335,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 227.8,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 228.86666666666667,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 229.93333333333334,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        }
+      ],
+      "linked_level_trim_db": 17.6,
+      "target_reference_lufs": -23.4,
+      "unwrapped_azimuth_range_deg": [
+        -110.0,
+        -110.0
+      ],
+      "maximum_circular_step_deg": 0.0,
+      "wrapped_crossings": 0,
+      "distance_range_m": [
+        0.6002666666628784,
+        0.9
+      ],
+      "metrics": {
+        "frames": 1440000,
+        "finite": true,
+        "peak": 0.3234410881996155,
+        "peak_dbfs": -9.804096210244186,
+        "rms": 0.025896738302076762,
+        "rms_dbfs": -31.735098638539053,
+        "max_sample_delta": 0.06495431065559387,
+        "p999_sample_delta": 0.03341403231024742,
+        "max_block_boundary_delta": 0.04065672308206558,
+        "plugin_boundary_phase_frames": 128
+      },
+      "export": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\M02_T003_backing_vocals_200_230_24bit.wav",
+        "sha256": "306ef77317c64308129c156bcc9be9b1f9b276c755025229db4395d63632cc7d",
+        "signal": {
+          "frames": 1440000,
+          "duration_seconds": 30.0,
+          "finite": true,
+          "sample_peak": 0.3194061517715454,
+          "sample_peak_dbfs": -9.913134471858818,
+          "rms_dbfs": -31.844137823407227,
+          "crest_factor_db": 21.931003351548405,
+          "left_rms_dbfs": -29.51300707674903,
+          "right_rms_dbfs": -37.227061115778206,
+          "channel_balance_db": 7.714054039029177,
+          "lr_correlation": -0.6601475628954747,
+          "mono_rms_change_db": -5.723274987026437,
+          "max_adjacent_sample_delta": 0.06414401531219482,
+          "spectral_distribution": {
+            "20-60_hz_db": -49.3373742108041,
+            "60-250_hz_db": -44.684201617487545,
+            "250-2000_hz_db": -0.243954989966429,
+            "2000-6000_hz_db": -12.921834482828697,
+            "6000-20000_hz_db": -24.502206999178302
+          }
+        },
+        "loudness": {
+          "method": "FFmpeg ebur128 peak=true",
+          "integrated_lufs": -23.5,
+          "loudness_range_lu": 7.8,
+          "true_peak_dbtp": -9.9,
+          "momentary_lufs": {
+            "minimum": -69.8,
+            "median": -24.3,
+            "maximum": -21.0
+          },
+          "short_term_lufs": {
+            "minimum": -69.6,
+            "median": -24.75,
+            "maximum": -22.7
+          }
+        }
+      }
+    },
+    "woodwinds": {
+      "preprocessing": null,
+      "trace": [
+        {
+          "time_seconds": 199.0,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 200.06666666666666,
+          "distance_m": 1.0886018237082074,
+          "linked_gain_db": -4.098861815260754,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 201.13333333333333,
+          "distance_m": 0.9062310030395149,
+          "linked_gain_db": -4.66230920188212,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 202.2,
+          "distance_m": 0.7238601823708224,
+          "linked_gain_db": -5.289470453621955,
+          "display": "0.7 m"
+        },
+        {
+          "time_seconds": 203.26666666666668,
+          "distance_m": 0.5414893617021249,
+          "linked_gain_db": -6.000149442922225,
+          "display": "0.5 m"
+        },
+        {
+          "time_seconds": 204.33333333333334,
+          "distance_m": 0.6408814589665676,
+          "linked_gain_db": -5.612829393753569,
+          "display": "0.6 m"
+        },
+        {
+          "time_seconds": 205.4,
+          "distance_m": 0.8232522796352602,
+          "linked_gain_db": -4.941309499301684,
+          "display": "0.8 m"
+        },
+        {
+          "time_seconds": 206.46666666666667,
+          "distance_m": 1.0056231003039526,
+          "linked_gain_db": -4.3312787785324405,
+          "display": "1.0 m"
+        },
+        {
+          "time_seconds": 207.53333333333333,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 208.6,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 209.66666666666666,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 210.73333333333332,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 211.8,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 212.86666666666667,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 213.93333333333334,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 215.0,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 216.06666666666666,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 217.13333333333333,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 218.2,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 219.26666666666665,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 220.33333333333334,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 221.4,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 222.46666666666667,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 223.53333333333333,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 224.6,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 225.66666666666666,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 226.73333333333335,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 227.8,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 228.86666666666667,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        },
+        {
+          "time_seconds": 229.93333333333334,
+          "distance_m": 1.1,
+          "linked_gain_db": -4.066936408217941,
+          "display": "1.1 m"
+        }
+      ],
+      "linked_level_trim_db": 19.199999999999996,
+      "target_reference_lufs": -27.1,
+      "unwrapped_azimuth_range_deg": [
+        -75.0,
+        75.0
+      ],
+      "maximum_circular_step_deg": 0.13992537313453113,
+      "wrapped_crossings": 0,
+      "distance_range_m": [
+        0.5000000000007337,
+        1.1
+      ],
+      "metrics": {
+        "frames": 1440000,
+        "finite": true,
+        "peak": 0.15021157264709473,
+        "peak_dbfs": -16.465932139824176,
+        "rms": 0.018104005000310237,
+        "rms_dbfs": -34.84450678203116,
+        "max_sample_delta": 0.025529421865940094,
+        "p999_sample_delta": 0.017021842300891876,
+        "max_block_boundary_delta": 0.02301391214132309,
+        "plugin_boundary_phase_frames": 128
+      },
+      "export": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\M02_T003_woodwinds_200_230_24bit.wav",
+        "sha256": "099ce5e35b2fe4c9219899520018ef71ec9fa3d2f05f07f52639340120d3d83e",
+        "signal": {
+          "frames": 1440000,
+          "duration_seconds": 30.0,
+          "finite": true,
+          "sample_peak": 0.14833760261535645,
+          "sample_peak_dbfs": -16.574974883905977,
+          "rms_dbfs": -34.95354596246369,
+          "crest_factor_db": 18.37857107855772,
+          "left_rms_dbfs": -35.19809929753836,
+          "right_rms_dbfs": -34.72203252327202,
+          "channel_balance_db": -0.47606677426634464,
+          "lr_correlation": 0.07848737938961099,
+          "mono_rms_change_db": -2.682623444341601,
+          "max_adjacent_sample_delta": 0.025210857391357422,
+          "spectral_distribution": {
+            "20-60_hz_db": -58.43517593879365,
+            "60-250_hz_db": -49.00683255839449,
+            "250-2000_hz_db": -0.04333332143060125,
+            "2000-6000_hz_db": -20.214794934973362,
+            "6000-20000_hz_db": -34.02439899423663
+          }
+        },
+        "loudness": {
+          "method": "FFmpeg ebur128 peak=true",
+          "integrated_lufs": -27.3,
+          "loudness_range_lu": 11.2,
+          "true_peak_dbtp": -16.6,
+          "momentary_lufs": {
+            "minimum": -69.9,
+            "median": -28.5,
+            "maximum": -22.7
+          },
+          "short_term_lufs": {
+            "minimum": -69.7,
+            "median": -29.6,
+            "maximum": -25.8
+          }
+        }
+      }
+    },
+    "drums": {
+      "preprocessing": null,
+      "trace": [
+        {
+          "time_seconds": 199.0,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 200.06666666666666,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 201.13333333333333,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 202.2,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 203.26666666666668,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 204.33333333333334,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 205.4,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 206.46666666666667,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 207.53333333333333,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 208.6,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 209.66666666666666,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 210.73333333333332,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 211.8,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 212.86666666666667,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 213.93333333333334,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 215.0,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 216.06666666666666,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 217.13333333333333,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 218.2,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 219.26666666666665,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 220.33333333333334,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 221.4,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 222.46666666666667,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 223.53333333333333,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 224.6,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 225.66666666666666,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 226.73333333333335,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 227.8,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 228.86666666666667,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 229.93333333333334,
+          "distance_m": 1.2,
+          "linked_gain_db": -3.786844170428985,
+          "display": "1.2 m"
+        }
+      ],
+      "linked_level_trim_db": 17.3,
+      "target_reference_lufs": -28.7,
+      "unwrapped_azimuth_range_deg": [
+        18.0,
+        18.0
+      ],
+      "maximum_circular_step_deg": 0.0,
+      "wrapped_crossings": 0,
+      "distance_range_m": [
+        1.2,
+        1.2
+      ],
+      "metrics": {
+        "frames": 1440000,
+        "finite": true,
+        "peak": 0.3055821657180786,
+        "peak_dbfs": -10.297439910057708,
+        "rms": 0.03058578649559007,
+        "rms_dbfs": -30.289606947885858,
+        "max_sample_delta": 0.09391303360462189,
+        "p999_sample_delta": 0.0367901548743248,
+        "max_block_boundary_delta": 0.05651576817035675,
+        "plugin_boundary_phase_frames": 128
+      },
+      "export": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\M02_T003_drums_200_230_24bit.wav",
+        "sha256": "396d3f36563e18026aca10348aeddf03d8f8404cecfddb77ab3b8f9c29d1bdab",
+        "signal": {
+          "frames": 1440000,
+          "duration_seconds": 30.0,
+          "finite": true,
+          "sample_peak": 0.3017699718475342,
+          "sample_peak_dbfs": -10.406479552953643,
+          "rms_dbfs": -30.398646135468095,
+          "crest_factor_db": 19.99216658251445,
+          "left_rms_dbfs": -30.86145806056956,
+          "right_rms_dbfs": -29.98043914207118,
+          "channel_balance_db": -0.8810189184983817,
+          "lr_correlation": 0.8979126010174859,
+          "mono_rms_change_db": -0.23807500625722816,
+          "max_adjacent_sample_delta": 0.09274137020111084,
+          "spectral_distribution": {
+            "20-60_hz_db": -4.699042555836223,
+            "60-250_hz_db": -2.9694240134898617,
+            "250-2000_hz_db": -8.433917843990649,
+            "2000-6000_hz_db": -22.02267556230888,
+            "6000-20000_hz_db": -21.837362490255337
+          }
+        },
+        "loudness": {
+          "method": "FFmpeg ebur128 peak=true",
+          "integrated_lufs": -28.9,
+          "loudness_range_lu": 6.1,
+          "true_peak_dbtp": -10.4,
+          "momentary_lufs": {
+            "minimum": -69.5,
+            "median": -29.85,
+            "maximum": -23.6
+          },
+          "short_term_lufs": {
+            "minimum": -64.5,
+            "median": -30.4,
+            "maximum": -25.7
+          }
+        }
+      }
+    },
+    "bass": {
+      "preprocessing": null,
+      "trace": [
+        {
+          "time_seconds": 199.0,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 200.06666666666666,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 201.13333333333333,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 202.2,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 203.26666666666668,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 204.33333333333334,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 205.4,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 206.46666666666667,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 207.53333333333333,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 208.6,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 209.66666666666666,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 210.73333333333332,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 211.8,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 212.86666666666667,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 213.93333333333334,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 215.0,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 216.06666666666666,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 217.13333333333333,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 218.2,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 219.26666666666665,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 220.33333333333334,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 221.4,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 222.46666666666667,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 223.53333333333333,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 224.6,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 225.66666666666666,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 226.73333333333335,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 227.8,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 228.86666666666667,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 229.93333333333334,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        }
+      ],
+      "linked_level_trim_db": 18.700000000000003,
+      "target_reference_lufs": -33.3,
+      "unwrapped_azimuth_range_deg": [
+        0.0,
+        0.0
+      ],
+      "maximum_circular_step_deg": 0.0,
+      "wrapped_crossings": 0,
+      "distance_range_m": [
+        1.3,
+        1.3
+      ],
+      "metrics": {
+        "frames": 1440000,
+        "finite": true,
+        "peak": 0.12173492461442947,
+        "peak_dbfs": -18.291696177156396,
+        "rms": 0.02437446518700481,
+        "rms_dbfs": -32.261298092183,
+        "max_sample_delta": 0.008160246536135674,
+        "p999_sample_delta": 0.0033545182086527348,
+        "max_block_boundary_delta": 0.005094783380627632,
+        "plugin_boundary_phase_frames": 128
+      },
+      "export": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\M02_T003_bass_200_230_24bit.wav",
+        "sha256": "c3319351582e25af0b4d2d1ad7641a39c1dbf0ca6bdef8fe0be6ac41c8dd5974",
+        "signal": {
+          "frames": 1440000,
+          "duration_seconds": 30.0,
+          "finite": true,
+          "sample_peak": 0.1202162504196167,
+          "sample_peak_dbfs": -18.40073643858829,
+          "rms_dbfs": -32.370337280690855,
+          "crest_factor_db": 13.969600842102567,
+          "left_rms_dbfs": -32.40389348783119,
+          "right_rms_dbfs": -32.33703836239999,
+          "channel_balance_db": -0.0668551254312002,
+          "lr_correlation": 0.99186413082808,
+          "mono_rms_change_db": -0.01776690589443177,
+          "max_adjacent_sample_delta": 0.008058428764343262,
+          "spectral_distribution": {
+            "20-60_hz_db": -1.2227116441289598,
+            "60-250_hz_db": -6.453130541553536,
+            "250-2000_hz_db": -17.45451360680975,
+            "2000-6000_hz_db": -29.843730680630568,
+            "6000-20000_hz_db": -57.805125990551005
+          }
+        },
+        "loudness": {
+          "method": "FFmpeg ebur128 peak=true",
+          "integrated_lufs": -33.4,
+          "loudness_range_lu": 12.2,
+          "true_peak_dbtp": -18.4,
+          "momentary_lufs": {
+            "minimum": -66.5,
+            "median": -35.8,
+            "maximum": -27.9
+          },
+          "short_term_lufs": {
+            "minimum": -69.2,
+            "median": -35.3,
+            "maximum": -28.1
+          }
+        }
+      }
+    },
+    "guitar": {
+      "preprocessing": null,
+      "trace": [
+        {
+          "time_seconds": 199.0,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 200.06666666666666,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 201.13333333333333,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 202.2,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 203.26666666666668,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 204.33333333333334,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 205.4,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 206.46666666666667,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 207.53333333333333,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 208.6,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 209.66666666666666,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 210.73333333333332,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 211.8,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 212.86666666666667,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 213.93333333333334,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 215.0,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 216.06666666666666,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 217.13333333333333,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 218.2,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 219.26666666666665,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 220.33333333333334,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 221.4,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 222.46666666666667,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 223.53333333333333,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 224.6,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 225.66666666666666,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 226.73333333333335,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 227.8,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 228.86666666666667,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        },
+        {
+          "time_seconds": 229.93333333333334,
+          "distance_m": 1.25,
+          "linked_gain_db": -3.6467980515345073,
+          "display": "1.2 m"
+        }
+      ],
+      "linked_level_trim_db": 17.4,
+      "target_reference_lufs": -38.1,
+      "unwrapped_azimuth_range_deg": [
+        -55.0,
+        -55.0
+      ],
+      "maximum_circular_step_deg": 0.0,
+      "wrapped_crossings": 0,
+      "distance_range_m": [
+        1.25,
+        1.25
+      ],
+      "metrics": {
+        "frames": 1440000,
+        "finite": true,
+        "peak": 0.07730606943368912,
+        "peak_dbfs": -22.23572815059046,
+        "rms": 0.008014033200390389,
+        "rms_dbfs": -41.922977254246874,
+        "max_sample_delta": 0.0045743053779006,
+        "p999_sample_delta": 0.0022583757527172565,
+        "max_block_boundary_delta": 0.0038026291877031326,
+        "plugin_boundary_phase_frames": 128
+      },
+      "export": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\M02_T003_guitar_200_230_24bit.wav",
+        "sha256": "634ed24535fddba72c76eda659e8c6b480fcab71a4a4e098acdba307e00bfa18",
+        "signal": {
+          "frames": 1440000,
+          "duration_seconds": 30.0,
+          "finite": true,
+          "sample_peak": 0.07634162902832031,
+          "sample_peak_dbfs": -22.344771540486107,
+          "rms_dbfs": -42.03201644468844,
+          "crest_factor_db": 19.687244904202327,
+          "left_rms_dbfs": -41.500689412531344,
+          "right_rms_dbfs": -42.63752877256917,
+          "channel_balance_db": 1.1368393600378301,
+          "lr_correlation": 0.6533649658812455,
+          "mono_rms_change_db": -0.841232818486855,
+          "max_adjacent_sample_delta": 0.004517197608947754,
+          "spectral_distribution": {
+            "20-60_hz_db": -27.8747786583332,
+            "60-250_hz_db": -0.2865548233879484,
+            "250-2000_hz_db": -12.111453609353472,
+            "2000-6000_hz_db": -31.942136050214,
+            "6000-20000_hz_db": -41.19561077604254
+          }
+        },
+        "loudness": {
+          "method": "FFmpeg ebur128 peak=true",
+          "integrated_lufs": -38.2,
+          "loudness_range_lu": 14.2,
+          "true_peak_dbtp": -22.3,
+          "momentary_lufs": {
+            "minimum": -69.8,
+            "median": -40.6,
+            "maximum": -31.6
+          },
+          "short_term_lufs": {
+            "minimum": -61.3,
+            "median": -39.6,
+            "maximum": -34.2
+          }
+        }
+      }
+    },
+    "keyboards": {
+      "preprocessing": null,
+      "trace": [
+        {
+          "time_seconds": 199.0,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 200.06666666666666,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 201.13333333333333,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 202.2,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 203.26666666666668,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 204.33333333333334,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 205.4,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 206.46666666666667,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 207.53333333333333,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 208.6,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 209.66666666666666,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 210.73333333333332,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 211.8,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 212.86666666666667,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 213.93333333333334,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 215.0,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 216.06666666666666,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 217.13333333333333,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 218.2,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 219.26666666666665,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 220.33333333333334,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 221.4,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 222.46666666666667,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 223.53333333333333,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 224.6,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 225.66666666666666,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 226.73333333333335,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 227.8,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 228.86666666666667,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        },
+        {
+          "time_seconds": 229.93333333333334,
+          "distance_m": 1.3,
+          "linked_gain_db": -3.5067519326400287,
+          "display": "1.3 m"
+        }
+      ],
+      "linked_level_trim_db": 15.100000000000001,
+      "target_reference_lufs": -53.1,
+      "unwrapped_azimuth_range_deg": [
+        55.0,
+        55.0
+      ],
+      "maximum_circular_step_deg": 0.0,
+      "wrapped_crossings": 0,
+      "distance_range_m": [
+        1.3,
+        1.3
+      ],
+      "metrics": {
+        "frames": 1440000,
+        "finite": true,
+        "peak": 0.018938366323709488,
+        "peak_dbfs": -34.453149743401354,
+        "rms": 0.0009775506378293447,
+        "rms_dbfs": -60.197214731628996,
+        "max_sample_delta": 0.007113161496818066,
+        "p999_sample_delta": 0.0011026624124497175,
+        "max_block_boundary_delta": 0.0017801352078095078,
+        "plugin_boundary_phase_frames": 128
+      },
+      "export": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\M02_T003_keyboards_200_230_24bit.wav",
+        "sha256": "5b07ed161cfab6dc054368a5c6e70388e7a185bebfb05eefab431c0a217b999d",
+        "signal": {
+          "frames": 1440000,
+          "duration_seconds": 30.0,
+          "finite": true,
+          "sample_peak": 0.018702149391174316,
+          "sample_peak_dbfs": -34.562169564367565,
+          "rms_dbfs": -60.306253951115124,
+          "crest_factor_db": 25.74408438674755,
+          "left_rms_dbfs": -61.27631404969066,
+          "right_rms_dbfs": -59.51380162950657,
+          "channel_balance_db": -1.7625124201840916,
+          "lr_correlation": 0.4343647023440077,
+          "mono_rms_change_db": -1.4704051329759036,
+          "max_adjacent_sample_delta": 0.007024407386779785,
+          "spectral_distribution": {
+            "20-60_hz_db": -25.951697565571948,
+            "60-250_hz_db": -2.1453419372170437,
+            "250-2000_hz_db": -4.48753478976095,
+            "2000-6000_hz_db": -15.549697501160482,
+            "6000-20000_hz_db": -24.522772317505158
+          }
+        },
+        "loudness": {
+          "method": "FFmpeg ebur128 peak=true",
+          "integrated_lufs": -55.6,
+          "loudness_range_lu": 8.7,
+          "true_peak_dbtp": -34.6,
+          "momentary_lufs": {
+            "minimum": -69.5,
+            "median": -56.5,
+            "maximum": -50.0
+          },
+          "short_term_lufs": {
+            "minimum": -68.7,
+            "median": -55.9,
+            "maximum": -52.5
+          }
+        }
+      }
+    },
+    "percussion": {
+      "preprocessing": {
+        "method": "pre-dearVR mid/side attenuation",
+        "side_factor": 0.5,
+        "linked_rms_restore_gain": 1.0195734587906153
+      },
+      "trace": [
+        {
+          "time_seconds": 199.0,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 200.06666666666666,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 201.13333333333333,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 202.2,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 203.26666666666668,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 204.33333333333334,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 205.4,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 206.46666666666667,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 207.53333333333333,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 208.6,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 209.66666666666666,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 210.73333333333332,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 211.8,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 212.86666666666667,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 213.93333333333334,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 215.0,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 216.06666666666666,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 217.13333333333333,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 218.2,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 219.26666666666665,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 220.33333333333334,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 221.4,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 222.46666666666667,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 223.53333333333333,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 224.6,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 225.66666666666666,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 226.73333333333335,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 227.8,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 228.86666666666667,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 229.93333333333334,
+          "distance_m": 0.9,
+          "linked_gain_db": -4.683259773666377,
+          "display": "0.9 m"
+        }
+      ],
+      "linked_level_trim_db": 17.9,
+      "target_reference_lufs": -30.6,
+      "unwrapped_azimuth_range_deg": [
+        45.0,
+        405.0
+      ],
+      "maximum_circular_step_deg": 0.1356954391258114,
+      "wrapped_crossings": 1,
+      "distance_range_m": [
+        0.9,
+        0.9
+      ],
+      "metrics": {
+        "frames": 1440000,
+        "finite": true,
+        "peak": 0.3489234745502472,
+        "peak_dbfs": -9.14539623014415,
+        "rms": 0.02214898596419665,
+        "rms_dbfs": -33.092923041400425,
+        "max_sample_delta": 0.10406482964754105,
+        "p999_sample_delta": 0.04562915489077568,
+        "max_block_boundary_delta": 0.07875008881092072,
+        "plugin_boundary_phase_frames": 128
+      },
+      "export": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\M02_T003_percussion_200_230_24bit.wav",
+        "sha256": "ac4b0e9e057282f51658502a4f3ddd0a509ae437912d3af064a8259f7b7014ad",
+        "signal": {
+          "frames": 1440000,
+          "duration_seconds": 30.0,
+          "finite": true,
+          "sample_peak": 0.3445706367492676,
+          "sample_peak_dbfs": -9.25443469104502,
+          "rms_dbfs": -33.20196222644395,
+          "crest_factor_db": 23.947527535398933,
+          "left_rms_dbfs": -33.791629916835156,
+          "right_rms_dbfs": -32.68287015141233,
+          "channel_balance_db": -1.1087597654228245,
+          "lr_correlation": 0.4834946416838512,
+          "mono_rms_change_db": -1.308909530228456,
+          "max_adjacent_sample_delta": 0.10276663303375244,
+          "spectral_distribution": {
+            "20-60_hz_db": -6.284969598034348,
+            "60-250_hz_db": -3.4925220058944944,
+            "250-2000_hz_db": -5.462203662173856,
+            "2000-6000_hz_db": -17.929269820971793,
+            "6000-20000_hz_db": -17.75394189885973
+          }
+        },
+        "loudness": {
+          "method": "FFmpeg ebur128 peak=true",
+          "integrated_lufs": -30.7,
+          "loudness_range_lu": 6.0,
+          "true_peak_dbtp": -9.1,
+          "momentary_lufs": {
+            "minimum": -68.5,
+            "median": -31.4,
+            "maximum": -26.7
+          },
+          "short_term_lufs": {
+            "minimum": -68.8,
+            "median": -32.2,
+            "maximum": -27.6
+          }
+        }
+      }
+    },
+    "synth": {
+      "preprocessing": null,
+      "trace": [
+        {
+          "time_seconds": 199.0,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 200.06666666666666,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 201.13333333333333,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 202.2,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 203.26666666666668,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 204.33333333333334,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 205.4,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 206.46666666666667,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 207.53333333333333,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 208.6,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 209.66666666666666,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 210.73333333333332,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 211.8,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 212.86666666666667,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 213.93333333333334,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 215.0,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 216.06666666666666,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 217.13333333333333,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 218.2,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 219.26666666666665,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 220.33333333333334,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 221.4,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 222.46666666666667,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 223.53333333333333,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 224.6,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 225.66666666666666,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 226.73333333333335,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 227.8,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 228.86666666666667,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 229.93333333333334,
+          "distance_m": 1.5,
+          "linked_gain_db": -2.9465674570621165,
+          "display": "1.5 m"
+        }
+      ],
+      "linked_level_trim_db": 20.4,
+      "target_reference_lufs": -34.2,
+      "unwrapped_azimuth_range_deg": [
+        145.0,
+        145.0
+      ],
+      "maximum_circular_step_deg": 0.0,
+      "wrapped_crossings": 0,
+      "distance_range_m": [
+        1.5,
+        1.5
+      ],
+      "metrics": {
+        "frames": 1440000,
+        "finite": true,
+        "peak": 0.12259627878665924,
+        "peak_dbfs": -18.23045423859461,
+        "rms": 0.014525284366269313,
+        "rms_dbfs": -36.757507130569905,
+        "max_sample_delta": 0.027400534600019455,
+        "p999_sample_delta": 0.011588708497583866,
+        "max_block_boundary_delta": 0.01922101154923439,
+        "plugin_boundary_phase_frames": 128
+      },
+      "export": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\M02_T003_synth_200_230_24bit.wav",
+        "sha256": "59df2c23c9caa041707cc9ad6be1df78851f3192e83af9c7230db026247fa434",
+        "signal": {
+          "frames": 1440000,
+          "duration_seconds": 30.0,
+          "finite": true,
+          "sample_peak": 0.12106692790985107,
+          "sample_peak_dbfs": -18.339489554623036,
+          "rms_dbfs": -36.866546326655424,
+          "crest_factor_db": 18.527056772032388,
+          "left_rms_dbfs": -38.27073007787519,
+          "right_rms_dbfs": -35.80714935296477,
+          "channel_balance_db": -2.463580724910427,
+          "lr_correlation": 0.6205178110359241,
+          "mono_rms_change_db": -0.9789676502376314,
+          "max_adjacent_sample_delta": 0.027058720588684082,
+          "spectral_distribution": {
+            "20-60_hz_db": -24.628013422518467,
+            "60-250_hz_db": -3.5442958572533616,
+            "250-2000_hz_db": -2.804052419011354,
+            "2000-6000_hz_db": -15.27023472941606,
+            "6000-20000_hz_db": -34.46659635025379
+          }
+        },
+        "loudness": {
+          "method": "FFmpeg ebur128 peak=true",
+          "integrated_lufs": -34.3,
+          "loudness_range_lu": 13.7,
+          "true_peak_dbtp": -18.3,
+          "momentary_lufs": {
+            "minimum": -45.6,
+            "median": -37.2,
+            "maximum": -28.1
+          },
+          "short_term_lufs": {
+            "minimum": -43.6,
+            "median": -36.6,
+            "maximum": -29.3
+          }
+        }
+      }
+    },
+    "other": {
+      "preprocessing": null,
+      "trace": [
+        {
+          "time_seconds": 199.0,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 200.06666666666666,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 201.13333333333333,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 202.2,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 203.26666666666668,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 204.33333333333334,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 205.4,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 206.46666666666667,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 207.53333333333333,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 208.6,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 209.66666666666666,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 210.73333333333332,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 211.8,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 212.86666666666667,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 213.93333333333334,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 215.0,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 216.06666666666666,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 217.13333333333333,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 218.2,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 219.26666666666665,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 220.33333333333334,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 221.4,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 222.46666666666667,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 223.53333333333333,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 224.6,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 225.66666666666666,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 226.73333333333335,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 227.8,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 228.86666666666667,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        },
+        {
+          "time_seconds": 229.93333333333334,
+          "distance_m": 1.6,
+          "linked_gain_db": -2.718018961401122,
+          "display": "1.6 m"
+        }
+      ],
+      "linked_level_trim_db": 14.5,
+      "target_reference_lufs": -38.5,
+      "unwrapped_azimuth_range_deg": [
+        -155.0,
+        -155.0
+      ],
+      "maximum_circular_step_deg": 0.0,
+      "wrapped_crossings": 0,
+      "distance_range_m": [
+        1.6,
+        1.6
+      ],
+      "metrics": {
+        "frames": 1440000,
+        "finite": true,
+        "peak": 0.05302615836262703,
+        "peak_dbfs": -25.510196709881154,
+        "rms": 0.00832664702559461,
+        "rms_dbfs": -41.59059690206792,
+        "max_sample_delta": 0.03264795243740082,
+        "p999_sample_delta": 0.004352503921836615,
+        "max_block_boundary_delta": 0.010009588673710823,
+        "plugin_boundary_phase_frames": 128
+      },
+      "export": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\M02_T003_other_200_230_24bit.wav",
+        "sha256": "1e6bdb56b5312f90e46c7aeb03ef082e30281896a3af0ba175ad86888109c061",
+        "signal": {
+          "frames": 1440000,
+          "duration_seconds": 30.0,
+          "finite": true,
+          "sample_peak": 0.05236470699310303,
+          "sample_peak_dbfs": -25.619226444391984,
+          "rms_dbfs": -41.69963603690606,
+          "crest_factor_db": 16.080409592514073,
+          "left_rms_dbfs": -41.383031388503326,
+          "right_rms_dbfs": -42.04114920333406,
+          "channel_balance_db": 0.6581178148307292,
+          "lr_correlation": 0.9707186126571504,
+          "mono_rms_change_db": -0.07018391523441866,
+          "max_adjacent_sample_delta": 0.03224074840545654,
+          "spectral_distribution": {
+            "20-60_hz_db": -0.31664623823258176,
+            "60-250_hz_db": -12.980481900214922,
+            "250-2000_hz_db": -17.728401973571906,
+            "2000-6000_hz_db": -26.827441014441888,
+            "6000-20000_hz_db": -31.850952977124102
+          }
+        },
+        "loudness": {
+          "method": "FFmpeg ebur128 peak=true",
+          "integrated_lufs": -40.9,
+          "loudness_range_lu": 26.4,
+          "true_peak_dbtp": -25.6,
+          "momentary_lufs": {
+            "minimum": -69.6,
+            "median": -57.4,
+            "maximum": -35.9
+          },
+          "short_term_lufs": {
+            "minimum": -66.6,
+            "median": -53.1,
+            "maximum": -36.6
+          }
+        }
+      }
+    },
+    "brass": {
+      "preprocessing": null,
+      "trace": [
+        {
+          "time_seconds": 199.0,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 200.06666666666666,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 201.13333333333333,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 202.2,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 203.26666666666668,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 204.33333333333334,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 205.4,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 206.46666666666667,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 207.53333333333333,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 208.6,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 209.66666666666666,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 210.73333333333332,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 211.8,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 212.86666666666667,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 213.93333333333334,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 215.0,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 216.06666666666666,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 217.13333333333333,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 218.2,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 219.26666666666665,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 220.33333333333334,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 221.4,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 222.46666666666667,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 223.53333333333333,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 224.6,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 225.66666666666666,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 226.73333333333335,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 227.8,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 228.86666666666667,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        },
+        {
+          "time_seconds": 229.93333333333334,
+          "distance_m": 0.85,
+          "linked_gain_db": -4.851375337496116,
+          "display": "0.9 m"
+        }
+      ],
+      "linked_level_trim_db": 17.199999999999996,
+      "target_reference_lufs": -41.7,
+      "unwrapped_azimuth_range_deg": [
+        -120.0,
+        120.0
+      ],
+      "maximum_circular_step_deg": 1.2800000000015643,
+      "wrapped_crossings": 0,
+      "distance_range_m": [
+        0.85,
+        0.85
+      ],
+      "metrics": {
+        "frames": 1440000,
+        "finite": true,
+        "peak": 0.050268009305000305,
+        "peak_dbfs": -25.9741662639971,
+        "rms": 0.005021450646069349,
+        "rms_dbfs": -45.983416029318924,
+        "max_sample_delta": 0.002113291760906577,
+        "p999_sample_delta": 0.0011114230146631598,
+        "max_block_boundary_delta": 0.001977174077183008,
+        "plugin_boundary_phase_frames": 128
+      },
+      "export": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\M02_T003_brass_200_230_24bit.wav",
+        "sha256": "35fa359c2b8f9bc0150c4e6ca7e55c0198146ec52be2eb1fe39773c9b48d2283",
+        "signal": {
+          "frames": 1440000,
+          "duration_seconds": 30.0,
+          "finite": true,
+          "sample_peak": 0.04964089393615723,
+          "sample_peak_dbfs": -26.083208126042873,
+          "rms_dbfs": -46.092455209853654,
+          "crest_factor_db": 20.009247083810784,
+          "left_rms_dbfs": -45.99587734363439,
+          "right_rms_dbfs": -46.19122970354711,
+          "channel_balance_db": 0.1953523599127246,
+          "lr_correlation": 0.9277531531490172,
+          "mono_rms_change_db": -0.16031427639829507,
+          "max_adjacent_sample_delta": 0.0020869970321655273,
+          "spectral_distribution": {
+            "20-60_hz_db": -0.4713530743918365,
+            "60-250_hz_db": -10.702652789959028,
+            "250-2000_hz_db": -18.306699311678855,
+            "2000-6000_hz_db": -36.41990278512245,
+            "6000-20000_hz_db": -47.69404791471274
+          }
+        },
+        "loudness": {
+          "method": "FFmpeg ebur128 peak=true",
+          "integrated_lufs": -42.5,
+          "loudness_range_lu": 21.7,
+          "true_peak_dbtp": -26.1,
+          "momentary_lufs": {
+            "minimum": -69.7,
+            "median": -53.0,
+            "maximum": -36.7
+          },
+          "short_term_lufs": {
+            "minimum": -68.4,
+            "median": -52.6,
+            "maximum": -39.5
+          }
+        }
+      }
+    }
+  },
+  "angular_separation": {
+    "active_pair_minimum_great_circle_separation_deg": {
+      "woodwinds / drums": 46.40842054531636,
+      "woodwinds / bass": 69.73911806052386,
+      "woodwinds / guitar": 15.551053506564482,
+      "woodwinds / keyboards": 8.577634807972398,
+      "woodwinds / percussion": 39.27499237084401,
+      "woodwinds / synth": 60.86616888510982,
+      "woodwinds / other": 82.66086929406273,
+      "drums / bass": 26.746649330650232,
+      "drums / guitar": 77.0285337046975,
+      "drums / keyboards": 50.4776729648793,
+      "drums / percussion": 5.055502309216386,
+      "drums / synth": 129.2405798875723,
+      "drums / other": 154.07015298289537,
+      "bass / guitar": 70.79329617998816,
+      "bass / keyboards": 76.1994672582921,
+      "bass / percussion": 26.999999999999996,
+      "bass / synth": 154.76855889622098,
+      "bass / other": 127.7803789868779,
+      "guitar / keyboards": 106.92563997068758,
+      "guitar / percussion": 23.020351610022676,
+      "guitar / synth": 121.28075689593805,
+      "guitar / other": 100.56982315284182,
+      "keyboards / percussion": 30.002154415425245,
+      "keyboards / synth": 78.91062248894777,
+      "keyboards / other": 148.85827219780546,
+      "percussion / synth": 63.002174700533956,
+      "percussion / other": 10.030541660376999,
+      "synth / other": 74.42361376406613,
+      "backing_vocals / woodwinds": 47.43201204174022,
+      "backing_vocals / drums": 128.98629712189188,
+      "backing_vocals / bass": 111.50007158167617,
+      "backing_vocals / guitar": 54.30061648193941,
+      "backing_vocals / keyboards": 150.9144308927714,
+      "backing_vocals / percussion": 25.031674117857147,
+      "backing_vocals / synth": 92.37885643035516,
+      "backing_vocals / other": 47.26722695498765,
+      "backing_vocals / brass": 45.98464821249051,
+      "woodwinds / brass": 99.44850017965595,
+      "drums / brass": 87.9291985297315,
+      "bass / brass": 85.44458525626013,
+      "guitar / brass": 74.75226242101276,
+      "keyboards / brass": 79.28405766127567,
+      "percussion / brass": 20.001193262074203,
+      "synth / brass": 85.95644411293003,
+      "other / brass": 44.07357685610912,
+      "lead_vocal / woodwinds": 29.076978233971598,
+      "lead_vocal / drums": 26.657965008003934,
+      "lead_vocal / bass": 42.0,
+      "lead_vocal / guitar": 55.3895106674654,
+      "lead_vocal / keyboards": 56.355912619133385,
+      "lead_vocal / percussion": 19.14927548551025,
+      "lead_vocal / synth": 123.23811220502006,
+      "lead_vocal / other": 154.53645416759363,
+      "lead_vocal / brass": 114.17820395979116,
+      "lead_vocal / backing_vocals": 109.6834980794137
+    },
+    "brief_crossings_below_20deg": [
+      {
+        "time_seconds": 200.3,
+        "pair": "woodwinds / guitar",
+        "separation_deg": 19.527002989315225
+      },
+      {
+        "time_seconds": 200.4,
+        "pair": "woodwinds / guitar",
+        "separation_deg": 18.34998136651917
+      },
+      {
+        "time_seconds": 200.5,
+        "pair": "woodwinds / guitar",
+        "separation_deg": 17.34109322890074
+      },
+      {
+        "time_seconds": 200.6,
+        "pair": "woodwinds / guitar",
+        "separation_deg": 16.530530665295696
+      },
+      {
+        "time_seconds": 200.7,
+        "pair": "woodwinds / guitar",
+        "separation_deg": 15.94788539388454
+      },
+      {
+        "time_seconds": 200.8,
+        "pair": "woodwinds / guitar",
+        "separation_deg": 15.61796013186326
+      },
+      {
+        "time_seconds": 200.9,
+        "pair": "woodwinds / guitar",
+        "separation_deg": 15.556077841878311
+      },
+      {
+        "time_seconds": 201.0,
+        "pair": "woodwinds / guitar",
+        "separation_deg": 15.76460411711351
+      },
+      {
+        "time_seconds": 201.1,
+        "pair": "woodwinds / guitar",
+        "separation_deg": 16.232315994301484
+      },
+      {
+        "time_seconds": 201.2,
+        "pair": "woodwinds / guitar",
+        "separation_deg": 16.936946900864893
+      },
+      {
+        "time_seconds": 201.3,
+        "pair": "woodwinds / guitar",
+        "separation_deg": 17.849658133822352
+      },
+      {
+        "time_seconds": 201.4,
+        "pair": "woodwinds / guitar",
+        "separation_deg": 18.93959842355919
+      },
+      {
+        "time_seconds": 205.3,
+        "pair": "woodwinds / keyboards",
+        "separation_deg": 18.573231772874905
+      },
+      {
+        "time_seconds": 205.4,
+        "pair": "woodwinds / keyboards",
+        "separation_deg": 16.8220747468507
+      },
+      {
+        "time_seconds": 205.5,
+        "pair": "woodwinds / keyboards",
+        "separation_deg": 15.130855740388656
+      },
+      {
+        "time_seconds": 205.6,
+        "pair": "woodwinds / keyboards",
+        "separation_deg": 13.523528673351501
+      },
+      {
+        "time_seconds": 205.7,
+        "pair": "woodwinds / keyboards",
+        "separation_deg": 12.035301268740794
+      },
+      {
+        "time_seconds": 205.8,
+        "pair": "woodwinds / keyboards",
+        "separation_deg": 10.717559453688917
+      },
+      {
+        "time_seconds": 205.9,
+        "pair": "woodwinds / keyboards",
+        "separation_deg": 9.64220964271416
+      },
+      {
+        "time_seconds": 206.0,
+        "pair": "woodwinds / keyboards",
+        "separation_deg": 8.899366002478773
+      },
+      {
+        "time_seconds": 206.1,
+        "pair": "woodwinds / keyboards",
+        "separation_deg": 8.577634807972398
+      },
+      {
+        "time_seconds": 206.2,
+        "pair": "woodwinds / keyboards",
+        "separation_deg": 8.725373220670056
+      },
+      {
+        "time_seconds": 206.3,
+        "pair": "woodwinds / keyboards",
+        "separation_deg": 9.321735295518662
+      },
+      {
+        "time_seconds": 206.4,
+        "pair": "woodwinds / keyboards",
+        "separation_deg": 10.290249298989526
+      },
+      {
+        "time_seconds": 206.5,
+        "pair": "woodwinds / keyboards",
+        "separation_deg": 11.538617919083721
+      },
+      {
+        "time_seconds": 207.0,
+        "pair": "woodwinds / keyboards",
+        "separation_deg": 19.848885736416534
+      },
+      {
+        "time_seconds": 207.5,
+        "pair": "percussion / other",
+        "separation_deg": 18.693147392109264
+      },
+      {
+        "time_seconds": 207.6,
+        "pair": "percussion / other",
+        "separation_deg": 16.63359427117939
+      },
+      {
+        "time_seconds": 207.7,
+        "pair": "percussion / other",
+        "separation_deg": 14.711551215376033
+      },
+      {
+        "time_seconds": 207.8,
+        "pair": "percussion / other",
+        "separation_deg": 12.988354550291438
+      },
+      {
+        "time_seconds": 207.9,
+        "pair": "percussion / other",
+        "separation_deg": 11.553451919029124
+      },
+      {
+        "time_seconds": 208.0,
+        "pair": "percussion / other",
+        "separation_deg": 10.525521026905134
+      },
+      {
+        "time_seconds": 208.1,
+        "pair": "percussion / other",
+        "separation_deg": 10.030541660376999
+      },
+      {
+        "time_seconds": 208.2,
+        "pair": "percussion / other",
+        "separation_deg": 10.146841425992656
+      },
+      {
+        "time_seconds": 208.3,
+        "pair": "percussion / other",
+        "separation_deg": 10.854783492721825
+      },
+      {
+        "time_seconds": 208.4,
+        "pair": "percussion / other",
+        "separation_deg": 12.050504559412689
+      },
+      {
+        "time_seconds": 208.5,
+        "pair": "percussion / other",
+        "separation_deg": 13.605944325010785
+      },
+      {
+        "time_seconds": 208.6,
+        "pair": "percussion / other",
+        "separation_deg": 15.41249662408084
+      },
+      {
+        "time_seconds": 208.7,
+        "pair": "percussion / other",
+        "separation_deg": 17.391992588892418
+      },
+      {
+        "time_seconds": 208.8,
+        "pair": "percussion / other",
+        "separation_deg": 19.491709120679314
+      },
+      {
+        "time_seconds": 215.1,
+        "pair": "lead_vocal / percussion",
+        "separation_deg": 19.14927548551025
+      },
+      {
+        "time_seconds": 215.5,
+        "pair": "drums / percussion",
+        "separation_deg": 19.57905488023042
+      },
+      {
+        "time_seconds": 215.6,
+        "pair": "drums / percussion",
+        "separation_deg": 17.867237074363743
+      },
+      {
+        "time_seconds": 215.7,
+        "pair": "drums / percussion",
+        "separation_deg": 17.867237074363743
+      },
+      {
+        "time_seconds": 215.8,
+        "pair": "drums / percussion",
+        "separation_deg": 17.867237074363743
+      },
+      {
+        "time_seconds": 215.9,
+        "pair": "drums / percussion",
+        "separation_deg": 17.867237074363743
+      },
+      {
+        "time_seconds": 216.0,
+        "pair": "drums / percussion",
+        "separation_deg": 17.867237074363743
+      },
+      {
+        "time_seconds": 216.1,
+        "pair": "drums / percussion",
+        "separation_deg": 16.092172232478724
+      },
+      {
+        "time_seconds": 216.2,
+        "pair": "drums / percussion",
+        "separation_deg": 13.809002575860944
+      },
+      {
+        "time_seconds": 216.3,
+        "pair": "drums / percussion",
+        "separation_deg": 11.582543076130131
+      },
+      {
+        "time_seconds": 216.4,
+        "pair": "drums / percussion",
+        "separation_deg": 9.45349639959167
+      },
+      {
+        "time_seconds": 216.5,
+        "pair": "drums / percussion",
+        "separation_deg": 7.505767368019318
+      },
+      {
+        "time_seconds": 216.6,
+        "pair": "drums / percussion",
+        "separation_deg": 5.921579804777188
+      },
+      {
+        "time_seconds": 216.7,
+        "pair": "drums / percussion",
+        "separation_deg": 5.055502309216386
+      },
+      {
+        "time_seconds": 216.8,
+        "pair": "drums / percussion",
+        "separation_deg": 5.274204689965971
+      },
+      {
+        "time_seconds": 216.9,
+        "pair": "drums / percussion",
+        "separation_deg": 6.468546787413484
+      },
+      {
+        "time_seconds": 217.0,
+        "pair": "drums / percussion",
+        "separation_deg": 8.223756886643859
+      },
+      {
+        "time_seconds": 217.1,
+        "pair": "drums / percussion",
+        "separation_deg": 10.255575979137472
+      },
+      {
+        "time_seconds": 217.2,
+        "pair": "drums / percussion",
+        "separation_deg": 12.428809245724176
+      },
+      {
+        "time_seconds": 217.3,
+        "pair": "drums / percussion",
+        "separation_deg": 14.680483468678352
+      },
+      {
+        "time_seconds": 217.4,
+        "pair": "drums / percussion",
+        "separation_deg": 16.97909102463822
+      },
+      {
+        "time_seconds": 217.5,
+        "pair": "drums / percussion",
+        "separation_deg": 19.307527773282633
+      },
+      {
+        "time_seconds": 218.8,
+        "pair": "woodwinds / keyboards",
+        "separation_deg": 18.16366354729577
+      },
+      {
+        "time_seconds": 218.9,
+        "pair": "woodwinds / keyboards",
+        "separation_deg": 16.00232868457406
+      },
+      {
+        "time_seconds": 219.0,
+        "pair": "woodwinds / keyboards",
+        "separation_deg": 13.956810283635013
+      },
+      {
+        "time_seconds": 223.3,
+        "pair": "woodwinds / guitar",
+        "separation_deg": 18.74435923015059
+      },
+      {
+        "time_seconds": 223.4,
+        "pair": "woodwinds / guitar",
+        "separation_deg": 17.464830774944488
+      },
+      {
+        "time_seconds": 223.5,
+        "pair": "woodwinds / guitar",
+        "separation_deg": 16.47083489712732
+      },
+      {
+        "time_seconds": 223.6,
+        "pair": "woodwinds / guitar",
+        "separation_deg": 15.818015316893188
+      },
+      {
+        "time_seconds": 223.7,
+        "pair": "woodwinds / guitar",
+        "separation_deg": 15.551053506564482
+      },
+      {
+        "time_seconds": 223.8,
+        "pair": "woodwinds / guitar",
+        "separation_deg": 15.691202555712762
+      },
+      {
+        "time_seconds": 223.9,
+        "pair": "woodwinds / guitar",
+        "separation_deg": 16.229326972439903
+      },
+      {
+        "time_seconds": 224.0,
+        "pair": "woodwinds / guitar",
+        "separation_deg": 17.12921540626277
+      },
+      {
+        "time_seconds": 224.1,
+        "pair": "woodwinds / guitar",
+        "separation_deg": 18.33879291090843
+      },
+      {
+        "time_seconds": 224.2,
+        "pair": "woodwinds / guitar",
+        "separation_deg": 19.802351675276466
+      }
+    ],
+    "interpretation": "Continuous moving sources necessarily cross some lanes. Exact scene coordinates are not measured perceived localization; nearby anchor azimuths are differentiated by elevation."
+  },
+  "simplified_monitor": {
+    "same_sound_sequence": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\monitors\\M02_T003_positions_same_sound_27_5s_24bit.wav",
+      "sha256": "31f7bd8721f41db2fcdeb566c9fdddf451ee2fe34a5d65fdbfcddd172a6ea387",
+      "signal": {
+        "frames": 1320000,
+        "duration_seconds": 27.5,
+        "finite": true,
+        "sample_peak": 0.3162277936935425,
+        "sample_peak_dbfs": -9.9999992397986,
+        "rms_dbfs": -41.66454548747971,
+        "crest_factor_db": 31.66454624768111,
+        "left_rms_dbfs": -41.60770141195694,
+        "right_rms_dbfs": -41.722143464153724,
+        "channel_balance_db": 0.11444205219678928,
+        "lr_correlation": 0.2546922490284797,
+        "mono_rms_change_db": -2.0250030873063056,
+        "max_adjacent_sample_delta": 0.061388373374938965,
+        "spectral_distribution": {
+          "20-60_hz_db": -16.50263434610127,
+          "60-250_hz_db": -10.030223265576033,
+          "250-2000_hz_db": -1.5710546995910692,
+          "2000-6000_hz_db": -7.921152069618599,
+          "6000-20000_hz_db": -16.965191229645026
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -37.9,
+        "loudness_range_lu": 2.2,
+        "true_peak_dbtp": -10.0,
+        "momentary_lufs": {
+          "minimum": -54.9,
+          "median": -41.9,
+          "maximum": -31.6
+        },
+        "short_term_lufs": {
+          "minimum": -39.3,
+          "median": -38.7,
+          "maximum": -36.6
+        }
+      }
+    },
+    "schedule": [
+      {
+        "cue": "D1",
+        "start_seconds": 0.0,
+        "end_seconds": 2.0,
+        "expected_direction": "front-right",
+        "azimuth_deg": 45,
+        "elevation_deg": 0,
+        "distance_m": 1.0,
+        "source_content": "Identical composite of own stems; naming is irrelevant"
+      },
+      {
+        "cue": "D2",
+        "start_seconds": 2.5,
+        "end_seconds": 4.5,
+        "expected_direction": "right",
+        "azimuth_deg": 90,
+        "elevation_deg": 0,
+        "distance_m": 1.0,
+        "source_content": "Identical composite of own stems; naming is irrelevant"
+      },
+      {
+        "cue": "D3",
+        "start_seconds": 5.0,
+        "end_seconds": 7.0,
+        "expected_direction": "rear-right",
+        "azimuth_deg": 135,
+        "elevation_deg": 0,
+        "distance_m": 1.0,
+        "source_content": "Identical composite of own stems; naming is irrelevant"
+      },
+      {
+        "cue": "D4",
+        "start_seconds": 7.5,
+        "end_seconds": 9.5,
+        "expected_direction": "rear",
+        "azimuth_deg": 180,
+        "elevation_deg": 0,
+        "distance_m": 1.0,
+        "source_content": "Identical composite of own stems; naming is irrelevant"
+      },
+      {
+        "cue": "D5",
+        "start_seconds": 10.0,
+        "end_seconds": 12.0,
+        "expected_direction": "rear-left",
+        "azimuth_deg": 225,
+        "elevation_deg": 0,
+        "distance_m": 1.0,
+        "source_content": "Identical composite of own stems; naming is irrelevant"
+      },
+      {
+        "cue": "D6",
+        "start_seconds": 12.5,
+        "end_seconds": 14.5,
+        "expected_direction": "left",
+        "azimuth_deg": 270,
+        "elevation_deg": 0,
+        "distance_m": 1.0,
+        "source_content": "Identical composite of own stems; naming is irrelevant"
+      },
+      {
+        "cue": "D7",
+        "start_seconds": 15.0,
+        "end_seconds": 17.0,
+        "expected_direction": "front-left",
+        "azimuth_deg": 315,
+        "elevation_deg": 0,
+        "distance_m": 1.0,
+        "source_content": "Identical composite of own stems; naming is irrelevant"
+      },
+      {
+        "cue": "D8",
+        "start_seconds": 17.5,
+        "end_seconds": 19.5,
+        "expected_direction": "front",
+        "azimuth_deg": 360,
+        "elevation_deg": 0,
+        "distance_m": 1.0,
+        "source_content": "Identical composite of own stems; naming is irrelevant"
+      },
+      {
+        "cue": "H1",
+        "start_seconds": 20.0,
+        "end_seconds": 22.0,
+        "expected_direction": "front-low",
+        "azimuth_deg": 0,
+        "elevation_deg": -35,
+        "distance_m": 1.0,
+        "source_content": "Identical composite of own stems; naming is irrelevant"
+      },
+      {
+        "cue": "H2",
+        "start_seconds": 22.5,
+        "end_seconds": 24.5,
+        "expected_direction": "front-level",
+        "azimuth_deg": 0,
+        "elevation_deg": 0,
+        "distance_m": 1.0,
+        "source_content": "Identical composite of own stems; naming is irrelevant"
+      },
+      {
+        "cue": "H3",
+        "start_seconds": 25.0,
+        "end_seconds": 27.0,
+        "expected_direction": "front-high",
+        "azimuth_deg": 0,
+        "elevation_deg": 45,
+        "distance_m": 1.0,
+        "source_content": "Identical composite of own stems; naming is irrelevant"
+      }
+    ],
+    "source_excerpt_seconds": [
+      214.3,
+      216.3
+    ],
+    "own_stems_used": [
+      "percussion",
+      "woodwinds",
+      "backing_vocals"
+    ],
+    "diagnostic_only_montage": true,
+    "mono_for_monitor_only": true,
+    "criterion": "Report direction and height, not instrument identity; equal distance and same composite timbre isolate angular/elevation cues.",
+    "four_source_mix": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\monitors\\M02_T003_four_positions_200_215_24bit.wav",
+      "sha256": "e78c0c2e1c75e4c67843fc5c172daf8269efb898c588243a51dea210b24b1779",
+      "signal": {
+        "frames": 720000,
+        "duration_seconds": 15.0,
+        "finite": true,
+        "sample_peak": 0.3981071710586548,
+        "sample_peak_dbfs": -7.999999988978489,
+        "rms_dbfs": -27.625795240137943,
+        "crest_factor_db": 19.625795251159456,
+        "left_rms_dbfs": -27.277094162257892,
+        "right_rms_dbfs": -28.004957577134387,
+        "channel_balance_db": 0.727863414876498,
+        "lr_correlation": 0.3772274744655059,
+        "mono_rms_change_db": -1.6244095917124173,
+        "max_adjacent_sample_delta": 0.13498079776763916,
+        "spectral_distribution": {
+          "20-60_hz_db": -10.837462208672179,
+          "60-250_hz_db": -3.2490672906821025,
+          "250-2000_hz_db": -3.6979015044723496,
+          "2000-6000_hz_db": -19.88566448742032,
+          "6000-20000_hz_db": -21.43763392240816
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -25.3,
+        "loudness_range_lu": 2.2,
+        "true_peak_dbtp": -8.0,
+        "momentary_lufs": {
+          "minimum": -29.1,
+          "median": -25.5,
+          "maximum": -22.6
+        },
+        "short_term_lufs": {
+          "minimum": -26.5,
+          "median": -25.5,
+          "maximum": -23.9
+        }
+      }
+    },
+    "four_sources": [
+      {
+        "cue": "A",
+        "role": "percussion",
+        "azimuth_deg": 45,
+        "elevation_deg": 0,
+        "distance_m": 1.0
+      },
+      {
+        "cue": "B",
+        "role": "woodwinds",
+        "azimuth_deg": -45,
+        "elevation_deg": 15,
+        "distance_m": 1.0
+      },
+      {
+        "cue": "C",
+        "role": "backing_vocals",
+        "azimuth_deg": -135,
+        "elevation_deg": 0,
+        "distance_m": 1.0
+      },
+      {
+        "cue": "D",
+        "role": "keyboards",
+        "azimuth_deg": 135,
+        "elevation_deg": 35,
+        "distance_m": 1.0
+      }
+    ],
+    "interpretation": "Neither monitor is a complete-song render. Montage timing deliberately differs from music; four-source test preserves 200-215 absolute timing."
+  },
+  "percussion_sector_monitor": {
+    "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\monitors\\M02_T003_percussion_eight_sectors_200_230_24bit.wav",
+    "sha256": "29d0d2e5283c71e6af83630c2b461be54f6256d1a1a72b6e17e1a9fa5e8dc797",
+    "signal": {
+      "frames": 1440000,
+      "duration_seconds": 30.0,
+      "finite": true,
+      "sample_peak": 0.3981071710586548,
+      "sample_peak_dbfs": -7.999999988978489,
+      "rms_dbfs": -31.947526624018437,
+      "crest_factor_db": 23.94752663503995,
+      "left_rms_dbfs": -32.53719430697487,
+      "right_rms_dbfs": -31.4284345547307,
+      "channel_balance_db": -1.1087597522441643,
+      "lr_correlation": 0.48349464220071947,
+      "mono_rms_change_db": -1.3089095284524668,
+      "max_adjacent_sample_delta": 0.11873364448547363,
+      "spectral_distribution": {
+        "20-60_hz_db": -6.284969620413339,
+        "60-250_hz_db": -3.4925219957408427,
+        "250-2000_hz_db": -5.462203654577561,
+        "2000-6000_hz_db": -17.929269844523102,
+        "6000-20000_hz_db": -17.753941956137915
+      }
+    },
+    "loudness": {
+      "method": "FFmpeg ebur128 peak=true",
+      "integrated_lufs": -29.5,
+      "loudness_range_lu": 6.0,
+      "true_peak_dbtp": -7.9,
+      "momentary_lufs": {
+        "minimum": -69.3,
+        "median": -30.2,
+        "maximum": -25.4
+      },
+      "short_term_lufs": {
+        "minimum": -69.0,
+        "median": -30.9,
+        "maximum": -26.3
+      }
+    }
+  },
+  "sector_events": [
+    {
+      "sector": "front-right",
+      "azimuth_unwrapped_deg": 45,
+      "start_seconds": 200.04266666666663,
+      "dwell_seconds": 0.45
+    },
+    {
+      "sector": "right",
+      "azimuth_unwrapped_deg": 90,
+      "start_seconds": 202.2613333333333,
+      "dwell_seconds": 0.45
+    },
+    {
+      "sector": "rear-right",
+      "azimuth_unwrapped_deg": 135,
+      "start_seconds": 204.47999999999996,
+      "dwell_seconds": 0.45
+    },
+    {
+      "sector": "rear",
+      "azimuth_unwrapped_deg": 180,
+      "start_seconds": 206.69866666666664,
+      "dwell_seconds": 0.45
+    },
+    {
+      "sector": "rear-left",
+      "azimuth_unwrapped_deg": 225,
+      "start_seconds": 208.9173333333333,
+      "dwell_seconds": 0.45
+    },
+    {
+      "sector": "left",
+      "azimuth_unwrapped_deg": 270,
+      "start_seconds": 211.13599999999997,
+      "dwell_seconds": 0.45
+    },
+    {
+      "sector": "front-left",
+      "azimuth_unwrapped_deg": 315,
+      "start_seconds": 213.35466666666665,
+      "dwell_seconds": 0.45
+    },
+    {
+      "sector": "front",
+      "azimuth_unwrapped_deg": 360,
+      "start_seconds": 215.5733333333333,
+      "dwell_seconds": 0.45
+    }
+  ],
+  "exported_files": [
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\monitors\\M02_T003_four_positions_200_215_24bit.wav",
+      "sha256": "e78c0c2e1c75e4c67843fc5c172daf8269efb898c588243a51dea210b24b1779",
+      "frames": 720000,
+      "sample_peak_dbfs": -7.999999988978489,
+      "true_peak_dbtp": -8.0
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\monitors\\M02_T003_percussion_eight_sectors_200_230_24bit.wav",
+      "sha256": "29d0d2e5283c71e6af83630c2b461be54f6256d1a1a72b6e17e1a9fa5e8dc797",
+      "frames": 1440000,
+      "sample_peak_dbfs": -7.999999988978489,
+      "true_peak_dbtp": -7.9
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\monitors\\M02_T003_positions_same_sound_27_5s_24bit.wav",
+      "sha256": "31f7bd8721f41db2fcdeb566c9fdddf451ee2fe34a5d65fdbfcddd172a6ea387",
+      "frames": 1320000,
+      "sample_peak_dbfs": -9.9999992397986,
+      "true_peak_dbtp": -10.0
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\M02_T003_backing_vocals_200_230_24bit.wav",
+      "sha256": "306ef77317c64308129c156bcc9be9b1f9b276c755025229db4395d63632cc7d",
+      "frames": 1440000,
+      "sample_peak_dbfs": -9.913134471858818,
+      "true_peak_dbtp": -9.9
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\M02_T003_bass_200_230_24bit.wav",
+      "sha256": "c3319351582e25af0b4d2d1ad7641a39c1dbf0ca6bdef8fe0be6ac41c8dd5974",
+      "frames": 1440000,
+      "sample_peak_dbfs": -18.40073643858829,
+      "true_peak_dbtp": -18.4
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\M02_T003_brass_200_230_24bit.wav",
+      "sha256": "35fa359c2b8f9bc0150c4e6ca7e55c0198146ec52be2eb1fe39773c9b48d2283",
+      "frames": 1440000,
+      "sample_peak_dbfs": -26.083208126042873,
+      "true_peak_dbtp": -26.1
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\M02_T003_drums_200_230_24bit.wav",
+      "sha256": "396d3f36563e18026aca10348aeddf03d8f8404cecfddb77ab3b8f9c29d1bdab",
+      "frames": 1440000,
+      "sample_peak_dbfs": -10.406479552953643,
+      "true_peak_dbtp": -10.4
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\M02_T003_guitar_200_230_24bit.wav",
+      "sha256": "634ed24535fddba72c76eda659e8c6b480fcab71a4a4e098acdba307e00bfa18",
+      "frames": 1440000,
+      "sample_peak_dbfs": -22.344771540486107,
+      "true_peak_dbtp": -22.3
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\M02_T003_keyboards_200_230_24bit.wav",
+      "sha256": "5b07ed161cfab6dc054368a5c6e70388e7a185bebfb05eefab431c0a217b999d",
+      "frames": 1440000,
+      "sample_peak_dbfs": -34.562169564367565,
+      "true_peak_dbtp": -34.6
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\M02_T003_lead_vocal_200_230_24bit.wav",
+      "sha256": "51ded7a770cc44ba39ff161d848e94274321af28729b73cf0049e76e855f34e3",
+      "frames": 1440000,
+      "sample_peak_dbfs": -23.569037767629624,
+      "true_peak_dbtp": -23.6
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\M02_T003_other_200_230_24bit.wav",
+      "sha256": "1e6bdb56b5312f90e46c7aeb03ef082e30281896a3af0ba175ad86888109c061",
+      "frames": 1440000,
+      "sample_peak_dbfs": -25.619226444391984,
+      "true_peak_dbtp": -25.6
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\M02_T003_percussion_200_230_24bit.wav",
+      "sha256": "ac4b0e9e057282f51658502a4f3ddd0a509ae437912d3af064a8259f7b7014ad",
+      "frames": 1440000,
+      "sample_peak_dbfs": -9.25443469104502,
+      "true_peak_dbtp": -9.1
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\M02_T003_synth_200_230_24bit.wav",
+      "sha256": "59df2c23c9caa041707cc9ad6be1df78851f3192e83af9c7230db026247fa434",
+      "frames": 1440000,
+      "sample_peak_dbfs": -18.339489554623036,
+      "true_peak_dbtp": -18.3
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\M02_T003_woodwinds_200_230_24bit.wav",
+      "sha256": "099ce5e35b2fe4c9219899520018ef71ec9fa3d2f05f07f52639340120d3d83e",
+      "frames": 1440000,
+      "sample_peak_dbfs": -16.574974883905977,
+      "true_peak_dbtp": -16.6
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\monitors\\direction_segments\\M02_T003_D1_raw_24bit.wav",
+      "sha256": "7f8a0bc0ab82ed9c57d23f4d496f20d1a1324a0f0bbdb53a8961dfec7f44831a",
+      "frames": 96000,
+      "sample_peak_dbfs": -17.797018973744365,
+      "true_peak_dbtp": -17.8
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\monitors\\direction_segments\\M02_T003_D2_raw_24bit.wav",
+      "sha256": "7ac8ab3e99f5d5fc9ca2aefaa9167b99aba912da36e5bf0839892b624806d8a5",
+      "frames": 96000,
+      "sample_peak_dbfs": -16.752840385648955,
+      "true_peak_dbtp": -16.8
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\monitors\\direction_segments\\M02_T003_D3_raw_24bit.wav",
+      "sha256": "303a707338946429e363390e12211aa5bd47a65c601a733c4d03a169d4952297",
+      "frames": 96000,
+      "sample_peak_dbfs": -17.619327341416778,
+      "true_peak_dbtp": -17.6
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\monitors\\direction_segments\\M02_T003_D4_raw_24bit.wav",
+      "sha256": "eee3fb2c9cabee880b5a473de6dfc993785c4cea1aea43e42163f9a35daaa7b5",
+      "frames": 96000,
+      "sample_peak_dbfs": -23.821580949527377,
+      "true_peak_dbtp": -23.7
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\monitors\\direction_segments\\M02_T003_D5_raw_24bit.wav",
+      "sha256": "bbca1ab5864055f5e2a1146b456a200f9125d1641b4c5695291e3b95604e55b1",
+      "frames": 96000,
+      "sample_peak_dbfs": -17.671272927738542,
+      "true_peak_dbtp": -17.6
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\monitors\\direction_segments\\M02_T003_D6_raw_24bit.wav",
+      "sha256": "49c8a48ae76787f75c98d65b6ada1238b4240dd252bba04d6770e5d902f58042",
+      "frames": 96000,
+      "sample_peak_dbfs": -16.768571705371084,
+      "true_peak_dbtp": -16.8
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\monitors\\direction_segments\\M02_T003_D7_raw_24bit.wav",
+      "sha256": "ac12ea8d1769fd97354a6171f9ed95b01ae7a8b0f260cd56543bd9366e6d40c9",
+      "frames": 96000,
+      "sample_peak_dbfs": -17.58435909381965,
+      "true_peak_dbtp": -17.6
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\monitors\\direction_segments\\M02_T003_D8_raw_24bit.wav",
+      "sha256": "5a34e57c644fce2bd41d5362834b4677b54617c9b98a4289cd80f24d7605d109",
+      "frames": 96000,
+      "sample_peak_dbfs": -21.71994639193897,
+      "true_peak_dbtp": -21.7
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\monitors\\direction_segments\\M02_T003_H1_raw_24bit.wav",
+      "sha256": "8f0dfe19bfcf5791bc3915636c0d61bb4c56c72c8b4cd915781d3134ed170762",
+      "frames": 96000,
+      "sample_peak_dbfs": -22.256437365187175,
+      "true_peak_dbtp": -22.3
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\monitors\\direction_segments\\M02_T003_H2_raw_24bit.wav",
+      "sha256": "5a34e57c644fce2bd41d5362834b4677b54617c9b98a4289cd80f24d7605d109",
+      "frames": 96000,
+      "sample_peak_dbfs": -21.71994639193897,
+      "true_peak_dbtp": -21.7
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\monitors\\direction_segments\\M02_T003_H3_raw_24bit.wav",
+      "sha256": "4e3f435d4a0ee61e8676794472f0198c375502c689a1b472658835df267da372",
+      "frames": 96000,
+      "sample_peak_dbfs": -21.057763430622572,
+      "true_peak_dbtp": -21.0
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\monitors\\four_sources\\M02_T003_A_isolated_200_215_24bit.wav",
+      "sha256": "372eda33ceb63acd7f5d86025e12ff1ce3899e79267ba7392c6deb2c9249d9c4",
+      "frames": 720000,
+      "sample_peak_dbfs": -27.852193904994845,
+      "true_peak_dbtp": -27.8
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\monitors\\four_sources\\M02_T003_B_isolated_200_215_24bit.wav",
+      "sha256": "ecbf4bb2a99517efad45c77905639f4722a9554ba47261057272bbc1f4ba2a2a",
+      "frames": 720000,
+      "sample_peak_dbfs": -36.91068149989823,
+      "true_peak_dbtp": -36.9
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\monitors\\four_sources\\M02_T003_C_isolated_200_215_24bit.wav",
+      "sha256": "11430380da0a2618403c47050c4b6b77d84e5ad223675ca967b5cd66f6739ddf",
+      "frames": 720000,
+      "sample_peak_dbfs": -26.878926126091134,
+      "true_peak_dbtp": -26.9
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\monitors\\four_sources\\M02_T003_D_isolated_200_215_24bit.wav",
+      "sha256": "b40f2c1a5f0161acb30f4b48a785a319589482c4ff0537ffc036cb9f259f666e",
+      "frames": 720000,
+      "sample_peak_dbfs": -49.89911868180003,
+      "true_peak_dbtp": -49.9
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\renders\\comparison\\M02_T003_T001_reference_200_230_24bit.wav",
+      "sha256": "aa54d484a8a0eb16c474a09e6d4996680195ab0fafbbe238e8d2006afb92a71e",
+      "frames": 1440000,
+      "sample_peak_dbfs": -6.109040225111949,
+      "true_peak_dbtp": -6.1
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\renders\\comparison\\M02_T003_T001_reference_200_230_level_matched_24bit.wav",
+      "sha256": "aa54d484a8a0eb16c474a09e6d4996680195ab0fafbbe238e8d2006afb92a71e",
+      "frames": 1440000,
+      "sample_peak_dbfs": -6.109040225111949,
+      "true_peak_dbtp": -6.1
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\renders\\comparison\\M02_T003_T002_reference_200_230_24bit.wav",
+      "sha256": "ab3e9178f8c80ebc8fec3e009becd997c8681611f25834feeb8c2fc83c2baad6",
+      "frames": 1440000,
+      "sample_peak_dbfs": -6.209037216035801,
+      "true_peak_dbtp": -6.2
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\renders\\comparison\\M02_T003_T002_reference_200_230_level_matched_24bit.wav",
+      "sha256": "ab3e9178f8c80ebc8fec3e009becd997c8681611f25834feeb8c2fc83c2baad6",
+      "frames": 1440000,
+      "sample_peak_dbfs": -6.209037216035801,
+      "true_peak_dbtp": -6.2
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\renders\\comparison\\M02_T003_T003_near_field_200_230_24bit.wav",
+      "sha256": "11f9703eda890c6f6c4108b40af672e4c1a238b492e8021517f2bca2dc0d4d4d",
+      "frames": 1440000,
+      "sample_peak_dbfs": -6.0000004906757844,
+      "true_peak_dbtp": -6.0
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\renders\\comparison\\M02_T003_T003_near_field_200_230_level_matched_24bit.wav",
+      "sha256": "ffc06d93fbfc97785e84d32b03216be90baad33f67f7fbec253f738398d7747b",
+      "frames": 1440000,
+      "sample_peak_dbfs": -6.300000419363619,
+      "true_peak_dbtp": -6.3
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\measured\\M02_T003_backing_vocals_200_230_raw_24bit.wav",
+      "sha256": "4807e797cc8028e1941362b5f7573e9daf76fe048bd122480a85e243f7440bdd",
+      "frames": 1440000,
+      "sample_peak_dbfs": -27.40409914214764,
+      "true_peak_dbtp": -27.4
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\measured\\M02_T003_bass_200_230_raw_24bit.wav",
+      "sha256": "ccf072ec954ec6097e4dc73ab5c18c3127e4f7e9b6afce22f23e65523ea957ca",
+      "frames": 1440000,
+      "sample_peak_dbfs": -36.991664814920355,
+      "true_peak_dbtp": -37.0
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\measured\\M02_T003_brass_200_230_raw_24bit.wav",
+      "sha256": "d9e70030388f39b047e870474f969c2517d3539c42734ba2a654ee1ebcb34afa",
+      "frames": 1440000,
+      "sample_peak_dbfs": -43.17414445776356,
+      "true_peak_dbtp": -43.2
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\measured\\M02_T003_drums_200_230_raw_24bit.wav",
+      "sha256": "df4858d2fb58a13cb27f717ad2cc24e80c7eb01f44bf2c2b6c10bb18306f2eb3",
+      "frames": 1440000,
+      "sample_peak_dbfs": -27.59745156475355,
+      "true_peak_dbtp": -27.6
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\measured\\M02_T003_guitar_200_230_raw_24bit.wav",
+      "sha256": "32f231e75083b54428e50f2be083a68931f3b4c4158bd1a9bf45cb8bc6f070b6",
+      "frames": 1440000,
+      "sample_peak_dbfs": -39.63572180869187,
+      "true_peak_dbtp": -39.6
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\measured\\M02_T003_keyboards_200_230_raw_24bit.wav",
+      "sha256": "38c08b228028f30941a45e2eebe64f9ca349073d4a59e29a86081d225c6999b4",
+      "frames": 1440000,
+      "sample_peak_dbfs": -49.5530012893089,
+      "true_peak_dbtp": -49.6
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\measured\\M02_T003_lead_vocal_200_230_raw_24bit.wav",
+      "sha256": "7271f00beac106d09ff72d9c7e8e1f149b1cdabdb424297dc88986aada2bc86a",
+      "frames": 1440000,
+      "sample_peak_dbfs": -41.46001578094924,
+      "true_peak_dbtp": -41.4
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\measured\\M02_T003_other_200_230_raw_24bit.wav",
+      "sha256": "9f6e8054e620cd77a4e14dc39e75a5fb894e378db205daa51070e89b54a5ff2e",
+      "frames": 1440000,
+      "sample_peak_dbfs": -40.010161524701545,
+      "true_peak_dbtp": -40.0
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\measured\\M02_T003_percussion_200_230_raw_24bit.wav",
+      "sha256": "ed9d17c1f0913c41e9c1d73fffde65e6812fce314a0ff35b7d54434f979b5e2a",
+      "frames": 1440000,
+      "sample_peak_dbfs": -27.04539835868477,
+      "true_peak_dbtp": -26.9
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\measured\\M02_T003_synth_200_230_raw_24bit.wav",
+      "sha256": "43a7ae5df2a2b0821654fa9be19497f3899d427d1a212a2ea8d41f50bfee9a8a",
+      "frames": 1440000,
+      "sample_peak_dbfs": -38.63041846260637,
+      "true_peak_dbtp": -38.6
+    },
+    {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T003\\spatial_stems\\measured\\M02_T003_woodwinds_200_230_raw_24bit.wav",
+      "sha256": "dbddaaacf6e038a52d11ee28473eca88562891a3a26c4962edf8c2a4812aed0d",
+      "frames": 1440000,
+      "sample_peak_dbfs": -35.665962911275656,
+      "true_peak_dbtp": -35.7
+    }
+  ],
+  "success_criteria": [
+    "Distinct sources",
+    "Different directions",
+    "Front versus rear",
+    "Elevation",
+    "Around-head passage",
+    "Physical closeness",
+    "Clarity",
+    "Absence of spatial confusion"
+  ],
+  "excluded_success_criterion": "Ability to name the instrument",
+  "limitations": [
+    "Coordinates and low clipping do not prove perceived 3D separation; human listening required.",
+    "Moving trajectories intentionally cross some occupied angular lanes briefly; see active-pair audit.",
+    "Plugin distance display rounds to tenths; radius is a nominal control, not verified physical separation.",
+    "Distance gain curve transferred from matching M02-T002 measurements; each actual stem separately level-controlled.",
+    "Lead and Percussion compact inputs are audition choices; no mono adoption in musical preview."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "test_id": "M02-T004-ENCODED-REGRESSION",
+  "status": "PASS",
+  "verified_wavs": 66,
+  "protected_music02_files": 228,
+  "protected_tukana_files": 79,
+  "distance_controls_and_gain_caps": "PASS",
+  "object_sequence": "PASS",
+  "comparison_spread_lu": 0.0,
+  "perceptual_status": "PENDING_HUMAN_REVIEW"
+}

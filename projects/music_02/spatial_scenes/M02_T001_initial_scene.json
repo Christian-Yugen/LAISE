@@ -1,0 +1,1185 @@
+{
+  "schema": "LAISE Spatial Scene v1.0",
+  "project": "music_02",
+  "test_id": "M02-T001",
+  "baseline": "LAISE_T017_APPROVED_BASELINE",
+  "duration_seconds": 247.60002083333333,
+  "sources": [
+    {
+      "source_id": "lead_vocal",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\0 Lead Vocals.wav",
+      "trajectory": "stable_anchor",
+      "gain_db": 0,
+      "musical_rationale": "Central stable vocal protects intelligibility through changing instrumental density.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 0.0,
+          "gain_db": 0.0,
+          "reason": "Central stable vocal protects intelligibility through changing instrumental density."
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 0.0,
+          "gain_db": 0.0,
+          "reason": "Preserve full timeline through final frame."
+        }
+      ]
+    },
+    {
+      "source_id": "backing_vocals",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\1 Backing Vocals.wav",
+      "trajectory": "restrained_section_lane",
+      "gain_db": -2,
+      "musical_rationale": "Offset rear-left answer layer separates backing activity from the lead without width DSP.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": -100.0,
+          "elevation_deg": 12.0,
+          "gain_db": 0.0,
+          "reason": "Offset rear-left answer layer separates backing activity from the lead without width DSP."
+        },
+        {
+          "time_seconds": 21.19066666666667,
+          "azimuth_deg_unwrapped": -100.0,
+          "elevation_deg": 12.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 22.3,
+          "azimuth_deg_unwrapped": -112.0,
+          "elevation_deg": 12.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_02: feature role in measured section energy."
+        },
+        {
+          "time_seconds": 52.49066666666667,
+          "azimuth_deg_unwrapped": -112.0,
+          "elevation_deg": 12.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 53.6,
+          "azimuth_deg_unwrapped": -112.0,
+          "elevation_deg": 12.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_03: feature role in measured section energy."
+        },
+        {
+          "time_seconds": 113.99066666666666,
+          "azimuth_deg_unwrapped": -112.0,
+          "elevation_deg": 12.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 115.1,
+          "azimuth_deg_unwrapped": -100.0,
+          "elevation_deg": 12.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_04: support role in measured section energy."
+        },
+        {
+          "time_seconds": 133.09066666666666,
+          "azimuth_deg_unwrapped": -100.0,
+          "elevation_deg": 12.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 134.2,
+          "azimuth_deg_unwrapped": -112.0,
+          "elevation_deg": 12.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_05: feature role in measured section energy."
+        },
+        {
+          "time_seconds": 178.6906666666667,
+          "azimuth_deg_unwrapped": -112.0,
+          "elevation_deg": 12.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 179.8,
+          "azimuth_deg_unwrapped": -100.0,
+          "elevation_deg": 12.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_06: support role in measured section energy."
+        },
+        {
+          "time_seconds": 218.59066666666666,
+          "azimuth_deg_unwrapped": -100.0,
+          "elevation_deg": 12.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 219.7,
+          "azimuth_deg_unwrapped": -100.0,
+          "elevation_deg": 12.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_07: support role in measured section energy."
+        },
+        {
+          "time_seconds": 231.99066666666667,
+          "azimuth_deg_unwrapped": -100.0,
+          "elevation_deg": 12.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 233.1,
+          "azimuth_deg_unwrapped": -100.0,
+          "elevation_deg": 12.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_08: support role in measured section energy."
+        },
+        {
+          "time_seconds": 240.89066666666668,
+          "azimuth_deg_unwrapped": -100.0,
+          "elevation_deg": 12.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 242.0,
+          "azimuth_deg_unwrapped": -100.0,
+          "elevation_deg": 12.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_09: support role in measured section energy."
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": -100.0,
+          "elevation_deg": 12.0,
+          "gain_db": 0.0,
+          "reason": "Hold last section position; preserve ending silence."
+        }
+      ]
+    },
+    {
+      "source_id": "woodwinds",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\10 Woodwinds.wav",
+      "trajectory": "expressive_phrase_traversal",
+      "gain_db": 0,
+      "musical_rationale": "Expressive lane for measured phrases; long answers traverse behind the listener without shifting vocal anchors.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": -62.0,
+          "elevation_deg": 14.0,
+          "gain_db": 0.0,
+          "reason": "Begin relocation in gap before detected phrase."
+        },
+        {
+          "time_seconds": 0.17066666666666666,
+          "azimuth_deg_unwrapped": -62.0,
+          "elevation_deg": 14.0,
+          "gain_db": 0.0,
+          "reason": "woodwinds phrase 1: stable, individually located entry."
+        },
+        {
+          "time_seconds": 2.517333333333333,
+          "azimuth_deg_unwrapped": -180.0,
+          "elevation_deg": 24.0,
+          "gain_db": 0.0,
+          "reason": "Long woodwind answer develops through rear field."
+        },
+        {
+          "time_seconds": 4.864,
+          "azimuth_deg_unwrapped": 62.0,
+          "elevation_deg": 14.0,
+          "gain_db": 0.0,
+          "reason": "Finish expressive answer in complementary lane."
+        },
+        {
+          "time_seconds": 13.525333333333334,
+          "azimuth_deg_unwrapped": 62.0,
+          "elevation_deg": 14.0,
+          "gain_db": 0.0,
+          "reason": "Begin relocation in gap before detected phrase."
+        },
+        {
+          "time_seconds": 14.08,
+          "azimuth_deg_unwrapped": 62.0,
+          "elevation_deg": 14.0,
+          "gain_db": 0.0,
+          "reason": "woodwinds phrase 2: stable, individually located entry."
+        },
+        {
+          "time_seconds": 18.304,
+          "azimuth_deg_unwrapped": 180.0,
+          "elevation_deg": 24.0,
+          "gain_db": 0.0,
+          "reason": "Long woodwind answer develops through rear field."
+        },
+        {
+          "time_seconds": 22.528,
+          "azimuth_deg_unwrapped": -62.0,
+          "elevation_deg": 14.0,
+          "gain_db": 0.0,
+          "reason": "Finish expressive answer in complementary lane."
+        },
+        {
+          "time_seconds": 52.69333333333333,
+          "azimuth_deg_unwrapped": -62.0,
+          "elevation_deg": 14.0,
+          "gain_db": 0.0,
+          "reason": "Begin relocation in gap before detected phrase."
+        },
+        {
+          "time_seconds": 53.248,
+          "azimuth_deg_unwrapped": -62.0,
+          "elevation_deg": 14.0,
+          "gain_db": 0.0,
+          "reason": "woodwinds phrase 3: stable, individually located entry."
+        },
+        {
+          "time_seconds": 58.282666666666664,
+          "azimuth_deg_unwrapped": -180.0,
+          "elevation_deg": 24.0,
+          "gain_db": 0.0,
+          "reason": "Long woodwind answer develops through rear field."
+        },
+        {
+          "time_seconds": 63.31733333333333,
+          "azimuth_deg_unwrapped": 62.0,
+          "elevation_deg": 14.0,
+          "gain_db": 0.0,
+          "reason": "Finish expressive answer in complementary lane."
+        },
+        {
+          "time_seconds": 115.328,
+          "azimuth_deg_unwrapped": 62.0,
+          "elevation_deg": 14.0,
+          "gain_db": 0.0,
+          "reason": "Begin relocation in gap before detected phrase."
+        },
+        {
+          "time_seconds": 115.88266666666667,
+          "azimuth_deg_unwrapped": 62.0,
+          "elevation_deg": 14.0,
+          "gain_db": 0.0,
+          "reason": "woodwinds phrase 4: stable, individually located entry."
+        },
+        {
+          "time_seconds": 125.312,
+          "azimuth_deg_unwrapped": 180.0,
+          "elevation_deg": 24.0,
+          "gain_db": 0.0,
+          "reason": "Long woodwind answer develops through rear field."
+        },
+        {
+          "time_seconds": 134.74133333333333,
+          "azimuth_deg_unwrapped": -62.0,
+          "elevation_deg": 14.0,
+          "gain_db": 0.0,
+          "reason": "Finish expressive answer in complementary lane."
+        },
+        {
+          "time_seconds": 186.92266666666666,
+          "azimuth_deg_unwrapped": -62.0,
+          "elevation_deg": 14.0,
+          "gain_db": 0.0,
+          "reason": "Begin relocation in gap before detected phrase."
+        },
+        {
+          "time_seconds": 187.47733333333332,
+          "azimuth_deg_unwrapped": -62.0,
+          "elevation_deg": 14.0,
+          "gain_db": 0.0,
+          "reason": "woodwinds phrase 5: stable, individually located entry."
+        },
+        {
+          "time_seconds": 197.248,
+          "azimuth_deg_unwrapped": -180.0,
+          "elevation_deg": 24.0,
+          "gain_db": 0.0,
+          "reason": "Long woodwind answer develops through rear field."
+        },
+        {
+          "time_seconds": 207.01866666666666,
+          "azimuth_deg_unwrapped": 62.0,
+          "elevation_deg": 14.0,
+          "gain_db": 0.0,
+          "reason": "Finish expressive answer in complementary lane."
+        },
+        {
+          "time_seconds": 218.15466666666666,
+          "azimuth_deg_unwrapped": 62.0,
+          "elevation_deg": 14.0,
+          "gain_db": 0.0,
+          "reason": "Begin relocation in gap before detected phrase."
+        },
+        {
+          "time_seconds": 218.70933333333332,
+          "azimuth_deg_unwrapped": 62.0,
+          "elevation_deg": 14.0,
+          "gain_db": 0.0,
+          "reason": "woodwinds phrase 6: stable, individually located entry."
+        },
+        {
+          "time_seconds": 221.56799999999998,
+          "azimuth_deg_unwrapped": 180.0,
+          "elevation_deg": 24.0,
+          "gain_db": 0.0,
+          "reason": "Long woodwind answer develops through rear field."
+        },
+        {
+          "time_seconds": 224.42666666666668,
+          "azimuth_deg_unwrapped": -62.0,
+          "elevation_deg": 14.0,
+          "gain_db": 0.0,
+          "reason": "Finish expressive answer in complementary lane."
+        },
+        {
+          "time_seconds": 231.552,
+          "azimuth_deg_unwrapped": -62.0,
+          "elevation_deg": 14.0,
+          "gain_db": 0.0,
+          "reason": "Begin relocation in gap before detected phrase."
+        },
+        {
+          "time_seconds": 232.10666666666665,
+          "azimuth_deg_unwrapped": -62.0,
+          "elevation_deg": 14.0,
+          "gain_db": 0.0,
+          "reason": "woodwinds phrase 7: stable, individually located entry."
+        },
+        {
+          "time_seconds": 235.94666666666666,
+          "azimuth_deg_unwrapped": -180.0,
+          "elevation_deg": 24.0,
+          "gain_db": 0.0,
+          "reason": "Long woodwind answer develops through rear field."
+        },
+        {
+          "time_seconds": 239.78666666666666,
+          "azimuth_deg_unwrapped": 62.0,
+          "elevation_deg": 14.0,
+          "gain_db": 0.0,
+          "reason": "Finish expressive answer in complementary lane."
+        },
+        {
+          "time_seconds": 243.84,
+          "azimuth_deg_unwrapped": 62.0,
+          "elevation_deg": 14.0,
+          "gain_db": 0.0,
+          "reason": "Begin relocation in gap before detected phrase."
+        },
+        {
+          "time_seconds": 244.39466666666667,
+          "azimuth_deg_unwrapped": 62.0,
+          "elevation_deg": 14.0,
+          "gain_db": 0.0,
+          "reason": "woodwinds phrase 8: stable, individually located entry."
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": 62.0,
+          "elevation_deg": 14.0,
+          "gain_db": 0.0,
+          "reason": "Preserve final timeline; hold last position."
+        }
+      ]
+    },
+    {
+      "source_id": "drums",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\2 Drums.wav",
+      "trajectory": "stable_anchor",
+      "gain_db": 0,
+      "musical_rationale": "Stable near-front rhythm anchor preserves attack and impact while separating the lead.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 8.0,
+          "elevation_deg": 0.0,
+          "gain_db": 0.0,
+          "reason": "Stable near-front rhythm anchor preserves attack and impact while separating the lead."
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": 8.0,
+          "elevation_deg": 0.0,
+          "gain_db": 0.0,
+          "reason": "Preserve full timeline through final frame."
+        }
+      ]
+    },
+    {
+      "source_id": "bass",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\3 Bass.wav",
+      "trajectory": "stable_anchor",
+      "gain_db": 0,
+      "musical_rationale": "Stable low-elevation center preserves the low-frequency anchor and avoids rhythmic wandering.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": -6.0,
+          "gain_db": 0.0,
+          "reason": "Stable low-elevation center preserves the low-frequency anchor and avoids rhythmic wandering."
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": -6.0,
+          "gain_db": 0.0,
+          "reason": "Preserve full timeline through final frame."
+        }
+      ]
+    },
+    {
+      "source_id": "guitar",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\4 Guitar.wav",
+      "trajectory": "restrained_section_lane",
+      "gain_db": -1,
+      "musical_rationale": "Left harmonic lane changes modestly at independently detected texture sections.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": -42.0,
+          "elevation_deg": 8.0,
+          "gain_db": 0.0,
+          "reason": "Left harmonic lane changes modestly at independently detected texture sections."
+        },
+        {
+          "time_seconds": 21.19066666666667,
+          "azimuth_deg_unwrapped": -42.0,
+          "elevation_deg": 8.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 22.3,
+          "azimuth_deg_unwrapped": -42.0,
+          "elevation_deg": 8.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_02: support role in measured section energy."
+        },
+        {
+          "time_seconds": 52.49066666666667,
+          "azimuth_deg_unwrapped": -42.0,
+          "elevation_deg": 8.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 53.6,
+          "azimuth_deg_unwrapped": -42.0,
+          "elevation_deg": 8.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_03: support role in measured section energy."
+        },
+        {
+          "time_seconds": 113.99066666666666,
+          "azimuth_deg_unwrapped": -42.0,
+          "elevation_deg": 8.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 115.1,
+          "azimuth_deg_unwrapped": -42.0,
+          "elevation_deg": 8.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_04: support role in measured section energy."
+        },
+        {
+          "time_seconds": 133.09066666666666,
+          "azimuth_deg_unwrapped": -42.0,
+          "elevation_deg": 8.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 134.2,
+          "azimuth_deg_unwrapped": -42.0,
+          "elevation_deg": 8.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_05: support role in measured section energy."
+        },
+        {
+          "time_seconds": 178.6906666666667,
+          "azimuth_deg_unwrapped": -42.0,
+          "elevation_deg": 8.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 179.8,
+          "azimuth_deg_unwrapped": -54.0,
+          "elevation_deg": 8.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_06: feature role in measured section energy."
+        },
+        {
+          "time_seconds": 218.59066666666666,
+          "azimuth_deg_unwrapped": -54.0,
+          "elevation_deg": 8.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 219.7,
+          "azimuth_deg_unwrapped": -42.0,
+          "elevation_deg": 8.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_07: support role in measured section energy."
+        },
+        {
+          "time_seconds": 231.99066666666667,
+          "azimuth_deg_unwrapped": -42.0,
+          "elevation_deg": 8.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 233.1,
+          "azimuth_deg_unwrapped": -42.0,
+          "elevation_deg": 8.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_08: support role in measured section energy."
+        },
+        {
+          "time_seconds": 240.89066666666668,
+          "azimuth_deg_unwrapped": -42.0,
+          "elevation_deg": 8.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 242.0,
+          "azimuth_deg_unwrapped": -42.0,
+          "elevation_deg": 8.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_09: support role in measured section energy."
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": -42.0,
+          "elevation_deg": 8.0,
+          "gain_db": 0.0,
+          "reason": "Hold last section position; preserve ending silence."
+        }
+      ]
+    },
+    {
+      "source_id": "keyboards",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\5 Keyboard.wav",
+      "trajectory": "restrained_section_lane",
+      "gain_db": -1,
+      "musical_rationale": "Right upper harmonic lane complements the guitar; section changes guide restrained relocation.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 48.0,
+          "elevation_deg": 16.0,
+          "gain_db": 0.0,
+          "reason": "Right upper harmonic lane complements the guitar; section changes guide restrained relocation."
+        },
+        {
+          "time_seconds": 21.19066666666667,
+          "azimuth_deg_unwrapped": 48.0,
+          "elevation_deg": 16.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 22.3,
+          "azimuth_deg_unwrapped": 48.0,
+          "elevation_deg": 16.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_02: support role in measured section energy."
+        },
+        {
+          "time_seconds": 52.49066666666667,
+          "azimuth_deg_unwrapped": 48.0,
+          "elevation_deg": 16.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 53.6,
+          "azimuth_deg_unwrapped": 48.0,
+          "elevation_deg": 16.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_03: support role in measured section energy."
+        },
+        {
+          "time_seconds": 113.99066666666666,
+          "azimuth_deg_unwrapped": 48.0,
+          "elevation_deg": 16.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 115.1,
+          "azimuth_deg_unwrapped": 48.0,
+          "elevation_deg": 16.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_04: support role in measured section energy."
+        },
+        {
+          "time_seconds": 133.09066666666666,
+          "azimuth_deg_unwrapped": 48.0,
+          "elevation_deg": 16.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 134.2,
+          "azimuth_deg_unwrapped": 48.0,
+          "elevation_deg": 16.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_05: support role in measured section energy."
+        },
+        {
+          "time_seconds": 178.6906666666667,
+          "azimuth_deg_unwrapped": 48.0,
+          "elevation_deg": 16.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 179.8,
+          "azimuth_deg_unwrapped": 48.0,
+          "elevation_deg": 16.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_06: support role in measured section energy."
+        },
+        {
+          "time_seconds": 218.59066666666666,
+          "azimuth_deg_unwrapped": 48.0,
+          "elevation_deg": 16.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 219.7,
+          "azimuth_deg_unwrapped": 48.0,
+          "elevation_deg": 16.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_07: support role in measured section energy."
+        },
+        {
+          "time_seconds": 231.99066666666667,
+          "azimuth_deg_unwrapped": 48.0,
+          "elevation_deg": 16.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 233.1,
+          "azimuth_deg_unwrapped": 48.0,
+          "elevation_deg": 16.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_08: support role in measured section energy."
+        },
+        {
+          "time_seconds": 240.89066666666668,
+          "azimuth_deg_unwrapped": 48.0,
+          "elevation_deg": 16.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 242.0,
+          "azimuth_deg_unwrapped": 48.0,
+          "elevation_deg": 16.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_09: support role in measured section energy."
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": 48.0,
+          "elevation_deg": 16.0,
+          "gain_db": 0.0,
+          "reason": "Hold last section position; preserve ending silence."
+        }
+      ]
+    },
+    {
+      "source_id": "percussion",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\6 Percussion.wav",
+      "trajectory": "single_phrase_360_orbit",
+      "gain_db": -1,
+      "musical_rationale": "Right-side rhythmic lane; one beat-synchronized phrase orbit culminates at the detected late texture release.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 80.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "Right-side rhythmic lane; one beat-synchronized phrase orbit culminates at the detected late texture release."
+        },
+        {
+          "time_seconds": 201.70666666666563,
+          "azimuth_deg_unwrapped": 80.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "Start one eight-bar rhythmic phrase before the detected late texture release."
+        },
+        {
+          "time_seconds": 210.58133333333228,
+          "azimuth_deg_unwrapped": 260.0,
+          "elevation_deg": 18.0,
+          "gain_db": 0.0,
+          "reason": "Half-phrase reaches rear field while front anchors remain stable."
+        },
+        {
+          "time_seconds": 219.45599999999897,
+          "azimuth_deg_unwrapped": 440.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "Complete one orbit at texture release; end moving after this event."
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": 440.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "Fixed wrapped lane after phrase; no continuous orbit."
+        }
+      ]
+    },
+    {
+      "source_id": "synth",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\7 Synth.wav",
+      "trajectory": "restrained_section_lane",
+      "gain_db": -2,
+      "musical_rationale": "Upper right-rear sustained layer separated from intermittent brass and front anchors.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 125.0,
+          "elevation_deg": 28.0,
+          "gain_db": 0.0,
+          "reason": "Upper right-rear sustained layer separated from intermittent brass and front anchors."
+        },
+        {
+          "time_seconds": 21.19066666666667,
+          "azimuth_deg_unwrapped": 125.0,
+          "elevation_deg": 28.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 22.3,
+          "azimuth_deg_unwrapped": 125.0,
+          "elevation_deg": 28.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_02: support role in measured section energy."
+        },
+        {
+          "time_seconds": 52.49066666666667,
+          "azimuth_deg_unwrapped": 125.0,
+          "elevation_deg": 28.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 53.6,
+          "azimuth_deg_unwrapped": 125.0,
+          "elevation_deg": 28.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_03: support role in measured section energy."
+        },
+        {
+          "time_seconds": 113.99066666666666,
+          "azimuth_deg_unwrapped": 125.0,
+          "elevation_deg": 28.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 115.1,
+          "azimuth_deg_unwrapped": 137.0,
+          "elevation_deg": 28.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_04: feature role in measured section energy."
+        },
+        {
+          "time_seconds": 133.09066666666666,
+          "azimuth_deg_unwrapped": 137.0,
+          "elevation_deg": 28.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 134.2,
+          "azimuth_deg_unwrapped": 125.0,
+          "elevation_deg": 28.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_05: support role in measured section energy."
+        },
+        {
+          "time_seconds": 178.6906666666667,
+          "azimuth_deg_unwrapped": 125.0,
+          "elevation_deg": 28.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 179.8,
+          "azimuth_deg_unwrapped": 125.0,
+          "elevation_deg": 28.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_06: support role in measured section energy."
+        },
+        {
+          "time_seconds": 218.59066666666666,
+          "azimuth_deg_unwrapped": 125.0,
+          "elevation_deg": 28.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 219.7,
+          "azimuth_deg_unwrapped": 137.0,
+          "elevation_deg": 28.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_07: feature role in measured section energy."
+        },
+        {
+          "time_seconds": 231.99066666666667,
+          "azimuth_deg_unwrapped": 137.0,
+          "elevation_deg": 28.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 233.1,
+          "azimuth_deg_unwrapped": 125.0,
+          "elevation_deg": 28.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_08: support role in measured section energy."
+        },
+        {
+          "time_seconds": 240.89066666666668,
+          "azimuth_deg_unwrapped": 125.0,
+          "elevation_deg": 28.0,
+          "gain_db": 0.0,
+          "reason": "Hold lane until texture transition approach."
+        },
+        {
+          "time_seconds": 242.0,
+          "azimuth_deg_unwrapped": 137.0,
+          "elevation_deg": 28.0,
+          "gain_db": 0.0,
+          "reason": "m02_section_09: feature role in measured section energy."
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": 137.0,
+          "elevation_deg": 28.0,
+          "gain_db": 0.0,
+          "reason": "Hold last section position; preserve ending silence."
+        }
+      ]
+    },
+    {
+      "source_id": "other",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\8 Other.wav",
+      "trajectory": "stable_anchor",
+      "gain_db": -4,
+      "musical_rationale": "Content identity is pending. Neutral fixed low-gain lane; no instrument-specific motion is claimed.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": -18.0,
+          "elevation_deg": 0.0,
+          "gain_db": 0.0,
+          "reason": "Content identity is pending. Neutral fixed low-gain lane; no instrument-specific motion is claimed."
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": -18.0,
+          "elevation_deg": 0.0,
+          "gain_db": 0.0,
+          "reason": "Preserve full timeline through final frame."
+        }
+      ]
+    },
+    {
+      "source_id": "brass",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\9 Brass.wav",
+      "trajectory": "punctual_phrase_locations",
+      "gain_db": 0,
+      "musical_rationale": "Measured intermittent accent phrases occupy a stable side per phrase; side changes occur in intervening silence.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 64.0,
+          "elevation_deg": 9.0,
+          "gain_db": 0.0,
+          "reason": "Measured intermittent accent phrases occupy a stable side per phrase; side changes occur in intervening silence."
+        },
+        {
+          "time_seconds": 118.57066666666667,
+          "azimuth_deg_unwrapped": 64.0,
+          "elevation_deg": 9.0,
+          "gain_db": 0.0,
+          "reason": "Begin relocation in gap before detected phrase."
+        },
+        {
+          "time_seconds": 119.12533333333333,
+          "azimuth_deg_unwrapped": 64.0,
+          "elevation_deg": 9.0,
+          "gain_db": 0.0,
+          "reason": "brass phrase 1: stable, individually located entry."
+        },
+        {
+          "time_seconds": 119.89333333333333,
+          "azimuth_deg_unwrapped": 64.0,
+          "elevation_deg": 9.0,
+          "gain_db": 0.0,
+          "reason": "Hold position during accent; no continuous motion."
+        },
+        {
+          "time_seconds": 121.98400000000001,
+          "azimuth_deg_unwrapped": 64.0,
+          "elevation_deg": 9.0,
+          "gain_db": 0.0,
+          "reason": "Begin relocation in gap before detected phrase."
+        },
+        {
+          "time_seconds": 122.53866666666667,
+          "azimuth_deg_unwrapped": -64.0,
+          "elevation_deg": 9.0,
+          "gain_db": 0.0,
+          "reason": "brass phrase 2: stable, individually located entry."
+        },
+        {
+          "time_seconds": 123.136,
+          "azimuth_deg_unwrapped": -64.0,
+          "elevation_deg": 9.0,
+          "gain_db": 0.0,
+          "reason": "Begin relocation in gap before detected phrase."
+        },
+        {
+          "time_seconds": 123.648,
+          "azimuth_deg_unwrapped": 64.0,
+          "elevation_deg": 9.0,
+          "gain_db": 0.0,
+          "reason": "brass phrase 3: stable, individually located entry."
+        },
+        {
+          "time_seconds": 124.33066666666667,
+          "azimuth_deg_unwrapped": 64.0,
+          "elevation_deg": 9.0,
+          "gain_db": 0.0,
+          "reason": "Hold position during accent; no continuous motion."
+        },
+        {
+          "time_seconds": 124.45866666666667,
+          "azimuth_deg_unwrapped": 64.0,
+          "elevation_deg": 9.0,
+          "gain_db": 0.0,
+          "reason": "Begin relocation in gap before detected phrase."
+        },
+        {
+          "time_seconds": 125.01333333333334,
+          "azimuth_deg_unwrapped": -64.0,
+          "elevation_deg": 9.0,
+          "gain_db": 0.0,
+          "reason": "brass phrase 4: stable, individually located entry."
+        },
+        {
+          "time_seconds": 133.71733333333333,
+          "azimuth_deg_unwrapped": -64.0,
+          "elevation_deg": 9.0,
+          "gain_db": 0.0,
+          "reason": "Hold position during accent; no continuous motion."
+        },
+        {
+          "time_seconds": 177.87733333333333,
+          "azimuth_deg_unwrapped": -64.0,
+          "elevation_deg": 9.0,
+          "gain_db": 0.0,
+          "reason": "Begin relocation in gap before detected phrase."
+        },
+        {
+          "time_seconds": 178.432,
+          "azimuth_deg_unwrapped": 64.0,
+          "elevation_deg": 9.0,
+          "gain_db": 0.0,
+          "reason": "brass phrase 5: stable, individually located entry."
+        },
+        {
+          "time_seconds": 178.688,
+          "azimuth_deg_unwrapped": 64.0,
+          "elevation_deg": 9.0,
+          "gain_db": 0.0,
+          "reason": "Hold position during accent; no continuous motion."
+        },
+        {
+          "time_seconds": 197.76,
+          "azimuth_deg_unwrapped": 64.0,
+          "elevation_deg": 9.0,
+          "gain_db": 0.0,
+          "reason": "Begin relocation in gap before detected phrase."
+        },
+        {
+          "time_seconds": 198.31466666666665,
+          "azimuth_deg_unwrapped": -64.0,
+          "elevation_deg": 9.0,
+          "gain_db": 0.0,
+          "reason": "brass phrase 6: stable, individually located entry."
+        },
+        {
+          "time_seconds": 199.50933333333333,
+          "azimuth_deg_unwrapped": -64.0,
+          "elevation_deg": 9.0,
+          "gain_db": 0.0,
+          "reason": "Hold position during accent; no continuous motion."
+        },
+        {
+          "time_seconds": 199.97866666666667,
+          "azimuth_deg_unwrapped": -64.0,
+          "elevation_deg": 9.0,
+          "gain_db": 0.0,
+          "reason": "Begin relocation in gap before detected phrase."
+        },
+        {
+          "time_seconds": 200.53333333333333,
+          "azimuth_deg_unwrapped": 64.0,
+          "elevation_deg": 9.0,
+          "gain_db": 0.0,
+          "reason": "brass phrase 7: stable, individually located entry."
+        },
+        {
+          "time_seconds": 205.39733333333334,
+          "azimuth_deg_unwrapped": 64.0,
+          "elevation_deg": 9.0,
+          "gain_db": 0.0,
+          "reason": "Hold position during accent; no continuous motion."
+        },
+        {
+          "time_seconds": 213.376,
+          "azimuth_deg_unwrapped": 64.0,
+          "elevation_deg": 9.0,
+          "gain_db": 0.0,
+          "reason": "Begin relocation in gap before detected phrase."
+        },
+        {
+          "time_seconds": 213.93066666666667,
+          "azimuth_deg_unwrapped": -64.0,
+          "elevation_deg": 9.0,
+          "gain_db": 0.0,
+          "reason": "brass phrase 8: stable, individually located entry."
+        },
+        {
+          "time_seconds": 221.52533333333332,
+          "azimuth_deg_unwrapped": -64.0,
+          "elevation_deg": 9.0,
+          "gain_db": 0.0,
+          "reason": "Hold position during accent; no continuous motion."
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": -64.0,
+          "elevation_deg": 9.0,
+          "gain_db": 0.0,
+          "reason": "Preserve final timeline; hold last position."
+        }
+      ]
+    }
+  ],
+  "coordinate_system": {
+    "type": "polar",
+    "azimuth": "unwrapped degrees; 0=front",
+    "elevation": "degrees"
+  },
+  "renderer_policy": {
+    "scene_is_renderer_independent": true,
+    "distance_m": 3.0,
+    "distance_raw": 0.0969899744,
+    "dynamic_distance": false,
+    "reflection": false,
+    "reverb": false,
+    "experimental_parameters": false
+  },
+  "gain_staging": {
+    "policy": "common attenuation before dearVR; no limiter; exact sum measured separately",
+    "sum_of_individual_peak_upper_bound": 5.8438720703125,
+    "common_input_gain": 0.04298325495984476,
+    "common_input_gain_db": -27.334014002310624,
+    "worst_case_dry_sum_peak_dbfs": -12.0,
+    "target_output_peak_dbfs": -6.0,
+    "measured_unity_sum_peak_dbfs": 5.1976751564164765,
+    "measured_unity_sum_rms_dbfs": -12.34428950356235,
+    "pre_staged_sum_peak_dbfs": -22.136338845894148
+  },
+  "other_identification_status": "PENDING_HUMAN_IDENTIFICATION",
+  "human_review": "PENDING",
+  "preview_selection": {
+    "selected": {
+      "start_seconds": 200,
+      "duration_seconds": 30,
+      "score": 1120.5933333333332,
+      "participating_roles": 11,
+      "brass_active_fraction": 0.4,
+      "role_active_fractions": {
+        "lead_vocal": 0.38,
+        "backing_vocals": 0.4166666666666667,
+        "woodwinds": 0.41,
+        "drums": 0.9333333333333333,
+        "bass": 0.8666666666666667,
+        "guitar": 0.6866666666666666,
+        "keyboards": 0.6366666666666667,
+        "percussion": 0.9033333333333333,
+        "synth": 1.0,
+        "other": 0.96,
+        "brass": 0.4
+      }
+    },
+    "external_candidate_200_230": {
+      "start_seconds": 200,
+      "duration_seconds": 30,
+      "score": 1120.5933333333332,
+      "participating_roles": 11,
+      "brass_active_fraction": 0.4,
+      "role_active_fractions": {
+        "lead_vocal": 0.38,
+        "backing_vocals": 0.4166666666666667,
+        "woodwinds": 0.41,
+        "drums": 0.9333333333333333,
+        "bass": 0.8666666666666667,
+        "guitar": 0.6866666666666666,
+        "keyboards": 0.6366666666666667,
+        "percussion": 0.9033333333333333,
+        "synth": 1.0,
+        "other": 0.96,
+        "brass": 0.4
+      }
+    },
+    "best_computed_candidate": {
+      "start_seconds": 213,
+      "duration_seconds": 30,
+      "score": 1126.01,
+      "participating_roles": 11,
+      "brass_active_fraction": 0.25333333333333335,
+      "role_active_fractions": {
+        "lead_vocal": 0.4033333333333333,
+        "backing_vocals": 0.22,
+        "woodwinds": 0.44666666666666666,
+        "drums": 0.8166666666666667,
+        "bass": 0.7666666666666667,
+        "guitar": 0.31,
+        "keyboards": 0.23666666666666666,
+        "percussion": 0.7166666666666667,
+        "synth": 0.8966666666666666,
+        "other": 0.8766666666666667,
+        "brass": 0.25333333333333335
+      }
+    },
+    "reason": "Complete role coverage and Brass events; prefer 200-230 only if within 1% of best computed score"
+  }
+}

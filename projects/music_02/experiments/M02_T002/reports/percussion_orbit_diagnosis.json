@@ -1,0 +1,47 @@
+{
+  "original_input_image": {
+    "rms_lr_dbfs": [
+      -22.76795474517698,
+      -22.319439621904323
+    ],
+    "peak_lr_dbfs": [
+      -3.5790035162890916,
+      -3.138500018254573
+    ],
+    "energy_difference_left_minus_right_db": -0.4485151232726575,
+    "correlation": 0.8987410607542134,
+    "side_to_mid_db": -12.676316470534008,
+    "effective_width_side_over_total_energy": 0.05123055298710001,
+    "mean_lr_to_linked_stereo_rms_db": -0.2283930923207863
+  },
+  "T001_output_image": {
+    "rms_lr_dbfs": [
+      -34.245906241487084,
+      -32.533246201527845
+    ],
+    "peak_lr_dbfs": [
+      -10.010801467896862,
+      -9.217883618858133
+    ],
+    "energy_difference_left_minus_right_db": -1.7126600399592398,
+    "correlation": 0.32216259828223914,
+    "side_to_mid_db": -2.841996056864625,
+    "effective_width_side_over_total_energy": 0.3420000942392946,
+    "mean_lr_to_linked_stereo_rms_db": -1.817741685860574
+  },
+  "angular_keyframes_unchanged": true,
+  "distance_m": 3.0,
+  "elevation_unchanged": true,
+  "orbit_deg": [
+    80,
+    440
+  ],
+  "compact_method": "Pre-dearVR M/S side factor 0.5 with linked RMS restoration; plugin Stereo Width unchanged.",
+  "main_mix_adoption": false,
+  "remaining_hypotheses": [
+    "Listener/HRTF front-back ambiguity",
+    "Stem width",
+    "Elevation/distance cues"
+  ],
+  "isolation": "Same original orbit, pose, elevation and 3m distance in both monitors; only input compactness changes."
+}

@@ -1,0 +1,441 @@
+{
+  "test_id": "M02-T002-LEAD",
+  "original_full_file": {
+    "rms_lr_dbfs": [
+      -25.910351366889532,
+      -25.946684662564245
+    ],
+    "peak_lr_dbfs": [
+      -2.8279696987199547,
+      -3.0348792420998825
+    ],
+    "energy_difference_left_minus_right_db": 0.03633329567471398,
+    "correlation": 0.6300037079359041,
+    "side_to_mid_db": -6.439834380829403,
+    "effective_width_side_over_total_energy": 0.1850008478843685,
+    "mean_lr_to_linked_stereo_rms_db": -0.8884284307805289
+  },
+  "original_preview": {
+    "rms_lr_dbfs": [
+      -41.31478373604147,
+      -40.4091615181942
+    ],
+    "peak_lr_dbfs": [
+      -15.67883502727385,
+      -14.476589045338077
+    ],
+    "energy_difference_left_minus_right_db": -0.9056222178472674,
+    "correlation": -0.2734059255185426,
+    "side_to_mid_db": 2.422844256657968,
+    "effective_width_side_over_total_energy": 0.63596198876404,
+    "mean_lr_to_linked_stereo_rms_db": -4.388532668780099
+  },
+  "T001_processed_preview": {
+    "rms_lr_dbfs": [
+      -49.35649402641076,
+      -49.34915850862601
+    ],
+    "peak_lr_dbfs": [
+      -24.80604815448414,
+      -24.045649025318546
+    ],
+    "energy_difference_left_minus_right_db": -0.007335517784743917,
+    "correlation": -0.46919474099418296,
+    "side_to_mid_db": 4.421439617115167,
+    "effective_width_side_over_total_energy": 0.7345972868310994,
+    "mean_lr_to_linked_stereo_rms_db": -5.76094641726824
+  },
+  "diagnostic_interval": {
+    "start_seconds": 203.8,
+    "duration_seconds": 12
+  },
+  "variants": {
+    "A_stereo": {
+      "input_image": {
+        "rms_lr_dbfs": [
+          -37.34604595028638,
+          -36.439284816305396
+        ],
+        "peak_lr_dbfs": [
+          -15.67883502727385,
+          -14.476589045338077
+        ],
+        "energy_difference_left_minus_right_db": -0.9067611339809822,
+        "correlation": -0.2759133580621847,
+        "side_to_mid_db": 2.4461914537087273,
+        "effective_width_side_over_total_energy": 0.6372056725345886,
+        "mean_lr_to_linked_stereo_rms_db": -4.403395120466991
+      },
+      "output_image": {
+        "rms_lr_dbfs": [
+          -62.767556389122305,
+          -62.76006580510375
+        ],
+        "peak_lr_dbfs": [
+          -42.18989369373791,
+          -41.429497859760076
+        ],
+        "energy_difference_left_minus_right_db": -0.0074905840185563125,
+        "correlation": -0.47094559739119,
+        "side_to_mid_db": 4.440960818727523,
+        "effective_width_side_over_total_energy": 0.7354727108588559,
+        "mean_lr_to_linked_stereo_rms_db": -5.775295186681875
+      },
+      "pose": {
+        "azimuth_deg": 0,
+        "elevation_deg": 0,
+        "distance_m": 3
+      },
+      "adoption": "NOT_AUTOMATICALLY_SELECTED"
+    },
+    "B_compact_side50": {
+      "input_image": {
+        "rms_lr_dbfs": [
+          -37.32505746407138,
+          -36.45693339126537
+        ],
+        "peak_lr_dbfs": [
+          -12.74135364954641,
+          -12.515284710478536
+        ],
+        "energy_difference_left_minus_right_db": -0.8681240728060071,
+        "correlation": 0.39170539788890224,
+        "side_to_mid_db": -3.574408459135911,
+        "effective_width_side_over_total_energy": 0.30511916537827777,
+        "mean_lr_to_linked_stereo_rms_db": -1.5808966635021073
+      },
+      "output_image": {
+        "rms_lr_dbfs": [
+          -63.410510150625825,
+          -63.451358518808135
+        ],
+        "peak_lr_dbfs": [
+          -41.82518662593499,
+          -41.428828422769556
+        ],
+        "energy_difference_left_minus_right_db": 0.040848368182314895,
+        "correlation": 0.17809803056364523,
+        "side_to_mid_db": -1.563596422587579,
+        "effective_width_side_over_total_energy": 0.4109519694079046,
+        "mean_lr_to_linked_stereo_rms_db": -2.2984929168037778
+      },
+      "pose": {
+        "azimuth_deg": 0,
+        "elevation_deg": 0,
+        "distance_m": 3
+      },
+      "adoption": "NOT_AUTOMATICALLY_SELECTED"
+    },
+    "C_dual_mono_diagnostic": {
+      "input_image": {
+        "rms_lr_dbfs": [
+          -36.86903453797089,
+          -36.86903453797089
+        ],
+        "peak_lr_dbfs": [
+          -14.906338540852024,
+          -14.906338540852024
+        ],
+        "energy_difference_left_minus_right_db": 0.0,
+        "correlation": 1.0,
+        "side_to_mid_db": -300.0,
+        "effective_width_side_over_total_energy": 0.0,
+        "mean_lr_to_linked_stereo_rms_db": 0.0
+      },
+      "output_image": {
+        "rms_lr_dbfs": [
+          -63.84541714045242,
+          -64.46607195377695
+        ],
+        "peak_lr_dbfs": [
+          -42.025464956690264,
+          -42.70000994451959
+        ],
+        "energy_difference_left_minus_right_db": 0.6206548133245228,
+        "correlation": 0.9972113980028151,
+        "side_to_mid_db": -25.732235890892944,
+        "effective_width_side_over_total_energy": 0.0026645120193202,
+        "mean_lr_to_linked_stereo_rms_db": -0.011587272747900208
+      },
+      "pose": {
+        "azimuth_deg": 0,
+        "elevation_deg": 0,
+        "distance_m": 3
+      },
+      "adoption": "NOT_AUTOMATICALLY_SELECTED"
+    }
+  },
+  "compact_method": {
+    "method": "pre-dearVR mid/side attenuation",
+    "side_factor": 0.5,
+    "linked_rms_restore_gain": 1.3839170645791254
+  },
+  "mono_method": {
+    "method": "dominant-channel dual mono, diagnostic only",
+    "selected_channel": "R",
+    "linked_rms_restore_gain": 0.9517272449246647,
+    "limitation": "Avoids interchannel phase cancellation; discards other-channel-exclusive content. Not selected for production."
+  },
+  "exports": {
+    "A_stereo": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T002\\renders\\lead_diagnostics\\M02_T002_A_stereo_203.8_215.8_24bit.wav",
+      "sha256": "322d2bcc9c570b3a2c2c539bbe1c3eff18625e3c161768e09ac28fe3ca3c84aa",
+      "signal": {
+        "frames": 576000,
+        "duration_seconds": 12.0,
+        "finite": true,
+        "sample_peak": 0.008482575416564941,
+        "sample_peak_dbfs": -41.42944540913017,
+        "rms_dbfs": -62.76380874247437,
+        "crest_factor_db": 21.334363333344207,
+        "left_rms_dbfs": -62.76755541239683,
+        "right_rms_dbfs": -62.76006530202804,
+        "channel_balance_db": -0.007490110368785588,
+        "lr_correlation": -0.47094553825861907,
+        "mono_rms_change_db": -5.775294701463953,
+        "max_adjacent_sample_delta": 0.003054380416870117,
+        "spectral_distribution": {
+          "20-60_hz_db": -44.10847678664908,
+          "60-250_hz_db": -33.276935068080185,
+          "250-2000_hz_db": -1.9465145069870569,
+          "2000-6000_hz_db": -4.6870329719585415,
+          "6000-20000_hz_db": -16.807448079899295
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -57.5,
+        "loudness_range_lu": 3.3,
+        "true_peak_dbtp": -41.4,
+        "momentary_lufs": {
+          "minimum": -69.5,
+          "median": -57.9,
+          "maximum": -54.5
+        },
+        "short_term_lufs": {
+          "minimum": -61.5,
+          "median": -58.1,
+          "maximum": -55.8
+        }
+      },
+      "common_safety_gain": 1.0,
+      "level_matched": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T002\\renders\\lead_diagnostics\\M02_T002_A_stereo_203.8_215.8_level_matched_24bit.wav",
+        "sha256": "bd417e99fb314e35ec622f695230f5fcea1fe339c79d9656f09e582917a1ec2b",
+        "signal": {
+          "frames": 576000,
+          "duration_seconds": 12.0,
+          "finite": true,
+          "sample_peak": 0.007473468780517578,
+          "sample_peak_dbfs": -42.529555507006364,
+          "rms_dbfs": -63.86380929877404,
+          "crest_factor_db": 21.334253791767676,
+          "left_rms_dbfs": -63.86755660902697,
+          "right_rms_dbfs": -63.860065219100726,
+          "channel_balance_db": -0.007491389926245613,
+          "lr_correlation": -0.47094562713385707,
+          "mono_rms_change_db": -5.775295430498632,
+          "max_adjacent_sample_delta": 0.0026911497116088867,
+          "spectral_distribution": {
+            "20-60_hz_db": -44.108439606335,
+            "60-250_hz_db": -33.27691541044787,
+            "250-2000_hz_db": -1.9465151739314108,
+            "2000-6000_hz_db": -4.687031559315367,
+            "6000-20000_hz_db": -16.807451216895032
+          }
+        },
+        "loudness": {
+          "method": "FFmpeg ebur128 peak=true",
+          "integrated_lufs": -58.6,
+          "loudness_range_lu": 3.3,
+          "true_peak_dbtp": -42.5,
+          "momentary_lufs": {
+            "minimum": -67.5,
+            "median": -58.9,
+            "maximum": -55.6
+          },
+          "short_term_lufs": {
+            "minimum": -62.6,
+            "median": -59.2,
+            "maximum": -56.9
+          }
+        },
+        "linked_gain_db": -1.1000000000000014
+      }
+    },
+    "B_compact_side50": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T002\\renders\\lead_diagnostics\\M02_T002_B_compact_side50_203.8_215.8_24bit.wav",
+      "sha256": "c550eb15287fdd70988e0c2a60fa06e40e5dfa78a25974e228842bccaa512c1f",
+      "signal": {
+        "frames": 576000,
+        "duration_seconds": 12.0,
+        "finite": true,
+        "sample_peak": 0.008483171463012695,
+        "sample_peak_dbfs": -41.428835097812524,
+        "rms_dbfs": -63.43088700250634,
+        "crest_factor_db": 22.002051904693822,
+        "left_rms_dbfs": -63.410511437317474,
+        "right_rms_dbfs": -63.45135861344972,
+        "channel_balance_db": 0.04084717613224608,
+        "lr_correlation": 0.17809798685735734,
+        "mono_rms_change_db": -2.298493077498345,
+        "max_adjacent_sample_delta": 0.004308819770812988,
+        "spectral_distribution": {
+          "20-60_hz_db": -44.09862629424771,
+          "60-250_hz_db": -33.2630057885614,
+          "250-2000_hz_db": -1.9520844426157915,
+          "2000-6000_hz_db": -4.671865540227399,
+          "6000-20000_hz_db": -16.88557076025775
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -58.0,
+        "loudness_range_lu": 3.1,
+        "true_peak_dbtp": -41.4,
+        "momentary_lufs": {
+          "minimum": -67.7,
+          "median": -58.3,
+          "maximum": -55.1
+        },
+        "short_term_lufs": {
+          "minimum": -62.0,
+          "median": -58.4,
+          "maximum": -56.6
+        }
+      },
+      "common_safety_gain": 1.0,
+      "level_matched": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T002\\renders\\lead_diagnostics\\M02_T002_B_compact_side50_203.8_215.8_level_matched_24bit.wav",
+        "sha256": "9df38ba476e51e73eba8ef08190791f09401764ac7526442fb1286a0dce5ab09",
+        "signal": {
+          "frames": 576000,
+          "duration_seconds": 12.0,
+          "finite": true,
+          "sample_peak": 0.007916927337646484,
+          "sample_peak_dbfs": -42.02886682080659,
+          "rms_dbfs": -64.03088569996711,
+          "crest_factor_db": 22.00201887916053,
+          "left_rms_dbfs": -64.01050867431827,
+          "right_rms_dbfs": -64.05135878517201,
+          "channel_balance_db": 0.040850110853745576,
+          "lr_correlation": 0.17809815539861662,
+          "mono_rms_change_db": -2.2984924572361654,
+          "max_adjacent_sample_delta": 0.004021286964416504,
+          "spectral_distribution": {
+            "20-60_hz_db": -44.098562580813294,
+            "60-250_hz_db": -33.263011048603026,
+            "250-2000_hz_db": -1.9520843594110757,
+            "2000-6000_hz_db": -4.671864803522013,
+            "6000-20000_hz_db": -16.885585693453944
+          }
+        },
+        "loudness": {
+          "method": "FFmpeg ebur128 peak=true",
+          "integrated_lufs": -58.6,
+          "loudness_range_lu": 3.1,
+          "true_peak_dbtp": -42.0,
+          "momentary_lufs": {
+            "minimum": -68.3,
+            "median": -58.9,
+            "maximum": -55.7
+          },
+          "short_term_lufs": {
+            "minimum": -62.6,
+            "median": -59.0,
+            "maximum": -57.2
+          }
+        },
+        "linked_gain_db": -0.6000000000000014
+      }
+    },
+    "C_dual_mono_diagnostic": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T002\\renders\\lead_diagnostics\\M02_T002_C_dual_mono_diagnostic_203.8_215.8_24bit.wav",
+      "sha256": "b6e76cd3a42071b3d67aceadd2c6d07ca5eaae44fbac4a09a4e210b3860dcc9f",
+      "signal": {
+        "frames": 576000,
+        "duration_seconds": 12.0,
+        "finite": true,
+        "sample_peak": 0.007920026779174805,
+        "sample_peak_dbfs": -42.025466999452085,
+        "rms_dbfs": -64.14466585716646,
+        "crest_factor_db": 22.11919885771437,
+        "left_rms_dbfs": -63.84541617190456,
+        "right_rms_dbfs": -64.46607133061832,
+        "channel_balance_db": 0.6206551587137623,
+        "lr_correlation": 0.9972113918294476,
+        "mono_rms_change_db": -0.01158729229776778,
+        "max_adjacent_sample_delta": 0.003497004508972168,
+        "spectral_distribution": {
+          "20-60_hz_db": -47.90227689728815,
+          "60-250_hz_db": -37.32800444636795,
+          "250-2000_hz_db": -1.9134931079687336,
+          "2000-6000_hz_db": -4.607081663423433,
+          "6000-20000_hz_db": -20.010926773292965
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -58.6,
+        "loudness_range_lu": 3.2,
+        "true_peak_dbtp": -42.0,
+        "momentary_lufs": {
+          "minimum": -69.8,
+          "median": -59.05,
+          "maximum": -55.7
+        },
+        "short_term_lufs": {
+          "minimum": -62.9,
+          "median": -58.7,
+          "maximum": -57.3
+        }
+      },
+      "common_safety_gain": 1.0,
+      "level_matched": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T002\\renders\\lead_diagnostics\\M02_T002_C_dual_mono_diagnostic_203.8_215.8_level_matched_24bit.wav",
+        "sha256": "b6e76cd3a42071b3d67aceadd2c6d07ca5eaae44fbac4a09a4e210b3860dcc9f",
+        "signal": {
+          "frames": 576000,
+          "duration_seconds": 12.0,
+          "finite": true,
+          "sample_peak": 0.007920026779174805,
+          "sample_peak_dbfs": -42.025466999452085,
+          "rms_dbfs": -64.14466585716646,
+          "crest_factor_db": 22.11919885771437,
+          "left_rms_dbfs": -63.84541617190456,
+          "right_rms_dbfs": -64.46607133061832,
+          "channel_balance_db": 0.6206551587137623,
+          "lr_correlation": 0.9972113918294476,
+          "mono_rms_change_db": -0.01158729229776778,
+          "max_adjacent_sample_delta": 0.003497004508972168,
+          "spectral_distribution": {
+            "20-60_hz_db": -47.90227689728815,
+            "60-250_hz_db": -37.32800444636795,
+            "250-2000_hz_db": -1.9134931079687336,
+            "2000-6000_hz_db": -4.607081663423433,
+            "6000-20000_hz_db": -20.010926773292965
+          }
+        },
+        "loudness": {
+          "method": "FFmpeg ebur128 peak=true",
+          "integrated_lufs": -58.6,
+          "loudness_range_lu": 3.2,
+          "true_peak_dbtp": -42.0,
+          "momentary_lufs": {
+            "minimum": -69.8,
+            "median": -59.05,
+            "maximum": -55.7
+          },
+          "short_term_lufs": {
+            "minimum": -62.9,
+            "median": -58.7,
+            "maximum": -57.3
+          }
+        },
+        "linked_gain_db": 0.0
+      }
+    }
+  },
+  "finding": "Input is not left-energy-dominant. Negative L/R correlation and side-heavy image are plausible contributors to diffuse/in-ear perception. HRTF and listener-specific front externalization remain unproven.",
+  "main_preview_choice": "B side factor 0.5 is an audition candidate; A main-mix control also supplied. C mono is never automatically selected."
+}

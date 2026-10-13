@@ -1,0 +1,302 @@
+{
+  "active_pair_minimum_great_circle_separation_deg": {
+    "woodwinds / drums": 52.70438156811948,
+    "woodwinds / bass": 79.22686631116015,
+    "woodwinds / guitar": 31.55984878547406,
+    "woodwinds / keyboards": 1.668814582004515,
+    "woodwinds / percussion": 40.69170426884195,
+    "woodwinds / synth": 60.29510696886069,
+    "woodwinds / other": 91.12178656703394,
+    "drums / bass": 30.44895434637726,
+    "drums / guitar": 71.01743098985398,
+    "drums / keyboards": 55.05976524810857,
+    "drums / percussion": 6.0015847840039225,
+    "drums / synth": 128.6942600080083,
+    "drums / other": 153.09702105182112,
+    "bass / guitar": 60.18104939309144,
+    "bass / keyboards": 85.46193307128023,
+    "bass / percussion": 30.006472186763478,
+    "bass / synth": 159.136851080409,
+    "bass / other": 128.14924415068302,
+    "guitar / keyboards": 96.92254366238375,
+    "guitar / percussion": 12.004560871201594,
+    "guitar / synth": 121.8690657100645,
+    "guitar / other": 116.71624617961508,
+    "keyboards / percussion": 42.00563619595689,
+    "keyboards / synth": 73.6793639401628,
+    "keyboards / other": 140.54186382549105,
+    "percussion / synth": 67.00120607399926,
+    "percussion / other": 4.02738402639572,
+    "synth / other": 71.2702334179306,
+    "backing_vocals / woodwinds": 47.12516811593237,
+    "backing_vocals / drums": 139.20105967143155,
+    "backing_vocals / bass": 120.36241029049549,
+    "backing_vocals / guitar": 68.18521686572606,
+    "backing_vocals / keyboards": 129.87133834716843,
+    "backing_vocals / percussion": 30.058849587099274,
+    "backing_vocals / synth": 75.33708023720135,
+    "backing_vocals / other": 55.78006606580405,
+    "backing_vocals / brass": 50.9104372128523,
+    "woodwinds / brass": 104.95790974648614,
+    "drums / brass": 91.01294705374384,
+    "bass / brass": 90.39509238224757,
+    "guitar / brass": 79.00231615720085,
+    "keyboards / brass": 94.2940316086262,
+    "percussion / brass": 41.787388478354224,
+    "synth / brass": 90.73524082943304,
+    "other / brass": 44.186836298765044,
+    "lead_vocal / woodwinds": 38.02690012971603,
+    "lead_vocal / drums": 28.13921957638894,
+    "lead_vocal / bass": 42.0,
+    "lead_vocal / guitar": 48.0,
+    "lead_vocal / keyboards": 56.17415502943028,
+    "lead_vocal / percussion": 27.989141999164513,
+    "lead_vocal / synth": 121.32130437959772,
+    "lead_vocal / other": 163.04331303131713,
+    "lead_vocal / brass": 119.1055754491518,
+    "lead_vocal / backing_vocals": 113.69912867838949
+  },
+  "brief_crossings_below_20deg": [
+    {
+      "time_seconds": 204.8,
+      "pair": "woodwinds / keyboards",
+      "separation_deg": 18.515089615330822
+    },
+    {
+      "time_seconds": 204.9,
+      "pair": "woodwinds / keyboards",
+      "separation_deg": 16.65454210561958
+    },
+    {
+      "time_seconds": 205.0,
+      "pair": "woodwinds / keyboards",
+      "separation_deg": 14.787893563700989
+    },
+    {
+      "time_seconds": 205.1,
+      "pair": "woodwinds / keyboards",
+      "separation_deg": 12.916303353285173
+    },
+    {
+      "time_seconds": 205.2,
+      "pair": "woodwinds / keyboards",
+      "separation_deg": 11.041509422010476
+    },
+    {
+      "time_seconds": 205.3,
+      "pair": "woodwinds / keyboards",
+      "separation_deg": 9.166433214291768
+    },
+    {
+      "time_seconds": 205.4,
+      "pair": "woodwinds / keyboards",
+      "separation_deg": 7.296713217298415
+    },
+    {
+      "time_seconds": 205.5,
+      "pair": "woodwinds / keyboards",
+      "separation_deg": 5.44535513127514
+    },
+    {
+      "time_seconds": 205.6,
+      "pair": "woodwinds / keyboards",
+      "separation_deg": 3.6511028058788417
+    },
+    {
+      "time_seconds": 205.7,
+      "pair": "woodwinds / keyboards",
+      "separation_deg": 2.0860518693131422
+    },
+    {
+      "time_seconds": 205.8,
+      "pair": "woodwinds / keyboards",
+      "separation_deg": 1.668814582004515
+    },
+    {
+      "time_seconds": 205.9,
+      "pair": "woodwinds / keyboards",
+      "separation_deg": 2.949025364933225
+    },
+    {
+      "time_seconds": 206.0,
+      "pair": "woodwinds / keyboards",
+      "separation_deg": 4.70634343958772
+    },
+    {
+      "time_seconds": 206.1,
+      "pair": "woodwinds / keyboards",
+      "separation_deg": 6.5728851354449676
+    },
+    {
+      "time_seconds": 206.2,
+      "pair": "woodwinds / keyboards",
+      "separation_deg": 8.4800873419098
+    },
+    {
+      "time_seconds": 206.3,
+      "pair": "woodwinds / keyboards",
+      "separation_deg": 10.408128949489656
+    },
+    {
+      "time_seconds": 206.4,
+      "pair": "woodwinds / keyboards",
+      "separation_deg": 12.349233786590911
+    },
+    {
+      "time_seconds": 206.5,
+      "pair": "woodwinds / keyboards",
+      "separation_deg": 14.29967909029253
+    },
+    {
+      "time_seconds": 210.2,
+      "pair": "percussion / other",
+      "separation_deg": 18.715233343584753
+    },
+    {
+      "time_seconds": 210.3,
+      "pair": "percussion / other",
+      "separation_deg": 15.073601866582226
+    },
+    {
+      "time_seconds": 210.4,
+      "pair": "percussion / other",
+      "separation_deg": 11.501093570366944
+    },
+    {
+      "time_seconds": 210.5,
+      "pair": "percussion / other",
+      "separation_deg": 8.090614214574195
+    },
+    {
+      "time_seconds": 210.6,
+      "pair": "percussion / other",
+      "separation_deg": 5.174088576283668
+    },
+    {
+      "time_seconds": 210.7,
+      "pair": "percussion / other",
+      "separation_deg": 4.02738402639572
+    },
+    {
+      "time_seconds": 210.8,
+      "pair": "percussion / other",
+      "separation_deg": 5.814236102798573
+    },
+    {
+      "time_seconds": 210.9,
+      "pair": "percussion / other",
+      "separation_deg": 8.91770103718323
+    },
+    {
+      "time_seconds": 211.0,
+      "pair": "percussion / other",
+      "separation_deg": 12.384418057444966
+    },
+    {
+      "time_seconds": 211.1,
+      "pair": "percussion / other",
+      "separation_deg": 15.979378993199084
+    },
+    {
+      "time_seconds": 211.2,
+      "pair": "percussion / other",
+      "separation_deg": 19.631901636403093
+    },
+    {
+      "time_seconds": 213.9,
+      "pair": "guitar / percussion",
+      "separation_deg": 18.11155528584969
+    },
+    {
+      "time_seconds": 214.0,
+      "pair": "guitar / percussion",
+      "separation_deg": 15.483398209328255
+    },
+    {
+      "time_seconds": 214.1,
+      "pair": "guitar / percussion",
+      "separation_deg": 13.417785369732648
+    },
+    {
+      "time_seconds": 214.5,
+      "pair": "guitar / percussion",
+      "separation_deg": 12.004560871201594
+    },
+    {
+      "time_seconds": 216.1,
+      "pair": "drums / percussion",
+      "separation_deg": 19.20607800529079
+    },
+    {
+      "time_seconds": 216.2,
+      "pair": "drums / percussion",
+      "separation_deg": 15.756986252039878
+    },
+    {
+      "time_seconds": 216.3,
+      "pair": "drums / percussion",
+      "separation_deg": 12.436936349566142
+    },
+    {
+      "time_seconds": 216.4,
+      "pair": "drums / percussion",
+      "separation_deg": 9.385432863713437
+    },
+    {
+      "time_seconds": 216.5,
+      "pair": "drums / percussion",
+      "separation_deg": 6.966319883877981
+    },
+    {
+      "time_seconds": 216.6,
+      "pair": "drums / percussion",
+      "separation_deg": 6.0015847840039225
+    },
+    {
+      "time_seconds": 216.7,
+      "pair": "drums / percussion",
+      "separation_deg": 7.11043622807545
+    },
+    {
+      "time_seconds": 216.8,
+      "pair": "drums / percussion",
+      "separation_deg": 9.599121079454969
+    },
+    {
+      "time_seconds": 216.9,
+      "pair": "drums / percussion",
+      "separation_deg": 12.679157192920071
+    },
+    {
+      "time_seconds": 217.0,
+      "pair": "drums / percussion",
+      "separation_deg": 16.012222710322085
+    },
+    {
+      "time_seconds": 217.1,
+      "pair": "drums / percussion",
+      "separation_deg": 18.379104880373156
+    },
+    {
+      "time_seconds": 217.2,
+      "pair": "drums / percussion",
+      "separation_deg": 18.379104880373156
+    },
+    {
+      "time_seconds": 217.3,
+      "pair": "drums / percussion",
+      "separation_deg": 18.379104880373156
+    },
+    {
+      "time_seconds": 218.9,
+      "pair": "woodwinds / keyboards",
+      "separation_deg": 19.886551418898655
+    },
+    {
+      "time_seconds": 219.0,
+      "pair": "woodwinds / keyboards",
+      "separation_deg": 17.47114873255543
+    }
+  ],
+  "interpretation": "Continuous moving sources necessarily cross some lanes. Exact scene coordinates are not measured perceived localization; nearby anchor azimuths are differentiated by elevation."
+}

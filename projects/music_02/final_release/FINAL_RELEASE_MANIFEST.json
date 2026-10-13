@@ -1,0 +1,23 @@
+﻿{
+    "project":  "MUSIC 02",
+    "technical_status":  "PASS",
+    "selected_spatial_candidate":  "T004",
+    "selected_master":  "C",
+    "duration_seconds":  247.600020833,
+    "sample_rate":  48000,
+    "bit_depth":  24,
+    "channels":  2,
+    "integrated_lufs":  -17.2,
+    "true_peak_dbtp":  -2,
+    "lra_lu":  6.9,
+    "crest_factor_db":  17.28,
+    "master_sha256":  "e5342108bb9de47aaabe2c111681f8055b714130a17356198a8e328c50f3ed17",
+    "aac_sha256":  "16c138554e08f3b753ac9dc7303bca98fa93ca7b02b5f234e02c5667d576992b",
+    "dry_sha256":  "6901602648f6ac737f6635da85db2730592687629ab6198f92df1768e4df9d52",
+    "official_master_path":  "C:\\Projetos2026\\LAISE\\projects\\music_02\\final_release\\MUSIC02_FINAL_binaural_master_PCM24_48k.wav",
+    "wav_spatial_score":  98.58,
+    "aac_spatial_score":  88.56,
+    "aac_spatial_score_delta":  -10.02,
+    "reference_delivery":  "WAV PCM24/48 kHz",
+    "note":  "AAC apresentou perda medida de assinatura espacial; WAV permanece como referência oficial."
+}
