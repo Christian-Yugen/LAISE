@@ -1,0 +1,16 @@
+{
+  "source": "User M02-T004 supplied assessment",
+  "directionality_and_3D": "PASS",
+  "simultaneous_separation": "PARTIAL",
+  "extreme_near_field": "INSUFFICIENT",
+  "promoted": false,
+  "findings": [
+    "Eight directions, front/back and heights perceived",
+    "Four simultaneous sources mainly left/right; individual separation unclear",
+    "T003 apparently closer, no clear extreme proximity",
+    "Circular 3D motion perceived",
+    "Natural audio, clarity can improve",
+    "No sufficient perceptual superiority over earlier versions",
+    "Some sources heard at different positions"
+  ]
+}

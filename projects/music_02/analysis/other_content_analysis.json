@@ -1,0 +1,14 @@
+{
+  "active_windows": 1182,
+  "median_spectral_centroid_hz": 1086.6993742111729,
+  "median_band_energy_fractions": {
+    "below_250hz": 0.3273724722662356,
+    "from_250_to_4000hz": 0.5798433189760817,
+    "above_4000hz": 0.022011239600141022
+  },
+  "median_zero_crossing_rate": 0.06793081892060845,
+  "instrument_identity": "UNCONFIRMED_WITHOUT_LISTENING",
+  "classification_confidence": 0.0,
+  "reason": "Spectral/activity descriptors are not sufficient to name an instrument in a separated Other stem.",
+  "spatial_policy": "Stable conservative location pending human content identification; no content-specific motion"
+}

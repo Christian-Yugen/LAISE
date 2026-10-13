@@ -1,0 +1,11 @@
+{
+  "policy": "common attenuation before dearVR; no limiter; exact sum measured separately",
+  "sum_of_individual_peak_upper_bound": 5.8438720703125,
+  "common_input_gain": 0.04298325495984476,
+  "common_input_gain_db": -27.334014002310624,
+  "worst_case_dry_sum_peak_dbfs": -12.0,
+  "target_output_peak_dbfs": -6.0,
+  "measured_unity_sum_peak_dbfs": 5.1976751564164765,
+  "measured_unity_sum_rms_dbfs": -12.34428950356235,
+  "pre_staged_sum_peak_dbfs": -22.136338845894148
+}

@@ -1,0 +1,11 @@
+{
+  "head_is_approved_baseline": true,
+  "approved_DSP_composer_analyzer_unchanged": true,
+  "Tukana_10_role_import_exact": true,
+  "M02_11_roles": true,
+  "variable_3_role_import": true,
+  "fixed_distance_and_wrapping": true,
+  "keyframe_gain_orbit_interpolation": true,
+  "no_T018_imports": true,
+  "B2_original_hash": true
+}

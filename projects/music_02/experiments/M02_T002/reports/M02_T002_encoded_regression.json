@@ -1,0 +1,11 @@
+{
+  "test_id": "M02-T002-REGRESSION",
+  "status": "PASS",
+  "verified_pcm24_wavs": 118,
+  "fixed_3m_constant_gain_renderer_max_error": 0.0,
+  "experimental_gain_ramp_vs_baseline_block_hold_max_error": 1.3690441846847534e-05,
+  "pose_preserves_each_tested_distance": true,
+  "comparison_loudness_spread_lu": 0.0,
+  "M02_T001_reference_hash_preserved": true,
+  "human_superiority": "PENDING"
+}

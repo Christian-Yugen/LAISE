@@ -1,0 +1,266 @@
+{
+  "test_id": "T014",
+  "objective_result": "PASS",
+  "human_result": "PENDING",
+  "validations": {
+    "ten_spatial_stems": true,
+    "all_roles_active_in_interval": true,
+    "all_stems_exact_duration": true,
+    "all_stems_finite": true,
+    "all_outputs_distinct": true,
+    "mixes_sample_aligned": true,
+    "no_clipping": true,
+    "no_nan_inf": true,
+    "no_large_clicks": true,
+    "perceptual_level_match": true,
+    "orbit_continuous": true,
+    "independent_plugin_instances": true,
+    "anchors_preserved": true,
+    "distance_fixed_at_3m": true,
+    "originals_unchanged": true
+  },
+  "observed": {
+    "test_id": "T014",
+    "scene": "C:\\Projetos2026\\LAISE\\projects\\tukana\\spatial_scenes\\tukana_balanced_scene.json",
+    "scene_sha256": "e97ce0e241ab3a5b694e9ba6beea056d729880cc3b5ef42238144cceb9ba9faf",
+    "interval": {
+      "start_seconds": 127.0,
+      "duration_seconds": 45.0,
+      "end_seconds": 172.0,
+      "frames": 2160000
+    },
+    "active_roles_from_map": [
+      "backing_vocals",
+      "bass",
+      "drums",
+      "guitar",
+      "keyboards",
+      "lead_vocal",
+      "other",
+      "percussion",
+      "synth",
+      "woodwinds"
+    ],
+    "processing": {
+      "sample_rate": 48000,
+      "sample_type": "float32",
+      "block_size": 256,
+      "isolated_plugin_instance_per_source": true,
+      "distance_m": 3.0,
+      "dynamic_distance": false
+    },
+    "angular_continuity": {
+      "unwrapped_start": 100.0,
+      "unwrapped_end": 405.06666666703956,
+      "wrapped_crossings": 1,
+      "max_circular_step_deg": 0.036158192090510965,
+      "monotonic": true
+    },
+    "source_reports": {
+      "lead_vocal": {
+        "input": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\01_lead_vocal.wav",
+        "output": "C:\\Projetos2026\\LAISE\\projects\\tukana\\spatial_stems\\preview_127_172\\lead_vocal_spatial.wav",
+        "trajectory": "stable_anchor",
+        "metrics": {
+          "frames": 2160000,
+          "finite": true,
+          "peak": 0.5003207921981812,
+          "peak_dbfs": -6.01502896894376,
+          "rms": 0.03202196382682836,
+          "rms_dbfs": -29.89104074814577,
+          "max_sample_delta": 0.269479364156723,
+          "p999_sample_delta": 0.09479065239429474,
+          "max_block_boundary_delta": 0.16294533014297485
+        },
+        "output_sha256": "a26ec56c5526250e32c7474a214eb7e76e8046f49a6d40bf091c8f0bf90f50a8"
+      },
+      "backing_vocals": {
+        "input": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\02_backing_vocals.wav",
+        "output": "C:\\Projetos2026\\LAISE\\projects\\tukana\\spatial_stems\\preview_127_172\\backing_vocals_spatial.wav",
+        "trajectory": "section_aware_chorus_expansion",
+        "metrics": {
+          "frames": 2160000,
+          "finite": true,
+          "peak": 0.8436728715896606,
+          "peak_dbfs": -1.4765183092706602,
+          "rms": 0.044792001567132554,
+          "rms_dbfs": -26.975990606369237,
+          "max_sample_delta": 0.27740052342414856,
+          "p999_sample_delta": 0.09396931529045105,
+          "max_block_boundary_delta": 0.14556707441806793
+        },
+        "output_sha256": "7471273cd755adb791afaa6b358020339df5394fe794239aee72f869647f1d55"
+      },
+      "drums": {
+        "input": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\03_drums.wav",
+        "output": "C:\\Projetos2026\\LAISE\\projects\\tukana\\spatial_stems\\preview_127_172\\drums_spatial.wav",
+        "trajectory": "stable_anchor",
+        "metrics": {
+          "frames": 2160000,
+          "finite": true,
+          "peak": 0.48456063866615295,
+          "peak_dbfs": -6.293037338611983,
+          "rms": 0.07670588714887729,
+          "rms_dbfs": -22.30342605657345,
+          "max_sample_delta": 0.16311399638652802,
+          "p999_sample_delta": 0.06728415936231613,
+          "max_block_boundary_delta": 0.0942668616771698
+        },
+        "output_sha256": "0b6dd7c184539f45ea21c2d67e19effbcf1beb9f5052a05d24bf0f012d8a6a7d"
+      },
+      "bass": {
+        "input": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\04_bass.wav",
+        "output": "C:\\Projetos2026\\LAISE\\projects\\tukana\\spatial_stems\\preview_127_172\\bass_spatial.wav",
+        "trajectory": "stable_anchor",
+        "metrics": {
+          "frames": 2160000,
+          "finite": true,
+          "peak": 0.23998525738716125,
+          "peak_dbfs": -12.39630873510637,
+          "rms": 0.04287515128856831,
+          "rms_dbfs": -27.355886690039103,
+          "max_sample_delta": 0.009065158665180206,
+          "p999_sample_delta": 0.003343750024214387,
+          "max_block_boundary_delta": 0.005642551928758621
+        },
+        "output_sha256": "fb2f1d1febb94c49ef1e8a240b73167e5a919df772b82a2eb08cfb42c0f8da2d"
+      },
+      "guitar": {
+        "input": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\05_guitar.wav",
+        "output": "C:\\Projetos2026\\LAISE\\projects\\tukana\\spatial_stems\\preview_127_172\\guitar_spatial.wav",
+        "trajectory": "discrete_transition_motion",
+        "metrics": {
+          "frames": 2160000,
+          "finite": true,
+          "peak": 0.3148246109485626,
+          "peak_dbfs": -10.038626493135613,
+          "rms": 0.01477345324345559,
+          "rms_dbfs": -36.61035955985977,
+          "max_sample_delta": 0.13509520888328552,
+          "p999_sample_delta": 0.021135587245225906,
+          "max_block_boundary_delta": 0.05300325155258179
+        },
+        "output_sha256": "03bcf0e5f9e50e45f9be4b4e140e316c2c834687b1eb83e82b119da028c66acf"
+      },
+      "keyboards": {
+        "input": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\06_keyboard.wav",
+        "output": "C:\\Projetos2026\\LAISE\\projects\\tukana\\spatial_stems\\preview_127_172\\keyboards_spatial.wav",
+        "trajectory": "atmospheric_depth",
+        "metrics": {
+          "frames": 2160000,
+          "finite": true,
+          "peak": 0.010933144018054008,
+          "peak_dbfs": -39.22509862130537,
+          "rms": 0.0009255641738775774,
+          "rms_dbfs": -60.67186928225833,
+          "max_sample_delta": 0.0013628648594021797,
+          "p999_sample_delta": 0.0006344192661345005,
+          "max_block_boundary_delta": 0.0008830911247059703
+        },
+        "output_sha256": "33c97ac156e301cc4ecf1d0156e6367d1d7dabf33f5f8fe944b733345153efef"
+      },
+      "percussion": {
+        "input": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\07_percussion.wav",
+        "output": "C:\\Projetos2026\\LAISE\\projects\\tukana\\spatial_stems\\preview_127_172\\percussion_spatial.wav",
+        "trajectory": "phrase_synced_orbit_candidate",
+        "metrics": {
+          "frames": 2160000,
+          "finite": true,
+          "peak": 0.5313713550567627,
+          "peak_dbfs": -5.492037221175371,
+          "rms": 0.03153416779465657,
+          "rms_dbfs": -30.02437251615462,
+          "max_sample_delta": 0.3773154616355896,
+          "p999_sample_delta": 0.12252277880907059,
+          "max_block_boundary_delta": 0.19072377681732178
+        },
+        "output_sha256": "289e1b1b6ecfae4a869380c07e44da334f831c7835e99d0515b65d37f3833bd3"
+      },
+      "synth": {
+        "input": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\08_synth.wav",
+        "output": "C:\\Projetos2026\\LAISE\\projects\\tukana\\spatial_stems\\preview_127_172\\synth_spatial.wav",
+        "trajectory": "slow_atmospheric_elevation",
+        "metrics": {
+          "frames": 2160000,
+          "finite": true,
+          "peak": 0.1838182955980301,
+          "peak_dbfs": -14.71222530167124,
+          "rms": 0.024705463260389054,
+          "rms_dbfs": -32.14413996194801,
+          "max_sample_delta": 0.06098252534866333,
+          "p999_sample_delta": 0.02032245509326458,
+          "max_block_boundary_delta": 0.032055821269750595
+        },
+        "output_sha256": "ff6602c0b9c7c6ff1073096d4acfec5e07fdcc01e3e6eb09c2ae1da22dd0bc62"
+      },
+      "other": {
+        "input": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\09_other.wav",
+        "output": "C:\\Projetos2026\\LAISE\\projects\\tukana\\spatial_stems\\preview_127_172\\other_spatial.wav",
+        "trajectory": "content_review_required",
+        "metrics": {
+          "frames": 2160000,
+          "finite": true,
+          "peak": 0.3848666250705719,
+          "peak_dbfs": -8.29379496990536,
+          "rms": 0.01004601773182261,
+          "rms_dbfs": -39.96012119240075,
+          "max_sample_delta": 0.24238641560077667,
+          "p999_sample_delta": 0.04776827618479729,
+          "max_block_boundary_delta": 0.16355665028095245
+        },
+        "output_sha256": "b239eaf2b6e3da987e906ac327d1e060ef519c2832588550ffe5e4bfefe357d6"
+      },
+      "woodwinds": {
+        "input": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\10_woodwinds.wav",
+        "output": "C:\\Projetos2026\\LAISE\\projects\\tukana\\spatial_stems\\preview_127_172\\woodwinds_spatial.wav",
+        "trajectory": "transition_synced_traverse",
+        "metrics": {
+          "frames": 2160000,
+          "finite": true,
+          "peak": 0.5498967170715332,
+          "peak_dbfs": -5.194377461680605,
+          "rms": 0.0700015031541795,
+          "rms_dbfs": -23.097852684127268,
+          "max_sample_delta": 0.11619943380355835,
+          "p999_sample_delta": 0.06430554389953613,
+          "max_block_boundary_delta": 0.09344901889562607
+        },
+        "output_sha256": "c5ec2b3c2dd5f617af8a9829b39c005c0ade841a1a749c9774f31b80495ec047"
+      }
+    },
+    "mixes": {
+      "binaural": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\tukana_multistem_binaural_preview_127_172.wav",
+        "metrics": {
+          "frames": 2160000,
+          "finite": true,
+          "peak": 0.8999999761581421,
+          "peak_dbfs": -0.9151500413110016,
+          "rms": 0.12162879830096765,
+          "rms_dbfs": -18.299271681786365,
+          "max_sample_delta": 0.3139277696609497,
+          "p999_sample_delta": 0.11361749470233917,
+          "max_block_boundary_delta": 0.15284858644008636
+        },
+        "gain": 0.7692794945191418
+      },
+      "dry_comparison": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\tukana_multistem_dry_comparison_127_172.wav",
+        "metrics": {
+          "frames": 2160000,
+          "finite": true,
+          "peak": 0.8066412210464478,
+          "peak_dbfs": -1.8663917681750917,
+          "rms": 0.12162879829580446,
+          "rms_dbfs": -18.299271682155084,
+          "max_sample_delta": 0.2593921422958374,
+          "p999_sample_delta": 0.10340623557567596,
+          "max_block_boundary_delta": 0.15122248232364655
+        },
+        "gain": 0.7051444736748623
+      },
+      "rms_difference_db": 3.687202501034887e-10
+    },
+    "originals_unchanged": true
+  }
+}

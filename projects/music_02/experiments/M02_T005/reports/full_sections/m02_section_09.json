@@ -1,0 +1,4545 @@
+{
+  "section_id": "m02_section_09",
+  "start_seconds": 242.0,
+  "end_seconds": 247.60002083333333,
+  "actual_binaural_output": true,
+  "components": {
+    "spatial_discriminability": 65.83918680377194,
+    "clarity": 86.25568978535267,
+    "front_back": 27.848101265822784,
+    "elevation": 56.9620253164557,
+    "transient_preservation": 88.35437513375385,
+    "peak_safety": 100.0,
+    "mono_stability": 100.0
+  },
+  "lead_masking": [
+    {
+      "time_seconds": 244.5,
+      "clarity_proxy": 85.51261230710573,
+      "masker_index": 0.622635740700094
+    },
+    {
+      "time_seconds": 245.5,
+      "clarity_proxy": 75.21247464514971,
+      "masker_index": 1.5641295845886753
+    },
+    {
+      "time_seconds": 246.5,
+      "clarity_proxy": 68.01960101802415,
+      "masker_index": 2.8317707323955865
+    }
+  ],
+  "transient_masking": [
+    {
+      "time_seconds": 242.5,
+      "role": "drums",
+      "clarity_proxy": 70.68832155107525
+    },
+    {
+      "time_seconds": 242.5,
+      "role": "percussion",
+      "clarity_proxy": 67.7656822995617
+    }
+  ],
+  "pairwise_matrix": {
+    "lead_vocal / backing_vocals": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "lead_vocal / woodwinds": {
+      "coactive_windows": 3,
+      "mean_score": 52.513022966748416,
+      "minimum_score": 47.55103115139518,
+      "windows": [
+        {
+          "time_seconds": 244.5,
+          "angular_difference_deg": 79.42192947630065,
+          "elevation_difference_deg": 28.0,
+          "ild_difference_db": 10.5458257905326,
+          "itd_difference_us": 269.64484975716607,
+          "binaural_feature_distance": 1.955249941269755,
+          "binaural_spectral_contrast_difference_db": 5.328289634596645,
+          "spectral_overlap": 0.9999999186807889,
+          "temporal_overlap": 0.6,
+          "envelope_similarity": 0.993764484408184,
+          "spatial_discriminability_score": 62.10246863696942
+        },
+        {
+          "time_seconds": 245.5,
+          "angular_difference_deg": 79.42192947630065,
+          "elevation_difference_deg": 28.0,
+          "ild_difference_db": 8.631184196786597,
+          "itd_difference_us": 332.2318487770105,
+          "binaural_feature_distance": 1.3838584364354207,
+          "binaural_spectral_contrast_difference_db": 5.318911229780621,
+          "spectral_overlap": 0.9999956962851717,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": 0.9832820548757741,
+          "spatial_discriminability_score": 47.55103115139518
+        },
+        {
+          "time_seconds": 246.5,
+          "angular_difference_deg": 79.42192947630065,
+          "elevation_difference_deg": 28.0,
+          "ild_difference_db": 7.456141295042391,
+          "itd_difference_us": 332.01273562894255,
+          "binaural_feature_distance": 1.2512498158562584,
+          "binaural_spectral_contrast_difference_db": 4.9968886659497,
+          "spectral_overlap": 0.999997027321993,
+          "temporal_overlap": 0.9,
+          "envelope_similarity": 0.9776381690652026,
+          "spatial_discriminability_score": 47.885569111880656
+        }
+      ]
+    },
+    "lead_vocal / drums": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "lead_vocal / bass": {
+      "coactive_windows": 3,
+      "mean_score": 70.71404152867906,
+      "minimum_score": 63.14827393274809,
+      "windows": [
+        {
+          "time_seconds": 244.5,
+          "angular_difference_deg": 42.0,
+          "elevation_difference_deg": 42.0,
+          "ild_difference_db": 0.8724344029678431,
+          "itd_difference_us": 36.39119229091586,
+          "binaural_feature_distance": 1.5680409245401945,
+          "binaural_spectral_contrast_difference_db": 1.8272143485476053,
+          "spectral_overlap": 0.0033124098296737755,
+          "temporal_overlap": 0.6,
+          "envelope_similarity": -0.6218960282173301,
+          "spatial_discriminability_score": 63.14827393274809
+        },
+        {
+          "time_seconds": 245.5,
+          "angular_difference_deg": 42.0,
+          "elevation_difference_deg": 42.0,
+          "ild_difference_db": 1.2521557315255638,
+          "itd_difference_us": 38.75329797625764,
+          "binaural_feature_distance": 2.6294195559178664,
+          "binaural_spectral_contrast_difference_db": 1.5272948985316448,
+          "spectral_overlap": 0.0052816230537145355,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": 0.932357691108277,
+          "spatial_discriminability_score": 74.62751387825668
+        },
+        {
+          "time_seconds": 246.5,
+          "angular_difference_deg": 42.0,
+          "elevation_difference_deg": 42.0,
+          "ild_difference_db": 2.7315959334542446,
+          "itd_difference_us": 250.10778874608457,
+          "binaural_feature_distance": 2.6010949843428204,
+          "binaural_spectral_contrast_difference_db": 1.65303711588503,
+          "spectral_overlap": 0.00824849501637829,
+          "temporal_overlap": 0.9,
+          "envelope_similarity": 0.945381675520705,
+          "spatial_discriminability_score": 74.36633677503244
+        }
+      ]
+    },
+    "lead_vocal / guitar": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "lead_vocal / keyboards": {
+      "coactive_windows": 3,
+      "mean_score": 62.953744909444026,
+      "minimum_score": 60.27471981313543,
+      "windows": [
+        {
+          "time_seconds": 244.5,
+          "angular_difference_deg": 56.17415502943028,
+          "elevation_difference_deg": 30.0,
+          "ild_difference_db": 3.6405458934870065,
+          "itd_difference_us": 148.633249835897,
+          "binaural_feature_distance": 1.6621007048673424,
+          "binaural_spectral_contrast_difference_db": 3.7603894549279695,
+          "spectral_overlap": 0.5833003251366888,
+          "temporal_overlap": 0.6,
+          "envelope_similarity": -0.3244257053591918,
+          "spatial_discriminability_score": 65.80782159899742
+        },
+        {
+          "time_seconds": 245.5,
+          "angular_difference_deg": 56.17415502943028,
+          "elevation_difference_deg": 30.0,
+          "ild_difference_db": 3.8710700155128075,
+          "itd_difference_us": 147.87541662898394,
+          "binaural_feature_distance": 1.3180545785260833,
+          "binaural_spectral_contrast_difference_db": 3.5775628604485425,
+          "spectral_overlap": 0.6817141450351085,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": -0.3182461066291073,
+          "spatial_discriminability_score": 60.27471981313543
+        },
+        {
+          "time_seconds": 246.5,
+          "angular_difference_deg": 56.17415502943028,
+          "elevation_difference_deg": 30.0,
+          "ild_difference_db": 5.697191236068472,
+          "itd_difference_us": 148.14216160631162,
+          "binaural_feature_distance": 1.4640669040950585,
+          "binaural_spectral_contrast_difference_db": 4.145797930246836,
+          "spectral_overlap": 0.582735024644199,
+          "temporal_overlap": 0.9,
+          "envelope_similarity": -0.8298117804142856,
+          "spatial_discriminability_score": 62.77869331619922
+        }
+      ]
+    },
+    "lead_vocal / percussion": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "lead_vocal / synth": {
+      "coactive_windows": 3,
+      "mean_score": 58.07358952657855,
+      "minimum_score": 51.931351296778736,
+      "windows": [
+        {
+          "time_seconds": 244.5,
+          "angular_difference_deg": 121.32130437959772,
+          "elevation_difference_deg": 55.0,
+          "ild_difference_db": 6.270054863626016,
+          "itd_difference_us": 60.80284635817954,
+          "binaural_feature_distance": 1.7219624345116173,
+          "binaural_spectral_contrast_difference_db": 3.8291345231251097,
+          "spectral_overlap": 0.9993834277748046,
+          "temporal_overlap": 0.6,
+          "envelope_similarity": 0.9792542806904817,
+          "spatial_discriminability_score": 65.394087676619
+        },
+        {
+          "time_seconds": 245.5,
+          "angular_difference_deg": 121.32130437959772,
+          "elevation_difference_deg": 55.0,
+          "ild_difference_db": 3.411715064490793,
+          "itd_difference_us": 161.59256052824952,
+          "binaural_feature_distance": 1.1956741996513458,
+          "binaural_spectral_contrast_difference_db": 0.9380631437627165,
+          "spectral_overlap": 0.995074062078792,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": 0.8895992617224707,
+          "spatial_discriminability_score": 51.931351296778736
+        },
+        {
+          "time_seconds": 246.5,
+          "angular_difference_deg": 121.32130437959772,
+          "elevation_difference_deg": 55.0,
+          "ild_difference_db": 5.068321178081179,
+          "itd_difference_us": 421.9716891236169,
+          "binaural_feature_distance": 1.3705107725033698,
+          "binaural_spectral_contrast_difference_db": 2.491351276554307,
+          "spectral_overlap": 0.996206769061891,
+          "temporal_overlap": 0.9,
+          "envelope_similarity": 0.8567152573176353,
+          "spatial_discriminability_score": 56.89532960633792
+        }
+      ]
+    },
+    "lead_vocal / other": {
+      "coactive_windows": 2,
+      "mean_score": 55.77637388702735,
+      "minimum_score": 55.24354989113803,
+      "windows": [
+        {
+          "time_seconds": 244.5,
+          "angular_difference_deg": 163.04331303131713,
+          "elevation_difference_deg": 8.0,
+          "ild_difference_db": 5.163265772176649,
+          "itd_difference_us": 100.4661561646363,
+          "binaural_feature_distance": 1.4436177832627743,
+          "binaural_spectral_contrast_difference_db": 3.474101334510825,
+          "spectral_overlap": 0.9999678028807235,
+          "temporal_overlap": 0.6,
+          "envelope_similarity": 0.8829879291016235,
+          "spatial_discriminability_score": 56.30919788291667
+        },
+        {
+          "time_seconds": 245.5,
+          "angular_difference_deg": 163.04331303131713,
+          "elevation_difference_deg": 8.0,
+          "ild_difference_db": 2.3405708566561856,
+          "itd_difference_us": 205.63294147310688,
+          "binaural_feature_distance": 1.2355870936834152,
+          "binaural_spectral_contrast_difference_db": 1.8973791673356242,
+          "spectral_overlap": 0.9997174171702161,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": 0.4223498776449087,
+          "spatial_discriminability_score": 55.24354989113803
+        }
+      ]
+    },
+    "lead_vocal / brass": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "backing_vocals / woodwinds": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "backing_vocals / drums": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "backing_vocals / bass": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "backing_vocals / guitar": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "backing_vocals / keyboards": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "backing_vocals / percussion": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "backing_vocals / synth": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "backing_vocals / other": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "backing_vocals / brass": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "woodwinds / drums": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "woodwinds / bass": {
+      "coactive_windows": 3,
+      "mean_score": 93.90864856205786,
+      "minimum_score": 93.70760557509993,
+      "windows": [
+        {
+          "time_seconds": 244.5,
+          "angular_difference_deg": 100.23668656819586,
+          "elevation_difference_deg": 70.0,
+          "ild_difference_db": 11.418260193500442,
+          "itd_difference_us": 233.2536574662502,
+          "binaural_feature_distance": 3.502568399902721,
+          "binaural_spectral_contrast_difference_db": 6.712033440685201,
+          "spectral_overlap": 0.003313268311565474,
+          "temporal_overlap": 0.6,
+          "envelope_similarity": -0.6472414368423578,
+          "spatial_discriminability_score": 93.70760557509993
+        },
+        {
+          "time_seconds": 245.5,
+          "angular_difference_deg": 100.23668656819586,
+          "elevation_difference_deg": 70.0,
+          "ild_difference_db": 9.88333992831216,
+          "itd_difference_us": 293.4785508007528,
+          "binaural_feature_distance": 3.591937313363993,
+          "binaural_spectral_contrast_difference_db": 6.421247906280801,
+          "spectral_overlap": 0.0052873567430993295,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": 0.9228291668439725,
+          "spatial_discriminability_score": 93.93385062145214
+        },
+        {
+          "time_seconds": 246.5,
+          "angular_difference_deg": 100.23668656819586,
+          "elevation_difference_deg": 70.0,
+          "ild_difference_db": 10.187737228496635,
+          "itd_difference_us": 582.1205243750271,
+          "binaural_feature_distance": 3.652433069318561,
+          "binaural_spectral_contrast_difference_db": 6.453007729837155,
+          "spectral_overlap": 0.00826915302131597,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": 0.9463726088311124,
+          "spatial_discriminability_score": 94.08448948962153
+        }
+      ]
+    },
+    "woodwinds / guitar": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "woodwinds / keyboards": {
+      "coactive_windows": 3,
+      "mean_score": 71.47065068067072,
+      "minimum_score": 69.45585218613147,
+      "windows": [
+        {
+          "time_seconds": 244.5,
+          "angular_difference_deg": 103.65251486219904,
+          "elevation_difference_deg": 2.0,
+          "ild_difference_db": 14.186371684019607,
+          "itd_difference_us": 418.2780995930631,
+          "binaural_feature_distance": 2.0780098492669175,
+          "binaural_spectral_contrast_difference_db": 9.080187567948025,
+          "spectral_overlap": 0.5832985397636369,
+          "temporal_overlap": 0.6,
+          "envelope_similarity": -0.2836132325428173,
+          "spatial_discriminability_score": 74.17892703909868
+        },
+        {
+          "time_seconds": 245.5,
+          "angular_difference_deg": 103.65251486219904,
+          "elevation_difference_deg": 2.0,
+          "ild_difference_db": 12.502254212299405,
+          "itd_difference_us": 480.10726540599444,
+          "binaural_feature_distance": 1.7931470316037945,
+          "binaural_spectral_contrast_difference_db": 8.881351116392203,
+          "spectral_overlap": 0.6817349531307925,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": -0.3333551174921696,
+          "spatial_discriminability_score": 70.777172816782
+        },
+        {
+          "time_seconds": 246.5,
+          "angular_difference_deg": 103.65251486219904,
+          "elevation_difference_deg": 2.0,
+          "ild_difference_db": 13.153332531110863,
+          "itd_difference_us": 480.1548972352542,
+          "binaural_feature_distance": 1.6956123083511332,
+          "binaural_spectral_contrast_difference_db": 9.140768837406481,
+          "spectral_overlap": 0.5828024371344114,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": -0.8325623842490413,
+          "spatial_discriminability_score": 69.45585218613147
+        }
+      ]
+    },
+    "woodwinds / percussion": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "woodwinds / synth": {
+      "coactive_windows": 3,
+      "mean_score": 55.878281158214826,
+      "minimum_score": 51.625597203656326,
+      "windows": [
+        {
+          "time_seconds": 244.5,
+          "angular_difference_deg": 85.42369846546518,
+          "elevation_difference_deg": 27.0,
+          "ild_difference_db": 16.815880654158615,
+          "itd_difference_us": 330.4476961153456,
+          "binaural_feature_distance": 1.6837649187184813,
+          "binaural_spectral_contrast_difference_db": 6.789541662731605,
+          "spectral_overlap": 0.999369266849379,
+          "temporal_overlap": 0.6,
+          "envelope_similarity": 0.9888428294645861,
+          "spatial_discriminability_score": 60.48651949147042
+        },
+        {
+          "time_seconds": 245.5,
+          "angular_difference_deg": 85.42369846546518,
+          "elevation_difference_deg": 27.0,
+          "ild_difference_db": 12.042899261277391,
+          "itd_difference_us": 170.63928824876095,
+          "binaural_feature_distance": 1.4528552264077594,
+          "binaural_spectral_contrast_difference_db": 5.991368390464171,
+          "spectral_overlap": 0.994779034268876,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": 0.8814387199841298,
+          "spatial_discriminability_score": 51.625597203656326
+        },
+        {
+          "time_seconds": 246.5,
+          "angular_difference_deg": 85.42369846546518,
+          "elevation_difference_deg": 27.0,
+          "ild_difference_db": 12.52446247312357,
+          "itd_difference_us": 753.9844247525594,
+          "binaural_feature_distance": 1.7309229448910823,
+          "binaural_spectral_contrast_difference_db": 7.486322183713952,
+          "spectral_overlap": 0.9963600100258356,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": 0.843078161485173,
+          "spatial_discriminability_score": 55.52272677951772
+        }
+      ]
+    },
+    "woodwinds / other": {
+      "coactive_windows": 2,
+      "mean_score": 65.30241825424355,
+      "minimum_score": 61.51006125794721,
+      "windows": [
+        {
+          "time_seconds": 244.5,
+          "angular_difference_deg": 91.12178656703394,
+          "elevation_difference_deg": 36.0,
+          "ild_difference_db": 5.382560018355951,
+          "itd_difference_us": 169.17869359252975,
+          "binaural_feature_distance": 2.086509028288796,
+          "binaural_spectral_contrast_difference_db": 5.293038699155777,
+          "spectral_overlap": 0.999965151920418,
+          "temporal_overlap": 0.6,
+          "envelope_similarity": 0.8644354403480926,
+          "spatial_discriminability_score": 69.09477525053988
+        },
+        {
+          "time_seconds": 245.5,
+          "angular_difference_deg": 91.12178656703394,
+          "elevation_difference_deg": 36.0,
+          "ild_difference_db": 6.290613340130411,
+          "itd_difference_us": 537.8647902501174,
+          "binaural_feature_distance": 1.3830447490888753,
+          "binaural_spectral_contrast_difference_db": 4.398053462572055,
+          "spectral_overlap": 0.9996904309365992,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": 0.4916701790041938,
+          "spatial_discriminability_score": 61.51006125794721
+        }
+      ]
+    },
+    "woodwinds / brass": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "drums / bass": {
+      "coactive_windows": 1,
+      "mean_score": 42.59384822769843,
+      "minimum_score": 42.59384822769843,
+      "windows": [
+        {
+          "time_seconds": 242.5,
+          "angular_difference_deg": 30.44895434637726,
+          "elevation_difference_deg": 24.0,
+          "ild_difference_db": 0.7014290184594701,
+          "itd_difference_us": 4.82791744277678,
+          "binaural_feature_distance": 1.2477915469394212,
+          "binaural_spectral_contrast_difference_db": 2.152720159996583,
+          "spectral_overlap": 0.9911412518427547,
+          "temporal_overlap": 0.6,
+          "envelope_similarity": 0.8776191072521599,
+          "spatial_discriminability_score": 42.59384822769843
+        }
+      ]
+    },
+    "drums / guitar": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "drums / keyboards": {
+      "coactive_windows": 1,
+      "mean_score": 63.9626775916608,
+      "minimum_score": 63.9626775916608,
+      "windows": [
+        {
+          "time_seconds": 242.5,
+          "angular_difference_deg": 55.05976524810857,
+          "elevation_difference_deg": 48.0,
+          "ild_difference_db": 2.873907423983062,
+          "itd_difference_us": 190.60326347569207,
+          "binaural_feature_distance": 1.3554205063581477,
+          "binaural_spectral_contrast_difference_db": 2.473036074370933,
+          "spectral_overlap": 0.2091750673253755,
+          "temporal_overlap": 0.6,
+          "envelope_similarity": -0.7374018052123346,
+          "spatial_discriminability_score": 63.9626775916608
+        }
+      ]
+    },
+    "drums / percussion": {
+      "coactive_windows": 1,
+      "mean_score": 48.73642084358559,
+      "minimum_score": 48.73642084358559,
+      "windows": [
+        {
+          "time_seconds": 242.5,
+          "angular_difference_deg": 60.88371929315651,
+          "elevation_difference_deg": 6.0,
+          "ild_difference_db": 0.04571736147882244,
+          "itd_difference_us": 540.9686100791712,
+          "binaural_feature_distance": 1.5003277539364572,
+          "binaural_spectral_contrast_difference_db": 7.832303817354493,
+          "spectral_overlap": 0.9974986942618235,
+          "temporal_overlap": 0.6,
+          "envelope_similarity": 0.9951096162936871,
+          "spatial_discriminability_score": 48.73642084358559
+        }
+      ]
+    },
+    "drums / synth": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "drums / other": {
+      "coactive_windows": 1,
+      "mean_score": 67.68290771293766,
+      "minimum_score": 67.68290771293766,
+      "windows": [
+        {
+          "time_seconds": 242.5,
+          "angular_difference_deg": 153.09702105182112,
+          "elevation_difference_deg": 10.0,
+          "ild_difference_db": 1.783842590578355,
+          "itd_difference_us": 248.32067519287787,
+          "binaural_feature_distance": 2.0468651886739386,
+          "binaural_spectral_contrast_difference_db": 3.032027005129709,
+          "spectral_overlap": 0.5877116282256852,
+          "temporal_overlap": 0.6,
+          "envelope_similarity": 0.991665370062596,
+          "spatial_discriminability_score": 67.68290771293766
+        }
+      ]
+    },
+    "drums / brass": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "bass / guitar": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "bass / keyboards": {
+      "coactive_windows": 5,
+      "mean_score": 83.84942704271853,
+      "minimum_score": 83.02852537935873,
+      "windows": [
+        {
+          "time_seconds": 242.5,
+          "angular_difference_deg": 85.46193307128023,
+          "elevation_difference_deg": 72.0,
+          "ild_difference_db": 3.5753364424425325,
+          "itd_difference_us": 185.7753460329153,
+          "binaural_feature_distance": 2.2285329570957124,
+          "binaural_spectral_contrast_difference_db": 2.4612322605371535,
+          "spectral_overlap": 0.12832276806797616,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": -0.8579370269304507,
+          "spatial_discriminability_score": 84.02690879772507
+        },
+        {
+          "time_seconds": 243.5,
+          "angular_difference_deg": 85.46193307128023,
+          "elevation_difference_deg": 72.0,
+          "ild_difference_db": 3.2876061262458482,
+          "itd_difference_us": 185.4122537537739,
+          "binaural_feature_distance": 2.130048751142789,
+          "binaural_spectral_contrast_difference_db": 2.47668370512299,
+          "spectral_overlap": 0.2129287888413884,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": -0.5132771038438697,
+          "spatial_discriminability_score": 83.02852537935873
+        },
+        {
+          "time_seconds": 244.5,
+          "angular_difference_deg": 85.46193307128023,
+          "elevation_difference_deg": 72.0,
+          "ild_difference_db": 2.7681114905191637,
+          "itd_difference_us": 185.02444212681286,
+          "binaural_feature_distance": 2.1530157311354245,
+          "binaural_spectral_contrast_difference_db": 2.3681541272628226,
+          "spectral_overlap": 0.1686458812008876,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": -0.25867926017972737,
+          "spatial_discriminability_score": 83.26724776277032
+        },
+        {
+          "time_seconds": 245.5,
+          "angular_difference_deg": 85.46193307128023,
+          "elevation_difference_deg": 72.0,
+          "ild_difference_db": 2.6189142839872437,
+          "itd_difference_us": 186.62871460524158,
+          "binaural_feature_distance": 2.278369057997082,
+          "binaural_spectral_contrast_difference_db": 2.4601032101114026,
+          "spectral_overlap": 0.33410328628159647,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": -0.3089129359377277,
+          "spatial_discriminability_score": 84.50768751742336
+        },
+        {
+          "time_seconds": 246.5,
+          "angular_difference_deg": 85.46193307128023,
+          "elevation_difference_deg": 72.0,
+          "ild_difference_db": 2.965595302614228,
+          "itd_difference_us": 101.96562713977295,
+          "binaural_feature_distance": 2.268816546995362,
+          "binaural_spectral_contrast_difference_db": 2.687761107569326,
+          "spectral_overlap": 0.5203289796765075,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": -0.910551552055614,
+          "spatial_discriminability_score": 84.41676575631519
+        }
+      ]
+    },
+    "bass / percussion": {
+      "coactive_windows": 1,
+      "mean_score": 63.154099519124635,
+      "minimum_score": 63.154099519124635,
+      "windows": [
+        {
+          "time_seconds": 242.5,
+          "angular_difference_deg": 78.31832787200146,
+          "elevation_difference_deg": 30.0,
+          "ild_difference_db": 0.6557116569806477,
+          "itd_difference_us": 536.1406926363944,
+          "binaural_feature_distance": 1.9086233005075095,
+          "binaural_spectral_contrast_difference_db": 7.553651847063599,
+          "spectral_overlap": 0.9975273496403121,
+          "temporal_overlap": 0.6,
+          "envelope_similarity": 0.8928519473316312,
+          "spatial_discriminability_score": 63.154099519124635
+        }
+      ]
+    },
+    "bass / synth": {
+      "coactive_windows": 3,
+      "mean_score": 85.72421756803836,
+      "minimum_score": 83.80403631008316,
+      "windows": [
+        {
+          "time_seconds": 244.5,
+          "angular_difference_deg": 159.136851080409,
+          "elevation_difference_deg": 97.0,
+          "ild_difference_db": 5.397620460658173,
+          "itd_difference_us": 97.1940386490954,
+          "binaural_feature_distance": 2.08443782046743,
+          "binaural_spectral_contrast_difference_db": 4.910373176001784,
+          "spectral_overlap": 0.003636020025419355,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": -0.7331099447222108,
+          "spatial_discriminability_score": 83.80403631008316
+        },
+        {
+          "time_seconds": 245.5,
+          "angular_difference_deg": 159.136851080409,
+          "elevation_difference_deg": 97.0,
+          "ild_difference_db": 2.1595593329652294,
+          "itd_difference_us": 122.83926255199188,
+          "binaural_feature_distance": 2.695510345063033,
+          "binaural_spectral_contrast_difference_db": 1.4074942771389605,
+          "spectral_overlap": 0.0056349847058421885,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": 0.9279619970836518,
+          "spatial_discriminability_score": 89.0833988323062
+        },
+        {
+          "time_seconds": 246.5,
+          "angular_difference_deg": 159.136851080409,
+          "elevation_difference_deg": 97.0,
+          "ild_difference_db": 2.336725244626934,
+          "itd_difference_us": 171.8639003775323,
+          "binaural_feature_distance": 2.261327637975681,
+          "binaural_spectral_contrast_difference_db": 2.0558311504278937,
+          "spectral_overlap": 0.05703202430198298,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": 0.9015190603167533,
+          "spatial_discriminability_score": 84.2852175617257
+        }
+      ]
+    },
+    "bass / other": {
+      "coactive_windows": 3,
+      "mean_score": 80.04651610473867,
+      "minimum_score": 75.4797668001873,
+      "windows": [
+        {
+          "time_seconds": 242.5,
+          "angular_difference_deg": 128.14924415068302,
+          "elevation_difference_deg": 34.0,
+          "ild_difference_db": 1.082413572118885,
+          "itd_difference_us": 243.4927577501011,
+          "binaural_feature_distance": 2.668438121961385,
+          "binaural_spectral_contrast_difference_db": 3.1213835566291177,
+          "spectral_overlap": 0.48103484990921,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": 0.8886020661222411,
+          "spatial_discriminability_score": 75.4797668001873
+        },
+        {
+          "time_seconds": 244.5,
+          "angular_difference_deg": 128.14924415068302,
+          "elevation_difference_deg": 34.0,
+          "ild_difference_db": 6.035700175144492,
+          "itd_difference_us": 64.07496387372044,
+          "binaural_feature_distance": 2.1475155374585495,
+          "binaural_spectral_contrast_difference_db": 3.8843711350361176,
+          "spectral_overlap": 0.003909065585590513,
+          "temporal_overlap": 0.6,
+          "envelope_similarity": -0.6064231035441922,
+          "spatial_discriminability_score": 82.02654000579763
+        },
+        {
+          "time_seconds": 245.5,
+          "angular_difference_deg": 128.14924415068302,
+          "elevation_difference_deg": 34.0,
+          "ild_difference_db": 3.59272658818175,
+          "itd_difference_us": 244.38623944936452,
+          "binaural_feature_distance": 2.231635521358665,
+          "binaural_spectral_contrast_difference_db": 2.92996997637946,
+          "spectral_overlap": 0.01688643508569595,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": 0.5721266804220441,
+          "spatial_discriminability_score": 82.63324150823107
+        }
+      ]
+    },
+    "bass / brass": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "guitar / keyboards": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "guitar / percussion": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "guitar / synth": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "guitar / other": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "guitar / brass": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "keyboards / percussion": {
+      "coactive_windows": 1,
+      "mean_score": 60.295160413713575,
+      "minimum_score": 60.295160413713575,
+      "windows": [
+        {
+          "time_seconds": 242.5,
+          "angular_difference_deg": 53.84665334431435,
+          "elevation_difference_deg": 42.0,
+          "ild_difference_db": 2.9196247854618846,
+          "itd_difference_us": 350.3653466034791,
+          "binaural_feature_distance": 1.210865972502163,
+          "binaural_spectral_contrast_difference_db": 6.881437545772374,
+          "spectral_overlap": 0.15220065198004903,
+          "temporal_overlap": 0.6,
+          "envelope_similarity": -0.7493787140223597,
+          "spatial_discriminability_score": 60.295160413713575
+        }
+      ]
+    },
+    "keyboards / synth": {
+      "coactive_windows": 3,
+      "mean_score": 66.33413851607573,
+      "minimum_score": 63.06471595842788,
+      "windows": [
+        {
+          "time_seconds": 244.5,
+          "angular_difference_deg": 73.6793639401628,
+          "elevation_difference_deg": 25.0,
+          "ild_difference_db": 2.6295089701390095,
+          "itd_difference_us": 87.83040347771745,
+          "binaural_feature_distance": 1.8758940139855287,
+          "binaural_spectral_contrast_difference_db": 6.08314699280022,
+          "spectral_overlap": 0.5842749570273453,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": -0.18652805800575958,
+          "spatial_discriminability_score": 72.41032980547857
+        },
+        {
+          "time_seconds": 245.5,
+          "angular_difference_deg": 73.6793639401628,
+          "elevation_difference_deg": 25.0,
+          "ild_difference_db": 0.4593549510220143,
+          "itd_difference_us": 309.46797715723346,
+          "binaural_feature_distance": 1.2905923393363319,
+          "binaural_spectral_contrast_difference_db": 2.9304903857463387,
+          "spectral_overlap": 0.6793833729359448,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": -0.1954897563695237,
+          "spatial_discriminability_score": 63.52736978432072
+        },
+        {
+          "time_seconds": 246.5,
+          "angular_difference_deg": 73.6793639401628,
+          "elevation_difference_deg": 25.0,
+          "ild_difference_db": 0.6288700579872937,
+          "itd_difference_us": 273.8295275173052,
+          "binaural_feature_distance": 1.2655617984852696,
+          "binaural_spectral_contrast_difference_db": 2.220103164983284,
+          "spectral_overlap": 0.6283913328619882,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": -0.7327368984842206,
+          "spatial_discriminability_score": 63.06471595842788
+        }
+      ]
+    },
+    "keyboards / other": {
+      "coactive_windows": 3,
+      "mean_score": 72.0321802720976,
+      "minimum_score": 68.96762314282547,
+      "windows": [
+        {
+          "time_seconds": 242.5,
+          "angular_difference_deg": 140.54186382549105,
+          "elevation_difference_deg": 38.0,
+          "ild_difference_db": 4.657750014561417,
+          "itd_difference_us": 57.7174117171858,
+          "binaural_feature_distance": 1.468316156108638,
+          "binaural_spectral_contrast_difference_db": 5.258592176248446,
+          "spectral_overlap": 0.7829887350859981,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": -0.7420137078652529,
+          "spatial_discriminability_score": 74.02182247952015
+        },
+        {
+          "time_seconds": 244.5,
+          "angular_difference_deg": 140.54186382549105,
+          "elevation_difference_deg": 38.0,
+          "ild_difference_db": 8.803811665663655,
+          "itd_difference_us": 249.0994060005333,
+          "binaural_feature_distance": 1.4131615616923823,
+          "binaural_spectral_contrast_difference_db": 4.249224308832808,
+          "spectral_overlap": 0.5848616383260942,
+          "temporal_overlap": 0.6,
+          "envelope_similarity": -0.18520480928602095,
+          "spatial_discriminability_score": 73.10709519394719
+        },
+        {
+          "time_seconds": 245.5,
+          "angular_difference_deg": 140.54186382549105,
+          "elevation_difference_deg": 38.0,
+          "ild_difference_db": 6.211640872168994,
+          "itd_difference_us": 57.75752484412294,
+          "binaural_feature_distance": 1.1861745509665278,
+          "binaural_spectral_contrast_difference_db": 4.546230954783172,
+          "spectral_overlap": 0.6972112984191744,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": -0.3712248272126097,
+          "spatial_discriminability_score": 68.96762314282547
+        }
+      ]
+    },
+    "keyboards / brass": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "percussion / synth": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "percussion / other": {
+      "coactive_windows": 1,
+      "mean_score": 66.86773403209294,
+      "minimum_score": 66.86773403209294,
+      "windows": [
+        {
+          "time_seconds": 242.5,
+          "angular_difference_deg": 107.599086137549,
+          "elevation_difference_deg": 4.0,
+          "ild_difference_db": 1.7381252290995326,
+          "itd_difference_us": 292.64793488629334,
+          "binaural_feature_distance": 2.011296393113653,
+          "binaural_spectral_contrast_difference_db": 10.311388825839376,
+          "spectral_overlap": 0.5297541578952988,
+          "temporal_overlap": 0.6,
+          "envelope_similarity": 0.9958356941922588,
+          "spatial_discriminability_score": 66.86773403209294
+        }
+      ]
+    },
+    "percussion / brass": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "synth / other": {
+      "coactive_windows": 2,
+      "mean_score": 60.592010364836014,
+      "minimum_score": 54.755983630501795,
+      "windows": [
+        {
+          "time_seconds": 244.5,
+          "angular_difference_deg": 71.2702334179306,
+          "elevation_difference_deg": 63.0,
+          "ild_difference_db": 11.433320635802666,
+          "itd_difference_us": 161.26900252281584,
+          "binaural_feature_distance": 2.1395413153023517,
+          "binaural_spectral_contrast_difference_db": 7.163495326362857,
+          "spectral_overlap": 0.9995918761047813,
+          "temporal_overlap": 0.6,
+          "envelope_similarity": 0.8954128983230696,
+          "spatial_discriminability_score": 66.42803709917024
+        },
+        {
+          "time_seconds": 245.5,
+          "angular_difference_deg": 71.2702334179306,
+          "elevation_difference_deg": 63.0,
+          "ild_difference_db": 5.75228592114698,
+          "itd_difference_us": 367.2255020013564,
+          "binaural_feature_distance": 1.2489674708315133,
+          "binaural_spectral_contrast_difference_db": 2.2950291766375437,
+          "spectral_overlap": 0.9956113081232837,
+          "temporal_overlap": 1.0,
+          "envelope_similarity": 0.592467057893208,
+          "spatial_discriminability_score": 54.755983630501795
+        }
+      ]
+    },
+    "synth / brass": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    },
+    "other / brass": {
+      "coactive_windows": 0,
+      "mean_score": null,
+      "minimum_score": null,
+      "windows": []
+    }
+  },
+  "stem_features": {
+    "lead_vocal": [
+      {
+        "time_seconds": 244.5,
+        "intended_azimuth_deg": 0.0,
+        "intended_elevation_deg": 0.0,
+        "estimated": {
+          "azimuth_deg": 180,
+          "elevation_deg": 20,
+          "front_rear": "rear",
+          "elevation_band": "high",
+          "confidence": 0.18661975537942824,
+          "coverage": 0.3333333333333333,
+          "feature_distance": 0.07221547261329749,
+          "alternatives": [
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": 20,
+              "distance": 0.07221547261329749
+            },
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": 0,
+              "distance": 0.1640735952332609
+            },
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": -20,
+              "distance": 0.19489444293568908
+            }
+          ]
+        },
+        "confidence_with_native_stereo_caution": 0.1846405768835056,
+        "distance_from_intended_features": 0.1640735952332609,
+        "features": {
+          "vector": [
+            -0.012120427053563084,
+            0.8279440735320348,
+            0.8108521247716873,
+            -0.19583103150078693,
+            2.0114468208498475,
+            0.0031191957214158354,
+            0.9997990219728865,
+            0.9987424401352545,
+            0.9997722978790577,
+            0.9964457988350118,
+            0.9978359405834908,
+            0.8869882510862156,
+            0.020047834348367263,
+            0.05013519993654816,
+            -0.021338987643012012,
+            0.08423639346538506,
+            -0.06575283780841808,
+            0.4617919904405193,
+            -1.5023698004310608,
+            -18.98776453931157,
+            -0.8151427623425431,
+            0.024921738243053958,
+            0.007829789482707237,
+            -0.9988533667897681,
+            1.2084244855608657,
+            -0.7999031395675655
+          ],
+          "ild_global_db": 0.8110972032531569,
+          "ild_band_db": [
+            -0.012120427053563084,
+            0.8279440735320348,
+            0.8108521247716873,
+            -0.19583103150078693,
+            2.0114468208498475,
+            0.0031191957214158354
+          ],
+          "itd_us": -1.5023698004310608,
+          "itd_definition": "GCC-PHAT L*conj(R), positive lag means left delayed; +/-1ms search, parabolic interpolation",
+          "cross_correlation_lr": 0.979319634648718,
+          "coherence_by_band": [
+            0.9827390477674224,
+            0.7943549806289761,
+            0.9689753424669922,
+            0.9493501993665894,
+            0.9675840901037296,
+            0.9895591694409659
+          ],
+          "phase_relationship_rad": [
+            0.020049177514411706,
+            0.05015622651888646,
+            -0.02134060743479334,
+            0.08433633325820794,
+            -0.06580030991988878,
+            0.4800144475993064
+          ],
+          "spectral_difference_lr_db": [
+            -0.8151427623425431,
+            0.024921738243053958,
+            0.007829789482707237,
+            -0.9988533667897681,
+            1.2084244855608657,
+            -0.7999031395675655
+          ],
+          "energy_centroid_hz_lr": [
+            1052.5172025779468,
+            1055.58423486432
+          ],
+          "interaural_spectral_contrast_db": [
+            -0.8151427623425431,
+            0.024921738243053958,
+            0.007829789482707237,
+            -0.9988533667897681,
+            1.2084244855608657,
+            -0.7999031395675655
+          ],
+          "side_mid_db": -18.98776453931157,
+          "binaural_difference_rms_dbfs": -47.294205425460206,
+          "objective_width": 0.012467374312182906,
+          "band_energy": [
+            8.005645587994592e-05,
+            0.0016086968414319477,
+            601.982255387627,
+            4.698816780472046,
+            0.015812644881859128,
+            0.010894505394105782
+          ],
+          "band_distribution": [
+            1.3195188157256283e-07,
+            2.651511021486e-06,
+            0.992208440888404,
+            0.007744755979178094,
+            2.6062960467910702e-05,
+            1.7956709046806538e-05
+          ],
+          "rms_dbfs": -34.27255532516896,
+          "crest_db": 10.178085463547959,
+          "mono_fold_db": -0.054485474259299296,
+          "active_bands": [
+            false,
+            false,
+            true,
+            true,
+            false,
+            false
+          ]
+        }
+      },
+      {
+        "time_seconds": 245.5,
+        "intended_azimuth_deg": 0.0,
+        "intended_elevation_deg": 0.0,
+        "estimated": {
+          "azimuth_deg": 0,
+          "elevation_deg": 20,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.001828742699665192,
+          "coverage": 0.3333333333333333,
+          "feature_distance": 0.4265666043356692,
+          "alternatives": [
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": 20,
+              "distance": 0.4265666043356692
+            },
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": -20,
+              "distance": 0.4289197559529928
+            },
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": 45,
+              "distance": 0.4381726851116971
+            }
+          ]
+        },
+        "confidence_with_native_stereo_caution": 0.0015717317056457816,
+        "distance_from_intended_features": 0.8010731998296038,
+        "features": {
+          "vector": [
+            0.309562370975361,
+            0.8920739569745912,
+            1.1329038342280773,
+            -0.6433040838496478,
+            0.9325385912149056,
+            -0.2296953716015013,
+            0.9999683636498229,
+            0.9882518792728108,
+            0.9916691756446161,
+            0.9686624376500901,
+            0.9894432084698344,
+            0.8540857349374121,
+            -0.007954350978902546,
+            -0.152833972381005,
+            -0.12881089269284426,
+            0.24838092093754993,
+            -0.14492114135943018,
+            0.5201322498907567,
+            -1.1097700143776874,
+            -6.911284121706995,
+            -0.7923296132640945,
+            -0.20981802726486226,
+            0.031011849988622563,
+            -1.7451960680891019,
+            -0.16935339302454888,
+            -1.3315873558409554
+          ],
+          "ild_global_db": 1.1920779161420116,
+          "ild_band_db": [
+            0.309562370975361,
+            0.8920739569745912,
+            1.1329038342280773,
+            -0.6433040838496478,
+            0.9325385912149056,
+            -0.2296953716015013
+          ],
+          "itd_us": -1.1097700143776874,
+          "itd_definition": "GCC-PHAT L*conj(R), positive lag means left delayed; +/-1ms search, parabolic interpolation",
+          "cross_correlation_lr": 0.6678617209931117,
+          "coherence_by_band": [
+            0.9162713820416313,
+            0.3320203156851254,
+            0.5013417106790085,
+            0.632182789703239,
+            0.7220538788355775,
+            0.8302802434004367
+          ],
+          "phase_relationship_rad": [
+            -0.007954434862175052,
+            -0.1534353031212007,
+            -0.12916978924716918,
+            0.2510084375274731,
+            -0.14543327202209505,
+            0.5470057872082056
+          ],
+          "spectral_difference_lr_db": [
+            -0.7923296132640945,
+            -0.20981802726486226,
+            0.031011849988622563,
+            -1.7451960680891019,
+            -0.16935339302454888,
+            -1.3315873558409554
+          ],
+          "energy_centroid_hz_lr": [
+            1137.233139019813,
+            1134.3652222461023
+          ],
+          "interaural_spectral_contrast_db": [
+            -0.7923296132640945,
+            -0.20981802726486226,
+            0.031011849988622563,
+            -1.7451960680891019,
+            -0.16935339302454888,
+            -1.3315873558409554
+          ],
+          "side_mid_db": -6.911284121706995,
+          "binaural_difference_rms_dbfs": -45.296863146345096,
+          "objective_width": 0.16918955097218483,
+          "band_energy": [
+            4.1309765146621145e-05,
+            0.001057317682065918,
+            68.08944442337003,
+            1.1943401277870964,
+            0.0009438242316096503,
+            0.00041279741480430376
+          ],
+          "band_distribution": [
+            5.962188923185241e-07,
+            1.526013946079509e-05,
+            0.9827267956764426,
+            0.01723776800747634,
+            1.3622102084492605e-05,
+            5.957855643405977e-06
+          ],
+          "rms_dbfs": -43.6011984377157,
+          "crest_db": 14.10466272816521,
+          "mono_fold_db": -0.8049805002020222,
+          "active_bands": [
+            false,
+            false,
+            true,
+            true,
+            false,
+            false
+          ]
+        }
+      },
+      {
+        "time_seconds": 246.5,
+        "intended_azimuth_deg": 0.0,
+        "intended_elevation_deg": 0.0,
+        "estimated": {
+          "azimuth_deg": 0,
+          "elevation_deg": 20,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.004959582809953474,
+          "coverage": 0.3333333333333333,
+          "feature_distance": 0.29355876975410405,
+          "alternatives": [
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": 20,
+              "distance": 0.29355876975410405
+            },
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": -20,
+              "distance": 0.29799252557613004
+            },
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": 0,
+              "distance": 0.3450168682074385
+            }
+          ]
+        },
+        "confidence_with_native_stereo_caution": 0.004396910750254061,
+        "distance_from_intended_features": 0.7175450627866178,
+        "features": {
+          "vector": [
+            -0.0990227944996098,
+            0.06497515158671383,
+            2.4334998340975895,
+            1.7094671344882795,
+            1.9612821777081573,
+            -0.35677448129070644,
+            0.9993194006398947,
+            0.9934037552600845,
+            0.9999813528293033,
+            0.999860122257803,
+            0.9964099316281794,
+            0.7689189673158435,
+            0.03688814856728077,
+            0.11466899770714921,
+            -0.006106880846741794,
+            -0.016725307728448192,
+            -0.08465960165702907,
+            0.6393462455523898,
+            -1.1940987130464935,
+            -7.765360016542413,
+            -2.527176496179708,
+            -2.363178550093384,
+            0.005346132417491351,
+            -0.7186865671918188,
+            -0.46687152397194,
+            -2.7849281829708046
+          ],
+          "ild_global_db": 2.6729270679827266,
+          "ild_band_db": [
+            -0.0990227944996098,
+            0.06497515158671383,
+            2.4334998340975895,
+            1.7094671344882795,
+            1.9612821777081573,
+            -0.35677448129070644
+          ],
+          "itd_us": -1.1940987130464935,
+          "itd_definition": "GCC-PHAT L*conj(R), positive lag means left delayed; +/-1ms search, parabolic interpolation",
+          "cross_correlation_lr": 0.7474189276969536,
+          "coherence_by_band": [
+            0.9860571663787799,
+            0.6282954628700874,
+            0.592324702886822,
+            0.22628067964640042,
+            0.47601207030992126,
+            0.5459913516997545
+          ],
+          "phase_relationship_rad": [
+            0.03689651952967054,
+            0.1149217930908167,
+            -0.006106918805708116,
+            -0.016726087604844175,
+            -0.08476105861972091,
+            0.6936477393628558
+          ],
+          "spectral_difference_lr_db": [
+            -2.527176496179708,
+            -2.363178550093384,
+            0.005346132417491351,
+            -0.7186865671918188,
+            -0.46687152397194,
+            -2.7849281829708046
+          ],
+          "energy_centroid_hz_lr": [
+            1143.9046317384907,
+            1122.207069869769
+          ],
+          "interaural_spectral_contrast_db": [
+            -2.527176496179708,
+            -2.363178550093384,
+            0.005346132417491351,
+            -0.7186865671918188,
+            -0.46687152397194,
+            -2.7849281829708046
+          ],
+          "side_mid_db": -7.765360016542413,
+          "binaural_difference_rms_dbfs": -61.52374097878209,
+          "objective_width": 0.14331316614752895,
+          "band_energy": [
+            4.482750425076349e-06,
+            4.0393336299751465e-05,
+            1.7808701354377443,
+            0.012712559359367277,
+            1.4586783662712966e-05,
+            2.2069440393975595e-05
+          ],
+          "band_distribution": [
+            2.499213820138645e-06,
+            2.2520009982515924e-05,
+            0.9928670642605287,
+            0.007087480012836642,
+            8.132393701262983e-06,
+            1.2304109130592625e-05
+          ],
+          "rms_dbfs": -59.10720179970276,
+          "crest_db": 19.675077805597336,
+          "mono_fold_db": -0.6717790758165431,
+          "active_bands": [
+            false,
+            false,
+            true,
+            true,
+            false,
+            false
+          ]
+        }
+      }
+    ],
+    "backing_vocals": [],
+    "woodwinds": [
+      {
+        "time_seconds": 244.5,
+        "intended_azimuth_deg": -78.0,
+        "intended_elevation_deg": 28.0,
+        "estimated": {
+          "azimuth_deg": -120,
+          "elevation_deg": -20,
+          "front_rear": "rear",
+          "elevation_band": "low",
+          "confidence": 0.05550856567055633,
+          "coverage": 0.3333333333333333,
+          "feature_distance": 0.5933575642789272,
+          "alternatives": [
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": -20,
+              "distance": 0.5933575642789272
+            },
+            {
+              "azimuth_deg": -90,
+              "elevation_deg": -45,
+              "distance": 0.7119086481148951
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 0,
+              "distance": 0.7465742744810145
+            }
+          ]
+        },
+        "confidence_with_native_stereo_caution": 0.05463281986930198,
+        "distance_from_intended_features": 0.900311770921543,
+        "features": {
+          "vector": [
+            0.7301191776781661,
+            2.9803582491549028,
+            11.38296387789811,
+            14.652766699248625,
+            15.907202334080404,
+            16.695269292802337,
+            0.9122331467751337,
+            -0.20942875835622368,
+            -0.9476739997640763,
+            0.8890615408573544,
+            0.9683857632575505,
+            -0.9999903912406083,
+            0.4096714365497519,
+            0.9778239080598154,
+            -0.31923970644510613,
+            -0.45778769814002934,
+            0.24945743829377234,
+            -0.0043837685220836,
+            -271.1472195575971,
+            4.1216622052129175,
+            -10.670489475467004,
+            -8.420250403990268,
+            -0.017644775247061747,
+            3.252158046103454,
+            4.5065936809352305,
+            5.294660639657166
+          ],
+          "ild_global_db": 11.356922993785757,
+          "ild_band_db": [
+            0.7301191776781661,
+            2.9803582491549028,
+            11.38296387789811,
+            14.652766699248625,
+            15.907202334080404,
+            16.695269292802337
+          ],
+          "itd_us": -271.1472195575971,
+          "itd_definition": "GCC-PHAT L*conj(R), positive lag means left delayed; +/-1ms search, parabolic interpolation",
+          "cross_correlation_lr": -0.8765065119676619,
+          "coherence_by_band": [
+            0.9967677785873352,
+            0.975692578117866,
+            0.969593821511606,
+            0.916656472925066,
+            0.9194071804492706,
+            0.9887377131220346
+          ],
+          "phase_relationship_rad": [
+            0.42209385818044465,
+            1.7817870531203786,
+            -2.8166655481296154,
+            -0.4755052434838158,
+            0.25211994032320845,
+            -3.1372088710267967
+          ],
+          "spectral_difference_lr_db": [
+            -10.670489475467004,
+            -8.420250403990268,
+            -0.017644775247061747,
+            3.252158046103454,
+            4.5065936809352305,
+            5.294660639657166
+          ],
+          "energy_centroid_hz_lr": [
+            1073.527173452855,
+            1036.6955192662006
+          ],
+          "interaural_spectral_contrast_db": [
+            -10.670489475467004,
+            -8.420250403990268,
+            -0.017644775247061747,
+            3.252158046103454,
+            4.5065936809352305,
+            5.294660639657166
+          ],
+          "side_mid_db": 4.1216622052129175,
+          "binaural_difference_rms_dbfs": -26.771257388272,
+          "objective_width": 0.7209236416343137,
+          "band_energy": [
+            0.0004782236191162953,
+            0.008678545995233763,
+            1171.2523992828949,
+            8.672118262507183,
+            0.07556641643559125,
+            0.0268987690876425
+          ],
+          "band_distribution": [
+            4.052618416574153e-07,
+            7.35447475270294e-06,
+            0.9925563803314003,
+            0.007349027688404299,
+            6.40373747091978e-05,
+            2.279486889192024e-05
+          ],
+          "rms_dbfs": -31.37074997963329,
+          "crest_db": 13.670989127263063,
+          "mono_fold_db": -5.5427695271312505,
+          "active_bands": [
+            false,
+            false,
+            true,
+            true,
+            false,
+            false
+          ]
+        }
+      },
+      {
+        "time_seconds": 245.5,
+        "intended_azimuth_deg": -78.0,
+        "intended_elevation_deg": 28.0,
+        "estimated": {
+          "azimuth_deg": -60,
+          "elevation_deg": 0,
+          "front_rear": "front",
+          "elevation_band": "ear",
+          "confidence": 0.04514529250714412,
+          "coverage": 0.3333333333333333,
+          "feature_distance": 0.5996564016945003,
+          "alternatives": [
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 0,
+              "distance": 0.5996564016945003
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": 20,
+              "distance": 0.6935939002134173
+            },
+            {
+              "azimuth_deg": -90,
+              "elevation_deg": 60,
+              "distance": 0.7090525760383378
+            }
+          ]
+        },
+        "confidence_with_native_stereo_caution": 0.0357274840544402,
+        "distance_from_intended_features": 0.9364980370784953,
+        "features": {
+          "vector": [
+            0.8957258597312429,
+            2.9674075454775037,
+            9.767639582523813,
+            10.920113161198701,
+            15.411033314211195,
+            16.93809286459212,
+            0.9049140425498902,
+            -0.17311903811428236,
+            -0.9162824583519901,
+            0.9342824256707729,
+            0.8645912220586552,
+            -0.9996421334991779,
+            0.4255943791875258,
+            0.9849009080320648,
+            -0.40053271591273726,
+            -0.3565337979529243,
+            0.502475888714196,
+            -0.02675079313239081,
+            -333.34161879138816,
+            3.134706752335309,
+            -8.88627079431483,
+            -6.814589108568567,
+            -0.014357071522259035,
+            1.138116507152628,
+            5.629036660165124,
+            7.156096210546049
+          ],
+          "ild_global_db": 9.823262112928608,
+          "ild_band_db": [
+            0.8957258597312429,
+            2.9674075454775037,
+            9.767639582523813,
+            10.920113161198701,
+            15.411033314211195,
+            16.93809286459212
+          ],
+          "itd_us": -333.34161879138816,
+          "itd_definition": "GCC-PHAT L*conj(R), positive lag means left delayed; +/-1ms search, parabolic interpolation",
+          "cross_correlation_lr": -0.5918926410726884,
+          "coherence_by_band": [
+            0.9907087572666655,
+            0.9152578274231172,
+            0.483215773268286,
+            0.5565265207144758,
+            0.42171264630772004,
+            0.7068275199865591
+          ],
+          "phase_relationship_rad": [
+            0.4396186192033249,
+            1.7447919750351688,
+            -2.7294944930350886,
+            -0.3645552396260883,
+            0.5264600528887948,
+            -3.1148386689296306
+          ],
+          "spectral_difference_lr_db": [
+            -8.88627079431483,
+            -6.814589108568567,
+            -0.014357071522259035,
+            1.138116507152628,
+            5.629036660165124,
+            7.156096210546049
+          ],
+          "energy_centroid_hz_lr": [
+            1149.7931712950494,
+            1124.2311087418298
+          ],
+          "interaural_spectral_contrast_db": [
+            -8.88627079431483,
+            -6.814589108568567,
+            -0.014357071522259035,
+            1.138116507152628,
+            5.629036660165124,
+            7.156096210546049
+          ],
+          "side_mid_db": 3.134706752335309,
+          "binaural_difference_rms_dbfs": -36.29725114631819,
+          "objective_width": 0.6730017044775477,
+          "band_energy": [
+            0.00015716985684612218,
+            0.00667916582259475,
+            138.04128868840468,
+            2.0162778467622995,
+            0.0017088106113392024,
+            0.00010902860698152789
+          ],
+          "band_distribution": [
+            1.12211107038764e-06,
+            4.768577169238068e-05,
+            0.9855430380616061,
+            0.014395175628647597,
+            1.2200019409936234e-05,
+            7.784075734235429e-07
+          ],
+          "rms_dbfs": -40.598012701009296,
+          "crest_db": 14.545543255633422,
+          "mono_fold_db": -4.854545110923831,
+          "active_bands": [
+            false,
+            false,
+            true,
+            true,
+            false,
+            false
+          ]
+        }
+      },
+      {
+        "time_seconds": 246.5,
+        "intended_azimuth_deg": -78.0,
+        "intended_elevation_deg": 28.0,
+        "estimated": {
+          "azimuth_deg": -60,
+          "elevation_deg": 0,
+          "front_rear": "front",
+          "elevation_band": "ear",
+          "confidence": 0.031445247836765985,
+          "coverage": 0.3333333333333333,
+          "feature_distance": 0.5818635780653864,
+          "alternatives": [
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 0,
+              "distance": 0.5818635780653864
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": 20,
+              "distance": 0.6424716156080325
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 20,
+              "distance": 0.7342208545899819
+            }
+          ]
+        },
+        "confidence_with_native_stereo_caution": 0.02509555744538974,
+        "distance_from_intended_features": 1.0534664064448436,
+        "features": {
+          "vector": [
+            0.7324400669736976,
+            2.6505825067444997,
+            9.835872353474485,
+            10.043762841807748,
+            18.092468955501005,
+            15.978517765303158,
+            0.909208262535068,
+            -0.14078576728513184,
+            -0.8730130652390025,
+            0.8137799012386737,
+            0.4851629888580085,
+            -0.5605657134572948,
+            0.416341608943861,
+            0.9900400839006149,
+            -0.4876968196759143,
+            -0.5811731861846127,
+            0.874423738379948,
+            -0.8281099449325036,
+            -333.20683434198907,
+            2.8137575629450122,
+            -9.10383943045346,
+            -7.185696990682659,
+            -0.00040714395267222773,
+            0.20748334438059193,
+            8.25618945807385,
+            6.142238267876
+          ],
+          "ild_global_db": 10.129068363025118,
+          "ild_band_db": [
+            0.7324400669736976,
+            2.6505825067444997,
+            9.835872353474485,
+            10.043762841807748,
+            18.092468955501005,
+            15.978517765303158
+          ],
+          "itd_us": -333.20683434198907,
+          "itd_definition": "GCC-PHAT L*conj(R), positive lag means left delayed; +/-1ms search, parabolic interpolation",
+          "cross_correlation_lr": -0.5511888960358315,
+          "coherence_by_band": [
+            0.9953506031815176,
+            0.9528062519523819,
+            0.4626819649545269,
+            0.4080108063192897,
+            0.3373886293269525,
+            0.6979272775752929
+          ],
+          "phase_relationship_rad": [
+            0.4294178846833664,
+            1.7120513689990469,
+            -2.632143047530312,
+            -0.620169600268148,
+            1.064246773014045,
+            -2.165865107073412
+          ],
+          "spectral_difference_lr_db": [
+            -9.10383943045346,
+            -7.185696990682659,
+            -0.00040714395267222773,
+            0.20748334438059193,
+            8.25618945807385,
+            6.142238267876
+          ],
+          "energy_centroid_hz_lr": [
+            1147.9189300905282,
+            1134.6802741100157
+          ],
+          "interaural_spectral_contrast_db": [
+            -9.10383943045346,
+            -7.185696990682659,
+            -0.00040714395267222773,
+            0.20748334438059193,
+            8.25618945807385,
+            6.142238267876
+          ],
+          "side_mid_db": 2.8137575629450122,
+          "binaural_difference_rms_dbfs": -46.982298695030096,
+          "objective_width": 0.6565351873458701,
+          "band_energy": [
+            4.88065605387322e-05,
+            0.0012645862586893564,
+            11.352245496452491,
+            0.10870050824732824,
+            8.246321571421868e-05,
+            2.3525649049134292e-05
+          ],
+          "band_distribution": [
+            4.257983312651131e-06,
+            0.0001103250695699828,
+            0.9903929174983264,
+            0.00948325276530218,
+            7.19425816002839e-06,
+            2.0524253289884222e-06
+          ],
+          "rms_dbfs": -51.175478681195656,
+          "crest_db": 17.274329222671657,
+          "mono_fold_db": -4.641177490059074,
+          "active_bands": [
+            false,
+            false,
+            true,
+            true,
+            false,
+            false
+          ]
+        }
+      }
+    ],
+    "drums": [
+      {
+        "time_seconds": 242.5,
+        "intended_azimuth_deg": 22.0,
+        "intended_elevation_deg": -18.0,
+        "estimated": {
+          "azimuth_deg": 180,
+          "elevation_deg": 20,
+          "front_rear": "rear",
+          "elevation_band": "high",
+          "confidence": 0.058490535271359195,
+          "coverage": 0.6666666666666666,
+          "feature_distance": 0.7018654608139037,
+          "alternatives": [
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": 20,
+              "distance": 0.7018654608139037
+            },
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": -20,
+              "distance": 0.7693664434606573
+            },
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": 0,
+              "distance": 0.7712784494408838
+            }
+          ]
+        },
+        "confidence_with_native_stereo_caution": 0.05559061936192473,
+        "distance_from_intended_features": 1.1594276480933197,
+        "features": {
+          "vector": [
+            -0.8519861351468649,
+            -0.8031324573975346,
+            -2.3120634745693556,
+            -5.0845842572438436,
+            -2.6539112095512003,
+            -0.8528371225337519,
+            0.9913816674377828,
+            0.9303872062610186,
+            0.28208614504293655,
+            0.8464715641641194,
+            -0.6328157730482313,
+            -0.415103696113349,
+            -0.13100530320670778,
+            -0.36657829508280604,
+            0.9593890799747594,
+            0.532433931170384,
+            0.7743023940175888,
+            -0.9097741046397377,
+            -43.37929988287144,
+            -18.47565034798302,
+            -0.05104727864803106,
+            -0.0021936008987009357,
+            -1.5111246180705225,
+            -4.28364540074501,
+            -1.8529723530523659,
+            -0.05189826603491812
+          ],
+          "ild_global_db": -0.7616567440750728,
+          "ild_band_db": [
+            -0.8519861351468649,
+            -0.8031324573975346,
+            -2.3120634745693556,
+            -5.0845842572438436,
+            -2.6539112095512003,
+            -0.8528371225337519
+          ],
+          "itd_us": -43.37929988287144,
+          "itd_definition": "GCC-PHAT L*conj(R), positive lag means left delayed; +/-1ms search, parabolic interpolation",
+          "cross_correlation_lr": 0.9757295660015444,
+          "coherence_by_band": [
+            0.9698963682869349,
+            0.4953647856726873,
+            0.5748289685397704,
+            0.6072966571883316,
+            0.5122771304472811,
+            0.7282564849033102
+          ],
+          "phase_relationship_rad": [
+            -0.131382954507974,
+            -0.3753286225415618,
+            1.2848284590263659,
+            0.5614733581776487,
+            2.2559806872972454,
+            -1.998853106871932
+          ],
+          "spectral_difference_lr_db": [
+            -0.05104727864803106,
+            -0.0021936008987009357,
+            -1.5111246180705225,
+            -4.28364540074501,
+            -1.8529723530523659,
+            -0.05189826603491812
+          ],
+          "energy_centroid_hz_lr": [
+            61.130158613556254,
+            75.5212490532593
+          ],
+          "interaural_spectral_contrast_db": [
+            -0.05104727864803106,
+            -0.0021936008987009357,
+            -1.5111246180705225,
+            -4.28364540074501,
+            -1.8529723530523659,
+            -0.05189826603491812
+          ],
+          "side_mid_db": -18.47565034798302,
+          "binaural_difference_rms_dbfs": -50.38399729336824,
+          "objective_width": 0.014005844677450023,
+          "band_energy": [
+            23.972336323696517,
+            3.3413312396546258,
+            3.2660536312553887,
+            0.7463089459085747,
+            0.002244173253120914,
+            0.00030078414398254633
+          ],
+          "band_distribution": [
+            0.7651907643030365,
+            0.10665442744241815,
+            0.10425158568648225,
+            0.023821988187337318,
+            7.163342878209835e-05,
+            9.600951943792398e-06
+          ],
+          "rms_dbfs": -37.867690264479705,
+          "crest_db": 15.573705801995308,
+          "mono_fold_db": -0.061256594185131255,
+          "active_bands": [
+            true,
+            true,
+            true,
+            true,
+            false,
+            false
+          ]
+        }
+      }
+    ],
+    "bass": [
+      {
+        "time_seconds": 242.5,
+        "intended_azimuth_deg": 0.0,
+        "intended_elevation_deg": -42.0,
+        "estimated": {
+          "azimuth_deg": 180,
+          "elevation_deg": -45,
+          "front_rear": "rear",
+          "elevation_band": "low",
+          "confidence": 0.06494456723331045,
+          "coverage": 0.5,
+          "feature_distance": 0.8965431017155459,
+          "alternatives": [
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": -45,
+              "distance": 0.8965431017155459
+            },
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": 0,
+              "distance": 1.0303780095493507
+            },
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": 20,
+              "distance": 1.0974773836402647
+            }
+          ]
+        },
+        "confidence_with_native_stereo_caution": 0.06492948673760458,
+        "distance_from_intended_features": 1.4266881991527678,
+        "features": {
+          "vector": [
+            -0.056898607962239174,
+            -0.15018194842463656,
+            -0.487449566394884,
+            0.19400172809319463,
+            -5.79698293978708,
+            -3.38074944055413,
+            0.9999803645126633,
+            0.9998423106841635,
+            0.9984700456667419,
+            0.9098801144838713,
+            0.996558752158885,
+            -0.8368935116704104,
+            -0.006266625018385074,
+            -0.01775820277372475,
+            -0.05529527924022327,
+            0.4148712779487358,
+            0.08288940520673292,
+            -0.5473657370752838,
+            -38.55138244009466,
+            -41.534873222506725,
+            0.0035425863393725283,
+            -0.08974075412302535,
+            -0.42700837209327147,
+            0.2544429223948059,
+            -5.736541745485468,
+            -3.3203082462525177
+          ],
+          "ild_global_db": -0.060227725615602655,
+          "ild_band_db": [
+            -0.056898607962239174,
+            -0.15018194842463656,
+            -0.487449566394884,
+            0.19400172809319463,
+            -5.79698293978708,
+            -3.38074944055413
+          ],
+          "itd_us": -38.55138244009466,
+          "itd_definition": "GCC-PHAT L*conj(R), positive lag means left delayed; +/-1ms search, parabolic interpolation",
+          "cross_correlation_lr": 0.9998835861573253,
+          "coherence_by_band": [
+            0.9999475584699558,
+            0.9989828165078191,
+            0.9077526555654104,
+            0.5625854591231201,
+            0.76717986245011,
+            0.8314479145991326
+          ],
+          "phase_relationship_rad": [
+            -0.006266666034785956,
+            -0.01775913625888723,
+            -0.055323496259973175,
+            0.42780132696851975,
+            0.0829846172745328,
+            -2.562379335705358
+          ],
+          "spectral_difference_lr_db": [
+            0.0035425863393725283,
+            -0.08974075412302535,
+            -0.42700837209327147,
+            0.2544429223948059,
+            -5.736541745485468,
+            -3.3203082462525177
+          ],
+          "energy_centroid_hz_lr": [
+            44.98922417525541,
+            45.10461952144108
+          ],
+          "interaural_spectral_contrast_db": [
+            0.0035425863393725283,
+            -0.08974075412302535,
+            -0.42700837209327147,
+            0.2544429223948059,
+            -5.736541745485468,
+            -3.3203082462525177
+          ],
+          "side_mid_db": -41.534873222506725,
+          "binaural_difference_rms_dbfs": -58.82336390599647,
+          "objective_width": 7.022345274268839e-05,
+          "band_energy": [
+            797.5489466341583,
+            128.48661057705766,
+            4.867544435366523,
+            0.5699574905648199,
+            0.005397393177971115,
+            0.005209076699789126
+          ],
+          "band_distribution": [
+            0.8562135613128709,
+            0.13793758851726734,
+            0.005225582170777481,
+            0.000611881358320323,
+            5.794404536824343e-06,
+            5.5922362271317964e-06
+          ],
+          "rms_dbfs": -23.308785609480353,
+          "crest_db": 5.688171083834686,
+          "mono_fold_db": -0.0003049872890196685,
+          "active_bands": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ]
+        }
+      },
+      {
+        "time_seconds": 243.5,
+        "intended_azimuth_deg": 0.0,
+        "intended_elevation_deg": -42.0,
+        "estimated": {
+          "azimuth_deg": 180,
+          "elevation_deg": -45,
+          "front_rear": "rear",
+          "elevation_band": "low",
+          "confidence": 0.0712244638302551,
+          "coverage": 0.5,
+          "feature_distance": 0.8124235829592195,
+          "alternatives": [
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": -45,
+              "distance": 0.8124235829592195
+            },
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": 0,
+              "distance": 0.9473763244710804
+            },
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": 20,
+              "distance": 1.014278080638707
+            }
+          ]
+        },
+        "confidence_with_native_stereo_caution": 0.07121456233564954,
+        "distance_from_intended_features": 1.3430676468251357,
+        "features": {
+          "vector": [
+            -0.05128758838101984,
+            -0.3931226223547847,
+            -0.3719170224701692,
+            -0.02814601512737432,
+            -6.198765848544479,
+            -3.4962595346689302,
+            0.9999788819282615,
+            0.999707276535661,
+            0.9993368624717126,
+            0.9320130065827721,
+            0.9949650801028366,
+            -0.8261743148362841,
+            -0.006498899714887436,
+            -0.024194239844462766,
+            -0.03641202143789111,
+            0.36242482746156,
+            -0.100222200015545,
+            -0.5634145911358672,
+            -38.369578138074395,
+            -39.75965793559582,
+            0.008894292172350556,
+            -0.3329407418014142,
+            -0.3117351419167986,
+            0.03203586542599667,
+            -6.138583967991108,
+            -3.43607765411556
+          ],
+          "ild_global_db": -0.060370030407355044,
+          "ild_band_db": [
+            -0.05128758838101984,
+            -0.3931226223547847,
+            -0.3719170224701692,
+            -0.02814601512737432,
+            -6.198765848544479,
+            -3.4962595346689302
+          ],
+          "itd_us": -38.369578138074395,
+          "itd_definition": "GCC-PHAT L*conj(R), positive lag means left delayed; +/-1ms search, parabolic interpolation",
+          "cross_correlation_lr": 0.9998127863291412,
+          "coherence_by_band": [
+            0.9999883459503249,
+            0.997672782041296,
+            0.8253252646747367,
+            0.6038973488028663,
+            0.9264502788975907,
+            0.9455026845008427
+          ],
+          "phase_relationship_rad": [
+            -0.006498945463350685,
+            -0.024196600861483217,
+            -0.03642007229942837,
+            0.37086829150567435,
+            -0.10039074308778657,
+            -2.543079634698176
+          ],
+          "spectral_difference_lr_db": [
+            0.008894292172350556,
+            -0.3329407418014142,
+            -0.3117351419167986,
+            0.03203586542599667,
+            -6.138583967991108,
+            -3.43607765411556
+          ],
+          "energy_centroid_hz_lr": [
+            46.80329330340064,
+            47.13489876677455
+          ],
+          "interaural_spectral_contrast_db": [
+            0.008894292172350556,
+            -0.3329407418014142,
+            -0.3117351419167986,
+            0.03203586542599667,
+            -6.138583967991108,
+            -3.43607765411556
+          ],
+          "side_mid_db": -39.75965793559582,
+          "binaural_difference_rms_dbfs": -57.292692409550064,
+          "objective_width": 0.00010567890587477305,
+          "band_energy": [
+            909.1266746530146,
+            147.88125032039267,
+            3.1405270863801658,
+            0.5144274287214676,
+            0.0051310336142148215,
+            0.004627898277150872
+          ],
+          "band_distribution": [
+            0.8571227744753795,
+            0.13942214116187993,
+            0.0029608825311617116,
+            0.00048500113049731845,
+            4.837528025476531e-06,
+            4.363173055960922e-06
+          ],
+          "rms_dbfs": -23.55317540532434,
+          "crest_db": 5.524612737568797,
+          "mono_fold_db": -0.00045898190952984046,
+          "active_bands": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ]
+        }
+      },
+      {
+        "time_seconds": 244.5,
+        "intended_azimuth_deg": 0.0,
+        "intended_elevation_deg": -42.0,
+        "estimated": {
+          "azimuth_deg": 180,
+          "elevation_deg": -45,
+          "front_rear": "rear",
+          "elevation_band": "low",
+          "confidence": 0.06823817826831512,
+          "coverage": 0.5,
+          "feature_distance": 0.8434482188823451,
+          "alternatives": [
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": -45,
+              "distance": 0.8434482188823451
+            },
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": 0,
+              "distance": 0.9767517372187896
+            },
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": 20,
+              "distance": 1.0441162834248658
+            }
+          ]
+        },
+        "confidence_with_native_stereo_caution": 0.06822672993067981,
+        "distance_from_intended_features": 1.3773164236674023,
+        "features": {
+          "vector": [
+            -0.06664347525657145,
+            -0.4051939926844609,
+            -0.12613716564605193,
+            -0.12403203506990616,
+            -4.687535686545264,
+            -3.802661592402906,
+            0.9999874246807036,
+            0.999831402351006,
+            0.9994049362426444,
+            0.9522055681685724,
+            0.9825928480999832,
+            -0.8241346522100954,
+            -0.005015025468948732,
+            -0.018362104259063646,
+            -0.03449309226259716,
+            0.3054579446483038,
+            0.18577215847043238,
+            -0.5663939221306538,
+            -37.89356209134692,
+            -40.40927499817531,
+            -0.005225555997600134,
+            -0.3437760734254893,
+            -0.0647192463870793,
+            -0.06261411581093454,
+            -4.626117767286292,
+            -3.7412436731439342
+          ],
+          "ild_global_db": -0.06133719971468617,
+          "ild_band_db": [
+            -0.06664347525657145,
+            -0.4051939926844609,
+            -0.12613716564605193,
+            -0.12403203506990616,
+            -4.687535686545264,
+            -3.802661592402906
+          ],
+          "itd_us": -37.89356209134692,
+          "itd_definition": "GCC-PHAT L*conj(R), positive lag means left delayed; +/-1ms search, parabolic interpolation",
+          "cross_correlation_lr": 0.9998429295114749,
+          "coherence_by_band": [
+            0.999972139354395,
+            0.9946156038504945,
+            0.8353431644654962,
+            0.7083237208641475,
+            0.943711274343329,
+            0.9618998416754333
+          ],
+          "phase_relationship_rad": [
+            -0.005015046490903325,
+            -0.018363136264531014,
+            -0.03449993575457868,
+            0.31041932264980104,
+            0.18685764170937655,
+            -2.5394690044252157
+          ],
+          "spectral_difference_lr_db": [
+            -0.005225555997600134,
+            -0.3437760734254893,
+            -0.0647192463870793,
+            -0.06261411581093454,
+            -4.626117767286292,
+            -3.7412436731439342
+          ],
+          "energy_centroid_hz_lr": [
+            45.30934360065497,
+            45.622299037096695
+          ],
+          "interaural_spectral_contrast_db": [
+            -0.005225555997600134,
+            -0.3437760734254893,
+            -0.0647192463870793,
+            -0.06261411581093454,
+            -4.626117767286292,
+            -3.7412436731439342
+          ],
+          "side_mid_db": -40.40927499817531,
+          "binaural_difference_rms_dbfs": -58.83549944690104,
+          "objective_width": 9.099823699402481e-05,
+          "band_energy": [
+            675.8033272204029,
+            104.82049152291933,
+            2.26302150581338,
+            0.25550468663607795,
+            0.0036303806617708754,
+            0.003287883767259288
+          ],
+          "band_distribution": [
+            0.8629304258792918,
+            0.13384484471656008,
+            0.002889642641769135,
+            0.00032625285962985305,
+            4.635617796454238e-06,
+            4.198284952505647e-06
+          ],
+          "rms_dbfs": -24.446429143701103,
+          "crest_db": 5.926145488770139,
+          "mono_fold_db": -0.0003952183042517249,
+          "active_bands": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ]
+        }
+      },
+      {
+        "time_seconds": 245.5,
+        "intended_azimuth_deg": 0.0,
+        "intended_elevation_deg": -42.0,
+        "estimated": {
+          "azimuth_deg": 180,
+          "elevation_deg": -45,
+          "front_rear": "rear",
+          "elevation_band": "low",
+          "confidence": 0.06036416972286142,
+          "coverage": 0.5,
+          "feature_distance": 0.9598363727439754,
+          "alternatives": [
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": -45,
+              "distance": 0.9598363727439754
+            },
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": 0,
+              "distance": 1.091626644874363
+            },
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": 20,
+              "distance": 1.1592816549719702
+            }
+          ]
+        },
+        "confidence_with_native_stereo_caution": 0.0603581586793974,
+        "distance_from_intended_features": 1.4941174937303308,
+        "features": {
+          "vector": [
+            -0.09459824306753796,
+            -0.22790319618291963,
+            -0.0853601293620263,
+            -0.5757458927697972,
+            -5.823486590538327,
+            -2.875755193568592,
+            0.9999466760905356,
+            0.9992767456176875,
+            0.9975688850959836,
+            0.9116630426271503,
+            0.974516541074554,
+            -0.7424998720366683,
+            -0.010326905416901967,
+            -0.03802611823107069,
+            -0.06968729789822713,
+            0.4109385558788648,
+            -0.2243156507515405,
+            -0.6698462062485172,
+            -39.86306799063533,
+            -42.850124643790636,
+            -0.034542673803327525,
+            -0.16784762691870903,
+            -0.02530456009781532,
+            -0.5156903235055864,
+            -5.763431021274117,
+            -2.815699624304382
+          ],
+          "ild_global_db": -0.0600778153835522,
+          "ild_band_db": [
+            -0.09459824306753796,
+            -0.22790319618291963,
+            -0.0853601293620263,
+            -0.5757458927697972,
+            -5.823486590538327,
+            -2.875755193568592
+          ],
+          "itd_us": -39.86306799063533,
+          "itd_definition": "GCC-PHAT L*conj(R), positive lag means left delayed; +/-1ms search, parabolic interpolation",
+          "cross_correlation_lr": 0.999920165378438,
+          "coherence_by_band": [
+            0.9999285199460919,
+            0.9975167333891317,
+            0.9246200150069576,
+            0.5438480923488339,
+            0.6301433388241562,
+            0.5358065374638264
+          ],
+          "phase_relationship_rad": [
+            -0.01032708897780708,
+            -0.03803528840295664,
+            -0.06974382548158167,
+            0.42348332226575386,
+            -0.22624073447791707,
+            -2.40759101516119
+          ],
+          "spectral_difference_lr_db": [
+            -0.034542673803327525,
+            -0.16784762691870903,
+            -0.02530456009781532,
+            -0.5156903235055864,
+            -5.763431021274117,
+            -2.815699624304382
+          ],
+          "energy_centroid_hz_lr": [
+            42.77491695342826,
+            42.945527712908344
+          ],
+          "interaural_spectral_contrast_db": [
+            -0.034542673803327525,
+            -0.16784762691870903,
+            -0.02530456009781532,
+            -0.5156903235055864,
+            -5.763431021274117,
+            -2.815699624304382
+          ],
+          "side_mid_db": -42.850124643790636,
+          "binaural_difference_rms_dbfs": -63.8293255114413,
+          "objective_width": 5.1875823702233185e-05,
+          "band_energy": [
+            276.3093868911178,
+            46.44015760965557,
+            1.4783777821170445,
+            0.04632658969516762,
+            0.0004431871791432606,
+            0.0002831933636864323
+          ],
+          "band_distribution": [
+            0.8520835956441943,
+            0.14321227709108442,
+            0.004559025194475847,
+            0.00014286205606524267,
+            1.3667017592008435e-06,
+            8.733124209334134e-07
+          ],
+          "rms_dbfs": -26.99957548124665,
+          "crest_db": 6.431694642601935,
+          "mono_fold_db": -0.0002252996836335856,
+          "active_bands": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ]
+        }
+      },
+      {
+        "time_seconds": 246.5,
+        "intended_azimuth_deg": 0.0,
+        "intended_elevation_deg": -42.0,
+        "estimated": {
+          "azimuth_deg": 180,
+          "elevation_deg": -45,
+          "front_rear": "rear",
+          "elevation_band": "low",
+          "confidence": 0.058346355087105436,
+          "coverage": 0.5,
+          "feature_distance": 0.9905629898260758,
+          "alternatives": [
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": -45,
+              "distance": 0.9905629898260758
+            },
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": 0,
+              "distance": 1.1214251271733988
+            },
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": 20,
+              "distance": 1.1871658357587977
+            }
+          ]
+        },
+        "confidence_with_native_stereo_caution": 0.05834130223096454,
+        "distance_from_intended_features": 1.5147780413757292,
+        "features": {
+          "vector": [
+            -0.07327419997920319,
+            -0.2444487172232785,
+            -0.5064403269484095,
+            -1.0335870917079886,
+            -4.4595727288815095,
+            -2.2587258055228734,
+            0.9999453881387179,
+            0.9995280387310069,
+            0.9999914936238908,
+            0.6677102557665237,
+            0.2945615365957511,
+            -0.37459718437039574,
+            -0.010450872696033219,
+            -0.03071969711027125,
+            -0.004124642997862896,
+            0.7444212613461572,
+            0.9556325136569758,
+            -0.9271876560124017,
+            248.91369003303808,
+            -42.914360317553644,
+            -0.014475697804574679,
+            -0.1856502150486506,
+            -0.44764182477378095,
+            -0.9747885895333606,
+            -4.40077422670688,
+            -2.1999273033482445
+          ],
+          "ild_global_db": -0.05866886547151777,
+          "ild_band_db": [
+            -0.07327419997920319,
+            -0.2444487172232785,
+            -0.5064403269484095,
+            -1.0335870917079886,
+            -4.4595727288815095,
+            -2.2587258055228734
+          ],
+          "itd_us": 248.91369003303808,
+          "itd_definition": "GCC-PHAT L*conj(R), positive lag means left delayed; +/-1ms search, parabolic interpolation",
+          "cross_correlation_lr": 0.9999205782591464,
+          "coherence_by_band": [
+            0.9999584798972332,
+            0.9985874939200299,
+            0.9416147654467147,
+            0.17110551632413773,
+            0.25497598628493623,
+            0.47196436174113204
+          ],
+          "phase_relationship_rad": [
+            -0.010451062947392535,
+            -0.030724530858564098,
+            -0.004124654693157575,
+            0.8396676706178151,
+            1.2717996606886122,
+            -1.9547586142719677
+          ],
+          "spectral_difference_lr_db": [
+            -0.014475697804574679,
+            -0.1856502150486506,
+            -0.44764182477378095,
+            -0.9747885895333606,
+            -4.40077422670688,
+            -2.1999273033482445
+          ],
+          "energy_centroid_hz_lr": [
+            43.342171507367034,
+            43.55864271599145
+          ],
+          "interaural_spectral_contrast_db": [
+            -0.014475697804574679,
+            -0.1856502150486506,
+            -0.44764182477378095,
+            -0.9747885895333606,
+            -4.40077422670688,
+            -2.1999273033482445
+          ],
+          "side_mid_db": -42.914360317553644,
+          "binaural_difference_rms_dbfs": -69.67551395668012,
+          "objective_width": 5.111422366963087e-05,
+          "band_energy": [
+            66.70418569539638,
+            14.596403370936816,
+            0.5627379857469348,
+            0.003444808434045016,
+            1.801107650601374e-05,
+            2.0609647266963757e-05
+          ],
+          "band_distribution": [
+            0.8147891105478392,
+            0.1782945162408885,
+            0.006873823255590272,
+            4.207820499901471e-05,
+            2.2000461970045213e-07,
+            2.517460634634964e-07
+          ],
+          "rms_dbfs": -32.7815315604797,
+          "crest_db": 8.354329298696477,
+          "mono_fold_db": -0.00022199192638469231,
+          "active_bands": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ]
+        }
+      }
+    ],
+    "guitar": [],
+    "keyboards": [
+      {
+        "time_seconds": 242.5,
+        "intended_azimuth_deg": 50.0,
+        "intended_elevation_deg": 30.0,
+        "estimated": {
+          "azimuth_deg": 90,
+          "elevation_deg": 45,
+          "front_rear": "lateral",
+          "elevation_band": "high",
+          "confidence": 0.08739819814404207,
+          "coverage": 0.6666666666666666,
+          "feature_distance": 0.6687611706081541,
+          "alternatives": [
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 45,
+              "distance": 0.6687611706081541
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": -20,
+              "distance": 0.7696617451706208
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 20,
+              "distance": 0.7898609111557675
+            }
+          ]
+        },
+        "confidence_with_native_stereo_caution": 0.07275954200336013,
+        "distance_from_intended_features": 0.9104984205192398,
+        "features": {
+          "vector": [
+            -0.6387496284725135,
+            -2.2367792734868606,
+            -5.0827202398951465,
+            -7.769530073196998,
+            -8.42274777317353,
+            -10.883553707945541,
+            0.9513950846741204,
+            0.4362362557596867,
+            -0.5574531481814102,
+            -0.6271648116098004,
+            0.9818306229879873,
+            0.1711394718992313,
+            -0.30797303917376156,
+            -0.8998321672182925,
+            -0.8302084000915883,
+            -0.7788865765170456,
+            0.18975939439991035,
+            -0.9852468123054509,
+            147.22396359282064,
+            -0.32987925517849265,
+            3.0195273219690186,
+            1.4214976769546726,
+            -1.4244432894536128,
+            -4.111253122755466,
+            -4.764470822731996,
+            -7.225276757504008
+          ],
+          "ild_global_db": -3.635564168058135,
+          "ild_band_db": [
+            -0.6387496284725135,
+            -2.2367792734868606,
+            -5.0827202398951465,
+            -7.769530073196998,
+            -8.42274777317353,
+            -10.883553707945541
+          ],
+          "itd_us": 147.22396359282064,
+          "itd_definition": "GCC-PHAT L*conj(R), positive lag means left delayed; +/-1ms search, parabolic interpolation",
+          "cross_correlation_lr": 0.04133465026986544,
+          "coherence_by_band": [
+            0.873329307140559,
+            0.9216245098869449,
+            0.6163671372972285,
+            0.778603816442897,
+            0.5567842717851189,
+            0.5961907270814922
+          ],
+          "phase_relationship_rad": [
+            -0.3130617813589979,
+            -1.1193846331105868,
+            -2.1621112299844447,
+            -2.2487041271213335,
+            0.19091708257095055,
+            -1.3988102390849717
+          ],
+          "spectral_difference_lr_db": [
+            3.0195273219690186,
+            1.4214976769546726,
+            -1.4244432894536128,
+            -4.111253122755466,
+            -4.764470822731996,
+            -7.225276757504008
+          ],
+          "energy_centroid_hz_lr": [
+            492.7354159661952,
+            609.8106028897893
+          ],
+          "interaural_spectral_contrast_db": [
+            3.0195273219690186,
+            1.4214976769546726,
+            -1.4244432894536128,
+            -4.111253122755466,
+            -4.764470822731996,
+            -7.225276757504008
+          ],
+          "side_mid_db": -0.32987925517849265,
+          "binaural_difference_rms_dbfs": -68.10138282519316,
+          "objective_width": 0.4810197483503423,
+          "band_energy": [
+            0.0015762810148128147,
+            0.058044830560841906,
+            0.0649284516135858,
+            0.0020663573679657685,
+            2.9181009758142916e-05,
+            6.120714333793839e-05
+          ],
+          "band_distribution": [
+            0.01244043040048446,
+            0.4581052920857628,
+            0.5124326663326316,
+            0.016308243756751117,
+            0.00023030431598209942,
+            0.0004830631083877648
+          ],
+          "rms_dbfs": -70.9436118062344,
+          "crest_db": 14.967766981996709,
+          "mono_fold_db": -2.848491677059884,
+          "active_bands": [
+            true,
+            true,
+            true,
+            true,
+            false,
+            false
+          ]
+        }
+      },
+      {
+        "time_seconds": 243.5,
+        "intended_azimuth_deg": 50.0,
+        "intended_elevation_deg": 30.0,
+        "estimated": {
+          "azimuth_deg": 90,
+          "elevation_deg": 45,
+          "front_rear": "lateral",
+          "elevation_band": "high",
+          "confidence": 0.058798437791274645,
+          "coverage": 0.6666666666666666,
+          "feature_distance": 0.7581101054492938,
+          "alternatives": [
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 45,
+              "distance": 0.7581101054492938
+            },
+            {
+              "azimuth_deg": 120,
+              "elevation_deg": -20,
+              "distance": 0.8314412778263496
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": -20,
+              "distance": 0.8348725830680558
+            }
+          ]
+        },
+        "confidence_with_native_stereo_caution": 0.051138064327153114,
+        "distance_from_intended_features": 0.9604606195881129,
+        "features": {
+          "vector": [
+            -1.1803685573183538,
+            -2.3890174053695454,
+            -5.515512081894687,
+            -7.889636390573239,
+            -8.490340721083237,
+            -10.76782695502734,
+            0.8805310343927656,
+            0.5093985136433218,
+            -0.5379643073720246,
+            -0.7065150708932959,
+            0.995242313609276,
+            0.14603152382766976,
+            -0.47398849930267956,
+            -0.8605307398913618,
+            -0.8429676174051633,
+            -0.707697996747653,
+            0.09743067895511964,
+            -0.9892799371505361,
+            147.04267561569952,
+            -1.9797155262389976,
+            2.123822396665809,
+            0.9151735486146167,
+            -2.2113211279105234,
+            -4.585445436589076,
+            -5.186149767099073,
+            -7.463636001043177
+          ],
+          "ild_global_db": -3.3479761566532034,
+          "ild_band_db": [
+            -1.1803685573183538,
+            -2.3890174053695454,
+            -5.515512081894687,
+            -7.889636390573239,
+            -8.490340721083237,
+            -10.76782695502734
+          ],
+          "itd_us": 147.04267561569952,
+          "itd_definition": "GCC-PHAT L*conj(R), positive lag means left delayed; +/-1ms search, parabolic interpolation",
+          "cross_correlation_lr": 0.24090822710562587,
+          "coherence_by_band": [
+            0.9652855986223342,
+            0.9422132827933478,
+            0.5579200026038741,
+            0.758207405807068,
+            0.5579364205615465,
+            0.5931119872377442
+          ],
+          "phase_relationship_rad": [
+            -0.4938149366682848,
+            -1.0363106526175907,
+            -2.138816658084075,
+            -2.3553580352015495,
+            0.09758548848105637,
+            -1.42424073267924
+          ],
+          "spectral_difference_lr_db": [
+            2.123822396665809,
+            0.9151735486146167,
+            -2.2113211279105234,
+            -4.585445436589076,
+            -5.186149767099073,
+            -7.463636001043177
+          ],
+          "energy_centroid_hz_lr": [
+            402.0506561909566,
+            523.2204969401322
+          ],
+          "interaural_spectral_contrast_db": [
+            2.123822396665809,
+            0.9151735486146167,
+            -2.2113211279105234,
+            -4.585445436589076,
+            -5.186149767099073,
+            -7.463636001043177
+          ],
+          "side_mid_db": -1.9797155262389976,
+          "binaural_difference_rms_dbfs": -67.2020315578755,
+          "objective_width": 0.3879716474157686,
+          "band_energy": [
+            0.009544930617274343,
+            0.11674024743568936,
+            0.06359001357432686,
+            0.001953885980405806,
+            2.75925845711213e-05,
+            5.329171220989993e-05
+          ],
+          "band_distribution": [
+            0.04973650415305331,
+            0.6083073868452772,
+            0.331353375006028,
+            0.01018126396887279,
+            0.00014377880281616346,
+            0.00027769122395233296
+          ],
+          "rms_dbfs": -69.11063136058192,
+          "crest_db": 15.20337956336656,
+          "mono_fold_db": -2.1322845843342115,
+          "active_bands": [
+            true,
+            true,
+            true,
+            true,
+            false,
+            false
+          ]
+        }
+      },
+      {
+        "time_seconds": 244.5,
+        "intended_azimuth_deg": 50.0,
+        "intended_elevation_deg": 30.0,
+        "estimated": {
+          "azimuth_deg": 90,
+          "elevation_deg": 45,
+          "front_rear": "lateral",
+          "elevation_band": "high",
+          "confidence": 0.05519699141031254,
+          "coverage": 0.6666666666666666,
+          "feature_distance": 0.7678572693791048,
+          "alternatives": [
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 45,
+              "distance": 0.7678572693791048
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": -20,
+              "distance": 0.8371712727015027
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 20,
+              "distance": 0.8474827740673067
+            }
+          ]
+        },
+        "confidence_with_native_stereo_caution": 0.04720924250512988,
+        "distance_from_intended_features": 0.9792043360429583,
+        "features": {
+          "vector": [
+            -0.9590807458430648,
+            -1.890485221430911,
+            -4.320299578856479,
+            -7.388025163405771,
+            -8.351207550980126,
+            -10.822545050364305,
+            0.8814523905114936,
+            0.44727729823282203,
+            -0.323504458119522,
+            -0.6504250076804159,
+            0.9778534263132459,
+            0.10612638450381576,
+            -0.4722728906697625,
+            -0.8943953367977424,
+            -0.9462266459875216,
+            -0.7595704769038426,
+            0.20929089002497323,
+            -0.9943526489692418,
+            147.13088003546594,
+            -1.4962546473255331,
+            1.8798659739322467,
+            0.9484614983444001,
+            -1.4813528590811673,
+            -4.549078443630461,
+            -5.5122608312048165,
+            -7.983598330588995
+          ],
+          "ild_global_db": -2.82944869023385,
+          "ild_band_db": [
+            -0.9590807458430648,
+            -1.890485221430911,
+            -4.320299578856479,
+            -7.388025163405771,
+            -8.351207550980126,
+            -10.822545050364305
+          ],
+          "itd_us": 147.13088003546594,
+          "itd_definition": "GCC-PHAT L*conj(R), positive lag means left delayed; +/-1ms search, parabolic interpolation",
+          "cross_correlation_lr": 0.1797095347630818,
+          "coherence_by_band": [
+            0.969417195789688,
+            0.91462434259868,
+            0.5260203268565143,
+            0.7637745988832643,
+            0.550609957290394,
+            0.6380636480539965
+          ],
+          "phase_relationship_rad": [
+            -0.4918675765892901,
+            -1.10707749470533,
+            -1.9002270945517137,
+            -2.278940166427851,
+            0.21084973340338903,
+            -1.4644697122613108
+          ],
+          "spectral_difference_lr_db": [
+            1.8798659739322467,
+            0.9484614983444001,
+            -1.4813528590811673,
+            -4.549078443630461,
+            -5.5122608312048165,
+            -7.983598330588995
+          ],
+          "energy_centroid_hz_lr": [
+            458.47554445268423,
+            581.2481911802155
+          ],
+          "interaural_spectral_contrast_db": [
+            1.8798659739322467,
+            0.9484614983444001,
+            -1.4813528590811673,
+            -4.549078443630461,
+            -5.5122608312048165,
+            -7.983598330588995
+          ],
+          "side_mid_db": -1.4962546473255331,
+          "binaural_difference_rms_dbfs": -68.15134270721873,
+          "objective_width": 0.4147106324196679,
+          "band_energy": [
+            0.0042744507992028835,
+            0.08078217880211822,
+            0.058088363872349,
+            0.0018441462279800644,
+            2.679322325423203e-05,
+            6.30685946142022e-05
+          ],
+          "band_distribution": [
+            0.029462918509456437,
+            0.5568151004351237,
+            0.40039125761789807,
+            0.012711324234830476,
+            0.00018468022921034046,
+            0.0004347189734809216
+          ],
+          "rms_dbfs": -70.34939432070225,
+          "crest_db": 13.148857694302114,
+          "mono_fold_db": -2.3262936524705786,
+          "active_bands": [
+            true,
+            true,
+            true,
+            true,
+            false,
+            false
+          ]
+        }
+      },
+      {
+        "time_seconds": 245.5,
+        "intended_azimuth_deg": 50.0,
+        "intended_elevation_deg": 30.0,
+        "estimated": {
+          "azimuth_deg": 90,
+          "elevation_deg": 45,
+          "front_rear": "lateral",
+          "elevation_band": "high",
+          "confidence": 0.023539560053821882,
+          "coverage": 0.6666666666666666,
+          "feature_distance": 0.8239910534786373,
+          "alternatives": [
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 45,
+              "distance": 0.8239910534786373
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": -20,
+              "distance": 0.8541505455723966
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 20,
+              "distance": 0.8655367624577917
+            }
+          ]
+        },
+        "confidence_with_native_stereo_caution": 0.01923840592314744,
+        "distance_from_intended_features": 1.0222676538457023,
+        "features": {
+          "vector": [
+            -1.0034619770396294,
+            -1.7041953977887117,
+            -4.214218363227264,
+            -7.412159460700489,
+            -8.405863144381184,
+            -11.635677318390595,
+            0.8238792840146354,
+            0.4472952681351135,
+            -0.32771143140788156,
+            -0.5702867480984825,
+            0.9931973382206504,
+            -0.008685583218881738,
+            -0.5667653177211286,
+            -0.8943863500210281,
+            -0.9447778668685023,
+            -0.8214456920230685,
+            0.11644332248529721,
+            -0.9999622796106601,
+            146.76564661460625,
+            -1.8859667001521156,
+            1.6374912343318275,
+            0.9367578135827442,
+            -1.5732651518558076,
+            -4.771206249329033,
+            -5.7649099330097275,
+            -8.99472410701914
+          ],
+          "ild_global_db": -2.678992099370796,
+          "ild_band_db": [
+            -1.0034619770396294,
+            -1.7041953977887117,
+            -4.214218363227264,
+            -7.412159460700489,
+            -8.405863144381184,
+            -11.635677318390595
+          ],
+          "itd_us": 146.76564661460625,
+          "itd_definition": "GCC-PHAT L*conj(R), positive lag means left delayed; +/-1ms search, parabolic interpolation",
+          "cross_correlation_lr": 0.22403000697129574,
+          "coherence_by_band": [
+            0.9889802711014541,
+            0.8981679979318322,
+            0.5939651656418683,
+            0.7844385613511847,
+            0.5589455914901276,
+            0.7164524004041327
+          ],
+          "phase_relationship_rad": [
+            -0.6025743681494403,
+            -1.1070574029273077,
+            -1.904676545961359,
+            -2.177651217092539,
+            0.11670808457346227,
+            -1.5794820192232863
+          ],
+          "spectral_difference_lr_db": [
+            1.6374912343318275,
+            0.9367578135827442,
+            -1.5732651518558076,
+            -4.771206249329033,
+            -5.7649099330097275,
+            -8.99472410701914
+          ],
+          "energy_centroid_hz_lr": [
+            422.7092083915034,
+            537.8172830511642
+          ],
+          "interaural_spectral_contrast_db": [
+            1.6374912343318275,
+            0.9367578135827442,
+            -1.5732651518558076,
+            -4.771206249329033,
+            -5.7649099330097275,
+            -8.99472410701914
+          ],
+          "side_mid_db": -1.8859667001521156,
+          "binaural_difference_rms_dbfs": -68.31399812443281,
+          "objective_width": 0.39310957143379865,
+          "band_energy": [
+            0.019919740086545845,
+            0.06389603714892021,
+            0.06235268548827533,
+            0.0010724542019312474,
+            1.783000447133791e-05,
+            4.585343615806504e-05
+          ],
+          "band_distribution": [
+            0.1352282280187548,
+            0.4337681035760598,
+            0.4232908227796215,
+            0.007280520766251547,
+            0.00012104173547194095,
+            0.00031128312384026967
+          ],
+          "rms_dbfs": -70.2797342192427,
+          "crest_db": 12.820234538524602,
+          "mono_fold_db": -2.1688971183176333,
+          "active_bands": [
+            true,
+            true,
+            true,
+            true,
+            false,
+            false
+          ]
+        }
+      },
+      {
+        "time_seconds": 246.5,
+        "intended_azimuth_deg": 50.0,
+        "intended_elevation_deg": 30.0,
+        "estimated": {
+          "azimuth_deg": 90,
+          "elevation_deg": 45,
+          "front_rear": "lateral",
+          "elevation_band": "high",
+          "confidence": 0.05373294039813493,
+          "coverage": 0.6666666666666666,
+          "feature_distance": 0.7904816570862235,
+          "alternatives": [
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 45,
+              "distance": 0.7904816570862235
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 20,
+              "distance": 0.8597793673372407
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": -20,
+              "distance": 0.8609993530490625
+            }
+          ]
+        },
+        "confidence_with_native_stereo_caution": 0.04639358137396049,
+        "distance_from_intended_features": 0.9701180725403233,
+        "features": {
+          "vector": [
+            -1.3557853972458722,
+            -2.0958758376726023,
+            -5.8688781032057316,
+            -7.515589446213369,
+            -8.390079871949705,
+            -11.802759249606357,
+            0.8487259204425635,
+            0.45583697411491436,
+            -0.41834855943338217,
+            -0.6404015363440829,
+            0.9988923986413688,
+            -0.20236547022312748,
+            -0.5288329717112233,
+            -0.8900632859689017,
+            -0.9082865642626307,
+            -0.7680402803552286,
+            0.04705290571784917,
+            -0.9793100716633995,
+            146.94806289326513,
+            -2.475964730097015,
+            1.7322509823199737,
+            0.992160541893244,
+            -2.7808417236398855,
+            -4.427553066647524,
+            -5.302043492383861,
+            -8.71472287004051
+          ],
+          "ild_global_db": -3.024264168085746,
+          "ild_band_db": [
+            -1.3557853972458722,
+            -2.0958758376726023,
+            -5.8688781032057316,
+            -7.515589446213369,
+            -8.390079871949705,
+            -11.802759249606357
+          ],
+          "itd_us": 146.94806289326513,
+          "itd_definition": "GCC-PHAT L*conj(R), positive lag means left delayed; +/-1ms search, parabolic interpolation",
+          "cross_correlation_lr": 0.2945732074647207,
+          "coherence_by_band": [
+            0.9954736067776188,
+            0.9320309423417,
+            0.6705250072536716,
+            0.7915817386846953,
+            0.5552027586767808,
+            0.7759944000880649
+          ],
+          "phase_relationship_rad": [
+            -0.5572249398361905,
+            -1.0974839853649199,
+            -2.0024226905828066,
+            -2.2658172849043905,
+            0.04707028537208458,
+            -1.774569093041585
+          ],
+          "spectral_difference_lr_db": [
+            1.7322509823199737,
+            0.992160541893244,
+            -2.7808417236398855,
+            -4.427553066647524,
+            -5.302043492383861,
+            -8.71472287004051
+          ],
+          "energy_centroid_hz_lr": [
+            344.6485358052365,
+            457.54435323994886
+          ],
+          "interaural_spectral_contrast_db": [
+            1.7322509823199737,
+            0.992160541893244,
+            -2.7808417236398855,
+            -4.427553066647524,
+            -5.302043492383861,
+            -8.71472287004051
+          ],
+          "side_mid_db": -2.475964730097015,
+          "binaural_difference_rms_dbfs": -67.2608934148417,
+          "objective_width": 0.36121099387489836,
+          "band_energy": [
+            0.044242102574558406,
+            0.0867139020666523,
+            0.0697991088778116,
+            0.0007084402046142459,
+            1.4606471887303989e-05,
+            4.346637466069522e-05
+          ],
+          "band_distribution": [
+            0.21954022169997758,
+            0.4302957630031444,
+            0.3463603885387579,
+            0.003515454974593088,
+            7.248091500599787e-05,
+            0.00021569086852103714
+          ],
+          "rms_dbfs": -68.85910292910252,
+          "crest_db": 14.24234257309579,
+          "mono_fold_db": -1.9464256689217907,
+          "active_bands": [
+            true,
+            true,
+            true,
+            true,
+            false,
+            false
+          ]
+        }
+      }
+    ],
+    "percussion": [
+      {
+        "time_seconds": 242.5,
+        "intended_azimuth_deg": 445.0,
+        "intended_elevation_deg": -12.0,
+        "estimated": {
+          "azimuth_deg": 90,
+          "elevation_deg": 0,
+          "front_rear": "lateral",
+          "elevation_band": "ear",
+          "confidence": 0.011364892707038554,
+          "coverage": 0.6666666666666666,
+          "feature_distance": 1.2562996097525434,
+          "alternatives": [
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 0,
+              "distance": 1.2562996097525434
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 20,
+              "distance": 1.278087602460788
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": -20,
+              "distance": 1.319185949367761
+            }
+          ]
+        },
+        "confidence_with_native_stereo_caution": 0.010338478756025175,
+        "distance_from_intended_features": 1.319185949367761,
+        "features": {
+          "vector": [
+            -0.6372697297096106,
+            -1.953733015455061,
+            -7.390895881930918,
+            -11.812858899206876,
+            -19.177377238642816,
+            -18.03922466984245,
+            0.9480460904145951,
+            0.1529388194752971,
+            -0.9960387846003215,
+            -0.49014817604181354,
+            -0.4748285016301634,
+            -0.8440995713943641,
+            -0.3181330074820929,
+            -0.9882356588878497,
+            -0.08891984914469023,
+            -0.8716391257412,
+            0.8800783453986661,
+            -0.536186454110742,
+            497.5893101962998,
+            -14.738260364672932,
+            0.13578279806240626,
+            -1.1806804876830443,
+            -6.617843354158902,
+            -11.039806371434862,
+            -18.4043247108708,
+            -17.26617214207043
+          ],
+          "ild_global_db": -0.7159393825962503,
+          "ild_band_db": [
+            -0.6372697297096106,
+            -1.953733015455061,
+            -7.390895881930918,
+            -11.812858899206876,
+            -19.177377238642816,
+            -18.03922466984245
+          ],
+          "itd_us": 497.5893101962998,
+          "itd_definition": "GCC-PHAT L*conj(R), positive lag means left delayed; +/-1ms search, parabolic interpolation",
+          "cross_correlation_lr": 0.9381935207846119,
+          "coherence_by_band": [
+            0.994619176497012,
+            0.9888075795206543,
+            0.8341009191046602,
+            0.7250772000993506,
+            0.4057013792366735,
+            0.7713696018064222
+          ],
+          "phase_relationship_rad": [
+            -0.3237595292520417,
+            -1.4172549293096592,
+            -3.052555207868588,
+            -2.0830560686114117,
+            2.0655654811032647,
+            -2.575679947432526
+          ],
+          "spectral_difference_lr_db": [
+            0.13578279806240626,
+            -1.1806804876830443,
+            -6.617843354158902,
+            -11.039806371434862,
+            -18.4043247108708,
+            -17.26617214207043
+          ],
+          "energy_centroid_hz_lr": [
+            53.88762704952363,
+            80.60758572630607
+          ],
+          "interaural_spectral_contrast_db": [
+            0.13578279806240626,
+            -1.1806804876830443,
+            -6.617843354158902,
+            -11.039806371434862,
+            -18.4043247108708,
+            -17.26617214207043
+          ],
+          "side_mid_db": -14.738260364672932,
+          "binaural_difference_rms_dbfs": -49.67365624090961,
+          "objective_width": 0.032495770274548745,
+          "band_energy": [
+            22.93755091410938,
+            2.919625944111921,
+            1.5589815560551832,
+            0.24227537403804045,
+            0.0020602671117664357,
+            0.00015524108964529442
+          ],
+          "band_distribution": [
+            0.8292484629780016,
+            0.10555160556117783,
+            0.05636098919238127,
+            0.00875884623823913,
+            7.448368581954949e-05,
+            5.612344380681193e-06
+          ],
+          "rms_dbfs": -40.812524512910635,
+          "crest_db": 15.133779375723396,
+          "mono_fold_db": -0.14347127660567133,
+          "active_bands": [
+            true,
+            true,
+            true,
+            true,
+            false,
+            false
+          ]
+        }
+      }
+    ],
+    "synth": [
+      {
+        "time_seconds": 244.5,
+        "intended_azimuth_deg": 155.0,
+        "intended_elevation_deg": 55.0,
+        "estimated": {
+          "azimuth_deg": 60,
+          "elevation_deg": 60,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.01607653907213793,
+          "coverage": 0.5,
+          "feature_distance": 1.0596769596409814,
+          "alternatives": [
+            {
+              "azimuth_deg": 60,
+              "elevation_deg": 60,
+              "distance": 1.0596769596409814
+            },
+            {
+              "azimuth_deg": 150,
+              "elevation_deg": 0,
+              "distance": 1.0948807458199947
+            },
+            {
+              "azimuth_deg": 150,
+              "elevation_deg": -45,
+              "distance": 1.1005516969192841
+            }
+          ]
+        },
+        "confidence_with_native_stereo_caution": 0.015667832915126186,
+        "distance_from_intended_features": 1.200758998154521,
+        "features": {
+          "vector": [
+            -0.9842899902963744,
+            -0.4871745755153453,
+            -6.000249076244318,
+            2.3492993464517764,
+            -1.491132007255491,
+            -6.74584273355061,
+            0.9962855180461818,
+            0.9216881758527664,
+            0.998657538816159,
+            -0.030118712106597143,
+            -0.9686541630748182,
+            -0.4018478818590248,
+            -0.08611136122168289,
+            -0.3879315744989055,
+            -0.05179884328488209,
+            -0.9995463286816875,
+            0.2484131887759252,
+            0.9157064375908991,
+            59.30047655774848,
+            -5.1831890942622705,
+            4.542428009867439,
+            5.039543424648469,
+            -0.47353107608050277,
+            7.8760173466155905,
+            4.035585992908323,
+            -1.2191247333867963
+          ],
+          "ild_global_db": -5.458957660372859,
+          "ild_band_db": [
+            -0.9842899902963744,
+            -0.4871745755153453,
+            -6.000249076244318,
+            2.3492993464517764,
+            -1.491132007255491,
+            -6.74584273355061
+          ],
+          "itd_us": 59.30047655774848,
+          "itd_definition": "GCC-PHAT L*conj(R), positive lag means left delayed; +/-1ms search, parabolic interpolation",
+          "cross_correlation_lr": 0.6438520081903628,
+          "coherence_by_band": [
+            0.9802576457131964,
+            0.7000854699241729,
+            0.6488293912217681,
+            0.6143311404643772,
+            0.7784782584416968,
+            0.9764199512930848
+          ],
+          "phase_relationship_rad": [
+            -0.0862181395881552,
+            -0.398386359346722,
+            -0.0518220350511376,
+            -1.6009195943934587,
+            2.8905509041727093,
+            1.9843302664891689
+          ],
+          "spectral_difference_lr_db": [
+            4.542428009867439,
+            5.039543424648469,
+            -0.47353107608050277,
+            7.8760173466155905,
+            4.035585992908323,
+            -1.2191247333867963
+          ],
+          "energy_centroid_hz_lr": [
+            1286.2376667187536,
+            1094.7281471925262
+          ],
+          "interaural_spectral_contrast_db": [
+            4.542428009867439,
+            5.039543424648469,
+            -0.47353107608050277,
+            7.8760173466155905,
+            4.035585992908323,
+            -1.2191247333867963
+          ],
+          "side_mid_db": -5.1831890942622705,
+          "binaural_difference_rms_dbfs": -40.29914256041608,
+          "objective_width": 0.23263829761358096,
+          "band_energy": [
+            0.024247827408872016,
+            0.15975969510704746,
+            154.15611986511774,
+            6.618555425368305,
+            0.01599971470204354,
+            0.000940588226679338
+          ],
+          "band_distribution": [
+            0.0001506304304932513,
+            0.0009924465084504904,
+            0.9576364227153716,
+            0.041115265139255175,
+            9.939215883960851e-05,
+            5.84304758989471e-06
+          ],
+          "rms_dbfs": -39.98655458506333,
+          "crest_db": 13.66891949974361,
+          "mono_fold_db": -1.1499987943701,
+          "active_bands": [
+            false,
+            true,
+            true,
+            true,
+            false,
+            false
+          ]
+        }
+      },
+      {
+        "time_seconds": 245.5,
+        "intended_azimuth_deg": 155.0,
+        "intended_elevation_deg": 55.0,
+        "estimated": {
+          "azimuth_deg": -60,
+          "elevation_deg": 60,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.04087587625914326,
+          "coverage": 0.5,
+          "feature_distance": 0.8272473637433394,
+          "alternatives": [
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 60,
+              "distance": 0.8272473637433394
+            },
+            {
+              "azimuth_deg": -30,
+              "elevation_deg": 60,
+              "distance": 0.9008972965775398
+            },
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": 60,
+              "distance": 0.90765971610997
+            }
+          ]
+        },
+        "confidence_with_native_stereo_caution": 0.02981421041096971,
+        "distance_from_intended_features": 1.015876631938424,
+        "features": {
+          "vector": [
+            -1.2314595519296947,
+            -1.8025962506989404,
+            -2.0024519418571147,
+            -3.0579959686413725,
+            -2.3718749807726756,
+            -5.9163807855872665,
+            0.9951985940726247,
+            0.9449668564701267,
+            -0.39745631400877746,
+            -0.35574021233304765,
+            0.3140075735153138,
+            -0.8718641604437979,
+            0.09787623999659587,
+            -0.32716607430014355,
+            0.917621097433225,
+            0.9345848818214632,
+            0.9494204778574269,
+            0.48974777767094707,
+            -162.7023305426272,
+            2.381186363042194,
+            0.8781582978600794,
+            0.307021599090833,
+            0.10716590793265893,
+            -0.9483781188515996,
+            -0.26225713098290243,
+            -3.806762935797493
+          ],
+          "ild_global_db": -2.219637148348782,
+          "ild_band_db": [
+            -1.2314595519296947,
+            -1.8025962506989404,
+            -2.0024519418571147,
+            -3.0579959686413725,
+            -2.3718749807726756,
+            -5.9163807855872665
+          ],
+          "itd_us": -162.7023305426272,
+          "itd_definition": "GCC-PHAT L*conj(R), positive lag means left delayed; +/-1ms search, parabolic interpolation",
+          "cross_correlation_lr": -0.27625801354640833,
+          "coherence_by_band": [
+            0.854523685124737,
+            0.34501075599791814,
+            0.5183626275497888,
+            0.4960634403858107,
+            0.3980566399450829,
+            0.40423635212218023
+          ],
+          "phase_relationship_rad": [
+            0.09803318932192477,
+            -0.33330304375661673,
+            1.9795394592091795,
+            1.934502297380859,
+            1.2513851508001823,
+            2.629792215024382
+          ],
+          "spectral_difference_lr_db": [
+            0.8781582978600794,
+            0.307021599090833,
+            0.10716590793265893,
+            -0.9483781188515996,
+            -0.26225713098290243,
+            -3.806762935797493
+          ],
+          "energy_centroid_hz_lr": [
+            1247.7913628253782,
+            1276.199214854157
+          ],
+          "interaural_spectral_contrast_db": [
+            0.8781582978600794,
+            0.307021599090833,
+            0.10716590793265893,
+            -0.9483781188515996,
+            -0.26225713098290243,
+            -3.806762935797493
+          ],
+          "side_mid_db": 2.381186363042194,
+          "binaural_difference_rms_dbfs": -39.25528856679121,
+          "objective_width": 0.6337384008152984,
+          "band_energy": [
+            0.008879043471144519,
+            0.09932893055067601,
+            66.73638864863803,
+            7.832178401862567,
+            0.002354667165468111,
+            1.6064909536056582e-05
+          ],
+          "band_distribution": [
+            0.00011889588962471647,
+            0.0013300758805466246,
+            0.8936415644891373,
+            0.10487771817034539,
+            3.153045126068668e-05,
+            2.1511908543272743e-07
+          ],
+          "rms_dbfs": -43.29498871617887,
+          "crest_db": 13.25348001824026,
+          "mono_fold_db": -4.362086126934148,
+          "active_bands": [
+            false,
+            true,
+            true,
+            true,
+            false,
+            false
+          ]
+        }
+      },
+      {
+        "time_seconds": 246.5,
+        "intended_azimuth_deg": 155.0,
+        "intended_elevation_deg": 55.0,
+        "estimated": {
+          "azimuth_deg": 0,
+          "elevation_deg": 60,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.003302203509904263,
+          "coverage": 0.6666666666666666,
+          "feature_distance": 0.9366927141467375,
+          "alternatives": [
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": 60,
+              "distance": 0.9366927141467375
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 60,
+              "distance": 0.941355535476716
+            },
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": 60,
+              "distance": 0.9813554651104702
+            }
+          ]
+        },
+        "confidence_with_native_stereo_caution": 0.002475685671131701,
+        "distance_from_intended_features": 0.9835593060095702,
+        "features": {
+          "vector": [
+            -0.22783852585563244,
+            0.07220955247292131,
+            -2.3285872439479216,
+            -4.812090616647175,
+            -4.029288749347641,
+            -7.585565149677987,
+            0.9973304935663811,
+            0.9902352292893023,
+            -0.47410853185259877,
+            -0.28271505606848607,
+            0.6140377019594211,
+            0.27886352460863645,
+            -0.07301976857425994,
+            -0.13940656610921473,
+            0.8804664105033044,
+            0.9592039392497264,
+            0.7892766945579941,
+            -0.9603307423189411,
+            420.7775904105704,
+            1.9534887527268094,
+            2.0606664898784635,
+            2.3607145682070176,
+            -0.04008222821382582,
+            -2.5235856009130786,
+            -1.7407837336135448,
+            -5.297060133943892
+          ],
+          "ild_global_db": -2.395394110098452,
+          "ild_band_db": [
+            -0.22783852585563244,
+            0.07220955247292131,
+            -2.3285872439479216,
+            -4.812090616647175,
+            -4.029288749347641,
+            -7.585565149677987
+          ],
+          "itd_us": 420.7775904105704,
+          "itd_definition": "GCC-PHAT L*conj(R), positive lag means left delayed; +/-1ms search, parabolic interpolation",
+          "cross_correlation_lr": -0.22965151129196756,
+          "coherence_by_band": [
+            0.9968069200991748,
+            0.8072043392877496,
+            0.5517675135282563,
+            0.4848441054409461,
+            0.3899256360913694,
+            0.31679748548764675
+          ],
+          "phase_relationship_rad": [
+            -0.07308481361548705,
+            -0.13986210361250298,
+            2.0647475868293297,
+            1.8574197906139935,
+            0.9096301544395301,
+            -1.288185842087951
+          ],
+          "spectral_difference_lr_db": [
+            2.0606664898784635,
+            2.3607145682070176,
+            -0.04008222821382582,
+            -2.5235856009130786,
+            -1.7407837336135448,
+            -5.297060133943892
+          ],
+          "energy_centroid_hz_lr": [
+            1092.579860794208,
+            1177.2361764528275
+          ],
+          "interaural_spectral_contrast_db": [
+            2.0606664898784635,
+            2.3607145682070176,
+            -0.04008222821382582,
+            -2.5235856009130786,
+            -1.7407837336135448,
+            -5.297060133943892
+          ],
+          "side_mid_db": 1.9534887527268094,
+          "binaural_difference_rms_dbfs": -48.12433705600953,
+          "objective_width": 0.6105934425323648,
+          "band_energy": [
+            0.34413145018511027,
+            0.3921562004574075,
+            8.565709478731769,
+            0.5980926563913334,
+            4.1414850138777186e-05,
+            1.2512928468018978e-06
+          ],
+          "band_distribution": [
+            0.03476028748673625,
+            0.0396112074623613,
+            0.8652116040205522,
+            0.060412591376596124,
+            4.183262228051604e-06,
+            1.2639152585889555e-07
+          ],
+          "rms_dbfs": -52.00245832811471,
+          "crest_db": 14.104503316049446,
+          "mono_fold_db": -4.095967393901255,
+          "active_bands": [
+            true,
+            true,
+            true,
+            true,
+            false,
+            false
+          ]
+        }
+      }
+    ],
+    "other": [
+      {
+        "time_seconds": 242.5,
+        "intended_azimuth_deg": -165.0,
+        "intended_elevation_deg": -8.0,
+        "estimated": {
+          "azimuth_deg": -120,
+          "elevation_deg": 45,
+          "front_rear": "rear",
+          "elevation_band": "high",
+          "confidence": 0.0047972724353642455,
+          "coverage": 0.8333333333333334,
+          "feature_distance": 1.3268347466798018,
+          "alternatives": [
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": 45,
+              "distance": 1.3268347466798018
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": -20,
+              "distance": 1.3345171977606056
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 20,
+              "distance": 1.3483473097681113
+            }
+          ]
+        },
+        "confidence_with_native_stereo_caution": 0.0034168985335523757,
+        "distance_from_intended_features": 1.523679643779158,
+        "features": {
+          "vector": [
+            1.0200411666906979,
+            -1.0700077229148963,
+            2.3840153674166045,
+            1.6680082030360137,
+            7.233598367193946,
+            0.686029689378761,
+            0.9883040222987131,
+            -0.9960649123651922,
+            -0.590984835181188,
+            -0.3405990434240442,
+            0.08136297773778393,
+            -0.5119301514631239,
+            0.1524964245750859,
+            -0.08862669098483775,
+            -0.8066826665956471,
+            -0.9402086425994105,
+            0.9966845367786343,
+            -0.8590270775842535,
+            204.94137531000644,
+            -1.7642309672016443,
+            -0.19822589187311201,
+            -2.288274781478706,
+            1.1657483088527947,
+            0.449741144472205,
+            6.015331308630137,
+            -0.5322373691850486
+          ],
+          "ild_global_db": 1.0221858465032823,
+          "ild_band_db": [
+            1.0200411666906979,
+            -1.0700077229148963,
+            2.3840153674166045,
+            1.6680082030360137,
+            7.233598367193946,
+            0.686029689378761
+          ],
+          "itd_us": 204.94137531000644,
+          "itd_definition": "GCC-PHAT L*conj(R), positive lag means left delayed; +/-1ms search, parabolic interpolation",
+          "cross_correlation_lr": 0.20175607122816627,
+          "coherence_by_band": [
+            0.9105513360963932,
+            0.37923825673230377,
+            0.8490630139229972,
+            0.5898456469205363,
+            0.5171301855930671,
+            0.39727696090370596
+          ],
+          "phase_relationship_rad": [
+            0.1530937516352354,
+            -3.052849528046983,
+            -2.2030754682420635,
+            -1.9183502896722135,
+            1.4893433109852017,
+            -2.108226520737602
+          ],
+          "spectral_difference_lr_db": [
+            -0.19822589187311201,
+            -2.288274781478706,
+            1.1657483088527947,
+            0.449741144472205,
+            6.015331308630137,
+            -0.5322373691850486
+          ],
+          "energy_centroid_hz_lr": [
+            726.3803652207516,
+            546.3059326664918
+          ],
+          "interaural_spectral_contrast_db": [
+            -0.19822589187311201,
+            -2.288274781478706,
+            1.1657483088527947,
+            0.449741144472205,
+            6.015331308630137,
+            -0.5322373691850486
+          ],
+          "side_mid_db": -1.7642309672016443,
+          "binaural_difference_rms_dbfs": -66.65993959201627,
+          "objective_width": 0.3998166337493635,
+          "band_energy": [
+            0.03924725079599352,
+            0.016880917184583222,
+            0.07511780241133686,
+            0.010768193486947727,
+            0.0004960230794709609,
+            1.7221692935762298e-05
+          ],
+          "band_distribution": [
+            0.2753663394808682,
+            0.11843979585629708,
+            0.5270411012322052,
+            0.0755517383557785,
+            0.0034801943300927876,
+            0.00012083074475801236
+          ],
+          "rms_dbfs": -68.69914808834173,
+          "crest_db": 19.6748635046752,
+          "mono_fold_db": -2.2171604497525284,
+          "active_bands": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            false
+          ]
+        }
+      },
+      {
+        "time_seconds": 244.5,
+        "intended_azimuth_deg": -165.0,
+        "intended_elevation_deg": -8.0,
+        "estimated": {
+          "azimuth_deg": -30,
+          "elevation_deg": 60,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.023454147112337523,
+          "coverage": 0.6666666666666666,
+          "feature_distance": 0.9209479853913481,
+          "alternatives": [
+            {
+              "azimuth_deg": -30,
+              "elevation_deg": 60,
+              "distance": 0.9209479853913481
+            },
+            {
+              "azimuth_deg": -150,
+              "elevation_deg": 60,
+              "distance": 0.9545294983058447
+            },
+            {
+              "azimuth_deg": -150,
+              "elevation_deg": -20,
+              "distance": 0.9755405067010924
+            }
+          ]
+        },
+        "confidence_with_native_stereo_caution": 0.022480222496897087,
+        "distance_from_intended_features": 1.094939821220745,
+        "features": {
+          "vector": [
+            0.31768753268632177,
+            0.6408430120600574,
+            6.272245165885735,
+            0.3545851773806558,
+            6.406033376089314,
+            0.8737219836276672,
+            0.9894722164122527,
+            0.9027478274968208,
+            0.8589466661087584,
+            -0.7890854173603437,
+            0.9863595919617539,
+            -0.6383048929985646,
+            0.1447229523891222,
+            0.43017015232320593,
+            0.512065059128866,
+            0.6142834883905413,
+            0.1646048460557654,
+            0.7697836472503757,
+            -101.96852596506736,
+            -4.491023658566694,
+            -5.820716656664152,
+            -5.497561177290415,
+            0.1338409765352615,
+            -5.783819011969817,
+            0.26762918673884073,
+            -5.264682205722806
+          ],
+          "ild_global_db": 5.9743629754298055,
+          "ild_band_db": [
+            0.31768753268632177,
+            0.6408430120600574,
+            6.272245165885735,
+            0.3545851773806558,
+            6.406033376089314,
+            0.8737219836276672
+          ],
+          "itd_us": -101.96852596506736,
+          "itd_definition": "GCC-PHAT L*conj(R), positive lag means left delayed; +/-1ms search, parabolic interpolation",
+          "cross_correlation_lr": 0.5923835870990802,
+          "coherence_by_band": [
+            0.9938864655684637,
+            0.9254911528611691,
+            0.6312501483925715,
+            0.3696951930227781,
+            0.1693239146613893,
+            0.17184033721354472
+          ],
+          "phase_relationship_rad": [
+            0.14523297142596706,
+            0.44468125114607493,
+            0.5375872483400268,
+            2.4801150363165876,
+            0.1653573793614365,
+            2.2630905201444036
+          ],
+          "spectral_difference_lr_db": [
+            -5.820716656664152,
+            -5.497561177290415,
+            0.1338409765352615,
+            -5.783819011969817,
+            0.26762918673884073,
+            -5.264682205722806
+          ],
+          "energy_centroid_hz_lr": [
+            1043.6391109327926,
+            1125.2329672948874
+          ],
+          "interaural_spectral_contrast_db": [
+            -5.820716656664152,
+            -5.497561177290415,
+            0.1338409765352615,
+            -5.783819011969817,
+            0.26762918673884073,
+            -5.264682205722806
+          ],
+          "side_mid_db": -4.491023658566694,
+          "binaural_difference_rms_dbfs": -79.2204769760585,
+          "objective_width": 0.26229070020365713,
+          "band_energy": [
+            5.753990342354412e-06,
+            3.2603229187537884e-05,
+            0.017955176742834967,
+            0.0002621427363384771,
+            6.933196387093689e-05,
+            7.292884705351742e-06
+          ],
+          "band_distribution": [
+            0.00031387168313343943,
+            0.0017784580459498254,
+            0.9794283983671095,
+            0.014299499474324165,
+            0.0037819563294945483,
+            0.00039781609998849004
+          ],
+          "rms_dbfs": -79.42890581423387,
+          "crest_db": 20.26913106117689,
+          "mono_fold_db": -1.3211474165375678,
+          "active_bands": [
+            false,
+            true,
+            true,
+            true,
+            true,
+            false
+          ]
+        }
+      },
+      {
+        "time_seconds": 245.5,
+        "intended_azimuth_deg": -165.0,
+        "intended_elevation_deg": -8.0,
+        "estimated": {
+          "azimuth_deg": -150,
+          "elevation_deg": 60,
+          "front_rear": "rear",
+          "elevation_band": "high",
+          "confidence": 0.0010737725067288674,
+          "coverage": 0.8333333333333334,
+          "feature_distance": 0.8785275694389324,
+          "alternatives": [
+            {
+              "azimuth_deg": -150,
+              "elevation_deg": 60,
+              "distance": 0.8785275694389324
+            },
+            {
+              "azimuth_deg": -30,
+              "elevation_deg": 60,
+              "distance": 0.8796610364423393
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": -45,
+              "distance": 0.8920089522251181
+            }
+          ]
+        },
+        "confidence_with_native_stereo_caution": 0.0008244508338949575,
+        "distance_from_intended_features": 1.10928284937286,
+        "features": {
+          "vector": [
+            0.11127620750941149,
+            0.6492069121142341,
+            3.8405577248896745,
+            0.6798709518691303,
+            6.381873277237764,
+            0.7894421922435474,
+            0.9764611483848848,
+            0.8829521995903982,
+            -0.2464428930673307,
+            -0.7125334645848385,
+            0.8614682639447884,
+            0.3796614041878578,
+            0.2156933603402568,
+            0.46946289868154406,
+            -0.9691573146071819,
+            -0.7016381274180635,
+            -0.5078114120576185,
+            -0.925125514819532,
+            204.5231714587292,
+            0.813270659621707,
+            -3.554838686013447,
+            -3.016907981408625,
+            0.17444283136681554,
+            -2.9862439416537296,
+            2.7157583837149044,
+            -2.8766727012793103
+          ],
+          "ild_global_db": 3.5326487727981974,
+          "ild_band_db": [
+            0.11127620750941149,
+            0.6492069121142341,
+            3.8405577248896745,
+            0.6798709518691303,
+            6.381873277237764,
+            0.7894421922435474
+          ],
+          "itd_us": 204.5231714587292,
+          "itd_definition": "GCC-PHAT L*conj(R), positive lag means left delayed; +/-1ms search, parabolic interpolation",
+          "cross_correlation_lr": -0.10118730184174195,
+          "coherence_by_band": [
+            0.9950879170173573,
+            0.8669296711327438,
+            0.28777975141863993,
+            0.36341002845315445,
+            0.22087048680306984,
+            0.22574603624930079
+          ],
+          "phase_relationship_rad": [
+            0.21740184890537007,
+            0.4886823778789118,
+            -1.8198045501932547,
+            -2.3638987332007457,
+            -0.5326423500722699,
+            -1.1813660576834561
+          ],
+          "spectral_difference_lr_db": [
+            -3.554838686013447,
+            -3.016907981408625,
+            0.17444283136681554,
+            -2.9862439416537296,
+            2.7157583837149044,
+            -2.8766727012793103
+          ],
+          "energy_centroid_hz_lr": [
+            1141.0420324987726,
+            1126.7625168689988
+          ],
+          "interaural_spectral_contrast_db": [
+            -3.554838686013447,
+            -3.016907981408625,
+            0.17444283136681554,
+            -2.9862439416537296,
+            2.7157583837149044,
+            -2.8766727012793103
+          ],
+          "side_mid_db": 0.813270659621707,
+          "binaural_difference_rms_dbfs": -81.20075100985616,
+          "objective_width": 0.5466792925973007,
+          "band_energy": [
+            4.354516014404083e-05,
+            0.00010246454102459787,
+            0.005159047276907629,
+            0.00013154619642453947,
+            3.1398252921452824e-05,
+            3.622877188284738e-06
+          ],
+          "band_distribution": [
+            0.007958360757215814,
+            0.018726530792375195,
+            0.9428730829637683,
+            0.02404152571544339,
+            0.005738378801884437,
+            0.0006621209693128966
+          ],
+          "rms_dbfs": -84.59867716084324,
+          "crest_db": 14.822208409253662,
+          "mono_fold_db": -3.4359444219142494,
+          "active_bands": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            false
+          ]
+        }
+      }
+    ],
+    "brass": []
+  },
+  "transients": {
+    "lead_vocal": {
+      "score": 98.0338538871483,
+      "events": 28,
+      "onset_envelope_correlation": 0.976016831423757,
+      "median_attack_crest_delta_db": 0.05774181647027499,
+      "analysis_common_latency_removed_samples": 0
+    },
+    "backing_vocals": {
+      "score": 87.00943470916884,
+      "events": 2,
+      "onset_envelope_correlation": 0.9997581180621118,
+      "median_attack_crest_delta_db": -3.398605630627215,
+      "analysis_common_latency_removed_samples": 0
+    },
+    "woodwinds": {
+      "score": 85.28280521699295,
+      "events": 28,
+      "onset_envelope_correlation": 0.9006699233024646,
+      "median_attack_crest_delta_db": 1.7969328343439286,
+      "analysis_common_latency_removed_samples": 0
+    },
+    "drums": {
+      "score": 82.75924199711142,
+      "events": 13,
+      "onset_envelope_correlation": 0.7677170165468262,
+      "median_attack_crest_delta_db": 0.19946905127849845,
+      "analysis_common_latency_removed_samples": 0
+    },
+    "bass": {
+      "score": 70.81788632406565,
+      "events": 28,
+      "onset_envelope_correlation": 0.6364923451329538,
+      "median_attack_crest_delta_db": 0.7981212164525635,
+      "analysis_common_latency_removed_samples": 0
+    },
+    "guitar": {
+      "score": 92.4617184116729,
+      "events": 1,
+      "onset_envelope_correlation": 0.999964910027061,
+      "median_attack_crest_delta_db": 1.735653459157387,
+      "analysis_common_latency_removed_samples": 0
+    },
+    "keyboards": {
+      "score": 90.52162968956632,
+      "events": 28,
+      "onset_envelope_correlation": 0.9039929579318151,
+      "median_attack_crest_delta_db": 0.5785978798969413,
+      "analysis_common_latency_removed_samples": 0
+    },
+    "percussion": {
+      "score": 90.19060794494116,
+      "events": 12,
+      "onset_envelope_correlation": 0.8984125871350711,
+      "median_attack_crest_delta_db": 0.565484562349825,
+      "analysis_common_latency_removed_samples": 0
+    },
+    "synth": {
+      "score": 88.30685876388331,
+      "events": 28,
+      "onset_envelope_correlation": 0.8494386662358098,
+      "median_attack_crest_delta_db": 0.2353246364253585,
+      "analysis_common_latency_removed_samples": 0
+    },
+    "other": {
+      "score": 81.23845986871434,
+      "events": 7,
+      "onset_envelope_correlation": 0.8584285162219407,
+      "median_attack_crest_delta_db": -2.0977806932231573,
+      "analysis_common_latency_removed_samples": 0
+    },
+    "brass": {
+      "score": 97.70840859585137,
+      "events": 2,
+      "onset_envelope_correlation": 0.997346731368867,
+      "median_attack_crest_delta_db": -0.43668506367714954,
+      "analysis_common_latency_removed_samples": 0
+    }
+  }
+}

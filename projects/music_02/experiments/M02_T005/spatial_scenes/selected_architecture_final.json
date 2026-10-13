@@ -1,0 +1,1002 @@
+{
+  "schema": "LAISE Spatial Scene v1.0",
+  "project": "music_02",
+  "test_id": "M02-T005",
+  "baseline": "LAISE_T017_APPROVED_BASELINE",
+  "duration_seconds": 247.60002083333333,
+  "sources": [
+    {
+      "source_id": "lead_vocal",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\0 Lead Vocals.wav",
+      "trajectory": "stable_anchor_or_lane",
+      "gain_db": 0,
+      "musical_rationale": "Stable front center; vocal anchor. Compactness is an audition candidate, not a permanent mono decision.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 0.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 0.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.1
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "distance_m": 1.1
+        }
+      ],
+      "preprocess": {
+        "side_factor": 0.5,
+        "adoption": "Existing audition conditioning retained"
+      },
+      "home": {
+        "azimuth_deg": 0,
+        "elevation_deg": 0,
+        "distance_m": 1.1
+      },
+      "growth_reference_distance_m": 1.1
+    },
+    {
+      "source_id": "backing_vocals",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\1 Backing Vocals.wav",
+      "trajectory": "stable_anchor_or_lane",
+      "gain_db": -2,
+      "musical_rationale": "Near left lateral/rear envelopment, with lower elevation than Synth; no displacement of frontal Lead.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": -115.0,
+          "elevation_deg": 18.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 199.75,
+          "azimuth_deg_unwrapped": -115.0,
+          "elevation_deg": 18.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 200.0,
+          "azimuth_deg_unwrapped": -115.0,
+          "elevation_deg": 18.0,
+          "gain_db": -2.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 207.02,
+          "azimuth_deg_unwrapped": -115.0,
+          "elevation_deg": 18.0,
+          "gain_db": -2.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 207.27,
+          "azimuth_deg_unwrapped": -115.0,
+          "elevation_deg": 18.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": -115.0,
+          "elevation_deg": 18.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 0.9
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "distance_m": 0.9
+        }
+      ],
+      "home": {
+        "azimuth_deg": -115,
+        "elevation_deg": 18,
+        "distance_m": 0.9
+      },
+      "growth_reference_distance_m": 0.9
+    },
+    {
+      "source_id": "woodwinds",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\10 Woodwinds.wav",
+      "trajectory": "front_lateral_phrase",
+      "gain_db": 0,
+      "musical_rationale": "Expressive front/lateral phrase traversal, distinct from Percussion full orbit.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 28.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 200.0,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 28.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 203.509333,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 38.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 207.018667,
+          "azimuth_deg_unwrapped": 78.0,
+          "elevation_deg": 28.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 218.709333,
+          "azimuth_deg_unwrapped": 78.0,
+          "elevation_deg": 28.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 221.568,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 38.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 224.426667,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 28.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 28.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.1
+        },
+        {
+          "time_seconds": 200.8,
+          "distance_m": 1.1
+        },
+        {
+          "time_seconds": 203.15,
+          "distance_m": 0.35
+        },
+        {
+          "time_seconds": 205.5,
+          "distance_m": 1.1
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "distance_m": 1.1
+        }
+      ],
+      "home": {
+        "azimuth_deg": -78,
+        "elevation_deg": 28,
+        "distance_m": 1.1
+      },
+      "growth_reference_distance_m": 1.1
+    },
+    {
+      "source_id": "drums",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\2 Drums.wav",
+      "trajectory": "stable_anchor_or_lane",
+      "gain_db": 0,
+      "musical_rationale": "Stable near-front lower rhythmic anchor; distinct from Lead and Bass.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 22.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": 22.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.2
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "distance_m": 1.2
+        }
+      ],
+      "home": {
+        "azimuth_deg": 22,
+        "elevation_deg": -18,
+        "distance_m": 1.2
+      },
+      "growth_reference_distance_m": 1.2
+    },
+    {
+      "source_id": "bass",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\3 Bass.wav",
+      "trajectory": "stable_anchor_or_lane",
+      "gain_db": 0,
+      "musical_rationale": "Stable central low-elevation anchor; shared central azimuth is intentional, with 42 degrees elevation separation from Lead.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": -42.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": -42.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.3
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "distance_m": 1.3
+        }
+      ],
+      "home": {
+        "azimuth_deg": 0,
+        "elevation_deg": -42,
+        "distance_m": 1.3
+      },
+      "growth_reference_distance_m": 1.3
+    },
+    {
+      "source_id": "guitar",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\4 Guitar.wav",
+      "trajectory": "stable_anchor_or_lane",
+      "gain_db": -1,
+      "musical_rationale": "Left-front lane separate from right-front Keyboard.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": -48.0,
+          "elevation_deg": 0.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 206.8,
+          "azimuth_deg_unwrapped": -48.0,
+          "elevation_deg": 0.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 207.05,
+          "azimuth_deg_unwrapped": -48.0,
+          "elevation_deg": 0.0,
+          "gain_db": -2.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 218.5,
+          "azimuth_deg_unwrapped": -48.0,
+          "elevation_deg": 0.0,
+          "gain_db": -2.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 218.75,
+          "azimuth_deg_unwrapped": -48.0,
+          "elevation_deg": 0.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": -48.0,
+          "elevation_deg": 0.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.25
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "distance_m": 1.25
+        }
+      ],
+      "home": {
+        "azimuth_deg": -48,
+        "elevation_deg": 0,
+        "distance_m": 1.25
+      },
+      "growth_reference_distance_m": 1.25
+    },
+    {
+      "source_id": "keyboards",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\5 Keyboard.wav",
+      "trajectory": "stable_anchor_or_lane",
+      "gain_db": -1,
+      "musical_rationale": "Right-front elevated harmonic lane, separate from Guitar and Percussion start/end lane.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 50.0,
+          "elevation_deg": 30.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": 50.0,
+          "elevation_deg": 30.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.3
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "distance_m": 1.3
+        }
+      ],
+      "home": {
+        "azimuth_deg": 50,
+        "elevation_deg": 30,
+        "distance_m": 1.3
+      },
+      "growth_reference_distance_m": 1.3
+    },
+    {
+      "source_id": "percussion",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\6 Percussion.wav",
+      "trajectory": "sector_defined_360",
+      "gain_db": -1,
+      "musical_rationale": "One continuous 360-degree orbit with eight sector dwells; angular cues take priority over radial depth.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 85.0,
+          "elevation_deg": -12.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 207.05,
+          "azimuth_deg_unwrapped": 85.0,
+          "elevation_deg": -12.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 207.3,
+          "azimuth_deg_unwrapped": 85.0,
+          "elevation_deg": -12.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 208.48125000000002,
+          "azimuth_deg_unwrapped": 130.0,
+          "elevation_deg": -12.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 208.73125000000002,
+          "azimuth_deg_unwrapped": 130.0,
+          "elevation_deg": -12.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 209.91250000000002,
+          "azimuth_deg_unwrapped": 175.0,
+          "elevation_deg": -12.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 210.16250000000002,
+          "azimuth_deg_unwrapped": 175.0,
+          "elevation_deg": -12.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 211.34375,
+          "azimuth_deg_unwrapped": 220.0,
+          "elevation_deg": -12.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 211.59375,
+          "azimuth_deg_unwrapped": 220.0,
+          "elevation_deg": -12.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 212.775,
+          "azimuth_deg_unwrapped": 265.0,
+          "elevation_deg": -12.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 213.025,
+          "azimuth_deg_unwrapped": 265.0,
+          "elevation_deg": -12.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 214.20625,
+          "azimuth_deg_unwrapped": 310.0,
+          "elevation_deg": -12.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 214.45625,
+          "azimuth_deg_unwrapped": 310.0,
+          "elevation_deg": -12.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 215.6375,
+          "azimuth_deg_unwrapped": 355.0,
+          "elevation_deg": -12.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 215.8875,
+          "azimuth_deg_unwrapped": 355.0,
+          "elevation_deg": -12.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 217.06875,
+          "azimuth_deg_unwrapped": 400.0,
+          "elevation_deg": -12.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 217.31875,
+          "azimuth_deg_unwrapped": 400.0,
+          "elevation_deg": -12.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 218.5,
+          "azimuth_deg_unwrapped": 445.0,
+          "elevation_deg": -12.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": 445.0,
+          "elevation_deg": -12.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 0.9
+        },
+        {
+          "time_seconds": 209.0,
+          "distance_m": 0.9
+        },
+        {
+          "time_seconds": 210.5,
+          "distance_m": 0.25
+        },
+        {
+          "time_seconds": 212.0,
+          "distance_m": 0.9
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "distance_m": 0.9
+        }
+      ],
+      "preprocess": {
+        "side_factor": 0.5,
+        "adoption": "Retain T003 candidate; no claim of human compactness proof"
+      },
+      "home": {
+        "azimuth_deg": 85,
+        "elevation_deg": -12,
+        "distance_m": 0.9
+      },
+      "growth_reference_distance_m": 0.9
+    },
+    {
+      "source_id": "synth",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\7 Synth.wav",
+      "trajectory": "stable_anchor_or_lane",
+      "gain_db": -2,
+      "musical_rationale": "Stable high rear-right layer; elevation provides separation.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 155.0,
+          "elevation_deg": 55.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 199.75,
+          "azimuth_deg_unwrapped": 155.0,
+          "elevation_deg": 55.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 200.0,
+          "azimuth_deg_unwrapped": 155.0,
+          "elevation_deg": 55.0,
+          "gain_db": -2.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 207.02,
+          "azimuth_deg_unwrapped": 155.0,
+          "elevation_deg": 55.0,
+          "gain_db": -2.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 207.27,
+          "azimuth_deg_unwrapped": 155.0,
+          "elevation_deg": 55.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 218.459333,
+          "azimuth_deg_unwrapped": 155.0,
+          "elevation_deg": 55.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 218.709333,
+          "azimuth_deg_unwrapped": 155.0,
+          "elevation_deg": 55.0,
+          "gain_db": -2.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 224.426667,
+          "azimuth_deg_unwrapped": 155.0,
+          "elevation_deg": 55.0,
+          "gain_db": -2.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 224.676667,
+          "azimuth_deg_unwrapped": 155.0,
+          "elevation_deg": 55.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": 155.0,
+          "elevation_deg": 55.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.5
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "distance_m": 1.5
+        }
+      ],
+      "home": {
+        "azimuth_deg": 155,
+        "elevation_deg": 55,
+        "distance_m": 1.5
+      },
+      "growth_reference_distance_m": 1.5
+    },
+    {
+      "source_id": "other",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\8 Other.wav",
+      "trajectory": "stable_anchor_or_lane",
+      "gain_db": -4,
+      "musical_rationale": "Unidentified content remains static and attenuated; rear-left lane avoids occupying the frontal vocal zone.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": -165.0,
+          "elevation_deg": -8.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 206.8,
+          "azimuth_deg_unwrapped": -165.0,
+          "elevation_deg": -8.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 207.05,
+          "azimuth_deg_unwrapped": -165.0,
+          "elevation_deg": -8.0,
+          "gain_db": -1.5,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 218.5,
+          "azimuth_deg_unwrapped": -165.0,
+          "elevation_deg": -8.0,
+          "gain_db": -1.5,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 218.75,
+          "azimuth_deg_unwrapped": -165.0,
+          "elevation_deg": -8.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": -165.0,
+          "elevation_deg": -8.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.6
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "distance_m": 1.6
+        }
+      ],
+      "home": {
+        "azimuth_deg": -165,
+        "elevation_deg": -8,
+        "distance_m": 1.6
+      },
+      "growth_reference_distance_m": 1.6
+    },
+    {
+      "source_id": "brass",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\9 Brass.wav",
+      "trajectory": "episodic_positions",
+      "gain_db": 0,
+      "musical_rationale": "Intermittent lower rear-side entries, position held during each accent.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 125.0,
+          "elevation_deg": -32.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 205.397333,
+          "azimuth_deg_unwrapped": 125.0,
+          "elevation_deg": -32.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 206.8,
+          "azimuth_deg_unwrapped": -93.80200316098274,
+          "elevation_deg": -32.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 207.0,
+          "azimuth_deg_unwrapped": -125.0,
+          "elevation_deg": -32.0,
+          "gain_db": -1.599999999999909,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 207.05,
+          "azimuth_deg_unwrapped": -125.0,
+          "elevation_deg": -32.0,
+          "gain_db": -2.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 218.5,
+          "azimuth_deg_unwrapped": -125.0,
+          "elevation_deg": -32.0,
+          "gain_db": -2.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 218.75,
+          "azimuth_deg_unwrapped": -125.0,
+          "elevation_deg": -32.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": -125.0,
+          "elevation_deg": -32.0,
+          "gain_db": 0.0,
+          "reason": "Home/phrase turn with linked support gain"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.0
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "distance_m": 1.0
+        }
+      ],
+      "home": {
+        "azimuth_deg": 125,
+        "elevation_deg": -32,
+        "distance_m": 1.0
+      },
+      "growth_reference_distance_m": 1.0
+    }
+  ],
+  "coordinate_system": {
+    "type": "polar",
+    "azimuth": "unwrapped degrees; 0=front",
+    "elevation": "degrees"
+  },
+  "renderer_policy": {
+    "distance_range_m": [
+      0.25,
+      1.8
+    ],
+    "T018_logic": false,
+    "reflection": false,
+    "reverb": false,
+    "dynamic_distance": true,
+    "plugin_stereo_width_unchanged": true
+  },
+  "gain_staging": {
+    "policy": "common attenuation before dearVR; no limiter; exact sum measured separately",
+    "sum_of_individual_peak_upper_bound": 5.8438720703125,
+    "common_input_gain": 0.04298325495984476,
+    "common_input_gain_db": -27.334014002310624,
+    "worst_case_dry_sum_peak_dbfs": -12.0,
+    "target_output_peak_dbfs": -6.0,
+    "measured_unity_sum_peak_dbfs": 5.1976751564164765,
+    "measured_unity_sum_rms_dbfs": -12.34428950356235,
+    "pre_staged_sum_peak_dbfs": -22.136338845894148
+  },
+  "other_identification_status": "PENDING_HUMAN_IDENTIFICATION",
+  "human_review": "NOT_REQUIRED_BY_USER_T005",
+  "preview_selection": {
+    "selected": {
+      "start_seconds": 200,
+      "duration_seconds": 30,
+      "score": 1120.5933333333332,
+      "participating_roles": 11,
+      "brass_active_fraction": 0.4,
+      "role_active_fractions": {
+        "lead_vocal": 0.38,
+        "backing_vocals": 0.4166666666666667,
+        "woodwinds": 0.41,
+        "drums": 0.9333333333333333,
+        "bass": 0.8666666666666667,
+        "guitar": 0.6866666666666666,
+        "keyboards": 0.6366666666666667,
+        "percussion": 0.9033333333333333,
+        "synth": 1.0,
+        "other": 0.96,
+        "brass": 0.4
+      }
+    },
+    "external_candidate_200_230": {
+      "start_seconds": 200,
+      "duration_seconds": 30,
+      "score": 1120.5933333333332,
+      "participating_roles": 11,
+      "brass_active_fraction": 0.4,
+      "role_active_fractions": {
+        "lead_vocal": 0.38,
+        "backing_vocals": 0.4166666666666667,
+        "woodwinds": 0.41,
+        "drums": 0.9333333333333333,
+        "bass": 0.8666666666666667,
+        "guitar": 0.6866666666666666,
+        "keyboards": 0.6366666666666667,
+        "percussion": 0.9033333333333333,
+        "synth": 1.0,
+        "other": 0.96,
+        "brass": 0.4
+      }
+    },
+    "best_computed_candidate": {
+      "start_seconds": 213,
+      "duration_seconds": 30,
+      "score": 1126.01,
+      "participating_roles": 11,
+      "brass_active_fraction": 0.25333333333333335,
+      "role_active_fractions": {
+        "lead_vocal": 0.4033333333333333,
+        "backing_vocals": 0.22,
+        "woodwinds": 0.44666666666666666,
+        "drums": 0.8166666666666667,
+        "bass": 0.7666666666666667,
+        "guitar": 0.31,
+        "keyboards": 0.23666666666666666,
+        "percussion": 0.7166666666666667,
+        "synth": 0.8966666666666666,
+        "other": 0.8766666666666667,
+        "brass": 0.25333333333333335
+      }
+    },
+    "reason": "Complete role coverage and Brass events; prefer 200-230 only if within 1% of best computed score"
+  },
+  "status": "AUTOMATICALLY_SELECTED_ARCHITECTURE",
+  "objective": "Distinct sources and directions; instrument naming is not a success criterion",
+  "sector_events": [
+    {
+      "sector": "front-right",
+      "azimuth_unwrapped_deg": 45,
+      "start_seconds": 200.04266666666663,
+      "dwell_seconds": 0.45
+    },
+    {
+      "sector": "right",
+      "azimuth_unwrapped_deg": 90,
+      "start_seconds": 202.2613333333333,
+      "dwell_seconds": 0.45
+    },
+    {
+      "sector": "rear-right",
+      "azimuth_unwrapped_deg": 135,
+      "start_seconds": 204.47999999999996,
+      "dwell_seconds": 0.45
+    },
+    {
+      "sector": "rear",
+      "azimuth_unwrapped_deg": 180,
+      "start_seconds": 206.69866666666664,
+      "dwell_seconds": 0.45
+    },
+    {
+      "sector": "rear-left",
+      "azimuth_unwrapped_deg": 225,
+      "start_seconds": 208.9173333333333,
+      "dwell_seconds": 0.45
+    },
+    {
+      "sector": "left",
+      "azimuth_unwrapped_deg": 270,
+      "start_seconds": 211.13599999999997,
+      "dwell_seconds": 0.45
+    },
+    {
+      "sector": "front-left",
+      "azimuth_unwrapped_deg": 315,
+      "start_seconds": 213.35466666666665,
+      "dwell_seconds": 0.45
+    },
+    {
+      "sector": "front",
+      "azimuth_unwrapped_deg": 360,
+      "start_seconds": 215.5733333333333,
+      "dwell_seconds": 0.45
+    }
+  ],
+  "orbit_start_seconds": 200.04266666666663,
+  "orbit_end_seconds": 217.79199999999997,
+  "linked_distance_gain_calibration": {
+    "source": "Measured M02-T002 DirectSignal static curves, mean of two agreeing roles",
+    "distance_m": [
+      0.35,
+      0.5,
+      0.75,
+      1,
+      1.5,
+      2,
+      3
+    ],
+    "gain_db": [
+      -6.831262501060072,
+      -6.161828912988021,
+      -5.187606465155594,
+      -4.3470286460068985,
+      -2.9465674570621156,
+      -1.8038249787571479,
+      0.0
+    ],
+    "limitation": "Approximate transfer across roles; actual per-stem integrated level controlled separately."
+  },
+  "spatial_turns": [
+    {
+      "start_seconds": 200.0,
+      "end_seconds": 207.02,
+      "featured_role": "woodwinds"
+    },
+    {
+      "start_seconds": 207.05,
+      "end_seconds": 218.5,
+      "featured_role": "percussion"
+    },
+    {
+      "start_seconds": 218.709333,
+      "end_seconds": 224.426667,
+      "featured_role": "woodwinds"
+    }
+  ],
+  "near_field_policy": "partial: up to 2.5dB additional calibrated growth relative to each source home; selected events only",
+  "full_render_authorized": false,
+  "selected_source_variant": "T004",
+  "common_latency_to_compensate_samples": 512
+}

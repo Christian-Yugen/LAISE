@@ -1,0 +1,16 @@
+{
+  "weights": {
+    "spatial_discriminability": 0.25,
+    "clarity": 0.2,
+    "orbit_integrity": 0.15,
+    "front_back": 0.1,
+    "elevation": 0.1,
+    "transient_preservation": 0.1,
+    "peak_safety": 0.05,
+    "mono_stability": 0.05
+  },
+  "locked_before_candidate_measurement": true,
+  "gains_excluded_from_spatial_feature_vector": true,
+  "scope": "Actual comparative preview plus full-song input/scene section diagnostics; final full spatial output is independently revalidated.",
+  "epistemic_limit": "System-specific technical discriminability proxies, not human perceptual probabilities or universal localization proof."
+}

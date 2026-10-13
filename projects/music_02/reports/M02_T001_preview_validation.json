@@ -1,0 +1,673 @@
+{
+  "test_id": "M02-T001",
+  "status": "PASS",
+  "human_review": "PENDING",
+  "interval": {
+    "start_seconds": 200,
+    "end_seconds": 230,
+    "frames": 1440000,
+    "duration_seconds": 30,
+    "preroll_seconds": 1.0
+  },
+  "processing": {
+    "baseline": "LAISE_T017_APPROVED_BASELINE",
+    "sample_rate": 48000,
+    "bits": 24,
+    "channels": 2,
+    "block_size": 256,
+    "independent_instances": 11,
+    "distance_m": 3.0,
+    "distance_dynamic": false,
+    "pre_render_gain_db": -27.334014002310624,
+    "common_output_gain": 7.399333753582181,
+    "no_limiter": true,
+    "no_mastering": true,
+    "preroll_alignment": "All stems start one second earlier; same crop and original absolute keyframe timeline.",
+    "no_activity_based_trimming": true
+  },
+  "checks": {
+    "eleven_stems": true,
+    "exact_preview_frames": true,
+    "absolute_synchronization": true,
+    "no_activity_trimming": true,
+    "original_hashes_preserved": true,
+    "tukana_project_unchanged": true,
+    "finite_no_clipping": true,
+    "true_peak_headroom": true,
+    "level_matching": true,
+    "no_boundary_discontinuity_outliers": true,
+    "angular_continuity": true,
+    "full_orbit_present": true,
+    "rhythm_envelope_timing": true,
+    "baseline_regressions": true,
+    "no_limiter_or_mastering": true
+  },
+  "baseline_regressions": {
+    "head_is_approved_baseline": true,
+    "approved_DSP_composer_analyzer_unchanged": true,
+    "Tukana_10_role_import_exact": true,
+    "M02_11_roles": true,
+    "variable_3_role_import": true,
+    "fixed_distance_and_wrapping": true,
+    "keyframe_gain_orbit_interpolation": true,
+    "no_T018_imports": true,
+    "B2_original_hash": true
+  },
+  "scene": "C:\\Projetos2026\\LAISE\\projects\\music_02\\spatial_scenes\\M02_T001_initial_scene.json",
+  "scene_sha256": "19696124e61f43da443cf96d59a7434a2092e25a114dcb07a4e4b880c9866a2b",
+  "source_reports": {
+    "lead_vocal": {
+      "input_sha256": "129be5ea46725dbcae3e8c892d1ec8b3926f089846377043cd0118ce98577c09",
+      "timeline_start_frame": 9600000,
+      "frames": 1440000,
+      "staged_metrics": {
+        "frames": 1440000,
+        "finite": true,
+        "peak": 0.008482522331178188,
+        "peak_dbfs": -41.429499767061685,
+        "rms": 0.0004604326715428709,
+        "rms_dbfs": -66.73667734257577,
+        "max_sample_delta": 0.003054466098546982,
+        "p999_sample_delta": 0.0008772789151407778,
+        "max_block_boundary_delta": 0.001233025035809822,
+        "plugin_boundary_phase_frames": 128,
+        "boundary_measurement_source": "Encoded PCM24, divided by common final gain; includes export quantization."
+      },
+      "angular_continuity": {
+        "wrapped_crossings": 0,
+        "max_circular_step_deg": 0.0,
+        "unwrapped_range_deg": [
+          0.0,
+          0.0
+        ]
+      },
+      "transient_diagnostic": null,
+      "output": "C:\\Projetos2026\\LAISE\\projects\\music_02\\spatial_stems\\M02_T001_preview_200_230\\lead_vocal_spatial_24bit.wav",
+      "output_sha256": "979dff3281b6b747076a152a53ea4e8858b6ab3c896e202ebc04782fdccdd05c",
+      "encoded_boundary_metrics": {
+        "plugin_boundary_phase_frames": 128,
+        "maximum_plugin_boundary_delta": 0.009123563766479492,
+        "maximum_adjacent_sample_delta": 0.022601008415222168,
+        "status": "PASS"
+      }
+    },
+    "backing_vocals": {
+      "input_sha256": "988da51c233857a137830cc5be97502e73c0ed84acfab38ff80dedf070259032",
+      "timeline_start_frame": 9600000,
+      "frames": 1440000,
+      "staged_metrics": {
+        "frames": 1440000,
+        "finite": true,
+        "peak": 0.045685071498155594,
+        "peak_dbfs": -26.804513821422628,
+        "rms": 0.0035014110498183624,
+        "rms_dbfs": -49.11513804068925,
+        "max_sample_delta": 0.009057726711034775,
+        "p999_sample_delta": 0.004820164758712053,
+        "max_block_boundary_delta": 0.006292239501213631,
+        "plugin_boundary_phase_frames": 128,
+        "boundary_measurement_source": "Encoded PCM24, divided by common final gain; includes export quantization."
+      },
+      "angular_continuity": {
+        "wrapped_crossings": 0,
+        "max_circular_step_deg": 0.0,
+        "unwrapped_range_deg": [
+          -100.0,
+          -100.0
+        ]
+      },
+      "transient_diagnostic": null,
+      "output": "C:\\Projetos2026\\LAISE\\projects\\music_02\\spatial_stems\\M02_T001_preview_200_230\\backing_vocals_spatial_24bit.wav",
+      "output_sha256": "79bf369fce1b3da57179fffd89fb6752627cfaffbd745ba667929975f54e51c3",
+      "encoded_boundary_metrics": {
+        "plugin_boundary_phase_frames": 128,
+        "maximum_plugin_boundary_delta": 0.046558380126953125,
+        "maximum_adjacent_sample_delta": 0.06702113151550293,
+        "status": "PASS"
+      }
+    },
+    "woodwinds": {
+      "input_sha256": "8e5320a183713ac6229bb69098ec659fd6319303aaeec6ae2862f70e8df8aa31",
+      "timeline_start_frame": 9600000,
+      "frames": 1440000,
+      "staged_metrics": {
+        "frames": 1440000,
+        "finite": true,
+        "peak": 0.02220287173986435,
+        "peak_dbfs": -33.071816997368025,
+        "rms": 0.0024127898046717544,
+        "rms_dbfs": -52.349610218661255,
+        "max_sample_delta": 0.00415936391800642,
+        "p999_sample_delta": 0.002536594867706299,
+        "max_block_boundary_delta": 0.0030979323060448274,
+        "plugin_boundary_phase_frames": 128,
+        "boundary_measurement_source": "Encoded PCM24, divided by common final gain; includes export quantization."
+      },
+      "angular_continuity": {
+        "wrapped_crossings": 0,
+        "max_circular_step_deg": 0.4514925373140386,
+        "unwrapped_range_deg": [
+          -111.83842794759803,
+          179.9999999977672
+        ]
+      },
+      "transient_diagnostic": {
+        "method": "5-ms magnitude envelopes; cross-correlation and strong-event local retention",
+        "best_lag_ms": -10,
+        "search_bounds_ms": [
+          -100,
+          100
+        ],
+        "search_edge": false,
+        "correlation": 0.9341659545898438,
+        "strong_events": 50,
+        "retained_fraction": 1.0,
+        "interpretation": "Timing diagnostic; binaural filtering changes spectra/crest, so perceptual transient quality awaits human review."
+      },
+      "output": "C:\\Projetos2026\\LAISE\\projects\\music_02\\spatial_stems\\M02_T001_preview_200_230\\woodwinds_spatial_24bit.wav",
+      "output_sha256": "8dc3cc774742ad6c3da6b8f7a773b4889eae671c7435f3889e0abb5a92130738",
+      "encoded_boundary_metrics": {
+        "plugin_boundary_phase_frames": 128,
+        "maximum_plugin_boundary_delta": 0.022922635078430176,
+        "maximum_adjacent_sample_delta": 0.030776500701904297,
+        "status": "PASS"
+      }
+    },
+    "drums": {
+      "input_sha256": "e9f75d4075444f51037bf5c533d69bb12c5a2e1646a9ce79db28672047376945",
+      "timeline_start_frame": 9600000,
+      "frames": 1440000,
+      "staged_metrics": {
+        "frames": 1440000,
+        "finite": true,
+        "peak": 0.03513766825199127,
+        "peak_dbfs": -29.084541236377962,
+        "rms": 0.004125037642725159,
+        "rms_dbfs": -47.691441679477585,
+        "max_sample_delta": 0.012492477893829346,
+        "p999_sample_delta": 0.004793650470674038,
+        "max_block_boundary_delta": 0.007722025907948079,
+        "plugin_boundary_phase_frames": 128,
+        "boundary_measurement_source": "Encoded PCM24, divided by common final gain; includes export quantization."
+      },
+      "angular_continuity": {
+        "wrapped_crossings": 0,
+        "max_circular_step_deg": 0.0,
+        "unwrapped_range_deg": [
+          8.0,
+          8.0
+        ]
+      },
+      "transient_diagnostic": {
+        "method": "5-ms magnitude envelopes; cross-correlation and strong-event local retention",
+        "best_lag_ms": -10,
+        "search_bounds_ms": [
+          -100,
+          100
+        ],
+        "search_edge": false,
+        "correlation": 0.9522072076797485,
+        "strong_events": 50,
+        "retained_fraction": 1.0,
+        "interpretation": "Timing diagnostic; binaural filtering changes spectra/crest, so perceptual transient quality awaits human review."
+      },
+      "output": "C:\\Projetos2026\\LAISE\\projects\\music_02\\spatial_stems\\M02_T001_preview_200_230\\drums_spatial_24bit.wav",
+      "output_sha256": "a366b22ad7354019cb1e108784fb2423e7059c29509b9f1b866117a6d4c024c4",
+      "encoded_boundary_metrics": {
+        "plugin_boundary_phase_frames": 128,
+        "maximum_plugin_boundary_delta": 0.05713784694671631,
+        "maximum_adjacent_sample_delta": 0.09243607521057129,
+        "status": "PASS"
+      }
+    },
+    "bass": {
+      "input_sha256": "d4e60bd2b805db054275cba155c77b9b5532711c373f7ac909bd3585ecdd0ba2",
+      "timeline_start_frame": 9600000,
+      "frames": 1440000,
+      "staged_metrics": {
+        "frames": 1440000,
+        "finite": true,
+        "peak": 0.015457307919859886,
+        "peak_dbfs": -36.21732283106434,
+        "rms": 0.0032517018571246365,
+        "rms_dbfs": -49.757785619132505,
+        "max_sample_delta": 0.0009034861577674747,
+        "p999_sample_delta": 0.0003654109896160662,
+        "max_block_boundary_delta": 0.0005848708792824622,
+        "plugin_boundary_phase_frames": 128,
+        "boundary_measurement_source": "Encoded PCM24, divided by common final gain; includes export quantization."
+      },
+      "angular_continuity": {
+        "wrapped_crossings": 0,
+        "max_circular_step_deg": 0.0,
+        "unwrapped_range_deg": [
+          0.0,
+          0.0
+        ]
+      },
+      "transient_diagnostic": null,
+      "output": "C:\\Projetos2026\\LAISE\\projects\\music_02\\spatial_stems\\M02_T001_preview_200_230\\bass_spatial_24bit.wav",
+      "output_sha256": "f9950fb1c600b98c2ea63cba65f062333d981fd08aee007cb1f225148d985bf8",
+      "encoded_boundary_metrics": {
+        "plugin_boundary_phase_frames": 128,
+        "maximum_plugin_boundary_delta": 0.004327654838562012,
+        "maximum_adjacent_sample_delta": 0.006685137748718262,
+        "status": "PASS"
+      }
+    },
+    "guitar": {
+      "input_sha256": "dc9025dc14e7060f8855d7792e45e6bb8880facdbd4b95f4a8e6ae847d14b503",
+      "timeline_start_frame": 9600000,
+      "frames": 1440000,
+      "staged_metrics": {
+        "frames": 1440000,
+        "finite": true,
+        "peak": 0.010291834361851215,
+        "peak_dbfs": -39.75014423997008,
+        "rms": 0.0010809718855793666,
+        "rms_dbfs": -59.32371202466224,
+        "max_sample_delta": 0.0006477617425844073,
+        "p999_sample_delta": 0.00030662340577691793,
+        "max_block_boundary_delta": 0.0005248419864579999,
+        "plugin_boundary_phase_frames": 128,
+        "boundary_measurement_source": "Encoded PCM24, divided by common final gain; includes export quantization."
+      },
+      "angular_continuity": {
+        "wrapped_crossings": 0,
+        "max_circular_step_deg": 0.057692307692406075,
+        "unwrapped_range_deg": [
+          -54.0,
+          -42.0
+        ]
+      },
+      "transient_diagnostic": null,
+      "output": "C:\\Projetos2026\\LAISE\\projects\\music_02\\spatial_stems\\M02_T001_preview_200_230\\guitar_spatial_24bit.wav",
+      "output_sha256": "aab7a0e12f7576600a3858430486bd831b3b4061c4a59a2cebb60dbb65b8053f",
+      "encoded_boundary_metrics": {
+        "plugin_boundary_phase_frames": 128,
+        "maximum_plugin_boundary_delta": 0.0038834810256958008,
+        "maximum_adjacent_sample_delta": 0.004793047904968262,
+        "status": "PASS"
+      }
+    },
+    "keyboards": {
+      "input_sha256": "b7a5e34f024de7682fc3da5a3604c5843ce8a34d45d24011f22e0ca7ed0962ab",
+      "timeline_start_frame": 9600000,
+      "frames": 1440000,
+      "staged_metrics": {
+        "frames": 1440000,
+        "finite": true,
+        "peak": 0.003258632030338049,
+        "peak_dbfs": -49.7392935591303,
+        "rms": 0.00017287890335963385,
+        "rms_dbfs": -75.24516002041048,
+        "max_sample_delta": 0.0009693530155345798,
+        "p999_sample_delta": 0.0001984607515623793,
+        "max_block_boundary_delta": 0.0002797642844596853,
+        "plugin_boundary_phase_frames": 128,
+        "boundary_measurement_source": "Encoded PCM24, divided by common final gain; includes export quantization."
+      },
+      "angular_continuity": {
+        "wrapped_crossings": 0,
+        "max_circular_step_deg": 0.0,
+        "unwrapped_range_deg": [
+          48.0,
+          48.0
+        ]
+      },
+      "transient_diagnostic": null,
+      "output": "C:\\Projetos2026\\LAISE\\projects\\music_02\\spatial_stems\\M02_T001_preview_200_230\\keyboards_spatial_24bit.wav",
+      "output_sha256": "5adf9cb912b9d56b037963583618886c7601b476cc437775cb66041ee08d6880",
+      "encoded_boundary_metrics": {
+        "plugin_boundary_phase_frames": 128,
+        "maximum_plugin_boundary_delta": 0.0020700693130493164,
+        "maximum_adjacent_sample_delta": 0.007172584533691406,
+        "status": "PASS"
+      }
+    },
+    "percussion": {
+      "input_sha256": "25f6a6d514b0fb2a4eedd5837c7f19681b1106b06b70a7d2c36a3f50b38747a4",
+      "timeline_start_frame": 9600000,
+      "frames": 1440000,
+      "staged_metrics": {
+        "frames": 1440000,
+        "finite": true,
+        "peak": 0.04676416516304016,
+        "peak_dbfs": -26.60173628606159,
+        "rms": 0.002920940487139239,
+        "rms_dbfs": -50.68954582985684,
+        "max_sample_delta": 0.013362676836550236,
+        "p999_sample_delta": 0.005465306341648102,
+        "max_block_boundary_delta": 0.008023620345327019,
+        "plugin_boundary_phase_frames": 128,
+        "boundary_measurement_source": "Encoded PCM24, divided by common final gain; includes export quantization."
+      },
+      "angular_continuity": {
+        "wrapped_crossings": 1,
+        "max_circular_step_deg": 0.10817307692332179,
+        "unwrapped_range_deg": [
+          80.0,
+          440.0
+        ]
+      },
+      "transient_diagnostic": {
+        "method": "5-ms magnitude envelopes; cross-correlation and strong-event local retention",
+        "best_lag_ms": -10,
+        "search_bounds_ms": [
+          -100,
+          100
+        ],
+        "search_edge": false,
+        "correlation": 0.9259922504425049,
+        "strong_events": 50,
+        "retained_fraction": 1.0,
+        "interpretation": "Timing diagnostic; binaural filtering changes spectra/crest, so perceptual transient quality awaits human review."
+      },
+      "output": "C:\\Projetos2026\\LAISE\\projects\\music_02\\spatial_stems\\M02_T001_preview_200_230\\percussion_spatial_24bit.wav",
+      "output_sha256": "b3c194ec62657941c956a00e01dca7358beabf9d39be91324eb4510ce928853f",
+      "encoded_boundary_metrics": {
+        "plugin_boundary_phase_frames": 128,
+        "maximum_plugin_boundary_delta": 0.059369444847106934,
+        "maximum_adjacent_sample_delta": 0.09887492656707764,
+        "status": "PASS"
+      }
+    },
+    "synth": {
+      "input_sha256": "70b4f1eef42aae192d3ca855ff87c12f4e36df04121ab6b0d3fd4e548ad3207a",
+      "timeline_start_frame": 9600000,
+      "frames": 1440000,
+      "staged_metrics": {
+        "frames": 1440000,
+        "finite": true,
+        "peak": 0.013976086862385273,
+        "peak_dbfs": -37.092288176905804,
+        "rms": 0.0018232662823605332,
+        "rms_dbfs": -54.78299798713521,
+        "max_sample_delta": 0.0025862434413284063,
+        "p999_sample_delta": 0.0011968119069933891,
+        "max_block_boundary_delta": 0.0017428034112128372,
+        "plugin_boundary_phase_frames": 128,
+        "boundary_measurement_source": "Encoded PCM24, divided by common final gain; includes export quantization."
+      },
+      "angular_continuity": {
+        "wrapped_crossings": 0,
+        "max_circular_step_deg": 0.0576923076924345,
+        "unwrapped_range_deg": [
+          125.0,
+          137.0
+        ]
+      },
+      "transient_diagnostic": null,
+      "output": "C:\\Projetos2026\\LAISE\\projects\\music_02\\spatial_stems\\M02_T001_preview_200_230\\synth_spatial_24bit.wav",
+      "output_sha256": "0cd7f5f0411e1469523facf8359270301e1fbbc618716804fde3ae05a188e68d",
+      "encoded_boundary_metrics": {
+        "plugin_boundary_phase_frames": 128,
+        "maximum_plugin_boundary_delta": 0.012895584106445312,
+        "maximum_adjacent_sample_delta": 0.019136548042297363,
+        "status": "PASS"
+      }
+    },
+    "other": {
+      "input_sha256": "1e8f246094e9f6c9132a864f568ffe5b8c4ba80462ec76ec1aeddbc8b9c236de",
+      "timeline_start_frame": 9600000,
+      "frames": 1440000,
+      "staged_metrics": {
+        "frames": 1440000,
+        "finite": true,
+        "peak": 0.0136698167771101,
+        "peak_dbfs": -37.28474612886786,
+        "rms": 0.0014720577826231385,
+        "rms_dbfs": -56.64150284641262,
+        "max_sample_delta": 0.00790624599903822,
+        "p999_sample_delta": 0.0011047242442145944,
+        "max_block_boundary_delta": 0.0028952904880238705,
+        "plugin_boundary_phase_frames": 128,
+        "boundary_measurement_source": "Encoded PCM24, divided by common final gain; includes export quantization."
+      },
+      "angular_continuity": {
+        "wrapped_crossings": 0,
+        "max_circular_step_deg": 0.0,
+        "unwrapped_range_deg": [
+          -18.0,
+          -18.0
+        ]
+      },
+      "transient_diagnostic": null,
+      "output": "C:\\Projetos2026\\LAISE\\projects\\music_02\\spatial_stems\\M02_T001_preview_200_230\\other_spatial_24bit.wav",
+      "output_sha256": "626c24c250877885674e9fc4420ef6a57cf06075655390bfd6bc72abaf4acaed",
+      "encoded_boundary_metrics": {
+        "plugin_boundary_phase_frames": 128,
+        "maximum_plugin_boundary_delta": 0.02142322063446045,
+        "maximum_adjacent_sample_delta": 0.05850088596343994,
+        "status": "PASS"
+      }
+    },
+    "brass": {
+      "input_sha256": "7d1483ef72e6046bde4121fb5d3246a9ed49aa06b7c036f7da9b5a2296677f96",
+      "timeline_start_frame": 9600000,
+      "frames": 1440000,
+      "staged_metrics": {
+        "frames": 1440000,
+        "finite": true,
+        "peak": 0.008375721983611584,
+        "peak_dbfs": -41.53955493362161,
+        "rms": 0.0007360076197935738,
+        "rms_dbfs": -62.66235378887035,
+        "max_sample_delta": 0.0004879255429841578,
+        "p999_sample_delta": 0.00018449794151820242,
+        "max_block_boundary_delta": 0.0003888667166140757,
+        "plugin_boundary_phase_frames": 128,
+        "boundary_measurement_source": "Encoded PCM24, divided by common final gain; includes export quantization."
+      },
+      "angular_continuity": {
+        "wrapped_crossings": 0,
+        "max_circular_step_deg": 1.2307692307707612,
+        "unwrapped_range_deg": [
+          -64.0,
+          64.0
+        ]
+      },
+      "transient_diagnostic": {
+        "method": "5-ms magnitude envelopes; cross-correlation and strong-event local retention",
+        "best_lag_ms": -20,
+        "search_bounds_ms": [
+          -100,
+          100
+        ],
+        "search_edge": false,
+        "correlation": 0.961227297782898,
+        "strong_events": 50,
+        "retained_fraction": 1.0,
+        "interpretation": "Timing diagnostic; binaural filtering changes spectra/crest, so perceptual transient quality awaits human review."
+      },
+      "output": "C:\\Projetos2026\\LAISE\\projects\\music_02\\spatial_stems\\M02_T001_preview_200_230\\brass_spatial_24bit.wav",
+      "output_sha256": "61da98129e49b60ec6e77b1af52cd7a44487ebb45efd9ef72b273ddcb2897802",
+      "encoded_boundary_metrics": {
+        "plugin_boundary_phase_frames": 128,
+        "maximum_plugin_boundary_delta": 0.002877354621887207,
+        "maximum_adjacent_sample_delta": 0.003610372543334961,
+        "status": "PASS"
+      }
+    }
+  },
+  "outputs": {
+    "binaural": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\renders\\M02_T001_binaural_200_230_24bit.wav",
+      "sha256": "ecdb036d76da2f4a9e7fb7ebcae07a502d58229cf3cc96a381b6ac83c6747e37",
+      "signal": {
+        "frames": 1440000,
+        "duration_seconds": 30.0,
+        "finite": true,
+        "sample_peak": 0.5011872053146362,
+        "sample_peak_dbfs": -6.0000004906757844,
+        "rms_dbfs": -21.85660231514239,
+        "crest_factor_db": 15.856601824466603,
+        "left_rms_dbfs": -21.824969129834262,
+        "right_rms_dbfs": -21.888467602159793,
+        "channel_balance_db": 0.06349847232552983,
+        "lr_correlation": 0.7244621426130005,
+        "mono_rms_change_db": -0.6438120635680833,
+        "max_adjacent_sample_delta": 0.11576902866363525,
+        "spectral_distribution": {
+          "20-60_hz_db": -4.605080803293582,
+          "60-250_hz_db": -3.459763976160156,
+          "250-2000_hz_db": -7.134300205699423,
+          "2000-6000_hz_db": -21.34292092542283,
+          "6000-20000_hz_db": -26.99437137659274
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -20.6,
+        "loudness_range_lu": 3.4,
+        "true_peak_dbtp": -6.0,
+        "momentary_lufs": {
+          "minimum": -28.4,
+          "median": -20.6,
+          "maximum": -18.2
+        },
+        "short_term_lufs": {
+          "minimum": -24.9,
+          "median": -20.5,
+          "maximum": -19.4
+        }
+      }
+    },
+    "dry_comparison": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\renders\\M02_T001_dry_comparison_200_230_24bit.wav",
+      "sha256": "ec9c1336ec7f02be7205d92ecc1dd9032304e9366f2f3d418cdaf53cb4fe0928",
+      "signal": {
+        "frames": 1440000,
+        "duration_seconds": 30.0,
+        "finite": true,
+        "sample_peak": 0.4564775228500366,
+        "sample_peak_dbfs": -6.811612049013328,
+        "rms_dbfs": -21.002123660673163,
+        "crest_factor_db": 14.190511611659833,
+        "left_rms_dbfs": -21.109385086313495,
+        "right_rms_dbfs": -20.897447636627202,
+        "channel_balance_db": -0.21193744968629138,
+        "lr_correlation": 0.9275931728712588,
+        "mono_rms_change_db": -0.1607737092319626,
+        "max_adjacent_sample_delta": 0.12961053848266602,
+        "spectral_distribution": {
+          "20-60_hz_db": -4.63684835560508,
+          "60-250_hz_db": -3.6931467774912097,
+          "250-2000_hz_db": -6.668740958372502,
+          "2000-6000_hz_db": -20.439935868050547,
+          "6000-20000_hz_db": -23.569414735292145
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -20.1,
+        "loudness_range_lu": 4.4,
+        "true_peak_dbtp": -6.8,
+        "momentary_lufs": {
+          "minimum": -26.4,
+          "median": -20.0,
+          "maximum": -17.3
+        },
+        "short_term_lufs": {
+          "minimum": -25.7,
+          "median": -20.1,
+          "maximum": -18.5
+        }
+      }
+    },
+    "binaural_level_matched": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\renders\\M02_T001_binaural_200_230_level_matched_24bit.wav",
+      "sha256": "ecdb036d76da2f4a9e7fb7ebcae07a502d58229cf3cc96a381b6ac83c6747e37",
+      "signal": {
+        "frames": 1440000,
+        "duration_seconds": 30.0,
+        "finite": true,
+        "sample_peak": 0.5011872053146362,
+        "sample_peak_dbfs": -6.0000004906757844,
+        "rms_dbfs": -21.85660231514239,
+        "crest_factor_db": 15.856601824466603,
+        "left_rms_dbfs": -21.824969129834262,
+        "right_rms_dbfs": -21.888467602159793,
+        "channel_balance_db": 0.06349847232552983,
+        "lr_correlation": 0.7244621426130005,
+        "mono_rms_change_db": -0.6438120635680833,
+        "max_adjacent_sample_delta": 0.11576902866363525,
+        "spectral_distribution": {
+          "20-60_hz_db": -4.605080803293582,
+          "60-250_hz_db": -3.459763976160156,
+          "250-2000_hz_db": -7.134300205699423,
+          "2000-6000_hz_db": -21.34292092542283,
+          "6000-20000_hz_db": -26.99437137659274
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -20.6,
+        "loudness_range_lu": 3.4,
+        "true_peak_dbtp": -6.0,
+        "momentary_lufs": {
+          "minimum": -28.4,
+          "median": -20.6,
+          "maximum": -18.2
+        },
+        "short_term_lufs": {
+          "minimum": -24.9,
+          "median": -20.5,
+          "maximum": -19.4
+        }
+      },
+      "match_gain_db": 0.0
+    },
+    "dry_comparison_level_matched": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\renders\\M02_T001_dry_comparison_200_230_level_matched_24bit.wav",
+      "sha256": "b32f04e6e68298c431b4d01ac214e92cd7f0130241020312f886fe2df10df798",
+      "signal": {
+        "frames": 1440000,
+        "duration_seconds": 30.0,
+        "finite": true,
+        "sample_peak": 0.4309425354003906,
+        "sample_peak_dbfs": -7.3116127509558435,
+        "rms_dbfs": -21.502123793361125,
+        "crest_factor_db": 14.190511042405284,
+        "left_rms_dbfs": -21.60938521873506,
+        "right_rms_dbfs": -21.397447769567684,
+        "channel_balance_db": -0.2119374491673741,
+        "lr_correlation": 0.9275931724279647,
+        "mono_rms_change_db": -0.1607737102292069,
+        "max_adjacent_sample_delta": 0.1223602294921875,
+        "spectral_distribution": {
+          "20-60_hz_db": -4.6368483539188095,
+          "60-250_hz_db": -3.693146777196257,
+          "250-2000_hz_db": -6.668740961793976,
+          "2000-6000_hz_db": -20.439935873938975,
+          "6000-20000_hz_db": -23.569414718048073
+        }
+      },
+      "loudness": {
+        "method": "FFmpeg ebur128 peak=true",
+        "integrated_lufs": -20.6,
+        "loudness_range_lu": 4.4,
+        "true_peak_dbtp": -7.3,
+        "momentary_lufs": {
+          "minimum": -26.9,
+          "median": -20.5,
+          "maximum": -17.8
+        },
+        "short_term_lufs": {
+          "minimum": -26.2,
+          "median": -20.6,
+          "maximum": -19.0
+        }
+      },
+      "match_gain_db": -0.5
+    }
+  },
+  "level_matched_difference_lu": 0.0,
+  "caveats": [
+    "Section labels, 4/4 and bar phase are hypotheses, not ground truth.",
+    "Other instrument identity is pending human identification; its audition file is supplied.",
+    "Absolute alignment preserves file-frame origin; recording alignment without timecode cannot be independently inferred.",
+    "Binaural transient perception, localization and mono/stereo musical suitability await human review."
+  ],
+  "encoded_artifact_validation": "M02_T001_encoded_artifacts_validation.json"
+}

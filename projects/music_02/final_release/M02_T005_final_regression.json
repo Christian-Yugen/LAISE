@@ -1,0 +1,12 @@
+{
+  "test_id": "M02-T005-FINAL-REGRESSION",
+  "status": "PASS",
+  "probes_verified": 504,
+  "music02_preservation_verified": 310,
+  "tukana_preservation_verified": 79,
+  "roles_and_full_frames": 11,
+  "selected_spatial_candidate": "T004",
+  "selected_master": "C",
+  "AAC_spatial_loss_reported": 10.015052386312021,
+  "no_universal_perception_claim": true
+}

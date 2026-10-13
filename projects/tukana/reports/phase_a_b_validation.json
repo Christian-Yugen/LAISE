@@ -1,0 +1,43 @@
+{
+  "test_id": "T012-A-B",
+  "project": "TUKANA",
+  "objective_result": "PASS",
+  "perceptual_result": "PENDING",
+  "validations": {
+    "ten_roles_identified": true,
+    "all_pcm16_stereo_48k": true,
+    "all_12844801_frames": true,
+    "sample_aligned": true,
+    "streaming_import": true,
+    "hashes_complete": true,
+    "metrics_finite": true,
+    "originals_unchanged": true,
+    "bpm_in_valid_range": true,
+    "beat_grid_created": true,
+    "bar_grid_created": true,
+    "entries_for_ten_stems": true,
+    "transitions_created": true
+  },
+  "observed": {
+    "duration_seconds": 267.60002083333336,
+    "bpm": {
+      "bpm": 108.17307692307692,
+      "confidence": 1.0,
+      "method": "rhythmic-stem onset autocorrelation",
+      "reference_stems": [
+        "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\03_drums.wav",
+        "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\07_percussion.wav"
+      ],
+      "hop_frames": 1024,
+      "beat_period_seconds": 0.5546666666666666,
+      "first_beat_seconds": 0.21333333333333335
+    },
+    "bar_count": 121,
+    "transition_count": 9,
+    "section_count": 10
+  },
+  "artifacts": {
+    "import_manifest": "C:\\Projetos2026\\LAISE\\projects\\tukana\\analysis\\stem_import_manifest.json",
+    "musical_map": "C:\\Projetos2026\\LAISE\\projects\\tukana\\analysis\\musical_map.json"
+  }
+}

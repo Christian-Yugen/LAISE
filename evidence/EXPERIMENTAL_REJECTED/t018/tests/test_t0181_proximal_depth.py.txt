@@ -1,0 +1,24 @@
+from __future__ import annotations
+
+from pathlib import Path
+import json
+import sys
+
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / "backend" / "spatial"))
+
+from t0181_proximal_depth import execute
+
+
+def main() -> None:
+    report = execute(ROOT / "projects" / "tukana")
+    assert report["status"] == "PASS", report["tests"]
+    assert report["human_review"] == "PENDING"
+    assert all(report["tests"].values())
+    assert not report["isolation"]["combined_version_created"]
+    print(json.dumps({"test_id": "T018.1", "status": report["status"],
+                      "tests": report["tests"]}, indent=2))
+
+
+if __name__ == "__main__":
+    main()

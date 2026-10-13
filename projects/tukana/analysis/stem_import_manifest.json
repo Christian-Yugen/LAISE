@@ -1,0 +1,1940 @@
+{
+  "schema": "LAISE Stem Import Manifest v1.0",
+  "source_folder": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original",
+  "required_roles": [
+    "lead_vocal",
+    "backing_vocals",
+    "drums",
+    "bass",
+    "guitar",
+    "keyboards",
+    "percussion",
+    "synth",
+    "other",
+    "woodwinds"
+  ],
+  "stem_count": 10,
+  "target_sample_rate": 48000,
+  "target_sample_type": "float32",
+  "streaming_decode": true,
+  "originals_modified": false,
+  "timeline_duration_seconds": 267.60002083333336,
+  "sample_aligned": true,
+  "status": "PASS",
+  "stems": {
+    "lead_vocal": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\01_lead_vocal.wav",
+      "sha256": "885caeabe7ebf448782274ee5d1db6775be3f969432ef92efd1c71bba79d5748",
+      "wav": {
+        "encoding": 1,
+        "channels": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "block_align": 4,
+        "data_offset": 116,
+        "data_size": 51379204,
+        "frames": 12844801,
+        "duration_seconds": 267.60002083333336
+      },
+      "internal_format": {
+        "sample_rate": 48000,
+        "sample_type": "float32",
+        "channels_preserved": 2,
+        "resampling_required": false,
+        "expected_frames": 12844801,
+        "timeline_origin_seconds": 0.0,
+        "silence_policy": "PRESERVE_ALL",
+        "resampler_delay_frames": 0
+      },
+      "metrics": {
+        "peak": 0.481353759765625,
+        "peak_dbfs": -6.3507126328259975,
+        "rms": 0.03447600803101798,
+        "rms_dbfs": -29.249660535872675,
+        "dc_offset": -2.796762925343479e-05,
+        "clipped_sample_count": 0,
+        "silence_threshold_dbfs": -60.0,
+        "active_regions": [
+          {
+            "start_seconds": 0.256,
+            "end_seconds": 2.048
+          },
+          {
+            "start_seconds": 10.496,
+            "end_seconds": 10.581333333333333
+          },
+          {
+            "start_seconds": 10.752,
+            "end_seconds": 22.101333333333333
+          },
+          {
+            "start_seconds": 40.192,
+            "end_seconds": 52.394666666666666
+          },
+          {
+            "start_seconds": 63.06133333333333,
+            "end_seconds": 92.24533333333333
+          },
+          {
+            "start_seconds": 95.57333333333334,
+            "end_seconds": 132.26666666666668
+          },
+          {
+            "start_seconds": 158.72,
+            "end_seconds": 187.81866666666667
+          },
+          {
+            "start_seconds": 204.62933333333334,
+            "end_seconds": 213.67466666666667
+          },
+          {
+            "start_seconds": 253.09866666666667,
+            "end_seconds": 258.4746666666667
+          },
+          {
+            "start_seconds": 261.97333333333336,
+            "end_seconds": 267.60002083333336
+          }
+        ]
+      },
+      "synchronization": {
+        "timeline_start_seconds": 0.0,
+        "initial_silence_preserved": true,
+        "duration_difference_seconds": 0.0
+      }
+    },
+    "backing_vocals": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\02_backing_vocals.wav",
+      "sha256": "7aefa637a92cc05621d2c644e7b77e03ee2b08d5faf7196df9e83fdee81261b0",
+      "wav": {
+        "encoding": 1,
+        "channels": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "block_align": 4,
+        "data_offset": 116,
+        "data_size": 51379204,
+        "frames": 12844801,
+        "duration_seconds": 267.60002083333336
+      },
+      "internal_format": {
+        "sample_rate": 48000,
+        "sample_type": "float32",
+        "channels_preserved": 2,
+        "resampling_required": false,
+        "expected_frames": 12844801,
+        "timeline_origin_seconds": 0.0,
+        "silence_policy": "PRESERVE_ALL",
+        "resampler_delay_frames": 0
+      },
+      "metrics": {
+        "peak": 0.6912841796875,
+        "peak_dbfs": -3.2068676401045284,
+        "rms": 0.0498450384110204,
+        "rms_dbfs": -26.04756129988743,
+        "dc_offset": 2.705842773499615e-07,
+        "clipped_sample_count": 0,
+        "silence_threshold_dbfs": -60.0,
+        "active_regions": [
+          {
+            "start_seconds": 42.58133333333333,
+            "end_seconds": 52.48
+          },
+          {
+            "start_seconds": 76.71466666666667,
+            "end_seconds": 84.82133333333333
+          },
+          {
+            "start_seconds": 87.21066666666667,
+            "end_seconds": 116.224
+          },
+          {
+            "start_seconds": 118.10133333333333,
+            "end_seconds": 120.66133333333333
+          },
+          {
+            "start_seconds": 122.53866666666667,
+            "end_seconds": 125.01333333333334
+          },
+          {
+            "start_seconds": 126.464,
+            "end_seconds": 133.376
+          },
+          {
+            "start_seconds": 143.70133333333334,
+            "end_seconds": 145.49333333333334
+          },
+          {
+            "start_seconds": 145.92,
+            "end_seconds": 147.79733333333334
+          },
+          {
+            "start_seconds": 148.13866666666667,
+            "end_seconds": 150.10133333333334
+          },
+          {
+            "start_seconds": 168.192,
+            "end_seconds": 168.36266666666666
+          },
+          {
+            "start_seconds": 171.94666666666666,
+            "end_seconds": 174.42133333333334
+          },
+          {
+            "start_seconds": 174.50666666666666,
+            "end_seconds": 174.76266666666666
+          },
+          {
+            "start_seconds": 177.32266666666666,
+            "end_seconds": 187.904
+          },
+          {
+            "start_seconds": 204.11733333333333,
+            "end_seconds": 214.69866666666667
+          },
+          {
+            "start_seconds": 253.09866666666667,
+            "end_seconds": 258.4746666666667
+          },
+          {
+            "start_seconds": 258.56,
+            "end_seconds": 258.6453333333333
+          },
+          {
+            "start_seconds": 262.0586666666667,
+            "end_seconds": 267.60002083333336
+          }
+        ]
+      },
+      "synchronization": {
+        "timeline_start_seconds": 0.0,
+        "initial_silence_preserved": true,
+        "duration_difference_seconds": 0.0
+      }
+    },
+    "drums": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\03_drums.wav",
+      "sha256": "6e4e7f3802e738741372e748fd7f0fdacf827e9e1e1948abcf84227dd711471c",
+      "wav": {
+        "encoding": 1,
+        "channels": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "block_align": 4,
+        "data_offset": 116,
+        "data_size": 51379204,
+        "frames": 12844801,
+        "duration_seconds": 267.60002083333336
+      },
+      "internal_format": {
+        "sample_rate": 48000,
+        "sample_type": "float32",
+        "channels_preserved": 2,
+        "resampling_required": false,
+        "expected_frames": 12844801,
+        "timeline_origin_seconds": 0.0,
+        "silence_policy": "PRESERVE_ALL",
+        "resampler_delay_frames": 0
+      },
+      "metrics": {
+        "peak": 0.48590087890625,
+        "peak_dbfs": -6.269046307532249,
+        "rms": 0.08770786187552877,
+        "rms_dbfs": -21.13922952010725,
+        "dc_offset": -0.0001324695420829183,
+        "clipped_sample_count": 0,
+        "silence_threshold_dbfs": -60.0,
+        "active_regions": [
+          {
+            "start_seconds": 6.4,
+            "end_seconds": 8.448
+          },
+          {
+            "start_seconds": 17.578666666666667,
+            "end_seconds": 44.202666666666666
+          },
+          {
+            "start_seconds": 44.629333333333335,
+            "end_seconds": 44.714666666666666
+          },
+          {
+            "start_seconds": 45.141333333333336,
+            "end_seconds": 45.312
+          },
+          {
+            "start_seconds": 45.73866666666667,
+            "end_seconds": 45.824
+          },
+          {
+            "start_seconds": 46.25066666666667,
+            "end_seconds": 46.42133333333334
+          },
+          {
+            "start_seconds": 46.848,
+            "end_seconds": 46.93333333333333
+          },
+          {
+            "start_seconds": 47.44533333333333,
+            "end_seconds": 47.53066666666667
+          },
+          {
+            "start_seconds": 47.95733333333333,
+            "end_seconds": 48.128
+          },
+          {
+            "start_seconds": 48.55466666666667,
+            "end_seconds": 48.64
+          },
+          {
+            "start_seconds": 49.06666666666667,
+            "end_seconds": 65.792
+          },
+          {
+            "start_seconds": 65.87733333333334,
+            "end_seconds": 66.56
+          },
+          {
+            "start_seconds": 66.64533333333334,
+            "end_seconds": 66.90133333333333
+          },
+          {
+            "start_seconds": 66.98666666666666,
+            "end_seconds": 75.86133333333333
+          },
+          {
+            "start_seconds": 75.94666666666667,
+            "end_seconds": 76.62933333333334
+          },
+          {
+            "start_seconds": 76.71466666666667,
+            "end_seconds": 85.16266666666667
+          },
+          {
+            "start_seconds": 85.504,
+            "end_seconds": 85.58933333333333
+          },
+          {
+            "start_seconds": 86.016,
+            "end_seconds": 86.18666666666667
+          },
+          {
+            "start_seconds": 86.61333333333333,
+            "end_seconds": 86.69866666666667
+          },
+          {
+            "start_seconds": 86.784,
+            "end_seconds": 115.456
+          },
+          {
+            "start_seconds": 115.62666666666667,
+            "end_seconds": 115.79733333333333
+          },
+          {
+            "start_seconds": 116.13866666666667,
+            "end_seconds": 116.39466666666667
+          },
+          {
+            "start_seconds": 116.56533333333333,
+            "end_seconds": 116.65066666666667
+          },
+          {
+            "start_seconds": 116.736,
+            "end_seconds": 116.90666666666667
+          },
+          {
+            "start_seconds": 117.248,
+            "end_seconds": 117.504
+          },
+          {
+            "start_seconds": 117.67466666666667,
+            "end_seconds": 117.76
+          },
+          {
+            "start_seconds": 117.84533333333333,
+            "end_seconds": 118.016
+          },
+          {
+            "start_seconds": 118.35733333333333,
+            "end_seconds": 119.46666666666667
+          },
+          {
+            "start_seconds": 119.552,
+            "end_seconds": 119.72266666666667
+          },
+          {
+            "start_seconds": 120.064,
+            "end_seconds": 120.23466666666667
+          },
+          {
+            "start_seconds": 120.66133333333333,
+            "end_seconds": 120.832
+          },
+          {
+            "start_seconds": 121.17333333333333,
+            "end_seconds": 121.344
+          },
+          {
+            "start_seconds": 121.77066666666667,
+            "end_seconds": 121.94133333333333
+          },
+          {
+            "start_seconds": 122.28266666666667,
+            "end_seconds": 122.45333333333333
+          },
+          {
+            "start_seconds": 122.88,
+            "end_seconds": 123.904
+          },
+          {
+            "start_seconds": 123.98933333333333,
+            "end_seconds": 124.16
+          },
+          {
+            "start_seconds": 124.50133333333333,
+            "end_seconds": 124.672
+          },
+          {
+            "start_seconds": 125.09866666666667,
+            "end_seconds": 125.26933333333334
+          },
+          {
+            "start_seconds": 125.696,
+            "end_seconds": 125.78133333333334
+          },
+          {
+            "start_seconds": 126.208,
+            "end_seconds": 126.37866666666666
+          },
+          {
+            "start_seconds": 126.80533333333334,
+            "end_seconds": 126.89066666666666
+          },
+          {
+            "start_seconds": 127.31733333333334,
+            "end_seconds": 133.29066666666668
+          },
+          {
+            "start_seconds": 133.97333333333333,
+            "end_seconds": 160.0
+          },
+          {
+            "start_seconds": 177.408,
+            "end_seconds": 179.2
+          },
+          {
+            "start_seconds": 179.712,
+            "end_seconds": 181.33333333333334
+          },
+          {
+            "start_seconds": 181.93066666666667,
+            "end_seconds": 183.552
+          },
+          {
+            "start_seconds": 186.28266666666667,
+            "end_seconds": 232.192
+          },
+          {
+            "start_seconds": 233.13066666666666,
+            "end_seconds": 236.37333333333333
+          },
+          {
+            "start_seconds": 236.45866666666666,
+            "end_seconds": 236.62933333333334
+          },
+          {
+            "start_seconds": 237.056,
+            "end_seconds": 237.22666666666666
+          },
+          {
+            "start_seconds": 237.568,
+            "end_seconds": 254.72
+          },
+          {
+            "start_seconds": 254.80533333333332,
+            "end_seconds": 255.232
+          },
+          {
+            "start_seconds": 255.31733333333332,
+            "end_seconds": 255.488
+          },
+          {
+            "start_seconds": 255.57333333333332,
+            "end_seconds": 255.65866666666668
+          },
+          {
+            "start_seconds": 255.744,
+            "end_seconds": 255.82933333333332
+          },
+          {
+            "start_seconds": 255.91466666666668,
+            "end_seconds": 256.0853333333333
+          },
+          {
+            "start_seconds": 256.17066666666665,
+            "end_seconds": 256.34133333333335
+          },
+          {
+            "start_seconds": 256.4266666666667,
+            "end_seconds": 256.5973333333333
+          },
+          {
+            "start_seconds": 256.68266666666665,
+            "end_seconds": 256.768
+          },
+          {
+            "start_seconds": 256.85333333333335,
+            "end_seconds": 256.9386666666667
+          },
+          {
+            "start_seconds": 257.024,
+            "end_seconds": 263.76533333333333
+          },
+          {
+            "start_seconds": 267.52,
+            "end_seconds": 267.60002083333336
+          }
+        ]
+      },
+      "synchronization": {
+        "timeline_start_seconds": 0.0,
+        "initial_silence_preserved": true,
+        "duration_difference_seconds": 0.0
+      }
+    },
+    "bass": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\04_bass.wav",
+      "sha256": "c4a03bca1a4adbd729a622736027cf6fee0d456a61346834c784423d5de6d5b7",
+      "wav": {
+        "encoding": 1,
+        "channels": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "block_align": 4,
+        "data_offset": 116,
+        "data_size": 51379204,
+        "frames": 12844801,
+        "duration_seconds": 267.60002083333336
+      },
+      "internal_format": {
+        "sample_rate": 48000,
+        "sample_type": "float32",
+        "channels_preserved": 2,
+        "resampling_required": false,
+        "expected_frames": 12844801,
+        "timeline_origin_seconds": 0.0,
+        "silence_policy": "PRESERVE_ALL",
+        "resampler_delay_frames": 0
+      },
+      "metrics": {
+        "peak": 0.39532470703125,
+        "peak_dbfs": -8.06092084483687,
+        "rms": 0.055531362587210024,
+        "rms_dbfs": -25.109233400043994,
+        "dc_offset": -0.0001530629969247413,
+        "clipped_sample_count": 0,
+        "silence_threshold_dbfs": -60.0,
+        "active_regions": [
+          {
+            "start_seconds": 6.485333333333333,
+            "end_seconds": 7.765333333333333
+          },
+          {
+            "start_seconds": 17.749333333333333,
+            "end_seconds": 43.008
+          },
+          {
+            "start_seconds": 49.06666666666667,
+            "end_seconds": 114.944
+          },
+          {
+            "start_seconds": 118.44266666666667,
+            "end_seconds": 119.296
+          },
+          {
+            "start_seconds": 122.88,
+            "end_seconds": 123.81866666666667
+          },
+          {
+            "start_seconds": 131.92533333333333,
+            "end_seconds": 132.352
+          },
+          {
+            "start_seconds": 134.05866666666665,
+            "end_seconds": 158.976
+          },
+          {
+            "start_seconds": 177.57866666666666,
+            "end_seconds": 177.83466666666666
+          },
+          {
+            "start_seconds": 186.45333333333335,
+            "end_seconds": 231.50933333333333
+          },
+          {
+            "start_seconds": 233.13066666666666,
+            "end_seconds": 235.94666666666666
+          },
+          {
+            "start_seconds": 237.568,
+            "end_seconds": 254.03733333333332
+          },
+          {
+            "start_seconds": 257.536,
+            "end_seconds": 263.0826666666667
+          },
+          {
+            "start_seconds": 267.52,
+            "end_seconds": 267.60002083333336
+          }
+        ]
+      },
+      "synchronization": {
+        "timeline_start_seconds": 0.0,
+        "initial_silence_preserved": true,
+        "duration_difference_seconds": 0.0
+      }
+    },
+    "guitar": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\05_guitar.wav",
+      "sha256": "382277d2e2d0ed86158930f0f8e9af9c2ababc8b4d95768253aecdfc0d78dd58",
+      "wav": {
+        "encoding": 1,
+        "channels": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "block_align": 4,
+        "data_offset": 116,
+        "data_size": 51379204,
+        "frames": 12844801,
+        "duration_seconds": 267.60002083333336
+      },
+      "internal_format": {
+        "sample_rate": 48000,
+        "sample_type": "float32",
+        "channels_preserved": 2,
+        "resampling_required": false,
+        "expected_frames": 12844801,
+        "timeline_origin_seconds": 0.0,
+        "silence_policy": "PRESERVE_ALL",
+        "resampler_delay_frames": 0
+      },
+      "metrics": {
+        "peak": 0.22930908203125,
+        "peak_dbfs": -12.79157488464704,
+        "rms": 0.008681293124208157,
+        "rms_dbfs": -41.22831159121774,
+        "dc_offset": -5.117365139812938e-06,
+        "clipped_sample_count": 0,
+        "silence_threshold_dbfs": -60.0,
+        "active_regions": [
+          {
+            "start_seconds": 17.834666666666667,
+            "end_seconds": 18.346666666666668
+          },
+          {
+            "start_seconds": 18.688,
+            "end_seconds": 18.944
+          },
+          {
+            "start_seconds": 19.029333333333334,
+            "end_seconds": 19.456
+          },
+          {
+            "start_seconds": 19.712,
+            "end_seconds": 20.053333333333335
+          },
+          {
+            "start_seconds": 20.138666666666666,
+            "end_seconds": 20.565333333333335
+          },
+          {
+            "start_seconds": 20.82133333333333,
+            "end_seconds": 21.162666666666667
+          },
+          {
+            "start_seconds": 21.248,
+            "end_seconds": 21.674666666666667
+          },
+          {
+            "start_seconds": 21.930666666666667,
+            "end_seconds": 22.272
+          },
+          {
+            "start_seconds": 22.357333333333333,
+            "end_seconds": 22.869333333333334
+          },
+          {
+            "start_seconds": 23.04,
+            "end_seconds": 23.381333333333334
+          },
+          {
+            "start_seconds": 23.466666666666665,
+            "end_seconds": 23.978666666666665
+          },
+          {
+            "start_seconds": 24.234666666666666,
+            "end_seconds": 24.490666666666666
+          },
+          {
+            "start_seconds": 24.576,
+            "end_seconds": 25.088
+          },
+          {
+            "start_seconds": 25.344,
+            "end_seconds": 25.6
+          },
+          {
+            "start_seconds": 25.685333333333332,
+            "end_seconds": 26.197333333333333
+          },
+          {
+            "start_seconds": 26.538666666666668,
+            "end_seconds": 26.624
+          },
+          {
+            "start_seconds": 40.96,
+            "end_seconds": 41.216
+          },
+          {
+            "start_seconds": 41.38666666666666,
+            "end_seconds": 41.728
+          },
+          {
+            "start_seconds": 42.24,
+            "end_seconds": 42.410666666666664
+          },
+          {
+            "start_seconds": 51.456,
+            "end_seconds": 64.768
+          },
+          {
+            "start_seconds": 78.50666666666666,
+            "end_seconds": 79.53066666666666
+          },
+          {
+            "start_seconds": 80.72533333333334,
+            "end_seconds": 81.74933333333334
+          },
+          {
+            "start_seconds": 83.02933333333333,
+            "end_seconds": 83.968
+          },
+          {
+            "start_seconds": 149.33333333333334,
+            "end_seconds": 157.696
+          },
+          {
+            "start_seconds": 163.41333333333333,
+            "end_seconds": 164.096
+          },
+          {
+            "start_seconds": 164.18133333333333,
+            "end_seconds": 164.43733333333333
+          },
+          {
+            "start_seconds": 167.936,
+            "end_seconds": 169.13066666666666
+          },
+          {
+            "start_seconds": 171.94666666666666,
+            "end_seconds": 175.44533333333334
+          },
+          {
+            "start_seconds": 186.53866666666667,
+            "end_seconds": 196.43733333333333
+          },
+          {
+            "start_seconds": 196.52266666666668,
+            "end_seconds": 196.69333333333333
+          },
+          {
+            "start_seconds": 196.864,
+            "end_seconds": 196.94933333333333
+          },
+          {
+            "start_seconds": 197.20533333333333,
+            "end_seconds": 197.54666666666665
+          },
+          {
+            "start_seconds": 198.48533333333333,
+            "end_seconds": 198.656
+          },
+          {
+            "start_seconds": 199.59466666666665,
+            "end_seconds": 199.76533333333333
+          },
+          {
+            "start_seconds": 200.192,
+            "end_seconds": 200.36266666666666
+          },
+          {
+            "start_seconds": 200.704,
+            "end_seconds": 200.87466666666666
+          },
+          {
+            "start_seconds": 201.81333333333333,
+            "end_seconds": 201.984
+          },
+          {
+            "start_seconds": 248.91733333333335,
+            "end_seconds": 249.00266666666667
+          },
+          {
+            "start_seconds": 249.088,
+            "end_seconds": 249.344
+          },
+          {
+            "start_seconds": 249.42933333333335,
+            "end_seconds": 249.94133333333335
+          },
+          {
+            "start_seconds": 250.02666666666667,
+            "end_seconds": 251.05066666666667
+          },
+          {
+            "start_seconds": 251.136,
+            "end_seconds": 252.16
+          },
+          {
+            "start_seconds": 252.24533333333332,
+            "end_seconds": 253.09866666666667
+          },
+          {
+            "start_seconds": 257.792,
+            "end_seconds": 258.21866666666665
+          },
+          {
+            "start_seconds": 258.304,
+            "end_seconds": 258.816
+          },
+          {
+            "start_seconds": 258.90133333333335,
+            "end_seconds": 259.328
+          },
+          {
+            "start_seconds": 259.41333333333336,
+            "end_seconds": 259.92533333333336
+          },
+          {
+            "start_seconds": 260.0106666666667,
+            "end_seconds": 262.4
+          },
+          {
+            "start_seconds": 267.52,
+            "end_seconds": 267.60002083333336
+          }
+        ]
+      },
+      "synchronization": {
+        "timeline_start_seconds": 0.0,
+        "initial_silence_preserved": true,
+        "duration_difference_seconds": 0.0
+      }
+    },
+    "keyboards": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\06_keyboard.wav",
+      "sha256": "d0503604870cd5a13b3d2ae0a83a50ee9a066f44d7e0e4d1dcbf0b0a0b58a83b",
+      "wav": {
+        "encoding": 1,
+        "channels": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "block_align": 4,
+        "data_offset": 116,
+        "data_size": 51379204,
+        "frames": 12844801,
+        "duration_seconds": 267.60002083333336
+      },
+      "internal_format": {
+        "sample_rate": 48000,
+        "sample_type": "float32",
+        "channels_preserved": 2,
+        "resampling_required": false,
+        "expected_frames": 12844801,
+        "timeline_origin_seconds": 0.0,
+        "silence_policy": "PRESERVE_ALL",
+        "resampler_delay_frames": 0
+      },
+      "metrics": {
+        "peak": 0.062957763671875,
+        "peak_dbfs": -24.019014139731325,
+        "rms": 0.0020289083302644424,
+        "rms_dbfs": -53.85475149461823,
+        "dc_offset": -5.432830790534921e-07,
+        "clipped_sample_count": 0,
+        "silence_threshold_dbfs": -60.0,
+        "active_regions": [
+          {
+            "start_seconds": 17.834666666666667,
+            "end_seconds": 18.346666666666668
+          },
+          {
+            "start_seconds": 18.517333333333333,
+            "end_seconds": 18.944
+          },
+          {
+            "start_seconds": 19.029333333333334,
+            "end_seconds": 19.456
+          },
+          {
+            "start_seconds": 19.712,
+            "end_seconds": 20.053333333333335
+          },
+          {
+            "start_seconds": 20.138666666666666,
+            "end_seconds": 20.650666666666666
+          },
+          {
+            "start_seconds": 20.736,
+            "end_seconds": 21.162666666666667
+          },
+          {
+            "start_seconds": 21.248,
+            "end_seconds": 21.76
+          },
+          {
+            "start_seconds": 21.930666666666667,
+            "end_seconds": 22.272
+          },
+          {
+            "start_seconds": 22.357333333333333,
+            "end_seconds": 22.869333333333334
+          },
+          {
+            "start_seconds": 22.954666666666668,
+            "end_seconds": 25.173333333333332
+          },
+          {
+            "start_seconds": 25.258666666666667,
+            "end_seconds": 26.282666666666668
+          },
+          {
+            "start_seconds": 26.453333333333333,
+            "end_seconds": 27.30666666666667
+          },
+          {
+            "start_seconds": 27.648,
+            "end_seconds": 27.818666666666665
+          },
+          {
+            "start_seconds": 27.989333333333335,
+            "end_seconds": 28.16
+          },
+          {
+            "start_seconds": 28.75733333333333,
+            "end_seconds": 28.928
+          },
+          {
+            "start_seconds": 29.098666666666666,
+            "end_seconds": 29.269333333333332
+          },
+          {
+            "start_seconds": 29.866666666666667,
+            "end_seconds": 30.037333333333333
+          },
+          {
+            "start_seconds": 30.208,
+            "end_seconds": 30.549333333333333
+          },
+          {
+            "start_seconds": 30.976,
+            "end_seconds": 31.14666666666667
+          },
+          {
+            "start_seconds": 31.317333333333334,
+            "end_seconds": 31.488
+          },
+          {
+            "start_seconds": 31.573333333333334,
+            "end_seconds": 31.744
+          },
+          {
+            "start_seconds": 32.08533333333333,
+            "end_seconds": 32.256
+          },
+          {
+            "start_seconds": 32.42666666666667,
+            "end_seconds": 32.85333333333333
+          },
+          {
+            "start_seconds": 33.19466666666667,
+            "end_seconds": 33.45066666666666
+          },
+          {
+            "start_seconds": 33.536,
+            "end_seconds": 33.792
+          },
+          {
+            "start_seconds": 33.87733333333333,
+            "end_seconds": 33.962666666666664
+          },
+          {
+            "start_seconds": 34.304,
+            "end_seconds": 34.56
+          },
+          {
+            "start_seconds": 34.64533333333333,
+            "end_seconds": 34.90133333333333
+          },
+          {
+            "start_seconds": 34.986666666666665,
+            "end_seconds": 35.072
+          },
+          {
+            "start_seconds": 35.498666666666665,
+            "end_seconds": 35.669333333333334
+          },
+          {
+            "start_seconds": 35.754666666666665,
+            "end_seconds": 36.010666666666665
+          },
+          {
+            "start_seconds": 36.096,
+            "end_seconds": 36.181333333333335
+          },
+          {
+            "start_seconds": 36.608,
+            "end_seconds": 36.778666666666666
+          },
+          {
+            "start_seconds": 36.949333333333335,
+            "end_seconds": 37.29066666666667
+          },
+          {
+            "start_seconds": 37.717333333333336,
+            "end_seconds": 37.888
+          },
+          {
+            "start_seconds": 38.05866666666667,
+            "end_seconds": 38.22933333333334
+          },
+          {
+            "start_seconds": 38.31466666666667,
+            "end_seconds": 38.48533333333334
+          },
+          {
+            "start_seconds": 38.82666666666667,
+            "end_seconds": 38.99733333333333
+          },
+          {
+            "start_seconds": 39.168,
+            "end_seconds": 39.33866666666667
+          },
+          {
+            "start_seconds": 39.424,
+            "end_seconds": 39.50933333333333
+          },
+          {
+            "start_seconds": 39.936,
+            "end_seconds": 40.10666666666667
+          },
+          {
+            "start_seconds": 40.53333333333333,
+            "end_seconds": 40.61866666666667
+          },
+          {
+            "start_seconds": 41.13066666666667,
+            "end_seconds": 41.216
+          },
+          {
+            "start_seconds": 42.24,
+            "end_seconds": 42.32533333333333
+          },
+          {
+            "start_seconds": 54.016,
+            "end_seconds": 54.101333333333336
+          },
+          {
+            "start_seconds": 57.856,
+            "end_seconds": 57.94133333333333
+          },
+          {
+            "start_seconds": 59.562666666666665,
+            "end_seconds": 59.648
+          },
+          {
+            "start_seconds": 61.781333333333336,
+            "end_seconds": 61.952
+          },
+          {
+            "start_seconds": 62.976,
+            "end_seconds": 63.06133333333333
+          },
+          {
+            "start_seconds": 63.40266666666667,
+            "end_seconds": 63.488
+          },
+          {
+            "start_seconds": 118.44266666666667,
+            "end_seconds": 119.04
+          },
+          {
+            "start_seconds": 122.88,
+            "end_seconds": 123.392
+          },
+          {
+            "start_seconds": 162.816,
+            "end_seconds": 166.74133333333333
+          },
+          {
+            "start_seconds": 166.82666666666665,
+            "end_seconds": 166.99733333333333
+          },
+          {
+            "start_seconds": 167.08266666666665,
+            "end_seconds": 167.25333333333333
+          },
+          {
+            "start_seconds": 167.424,
+            "end_seconds": 169.216
+          },
+          {
+            "start_seconds": 174.16533333333334,
+            "end_seconds": 174.25066666666666
+          },
+          {
+            "start_seconds": 241.23733333333334,
+            "end_seconds": 241.32266666666666
+          },
+          {
+            "start_seconds": 242.26133333333334,
+            "end_seconds": 242.34666666666666
+          },
+          {
+            "start_seconds": 244.736,
+            "end_seconds": 244.82133333333334
+          },
+          {
+            "start_seconds": 245.504,
+            "end_seconds": 245.67466666666667
+          },
+          {
+            "start_seconds": 248.74666666666667,
+            "end_seconds": 248.832
+          },
+          {
+            "start_seconds": 248.91733333333335,
+            "end_seconds": 249.00266666666667
+          },
+          {
+            "start_seconds": 249.088,
+            "end_seconds": 249.77066666666667
+          },
+          {
+            "start_seconds": 249.856,
+            "end_seconds": 249.94133333333335
+          },
+          {
+            "start_seconds": 250.02666666666667,
+            "end_seconds": 250.112
+          },
+          {
+            "start_seconds": 250.79466666666667,
+            "end_seconds": 250.88
+          },
+          {
+            "start_seconds": 260.94933333333336,
+            "end_seconds": 261.0346666666667
+          },
+          {
+            "start_seconds": 261.12,
+            "end_seconds": 261.20533333333333
+          },
+          {
+            "start_seconds": 261.29066666666665,
+            "end_seconds": 263.5946666666667
+          },
+          {
+            "start_seconds": 263.68,
+            "end_seconds": 264.192
+          },
+          {
+            "start_seconds": 264.6186666666667,
+            "end_seconds": 264.704
+          },
+          {
+            "start_seconds": 264.78933333333333,
+            "end_seconds": 264.96
+          },
+          {
+            "start_seconds": 265.04533333333336,
+            "end_seconds": 265.1306666666667
+          },
+          {
+            "start_seconds": 265.216,
+            "end_seconds": 265.472
+          },
+          {
+            "start_seconds": 267.52,
+            "end_seconds": 267.60002083333336
+          }
+        ]
+      },
+      "synchronization": {
+        "timeline_start_seconds": 0.0,
+        "initial_silence_preserved": true,
+        "duration_difference_seconds": 0.0
+      }
+    },
+    "percussion": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\07_percussion.wav",
+      "sha256": "8ea07191eff117ffb84f9c2c953c19ddfc875953adae07e51db7ff34128d2327",
+      "wav": {
+        "encoding": 1,
+        "channels": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "block_align": 4,
+        "data_offset": 116,
+        "data_size": 51379204,
+        "frames": 12844801,
+        "duration_seconds": 267.60002083333336
+      },
+      "internal_format": {
+        "sample_rate": 48000,
+        "sample_type": "float32",
+        "channels_preserved": 2,
+        "resampling_required": false,
+        "expected_frames": 12844801,
+        "timeline_origin_seconds": 0.0,
+        "silence_policy": "PRESERVE_ALL",
+        "resampler_delay_frames": 0
+      },
+      "metrics": {
+        "peak": 0.499298095703125,
+        "peak_dbfs": -6.032801806364332,
+        "rms": 0.04473001011710469,
+        "rms_dbfs": -26.988020071958335,
+        "dc_offset": -7.250712205140491e-05,
+        "clipped_sample_count": 0,
+        "silence_threshold_dbfs": -60.0,
+        "active_regions": [
+          {
+            "start_seconds": 6.4,
+            "end_seconds": 8.448
+          },
+          {
+            "start_seconds": 17.578666666666667,
+            "end_seconds": 43.946666666666665
+          },
+          {
+            "start_seconds": 44.032,
+            "end_seconds": 44.202666666666666
+          },
+          {
+            "start_seconds": 44.629333333333335,
+            "end_seconds": 44.714666666666666
+          },
+          {
+            "start_seconds": 45.141333333333336,
+            "end_seconds": 45.312
+          },
+          {
+            "start_seconds": 45.73866666666667,
+            "end_seconds": 45.824
+          },
+          {
+            "start_seconds": 46.25066666666667,
+            "end_seconds": 46.42133333333334
+          },
+          {
+            "start_seconds": 46.848,
+            "end_seconds": 47.01866666666667
+          },
+          {
+            "start_seconds": 47.36,
+            "end_seconds": 47.53066666666667
+          },
+          {
+            "start_seconds": 47.95733333333333,
+            "end_seconds": 48.128
+          },
+          {
+            "start_seconds": 48.55466666666667,
+            "end_seconds": 48.64
+          },
+          {
+            "start_seconds": 49.06666666666667,
+            "end_seconds": 66.90133333333333
+          },
+          {
+            "start_seconds": 66.98666666666666,
+            "end_seconds": 118.016
+          },
+          {
+            "start_seconds": 118.10133333333333,
+            "end_seconds": 119.808
+          },
+          {
+            "start_seconds": 119.89333333333333,
+            "end_seconds": 120.23466666666667
+          },
+          {
+            "start_seconds": 120.49066666666667,
+            "end_seconds": 120.576
+          },
+          {
+            "start_seconds": 120.66133333333333,
+            "end_seconds": 120.832
+          },
+          {
+            "start_seconds": 121.00266666666667,
+            "end_seconds": 121.344
+          },
+          {
+            "start_seconds": 121.42933333333333,
+            "end_seconds": 121.51466666666667
+          },
+          {
+            "start_seconds": 121.6,
+            "end_seconds": 121.68533333333333
+          },
+          {
+            "start_seconds": 121.77066666666667,
+            "end_seconds": 121.94133333333333
+          },
+          {
+            "start_seconds": 122.19733333333333,
+            "end_seconds": 122.45333333333333
+          },
+          {
+            "start_seconds": 122.53866666666667,
+            "end_seconds": 122.624
+          },
+          {
+            "start_seconds": 122.88,
+            "end_seconds": 124.16
+          },
+          {
+            "start_seconds": 124.416,
+            "end_seconds": 124.672
+          },
+          {
+            "start_seconds": 125.09866666666667,
+            "end_seconds": 125.26933333333334
+          },
+          {
+            "start_seconds": 125.52533333333334,
+            "end_seconds": 125.86666666666666
+          },
+          {
+            "start_seconds": 126.208,
+            "end_seconds": 126.37866666666666
+          },
+          {
+            "start_seconds": 126.63466666666666,
+            "end_seconds": 126.72
+          },
+          {
+            "start_seconds": 126.80533333333334,
+            "end_seconds": 126.89066666666666
+          },
+          {
+            "start_seconds": 127.31733333333334,
+            "end_seconds": 133.376
+          },
+          {
+            "start_seconds": 133.46133333333333,
+            "end_seconds": 133.54666666666665
+          },
+          {
+            "start_seconds": 133.97333333333333,
+            "end_seconds": 160.08533333333332
+          },
+          {
+            "start_seconds": 162.47466666666668,
+            "end_seconds": 162.56
+          },
+          {
+            "start_seconds": 163.072,
+            "end_seconds": 163.15733333333333
+          },
+          {
+            "start_seconds": 163.584,
+            "end_seconds": 163.66933333333333
+          },
+          {
+            "start_seconds": 164.18133333333333,
+            "end_seconds": 164.26666666666668
+          },
+          {
+            "start_seconds": 167.50933333333333,
+            "end_seconds": 167.59466666666665
+          },
+          {
+            "start_seconds": 167.85066666666665,
+            "end_seconds": 167.936
+          },
+          {
+            "start_seconds": 168.02133333333333,
+            "end_seconds": 168.192
+          },
+          {
+            "start_seconds": 168.27733333333333,
+            "end_seconds": 168.53333333333333
+          },
+          {
+            "start_seconds": 168.61866666666666,
+            "end_seconds": 168.704
+          },
+          {
+            "start_seconds": 168.78933333333333,
+            "end_seconds": 169.04533333333333
+          },
+          {
+            "start_seconds": 170.24,
+            "end_seconds": 170.41066666666666
+          },
+          {
+            "start_seconds": 170.496,
+            "end_seconds": 170.58133333333333
+          },
+          {
+            "start_seconds": 170.83733333333333,
+            "end_seconds": 170.92266666666666
+          },
+          {
+            "start_seconds": 171.17866666666666,
+            "end_seconds": 171.264
+          },
+          {
+            "start_seconds": 171.34933333333333,
+            "end_seconds": 171.52
+          },
+          {
+            "start_seconds": 171.60533333333333,
+            "end_seconds": 171.86133333333333
+          },
+          {
+            "start_seconds": 171.94666666666666,
+            "end_seconds": 172.62933333333334
+          },
+          {
+            "start_seconds": 172.71466666666666,
+            "end_seconds": 172.97066666666666
+          },
+          {
+            "start_seconds": 173.056,
+            "end_seconds": 173.73866666666666
+          },
+          {
+            "start_seconds": 173.824,
+            "end_seconds": 173.99466666666666
+          },
+          {
+            "start_seconds": 174.50666666666666,
+            "end_seconds": 174.592
+          },
+          {
+            "start_seconds": 174.67733333333334,
+            "end_seconds": 174.848
+          },
+          {
+            "start_seconds": 174.93333333333334,
+            "end_seconds": 175.18933333333334
+          },
+          {
+            "start_seconds": 175.27466666666666,
+            "end_seconds": 175.44533333333334
+          },
+          {
+            "start_seconds": 175.616,
+            "end_seconds": 175.95733333333334
+          },
+          {
+            "start_seconds": 176.04266666666666,
+            "end_seconds": 176.128
+          },
+          {
+            "start_seconds": 176.384,
+            "end_seconds": 176.55466666666666
+          },
+          {
+            "start_seconds": 176.64,
+            "end_seconds": 176.72533333333334
+          },
+          {
+            "start_seconds": 176.98133333333334,
+            "end_seconds": 177.06666666666666
+          },
+          {
+            "start_seconds": 177.152,
+            "end_seconds": 179.11466666666666
+          },
+          {
+            "start_seconds": 179.2,
+            "end_seconds": 179.28533333333334
+          },
+          {
+            "start_seconds": 179.712,
+            "end_seconds": 181.33333333333334
+          },
+          {
+            "start_seconds": 181.93066666666667,
+            "end_seconds": 183.552
+          },
+          {
+            "start_seconds": 183.63733333333334,
+            "end_seconds": 183.72266666666667
+          },
+          {
+            "start_seconds": 183.97866666666667,
+            "end_seconds": 184.32
+          },
+          {
+            "start_seconds": 184.74666666666667,
+            "end_seconds": 184.91733333333335
+          },
+          {
+            "start_seconds": 185.088,
+            "end_seconds": 185.17333333333335
+          },
+          {
+            "start_seconds": 185.25866666666667,
+            "end_seconds": 185.42933333333335
+          },
+          {
+            "start_seconds": 185.68533333333335,
+            "end_seconds": 185.77066666666667
+          },
+          {
+            "start_seconds": 185.856,
+            "end_seconds": 186.02666666666667
+          },
+          {
+            "start_seconds": 186.19733333333335,
+            "end_seconds": 255.232
+          },
+          {
+            "start_seconds": 255.31733333333332,
+            "end_seconds": 255.82933333333332
+          },
+          {
+            "start_seconds": 255.91466666666668,
+            "end_seconds": 256.768
+          },
+          {
+            "start_seconds": 256.85333333333335,
+            "end_seconds": 256.9386666666667
+          },
+          {
+            "start_seconds": 257.024,
+            "end_seconds": 263.68
+          },
+          {
+            "start_seconds": 267.52,
+            "end_seconds": 267.60002083333336
+          }
+        ]
+      },
+      "synchronization": {
+        "timeline_start_seconds": 0.0,
+        "initial_silence_preserved": true,
+        "duration_difference_seconds": 0.0
+      }
+    },
+    "synth": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\08_synth.wav",
+      "sha256": "71a7d42abf57f44859f4e41b225992506f8015b9af780f5862b9b42b38e67358",
+      "wav": {
+        "encoding": 1,
+        "channels": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "block_align": 4,
+        "data_offset": 116,
+        "data_size": 51379204,
+        "frames": 12844801,
+        "duration_seconds": 267.60002083333336
+      },
+      "internal_format": {
+        "sample_rate": 48000,
+        "sample_type": "float32",
+        "channels_preserved": 2,
+        "resampling_required": false,
+        "expected_frames": 12844801,
+        "timeline_origin_seconds": 0.0,
+        "silence_policy": "PRESERVE_ALL",
+        "resampler_delay_frames": 0
+      },
+      "metrics": {
+        "peak": 0.26531982421875,
+        "peak_dbfs": -11.524605982097995,
+        "rms": 0.02286276365338489,
+        "rms_dbfs": -32.81742546405578,
+        "dc_offset": -3.740596432507985e-05,
+        "clipped_sample_count": 0,
+        "silence_threshold_dbfs": -60.0,
+        "active_regions": [
+          {
+            "start_seconds": 0.17066666666666666,
+            "end_seconds": 13.141333333333334
+          },
+          {
+            "start_seconds": 17.834666666666667,
+            "end_seconds": 18.346666666666668
+          },
+          {
+            "start_seconds": 18.688,
+            "end_seconds": 18.944
+          },
+          {
+            "start_seconds": 19.029333333333334,
+            "end_seconds": 19.456
+          },
+          {
+            "start_seconds": 19.626666666666665,
+            "end_seconds": 20.053333333333335
+          },
+          {
+            "start_seconds": 20.138666666666666,
+            "end_seconds": 20.650666666666666
+          },
+          {
+            "start_seconds": 20.736,
+            "end_seconds": 20.82133333333333
+          },
+          {
+            "start_seconds": 20.906666666666666,
+            "end_seconds": 21.162666666666667
+          },
+          {
+            "start_seconds": 21.248,
+            "end_seconds": 21.76
+          },
+          {
+            "start_seconds": 21.930666666666667,
+            "end_seconds": 22.869333333333334
+          },
+          {
+            "start_seconds": 22.954666666666668,
+            "end_seconds": 23.381333333333334
+          },
+          {
+            "start_seconds": 23.466666666666665,
+            "end_seconds": 23.978666666666665
+          },
+          {
+            "start_seconds": 24.064,
+            "end_seconds": 42.666666666666664
+          },
+          {
+            "start_seconds": 42.922666666666665,
+            "end_seconds": 43.008
+          },
+          {
+            "start_seconds": 51.456,
+            "end_seconds": 65.36533333333334
+          },
+          {
+            "start_seconds": 87.21066666666667,
+            "end_seconds": 96.42666666666666
+          },
+          {
+            "start_seconds": 131.84,
+            "end_seconds": 159.57333333333332
+          },
+          {
+            "start_seconds": 162.73066666666668,
+            "end_seconds": 171.09333333333333
+          },
+          {
+            "start_seconds": 171.17866666666666,
+            "end_seconds": 171.264
+          },
+          {
+            "start_seconds": 171.94666666666666,
+            "end_seconds": 175.78666666666666
+          },
+          {
+            "start_seconds": 175.872,
+            "end_seconds": 175.95733333333334
+          },
+          {
+            "start_seconds": 176.21333333333334,
+            "end_seconds": 176.29866666666666
+          },
+          {
+            "start_seconds": 186.45333333333335,
+            "end_seconds": 208.46933333333334
+          },
+          {
+            "start_seconds": 208.55466666666666,
+            "end_seconds": 208.81066666666666
+          },
+          {
+            "start_seconds": 213.16266666666667,
+            "end_seconds": 230.144
+          },
+          {
+            "start_seconds": 231.168,
+            "end_seconds": 234.58133333333333
+          },
+          {
+            "start_seconds": 235.43466666666666,
+            "end_seconds": 238.76266666666666
+          },
+          {
+            "start_seconds": 239.78666666666666,
+            "end_seconds": 267.60002083333336
+          }
+        ]
+      },
+      "synchronization": {
+        "timeline_start_seconds": 0.0,
+        "initial_silence_preserved": true,
+        "duration_difference_seconds": 0.0
+      }
+    },
+    "other": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\09_other.wav",
+      "sha256": "005f04c6189dcfe204761c679c7ab21d64e7b2cbd0f428c809e508af947989ae",
+      "wav": {
+        "encoding": 1,
+        "channels": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "block_align": 4,
+        "data_offset": 116,
+        "data_size": 51379204,
+        "frames": 12844801,
+        "duration_seconds": 267.60002083333336
+      },
+      "internal_format": {
+        "sample_rate": 48000,
+        "sample_type": "float32",
+        "channels_preserved": 2,
+        "resampling_required": false,
+        "expected_frames": 12844801,
+        "timeline_origin_seconds": 0.0,
+        "silence_policy": "PRESERVE_ALL",
+        "resampler_delay_frames": 0
+      },
+      "metrics": {
+        "peak": 0.61761474609375,
+        "peak_dbfs": -4.185646867737457,
+        "rms": 0.008936677614616303,
+        "rms_dbfs": -40.97647817400936,
+        "dc_offset": -6.927774561872713e-06,
+        "clipped_sample_count": 0,
+        "silence_threshold_dbfs": -60.0,
+        "active_regions": [
+          {
+            "start_seconds": 6.4,
+            "end_seconds": 8.021333333333333
+          },
+          {
+            "start_seconds": 17.578666666666667,
+            "end_seconds": 19.285333333333334
+          },
+          {
+            "start_seconds": 21.504,
+            "end_seconds": 24.576
+          },
+          {
+            "start_seconds": 38.4,
+            "end_seconds": 44.8
+          },
+          {
+            "start_seconds": 50.944,
+            "end_seconds": 53.845333333333336
+          },
+          {
+            "start_seconds": 59.818666666666665,
+            "end_seconds": 61.184
+          },
+          {
+            "start_seconds": 69.03466666666667,
+            "end_seconds": 69.29066666666667
+          },
+          {
+            "start_seconds": 77.056,
+            "end_seconds": 84.13866666666667
+          },
+          {
+            "start_seconds": 84.224,
+            "end_seconds": 84.82133333333333
+          },
+          {
+            "start_seconds": 86.528,
+            "end_seconds": 90.79466666666667
+          },
+          {
+            "start_seconds": 90.96533333333333,
+            "end_seconds": 91.136
+          },
+          {
+            "start_seconds": 91.22133333333333,
+            "end_seconds": 97.10933333333334
+          },
+          {
+            "start_seconds": 113.408,
+            "end_seconds": 115.62666666666667
+          },
+          {
+            "start_seconds": 131.41333333333333,
+            "end_seconds": 133.29066666666668
+          },
+          {
+            "start_seconds": 148.56533333333334,
+            "end_seconds": 148.65066666666667
+          },
+          {
+            "start_seconds": 149.16266666666667,
+            "end_seconds": 160.42666666666668
+          },
+          {
+            "start_seconds": 177.32266666666666,
+            "end_seconds": 178.60266666666666
+          },
+          {
+            "start_seconds": 185.51466666666667,
+            "end_seconds": 188.58666666666667
+          },
+          {
+            "start_seconds": 203.09333333333333,
+            "end_seconds": 208.128
+          },
+          {
+            "start_seconds": 219.30666666666667,
+            "end_seconds": 219.392
+          },
+          {
+            "start_seconds": 219.47733333333332,
+            "end_seconds": 224.08533333333332
+          },
+          {
+            "start_seconds": 228.01066666666668,
+            "end_seconds": 236.45866666666666
+          },
+          {
+            "start_seconds": 237.48266666666666,
+            "end_seconds": 254.72
+          },
+          {
+            "start_seconds": 254.80533333333332,
+            "end_seconds": 254.89066666666668
+          },
+          {
+            "start_seconds": 257.28,
+            "end_seconds": 264.448
+          },
+          {
+            "start_seconds": 267.52,
+            "end_seconds": 267.60002083333336
+          }
+        ]
+      },
+      "synchronization": {
+        "timeline_start_seconds": 0.0,
+        "initial_silence_preserved": true,
+        "duration_difference_seconds": 0.0
+      }
+    },
+    "woodwinds": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\10_woodwinds.wav",
+      "sha256": "db3d821347c5a1e94bc82c189d380babfcf2bff9d3be477a86bc382ef0dc5dce",
+      "wav": {
+        "encoding": 1,
+        "channels": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "block_align": 4,
+        "data_offset": 116,
+        "data_size": 51379204,
+        "frames": 12844801,
+        "duration_seconds": 267.60002083333336
+      },
+      "internal_format": {
+        "sample_rate": 48000,
+        "sample_type": "float32",
+        "channels_preserved": 2,
+        "resampling_required": false,
+        "expected_frames": 12844801,
+        "timeline_origin_seconds": 0.0,
+        "silence_policy": "PRESERVE_ALL",
+        "resampler_delay_frames": 0
+      },
+      "metrics": {
+        "peak": 0.362060546875,
+        "peak_dbfs": -8.824375938787846,
+        "rms": 0.030046346779316765,
+        "rms_dbfs": -30.444166493213327,
+        "dc_offset": -1.6337611072145795e-05,
+        "clipped_sample_count": 0,
+        "silence_threshold_dbfs": -60.0,
+        "active_regions": [
+          {
+            "start_seconds": 0.17066666666666666,
+            "end_seconds": 13.056
+          },
+          {
+            "start_seconds": 24.490666666666666,
+            "end_seconds": 43.52
+          },
+          {
+            "start_seconds": 55.296,
+            "end_seconds": 56.14933333333333
+          },
+          {
+            "start_seconds": 59.733333333333334,
+            "end_seconds": 60.757333333333335
+          },
+          {
+            "start_seconds": 131.84,
+            "end_seconds": 148.90666666666667
+          },
+          {
+            "start_seconds": 162.64533333333333,
+            "end_seconds": 166.912
+          },
+          {
+            "start_seconds": 166.99733333333333,
+            "end_seconds": 170.41066666666666
+          },
+          {
+            "start_seconds": 170.496,
+            "end_seconds": 170.752
+          },
+          {
+            "start_seconds": 170.83733333333333,
+            "end_seconds": 170.92266666666666
+          },
+          {
+            "start_seconds": 171.94666666666666,
+            "end_seconds": 175.616
+          },
+          {
+            "start_seconds": 175.70133333333334,
+            "end_seconds": 175.78666666666666
+          },
+          {
+            "start_seconds": 186.624,
+            "end_seconds": 204.62933333333334
+          },
+          {
+            "start_seconds": 213.33333333333334,
+            "end_seconds": 229.71733333333333
+          },
+          {
+            "start_seconds": 231.08266666666665,
+            "end_seconds": 234.32533333333333
+          },
+          {
+            "start_seconds": 235.43466666666666,
+            "end_seconds": 238.848
+          },
+          {
+            "start_seconds": 262.144,
+            "end_seconds": 267.60002083333336
+          }
+        ]
+      },
+      "synchronization": {
+        "timeline_start_seconds": 0.0,
+        "initial_silence_preserved": true,
+        "duration_difference_seconds": 0.0
+      }
+    }
+  }
+}

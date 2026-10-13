@@ -1,0 +1,102 @@
+{
+  "test_id": "M02-T002-DISTANCE-CONTROL",
+  "probes": [
+    {
+      "raw": 0.0,
+      "display": "0.1 m"
+    },
+    {
+      "raw": 0.01,
+      "display": "0.4 m"
+    },
+    {
+      "raw": 0.02,
+      "display": "0.7 m"
+    },
+    {
+      "raw": 0.04,
+      "display": "1.3 m"
+    },
+    {
+      "raw": 0.08,
+      "display": "2.5 m"
+    },
+    {
+      "raw": 0.0969899744,
+      "display": "3.0 m"
+    },
+    {
+      "raw": 0.1,
+      "display": "3.1 m"
+    },
+    {
+      "raw": 0.5,
+      "display": "15.1 m"
+    },
+    {
+      "raw": 1.0,
+      "display": "30.0 m"
+    }
+  ],
+  "checks": [
+    {
+      "target_m": 0.35,
+      "raw": 0.008361204013377926,
+      "display": "0.3 m",
+      "display_resolution_m": 0.1,
+      "continuous_raw_readback": 0.008361203595995903,
+      "pose_preserves_distance": true
+    },
+    {
+      "target_m": 0.5,
+      "raw": 0.013377926421404684,
+      "display": "0.5 m",
+      "display_resolution_m": 0.1,
+      "continuous_raw_readback": 0.01337792631238699,
+      "pose_preserves_distance": true
+    },
+    {
+      "target_m": 0.75,
+      "raw": 0.02173913043478261,
+      "display": "0.8 m",
+      "display_resolution_m": 0.1,
+      "continuous_raw_readback": 0.021739130839705467,
+      "pose_preserves_distance": true
+    },
+    {
+      "target_m": 1.0,
+      "raw": 0.030100334448160536,
+      "display": "1.0 m",
+      "display_resolution_m": 0.1,
+      "continuous_raw_readback": 0.03010033443570137,
+      "pose_preserves_distance": true
+    },
+    {
+      "target_m": 1.5,
+      "raw": 0.046822742474916385,
+      "display": "1.5 m",
+      "display_resolution_m": 0.1,
+      "continuous_raw_readback": 0.046822741627693176,
+      "pose_preserves_distance": true
+    },
+    {
+      "target_m": 2.0,
+      "raw": 0.06354515050167224,
+      "display": "2.0 m",
+      "display_resolution_m": 0.1,
+      "continuous_raw_readback": 0.06354515254497528,
+      "pose_preserves_distance": true
+    },
+    {
+      "target_m": 3.0,
+      "raw": 0.09698996655518395,
+      "display": "3.0 m",
+      "display_resolution_m": 0.1,
+      "continuous_raw_readback": 0.09698996692895889,
+      "pose_preserves_distance": true
+    }
+  ],
+  "mapping": "linear between live raw endpoint labels 0.1 m and 30.0 m; independently agrees with T017 3 m raw",
+  "limitation": "0.35/0.75 are nominal continuous raw targets; plugin display rounds to tenths, not an independent sub-decimeter measurement.",
+  "forbidden_minimum_01m_not_rendered": true
+}

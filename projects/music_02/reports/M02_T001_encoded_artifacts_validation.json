@@ -1,0 +1,100 @@
+{
+  "test_id": "M02-T001-ENCODED-ARTIFACTS",
+  "status": "PASS",
+  "verified_pcm24_files": 15,
+  "frames": 1440000,
+  "scene_roles": 11,
+  "scene_timeline_keyframes": true,
+  "actual_cropped_plugin_boundary_checks": {
+    "M02_T001_binaural_200_230_24bit.wav": {
+      "plugin_boundary_phase_frames": 128,
+      "maximum_plugin_boundary_delta": 0.07285654544830322,
+      "maximum_adjacent_sample_delta": 0.11576902866363525,
+      "status": "PASS"
+    },
+    "M02_T001_dry_comparison_200_230_24bit.wav": {
+      "plugin_boundary_phase_frames": 128,
+      "maximum_plugin_boundary_delta": 0.0812082290649414,
+      "maximum_adjacent_sample_delta": 0.12961053848266602,
+      "status": "PASS"
+    },
+    "M02_T001_binaural_200_230_level_matched_24bit.wav": {
+      "plugin_boundary_phase_frames": 128,
+      "maximum_plugin_boundary_delta": 0.07285654544830322,
+      "maximum_adjacent_sample_delta": 0.11576902866363525,
+      "status": "PASS"
+    },
+    "M02_T001_dry_comparison_200_230_level_matched_24bit.wav": {
+      "plugin_boundary_phase_frames": 128,
+      "maximum_plugin_boundary_delta": 0.07666563987731934,
+      "maximum_adjacent_sample_delta": 0.1223602294921875,
+      "status": "PASS"
+    },
+    "lead_vocal_spatial_24bit.wav": {
+      "plugin_boundary_phase_frames": 128,
+      "maximum_plugin_boundary_delta": 0.009123563766479492,
+      "maximum_adjacent_sample_delta": 0.022601008415222168,
+      "status": "PASS"
+    },
+    "backing_vocals_spatial_24bit.wav": {
+      "plugin_boundary_phase_frames": 128,
+      "maximum_plugin_boundary_delta": 0.046558380126953125,
+      "maximum_adjacent_sample_delta": 0.06702113151550293,
+      "status": "PASS"
+    },
+    "woodwinds_spatial_24bit.wav": {
+      "plugin_boundary_phase_frames": 128,
+      "maximum_plugin_boundary_delta": 0.022922635078430176,
+      "maximum_adjacent_sample_delta": 0.030776500701904297,
+      "status": "PASS"
+    },
+    "drums_spatial_24bit.wav": {
+      "plugin_boundary_phase_frames": 128,
+      "maximum_plugin_boundary_delta": 0.05713784694671631,
+      "maximum_adjacent_sample_delta": 0.09243607521057129,
+      "status": "PASS"
+    },
+    "bass_spatial_24bit.wav": {
+      "plugin_boundary_phase_frames": 128,
+      "maximum_plugin_boundary_delta": 0.004327654838562012,
+      "maximum_adjacent_sample_delta": 0.006685137748718262,
+      "status": "PASS"
+    },
+    "guitar_spatial_24bit.wav": {
+      "plugin_boundary_phase_frames": 128,
+      "maximum_plugin_boundary_delta": 0.0038834810256958008,
+      "maximum_adjacent_sample_delta": 0.004793047904968262,
+      "status": "PASS"
+    },
+    "keyboards_spatial_24bit.wav": {
+      "plugin_boundary_phase_frames": 128,
+      "maximum_plugin_boundary_delta": 0.0020700693130493164,
+      "maximum_adjacent_sample_delta": 0.007172584533691406,
+      "status": "PASS"
+    },
+    "percussion_spatial_24bit.wav": {
+      "plugin_boundary_phase_frames": 128,
+      "maximum_plugin_boundary_delta": 0.059369444847106934,
+      "maximum_adjacent_sample_delta": 0.09887492656707764,
+      "status": "PASS"
+    },
+    "synth_spatial_24bit.wav": {
+      "plugin_boundary_phase_frames": 128,
+      "maximum_plugin_boundary_delta": 0.012895584106445312,
+      "maximum_adjacent_sample_delta": 0.019136548042297363,
+      "status": "PASS"
+    },
+    "other_spatial_24bit.wav": {
+      "plugin_boundary_phase_frames": 128,
+      "maximum_plugin_boundary_delta": 0.02142322063446045,
+      "maximum_adjacent_sample_delta": 0.05850088596343994,
+      "status": "PASS"
+    },
+    "brass_spatial_24bit.wav": {
+      "plugin_boundary_phase_frames": 128,
+      "maximum_plugin_boundary_delta": 0.002877354621887207,
+      "maximum_adjacent_sample_delta": 0.003610372543334961,
+      "status": "PASS"
+    }
+  }
+}

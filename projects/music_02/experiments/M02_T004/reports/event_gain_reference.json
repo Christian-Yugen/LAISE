@@ -1,0 +1,130 @@
+{
+  "method": "New/old sample-smoothed linked post-plugin control gain ratio; distance/pose/DSP unchanged",
+  "status": "PASS",
+  "earlier_T004_outputs": "Preserved as superseded intermediate evidence, not listening recommendation",
+  "event_growth_reference": "Own spatial home, not 1.5m; monitors retain 1.5m starting reference",
+  "roles": {
+    "lead_vocal": {
+      "home_distance_m": 1.1,
+      "home_compensation_db": -1.1206303249128542,
+      "maximum_event_retained_growth_db": 0.0,
+      "home_event_growth_db": 0.0,
+      "ratio_range": [
+        0.8789587020874023,
+        0.8789587020874023
+      ],
+      "input_pcm24_quantization_error_bound_dbfs": -145.61502851454836
+    },
+    "backing_vocals": {
+      "home_distance_m": 0.9,
+      "home_compensation_db": -1.7367058766216834,
+      "maximum_event_retained_growth_db": 0.0,
+      "home_event_growth_db": 0.0,
+      "ratio_range": [
+        0.8187751770019531,
+        0.8187753558158875
+      ],
+      "input_pcm24_quantization_error_bound_dbfs": -146.2311026701239
+    },
+    "woodwinds": {
+      "home_distance_m": 1.1,
+      "home_compensation_db": -1.1203680797337165,
+      "maximum_event_retained_growth_db": 2.5,
+      "home_event_growth_db": 0.0,
+      "ratio_range": [
+        0.8789852857589722,
+        1.0
+      ],
+      "input_pcm24_quantization_error_bound_dbfs": -144.49439791871097
+    },
+    "drums": {
+      "home_distance_m": 1.2,
+      "home_compensation_db": -0.8424385043898716,
+      "maximum_event_retained_growth_db": 0.0,
+      "home_event_growth_db": 0.0,
+      "ratio_range": [
+        0.907565712928772,
+        0.907565712928772
+      ],
+      "input_pcm24_quantization_error_bound_dbfs": -145.3368363138781
+    },
+    "bass": {
+      "home_distance_m": 1.3,
+      "home_compensation_db": -0.5763973094668748,
+      "maximum_event_retained_growth_db": 0.0,
+      "home_event_growth_db": 0.0,
+      "ratio_range": [
+        0.9357937574386597,
+        0.9357937574386597
+      ],
+      "input_pcm24_quantization_error_bound_dbfs": -145.07079504386144
+    },
+    "guitar": {
+      "home_distance_m": 1.25,
+      "home_compensation_db": -0.6991667985964143,
+      "maximum_event_retained_growth_db": 0.0,
+      "home_event_growth_db": 0.0,
+      "ratio_range": [
+        0.9226598739624023,
+        0.9226599931716919
+      ],
+      "input_pcm24_quantization_error_bound_dbfs": -145.1935641212362
+    },
+    "keyboards": {
+      "home_distance_m": 1.3,
+      "home_compensation_db": -0.5596381678341616,
+      "maximum_event_retained_growth_db": 0.0,
+      "home_event_growth_db": 0.0,
+      "ratio_range": [
+        0.9376010894775391,
+        0.9376010894775391
+      ],
+      "input_pcm24_quantization_error_bound_dbfs": -145.05403585235933
+    },
+    "percussion": {
+      "home_distance_m": 0.9,
+      "home_compensation_db": -1.7439218602786462,
+      "maximum_event_retained_growth_db": 2.5,
+      "home_event_growth_db": 0.0,
+      "ratio_range": [
+        0.8180953860282898,
+        1.0
+      ],
+      "input_pcm24_quantization_error_bound_dbfs": -144.49439791871097
+    },
+    "synth": {
+      "home_distance_m": 1.5,
+      "home_compensation_db": 0.0,
+      "maximum_event_retained_growth_db": 0.0,
+      "home_event_growth_db": 0.0,
+      "ratio_range": [
+        1.0,
+        1.0
+      ],
+      "input_pcm24_quantization_error_bound_dbfs": -144.49439791871097
+    },
+    "other": {
+      "home_distance_m": 1.6,
+      "home_compensation_db": 0.0,
+      "maximum_event_retained_growth_db": 0.0,
+      "home_event_growth_db": 0.0,
+      "ratio_range": [
+        1.0,
+        1.0
+      ],
+      "input_pcm24_quantization_error_bound_dbfs": -144.49439791871097
+    },
+    "brass": {
+      "home_distance_m": 1.0,
+      "home_compensation_db": -1.4376991298087385,
+      "maximum_event_retained_growth_db": 0.0,
+      "home_event_growth_db": 0.0,
+      "ratio_range": [
+        0.8474518060684204,
+        0.84745192527771
+      ],
+      "input_pcm24_quantization_error_bound_dbfs": -145.93209650519216
+    }
+  },
+  "quantization_limitation": "Equivalent post-plugin gain change, within prior PCM24 half-LSB times gain ratio; no limiter or EQ"
+}

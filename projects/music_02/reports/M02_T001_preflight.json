@@ -1,0 +1,10 @@
+{
+  "test_id": "M02-T001",
+  "baseline": "LAISE_T017_APPROVED_BASELINE",
+  "baseline_commit": "043293ff89e720d9b6746b66105d5e7fac03a206",
+  "git_status_before_processing": "CLEAN",
+  "initial_HEAD_matches_tag": true,
+  "active_T018_imports": false,
+  "tukana_preserved_by_full_file_hash_size_mtime_snapshot": true,
+  "original_B2_sha256": "9daf544d7e073d8791f6260eed2630863a9280a2cca7d22053132a881e2c0df9"
+}

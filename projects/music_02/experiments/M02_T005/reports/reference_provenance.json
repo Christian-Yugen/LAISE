@@ -1,0 +1,6 @@
+{
+  "mono_reference_float32_sha256": "3b061b6cc39c85c10fa6d2114b6ebb6d5167d0818986eb61201e9849a497d3fc",
+  "native_reference_library": "reports/probe_library_native256.json",
+  "batch_reference_excluded": true,
+  "seed": 5017
+}

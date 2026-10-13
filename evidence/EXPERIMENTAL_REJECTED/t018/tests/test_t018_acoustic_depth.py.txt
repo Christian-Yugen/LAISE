@@ -1,0 +1,27 @@
+from __future__ import annotations
+
+from pathlib import Path
+import json
+import sys
+
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / "backend" / "spatial"))
+
+from t018_acoustic_depth import distance_to_raw, raw_to_distance, execute
+
+
+def main() -> None:
+    for meters in (0.1, 1.5, 3.0, 4.8, 30.0):
+        assert abs(raw_to_distance(distance_to_raw(meters)) - meters) < 1e-9
+    result = execute(ROOT / "projects" / "tukana")
+    report = result["test"]
+    assert result["audit"]["distance_behavior"]["pose_update_preserves_distance"]
+    assert report["status"] == "PASS", report["tests"]
+    assert report["human_review"] == "PENDING"
+    assert all(report["tests"].values())
+    print(json.dumps({"test_id": "T018", "status": report["status"],
+                      "tests": report["tests"]}, indent=2))
+
+
+if __name__ == "__main__":
+    main()

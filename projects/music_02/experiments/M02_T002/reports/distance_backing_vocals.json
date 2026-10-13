@@ -1,0 +1,1296 @@
+{
+  "role": "backing_vocals",
+  "interval": {
+    "start_seconds": 205.4,
+    "duration_seconds": 8
+  },
+  "pose": [
+    -45,
+    4
+  ],
+  "records": [
+    {
+      "distance_m": 0.35,
+      "raw_metrics": {
+        "frames": 384000,
+        "finite": true,
+        "peak": 0.07696699351072311,
+        "peak_dbfs": -22.273909550921417,
+        "rms": 0.011921945171907653,
+        "rms_dbfs": -38.473057595765304,
+        "max_sample_delta": 0.020364051684737206,
+        "p999_sample_delta": 0.012279566377401352,
+        "max_block_boundary_delta": 0.014138441532850266,
+        "plugin_boundary_phase_frames": 128
+      },
+      "image": {
+        "rms_lr_dbfs": [
+          -36.103560280886086,
+          -44.08982024435508
+        ],
+        "peak_lr_dbfs": [
+          -22.273909550921417,
+          -30.274055678629406
+        ],
+        "energy_difference_left_minus_right_db": 7.986259963468995,
+        "correlation": -0.19022406649277468,
+        "side_to_mid_db": 1.1434446993090643,
+        "effective_width_side_over_total_energy": 0.5654443510955351,
+        "mean_lr_to_linked_stereo_rms_db": -3.619546001943773
+      },
+      "rms": 0.011921945171907653,
+      "distance_trace": [
+        {
+          "time_seconds": 204.4,
+          "distance_m": 0.35,
+          "linked_gain_db": 0.0,
+          "display": "0.3 m"
+        },
+        {
+          "time_seconds": 205.46666666666667,
+          "distance_m": 0.35,
+          "linked_gain_db": 0.0,
+          "display": "0.3 m"
+        },
+        {
+          "time_seconds": 206.53333333333333,
+          "distance_m": 0.35,
+          "linked_gain_db": 0.0,
+          "display": "0.3 m"
+        },
+        {
+          "time_seconds": 207.6,
+          "distance_m": 0.35,
+          "linked_gain_db": 0.0,
+          "display": "0.3 m"
+        },
+        {
+          "time_seconds": 208.66666666666669,
+          "distance_m": 0.35,
+          "linked_gain_db": 0.0,
+          "display": "0.3 m"
+        },
+        {
+          "time_seconds": 209.73333333333335,
+          "distance_m": 0.35,
+          "linked_gain_db": 0.0,
+          "display": "0.3 m"
+        },
+        {
+          "time_seconds": 210.8,
+          "distance_m": 0.35,
+          "linked_gain_db": 0.0,
+          "display": "0.3 m"
+        },
+        {
+          "time_seconds": 211.86666666666667,
+          "distance_m": 0.35,
+          "linked_gain_db": 0.0,
+          "display": "0.3 m"
+        },
+        {
+          "time_seconds": 212.93333333333334,
+          "distance_m": 0.35,
+          "linked_gain_db": 0.0,
+          "display": "0.3 m"
+        }
+      ],
+      "localization": "PENDING_HUMAN_REVIEW",
+      "linked_compensation_db": -6.831440139731458,
+      "compensated_rms_dbfs": -45.30449773549676,
+      "export": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_0.35m_205.4_213.4_24bit.wav",
+        "sha256": "c31f1cfb36f75d612dca6d44a91fedef19a4c6208e24380a86686dbc42c0372b",
+        "signal": {
+          "frames": 384000,
+          "duration_seconds": 8.0,
+          "finite": true,
+          "sample_peak": 0.07696700096130371,
+          "sample_peak_dbfs": -22.27390871010752,
+          "rms_dbfs": -38.4730575744788,
+          "crest_factor_db": 16.199148864371285,
+          "left_rms_dbfs": -36.103560272156784,
+          "right_rms_dbfs": -44.089820144093046,
+          "channel_balance_db": 7.986259871936263,
+          "lr_correlation": -0.1902240578914712,
+          "mono_rms_change_db": -3.6195459773712417,
+          "max_adjacent_sample_delta": 0.020364046096801758,
+          "spectral_distribution": {
+            "20-60_hz_db": -49.14330717022526,
+            "60-250_hz_db": -44.43728658064171,
+            "250-2000_hz_db": -0.3474757096224001,
+            "2000-6000_hz_db": -11.367939118784381,
+            "6000-20000_hz_db": -24.134060876465497
+          }
+        },
+        "loudness": {
+          "method": "FFmpeg ebur128 peak=true",
+          "integrated_lufs": -35.0,
+          "loudness_range_lu": 0.7,
+          "true_peak_dbtp": -22.3,
+          "momentary_lufs": {
+            "minimum": -37.7,
+            "median": -35.0,
+            "maximum": -33.4
+          },
+          "short_term_lufs": {
+            "minimum": -35.4,
+            "median": -34.9,
+            "maximum": -34.6
+          }
+        },
+        "common_safety_gain": 1.0,
+        "level_matched": {
+          "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_0.35m_205.4_213.4_level_matched_24bit.wav",
+          "sha256": "f7c8e001256a9266ca2177f550f323a7357446e61940739cf13f6382bea9316e",
+          "signal": {
+            "frames": 384000,
+            "duration_seconds": 8.0,
+            "finite": true,
+            "sample_peak": 0.03518068790435791,
+            "sample_peak_dbfs": -29.07391345666958,
+            "rms_dbfs": -45.27305732237722,
+            "crest_factor_db": 16.199143865707644,
+            "left_rms_dbfs": -42.903560019510685,
+            "right_rms_dbfs": -50.88981989541626,
+            "channel_balance_db": 7.986259875905568,
+            "lr_correlation": -0.19022407487154055,
+            "mono_rms_change_db": -3.6195460355414877,
+            "max_adjacent_sample_delta": 0.009308099746704102,
+            "spectral_distribution": {
+              "20-60_hz_db": -49.14334139266268,
+              "60-250_hz_db": -44.43727198383221,
+              "250-2000_hz_db": -0.3474757276244357,
+              "2000-6000_hz_db": -11.367939172009958,
+              "6000-20000_hz_db": -24.134055577351337
+            }
+          },
+          "loudness": {
+            "method": "FFmpeg ebur128 peak=true",
+            "integrated_lufs": -41.8,
+            "loudness_range_lu": 0.7,
+            "true_peak_dbtp": -29.1,
+            "momentary_lufs": {
+              "minimum": -44.5,
+              "median": -41.8,
+              "maximum": -40.2
+            },
+            "short_term_lufs": {
+              "minimum": -42.2,
+              "median": -41.7,
+              "maximum": -41.4
+            }
+          },
+          "linked_gain_db": -6.799999999999997
+        }
+      },
+      "relative_spectral_band_db_vs_3m": {
+        "20-60_hz_db": 0.5948174999953224,
+        "60-250_hz_db": 0.011903835579829547,
+        "250-2000_hz_db": -0.00040008728232665547,
+        "2000-6000_hz_db": 0.0008742115242981185,
+        "6000-20000_hz_db": 0.07472324428972499
+      }
+    },
+    {
+      "distance_m": 0.5,
+      "raw_metrics": {
+        "frames": 384000,
+        "finite": true,
+        "peak": 0.07127317786216736,
+        "peak_dbfs": -22.94147753705794,
+        "rms": 0.011037608814866802,
+        "rms_dbfs": -39.14250003755001,
+        "max_sample_delta": 0.018884358927607536,
+        "p999_sample_delta": 0.01136219222098589,
+        "max_block_boundary_delta": 0.013105202466249466,
+        "plugin_boundary_phase_frames": 128
+      },
+      "image": {
+        "rms_lr_dbfs": [
+          -36.77300312287994,
+          -44.759260168968005
+        ],
+        "peak_lr_dbfs": [
+          -22.94147753705794,
+          -30.94565245279439
+        ],
+        "energy_difference_left_minus_right_db": 7.986257046088067,
+        "correlation": -0.19022431699363138,
+        "side_to_mid_db": 1.1434465810479018,
+        "effective_width_side_over_total_energy": 0.5654444575613775,
+        "mean_lr_to_linked_stereo_rms_db": -3.6195470659624682
+      },
+      "rms": 0.011037608814866802,
+      "distance_trace": [
+        {
+          "time_seconds": 204.4,
+          "distance_m": 0.5,
+          "linked_gain_db": 0.0,
+          "display": "0.5 m"
+        },
+        {
+          "time_seconds": 205.46666666666667,
+          "distance_m": 0.5,
+          "linked_gain_db": 0.0,
+          "display": "0.5 m"
+        },
+        {
+          "time_seconds": 206.53333333333333,
+          "distance_m": 0.5,
+          "linked_gain_db": 0.0,
+          "display": "0.5 m"
+        },
+        {
+          "time_seconds": 207.6,
+          "distance_m": 0.5,
+          "linked_gain_db": 0.0,
+          "display": "0.5 m"
+        },
+        {
+          "time_seconds": 208.66666666666669,
+          "distance_m": 0.5,
+          "linked_gain_db": 0.0,
+          "display": "0.5 m"
+        },
+        {
+          "time_seconds": 209.73333333333335,
+          "distance_m": 0.5,
+          "linked_gain_db": 0.0,
+          "display": "0.5 m"
+        },
+        {
+          "time_seconds": 210.8,
+          "distance_m": 0.5,
+          "linked_gain_db": 0.0,
+          "display": "0.5 m"
+        },
+        {
+          "time_seconds": 211.86666666666667,
+          "distance_m": 0.5,
+          "linked_gain_db": 0.0,
+          "display": "0.5 m"
+        },
+        {
+          "time_seconds": 212.93333333333334,
+          "distance_m": 0.5,
+          "linked_gain_db": 0.0,
+          "display": "0.5 m"
+        }
+      ],
+      "localization": "PENDING_HUMAN_REVIEW",
+      "linked_compensation_db": -6.161997697946755,
+      "compensated_rms_dbfs": -45.30449773549676,
+      "export": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_0.50m_205.4_213.4_24bit.wav",
+        "sha256": "7ae6a583377b0d2ace61dbc1f612b49a213cabad267104faedf7e4ecf8cc312c",
+        "signal": {
+          "frames": 384000,
+          "duration_seconds": 8.0,
+          "finite": true,
+          "sample_peak": 0.07127320766448975,
+          "sample_peak_dbfs": -22.941473905121818,
+          "rms_dbfs": -39.14250003509721,
+          "crest_factor_db": 16.20102612997539,
+          "left_rms_dbfs": -36.77300312996179,
+          "right_rms_dbfs": -44.75926010655043,
+          "channel_balance_db": 7.986256976588633,
+          "lr_correlation": -0.19022433213323042,
+          "mono_rms_change_db": -3.6195471218141972,
+          "max_adjacent_sample_delta": 0.01888442039489746,
+          "spectral_distribution": {
+            "20-60_hz_db": -49.08819051471092,
+            "60-250_hz_db": -44.4341997634692,
+            "250-2000_hz_db": -0.3474669531102329,
+            "2000-6000_hz_db": -11.367944924969846,
+            "6000-20000_hz_db": -24.13594463903172
+          }
+        },
+        "loudness": {
+          "method": "FFmpeg ebur128 peak=true",
+          "integrated_lufs": -35.6,
+          "loudness_range_lu": 0.7,
+          "true_peak_dbtp": -22.9,
+          "momentary_lufs": {
+            "minimum": -38.3,
+            "median": -35.6,
+            "maximum": -34.1
+          },
+          "short_term_lufs": {
+            "minimum": -36.1,
+            "median": -35.6,
+            "maximum": -35.3
+          }
+        },
+        "common_safety_gain": 1.0,
+        "level_matched": {
+          "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_0.50m_205.4_213.4_level_matched_24bit.wav",
+          "sha256": "6de7938475b57da9320c5bfdabdbad591e0ff4d36590de9b8b3d2a8a6313d252",
+          "signal": {
+            "frames": 384000,
+            "duration_seconds": 8.0,
+            "finite": true,
+            "sample_peak": 0.03490805625915527,
+            "sample_peak_dbfs": -29.141486655583915,
+            "rms_dbfs": -45.34250004014014,
+            "crest_factor_db": 16.201013384556227,
+            "left_rms_dbfs": -42.973003091172075,
+            "right_rms_dbfs": -50.959260387284914,
+            "channel_balance_db": 7.986257296112841,
+            "lr_correlation": -0.1902243066640504,
+            "mono_rms_change_db": -3.619547016783862,
+            "max_adjacent_sample_delta": 0.009249091148376465,
+            "spectral_distribution": {
+              "20-60_hz_db": -49.08817326153031,
+              "60-250_hz_db": -44.43420419401014,
+              "250-2000_hz_db": -0.3474669533916891,
+              "2000-6000_hz_db": -11.367944943046863,
+              "6000-20000_hz_db": -24.13594436947701
+            }
+          },
+          "loudness": {
+            "method": "FFmpeg ebur128 peak=true",
+            "integrated_lufs": -41.8,
+            "loudness_range_lu": 0.7,
+            "true_peak_dbtp": -29.1,
+            "momentary_lufs": {
+              "minimum": -44.5,
+              "median": -41.8,
+              "maximum": -40.3
+            },
+            "short_term_lufs": {
+              "minimum": -42.3,
+              "median": -41.8,
+              "maximum": -41.5
+            }
+          },
+          "linked_gain_db": -6.199999999999996
+        }
+      },
+      "relative_spectral_band_db_vs_3m": {
+        "20-60_hz_db": 0.6499341555096692,
+        "60-250_hz_db": 0.014990652752338463,
+        "250-2000_hz_db": -0.0003913307701594593,
+        "2000-6000_hz_db": 0.0008684053388332558,
+        "6000-20000_hz_db": 0.07283948172350208
+      }
+    },
+    {
+      "distance_m": 0.75,
+      "raw_metrics": {
+        "frames": 384000,
+        "finite": true,
+        "peak": 0.06372885406017303,
+        "peak_dbfs": -23.913277814246364,
+        "rms": 0.009866519936145667,
+        "rms_dbfs": -40.11672004496333,
+        "max_sample_delta": 0.016925711184740067,
+        "p999_sample_delta": 0.010165791027247906,
+        "max_block_boundary_delta": 0.011737463995814323,
+        "plugin_boundary_phase_frames": 128
+      },
+      "image": {
+        "rms_lr_dbfs": [
+          -37.747223094095865,
+          -45.733480404050454
+        ],
+        "peak_lr_dbfs": [
+          -23.913277814246364,
+          -31.915266108040594
+        ],
+        "energy_difference_left_minus_right_db": 7.986257309954591,
+        "correlation": -0.1902261403583992,
+        "side_to_mid_db": 1.1434576283564204,
+        "effective_width_side_over_total_energy": 0.565445082600705,
+        "mean_lr_to_linked_stereo_rms_db": -3.619553312605295
+      },
+      "rms": 0.009866519936145667,
+      "distance_trace": [
+        {
+          "time_seconds": 204.4,
+          "distance_m": 0.75,
+          "linked_gain_db": 0.0,
+          "display": "0.8 m"
+        },
+        {
+          "time_seconds": 205.46666666666667,
+          "distance_m": 0.75,
+          "linked_gain_db": 0.0,
+          "display": "0.8 m"
+        },
+        {
+          "time_seconds": 206.53333333333333,
+          "distance_m": 0.75,
+          "linked_gain_db": 0.0,
+          "display": "0.8 m"
+        },
+        {
+          "time_seconds": 207.6,
+          "distance_m": 0.75,
+          "linked_gain_db": 0.0,
+          "display": "0.8 m"
+        },
+        {
+          "time_seconds": 208.66666666666669,
+          "distance_m": 0.75,
+          "linked_gain_db": 0.0,
+          "display": "0.8 m"
+        },
+        {
+          "time_seconds": 209.73333333333335,
+          "distance_m": 0.75,
+          "linked_gain_db": 0.0,
+          "display": "0.8 m"
+        },
+        {
+          "time_seconds": 210.8,
+          "distance_m": 0.75,
+          "linked_gain_db": 0.0,
+          "display": "0.8 m"
+        },
+        {
+          "time_seconds": 211.86666666666667,
+          "distance_m": 0.75,
+          "linked_gain_db": 0.0,
+          "display": "0.8 m"
+        },
+        {
+          "time_seconds": 212.93333333333334,
+          "distance_m": 0.75,
+          "linked_gain_db": 0.0,
+          "display": "0.8 m"
+        }
+      ],
+      "localization": "PENDING_HUMAN_REVIEW",
+      "linked_compensation_db": -5.187777690533432,
+      "compensated_rms_dbfs": -45.30449773549676,
+      "export": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_0.75m_205.4_213.4_24bit.wav",
+        "sha256": "9f9d51f6b73d4259b7863b0dab2e6f23f2f69c1703dd11c8f5f617f2919044fe",
+        "signal": {
+          "frames": 384000,
+          "duration_seconds": 8.0,
+          "finite": true,
+          "sample_peak": 0.06372880935668945,
+          "sample_peak_dbfs": -23.913283907085578,
+          "rms_dbfs": -40.11672007719042,
+          "crest_factor_db": 16.20343617010485,
+          "left_rms_dbfs": -37.747223109053586,
+          "right_rms_dbfs": -45.73348054489982,
+          "channel_balance_db": 7.986257435846236,
+          "lr_correlation": -0.19022613828116697,
+          "mono_rms_change_db": -3.6195532985879337,
+          "max_adjacent_sample_delta": 0.016925692558288574,
+          "spectral_distribution": {
+            "20-60_hz_db": -49.190634442955776,
+            "60-250_hz_db": -44.43899891536147,
+            "250-2000_hz_db": -0.34744201027446764,
+            "2000-6000_hz_db": -11.36802279909393,
+            "6000-20000_hz_db": -24.139580349940438
+          }
+        },
+        "loudness": {
+          "method": "FFmpeg ebur128 peak=true",
+          "integrated_lufs": -36.6,
+          "loudness_range_lu": 0.7,
+          "true_peak_dbtp": -23.9,
+          "momentary_lufs": {
+            "minimum": -39.3,
+            "median": -36.6,
+            "maximum": -35.0
+          },
+          "short_term_lufs": {
+            "minimum": -37.1,
+            "median": -36.6,
+            "maximum": -36.2
+          }
+        },
+        "common_safety_gain": 1.0,
+        "level_matched": {
+          "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_0.75m_205.4_213.4_level_matched_24bit.wav",
+          "sha256": "01eb6f61b45bda1aa337860ff42cc88e1841cac47656429ea76a3a9a7723b240",
+          "signal": {
+            "frames": 384000,
+            "duration_seconds": 8.0,
+            "finite": true,
+            "sample_peak": 0.03502166271209717,
+            "sample_peak_dbfs": -29.113264778102902,
+            "rms_dbfs": -45.31672001635094,
+            "crest_factor_db": 16.20345523824804,
+            "left_rms_dbfs": -42.947223062582154,
+            "right_rms_dbfs": -50.93348039369048,
+            "channel_balance_db": 7.986257331108325,
+            "lr_correlation": -0.19022616399267023,
+            "mono_rms_change_db": -3.6195533927125885,
+            "max_adjacent_sample_delta": 0.009301304817199707,
+            "spectral_distribution": {
+              "20-60_hz_db": -49.19069703816373,
+              "60-250_hz_db": -44.4390015594895,
+              "250-2000_hz_db": -0.3474419446781732,
+              "2000-6000_hz_db": -11.368023560543303,
+              "6000-20000_hz_db": -24.139581413380796
+            }
+          },
+          "loudness": {
+            "method": "FFmpeg ebur128 peak=true",
+            "integrated_lufs": -41.8,
+            "loudness_range_lu": 0.7,
+            "true_peak_dbtp": -29.1,
+            "momentary_lufs": {
+              "minimum": -44.5,
+              "median": -41.8,
+              "maximum": -40.2
+            },
+            "short_term_lufs": {
+              "minimum": -42.3,
+              "median": -41.8,
+              "maximum": -41.4
+            }
+          },
+          "linked_gain_db": -5.199999999999996
+        }
+      },
+      "relative_spectral_band_db_vs_3m": {
+        "20-60_hz_db": 0.5474902272648094,
+        "60-250_hz_db": 0.010191500860067038,
+        "250-2000_hz_db": -0.0003663879343941967,
+        "2000-6000_hz_db": 0.0007905312147489241,
+        "6000-20000_hz_db": 0.06920377081478435
+      }
+    },
+    {
+      "distance_m": 1.0,
+      "raw_metrics": {
+        "frames": 384000,
+        "finite": true,
+        "peak": 0.05787193402647972,
+        "peak_dbfs": -24.750640073484934,
+        "rms": 0.00895639586703075,
+        "rms_dbfs": -40.95733438254902,
+        "max_sample_delta": 0.015404543839395046,
+        "p999_sample_delta": 0.009220178239047527,
+        "max_block_boundary_delta": 0.010675168596208096,
+        "plugin_boundary_phase_frames": 128
+      },
+      "image": {
+        "rms_lr_dbfs": [
+          -38.587839590278776,
+          -46.57408116486253
+        ],
+        "peak_lr_dbfs": [
+          -24.750640073484934,
+          -32.75704353038827
+        ],
+        "energy_difference_left_minus_right_db": 7.986241574583751,
+        "correlation": -0.1902249351202069,
+        "side_to_mid_db": 1.1434517906193047,
+        "effective_width_side_over_total_energy": 0.5654447523107535,
+        "mean_lr_to_linked_stereo_rms_db": -3.6195500116865134
+      },
+      "rms": 0.00895639586703075,
+      "distance_trace": [
+        {
+          "time_seconds": 204.4,
+          "distance_m": 1.0,
+          "linked_gain_db": 0.0,
+          "display": "1.0 m"
+        },
+        {
+          "time_seconds": 205.46666666666667,
+          "distance_m": 1.0,
+          "linked_gain_db": 0.0,
+          "display": "1.0 m"
+        },
+        {
+          "time_seconds": 206.53333333333333,
+          "distance_m": 1.0,
+          "linked_gain_db": 0.0,
+          "display": "1.0 m"
+        },
+        {
+          "time_seconds": 207.6,
+          "distance_m": 1.0,
+          "linked_gain_db": 0.0,
+          "display": "1.0 m"
+        },
+        {
+          "time_seconds": 208.66666666666669,
+          "distance_m": 1.0,
+          "linked_gain_db": 0.0,
+          "display": "1.0 m"
+        },
+        {
+          "time_seconds": 209.73333333333335,
+          "distance_m": 1.0,
+          "linked_gain_db": 0.0,
+          "display": "1.0 m"
+        },
+        {
+          "time_seconds": 210.8,
+          "distance_m": 1.0,
+          "linked_gain_db": 0.0,
+          "display": "1.0 m"
+        },
+        {
+          "time_seconds": 211.86666666666667,
+          "distance_m": 1.0,
+          "linked_gain_db": 0.0,
+          "display": "1.0 m"
+        },
+        {
+          "time_seconds": 212.93333333333334,
+          "distance_m": 1.0,
+          "linked_gain_db": 0.0,
+          "display": "1.0 m"
+        }
+      ],
+      "localization": "PENDING_HUMAN_REVIEW",
+      "linked_compensation_db": -4.3471633529477485,
+      "compensated_rms_dbfs": -45.30449773549677,
+      "export": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_1.00m_205.4_213.4_24bit.wav",
+        "sha256": "ec83170ad79e55f40fc094980129ed2a17d8fad7c6191aa23507e497b05105c1",
+        "signal": {
+          "frames": 384000,
+          "duration_seconds": 8.0,
+          "finite": true,
+          "sample_peak": 0.05787193775177002,
+          "sample_peak_dbfs": -24.750639514363144,
+          "rms_dbfs": -40.957334388303494,
+          "crest_factor_db": 16.206694873940346,
+          "left_rms_dbfs": -38.58783959568197,
+          "right_rms_dbfs": -46.57408117283111,
+          "channel_balance_db": 7.9862415771491335,
+          "lr_correlation": -0.1902249241998694,
+          "mono_rms_change_db": -3.619549973997956,
+          "max_adjacent_sample_delta": 0.015404582023620605,
+          "spectral_distribution": {
+            "20-60_hz_db": -49.32375782791823,
+            "60-250_hz_db": -44.439394233534024,
+            "250-2000_hz_db": -0.34742451722501033,
+            "2000-6000_hz_db": -11.367975153553553,
+            "6000-20000_hz_db": -24.143671317729112
+          }
+        },
+        "loudness": {
+          "method": "FFmpeg ebur128 peak=true",
+          "integrated_lufs": -37.4,
+          "loudness_range_lu": 0.7,
+          "true_peak_dbtp": -24.7,
+          "momentary_lufs": {
+            "minimum": -40.2,
+            "median": -37.4,
+            "maximum": -35.9
+          },
+          "short_term_lufs": {
+            "minimum": -37.9,
+            "median": -37.4,
+            "maximum": -37.1
+          }
+        },
+        "common_safety_gain": 1.0,
+        "level_matched": {
+          "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_1.00m_205.4_213.4_level_matched_24bit.wav",
+          "sha256": "9f747f2a401d6de4948a6d76dc206faceede1d28c5fc2c2762201150ce44fb01",
+          "signal": {
+            "frames": 384000,
+            "duration_seconds": 8.0,
+            "finite": true,
+            "sample_peak": 0.03487133979797363,
+            "sample_peak_dbfs": -29.150627323952413,
+            "rms_dbfs": -45.357334717654815,
+            "crest_factor_db": 16.2067073937024,
+            "left_rms_dbfs": -42.98783993308244,
+            "right_rms_dbfs": -50.97408145155639,
+            "channel_balance_db": 7.986241518473941,
+            "lr_correlation": -0.1902249704057571,
+            "mono_rms_change_db": -3.619550136083144,
+            "max_adjacent_sample_delta": 0.009282112121582031,
+            "spectral_distribution": {
+              "20-60_hz_db": -49.32369843756814,
+              "60-250_hz_db": -44.439330639641696,
+              "250-2000_hz_db": -0.3474245403544878,
+              "2000-6000_hz_db": -11.367975217361767,
+              "6000-20000_hz_db": -24.143665398151377
+            }
+          },
+          "loudness": {
+            "method": "FFmpeg ebur128 peak=true",
+            "integrated_lufs": -41.8,
+            "loudness_range_lu": 0.7,
+            "true_peak_dbtp": -29.1,
+            "momentary_lufs": {
+              "minimum": -44.6,
+              "median": -41.8,
+              "maximum": -40.3
+            },
+            "short_term_lufs": {
+              "minimum": -42.3,
+              "median": -41.8,
+              "maximum": -41.5
+            }
+          },
+          "linked_gain_db": -4.399999999999998
+        }
+      },
+      "relative_spectral_band_db_vs_3m": {
+        "20-60_hz_db": 0.414366842302357,
+        "60-250_hz_db": 0.009796182687516364,
+        "250-2000_hz_db": -0.00034889488493689,
+        "2000-6000_hz_db": 0.0008381767551259856,
+        "6000-20000_hz_db": 0.06511280302611056
+      }
+    },
+    {
+      "distance_m": 1.5,
+      "raw_metrics": {
+        "frames": 384000,
+        "finite": true,
+        "peak": 0.04929015412926674,
+        "peak_dbfs": -26.14479647627034,
+        "rms": 0.007622720025527453,
+        "rms_dbfs": -42.357800622312695,
+        "max_sample_delta": 0.01317583117634058,
+        "p999_sample_delta": 0.007833227515220642,
+        "max_block_boundary_delta": 0.009119309484958649,
+        "plugin_boundary_phase_frames": 128
+      },
+      "image": {
+        "rms_lr_dbfs": [
+          -39.98830730115557,
+          -47.97453815190039
+        ],
+        "peak_lr_dbfs": [
+          -26.14479647627034,
+          -34.15613323750381
+        ],
+        "energy_difference_left_minus_right_db": 7.986230850744819,
+        "correlation": -0.190228222164671,
+        "side_to_mid_db": 1.143472870302442,
+        "effective_width_side_over_total_energy": 0.5654459449656785,
+        "mean_lr_to_linked_stereo_rms_db": -3.6195619310952947
+      },
+      "rms": 0.007622720025527453,
+      "distance_trace": [
+        {
+          "time_seconds": 204.4,
+          "distance_m": 1.5,
+          "linked_gain_db": 0.0,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 205.46666666666667,
+          "distance_m": 1.5,
+          "linked_gain_db": 0.0,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 206.53333333333333,
+          "distance_m": 1.5,
+          "linked_gain_db": 0.0,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 207.6,
+          "distance_m": 1.5,
+          "linked_gain_db": 0.0,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 208.66666666666669,
+          "distance_m": 1.5,
+          "linked_gain_db": 0.0,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 209.73333333333335,
+          "distance_m": 1.5,
+          "linked_gain_db": 0.0,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 210.8,
+          "distance_m": 1.5,
+          "linked_gain_db": 0.0,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 211.86666666666667,
+          "distance_m": 1.5,
+          "linked_gain_db": 0.0,
+          "display": "1.5 m"
+        },
+        {
+          "time_seconds": 212.93333333333334,
+          "distance_m": 1.5,
+          "linked_gain_db": 0.0,
+          "display": "1.5 m"
+        }
+      ],
+      "localization": "PENDING_HUMAN_REVIEW",
+      "linked_compensation_db": -2.9466971131840696,
+      "compensated_rms_dbfs": -45.30449773549677,
+      "export": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_1.50m_205.4_213.4_24bit.wav",
+        "sha256": "4691f65e1de5400f290b62492fa1a410f6aefc7fe2cc071fcc37f8466c9b93a4",
+        "signal": {
+          "frames": 384000,
+          "duration_seconds": 8.0,
+          "finite": true,
+          "sample_peak": 0.04929018020629883,
+          "sample_peak_dbfs": -26.144791880988244,
+          "rms_dbfs": -42.35780061277681,
+          "crest_factor_db": 16.21300873178857,
+          "left_rms_dbfs": -39.98830729605398,
+          "right_rms_dbfs": -47.974538114479344,
+          "channel_balance_db": 7.986230818425362,
+          "lr_correlation": -0.19022824495928062,
+          "mono_rms_change_db": -3.6195620112377815,
+          "max_adjacent_sample_delta": 0.0131758451461792,
+          "spectral_distribution": {
+            "20-60_hz_db": -49.31264961542329,
+            "60-250_hz_db": -44.433786274689886,
+            "250-2000_hz_db": -0.347362636002129,
+            "2000-6000_hz_db": -11.368162221225841,
+            "6000-20000_hz_db": -24.154187927128493
+          }
+        },
+        "loudness": {
+          "method": "FFmpeg ebur128 peak=true",
+          "integrated_lufs": -38.8,
+          "loudness_range_lu": 0.7,
+          "true_peak_dbtp": -26.1,
+          "momentary_lufs": {
+            "minimum": -41.6,
+            "median": -38.8,
+            "maximum": -37.3
+          },
+          "short_term_lufs": {
+            "minimum": -39.3,
+            "median": -38.8,
+            "maximum": -38.5
+          }
+        },
+        "common_safety_gain": 1.0,
+        "level_matched": {
+          "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_1.50m_205.4_213.4_level_matched_24bit.wav",
+          "sha256": "314beea9890afbf462276e109a995bdb4412bbca96eb161311786cd3eeee9ada",
+          "signal": {
+            "frames": 384000,
+            "duration_seconds": 8.0,
+            "finite": true,
+            "sample_peak": 0.034894704818725586,
+            "sample_peak_dbfs": -29.144809422125096,
+            "rms_dbfs": -45.357800808151936,
+            "crest_factor_db": 16.212991386026843,
+            "left_rms_dbfs": -42.98830749601416,
+            "right_rms_dbfs": -50.974538281016294,
+            "channel_balance_db": 7.9862307850021335,
+            "lr_correlation": -0.19022823104511083,
+            "mono_rms_change_db": -3.6195619652209925,
+            "max_adjacent_sample_delta": 0.00932776927947998,
+            "spectral_distribution": {
+              "20-60_hz_db": -49.31257537124963,
+              "60-250_hz_db": -44.433749772143315,
+              "250-2000_hz_db": -0.34736265499785085,
+              "2000-6000_hz_db": -11.36816196352905,
+              "6000-20000_hz_db": -24.154188887970488
+            }
+          },
+          "loudness": {
+            "method": "FFmpeg ebur128 peak=true",
+            "integrated_lufs": -41.8,
+            "loudness_range_lu": 0.7,
+            "true_peak_dbtp": -29.1,
+            "momentary_lufs": {
+              "minimum": -44.6,
+              "median": -41.8,
+              "maximum": -40.3
+            },
+            "short_term_lufs": {
+              "minimum": -42.3,
+              "median": -41.8,
+              "maximum": -41.5
+            }
+          },
+          "linked_gain_db": -3.0
+        }
+      },
+      "relative_spectral_band_db_vs_3m": {
+        "20-60_hz_db": 0.4254750547972961,
+        "60-250_hz_db": 0.015404141531654147,
+        "250-2000_hz_db": -0.00028701366205557965,
+        "2000-6000_hz_db": 0.0006511090828382748,
+        "6000-20000_hz_db": 0.05459619362672896
+      }
+    },
+    {
+      "distance_m": 2.0,
+      "raw_metrics": {
+        "frames": 384000,
+        "finite": true,
+        "peak": 0.04322827234864235,
+        "peak_dbfs": -27.284642420691494,
+        "rms": 0.006682998474333097,
+        "rms_dbfs": -43.50057276043438,
+        "max_sample_delta": 0.011605028063058853,
+        "p999_sample_delta": 0.006856353022158146,
+        "max_block_boundary_delta": 0.008023698814213276,
+        "plugin_boundary_phase_frames": 128
+      },
+      "image": {
+        "rms_lr_dbfs": [
+          -41.131082704985936,
+          -49.11728975007502
+        ],
+        "peak_lr_dbfs": [
+          -27.284642420691494,
+          -35.30066343145862
+        ],
+        "energy_difference_left_minus_right_db": 7.986207045089072,
+        "correlation": -0.1902305394369707,
+        "side_to_mid_db": 1.1434892556288483,
+        "effective_width_side_over_total_energy": 0.5654468720208469,
+        "mean_lr_to_linked_stereo_rms_db": -3.6195711961192627
+      },
+      "rms": 0.006682998474333097,
+      "distance_trace": [
+        {
+          "time_seconds": 204.4,
+          "distance_m": 2.0,
+          "linked_gain_db": 0.0,
+          "display": "2.0 m"
+        },
+        {
+          "time_seconds": 205.46666666666667,
+          "distance_m": 2.0,
+          "linked_gain_db": 0.0,
+          "display": "2.0 m"
+        },
+        {
+          "time_seconds": 206.53333333333333,
+          "distance_m": 2.0,
+          "linked_gain_db": 0.0,
+          "display": "2.0 m"
+        },
+        {
+          "time_seconds": 207.6,
+          "distance_m": 2.0,
+          "linked_gain_db": 0.0,
+          "display": "2.0 m"
+        },
+        {
+          "time_seconds": 208.66666666666669,
+          "distance_m": 2.0,
+          "linked_gain_db": 0.0,
+          "display": "2.0 m"
+        },
+        {
+          "time_seconds": 209.73333333333335,
+          "distance_m": 2.0,
+          "linked_gain_db": 0.0,
+          "display": "2.0 m"
+        },
+        {
+          "time_seconds": 210.8,
+          "distance_m": 2.0,
+          "linked_gain_db": 0.0,
+          "display": "2.0 m"
+        },
+        {
+          "time_seconds": 211.86666666666667,
+          "distance_m": 2.0,
+          "linked_gain_db": 0.0,
+          "display": "2.0 m"
+        },
+        {
+          "time_seconds": 212.93333333333334,
+          "distance_m": 2.0,
+          "linked_gain_db": 0.0,
+          "display": "2.0 m"
+        }
+      ],
+      "localization": "PENDING_HUMAN_REVIEW",
+      "linked_compensation_db": -1.803924975062374,
+      "compensated_rms_dbfs": -45.30449773549675,
+      "export": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_2.00m_205.4_213.4_24bit.wav",
+        "sha256": "a92bb53e9de59c197c6cd6155c4cc4d712cb76299314451d1d2c9ead017cb22e",
+        "signal": {
+          "frames": 384000,
+          "duration_seconds": 8.0,
+          "finite": true,
+          "sample_peak": 0.04322826862335205,
+          "sample_peak_dbfs": -27.28464316921694,
+          "rms_dbfs": -43.50057275391759,
+          "crest_factor_db": 16.215929584700646,
+          "left_rms_dbfs": -41.13108270706981,
+          "right_rms_dbfs": -49.11728968946778,
+          "channel_balance_db": 7.986206982397974,
+          "lr_correlation": -0.19023053812082275,
+          "mono_rms_change_db": -3.6195711950181804,
+          "max_adjacent_sample_delta": 0.011605024337768555,
+          "spectral_distribution": {
+            "20-60_hz_db": -49.41422239808483,
+            "60-250_hz_db": -44.44514487596283,
+            "250-2000_hz_db": -0.347288618281923,
+            "2000-6000_hz_db": -11.368332124066505,
+            "6000-20000_hz_db": -24.167971445021465
+          }
+        },
+        "loudness": {
+          "method": "FFmpeg ebur128 peak=true",
+          "integrated_lufs": -40.0,
+          "loudness_range_lu": 0.7,
+          "true_peak_dbtp": -27.3,
+          "momentary_lufs": {
+            "minimum": -42.7,
+            "median": -40.0,
+            "maximum": -38.4
+          },
+          "short_term_lufs": {
+            "minimum": -40.5,
+            "median": -40.0,
+            "maximum": -39.6
+          }
+        },
+        "common_safety_gain": 1.0,
+        "level_matched": {
+          "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_2.00m_205.4_213.4_level_matched_24bit.wav",
+          "sha256": "f2aaffa78595d1e9fe567739c12ed077e341ae1b586c9674af706f60bf98a61e",
+          "signal": {
+            "frames": 384000,
+            "duration_seconds": 8.0,
+            "finite": true,
+            "sample_peak": 0.035137295722961426,
+            "sample_peak_dbfs": -29.08463332453731,
+            "rms_dbfs": -45.30057284177612,
+            "crest_factor_db": 16.215939517238816,
+            "left_rms_dbfs": -42.93108278889618,
+            "right_rms_dbfs": -50.917289815266116,
+            "channel_balance_db": 7.9862070263699465,
+            "lr_correlation": -0.19023055116977378,
+            "mono_rms_change_db": -3.6195712374859617,
+            "max_adjacent_sample_delta": 0.00943291187286377,
+            "spectral_distribution": {
+              "20-60_hz_db": -49.414204096310506,
+              "60-250_hz_db": -44.44513549674238,
+              "250-2000_hz_db": -0.34728865237030293,
+              "2000-6000_hz_db": -11.368331834303833,
+              "6000-20000_hz_db": -24.167968814676737
+            }
+          },
+          "loudness": {
+            "method": "FFmpeg ebur128 peak=true",
+            "integrated_lufs": -41.8,
+            "loudness_range_lu": 0.7,
+            "true_peak_dbtp": -29.1,
+            "momentary_lufs": {
+              "minimum": -44.5,
+              "median": -41.8,
+              "maximum": -40.2
+            },
+            "short_term_lufs": {
+              "minimum": -42.3,
+              "median": -41.8,
+              "maximum": -41.4
+            }
+          },
+          "linked_gain_db": -1.7999999999999972
+        }
+      },
+      "relative_spectral_band_db_vs_3m": {
+        "20-60_hz_db": 0.3239022721357543,
+        "60-250_hz_db": 0.004045540258708513,
+        "250-2000_hz_db": -0.0002129959418495364,
+        "2000-6000_hz_db": 0.0004812062421741814,
+        "6000-20000_hz_db": 0.040812675733757686
+      }
+    },
+    {
+      "distance_m": 3.0,
+      "raw_metrics": {
+        "frames": 384000,
+        "finite": true,
+        "peak": 0.03515499830245972,
+        "peak_dbfs": -29.08025837399077,
+        "rms": 0.0054296909791824895,
+        "rms_dbfs": -45.30449773549676,
+        "max_sample_delta": 0.009505171328783035,
+        "p999_sample_delta": 0.005572292488068342,
+        "max_block_boundary_delta": 0.006562564987689257,
+        "plugin_boundary_phase_frames": 128
+      },
+      "image": {
+        "rms_lr_dbfs": [
+          -42.93501854715248,
+          -50.92114637638686
+        ],
+        "peak_lr_dbfs": [
+          -29.08025837399077,
+          -37.110491411215364
+        ],
+        "energy_difference_left_minus_right_db": 7.98612782923438,
+        "correlation": -0.190235730441658,
+        "side_to_mid_db": 1.143528482621508,
+        "effective_width_side_over_total_energy": 0.5654490914185514,
+        "mean_lr_to_linked_stereo_rms_db": -3.6195933769430915
+      },
+      "rms": 0.0054296909791824895,
+      "distance_trace": [
+        {
+          "time_seconds": 204.4,
+          "distance_m": 3.0,
+          "linked_gain_db": 0.0,
+          "display": "3.0 m"
+        },
+        {
+          "time_seconds": 205.46666666666667,
+          "distance_m": 3.0,
+          "linked_gain_db": 0.0,
+          "display": "3.0 m"
+        },
+        {
+          "time_seconds": 206.53333333333333,
+          "distance_m": 3.0,
+          "linked_gain_db": 0.0,
+          "display": "3.0 m"
+        },
+        {
+          "time_seconds": 207.6,
+          "distance_m": 3.0,
+          "linked_gain_db": 0.0,
+          "display": "3.0 m"
+        },
+        {
+          "time_seconds": 208.66666666666669,
+          "distance_m": 3.0,
+          "linked_gain_db": 0.0,
+          "display": "3.0 m"
+        },
+        {
+          "time_seconds": 209.73333333333335,
+          "distance_m": 3.0,
+          "linked_gain_db": 0.0,
+          "display": "3.0 m"
+        },
+        {
+          "time_seconds": 210.8,
+          "distance_m": 3.0,
+          "linked_gain_db": 0.0,
+          "display": "3.0 m"
+        },
+        {
+          "time_seconds": 211.86666666666667,
+          "distance_m": 3.0,
+          "linked_gain_db": 0.0,
+          "display": "3.0 m"
+        },
+        {
+          "time_seconds": 212.93333333333334,
+          "distance_m": 3.0,
+          "linked_gain_db": 0.0,
+          "display": "3.0 m"
+        }
+      ],
+      "localization": "PENDING_HUMAN_REVIEW",
+      "linked_compensation_db": 0.0,
+      "compensated_rms_dbfs": -45.30449773549676,
+      "export": {
+        "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_3.00m_205.4_213.4_24bit.wav",
+        "sha256": "3c3db6eb90366be521c964bbecd5972f066f44bc6510b23c85b1000b88502046",
+        "signal": {
+          "frames": 384000,
+          "duration_seconds": 8.0,
+          "finite": true,
+          "sample_peak": 0.03515505790710449,
+          "sample_peak_dbfs": -29.080243647239172,
+          "rms_dbfs": -45.30449771144034,
+          "crest_factor_db": 16.22425406420117,
+          "left_rms_dbfs": -42.93501854111561,
+          "right_rms_dbfs": -50.921146239002354,
+          "channel_balance_db": 7.986127697886744,
+          "lr_correlation": -0.19023574774979632,
+          "mono_rms_change_db": -3.619593443632682,
+          "max_adjacent_sample_delta": 0.009505152702331543,
+          "spectral_distribution": {
+            "20-60_hz_db": -49.738124670220586,
+            "60-250_hz_db": -44.44919041622154,
+            "250-2000_hz_db": -0.34707562234007344,
+            "2000-6000_hz_db": -11.36881333030868,
+            "6000-20000_hz_db": -24.208784120755222
+          }
+        },
+        "loudness": {
+          "method": "FFmpeg ebur128 peak=true",
+          "integrated_lufs": -41.8,
+          "loudness_range_lu": 0.7,
+          "true_peak_dbtp": -29.1,
+          "momentary_lufs": {
+            "minimum": -44.5,
+            "median": -41.8,
+            "maximum": -40.2
+          },
+          "short_term_lufs": {
+            "minimum": -42.3,
+            "median": -41.8,
+            "maximum": -41.4
+          }
+        },
+        "common_safety_gain": 1.0,
+        "level_matched": {
+          "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T002\\renders\\distance_backing_vocals\\M02_T002_backing_vocals_3.00m_205.4_213.4_level_matched_24bit.wav",
+          "sha256": "3c3db6eb90366be521c964bbecd5972f066f44bc6510b23c85b1000b88502046",
+          "signal": {
+            "frames": 384000,
+            "duration_seconds": 8.0,
+            "finite": true,
+            "sample_peak": 0.03515505790710449,
+            "sample_peak_dbfs": -29.080243647239172,
+            "rms_dbfs": -45.30449771144034,
+            "crest_factor_db": 16.22425406420117,
+            "left_rms_dbfs": -42.93501854111561,
+            "right_rms_dbfs": -50.921146239002354,
+            "channel_balance_db": 7.986127697886744,
+            "lr_correlation": -0.19023574774979632,
+            "mono_rms_change_db": -3.619593443632682,
+            "max_adjacent_sample_delta": 0.009505152702331543,
+            "spectral_distribution": {
+              "20-60_hz_db": -49.738124670220586,
+              "60-250_hz_db": -44.44919041622154,
+              "250-2000_hz_db": -0.34707562234007344,
+              "2000-6000_hz_db": -11.36881333030868,
+              "6000-20000_hz_db": -24.208784120755222
+            }
+          },
+          "loudness": {
+            "method": "FFmpeg ebur128 peak=true",
+            "integrated_lufs": -41.8,
+            "loudness_range_lu": 0.7,
+            "true_peak_dbtp": -29.1,
+            "momentary_lufs": {
+              "minimum": -44.5,
+              "median": -41.8,
+              "maximum": -40.2
+            },
+            "short_term_lufs": {
+              "minimum": -42.3,
+              "median": -41.8,
+              "maximum": -41.4
+            }
+          },
+          "linked_gain_db": 0.0
+        }
+      },
+      "relative_spectral_band_db_vs_3m": {
+        "20-60_hz_db": 0.0,
+        "60-250_hz_db": 0.0,
+        "250-2000_hz_db": 0.0,
+        "2000-6000_hz_db": 0.0,
+        "6000-20000_hz_db": 0.0
+      }
+    }
+  ],
+  "gain_policy": "Per-role empirical static RMS curve vs 3m. Interpolated linked gain only in preview; no spectral filters.",
+  "human_localization_stability": "PENDING"
+}

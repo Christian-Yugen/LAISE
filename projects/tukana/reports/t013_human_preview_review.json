@@ -1,0 +1,15 @@
+{
+  "review_id": "T013-HUMAN-001",
+  "preview_interval_seconds": [136.0, 143.0],
+  "playback": "headphones",
+  "result": "POSITIVE_FOR_THIS_EXCERPT",
+  "responses": {
+    "continuous_rear_percussion_motion": true,
+    "percussion_localized_behind_head": true,
+    "flute_percussion_spatial_separation": true,
+    "audible_clicks_interruptions_or_abrupt_changes": false
+  },
+  "scope": "This result applies only to the evaluated seven-second excerpt.",
+  "global_front_back_validation": "PENDING",
+  "full_perceptual_protocol": "PENDING"
+}

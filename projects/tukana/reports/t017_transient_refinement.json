@@ -1,0 +1,481 @@
+﻿{
+    "test_id":  "T017",
+    "status":  "PASS",
+    "human_review":  "PENDING",
+    "t016_human_reference":  "MASTER_B_APPROVED",
+    "method":  {
+                   "decision":  "viable_conservative_experiment",
+                   "rationale":  "B2 relaxes the loudness target by 0.3 LU to reduce dynamic intervention without stem remixing.",
+                   "target_integrated_lufs":  -16.3,
+                   "target_true_peak_dbtp":  -1.5,
+                   "target_lra_lu":  11.0,
+                   "first_pass":  {
+                                      "input_i":  "-20.46",
+                                      "input_tp":  "-3.00",
+                                      "input_lra":  "8.00",
+                                      "input_thresh":  "-30.68",
+                                      "output_i":  "-15.49",
+                                      "output_tp":  "-1.50",
+                                      "output_lra":  "6.10",
+                                      "output_thresh":  "-25.60",
+                                      "normalization_type":  "dynamic",
+                                      "target_offset":  "-0.81"
+                                  },
+                   "processing":  [
+                                      "two-pass EBU R128 loudness normalization",
+                                      "stereo-linked true-peak limiting"
+                                  ],
+                   "excluded":  [
+                                    "EQ",
+                                    "stereo widening",
+                                    "Mid/Side",
+                                    "new spatialization",
+                                    "stem reinforcement"
+                                ]
+               },
+    "transient_analysis":  {
+                               "drum_detected_events":  250,
+                               "masters":  {
+                                               "A":  {
+                                                         "events":  250,
+                                                         "attack_to_body_crest_db":  {
+                                                                                         "p10":  7.472231056068615,
+                                                                                         "median":  9.695967670673589,
+                                                                                         "p90":  11.45608585460029
+                                                                                     },
+                                                         "attack_peak_dbfs":  {
+                                                                                  "median":  -7.933949504508945,
+                                                                                  "p90":  -6.069035649324153
+                                                                              }
+                                                     },
+                                               "B":  {
+                                                         "events":  250,
+                                                         "attack_to_body_crest_db":  {
+                                                                                         "p10":  7.589733276258804,
+                                                                                         "median":  9.680682033274183,
+                                                                                         "p90":  11.438940165971482
+                                                                                     },
+                                                         "attack_peak_dbfs":  {
+                                                                                  "median":  -5.284118578798537,
+                                                                                  "p90":  -3.1878370728389207
+                                                                              }
+                                                     },
+                                               "B2":  {
+                                                          "events":  250,
+                                                          "attack_to_body_crest_db":  {
+                                                                                          "p10":  7.589733245778714,
+                                                                                          "median":  9.694454582468953,
+                                                                                          "p90":  11.438940074012224
+                                                                                      },
+                                                          "attack_peak_dbfs":  {
+                                                                                   "median":  -5.594118659320902,
+                                                                                   "p90":  -3.497836934363102
+                                                                               }
+                                                      }
+                                           },
+                               "at_151_92_seconds":  {
+                                                         "A":  {
+                                                                   "time_seconds":  151.92,
+                                                                   "peak_dbfs":  -8.08035616288145,
+                                                                   "rms_dbfs":  -18.896772099274838,
+                                                                   "local_crest_db":  10.816415936393389
+                                                               },
+                                                         "B":  {
+                                                                   "time_seconds":  151.92,
+                                                                   "peak_dbfs":  -5.914265716008369,
+                                                                   "rms_dbfs":  -16.730751927250324,
+                                                                   "local_crest_db":  10.816486211241953
+                                                               },
+                                                         "B2":  {
+                                                                    "time_seconds":  151.92,
+                                                                    "peak_dbfs":  -6.224266722862603,
+                                                                    "rms_dbfs":  -17.04075194537173,
+                                                                    "local_crest_db":  10.816485222509126
+                                                                }
+                                                     },
+                               "interpretation":  "Crest change is measured at drum-timed events but remains a full-mix metric; it is not attributed exclusively to drums. The B2 median recovery is objectively very small and requires human evaluation.",
+                               "b2_minus_b_median_attack_crest_db":  0.013772549194767336
+                           },
+    "protected_hashes":  {
+                             "t015":  "218054e7f1310b9371a90fc97479ffece6acd8d2544846bb77c90c1342665f96",
+                             "master_a":  "0a97e41448f3f65d887c7facb6630cccceb3a921c43f32cc67dfacfd8e734c94",
+                             "master_b":  "f72bd61b85a1d4364d59a8abac0db8ee514e6c37941c3ecbed45ca8c91e4eee6"
+                         },
+    "preservation_checks":  {
+                                "t015":  true,
+                                "master_a":  true,
+                                "master_b":  true
+                            },
+    "artifacts":  {
+                      "master_b2":  {
+                                        "path":  "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\mastering\\t017\\TUKANA_B2_transient_refinement_24bit.wav",
+                                        "sha256":  "9daf544d7e073d8791f6260eed2630863a9280a2cca7d22053132a881e2c0df9",
+                                        "format":  {
+                                                       "codec_name":  "pcm_s24le",
+                                                       "sample_fmt":  "s32",
+                                                       "sample_rate":  "48000",
+                                                       "channels":  2,
+                                                       "duration":  "267.600021"
+                                                   },
+                                        "signal":  {
+                                                       "frames":  12844801,
+                                                       "duration_seconds":  267.60002083333336,
+                                                       "finite":  true,
+                                                       "sample_peak":  0.8432830572128296,
+                                                       "sample_peak_dbfs":  -1.4805325039024706,
+                                                       "rms_dbfs":  -17.854631987930027,
+                                                       "crest_factor_db":  16.374099484027553,
+                                                       "left_rms_dbfs":  -17.629910508223862,
+                                                       "right_rms_dbfs":  -18.091619017889695,
+                                                       "channel_balance_db":  0.46170850966583477,
+                                                       "lr_correlation":  0.7980407436065076,
+                                                       "mono_rms_change_db":  -0.46502556686538404,
+                                                       "max_adjacent_sample_delta":  0.46021008491516113,
+                                                       "transient_151_92_peak":  0.48841238021850586,
+                                                       "spectral_distribution":  {
+                                                                                     "20-60_hz_db":  -5.017641697455703,
+                                                                                     "60-250_hz_db":  -3.502271357000726,
+                                                                                     "250-2000_hz_db":  -6.959534174817451,
+                                                                                     "2000-6000_hz_db":  -15.0769357737655,
+                                                                                     "6000-20000_hz_db":  -22.170255119838536
+                                                                                 }
+                                                   },
+                                        "loudness":  {
+                                                         "method":  "FFmpeg ebur128 peak=true",
+                                                         "integrated_lufs":  -16.3,
+                                                         "loudness_range_lu":  7.3,
+                                                         "true_peak_dbtp":  -1.5,
+                                                         "momentary_lufs":  {
+                                                                                "minimum":  -40.2,
+                                                                                "median":  -16.9,
+                                                                                "maximum":  -10.2
+                                                                            },
+                                                         "short_term_lufs":  {
+                                                                                 "minimum":  -29.2,
+                                                                                 "median":  -16.8,
+                                                                                 "maximum":  -11.5
+                                                                             }
+                                                     }
+                                    },
+                      "full_A":  {
+                                     "path":  "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\mastering\\t017\\TUKANA_T017_A_level_matched_24bit.wav",
+                                     "sha256":  "0a97e41448f3f65d887c7facb6630cccceb3a921c43f32cc67dfacfd8e734c94",
+                                     "format":  {
+                                                    "codec_name":  "pcm_s24le",
+                                                    "sample_fmt":  "s32",
+                                                    "sample_rate":  "48000",
+                                                    "channels":  2,
+                                                    "duration":  "267.600021"
+                                                },
+                                     "signal":  {
+                                                    "frames":  12844801,
+                                                    "duration_seconds":  267.60002083333336,
+                                                    "finite":  true,
+                                                    "sample_peak":  0.8317290544509888,
+                                                    "sample_peak_dbfs":  -1.600362544401186,
+                                                    "rms_dbfs":  -20.58826728394831,
+                                                    "crest_factor_db":  18.987904739547123,
+                                                    "left_rms_dbfs":  -20.33322017328899,
+                                                    "right_rms_dbfs":  -20.85923214427551,
+                                                    "channel_balance_db":  0.5260119709865226,
+                                                    "lr_correlation":  0.7941890208387681,
+                                                    "mono_rms_change_db":  -0.4751391669882499,
+                                                    "max_adjacent_sample_delta":  0.373465895652771,
+                                                    "transient_151_92_peak":  0.3944411277770996,
+                                                    "spectral_distribution":  {
+                                                                                  "20-60_hz_db":  -5.036988197049156,
+                                                                                  "60-250_hz_db":  -3.5509054269406763,
+                                                                                  "250-2000_hz_db":  -6.812498351097897,
+                                                                                  "2000-6000_hz_db":  -15.180355413925339,
+                                                                                  "6000-20000_hz_db":  -22.054297688019386
+                                                                              }
+                                                },
+                                     "loudness":  {
+                                                      "method":  "FFmpeg ebur128 peak=true",
+                                                      "integrated_lufs":  -19.0,
+                                                      "loudness_range_lu":  7.6,
+                                                      "true_peak_dbtp":  -1.6,
+                                                      "momentary_lufs":  {
+                                                                             "minimum":  -42.2,
+                                                                             "median":  -19.4,
+                                                                             "maximum":  -13.1
+                                                                         },
+                                                      "short_term_lufs":  {
+                                                                              "minimum":  -34.3,
+                                                                              "median":  -19.3,
+                                                                              "maximum":  -14.6
+                                                                          }
+                                                  }
+                                 },
+                      "full_B":  {
+                                     "path":  "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\mastering\\t017\\TUKANA_T017_B_level_matched_24bit.wav",
+                                     "sha256":  "8c6fde9ca39cf2fb7fd01e87a4332927b7c42161e316c7bed2d7b7e0932469aa",
+                                     "format":  {
+                                                    "codec_name":  "pcm_s24le",
+                                                    "sample_fmt":  "s32",
+                                                    "sample_rate":  "48000",
+                                                    "channels":  2,
+                                                    "duration":  "267.600021"
+                                                },
+                                     "signal":  {
+                                                    "frames":  12844801,
+                                                    "duration_seconds":  267.60002083333336,
+                                                    "finite":  true,
+                                                    "sample_peak":  0.5969986915588379,
+                                                    "sample_peak_dbfs":  -4.480532414243416,
+                                                    "rms_dbfs":  -20.55245523558891,
+                                                    "crest_factor_db":  16.07192282134549,
+                                                    "left_rms_dbfs":  -20.32698038047321,
+                                                    "right_rms_dbfs":  -20.790280299930753,
+                                                    "channel_balance_db":  0.46329991945754445,
+                                                    "lr_correlation":  0.7977998050912477,
+                                                    "mono_rms_change_db":  -0.4656258754734724,
+                                                    "max_adjacent_sample_delta":  0.33764171600341797,
+                                                    "transient_151_92_peak":  0.35833287239074707,
+                                                    "spectral_distribution":  {
+                                                                                  "20-60_hz_db":  -5.022012375822154,
+                                                                                  "60-250_hz_db":  -3.5015122213917973,
+                                                                                  "250-2000_hz_db":  -6.954854492438571,
+                                                                                  "2000-6000_hz_db":  -15.07457904851089,
+                                                                                  "6000-20000_hz_db":  -22.166901930948253
+                                                                              }
+                                                },
+                                     "loudness":  {
+                                                      "method":  "FFmpeg ebur128 peak=true",
+                                                      "integrated_lufs":  -19.0,
+                                                      "loudness_range_lu":  7.3,
+                                                      "true_peak_dbtp":  -4.5,
+                                                      "momentary_lufs":  {
+                                                                             "minimum":  -42.9,
+                                                                             "median":  -19.6,
+                                                                             "maximum":  -13.0
+                                                                         },
+                                                      "short_term_lufs":  {
+                                                                              "minimum":  -31.9,
+                                                                              "median":  -19.4,
+                                                                              "maximum":  -14.2
+                                                                          }
+                                                  }
+                                 },
+                      "full_B2":  {
+                                      "path":  "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\mastering\\t017\\TUKANA_T017_B2_level_matched_24bit.wav",
+                                      "sha256":  "eb273051a3e0dade71f549ff69cf404975384b4e2a995ef42189ca15ca0ae2e0",
+                                      "format":  {
+                                                     "codec_name":  "pcm_s24le",
+                                                     "sample_fmt":  "s32",
+                                                     "sample_rate":  "48000",
+                                                     "channels":  2,
+                                                     "duration":  "267.600021"
+                                                 },
+                                      "signal":  {
+                                                     "frames":  12844801,
+                                                     "duration_seconds":  267.60002083333336,
+                                                     "finite":  true,
+                                                     "sample_peak":  0.617978572845459,
+                                                     "sample_peak_dbfs":  -4.180531658621944,
+                                                     "rms_dbfs":  -20.554632328410793,
+                                                     "crest_factor_db":  16.37410066978885,
+                                                     "left_rms_dbfs":  -20.329910849327216,
+                                                     "right_rms_dbfs":  -20.791619357630523,
+                                                     "channel_balance_db":  0.46170850830330756,
+                                                     "lr_correlation":  0.7980407434491981,
+                                                     "mono_rms_change_db":  -0.46502556723048805,
+                                                     "max_adjacent_sample_delta":  0.337253212928772,
+                                                     "transient_151_92_peak":  0.3579205274581909,
+                                                     "spectral_distribution":  {
+                                                                                   "20-60_hz_db":  -5.017641699084452,
+                                                                                   "60-250_hz_db":  -3.5022713579767273,
+                                                                                   "250-2000_hz_db":  -6.959534171345513,
+                                                                                   "2000-6000_hz_db":  -15.076935768603626,
+                                                                                   "6000-20000_hz_db":  -22.170255110075217
+                                                                               }
+                                                 },
+                                      "loudness":  {
+                                                       "method":  "FFmpeg ebur128 peak=true",
+                                                       "integrated_lufs":  -19.0,
+                                                       "loudness_range_lu":  7.3,
+                                                       "true_peak_dbtp":  -4.2,
+                                                       "momentary_lufs":  {
+                                                                              "minimum":  -42.9,
+                                                                              "median":  -19.6,
+                                                                              "maximum":  -12.9
+                                                                          },
+                                                       "short_term_lufs":  {
+                                                                               "minimum":  -31.9,
+                                                                               "median":  -19.5,
+                                                                               "maximum":  -14.2
+                                                                           }
+                                                   }
+                                  },
+                      "preview_A":  {
+                                        "path":  "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\mastering\\t017\\TUKANA_T017_preview_145_160_A_level_matched_24bit.wav",
+                                        "sha256":  "c84d3d9d11b563e6b534356b78357108db5367c5bee2d300b898925db8c5d212",
+                                        "format":  {
+                                                       "codec_name":  "pcm_s24le",
+                                                       "sample_fmt":  "s32",
+                                                       "sample_rate":  "48000",
+                                                       "channels":  2,
+                                                       "duration":  "15.000000"
+                                                   },
+                                        "signal":  {
+                                                       "frames":  720000,
+                                                       "duration_seconds":  15.0,
+                                                       "finite":  true,
+                                                       "sample_peak":  0.5300090312957764,
+                                                       "sample_peak_dbfs":  -5.514334600116195,
+                                                       "rms_dbfs":  -20.043749796679045,
+                                                       "crest_factor_db":  14.529415196562852,
+                                                       "left_rms_dbfs":  -19.82044379619801,
+                                                       "right_rms_dbfs":  -20.279163116039953,
+                                                       "channel_balance_db":  0.45871931984194336,
+                                                       "lr_correlation":  0.8894661325219132,
+                                                       "mono_rms_change_db":  -0.24975754585173135,
+                                                       "max_adjacent_sample_delta":  0.22907769680023193,
+                                                       "transient_151_92_peak":  0.0,
+                                                       "spectral_distribution":  {
+                                                                                     "20-60_hz_db":  -4.234287359093178,
+                                                                                     "60-250_hz_db":  -2.8871893747455517,
+                                                                                     "250-2000_hz_db":  -10.445087765543136,
+                                                                                     "2000-6000_hz_db":  -19.364276673426506,
+                                                                                     "6000-20000_hz_db":  -21.89031392522424
+                                                                                 }
+                                                   },
+                                        "loudness":  {
+                                                         "method":  "FFmpeg ebur128 peak=true",
+                                                         "integrated_lufs":  -19.3,
+                                                         "loudness_range_lu":  1.1,
+                                                         "true_peak_dbtp":  -5.4,
+                                                         "momentary_lufs":  {
+                                                                                "minimum":  -23.7,
+                                                                                "median":  -19.3,
+                                                                                "maximum":  -16.6
+                                                                            },
+                                                         "short_term_lufs":  {
+                                                                                 "minimum":  -19.9,
+                                                                                 "median":  -19.4,
+                                                                                 "maximum":  -18.3
+                                                                             }
+                                                     }
+                                    },
+                      "preview_B":  {
+                                        "path":  "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\mastering\\t017\\TUKANA_T017_preview_145_160_B_level_matched_24bit.wav",
+                                        "sha256":  "49e7df455097384b6b2b106ee060d310962b168992f926fb61fd2ada63b22515",
+                                        "format":  {
+                                                       "codec_name":  "pcm_s24le",
+                                                       "sample_fmt":  "s32",
+                                                       "sample_rate":  "48000",
+                                                       "channels":  2,
+                                                       "duration":  "15.000000"
+                                                   },
+                                        "signal":  {
+                                                       "frames":  720000,
+                                                       "duration_seconds":  15.0,
+                                                       "finite":  true,
+                                                       "sample_peak":  0.5290471315383911,
+                                                       "sample_peak_dbfs":  -5.530112719778167,
+                                                       "rms_dbfs":  -20.043749838863405,
+                                                       "crest_factor_db":  14.51363711908524,
+                                                       "left_rms_dbfs":  -19.8205324726779,
+                                                       "right_rms_dbfs":  -20.279064651841367,
+                                                       "channel_balance_db":  0.45853217916346845,
+                                                       "lr_correlation":  0.8895799820871909,
+                                                       "mono_rms_change_db":  -0.24949374105103492,
+                                                       "max_adjacent_sample_delta":  0.22956979274749756,
+                                                       "transient_151_92_peak":  0.0,
+                                                       "spectral_distribution":  {
+                                                                                     "20-60_hz_db":  -4.234507294284167,
+                                                                                     "60-250_hz_db":  -2.8866831479403796,
+                                                                                     "250-2000_hz_db":  -10.447658569050164,
+                                                                                     "2000-6000_hz_db":  -19.36015710157577,
+                                                                                     "6000-20000_hz_db":  -21.889252280864042
+                                                                                 }
+                                                   },
+                                        "loudness":  {
+                                                         "method":  "FFmpeg ebur128 peak=true",
+                                                         "integrated_lufs":  -19.3,
+                                                         "loudness_range_lu":  1.0,
+                                                         "true_peak_dbtp":  -5.4,
+                                                         "momentary_lufs":  {
+                                                                                "minimum":  -23.6,
+                                                                                "median":  -19.3,
+                                                                                "maximum":  -16.6
+                                                                            },
+                                                         "short_term_lufs":  {
+                                                                                 "minimum":  -19.8,
+                                                                                 "median":  -19.4,
+                                                                                 "maximum":  -18.3
+                                                                             }
+                                                     }
+                                    },
+                      "preview_B2":  {
+                                         "path":  "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\mastering\\t017\\TUKANA_T017_preview_145_160_B2_level_matched_24bit.wav",
+                                         "sha256":  "34d059bc7cd38b022c472a8fdb3a184cfd5e8bc7cd24d4a4f01978613feabcbd",
+                                         "format":  {
+                                                        "codec_name":  "pcm_s24le",
+                                                        "sample_fmt":  "s32",
+                                                        "sample_rate":  "48000",
+                                                        "channels":  2,
+                                                        "duration":  "15.000000"
+                                                    },
+                                         "signal":  {
+                                                        "frames":  720000,
+                                                        "duration_seconds":  15.0,
+                                                        "finite":  true,
+                                                        "sample_peak":  0.5290471315383911,
+                                                        "sample_peak_dbfs":  -5.530112719778167,
+                                                        "rms_dbfs":  -20.04374994733107,
+                                                        "crest_factor_db":  14.513637227552906,
+                                                        "left_rms_dbfs":  -19.82053258351057,
+                                                        "right_rms_dbfs":  -20.279064757680697,
+                                                        "channel_balance_db":  0.4585321741701267,
+                                                        "lr_correlation":  0.8895799827123013,
+                                                        "mono_rms_change_db":  -0.2494937395539605,
+                                                        "max_adjacent_sample_delta":  0.2295699119567871,
+                                                        "transient_151_92_peak":  0.0,
+                                                        "spectral_distribution":  {
+                                                                                      "20-60_hz_db":  -4.234507276897031,
+                                                                                      "60-250_hz_db":  -2.8866831552415877,
+                                                                                      "250-2000_hz_db":  -10.447658575843102,
+                                                                                      "2000-6000_hz_db":  -19.360157221973274,
+                                                                                      "6000-20000_hz_db":  -21.889252400114625
+                                                                                  }
+                                                    },
+                                         "loudness":  {
+                                                          "method":  "FFmpeg ebur128 peak=true",
+                                                          "integrated_lufs":  -19.3,
+                                                          "loudness_range_lu":  1.0,
+                                                          "true_peak_dbtp":  -5.4,
+                                                          "momentary_lufs":  {
+                                                                                 "minimum":  -23.6,
+                                                                                 "median":  -19.3,
+                                                                                 "maximum":  -16.6
+                                                                             },
+                                                          "short_term_lufs":  {
+                                                                                  "minimum":  -19.8,
+                                                                                  "median":  -19.4,
+                                                                                  "maximum":  -18.3
+                                                                              }
+                                                      }
+                                     }
+                  },
+    "tests":  {
+                  "prior_artifacts_preserved":  true,
+                  "b2_pcm24_48khz_stereo":  true,
+                  "b2_exact_duration":  true,
+                  "b2_finite_no_clipping":  true,
+                  "b2_loudness_near_minus_16":  true,
+                  "b2_true_peak_limit":  true,
+                  "channel_balance_preserved":  true,
+                  "stereo_correlation_preserved":  true,
+                  "mono_compatibility_preserved":  true,
+                  "transient_151_92_preserved":  true,
+                  "full_comparison_level_matched":  true,
+                  "previews_exact_duration":  true
+              },
+    "pending":  [
+                    "human A/B/B2 approval",
+                    "dynamic distance automation validation",
+                    "global front/back perceptual validation",
+                    "final YouTube video packaging"
+                ]
+}

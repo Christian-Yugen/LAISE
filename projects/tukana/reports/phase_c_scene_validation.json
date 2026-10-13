@@ -1,0 +1,18 @@
+{
+  "test_id": "T012-C",
+  "objective_result": "PASS",
+  "perceptual_result": "PENDING",
+  "validations": {
+    "ten_sources": true,
+    "duration_preserved": true,
+    "lead_vocal_stable": true,
+    "bass_stable": true,
+    "drums_stable": true,
+    "percussion_keyframes_monotonic": true,
+    "woodwinds_follow_transitions": true,
+    "renderer_independent": true,
+    "distance_not_overclaimed": true,
+    "perceptual_status_pending": true
+  },
+  "scene": "C:\\Projetos2026\\LAISE\\projects\\tukana\\spatial_scenes\\tukana_balanced_scene.json"
+}

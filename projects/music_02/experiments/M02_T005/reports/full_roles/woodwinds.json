@@ -1,0 +1,1929 @@
+{
+  "path": "C:\\Projetos2026\\LAISE\\projects\\music_02\\experiments\\M02_T005\\spatial_stems\\full_float32\\woodwinds.wav",
+  "sha256": "b5d8844f5d688735b780f6bdbe15f8086d373c1d66f5540c95561c2a26fcf201",
+  "frames": 11884801,
+  "conditioning": null,
+  "recipe": {
+    "curve": [
+      -4.3760057483112895,
+      -3.8846481215873148,
+      -3.2152236703770964,
+      -2.2409966046983283,
+      -1.400460099667146,
+      0.0
+    ],
+    "grid": [
+      0.25,
+      0.35,
+      0.5,
+      0.75,
+      1.0,
+      1.5
+    ],
+    "policy": "partial",
+    "trim_db": 16.672242349513947
+  },
+  "metrics": {
+    "frames": 11884801,
+    "finite": true,
+    "peak": 0.2484612613916397,
+    "peak_dbfs": -12.094826285520487,
+    "rms": 0.016385379921041682,
+    "rms_dbfs": -35.71086968715902,
+    "max_sample_delta": 0.10393919795751572,
+    "p999_sample_delta": 0.025994922965765,
+    "max_block_boundary_delta": 0.04767074063420296,
+    "plugin_boundary_phase_frames": 128
+  },
+  "transients": {
+    "score": 85.71488555321551,
+    "events": 50,
+    "onset_envelope_correlation": 0.9153315547889544,
+    "median_attack_crest_delta_db": 1.9594586900309618,
+    "analysis_common_latency_removed_samples": 0
+  },
+  "trace": [
+    {
+      "time_seconds": -1.0,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 0.06666666666666665,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 1.1333333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 2.2,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 3.2666666666666666,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 4.333333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 5.4,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 6.466666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 7.533333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 8.6,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 9.666666666666666,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 10.733333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 11.8,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 12.866666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 13.933333333333334,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 15.0,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 16.066666666666666,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 17.133333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 18.2,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 19.266666666666666,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 20.333333333333332,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 21.4,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 22.466666666666665,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 23.533333333333335,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 24.6,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 25.666666666666668,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 26.733333333333334,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 27.8,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 28.866666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 29.933333333333334,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 31.0,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 32.06666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 33.13333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 34.2,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 35.266666666666666,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 36.333333333333336,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 37.4,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 38.46666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 39.53333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 40.6,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 41.666666666666664,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 42.733333333333334,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 43.8,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 44.86666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 45.93333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 47.0,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 48.06666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 49.13333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 50.2,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 51.266666666666666,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 52.333333333333336,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 53.4,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 54.46666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 55.53333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 56.6,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 57.666666666666664,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 58.733333333333334,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 59.8,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 60.86666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 61.93333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 63.0,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 64.06666666666666,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 65.13333333333334,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 66.2,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 67.26666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 68.33333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 69.4,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 70.46666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 71.53333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 72.6,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 73.66666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 74.73333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 75.8,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 76.86666666666666,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 77.93333333333334,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 79.0,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 80.06666666666666,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 81.13333333333334,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 82.2,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 83.26666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 84.33333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 85.4,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 86.46666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 87.53333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 88.6,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 89.66666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 90.73333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 91.8,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 92.86666666666666,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 93.93333333333334,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 95.0,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 96.06666666666666,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 97.13333333333334,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 98.2,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 99.26666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 100.33333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 101.4,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 102.46666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 103.53333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 104.6,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 105.66666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 106.73333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 107.8,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 108.86666666666666,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 109.93333333333334,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 111.0,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 112.06666666666666,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 113.13333333333334,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 114.2,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 115.26666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 116.33333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 117.4,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 118.46666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 119.53333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 120.6,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 121.66666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 122.73333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 123.8,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 124.86666666666666,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 125.93333333333334,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 127.0,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 128.06666666666666,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 129.13333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 130.2,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 131.26666666666668,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 132.33333333333334,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 133.4,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 134.46666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 135.53333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 136.6,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 137.66666666666666,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 138.73333333333332,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 139.8,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 140.86666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 141.93333333333334,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 143.0,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 144.06666666666666,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 145.13333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 146.2,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 147.26666666666668,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 148.33333333333334,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 149.4,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 150.46666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 151.53333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 152.6,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 153.66666666666666,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 154.73333333333332,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 155.8,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 156.86666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 157.93333333333334,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 159.0,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 160.06666666666666,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 161.13333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 162.2,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 163.26666666666668,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 164.33333333333334,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 165.4,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 166.46666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 167.53333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 168.6,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 169.66666666666666,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 170.73333333333332,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 171.8,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 172.86666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 173.93333333333334,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 175.0,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 176.06666666666666,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 177.13333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 178.2,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 179.26666666666668,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 180.33333333333334,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 181.4,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 182.46666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 183.53333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 184.6,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 185.66666666666666,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 186.73333333333332,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 187.8,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 188.86666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 189.93333333333334,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 191.0,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 192.06666666666666,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 193.13333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 194.2,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 195.26666666666668,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 196.33333333333334,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 197.4,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 198.46666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 199.53333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 200.6,
+      "azimuth_deg_unwrapped": -64.6641324718972,
+      "elevation_deg": 29.709726606167024,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 201.66666666666666,
+      "azimuth_deg_unwrapped": -40.95592353304764,
+      "elevation_deg": 32.7492405726862,
+      "distance_m": 0.823404255319155,
+      "retained_growth_db": 0.8623870966103162,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 202.73333333333332,
+      "azimuth_deg_unwrapped": -17.24771459419808,
+      "elevation_deg": 35.78875453920537,
+      "distance_m": 0.48297872340426173,
+      "retained_growth_db": 2.155626037278019,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 203.8,
+      "azimuth_deg_unwrapped": 6.460492503706136,
+      "elevation_deg": 37.171731730294084,
+      "distance_m": 0.5574468085106405,
+      "retained_growth_db": 1.884256718573253,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 204.86666666666667,
+      "azimuth_deg_unwrapped": 30.16869468679837,
+      "elevation_deg": 34.13221862989764,
+      "distance_m": 0.8978723404255339,
+      "retained_growth_db": 0.634905727589153,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 205.93333333333334,
+      "azimuth_deg_unwrapped": 53.87689686989061,
+      "elevation_deg": 31.092705529501202,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 207.0,
+      "azimuth_deg_unwrapped": 77.58509905298284,
+      "elevation_deg": 28.05319242910476,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 208.06666666666666,
+      "azimuth_deg_unwrapped": 78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 209.13333333333333,
+      "azimuth_deg_unwrapped": 78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 210.2,
+      "azimuth_deg_unwrapped": 78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 211.26666666666668,
+      "azimuth_deg_unwrapped": 78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 212.33333333333334,
+      "azimuth_deg_unwrapped": 78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 213.4,
+      "azimuth_deg_unwrapped": 78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 214.46666666666667,
+      "azimuth_deg_unwrapped": 78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 215.53333333333333,
+      "azimuth_deg_unwrapped": 78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 216.6,
+      "azimuth_deg_unwrapped": 78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 217.66666666666666,
+      "azimuth_deg_unwrapped": 78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 218.73333333333332,
+      "azimuth_deg_unwrapped": 77.34514023494168,
+      "elevation_deg": 28.08395638013568,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 219.8,
+      "azimuth_deg_unwrapped": 48.24066601671298,
+      "elevation_deg": 31.815299228626543,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 220.86666666666667,
+      "azimuth_deg_unwrapped": 19.13619179848505,
+      "elevation_deg": 35.5466420771173,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 221.93333333333334,
+      "azimuth_deg_unwrapped": -9.968282419742973,
+      "elevation_deg": 36.722015074391926,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 223.0,
+      "azimuth_deg_unwrapped": -39.07275663797119,
+      "elevation_deg": 32.99067222590113,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 224.06666666666666,
+      "azimuth_deg_unwrapped": -68.1772308561994,
+      "elevation_deg": 29.25932937741033,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 225.13333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 226.2,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 227.26666666666668,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 228.33333333333334,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 229.4,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 230.46666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 231.53333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 232.6,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 233.66666666666666,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 234.73333333333332,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 235.8,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 236.86666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 237.93333333333334,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 239.0,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 240.06666666666666,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 241.13333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 242.2,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 243.26666666666668,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 244.33333333333334,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 245.4,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 246.46666666666667,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 247.53333333333333,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    },
+    {
+      "time_seconds": 247.608,
+      "azimuth_deg_unwrapped": -78.0,
+      "elevation_deg": 28.0,
+      "distance_m": 1.1,
+      "retained_growth_db": 0.0,
+      "gain_db": -1.120368079733716
+    }
+  ],
+  "source_start_frame": 0,
+  "source_sha256": "8e5320a183713ac6229bb69098ec659fd6319303aaeec6ae2862f70e8df8aa31"
+}

@@ -1,0 +1,921 @@
+{
+  "schema": "LAISE Spatial Scene v1.0",
+  "project": "music_02",
+  "test_id": "M02-T003",
+  "baseline": "LAISE_T017_APPROVED_BASELINE",
+  "duration_seconds": 247.60002083333333,
+  "sources": [
+    {
+      "source_id": "lead_vocal",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\0 Lead Vocals.wav",
+      "trajectory": "stable_anchor_or_lane",
+      "gain_db": 0,
+      "musical_rationale": "Stable front center; vocal anchor. Compactness is an audition candidate, not a permanent mono decision.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 0.0,
+          "gain_db": 0.0,
+          "reason": "Stable front center; vocal anchor. Compactness is an audition candidate, not a permanent mono decision."
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 0.0,
+          "gain_db": 0.0,
+          "reason": "Hold ending; preserve full scene timeline"
+        }
+      ],
+      "preprocess": {
+        "method": "linked pre-dearVR M/S",
+        "side_factor": 0.5,
+        "adoption": "T003_AUDITION_ONLY"
+      },
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.1
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "distance_m": 1.1
+        }
+      ]
+    },
+    {
+      "source_id": "backing_vocals",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\1 Backing Vocals.wav",
+      "trajectory": "stable_anchor_or_lane",
+      "gain_db": -2,
+      "musical_rationale": "Near left lateral/rear envelopment, with lower elevation than Synth; no displacement of frontal Lead.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": -110.0,
+          "elevation_deg": 10.0,
+          "gain_db": 0.0,
+          "reason": "Near left lateral/rear envelopment, with lower elevation than Synth; no displacement of frontal Lead."
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": -110.0,
+          "elevation_deg": 10.0,
+          "gain_db": 0.0,
+          "reason": "Hold ending; preserve full scene timeline"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 0.9
+        },
+        {
+          "time_seconds": 214.0,
+          "distance_m": 0.9
+        },
+        {
+          "time_seconds": 215.5,
+          "distance_m": 0.6
+        },
+        {
+          "time_seconds": 217.0,
+          "distance_m": 0.9
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "distance_m": 0.9
+        }
+      ]
+    },
+    {
+      "source_id": "woodwinds",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\10 Woodwinds.wav",
+      "trajectory": "front_lateral_phrase",
+      "gain_db": 0,
+      "musical_rationale": "Expressive front/lateral phrase traversal, distinct from Percussion full orbit.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": -75.0,
+          "elevation_deg": 22.0,
+          "gain_db": 0.0,
+          "reason": "Expressive front/lateral phrase traversal, distinct from Percussion full orbit."
+        },
+        {
+          "time_seconds": 199.0,
+          "azimuth_deg_unwrapped": -75.0,
+          "elevation_deg": 22.0,
+          "gain_db": 0.0,
+          "reason": "Prepare next lateral phrase in gap"
+        },
+        {
+          "time_seconds": 200.0,
+          "azimuth_deg_unwrapped": -75.0,
+          "elevation_deg": 22.0,
+          "gain_db": 0.0,
+          "reason": "Distinct lateral entry"
+        },
+        {
+          "time_seconds": 203.50933333333333,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 28.0,
+          "gain_db": 0.0,
+          "reason": "Expressive upper-front crossing, not rear orbit"
+        },
+        {
+          "time_seconds": 207.01866666666666,
+          "azimuth_deg_unwrapped": 75.0,
+          "elevation_deg": 22.0,
+          "gain_db": 0.0,
+          "reason": "Complete lateral answer"
+        },
+        {
+          "time_seconds": 217.70933333333332,
+          "azimuth_deg_unwrapped": 75.0,
+          "elevation_deg": 22.0,
+          "gain_db": 0.0,
+          "reason": "Prepare next lateral phrase in gap"
+        },
+        {
+          "time_seconds": 218.70933333333332,
+          "azimuth_deg_unwrapped": 75.0,
+          "elevation_deg": 22.0,
+          "gain_db": 0.0,
+          "reason": "Distinct lateral entry"
+        },
+        {
+          "time_seconds": 221.56799999999998,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 28.0,
+          "gain_db": 0.0,
+          "reason": "Expressive upper-front crossing, not rear orbit"
+        },
+        {
+          "time_seconds": 224.42666666666668,
+          "azimuth_deg_unwrapped": -75.0,
+          "elevation_deg": 22.0,
+          "gain_db": 0.0,
+          "reason": "Complete lateral answer"
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": -75.0,
+          "elevation_deg": 22.0,
+          "gain_db": 0.0,
+          "reason": "Hold after last audition phrase"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.1
+        },
+        {
+          "time_seconds": 200.0,
+          "distance_m": 1.1
+        },
+        {
+          "time_seconds": 203.50933333333333,
+          "distance_m": 0.5
+        },
+        {
+          "time_seconds": 207.01866666666666,
+          "distance_m": 1.1
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "distance_m": 1.1
+        }
+      ]
+    },
+    {
+      "source_id": "drums",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\2 Drums.wav",
+      "trajectory": "stable_anchor_or_lane",
+      "gain_db": 0,
+      "musical_rationale": "Stable near-front lower rhythmic anchor; distinct from Lead and Bass.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 18.0,
+          "elevation_deg": -20.0,
+          "gain_db": 0.0,
+          "reason": "Stable near-front lower rhythmic anchor; distinct from Lead and Bass."
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": 18.0,
+          "elevation_deg": -20.0,
+          "gain_db": 0.0,
+          "reason": "Hold ending; preserve full scene timeline"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.2
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "distance_m": 1.2
+        }
+      ]
+    },
+    {
+      "source_id": "bass",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\3 Bass.wav",
+      "trajectory": "stable_anchor_or_lane",
+      "gain_db": 0,
+      "musical_rationale": "Stable central low-elevation anchor; shared central azimuth is intentional, with 42 degrees elevation separation from Lead.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": -42.0,
+          "gain_db": 0.0,
+          "reason": "Stable central low-elevation anchor; shared central azimuth is intentional, with 42 degrees elevation separation from Lead."
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": -42.0,
+          "gain_db": 0.0,
+          "reason": "Hold ending; preserve full scene timeline"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.3
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "distance_m": 1.3
+        }
+      ]
+    },
+    {
+      "source_id": "guitar",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\4 Guitar.wav",
+      "trajectory": "stable_anchor_or_lane",
+      "gain_db": -1,
+      "musical_rationale": "Left-front lane separate from right-front Keyboard.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": -55.0,
+          "elevation_deg": 8.0,
+          "gain_db": 0.0,
+          "reason": "Left-front lane separate from right-front Keyboard."
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": -55.0,
+          "elevation_deg": 8.0,
+          "gain_db": 0.0,
+          "reason": "Hold ending; preserve full scene timeline"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.25
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "distance_m": 1.25
+        }
+      ]
+    },
+    {
+      "source_id": "keyboards",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\5 Keyboard.wav",
+      "trajectory": "stable_anchor_or_lane",
+      "gain_db": -1,
+      "musical_rationale": "Right-front elevated harmonic lane, separate from Guitar and Percussion start/end lane.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 55.0,
+          "elevation_deg": 15.0,
+          "gain_db": 0.0,
+          "reason": "Right-front elevated harmonic lane, separate from Guitar and Percussion start/end lane."
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": 55.0,
+          "elevation_deg": 15.0,
+          "gain_db": 0.0,
+          "reason": "Hold ending; preserve full scene timeline"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.3
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "distance_m": 1.3
+        }
+      ]
+    },
+    {
+      "source_id": "percussion",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\6 Percussion.wav",
+      "trajectory": "sector_defined_360",
+      "gain_db": -1,
+      "musical_rationale": "One continuous 360-degree orbit with eight sector dwells; angular cues take priority over radial depth.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 45.0,
+          "elevation_deg": -15.0,
+          "gain_db": 0.0,
+          "reason": "Hold front-right outside selected phrase"
+        },
+        {
+          "time_seconds": 200.04266666666663,
+          "azimuth_deg_unwrapped": 45.0,
+          "elevation_deg": -15.0,
+          "gain_db": 0.0,
+          "reason": "Arrival at front-right"
+        },
+        {
+          "time_seconds": 200.49266666666662,
+          "azimuth_deg_unwrapped": 45.0,
+          "elevation_deg": -15.0,
+          "gain_db": 0.0,
+          "reason": "Brief sector dwell; continuous departure afterwards"
+        },
+        {
+          "time_seconds": 202.2613333333333,
+          "azimuth_deg_unwrapped": 90.0,
+          "elevation_deg": -15.0,
+          "gain_db": 0.0,
+          "reason": "Arrival at right"
+        },
+        {
+          "time_seconds": 202.7113333333333,
+          "azimuth_deg_unwrapped": 90.0,
+          "elevation_deg": -15.0,
+          "gain_db": 0.0,
+          "reason": "Brief sector dwell; continuous departure afterwards"
+        },
+        {
+          "time_seconds": 204.47999999999996,
+          "azimuth_deg_unwrapped": 135.0,
+          "elevation_deg": -15.0,
+          "gain_db": 0.0,
+          "reason": "Arrival at rear-right"
+        },
+        {
+          "time_seconds": 204.92999999999995,
+          "azimuth_deg_unwrapped": 135.0,
+          "elevation_deg": -15.0,
+          "gain_db": 0.0,
+          "reason": "Brief sector dwell; continuous departure afterwards"
+        },
+        {
+          "time_seconds": 206.69866666666664,
+          "azimuth_deg_unwrapped": 180.0,
+          "elevation_deg": -15.0,
+          "gain_db": 0.0,
+          "reason": "Arrival at rear"
+        },
+        {
+          "time_seconds": 207.14866666666663,
+          "azimuth_deg_unwrapped": 180.0,
+          "elevation_deg": -15.0,
+          "gain_db": 0.0,
+          "reason": "Brief sector dwell; continuous departure afterwards"
+        },
+        {
+          "time_seconds": 208.9173333333333,
+          "azimuth_deg_unwrapped": 225.0,
+          "elevation_deg": -15.0,
+          "gain_db": 0.0,
+          "reason": "Arrival at rear-left"
+        },
+        {
+          "time_seconds": 209.36733333333328,
+          "azimuth_deg_unwrapped": 225.0,
+          "elevation_deg": -15.0,
+          "gain_db": 0.0,
+          "reason": "Brief sector dwell; continuous departure afterwards"
+        },
+        {
+          "time_seconds": 211.13599999999997,
+          "azimuth_deg_unwrapped": 270.0,
+          "elevation_deg": -15.0,
+          "gain_db": 0.0,
+          "reason": "Arrival at left"
+        },
+        {
+          "time_seconds": 211.58599999999996,
+          "azimuth_deg_unwrapped": 270.0,
+          "elevation_deg": -15.0,
+          "gain_db": 0.0,
+          "reason": "Brief sector dwell; continuous departure afterwards"
+        },
+        {
+          "time_seconds": 213.35466666666665,
+          "azimuth_deg_unwrapped": 315.0,
+          "elevation_deg": -15.0,
+          "gain_db": 0.0,
+          "reason": "Arrival at front-left"
+        },
+        {
+          "time_seconds": 213.80466666666663,
+          "azimuth_deg_unwrapped": 315.0,
+          "elevation_deg": -15.0,
+          "gain_db": 0.0,
+          "reason": "Brief sector dwell; continuous departure afterwards"
+        },
+        {
+          "time_seconds": 215.5733333333333,
+          "azimuth_deg_unwrapped": 360.0,
+          "elevation_deg": -15.0,
+          "gain_db": 0.0,
+          "reason": "Arrival at front"
+        },
+        {
+          "time_seconds": 216.02333333333328,
+          "azimuth_deg_unwrapped": 360.0,
+          "elevation_deg": -15.0,
+          "gain_db": 0.0,
+          "reason": "Brief sector dwell; continuous departure afterwards"
+        },
+        {
+          "time_seconds": 217.79199999999997,
+          "azimuth_deg_unwrapped": 405.0,
+          "elevation_deg": -15.0,
+          "gain_db": 0.0,
+          "reason": "Arrival at front-right"
+        },
+        {
+          "time_seconds": 218.24199999999996,
+          "azimuth_deg_unwrapped": 405.0,
+          "elevation_deg": -15.0,
+          "gain_db": 0.0,
+          "reason": "Brief sector dwell; continuous departure afterwards"
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": 405.0,
+          "elevation_deg": -15.0,
+          "gain_db": 0.0,
+          "reason": "Return to front-right after complete orbit; hold"
+        }
+      ],
+      "preprocess": {
+        "method": "linked pre-dearVR M/S",
+        "side_factor": 0.5,
+        "adoption": "T003_AUDITION_ONLY"
+      },
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 0.9
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "distance_m": 0.9
+        }
+      ]
+    },
+    {
+      "source_id": "synth",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\7 Synth.wav",
+      "trajectory": "stable_anchor_or_lane",
+      "gain_db": -2,
+      "musical_rationale": "Stable high rear-right layer; elevation provides separation.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 145.0,
+          "elevation_deg": 48.0,
+          "gain_db": 0.0,
+          "reason": "Stable high rear-right layer; elevation provides separation."
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": 145.0,
+          "elevation_deg": 48.0,
+          "gain_db": 0.0,
+          "reason": "Hold ending; preserve full scene timeline"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.5
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "distance_m": 1.5
+        }
+      ]
+    },
+    {
+      "source_id": "other",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\8 Other.wav",
+      "trajectory": "stable_anchor_or_lane",
+      "gain_db": -4,
+      "musical_rationale": "Unidentified content remains static and attenuated; rear-left lane avoids occupying the frontal vocal zone.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": -155.0,
+          "elevation_deg": -5.0,
+          "gain_db": 0.0,
+          "reason": "Unidentified content remains static and attenuated; rear-left lane avoids occupying the frontal vocal zone."
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": -155.0,
+          "elevation_deg": -5.0,
+          "gain_db": 0.0,
+          "reason": "Hold ending; preserve full scene timeline"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.6
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "distance_m": 1.6
+        }
+      ]
+    },
+    {
+      "source_id": "brass",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\music_02\\stems_original\\9 Brass.wav",
+      "trajectory": "episodic_positions",
+      "gain_db": 0,
+      "musical_rationale": "Intermittent lower rear-side entries, position held during each accent.",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 120.0,
+          "elevation_deg": -35.0,
+          "gain_db": 0.0,
+          "reason": "Intermittent lower rear-side entries, position held during each accent."
+        },
+        {
+          "time_seconds": 118.12533333333333,
+          "azimuth_deg_unwrapped": 120.0,
+          "elevation_deg": -35.0,
+          "gain_db": 0.0,
+          "reason": "Reposition during gap"
+        },
+        {
+          "time_seconds": 119.12533333333333,
+          "azimuth_deg_unwrapped": 120.0,
+          "elevation_deg": -35.0,
+          "gain_db": 0.0,
+          "reason": "Located episodic entry"
+        },
+        {
+          "time_seconds": 119.89333333333333,
+          "azimuth_deg_unwrapped": 120.0,
+          "elevation_deg": -35.0,
+          "gain_db": 0.0,
+          "reason": "Hold during accent"
+        },
+        {
+          "time_seconds": 121.53866666666667,
+          "azimuth_deg_unwrapped": 120.0,
+          "elevation_deg": -35.0,
+          "gain_db": 0.0,
+          "reason": "Reposition during gap"
+        },
+        {
+          "time_seconds": 122.53866666666667,
+          "azimuth_deg_unwrapped": -120.0,
+          "elevation_deg": -35.0,
+          "gain_db": 0.0,
+          "reason": "Located episodic entry"
+        },
+        {
+          "time_seconds": 123.136,
+          "azimuth_deg_unwrapped": -120.0,
+          "elevation_deg": -35.0,
+          "gain_db": 0.0,
+          "reason": "Reposition during gap"
+        },
+        {
+          "time_seconds": 123.648,
+          "azimuth_deg_unwrapped": 120.0,
+          "elevation_deg": -35.0,
+          "gain_db": 0.0,
+          "reason": "Located episodic entry"
+        },
+        {
+          "time_seconds": 124.33066666666667,
+          "azimuth_deg_unwrapped": 120.0,
+          "elevation_deg": -35.0,
+          "gain_db": 0.0,
+          "reason": "Reposition during gap"
+        },
+        {
+          "time_seconds": 125.01333333333334,
+          "azimuth_deg_unwrapped": -120.0,
+          "elevation_deg": -35.0,
+          "gain_db": 0.0,
+          "reason": "Located episodic entry"
+        },
+        {
+          "time_seconds": 133.71733333333333,
+          "azimuth_deg_unwrapped": -120.0,
+          "elevation_deg": -35.0,
+          "gain_db": 0.0,
+          "reason": "Hold during accent"
+        },
+        {
+          "time_seconds": 177.432,
+          "azimuth_deg_unwrapped": -120.0,
+          "elevation_deg": -35.0,
+          "gain_db": 0.0,
+          "reason": "Reposition during gap"
+        },
+        {
+          "time_seconds": 178.432,
+          "azimuth_deg_unwrapped": 120.0,
+          "elevation_deg": -35.0,
+          "gain_db": 0.0,
+          "reason": "Located episodic entry"
+        },
+        {
+          "time_seconds": 178.688,
+          "azimuth_deg_unwrapped": 120.0,
+          "elevation_deg": -35.0,
+          "gain_db": 0.0,
+          "reason": "Hold during accent"
+        },
+        {
+          "time_seconds": 197.31466666666665,
+          "azimuth_deg_unwrapped": 120.0,
+          "elevation_deg": -35.0,
+          "gain_db": 0.0,
+          "reason": "Reposition during gap"
+        },
+        {
+          "time_seconds": 198.31466666666665,
+          "azimuth_deg_unwrapped": -120.0,
+          "elevation_deg": -35.0,
+          "gain_db": 0.0,
+          "reason": "Located episodic entry"
+        },
+        {
+          "time_seconds": 199.50933333333333,
+          "azimuth_deg_unwrapped": -120.0,
+          "elevation_deg": -35.0,
+          "gain_db": 0.0,
+          "reason": "Hold during accent"
+        },
+        {
+          "time_seconds": 199.53333333333333,
+          "azimuth_deg_unwrapped": -120.0,
+          "elevation_deg": -35.0,
+          "gain_db": 0.0,
+          "reason": "Reposition during gap"
+        },
+        {
+          "time_seconds": 200.53333333333333,
+          "azimuth_deg_unwrapped": 120.0,
+          "elevation_deg": -35.0,
+          "gain_db": 0.0,
+          "reason": "Located episodic entry"
+        },
+        {
+          "time_seconds": 205.39733333333334,
+          "azimuth_deg_unwrapped": 120.0,
+          "elevation_deg": -35.0,
+          "gain_db": 0.0,
+          "reason": "Hold during accent"
+        },
+        {
+          "time_seconds": 212.93066666666667,
+          "azimuth_deg_unwrapped": 120.0,
+          "elevation_deg": -35.0,
+          "gain_db": 0.0,
+          "reason": "Reposition during gap"
+        },
+        {
+          "time_seconds": 213.93066666666667,
+          "azimuth_deg_unwrapped": -120.0,
+          "elevation_deg": -35.0,
+          "gain_db": 0.0,
+          "reason": "Located episodic entry"
+        },
+        {
+          "time_seconds": 221.52533333333332,
+          "azimuth_deg_unwrapped": -120.0,
+          "elevation_deg": -35.0,
+          "gain_db": 0.0,
+          "reason": "Hold during accent"
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "azimuth_deg_unwrapped": -120.0,
+          "elevation_deg": -35.0,
+          "gain_db": 0.0,
+          "reason": "Hold after final accent"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 0.85
+        },
+        {
+          "time_seconds": 247.60002083333333,
+          "distance_m": 0.85
+        }
+      ]
+    }
+  ],
+  "coordinate_system": {
+    "type": "polar",
+    "azimuth": "unwrapped degrees; 0=front",
+    "elevation": "degrees"
+  },
+  "renderer_policy": {
+    "distance_range_m": [
+      0.7,
+      1.8
+    ],
+    "punctual_near_events_m": [
+      0.5,
+      0.6
+    ],
+    "dynamic_distance": true,
+    "reflection": false,
+    "reverb": false,
+    "T018_logic": false,
+    "priority": [
+      "azimuth",
+      "front/back",
+      "elevation",
+      "trajectory",
+      "proximity",
+      "depth"
+    ]
+  },
+  "gain_staging": {
+    "policy": "common attenuation before dearVR; no limiter; exact sum measured separately",
+    "sum_of_individual_peak_upper_bound": 5.8438720703125,
+    "common_input_gain": 0.04298325495984476,
+    "common_input_gain_db": -27.334014002310624,
+    "worst_case_dry_sum_peak_dbfs": -12.0,
+    "target_output_peak_dbfs": -6.0,
+    "measured_unity_sum_peak_dbfs": 5.1976751564164765,
+    "measured_unity_sum_rms_dbfs": -12.34428950356235,
+    "pre_staged_sum_peak_dbfs": -22.136338845894148
+  },
+  "other_identification_status": "PENDING_HUMAN_IDENTIFICATION",
+  "human_review": "PENDING",
+  "preview_selection": {
+    "selected": {
+      "start_seconds": 200,
+      "duration_seconds": 30,
+      "score": 1120.5933333333332,
+      "participating_roles": 11,
+      "brass_active_fraction": 0.4,
+      "role_active_fractions": {
+        "lead_vocal": 0.38,
+        "backing_vocals": 0.4166666666666667,
+        "woodwinds": 0.41,
+        "drums": 0.9333333333333333,
+        "bass": 0.8666666666666667,
+        "guitar": 0.6866666666666666,
+        "keyboards": 0.6366666666666667,
+        "percussion": 0.9033333333333333,
+        "synth": 1.0,
+        "other": 0.96,
+        "brass": 0.4
+      }
+    },
+    "external_candidate_200_230": {
+      "start_seconds": 200,
+      "duration_seconds": 30,
+      "score": 1120.5933333333332,
+      "participating_roles": 11,
+      "brass_active_fraction": 0.4,
+      "role_active_fractions": {
+        "lead_vocal": 0.38,
+        "backing_vocals": 0.4166666666666667,
+        "woodwinds": 0.41,
+        "drums": 0.9333333333333333,
+        "bass": 0.8666666666666667,
+        "guitar": 0.6866666666666666,
+        "keyboards": 0.6366666666666667,
+        "percussion": 0.9033333333333333,
+        "synth": 1.0,
+        "other": 0.96,
+        "brass": 0.4
+      }
+    },
+    "best_computed_candidate": {
+      "start_seconds": 213,
+      "duration_seconds": 30,
+      "score": 1126.01,
+      "participating_roles": 11,
+      "brass_active_fraction": 0.25333333333333335,
+      "role_active_fractions": {
+        "lead_vocal": 0.4033333333333333,
+        "backing_vocals": 0.22,
+        "woodwinds": 0.44666666666666666,
+        "drums": 0.8166666666666667,
+        "bass": 0.7666666666666667,
+        "guitar": 0.31,
+        "keyboards": 0.23666666666666666,
+        "percussion": 0.7166666666666667,
+        "synth": 0.8966666666666666,
+        "other": 0.8766666666666667,
+        "brass": 0.25333333333333335
+      }
+    },
+    "reason": "Complete role coverage and Brass events; prefer 200-230 only if within 1% of best computed score"
+  },
+  "status": "EXPERIMENTAL_AUDITION_ONLY",
+  "objective": "Distinct sources and directions; instrument naming is not a success criterion",
+  "sector_events": [
+    {
+      "sector": "front-right",
+      "azimuth_unwrapped_deg": 45,
+      "start_seconds": 200.04266666666663,
+      "dwell_seconds": 0.45
+    },
+    {
+      "sector": "right",
+      "azimuth_unwrapped_deg": 90,
+      "start_seconds": 202.2613333333333,
+      "dwell_seconds": 0.45
+    },
+    {
+      "sector": "rear-right",
+      "azimuth_unwrapped_deg": 135,
+      "start_seconds": 204.47999999999996,
+      "dwell_seconds": 0.45
+    },
+    {
+      "sector": "rear",
+      "azimuth_unwrapped_deg": 180,
+      "start_seconds": 206.69866666666664,
+      "dwell_seconds": 0.45
+    },
+    {
+      "sector": "rear-left",
+      "azimuth_unwrapped_deg": 225,
+      "start_seconds": 208.9173333333333,
+      "dwell_seconds": 0.45
+    },
+    {
+      "sector": "left",
+      "azimuth_unwrapped_deg": 270,
+      "start_seconds": 211.13599999999997,
+      "dwell_seconds": 0.45
+    },
+    {
+      "sector": "front-left",
+      "azimuth_unwrapped_deg": 315,
+      "start_seconds": 213.35466666666665,
+      "dwell_seconds": 0.45
+    },
+    {
+      "sector": "front",
+      "azimuth_unwrapped_deg": 360,
+      "start_seconds": 215.5733333333333,
+      "dwell_seconds": 0.45
+    }
+  ],
+  "orbit_start_seconds": 200.04266666666663,
+  "orbit_end_seconds": 217.79199999999997,
+  "linked_distance_gain_calibration": {
+    "source": "Measured M02-T002 DirectSignal static curves, mean of two agreeing roles",
+    "distance_m": [
+      0.35,
+      0.5,
+      0.75,
+      1,
+      1.5,
+      2,
+      3
+    ],
+    "gain_db": [
+      -6.831262501060072,
+      -6.161828912988021,
+      -5.187606465155594,
+      -4.3470286460068985,
+      -2.9465674570621156,
+      -1.8038249787571479,
+      0.0
+    ],
+    "limitation": "Approximate transfer across roles; actual per-stem integrated level controlled separately."
+  }
+}

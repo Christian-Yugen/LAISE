@@ -1,0 +1,515 @@
+{
+  "schema": "LAISE Spatial Scene v1.0",
+  "project": "tukana",
+  "profile_id": "TUKANA_SPATIAL",
+  "profile_version": "0.1.0",
+  "variant": "balanced",
+  "duration_seconds": 267.60002083333336,
+  "coordinate_system": {
+    "type": "polar",
+    "azimuth": "unwrapped degrees; 0=front",
+    "elevation": "degrees; positive=up",
+    "distance": "meters artistic intent"
+  },
+  "renderer_policy": {
+    "scene_is_renderer_independent": true,
+    "requested_distance_is_not_claimed_as_applied": true,
+    "dearvr_current_distance_m": 3.0,
+    "dearvr_current_distance_raw": 0.0969899744,
+    "frontal_externalization": "PENDING_HUMAN_VALIDATION"
+  },
+  "musical_map_summary": {
+    "bpm": {
+      "bpm": 108.17307692307692,
+      "confidence": 1.0,
+      "method": "rhythmic-stem onset autocorrelation",
+      "reference_stems": [
+        "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\03_drums.wav",
+        "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\07_percussion.wav"
+      ],
+      "hop_frames": 1024,
+      "beat_period_seconds": 0.5546666666666666,
+      "first_beat_seconds": 0.21333333333333335
+    },
+    "section_count": 10,
+    "transition_count": 9
+  },
+  "sources": [
+    {
+      "source_id": "lead_vocal",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\01_lead_vocal.wav",
+      "trajectory": "stable_anchor",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 0.0,
+          "distance_m_artistic_intent": 1.5,
+          "gain_db": 0.0,
+          "width": 1.0,
+          "reason": "lead_vocal profile anchor"
+        },
+        {
+          "time_seconds": 267.600021,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 0.0,
+          "distance_m_artistic_intent": 1.5,
+          "gain_db": 0.0,
+          "width": 1.0,
+          "reason": "preserve lead_vocal anchor"
+        }
+      ],
+      "analysis_events_used": true
+    },
+    {
+      "source_id": "backing_vocals",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\02_backing_vocals.wav",
+      "trajectory": "section_aware_chorus_expansion",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 15.0,
+          "distance_m_artistic_intent": 4.0,
+          "gain_db": -1.0,
+          "width": 1.0,
+          "reason": "centered backing-vocal anchor"
+        },
+        {
+          "time_seconds": 267.600021,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 15.0,
+          "distance_m_artistic_intent": 4.0,
+          "gain_db": -1.0,
+          "width": 1.0,
+          "reason": "return to vocal center"
+        }
+      ],
+      "analysis_events_used": true
+    },
+    {
+      "source_id": "drums",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\03_drums.wav",
+      "trajectory": "stable_anchor",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": -5.0,
+          "distance_m_artistic_intent": 2.3,
+          "gain_db": 0.0,
+          "width": 1.0,
+          "reason": "drums profile anchor"
+        },
+        {
+          "time_seconds": 267.600021,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": -5.0,
+          "distance_m_artistic_intent": 2.3,
+          "gain_db": 0.0,
+          "width": 1.0,
+          "reason": "preserve drums anchor"
+        }
+      ],
+      "analysis_events_used": true
+    },
+    {
+      "source_id": "bass",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\04_bass.wav",
+      "trajectory": "stable_anchor",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 0.0,
+          "distance_m_artistic_intent": 1.8,
+          "gain_db": 0.0,
+          "width": 1.0,
+          "reason": "bass profile anchor"
+        },
+        {
+          "time_seconds": 267.600021,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 0.0,
+          "distance_m_artistic_intent": 1.8,
+          "gain_db": 0.0,
+          "width": 1.0,
+          "reason": "preserve bass anchor"
+        }
+      ],
+      "analysis_events_used": true
+    },
+    {
+      "source_id": "guitar",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\05_guitar.wav",
+      "trajectory": "discrete_transition_motion",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": -50.0,
+          "elevation_deg": 0.0,
+          "distance_m_artistic_intent": 3.0,
+          "gain_db": 0.0,
+          "width": 1.0,
+          "reason": "guitar profile anchor"
+        },
+        {
+          "time_seconds": 267.600021,
+          "azimuth_deg_unwrapped": -50.0,
+          "elevation_deg": 0.0,
+          "distance_m_artistic_intent": 3.0,
+          "gain_db": 0.0,
+          "width": 1.0,
+          "reason": "preserve guitar anchor"
+        }
+      ],
+      "analysis_events_used": true
+    },
+    {
+      "source_id": "keyboards",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\06_keyboard.wav",
+      "trajectory": "atmospheric_depth",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 55.0,
+          "elevation_deg": 20.0,
+          "distance_m_artistic_intent": 4.0,
+          "gain_db": 0.0,
+          "width": 1.0,
+          "reason": "keyboards profile anchor"
+        },
+        {
+          "time_seconds": 267.600021,
+          "azimuth_deg_unwrapped": 55.0,
+          "elevation_deg": 20.0,
+          "distance_m_artistic_intent": 4.0,
+          "gain_db": 0.0,
+          "width": 1.0,
+          "reason": "preserve keyboards anchor"
+        }
+      ],
+      "analysis_events_used": true
+    },
+    {
+      "source_id": "percussion",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\07_percussion.wav",
+      "trajectory": "phrase_synced_orbit_candidate",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 100.0,
+          "elevation_deg": 0.0,
+          "distance_m_artistic_intent": 3.8,
+          "gain_db": 0.0,
+          "width": 1.0,
+          "reason": "profile anchor; awaiting a safe instrumental window"
+        },
+        {
+          "time_seconds": 127.0,
+          "azimuth_deg_unwrapped": 100.0,
+          "elevation_deg": 0.0,
+          "distance_m_artistic_intent": 3.8,
+          "gain_db": -1.5,
+          "width": 1.0,
+          "reason": "full orbit 1: percussion active while lead vocal is absent"
+        },
+        {
+          "time_seconds": 140.275,
+          "azimuth_deg_unwrapped": 190.0,
+          "elevation_deg": 3.0,
+          "distance_m_artistic_intent": 3.8,
+          "gain_db": -1.5,
+          "width": 1.0,
+          "reason": "full orbit 1: percussion active while lead vocal is absent"
+        },
+        {
+          "time_seconds": 153.55,
+          "azimuth_deg_unwrapped": 280.0,
+          "elevation_deg": 6.0,
+          "distance_m_artistic_intent": 3.8,
+          "gain_db": -1.5,
+          "width": 1.0,
+          "reason": "full orbit 1: percussion active while lead vocal is absent"
+        },
+        {
+          "time_seconds": 166.825,
+          "azimuth_deg_unwrapped": 370.0,
+          "elevation_deg": 3.0,
+          "distance_m_artistic_intent": 3.8,
+          "gain_db": -1.5,
+          "width": 1.0,
+          "reason": "full orbit 1: percussion active while lead vocal is absent"
+        },
+        {
+          "time_seconds": 180.1,
+          "azimuth_deg_unwrapped": 460.0,
+          "elevation_deg": 0.0,
+          "distance_m_artistic_intent": 3.8,
+          "gain_db": -1.5,
+          "width": 1.0,
+          "reason": "full orbit 1: percussion active while lead vocal is absent"
+        },
+        {
+          "time_seconds": 267.600021,
+          "azimuth_deg_unwrapped": 100.0,
+          "elevation_deg": 0.0,
+          "distance_m_artistic_intent": 3.8,
+          "gain_db": 0.0,
+          "width": 1.0,
+          "reason": "return to profile anchor"
+        }
+      ],
+      "analysis_events_used": true
+    },
+    {
+      "source_id": "synth",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\08_synth.wav",
+      "trajectory": "slow_atmospheric_elevation",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 145.0,
+          "elevation_deg": 30.0,
+          "distance_m_artistic_intent": 6.0,
+          "gain_db": -2.0,
+          "width": 1.0,
+          "reason": "distant atmospheric anchor"
+        },
+        {
+          "time_seconds": 133.80001,
+          "azimuth_deg_unwrapped": 170.0,
+          "elevation_deg": 45.0,
+          "distance_m_artistic_intent": 6.0,
+          "gain_db": -2.0,
+          "width": 1.0,
+          "reason": "slow elevation across composition"
+        },
+        {
+          "time_seconds": 267.600021,
+          "azimuth_deg_unwrapped": 145.0,
+          "elevation_deg": 30.0,
+          "distance_m_artistic_intent": 6.0,
+          "gain_db": -2.0,
+          "width": 1.0,
+          "reason": "return to atmospheric anchor"
+        }
+      ],
+      "analysis_events_used": true
+    },
+    {
+      "source_id": "other",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\09_other.wav",
+      "trajectory": "content_review_required",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": -145.0,
+          "elevation_deg": -5.0,
+          "distance_m_artistic_intent": 7.0,
+          "gain_db": 0.0,
+          "width": 1.0,
+          "reason": "other profile anchor"
+        },
+        {
+          "time_seconds": 267.600021,
+          "azimuth_deg_unwrapped": -145.0,
+          "elevation_deg": -5.0,
+          "distance_m_artistic_intent": 7.0,
+          "gain_db": 0.0,
+          "width": 1.0,
+          "reason": "preserve other anchor"
+        }
+      ],
+      "analysis_events_used": true
+    },
+    {
+      "source_id": "woodwinds",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana\\stems_original\\10_woodwinds.wav",
+      "trajectory": "transition_synced_traverse",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": -60.0,
+          "elevation_deg": 18.0,
+          "distance_m_artistic_intent": 4.5,
+          "gain_db": 0.0,
+          "width": 1.0,
+          "reason": "profile anchor"
+        },
+        {
+          "time_seconds": 16.5,
+          "azimuth_deg_unwrapped": -60.0,
+          "elevation_deg": 18.0,
+          "distance_m_artistic_intent": 4.5,
+          "gain_db": 0.0,
+          "width": 1.0,
+          "reason": "prepare woodwind motion at detected transition"
+        },
+        {
+          "time_seconds": 19.5,
+          "azimuth_deg_unwrapped": 10.0,
+          "elevation_deg": 30.0,
+          "distance_m_artistic_intent": 4.5,
+          "gain_db": -1.0,
+          "width": 1.0,
+          "reason": "woodwind traverse follows ensemble transition"
+        },
+        {
+          "time_seconds": 23.0,
+          "azimuth_deg_unwrapped": -60.0,
+          "elevation_deg": 18.0,
+          "distance_m_artistic_intent": 4.5,
+          "gain_db": 0.0,
+          "width": 1.0,
+          "reason": "prepare woodwind motion at detected transition"
+        },
+        {
+          "time_seconds": 26.0,
+          "azimuth_deg_unwrapped": -130.0,
+          "elevation_deg": 30.0,
+          "distance_m_artistic_intent": 4.5,
+          "gain_db": -1.0,
+          "width": 1.0,
+          "reason": "woodwind traverse follows ensemble transition"
+        },
+        {
+          "time_seconds": 72.1,
+          "azimuth_deg_unwrapped": -60.0,
+          "elevation_deg": 18.0,
+          "distance_m_artistic_intent": 4.5,
+          "gain_db": 0.0,
+          "width": 1.0,
+          "reason": "prepare woodwind motion at detected transition"
+        },
+        {
+          "time_seconds": 75.1,
+          "azimuth_deg_unwrapped": 10.0,
+          "elevation_deg": 30.0,
+          "distance_m_artistic_intent": 4.5,
+          "gain_db": -1.0,
+          "width": 1.0,
+          "reason": "woodwind traverse follows ensemble transition"
+        },
+        {
+          "time_seconds": 77.1,
+          "azimuth_deg_unwrapped": -60.0,
+          "elevation_deg": 18.0,
+          "distance_m_artistic_intent": 4.5,
+          "gain_db": 0.0,
+          "width": 1.0,
+          "reason": "prepare woodwind motion at detected transition"
+        },
+        {
+          "time_seconds": 80.1,
+          "azimuth_deg_unwrapped": -130.0,
+          "elevation_deg": 30.0,
+          "distance_m_artistic_intent": 4.5,
+          "gain_db": -1.0,
+          "width": 1.0,
+          "reason": "woodwind traverse follows ensemble transition"
+        },
+        {
+          "time_seconds": 81.6,
+          "azimuth_deg_unwrapped": -60.0,
+          "elevation_deg": 18.0,
+          "distance_m_artistic_intent": 4.5,
+          "gain_db": 0.0,
+          "width": 1.0,
+          "reason": "prepare woodwind motion at detected transition"
+        },
+        {
+          "time_seconds": 84.6,
+          "azimuth_deg_unwrapped": 10.0,
+          "elevation_deg": 30.0,
+          "distance_m_artistic_intent": 4.5,
+          "gain_db": -1.0,
+          "width": 1.0,
+          "reason": "woodwind traverse follows ensemble transition"
+        },
+        {
+          "time_seconds": 125.5,
+          "azimuth_deg_unwrapped": -60.0,
+          "elevation_deg": 18.0,
+          "distance_m_artistic_intent": 4.5,
+          "gain_db": 0.0,
+          "width": 1.0,
+          "reason": "prepare woodwind motion at detected transition"
+        },
+        {
+          "time_seconds": 128.5,
+          "azimuth_deg_unwrapped": -130.0,
+          "elevation_deg": 30.0,
+          "distance_m_artistic_intent": 4.5,
+          "gain_db": -1.0,
+          "width": 1.0,
+          "reason": "woodwind traverse follows ensemble transition"
+        },
+        {
+          "time_seconds": 178.6,
+          "azimuth_deg_unwrapped": -60.0,
+          "elevation_deg": 18.0,
+          "distance_m_artistic_intent": 4.5,
+          "gain_db": 0.0,
+          "width": 1.0,
+          "reason": "prepare woodwind motion at detected transition"
+        },
+        {
+          "time_seconds": 181.6,
+          "azimuth_deg_unwrapped": 10.0,
+          "elevation_deg": 30.0,
+          "distance_m_artistic_intent": 4.5,
+          "gain_db": -1.0,
+          "width": 1.0,
+          "reason": "woodwind traverse follows ensemble transition"
+        },
+        {
+          "time_seconds": 238.7,
+          "azimuth_deg_unwrapped": -60.0,
+          "elevation_deg": 18.0,
+          "distance_m_artistic_intent": 4.5,
+          "gain_db": 0.0,
+          "width": 1.0,
+          "reason": "prepare woodwind motion at detected transition"
+        },
+        {
+          "time_seconds": 241.7,
+          "azimuth_deg_unwrapped": -130.0,
+          "elevation_deg": 30.0,
+          "distance_m_artistic_intent": 4.5,
+          "gain_db": -1.0,
+          "width": 1.0,
+          "reason": "woodwind traverse follows ensemble transition"
+        },
+        {
+          "time_seconds": 260.4,
+          "azimuth_deg_unwrapped": -60.0,
+          "elevation_deg": 18.0,
+          "distance_m_artistic_intent": 4.5,
+          "gain_db": 0.0,
+          "width": 1.0,
+          "reason": "prepare woodwind motion at detected transition"
+        },
+        {
+          "time_seconds": 263.4,
+          "azimuth_deg_unwrapped": 10.0,
+          "elevation_deg": 30.0,
+          "distance_m_artistic_intent": 4.5,
+          "gain_db": -1.0,
+          "width": 1.0,
+          "reason": "woodwind traverse follows ensemble transition"
+        },
+        {
+          "time_seconds": 267.600021,
+          "azimuth_deg_unwrapped": -60.0,
+          "elevation_deg": 18.0,
+          "distance_m_artistic_intent": 4.5,
+          "gain_db": 0.0,
+          "width": 1.0,
+          "reason": "return to anchor"
+        }
+      ],
+      "analysis_events_used": true
+    }
+  ]
+}

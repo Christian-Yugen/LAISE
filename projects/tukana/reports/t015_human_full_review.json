@@ -1,0 +1,17 @@
+{
+  "test_id": "T015-HUMAN",
+  "scope": "full 267.6000208-second binaural master candidate",
+  "status": "PASS",
+  "responses": {
+    "immersive_3d_experience_throughout": true,
+    "natural_perceptible_360_movements": true,
+    "voices_and_instruments_balanced": true,
+    "clicks_distortion_or_uncomfortable_movements": false,
+    "preferred_version": "binaural"
+  },
+  "interpretation": "The T015 candidate is approved as a spatial mix. Final mastering remains subject to a separate A/B listening review.",
+  "still_pending": [
+    "dynamic physical distance automation validation",
+    "global front/back perceptual validation"
+  ]
+}

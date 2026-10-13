@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "dynamic_max_error": 0.0,
+  "grouped_static_max_error": 0.0,
+  "control_grid_frames": 256,
+  "approved_renderer_modified": false
+}

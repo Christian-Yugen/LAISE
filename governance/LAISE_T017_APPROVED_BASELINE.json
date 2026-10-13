@@ -1,0 +1,28 @@
+{
+  "baseline": "LAISE_T017_APPROVED_BASELINE",
+  "approved_reference": "projects/tukana/renders/mastering/t017/TUKANA_B2_transient_refinement_24bit.wav",
+  "sha256": "9daf544d7e073d8791f6260eed2630863a9280a2cca7d22053132a881e2c0df9",
+  "sample_rate": 48000,
+  "bits": 24,
+  "channels": 2,
+  "frames": 12844801,
+  "distance_m": 3.0,
+  "distance_raw": 0.0969899744,
+  "dynamic_distance": false,
+  "rejected_experiments": {
+    "status": "EXPERIMENTAL_REJECTED",
+    "code": "evidence/EXPERIMENTAL_REJECTED/t018",
+    "renders": ["projects/tukana/renders/t018", "projects/tukana/renders/t018_1"],
+    "reports": [
+      "projects/tukana/reports/t018_dearvr_parameter_audit.json",
+      "projects/tukana/reports/t018_test1_dynamic_distance.json",
+      "projects/tukana/reports/t018_test1_human_review.json",
+      "projects/tukana/reports/t0181_proximal_acoustic_depth.json"
+    ],
+    "active_candidates": false,
+    "automatic_loading": false
+  },
+  "validation_command": ".venv/Scripts/python.exe backend/tests/validate_t017_baseline.py",
+  "validation_evidence": "governance/t017_baseline_validation.json",
+  "new_music_processing_started": false
+}
