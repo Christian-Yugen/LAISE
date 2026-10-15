@@ -1,4 +1,6 @@
 ﻿import "./style.css";
+import { RippleField } from "./ripple-field.js";
+import { AudioCueTimeline } from "./audio-cue-timeline.js";
 
 import * as THREE from "three";
 
@@ -80,9 +82,27 @@ scene.fog =
   );
 
 
+// One horizontal local XZ plane; only this group owns the terrain pose.
+const TERRAIN = Object.freeze({ width: 16, depth: 12, maxHeight: 2.8 });
+// AJUSTE AQUI: valores em graus, aplicados uma ?nica vez ? malha e ao glow.
+const MESH_ANGLES = Object.freeze({
+  horizontal: 47, // Eixo Y: giro sobre a mesa. Antes: 8?; agora: +20?.
+  vertical: -6,    // Eixo X: inclina a frente e o fundo.
+  diagonal: -3   // Eixo Z: inclina a esquerda e a direita.
+});
+const BASE_POSE = Object.freeze({
+  y: -0.75,
+  yaw: THREE.MathUtils.degToRad(MESH_ANGLES.horizontal),
+  pitch: THREE.MathUtils.degToRad(MESH_ANGLES.vertical),
+  roll: THREE.MathUtils.degToRad(MESH_ANGLES.diagonal)
+});
+// Posicao na tela, em pixels: horizontal + direita; vertical + baixo.
+const SCREEN_POSITION = Object.freeze({ horizontal: 70, vertical: 0 });
+const CAMERA = Object.freeze({ fov: 36, elevation: Math.PI / 9, magnification: 1.4 });
+
 const camera =
   new THREE.PerspectiveCamera(
-    42,
+    CAMERA.fov,
     window.innerWidth /
     window.innerHeight,
     0.1,
@@ -90,17 +110,75 @@ const camera =
   );
 
 
-camera.position.set(
-  0,
-  6.4,
-  12.3
-);
+// Center the projected base rectangle, rather than aiming at a world-space point.
+// Perspective makes those two centers different. Lens shift fixes the composition
+// without tilting the horizontal plane or moving the camera during playback.
+function frameTerrain() {
+  camera.zoom = 1;
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+  const target = new THREE.Vector3(0, BASE_POSE.y, 0);
+  const direction = new THREE.Vector3(0, Math.sin(CAMERA.elevation), Math.cos(CAMERA.elevation));
+  const poseRotation = new THREE.Euler(BASE_POSE.pitch, BASE_POSE.yaw, BASE_POSE.roll);
+  const corners = [];
+  for (const x of [-TERRAIN.width / 2, TERRAIN.width / 2]) {
+    for (const z of [-TERRAIN.depth / 2, TERRAIN.depth / 2]) {
+      corners.push(new THREE.Vector3(x, 0, z).applyEuler(poseRotation).add(target));
+    }
+  }
+  // Conservative envelope: every point in this box can reach maxHeight.
+  const envelope = corners.flatMap(point => [point, point.clone().add(new THREE.Vector3(0, TERRAIN.maxHeight + 0.025, 0).applyEuler(poseRotation))]);
+  function place(distance) {
+    camera.clearViewOffset();
+    camera.position.copy(target).addScaledVector(direction, distance);
+    camera.lookAt(target);
+    camera.updateMatrixWorld(true);
+    const projected = corners.map(point => point.clone().project(camera));
+    const centerX = (Math.min(...projected.map(p => p.x)) + Math.max(...projected.map(p => p.x))) / 2;
+    const centerY = (Math.min(...projected.map(p => p.y)) + Math.max(...projected.map(p => p.y))) / 2;
+    camera.setViewOffset(
+      width,
+      height,
+      centerX * width / 2,
+      -centerY * height / 2,
+      width,
+      height
+    );
+    return envelope.every(point => {
+      const p = point.clone().project(camera);
+      return Math.abs(p.x) <= 0.78 && Math.abs(p.y) <= 0.58 && p.z > -1 && p.z < 1;
+    });
+  }
+  // Binary search gives a reproducible fit for the fixed pose at every aspect ratio.
+  let near = 10;
+  let far = 200;
+  camera.far = 500;
+  for (let i = 0; i < 36; i++) {
+    const distance = (near + far) / 2;
+    if (place(distance)) far = distance;
+    else near = distance;
+  }
+  place(far);
+  // Enlarge the approved composition by 40%, keeping the same perspective.
+  // On narrow screens, retain margin around the complete deformation envelope.
+  const projectedEnvelope = envelope.map(point => point.clone().project(camera));
+  const extentX = Math.max(...projectedEnvelope.map(p => Math.abs(p.x)));
+  const extentY = Math.max(...projectedEnvelope.map(p => Math.abs(p.y)));
+  camera.zoom = Math.min(CAMERA.magnification, 0.90 / extentX, 0.84 / extentY);
+  place(far);
+  // Apply the screen translation after fitting, so size and angles stay unchanged.
+  const finalEnvelope = envelope.map(point => point.clone().project(camera));
+  const minX = Math.min(...finalEnvelope.map(p => p.x));
+  const maxX = Math.max(...finalEnvelope.map(p => p.x));
+  const horizontal = THREE.MathUtils.clamp(SCREEN_POSITION.horizontal,
+    (-0.98 - minX) * width / 2, (0.98 - maxX) * width / 2);
+  const view = camera.view;
+  camera.setViewOffset(width, height,
+    view.offsetX - horizontal, view.offsetY - SCREEN_POSITION.vertical, width, height);
 
-camera.lookAt(
-  0,
-  0,
-  0
-);
+}
+
+frameTerrain();
 
 
 /* =========================================================
@@ -147,13 +225,13 @@ scene.add(
    SONIC TERRAIN
 ========================================================= */
 
-const SEG_X = 170;
-const SEG_Z = 96;
+const SEG_X = 120;
+const SEG_Z = 100;
 
 const geometry =
   new THREE.PlaneGeometry(
-    18,
-    10,
+    TERRAIN.width,
+    TERRAIN.depth,
     SEG_X,
     SEG_Z
   );
@@ -214,9 +292,7 @@ for (
 
   const t =
     THREE.MathUtils.clamp(
-      (
-        x + 9
-      ) / 18,
+      (x + TERRAIN.width / 2) / TERRAIN.width,
       0,
       1
     );
@@ -310,21 +386,20 @@ const terrain =
   );
 
 
-terrain.position.y =
-  -0.75;
-
-
-scene.add(
-  terrain
-);
+const terrainRig = new THREE.Group();
+terrainRig.position.set(0, BASE_POSE.y, 0);
+terrainRig.rotation.set(BASE_POSE.pitch, BASE_POSE.yaw, BASE_POSE.roll);
+terrainRig.scale.set(1, 1, 1);
+terrainRig.add(terrain);
+scene.add(terrainRig);
 
 
 /* =========================================================
    SECOND CONTOUR LAYER
 ========================================================= */
 
-const glowGeometry =
-  geometry.clone();
+// Shared geometry guarantees identical silhouettes and deformation.
+const glowGeometry = geometry;
 
 
 const glowMaterial =
@@ -354,19 +429,19 @@ const glowTerrain =
   );
 
 
-glowTerrain.position.y =
-  -0.70;
+glowTerrain.position.set(0, 0.025, 0);
+terrainRig.add(glowTerrain);
 
-glowTerrain.scale.set(
-  1.015,
-  1.04,
-  1.015
+// Include both crests and troughs in the deformation bounds.
+geometry.boundingBox = new THREE.Box3(
+  new THREE.Vector3(-TERRAIN.width / 2, -TERRAIN.maxHeight, -TERRAIN.depth / 2),
+  new THREE.Vector3(TERRAIN.width / 2, TERRAIN.maxHeight, TERRAIN.depth / 2)
 );
+geometry.boundingSphere = geometry.boundingBox.getBoundingSphere(new THREE.Sphere());
 
-
-scene.add(
-  glowTerrain
-);
+// Audio excites a signed wave field; the pose and camera remain independent.
+const rippleField = new RippleField(TERRAIN.width, TERRAIN.depth, SEG_X, SEG_Z);
+// All vertices, including the outer rows, now follow the wave field.
 
 
 /* =========================================================
@@ -591,6 +666,38 @@ const smoothed =
   );
 
 
+// The original master remains the only audible source. These small cue records
+// come from its 12 aligned spatial stems and drive visuals only.
+let cueTimeline = null;
+let cueLoadError = null;
+const cueReady = fetch("/audio/tukana-stem-cues.json")
+  .then(response => {
+    if (!response.ok) throw new Error("Could not load Tukana stem cues");
+    return response.json();
+  })
+  .then(data => {
+    if (data.master.url !== audio.getAttribute("src")) throw new Error("Stem cue/master mismatch");
+    cueTimeline = new AudioCueTimeline(data);
+    cueTimeline.seek(audio.currentTime);
+  })
+  .catch(error => {
+    cueLoadError = error;
+    console.error(error);
+  });
+
+// A seek starts a new acoustic moment; do not keep waves from the old section.
+audio.addEventListener("seeking", () => {
+  rippleField.reset();
+  smoothed.fill(0);
+  cueTimeline?.seek(audio.currentTime);
+});
+
+// Flush the fraction of audio played since the last rendered frame before pause.
+audio.addEventListener("pause", () => {
+  if (!audio.seeking) updateSoundWaves(0, true);
+});
+
+
 /* =========================================================
    POST PROCESSING
 ========================================================= */
@@ -759,6 +866,11 @@ startButton.addEventListener(
   async () => {
 
     await audioContext.resume();
+    await cueReady;
+    if (cueLoadError) {
+      startButton.textContent = "FALHA NA ANALISE - RECARREGUE A PAGINA";
+      return;
+    }
 
 
     if (
@@ -789,9 +901,32 @@ startButton.addEventListener(
    ANIMATION
 ========================================================= */
 
-const clock =
-  new THREE.Clock();
+const clock = new THREE.Clock();
+let previousTime = 0;
 
+function bandEnergy(lowHz, highHz) {
+  const hzPerBin = audioContext.sampleRate / analyser.fftSize;
+  const first = Math.max(1, Math.ceil(lowHz / hzPerBin));
+  const last = Math.min(smoothed.length, Math.ceil(highHz / hzPerBin));
+  let sum = 0;
+  for (let i = first; i < last; i++) sum += smoothed[i] / 255;
+  return sum / Math.max(1, last - first);
+}
+
+
+function updateSoundWaves(delta, flushPause = false) {
+  const playing = flushPause || (!audio.paused && !audio.seeking && !audio.ended);
+  if (playing && cueTimeline && Math.abs(audio.currentTime - cueTimeline.lastTime) > 0.3) {
+    rippleField.reset();
+  }
+  const synced = cueTimeline?.step(audio.currentTime, playing,
+    cue => rippleField.exciteAt(cue.x, cue.z, cue.strength, cue.width),
+    seconds => rippleField.advance(seconds));
+  // After pause/end, existing waves are allowed to reflect and settle naturally.
+  if (!synced) {
+    rippleField.advance(delta);
+  }
+}
 
 function animate() {
 
@@ -803,6 +938,10 @@ function animate() {
   const time =
     clock.getElapsedTime();
 
+
+  const delta = Math.min(0.1, Math.max(0, time - previousTime));
+  previousTime = time;
+  const smoothing = 1 - Math.exp(-delta / 0.10);
 
   analyser.getByteFrequencyData(
     frequencyData
@@ -820,9 +959,7 @@ function animate() {
   ) {
 
     smoothed[i] =
-      smoothed[i] * 0.84
-      +
-      frequencyData[i] * 0.16;
+      smoothed[i] + (frequencyData[i] - smoothed[i]) * smoothing;
 
 
     totalEnergy +=
@@ -845,187 +982,16 @@ function animate() {
     }%`;
 
 
-  const bassBins =
-    Math.floor(
-      frequencyData.length * 0.045
-    );
+  const bass = bandEnergy(30, 220);
+  updateSoundWaves(delta);
 
-
-  let bass =
-    0;
-
-
-  for (
-    let i = 1;
-    i < bassBins;
-    i++
-  ) {
-
-    bass +=
-      smoothed[i] / 255;
-
+  for (let i = 0; i < positions.count; i++) {
+    // Signed heights produce rising crests and falling troughs. Fixed simulation
+    // timesteps supply temporal continuity without smearing the travelling wave.
+    positions.array[i * 3 + 1] = TERRAIN.maxHeight *
+      Math.tanh(rippleField.heights[i] / TERRAIN.maxHeight);
   }
-
-
-  bass /=
-    Math.max(
-      1,
-      bassBins - 1
-    );
-
-
-  for (
-    let i = 0;
-    i < positions.count;
-    i++
-  ) {
-
-    const idx =
-      i * 3;
-
-
-    const x =
-      basePositions[idx];
-
-    const z =
-      basePositions[
-        idx + 2
-      ];
-
-
-    const nx =
-      THREE.MathUtils.clamp(
-        (
-          x + 9
-        ) / 18,
-        0,
-        1
-      );
-
-
-    const nz =
-      THREE.MathUtils.clamp(
-        (
-          z + 5
-        ) / 10,
-        0,
-        1
-      );
-
-
-    const freqIndex =
-      Math.min(
-
-        smoothed.length - 1,
-
-        Math.floor(
-          Math.pow(
-            nx,
-            2.25
-          )
-          *
-          (
-            smoothed.length - 1
-          )
-        )
-
-      );
-
-
-    const amp =
-      smoothed[
-        freqIndex
-      ] / 255;
-
-
-    const centerEnvelope =
-      Math.exp(
-        -Math.pow(
-          (
-            z
-          ) / 4.2,
-          2
-        )
-      );
-
-
-    const longitudinal =
-      0.64
-      +
-      0.36
-      *
-      Math.sin(
-        z * 1.55
-        +
-        time * 0.65
-        +
-        nx * 4
-      );
-
-
-    const livingFloor =
-      0.10
-      *
-      Math.sin(
-        x * 0.9
-        +
-        z * 0.52
-        +
-        time * 0.30
-      );
-
-
-    const bassWave =
-      bass
-      *
-      0.55
-      *
-      Math.sin(
-        x * 0.48
-        -
-        time * 1.1
-      );
-
-
-    const height =
-      (
-        amp *
-        3.15 *
-        centerEnvelope *
-        longitudinal
-      )
-      +
-      livingFloor
-      +
-      bassWave;
-
-
-    positions.array[
-      idx + 1
-    ] =
-      height;
-
-
-    glowGeometry
-      .attributes
-      .position
-      .array[
-        idx + 1
-      ] =
-      height * 1.025;
-
-  }
-
-
-  positions.needsUpdate =
-    true;
-
-
-  glowGeometry
-    .attributes
-    .position
-    .needsUpdate =
-    true;
+  positions.needsUpdate = true;
 
 
   particles.rotation.y =
@@ -1040,42 +1006,8 @@ function animate() {
     time * 0.025;
 
 
-  terrain.rotation.y =
-    Math.sin(
-      time * 0.12
-    ) * 0.025;
-
-
-  glowTerrain.rotation.y =
-    terrain.rotation.y;
-
-
-  camera.position.x =
-    Math.sin(
-      time * 0.10
-    ) * 0.42;
-
-
-  camera.position.y =
-    6.35
-    +
-    Math.sin(
-      time * 0.07
-    )
-    * 0.10;
-
-
-  camera.lookAt(
-    0,
-    0.35,
-    -0.3
-  );
-
-
   bloom.strength =
-    0.62
-    +
-    averageEnergy * 1.8;
+    0.45 + Math.min(averageEnergy * 0.8, 0.25);
 
 
   warmLight.intensity =
@@ -1118,7 +1050,7 @@ window.addEventListener(
       height;
 
 
-    camera.updateProjectionMatrix();
+    frameTerrain();
 
 
     renderer.setSize(

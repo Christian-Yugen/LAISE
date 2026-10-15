@@ -1,0 +1,9 @@
+{
+  "durationSeconds": 330,
+  "expectedEvents": 10282,
+  "emittedEvents": 10282,
+  "sourceCount": 12,
+  "maxSampledRawHeight": 4.549055576324463,
+  "settledHeight": 0.00007603249105159193,
+  "checks": "passed"
+}
