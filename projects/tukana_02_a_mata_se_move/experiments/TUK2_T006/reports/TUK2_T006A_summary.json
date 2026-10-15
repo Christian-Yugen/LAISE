@@ -1,0 +1,64 @@
+{
+  "schema": "LAISE TUK2 Candidate Scene Generation v1.0",
+  "project": "tukana_02_a_mata_se_move",
+  "test_id": "TUK2-T006A",
+  "status": "PASS",
+  "candidate_count": 4,
+  "candidates": {
+    "A_CLARITY": {
+      "scene": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\experiments\\TUK2_T006\\spatial_scenes\\TUK2_T006A_A_CLARITY.json",
+      "scene_sha256": "9758eb3cc36d97c8e3ee322ecf0e9aec23eaf9c13c6e8bda74d20b033ec09ca5",
+      "selected_large_motion_event_count": 13,
+      "keyframe_count": 119
+    },
+    "B_SEPARATION": {
+      "scene": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\experiments\\TUK2_T006\\spatial_scenes\\TUK2_T006A_B_SEPARATION.json",
+      "scene_sha256": "0adc7421e30461353f200725614a251172e36ee88be4fa2ddadbb9ef5130a6cf",
+      "selected_large_motion_event_count": 15,
+      "keyframe_count": 127
+    },
+    "C_MOTION": {
+      "scene": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\experiments\\TUK2_T006\\spatial_scenes\\TUK2_T006A_C_MOTION.json",
+      "scene_sha256": "2e09236893c85206d2437a861b623438bf63004ea15b8533dc09de6804bf82a5",
+      "selected_large_motion_event_count": 20,
+      "keyframe_count": 147
+    },
+    "D_ADAPTIVE": {
+      "scene": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\experiments\\TUK2_T006\\spatial_scenes\\TUK2_T006A_D_ADAPTIVE.json",
+      "scene_sha256": "c8aa43150838b214d30340e892bf882453167d50f447058eee20ba3497784963",
+      "selected_large_motion_event_count": 20,
+      "keyframe_count": 147
+    }
+  },
+  "preview_windows": [
+    {
+      "window_id": "preview_01",
+      "reason": "strongest_spatial_event",
+      "start_seconds": 18.575,
+      "end_seconds": 38.575,
+      "duration_seconds": 20.0
+    },
+    {
+      "window_id": "preview_02",
+      "reason": "lowest_density",
+      "start_seconds": 0.0,
+      "end_seconds": 20.0,
+      "duration_seconds": 20.0
+    },
+    {
+      "window_id": "preview_03",
+      "reason": "highest_density",
+      "start_seconds": 173.7,
+      "end_seconds": 193.7,
+      "duration_seconds": 20.0
+    },
+    {
+      "window_id": "preview_04",
+      "reason": "sparse_brass_point_event",
+      "start_seconds": 262.8,
+      "end_seconds": 282.8,
+      "duration_seconds": 20.0
+    }
+  ],
+  "next_stage": "Render identical windows from all four candidates and score objective spatial discriminability, clarity, orbit/trajectory integrity, front/back, elevation, transient preservation, peak safety and mono stability."
+}

@@ -1,0 +1,685 @@
+{
+  "section_id": "tuk2_section_09",
+  "start_seconds": 202.3,
+  "end_seconds": 239.2,
+  "duration_seconds": 36.89999999999998,
+  "score": 70.96313241010776,
+  "T006D_score": 70.96313241010776,
+  "delta_vs_T006D": 0.0,
+  "components": {
+    "spatial_discriminability": 65.45786102421042,
+    "clarity": 66.60810614958892,
+    "front_back": 47.566265060240966,
+    "elevation": 32.33734939759036,
+    "transient_preservation": 94.55632741803868,
+    "peak_safety": 100.0,
+    "mono_stability": 100.0,
+    "orbit_integrity": 92.20701157700246
+  },
+  "lead_masking": [
+    {
+      "time_seconds": 202.8,
+      "clarity_proxy": 77.50686036638885,
+      "masker_index": 1.291408679367643
+    },
+    {
+      "time_seconds": 203.8,
+      "clarity_proxy": 78.02901974362544,
+      "masker_index": 1.2355750757061963
+    },
+    {
+      "time_seconds": 204.8,
+      "clarity_proxy": 78.3490056517897,
+      "masker_index": 1.2023918090955137
+    },
+    {
+      "time_seconds": 205.8,
+      "clarity_proxy": 76.89977236462401,
+      "masker_index": 1.3590723633990316
+    },
+    {
+      "time_seconds": 206.8,
+      "clarity_proxy": 76.80167292473473,
+      "masker_index": 1.3702944842413571
+    },
+    {
+      "time_seconds": 207.8,
+      "clarity_proxy": 76.19768765171818,
+      "masker_index": 1.4412305534030458
+    },
+    {
+      "time_seconds": 208.8,
+      "clarity_proxy": 75.55499280876522,
+      "masker_index": 1.520350333940959
+    },
+    {
+      "time_seconds": 209.8,
+      "clarity_proxy": 76.57481888579046,
+      "masker_index": 1.3965620302260093
+    },
+    {
+      "time_seconds": 210.8,
+      "clarity_proxy": 75.35096945317314,
+      "masker_index": 1.546288903438102
+    },
+    {
+      "time_seconds": 211.8,
+      "clarity_proxy": 77.61165329248644,
+      "masker_index": 1.2800319079959126
+    },
+    {
+      "time_seconds": 212.8,
+      "clarity_proxy": 76.93830665712014,
+      "masker_index": 1.3546865624805702
+    },
+    {
+      "time_seconds": 213.8,
+      "clarity_proxy": 77.24892149898012,
+      "masker_index": 1.3197874968354641
+    },
+    {
+      "time_seconds": 214.8,
+      "clarity_proxy": 75.04539988454404,
+      "masker_index": 1.585907012256424
+    },
+    {
+      "time_seconds": 215.8,
+      "clarity_proxy": 75.37418105473186,
+      "masker_index": 1.543317375933508
+    },
+    {
+      "time_seconds": 216.8,
+      "clarity_proxy": 80.20954417058098,
+      "masker_index": 1.023756630721245
+    },
+    {
+      "time_seconds": 217.8,
+      "clarity_proxy": 73.58462936611794,
+      "masker_index": 1.7889232924090284
+    },
+    {
+      "time_seconds": 218.8,
+      "clarity_proxy": 78.37596580158561,
+      "masker_index": 1.1996308492976593
+    },
+    {
+      "time_seconds": 219.8,
+      "clarity_proxy": 74.40013133345639,
+      "masker_index": 1.672718554619611
+    },
+    {
+      "time_seconds": 220.8,
+      "clarity_proxy": 77.39065168908262,
+      "masker_index": 1.3041275031504838
+    },
+    {
+      "time_seconds": 221.8,
+      "clarity_proxy": 80.76128511592258,
+      "masker_index": 0.9751021833347512
+    },
+    {
+      "time_seconds": 222.8,
+      "clarity_proxy": 81.17344292923137,
+      "masker_index": 0.9399402211754577
+    },
+    {
+      "time_seconds": 223.8,
+      "clarity_proxy": 86.89849180354211,
+      "masker_index": 0.5384348914765749
+    },
+    {
+      "time_seconds": 224.8,
+      "clarity_proxy": 80.35322473655698,
+      "masker_index": 1.0109074173374726
+    },
+    {
+      "time_seconds": 225.8,
+      "clarity_proxy": 88.87426003572182,
+      "masker_index": 0.42999641030890196
+    },
+    {
+      "time_seconds": 226.8,
+      "clarity_proxy": 81.60329888762998,
+      "masker_index": 0.9043031778872577
+    },
+    {
+      "time_seconds": 227.8,
+      "clarity_proxy": 78.8173295238347,
+      "masker_index": 1.1551832295254822
+    },
+    {
+      "time_seconds": 228.8,
+      "clarity_proxy": 86.04337710133684,
+      "masker_index": 0.5895348503787881
+    },
+    {
+      "time_seconds": 229.8,
+      "clarity_proxy": 79.44925959761348,
+      "masker_index": 1.0939301889877213
+    },
+    {
+      "time_seconds": 230.8,
+      "clarity_proxy": 84.62812843105465,
+      "masker_index": 0.6802994928830465
+    },
+    {
+      "time_seconds": 231.8,
+      "clarity_proxy": 81.21208330922052,
+      "masker_index": 0.9366941094278795
+    },
+    {
+      "time_seconds": 232.8,
+      "clarity_proxy": 83.7918952307297,
+      "masker_index": 0.73787877446416
+    },
+    {
+      "time_seconds": 233.8,
+      "clarity_proxy": 81.60737287692024,
+      "masker_index": 0.9039703552456114
+    },
+    {
+      "time_seconds": 234.8,
+      "clarity_proxy": 81.4339458352329,
+      "masker_index": 0.9182196760275829
+    },
+    {
+      "time_seconds": 235.8,
+      "clarity_proxy": 81.42475990271998,
+      "masker_index": 0.9189790881671129
+    },
+    {
+      "time_seconds": 236.8,
+      "clarity_proxy": 81.97034676709607,
+      "masker_index": 0.874680364946257
+    },
+    {
+      "time_seconds": 237.8,
+      "clarity_proxy": 82.08229135160411,
+      "masker_index": 0.8657899057203442
+    }
+  ],
+  "transient_by_role": {
+    "lead_vocal": {
+      "score": 93.9595243395673,
+      "events": 50,
+      "onset_envelope_correlation": 0.9373238508598019,
+      "median_attack_crest_delta_db": -0.3400878010152528,
+      "analysis_common_latency_removed_samples": 0
+    },
+    "backing_vocals": {
+      "score": 87.65581551935017,
+      "events": 50,
+      "onset_envelope_correlation": 0.897096703159955,
+      "median_attack_crest_delta_db": 1.1278539553296394,
+      "analysis_common_latency_removed_samples": 0
+    },
+    "drums": {
+      "score": 96.38887139927024,
+      "events": 50,
+      "onset_envelope_correlation": 0.9524918355338544,
+      "median_attack_crest_delta_db": 0.05738496435481899,
+      "analysis_common_latency_removed_samples": 0
+    },
+    "bass": {
+      "score": 95.35661749291808,
+      "events": 50,
+      "onset_envelope_correlation": 0.9551569658843337,
+      "median_attack_crest_delta_db": -0.30867986191921837,
+      "analysis_common_latency_removed_samples": 0
+    },
+    "guitar": {
+      "score": 90.67115289129687,
+      "events": 50,
+      "onset_envelope_correlation": 0.8876101988740432,
+      "median_attack_crest_delta_db": 0.29967280392723517,
+      "analysis_common_latency_removed_samples": 0
+    },
+    "keyboards": {
+      "score": 92.43360174742506,
+      "events": 50,
+      "onset_envelope_correlation": 0.8936102767149655,
+      "median_attack_crest_delta_db": -0.023870946789024572,
+      "analysis_common_latency_removed_samples": 0
+    },
+    "percussion": {
+      "score": 92.24071637593309,
+      "events": 50,
+      "onset_envelope_correlation": 0.9383866990070149,
+      "median_attack_crest_delta_db": 0.7321815790042221,
+      "analysis_common_latency_removed_samples": 0
+    },
+    "strings": {
+      "score": 96.0223562060641,
+      "events": 50,
+      "onset_envelope_correlation": 0.962946058378367,
+      "median_attack_crest_delta_db": -0.2833605764000735,
+      "analysis_common_latency_removed_samples": 0
+    },
+    "synth": {
+      "score": 94.33982526633457,
+      "events": 50,
+      "onset_envelope_correlation": 0.9241539486346042,
+      "median_attack_crest_delta_db": 0.07060401353523105,
+      "analysis_common_latency_removed_samples": 0
+    },
+    "other": {
+      "score": 77.63552190055078,
+      "events": 50,
+      "onset_envelope_correlation": 0.846212268686846,
+      "median_attack_crest_delta_db": -2.9328640803733865,
+      "analysis_common_latency_removed_samples": 0
+    },
+    "brass": {
+      "score": 93.20685049768109,
+      "events": 50,
+      "onset_envelope_correlation": 0.9293467968080494,
+      "median_attack_crest_delta_db": 0.3813514015257562,
+      "analysis_common_latency_removed_samples": 0
+    },
+    "woodwinds": {
+      "score": 93.4984468313734,
+      "events": 12,
+      "onset_envelope_correlation": 0.9496505690711486,
+      "median_attack_crest_delta_db": 0.6270748084681923,
+      "analysis_common_latency_removed_samples": 0
+    }
+  },
+  "pairwise_matrix": {
+    "lead_vocal / backing_vocals": {
+      "coactive_windows": 36,
+      "mean_score": 59.98213963933559,
+      "minimum_score": 50.73830147155323,
+      "windows": []
+    },
+    "lead_vocal / drums": {
+      "coactive_windows": 36,
+      "mean_score": 44.55983688081541,
+      "minimum_score": 40.786915789416256,
+      "windows": []
+    },
+    "lead_vocal / bass": {
+      "coactive_windows": 36,
+      "mean_score": 43.18251424703503,
+      "minimum_score": 35.759357972717744,
+      "windows": []
+    },
+    "lead_vocal / guitar": {
+      "coactive_windows": 29,
+      "mean_score": 54.466389182512835,
+      "minimum_score": 46.548317925033864,
+      "windows": []
+    },
+    "lead_vocal / keyboards": {
+      "coactive_windows": 36,
+      "mean_score": 55.60494040668771,
+      "minimum_score": 43.204709969417955,
+      "windows": []
+    },
+    "lead_vocal / percussion": {
+      "coactive_windows": 36,
+      "mean_score": 74.92604100244078,
+      "minimum_score": 71.12579245242688,
+      "windows": []
+    },
+    "lead_vocal / strings": {
+      "coactive_windows": 22,
+      "mean_score": 62.15052389114326,
+      "minimum_score": 50.45334971432769,
+      "windows": []
+    },
+    "lead_vocal / synth": {
+      "coactive_windows": 36,
+      "mean_score": 65.92836741034006,
+      "minimum_score": 58.341392674534596,
+      "windows": []
+    },
+    "lead_vocal / other": {
+      "coactive_windows": 36,
+      "mean_score": 64.01836086194616,
+      "minimum_score": 50.10242030268707,
+      "windows": []
+    },
+    "lead_vocal / brass": {
+      "coactive_windows": 28,
+      "mean_score": 74.56938027612114,
+      "minimum_score": 58.478627873797976,
+      "windows": []
+    },
+    "lead_vocal / woodwinds": {
+      "coactive_windows": 17,
+      "mean_score": 64.79337394188974,
+      "minimum_score": 57.681677048719365,
+      "windows": []
+    },
+    "backing_vocals / drums": {
+      "coactive_windows": 36,
+      "mean_score": 79.02540228984691,
+      "minimum_score": 76.28486227400397,
+      "windows": []
+    },
+    "backing_vocals / bass": {
+      "coactive_windows": 36,
+      "mean_score": 82.26265440253783,
+      "minimum_score": 77.06152921837277,
+      "windows": []
+    },
+    "backing_vocals / guitar": {
+      "coactive_windows": 29,
+      "mean_score": 52.14570434530777,
+      "minimum_score": 46.1006036609727,
+      "windows": []
+    },
+    "backing_vocals / keyboards": {
+      "coactive_windows": 36,
+      "mean_score": 71.0737159735624,
+      "minimum_score": 57.18103361603746,
+      "windows": []
+    },
+    "backing_vocals / percussion": {
+      "coactive_windows": 36,
+      "mean_score": 86.64021996067426,
+      "minimum_score": 83.41835477131376,
+      "windows": []
+    },
+    "backing_vocals / strings": {
+      "coactive_windows": 22,
+      "mean_score": 51.138046697765546,
+      "minimum_score": 38.00671697811492,
+      "windows": []
+    },
+    "backing_vocals / synth": {
+      "coactive_windows": 36,
+      "mean_score": 74.26609402914873,
+      "minimum_score": 67.01738331292718,
+      "windows": []
+    },
+    "backing_vocals / other": {
+      "coactive_windows": 36,
+      "mean_score": 54.56540951543774,
+      "minimum_score": 41.81097733316626,
+      "windows": []
+    },
+    "backing_vocals / brass": {
+      "coactive_windows": 28,
+      "mean_score": 83.81470172885668,
+      "minimum_score": 64.34141937342383,
+      "windows": []
+    },
+    "backing_vocals / woodwinds": {
+      "coactive_windows": 17,
+      "mean_score": 30.57339144330383,
+      "minimum_score": 22.971348634833653,
+      "windows": []
+    },
+    "drums / bass": {
+      "coactive_windows": 36,
+      "mean_score": 40.17326214302045,
+      "minimum_score": 34.51636087388841,
+      "windows": []
+    },
+    "drums / guitar": {
+      "coactive_windows": 29,
+      "mean_score": 64.57216658308322,
+      "minimum_score": 60.0012744083588,
+      "windows": []
+    },
+    "drums / keyboards": {
+      "coactive_windows": 36,
+      "mean_score": 54.81289994791326,
+      "minimum_score": 49.68552228699774,
+      "windows": []
+    },
+    "drums / percussion": {
+      "coactive_windows": 36,
+      "mean_score": 46.782191742278506,
+      "minimum_score": 44.15999268972978,
+      "windows": []
+    },
+    "drums / strings": {
+      "coactive_windows": 22,
+      "mean_score": 68.51520625347531,
+      "minimum_score": 63.60806191762328,
+      "windows": []
+    },
+    "drums / synth": {
+      "coactive_windows": 36,
+      "mean_score": 62.39687557376825,
+      "minimum_score": 49.571352391672534,
+      "windows": []
+    },
+    "drums / other": {
+      "coactive_windows": 36,
+      "mean_score": 68.44970686715268,
+      "minimum_score": 51.92561329781573,
+      "windows": []
+    },
+    "drums / brass": {
+      "coactive_windows": 28,
+      "mean_score": 67.26551301089113,
+      "minimum_score": 58.285871758310726,
+      "windows": []
+    },
+    "drums / woodwinds": {
+      "coactive_windows": 17,
+      "mean_score": 80.60655437622918,
+      "minimum_score": 78.42787883361885,
+      "windows": []
+    },
+    "bass / guitar": {
+      "coactive_windows": 29,
+      "mean_score": 69.41596819559662,
+      "minimum_score": 65.84009147153665,
+      "windows": []
+    },
+    "bass / keyboards": {
+      "coactive_windows": 36,
+      "mean_score": 71.90389683228585,
+      "minimum_score": 67.14267921221125,
+      "windows": []
+    },
+    "bass / percussion": {
+      "coactive_windows": 36,
+      "mean_score": 74.93712099490796,
+      "minimum_score": 65.47974139220814,
+      "windows": []
+    },
+    "bass / strings": {
+      "coactive_windows": 22,
+      "mean_score": 62.02266059206773,
+      "minimum_score": 52.83967308827294,
+      "windows": []
+    },
+    "bass / synth": {
+      "coactive_windows": 36,
+      "mean_score": 63.40822400333889,
+      "minimum_score": 50.568064247334696,
+      "windows": []
+    },
+    "bass / other": {
+      "coactive_windows": 36,
+      "mean_score": 77.90076070548,
+      "minimum_score": 63.983788147551756,
+      "windows": []
+    },
+    "bass / brass": {
+      "coactive_windows": 28,
+      "mean_score": 73.572455269517,
+      "minimum_score": 63.579255586783304,
+      "windows": []
+    },
+    "bass / woodwinds": {
+      "coactive_windows": 17,
+      "mean_score": 80.80725815761846,
+      "minimum_score": 69.86729826500088,
+      "windows": []
+    },
+    "guitar / keyboards": {
+      "coactive_windows": 29,
+      "mean_score": 65.0363414503487,
+      "minimum_score": 57.13353195255136,
+      "windows": []
+    },
+    "guitar / percussion": {
+      "coactive_windows": 29,
+      "mean_score": 80.14951640091185,
+      "minimum_score": 72.90359171659297,
+      "windows": []
+    },
+    "guitar / strings": {
+      "coactive_windows": 21,
+      "mean_score": 68.73193098008309,
+      "minimum_score": 56.72268767665072,
+      "windows": []
+    },
+    "guitar / synth": {
+      "coactive_windows": 29,
+      "mean_score": 75.93651991787564,
+      "minimum_score": 63.9550876691357,
+      "windows": []
+    },
+    "guitar / other": {
+      "coactive_windows": 29,
+      "mean_score": 61.134198819815566,
+      "minimum_score": 47.83965388299014,
+      "windows": []
+    },
+    "guitar / brass": {
+      "coactive_windows": 27,
+      "mean_score": 77.08071482798836,
+      "minimum_score": 66.52502843148822,
+      "windows": []
+    },
+    "guitar / woodwinds": {
+      "coactive_windows": 15,
+      "mean_score": 47.922482340469784,
+      "minimum_score": 41.704585087756584,
+      "windows": []
+    },
+    "keyboards / percussion": {
+      "coactive_windows": 36,
+      "mean_score": 57.62320112339746,
+      "minimum_score": 52.26959164954186,
+      "windows": []
+    },
+    "keyboards / strings": {
+      "coactive_windows": 22,
+      "mean_score": 65.5664109616322,
+      "minimum_score": 57.440703508048564,
+      "windows": []
+    },
+    "keyboards / synth": {
+      "coactive_windows": 36,
+      "mean_score": 58.2643945373362,
+      "minimum_score": 45.29267005445232,
+      "windows": []
+    },
+    "keyboards / other": {
+      "coactive_windows": 36,
+      "mean_score": 64.951208921377,
+      "minimum_score": 54.93784425243337,
+      "windows": []
+    },
+    "keyboards / brass": {
+      "coactive_windows": 28,
+      "mean_score": 60.82122800331422,
+      "minimum_score": 50.29306343029456,
+      "windows": []
+    },
+    "keyboards / woodwinds": {
+      "coactive_windows": 17,
+      "mean_score": 71.05908044609093,
+      "minimum_score": 57.579997266725435,
+      "windows": []
+    },
+    "percussion / strings": {
+      "coactive_windows": 22,
+      "mean_score": 84.87562694235136,
+      "minimum_score": 82.51164411539727,
+      "windows": []
+    },
+    "percussion / synth": {
+      "coactive_windows": 36,
+      "mean_score": 69.80733970396086,
+      "minimum_score": 57.40058361598173,
+      "windows": []
+    },
+    "percussion / other": {
+      "coactive_windows": 36,
+      "mean_score": 75.55501593893354,
+      "minimum_score": 62.788402346341435,
+      "windows": []
+    },
+    "percussion / brass": {
+      "coactive_windows": 28,
+      "mean_score": 48.15535153653605,
+      "minimum_score": 40.7231165528925,
+      "windows": []
+    },
+    "percussion / woodwinds": {
+      "coactive_windows": 17,
+      "mean_score": 88.83975457872914,
+      "minimum_score": 86.63422273016383,
+      "windows": []
+    },
+    "strings / synth": {
+      "coactive_windows": 22,
+      "mean_score": 49.91155875080622,
+      "minimum_score": 39.144906572188546,
+      "windows": []
+    },
+    "strings / other": {
+      "coactive_windows": 22,
+      "mean_score": 54.825910768268415,
+      "minimum_score": 44.359845860230465,
+      "windows": []
+    },
+    "strings / brass": {
+      "coactive_windows": 20,
+      "mean_score": 77.35582311624067,
+      "minimum_score": 66.26651408650523,
+      "windows": []
+    },
+    "strings / woodwinds": {
+      "coactive_windows": 13,
+      "mean_score": 49.760759853354784,
+      "minimum_score": 45.26775835604036,
+      "windows": []
+    },
+    "synth / other": {
+      "coactive_windows": 36,
+      "mean_score": 62.03882317167149,
+      "minimum_score": 51.80009612024837,
+      "windows": []
+    },
+    "synth / brass": {
+      "coactive_windows": 28,
+      "mean_score": 61.94154427166952,
+      "minimum_score": 52.39165196967966,
+      "windows": []
+    },
+    "synth / woodwinds": {
+      "coactive_windows": 17,
+      "mean_score": 72.31703836678746,
+      "minimum_score": 67.38744892292978,
+      "windows": []
+    },
+    "other / brass": {
+      "coactive_windows": 28,
+      "mean_score": 71.15110540504288,
+      "minimum_score": 58.615729666106674,
+      "windows": []
+    },
+    "other / woodwinds": {
+      "coactive_windows": 17,
+      "mean_score": 66.41694509817837,
+      "minimum_score": 53.622198979637666,
+      "windows": []
+    },
+    "brass / woodwinds": {
+      "coactive_windows": 16,
+      "mean_score": 75.75907198938233,
+      "minimum_score": 63.258932634310774,
+      "windows": []
+    }
+  }
+}

@@ -1,0 +1,94 @@
+﻿{
+    "schema":  "LAISE Delivery Validation v1.0",
+    "project":  "TUKANA",
+    "reference_master":  {
+                             "filename":  "TUKANA_B2_transient_refinement_24bit.wav",
+                             "path":  "C:\\Projetos2026\\LAISE\\projects\\tukana\\renders\\mastering\\t017\\TUKANA_B2_transient_refinement_24bit.wav",
+                             "sha256":  "9daf544d7e073d8791f6260eed2630863a9280a2cca7d22053132a881e2c0df9",
+                             "format":  "WAV PCM",
+                             "bit_depth":  24,
+                             "sample_rate_hz":  48000,
+                             "channels":  2,
+                             "role":  "OFFICIAL_REFERENCE_MASTER"
+                         },
+    "lossless_validation":  {
+                                "methodology":  "Decoded PCM SHA-256 comparison against approved WAV master",
+                                "pcm_sha256_reference":  "50b8bee67538e1fd58a869732fdd7d5b863b149c38e92747047ba42f7f6cb06d",
+                                "pcm_bytes":  77068806,
+                                "flac":  {
+                                             "decoded_pcm_sha256":  "50b8bee67538e1fd58a869732fdd7d5b863b149c38e92747047ba42f7f6cb06d",
+                                             "result":  "BIT-PERFECT PASS"
+                                         },
+                                "alac":  {
+                                             "decoded_pcm_sha256":  "50b8bee67538e1fd58a869732fdd7d5b863b149c38e92747047ba42f7f6cb06d",
+                                             "result":  "BIT-PERFECT PASS"
+                                         }
+                            },
+    "codec_validation":  {
+                             "metric":  "T005 gain-invariant spatial signature integrity",
+                             "technical_proxy_only":  true,
+                             "universal_human_perception_claim":  false,
+                             "spatial_gate":  90,
+                             "aac_320":  {
+                                             "spatial_score":  92.3896,
+                                             "transient_score":  99.9818,
+                                             "mean_feature_distance":  0.019789,
+                                             "p95_feature_distance":  0.055962,
+                                             "median_ild_delta_db":  0.003157,
+                                             "median_itd_delta_us":  0.199177,
+                                             "median_side_mid_delta_db":  0.032778,
+                                             "median_lr_correlation_delta":  0.00079122,
+                                             "result":  "PASS"
+                                         }
+                         },
+    "delivery_files":  [
+                           {
+                               "filename":  "TUKANA_B2_binaural_24bit_48k.flac",
+                               "path":  "C:\\Projetos2026\\LAISE\\projects\\tukana\\delivery\\TUKANA_B2_binaural_24bit_48k.flac",
+                               "size_bytes":  53641484,
+                               "size_mb":  51.16,
+                               "sha256":  "db7ddeeebdfead381724f56da968020bd18ca6e8c289ee6dbd2d678b2a68b497",
+                               "format":  "FLAC 24-bit/48 kHz",
+                               "sample_rate_hz":  48000,
+                               "channels":  2,
+                               "status":  "BIT-PERFECT PASS"
+                           },
+                           {
+                               "filename":  "TUKANA_B2_binaural_ALAC_24bit_48k.m4a",
+                               "path":  "C:\\Projetos2026\\LAISE\\projects\\tukana\\delivery\\TUKANA_B2_binaural_ALAC_24bit_48k.m4a",
+                               "size_bytes":  55453498,
+                               "size_mb":  52.88,
+                               "sha256":  "b4eb6bea09f1fb1e06022581021bc7b74adfd681401dac79be3f539d4ce2daae",
+                               "format":  "ALAC 24-bit/48 kHz",
+                               "sample_rate_hz":  48000,
+                               "channels":  2,
+                               "status":  "BIT-PERFECT PASS"
+                           },
+                           {
+                               "filename":  "TUKANA_B2_binaural_AAC_320k.m4a",
+                               "path":  "C:\\Projetos2026\\LAISE\\projects\\tukana\\delivery\\TUKANA_B2_binaural_AAC_320k.m4a",
+                               "size_bytes":  10769804,
+                               "size_mb":  10.27,
+                               "sha256":  "2fcac3e384998b6c15a67e6f37f66ad11ea0fa06948b0aa92fcc952148aee962",
+                               "format":  "AAC-LC 320 kbps/48 kHz",
+                               "sample_rate_hz":  48000,
+                               "channels":  2,
+                               "status":  "SPATIAL QA PASS",
+                               "spatial_preservation_score":  92.3896,
+                               "spatial_gate":  90,
+                               "spatial_gate_result":  "PASS"
+                           }
+                       ],
+    "recommended_usage":  {
+                              "wav":  "Reference master, video production and future conversions",
+                              "flac":  "Preferred lossless portable format for Windows, Android and compatible players",
+                              "alac":  "Preferred lossless portable format for Apple ecosystem",
+                              "aac_320":  "Lightweight high-compatibility portable distribution"
+                          },
+    "notes":  [
+                  "Binaural and 3D spatial rendering are already encoded in the stereo L/R master.",
+                  "No stems or dearVR processing are required during playback.",
+                  "FLAC and ALAC reproduce the exact decoded PCM samples of the approved WAV master.",
+                  "AAC score is a technical preservation proxy, not a universal human localization probability."
+              ]
+}

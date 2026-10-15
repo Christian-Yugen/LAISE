@@ -1,0 +1,59 @@
+{
+  "schema": "LAISE TUK2 Blueprint Correction v1.0",
+  "project": "tukana_02_a_mata_se_move",
+  "test_id": "TUK2-T004R1",
+  "status": "PASS",
+  "original_blueprint": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\spatial_scenes\\TUK2_T004_blueprint.json",
+  "original_blueprint_sha256": "30756bd7b292fbb155950536d328b06b5fe921ad91e1c99e564771616859e03c",
+  "revised_blueprint": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\spatial_scenes\\TUK2_T004R1_blueprint.json",
+  "revised_blueprint_sha256": "ffd8ec2b9726a7b9e31a7cd294e110138053433cffa1371e58d38ca2152ce74a",
+  "original_preserved": true,
+  "corrections": [
+    {
+      "section_id": "tuk2_section_02",
+      "role": "strings",
+      "correction": "ELEVATION_SWEEP_AXIS_FIX",
+      "old_azimuth_value_deg": 48.0,
+      "new_azimuth_excursion_deg": 12.0,
+      "new_elevation_excursion_deg": 24.0
+    }
+  ],
+  "old_orbit_candidate": {
+    "section_id": "tuk2_section_02",
+    "role": "strings",
+    "start_seconds": 8.3,
+    "end_seconds": 30.1,
+    "density": 4.701834862385321,
+    "activity_fraction": 0.06422018348623854,
+    "selection_score": 1.2702922110091743,
+    "policy": "Candidate only. Actual continuous 360 path must pass dearVR probe/orbit validation before final scene use."
+  },
+  "musical_orbit_segment_candidate": {
+    "section_id": "tuk2_section_01",
+    "role": "percussion",
+    "start_seconds": 0.0,
+    "end_seconds": 8.3,
+    "mean_density": 4.0,
+    "active_fraction": 0.024096385542168676,
+    "azimuth_excursion_deg": 72.0,
+    "motion_class": "ORBIT_SEGMENT"
+  },
+  "technical_360_validation": {
+    "type": "CONTROLLED_DEARVR_PROBE",
+    "uses_musical_stem": false,
+    "azimuth_sequence_deg": [
+      0,
+      45,
+      90,
+      135,
+      180,
+      -135,
+      -90,
+      -45,
+      0
+    ],
+    "purpose": "Validate continuous binaural sector progression independently of musical content.",
+    "final_music_rule": "A full musical 360 orbit is optional. It will be used only if objective candidate testing shows benefit without loss of clarity."
+  },
+  "reason": "Correct elevation-vs-azimuth excursion semantics, separate technical 360 validation from musical motion, and explicitly require phrase/event-gated movement."
+}

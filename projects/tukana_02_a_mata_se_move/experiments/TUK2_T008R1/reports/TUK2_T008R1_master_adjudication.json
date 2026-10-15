@@ -1,0 +1,64 @@
+{
+  "schema": "LAISE TUK2 PCM Master Adjudication v1.0",
+  "project": "tukana_02_a_mata_se_move",
+  "test_id": "TUK2-T008R1",
+  "status": "PASS",
+  "supersedes_for_PCM_master_selection": "TUK2-T008",
+  "T008_original_status": "FAIL",
+  "T008_original_report_preserved": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\experiments\\TUK2_T008\\reports\\TUK2_T008_mastering_selection.json",
+  "methodological_correction": "PCM mastering approval and lossy delivery validation are separated. No numerical codec threshold was lowered or changed to force PASS.",
+  "selected_master": "B_OPTIMIZED",
+  "selected_master_score": 97.10577144150166,
+  "selected_metrics": {
+    "integrated_lufs": -16.9,
+    "true_peak_dbtp": -2.0,
+    "crest_factor_db": 16.7214787046315,
+    "spatial_integrity": 97.34103450500878,
+    "transient_fidelity": 99.14143120973756
+  },
+  "pcm_checks": {
+    "T007_spatial_QA_passed": true,
+    "T007_spatial_source_unchanged": true,
+    "selected_exact_frames": true,
+    "selected_finite": true,
+    "selected_no_sample_clipping": true,
+    "selected_true_peak_safe": true,
+    "selected_spatial_integrity_ge_95": true,
+    "selected_transient_fidelity_ge_95": true,
+    "no_widening": true,
+    "no_mid_side": true,
+    "no_channel_independent_gain": true,
+    "no_respatialization": true,
+    "no_EQ_added": true
+  },
+  "selection_checks": {
+    "B_is_highest_master_score": true,
+    "B_is_PCM_eligible": true,
+    "A_remains_valid_alternative": true,
+    "C_refinement_rejected": true,
+    "C_rejected_on_multiple_fidelity_gates": true
+  },
+  "codec_observation": {
+    "status": "PENDING_TUK2_T009_DELIVERY_VALIDATION",
+    "AAC320_codec_score": 90.9195212154579,
+    "AAC320_spatial_integrity_score": 85.01264077721841,
+    "AAC320_transient_score": 99.97673704100355,
+    "AAC320_safety_pass": true,
+    "reason_not_mastering_gate": "AAC is a lossy delivery transform. Its fidelity must be evaluated in the delivery stage and must not invalidate a PCM mastering candidate that independently passes mastering fidelity and safety gates.",
+    "no_threshold_relaxation": true,
+    "prior_failed_T008_gate_preserved": {
+      "name": "selected_codec_spatial_signature",
+      "value": false,
+      "threshold_used": 90.0
+    }
+  },
+  "approved_PCM": {
+    "path": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\experiments\\TUK2_T008R1\\selected\\TUKANA02_APPROVED_MASTER_PCM24_48k.wav",
+    "sha256": "4f4d46a870faf29fa51867450a5a70cc82faad1b863d83bd40e89c6d27a3e271",
+    "bit_identical_to_T008_B": true,
+    "source_path": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\experiments\\TUK2_T008\\mastering\\B_OPTIMIZED_PCM24_48k.wav",
+    "source_sha256": "4f4d46a870faf29fa51867450a5a70cc82faad1b863d83bd40e89c6d27a3e271"
+  },
+  "next_stage": "TUK2-T009 delivery validation: WAV PCM24, FLAC, ALAC and AAC-LC 320 kb/s. Lossless formats require bit-perfect decode. AAC is evaluated independently as a lossy delivery representation.",
+  "epistemic_note": "Technical fidelity metrics are engineering proxies and do not establish universal human perceptual equivalence."
+}

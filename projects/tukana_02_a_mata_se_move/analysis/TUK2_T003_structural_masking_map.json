@@ -1,0 +1,2022 @@
+{
+  "schema": "LAISE TUK2 Structural & Masking Map v1.0",
+  "project": "tukana_02_a_mata_se_move",
+  "test_id": "TUK2-T003",
+  "status": "PASS",
+  "duration_seconds": 330.0,
+  "original_hashes_verified": true,
+  "structural_detection": {
+    "method": "2-second smoothed role-energy and active-density novelty",
+    "novelty_percentile_threshold": 88,
+    "minimum_boundary_spacing_seconds": 8.0,
+    "section_count": 12,
+    "boundaries_seconds": [
+      0.0,
+      8.3,
+      30.1,
+      116.8,
+      126.3,
+      135.1,
+      143.9,
+      165.1,
+      202.3,
+      239.2,
+      280.3,
+      324.1,
+      330.0
+    ]
+  },
+  "masking_model": {
+    "formula": "temporal overlap ? spectral overlap ? level similarity support ? envelope similarity support",
+    "epistemic_limit": "Engineering masking-risk proxy, not human intelligibility probability.",
+    "global_pairs": [
+      {
+        "role_a": "drums",
+        "role_b": "percussion",
+        "temporal_overlap": 0.9860958653494328,
+        "spectral_overlap": 0.9988687995860577,
+        "envelope_correlation": 0.7480033749279403,
+        "level_delta_db": 1.2252824764428851,
+        "masking_risk": 0.8588768879225668
+      },
+      {
+        "role_a": "lead_vocal",
+        "role_b": "backing_vocals",
+        "temporal_overlap": 0.9772455089820359,
+        "spectral_overlap": 0.9995923769217628,
+        "envelope_correlation": 0.4176272275186704,
+        "level_delta_db": 0.5580376185437217,
+        "masking_risk": 0.7618333490387034
+      },
+      {
+        "role_a": "bass",
+        "role_b": "synth",
+        "temporal_overlap": 0.9969176574196389,
+        "spectral_overlap": 0.9450937000659667,
+        "envelope_correlation": 0.4544554911639346,
+        "level_delta_db": 2.6380011922435997,
+        "masking_risk": 0.6945847520627675
+      },
+      {
+        "role_a": "bass",
+        "role_b": "percussion",
+        "temporal_overlap": 0.9722589167767504,
+        "spectral_overlap": 0.9843739576038402,
+        "envelope_correlation": -0.0570206237683961,
+        "level_delta_db": 0.5650858473340925,
+        "masking_risk": 0.6092161038577544
+      },
+      {
+        "role_a": "drums",
+        "role_b": "bass",
+        "temporal_overlap": 0.9669749009247027,
+        "spectral_overlap": 0.9906552561454531,
+        "envelope_correlation": -0.17072437030505452,
+        "level_delta_db": 0.9075446550771993,
+        "masking_risk": 0.6022507490958259
+      },
+      {
+        "role_a": "percussion",
+        "role_b": "synth",
+        "temporal_overlap": 0.9560243117626028,
+        "spectral_overlap": 0.9523184261841086,
+        "envelope_correlation": 0.07196564630560039,
+        "level_delta_db": 1.8949653839353786,
+        "masking_risk": 0.5743096979852039
+      },
+      {
+        "role_a": "drums",
+        "role_b": "synth",
+        "temporal_overlap": 0.9579216977680205,
+        "spectral_overlap": 0.9512649493052217,
+        "envelope_correlation": 0.06049955221350189,
+        "level_delta_db": 3.4600698682128694,
+        "masking_risk": 0.542659036228224
+      },
+      {
+        "role_a": "guitar",
+        "role_b": "keyboards",
+        "temporal_overlap": 0.9831460674157303,
+        "spectral_overlap": 0.9746181958791563,
+        "envelope_correlation": -0.031045660560683815,
+        "level_delta_db": 4.695919401519433,
+        "masking_risk": 0.5320616101738523
+      },
+      {
+        "role_a": "lead_vocal",
+        "role_b": "woodwinds",
+        "temporal_overlap": 0.8038095238095239,
+        "spectral_overlap": 0.9980104812041162,
+        "envelope_correlation": -0.10049408232880357,
+        "level_delta_db": 0.7503382588887249,
+        "masking_risk": 0.507213986773766
+      },
+      {
+        "role_a": "other",
+        "role_b": "woodwinds",
+        "temporal_overlap": 0.9552380952380952,
+        "spectral_overlap": 0.9102826875566667,
+        "envelope_correlation": -0.11736886829872953,
+        "level_delta_db": 4.91605187567184,
+        "masking_risk": 0.4797073768550208
+      },
+      {
+        "role_a": "synth",
+        "role_b": "woodwinds",
+        "temporal_overlap": 0.9923809523809524,
+        "spectral_overlap": 0.8561828626330665,
+        "envelope_correlation": -0.21594678870458645,
+        "level_delta_db": 4.308191043401845,
+        "masking_risk": 0.4773143120343343
+      },
+      {
+        "role_a": "keyboards",
+        "role_b": "other",
+        "temporal_overlap": 0.9787618617261635,
+        "spectral_overlap": 0.898061473608147,
+        "envelope_correlation": 0.12192812582733303,
+        "level_delta_db": 8.441920820379401,
+        "masking_risk": 0.4704511083642334
+      },
+      {
+        "role_a": "synth",
+        "role_b": "brass",
+        "temporal_overlap": 0.984375,
+        "spectral_overlap": 0.9710844481750468,
+        "envelope_correlation": -0.038615879726923395,
+        "level_delta_db": 11.776555201642147,
+        "masking_risk": 0.44653209997074145
+      },
+      {
+        "role_a": "other",
+        "role_b": "brass",
+        "temporal_overlap": 1.0,
+        "spectral_overlap": 0.9602819952254542,
+        "envelope_correlation": -0.10878576541555865,
+        "level_delta_db": 12.12701238130466,
+        "masking_risk": 0.44554378016771123
+      },
+      {
+        "role_a": "keyboards",
+        "role_b": "brass",
+        "temporal_overlap": 0.796875,
+        "spectral_overlap": 0.8231387095381768,
+        "envelope_correlation": 0.18005607621692188,
+        "level_delta_db": 1.5443052843458105,
+        "masking_risk": 0.44228251595737617
+      },
+      {
+        "role_a": "lead_vocal",
+        "role_b": "other",
+        "temporal_overlap": 0.9097618248909762,
+        "spectral_overlap": 0.9691070058522531,
+        "envelope_correlation": -0.11711859963902654,
+        "level_delta_db": 9.851720168088693,
+        "masking_risk": 0.42866185786182454
+      },
+      {
+        "role_a": "strings",
+        "role_b": "brass",
+        "temporal_overlap": 0.734375,
+        "spectral_overlap": 0.9082154817495969,
+        "envelope_correlation": 0.256369127006482,
+        "level_delta_db": 4.648936320957162,
+        "masking_risk": 0.4220675343251306
+      },
+      {
+        "role_a": "backing_vocals",
+        "role_b": "other",
+        "temporal_overlap": 0.906187624750499,
+        "spectral_overlap": 0.9549396958383376,
+        "envelope_correlation": 0.010281262632284896,
+        "level_delta_db": 10.295584070822215,
+        "masking_risk": 0.4189984091832742
+      },
+      {
+        "role_a": "guitar",
+        "role_b": "other",
+        "temporal_overlap": 0.9971910112359551,
+        "spectral_overlap": 0.8596333502531982,
+        "envelope_correlation": -0.1340582428679724,
+        "level_delta_db": 10.630429557721136,
+        "masking_risk": 0.409848255439594
+      },
+      {
+        "role_a": "keyboards",
+        "role_b": "strings",
+        "temporal_overlap": 0.943217665615142,
+        "spectral_overlap": 0.8092416774725586,
+        "envelope_correlation": 0.13951036298898797,
+        "level_delta_db": 8.748114809518015,
+        "masking_risk": 0.4091646273068451
+      },
+      {
+        "role_a": "lead_vocal",
+        "role_b": "keyboards",
+        "temporal_overlap": 0.9078174423859015,
+        "spectral_overlap": 0.9167576630657003,
+        "envelope_correlation": 0.2743934150707634,
+        "level_delta_db": 17.533625661018,
+        "masking_risk": 0.40630202702615675
+      },
+      {
+        "role_a": "drums",
+        "role_b": "brass",
+        "temporal_overlap": 1.0,
+        "spectral_overlap": 0.9475764424302142,
+        "envelope_correlation": -0.14605775428511525,
+        "level_delta_db": 21.51960886165041,
+        "masking_risk": 0.38488178664342504
+      },
+      {
+        "role_a": "strings",
+        "role_b": "synth",
+        "temporal_overlap": 1.0,
+        "spectral_overlap": 0.9052588063193993,
+        "envelope_correlation": 0.0916195794357574,
+        "level_delta_db": 23.434779431385337,
+        "masking_risk": 0.379012473437836
+      },
+      {
+        "role_a": "keyboards",
+        "role_b": "woodwinds",
+        "temporal_overlap": 0.7047619047619048,
+        "spectral_overlap": 0.9868569769490362,
+        "envelope_correlation": -0.2937190534954358,
+        "level_delta_db": 7.993135947379287,
+        "masking_risk": 0.35314697592514815
+      },
+      {
+        "role_a": "bass",
+        "role_b": "brass",
+        "temporal_overlap": 0.953125,
+        "spectral_overlap": 0.8423008301339662,
+        "envelope_correlation": 0.1504876448067501,
+        "level_delta_db": 25.090209433124333,
+        "masking_risk": 0.3416357442949183
+      },
+      {
+        "role_a": "backing_vocals",
+        "role_b": "woodwinds",
+        "temporal_overlap": 0.6180952380952381,
+        "spectral_overlap": 0.9985959709665344,
+        "envelope_correlation": -0.26520053892439227,
+        "level_delta_db": 4.902763643682054,
+        "masking_risk": 0.3406457867499901
+      },
+      {
+        "role_a": "guitar",
+        "role_b": "strings",
+        "temporal_overlap": 0.5688202247191011,
+        "spectral_overlap": 0.9377153124870847,
+        "envelope_correlation": -0.28341016474694347,
+        "level_delta_db": 0.5789241981789459,
+        "masking_risk": 0.33935627440015753
+      },
+      {
+        "role_a": "keyboards",
+        "role_b": "synth",
+        "temporal_overlap": 1.0,
+        "spectral_overlap": 0.6357818769471852,
+        "envelope_correlation": 0.4537009048477259,
+        "level_delta_db": 17.309497348845916,
+        "masking_risk": 0.3375095427340181
+      },
+      {
+        "role_a": "synth",
+        "role_b": "other",
+        "temporal_overlap": 0.9437978051213834,
+        "spectral_overlap": 0.6948014922503255,
+        "envelope_correlation": 0.007810197075457685,
+        "level_delta_db": 8.176608021969553,
+        "masking_risk": 0.33286392009426424
+      },
+      {
+        "role_a": "guitar",
+        "role_b": "synth",
+        "temporal_overlap": 1.0,
+        "spectral_overlap": 0.7272359146066477,
+        "envelope_correlation": 0.2061335848008281,
+        "level_delta_db": 20.373188143221434,
+        "masking_risk": 0.33211369551991815
+      },
+      {
+        "role_a": "percussion",
+        "role_b": "brass",
+        "temporal_overlap": 0.96875,
+        "spectral_overlap": 0.8600857257689754,
+        "envelope_correlation": -0.049135425880108545,
+        "level_delta_db": 27.02142630262668,
+        "masking_risk": 0.3235132510218254
+      },
+      {
+        "role_a": "lead_vocal",
+        "role_b": "guitar",
+        "temporal_overlap": 0.922752808988764,
+        "spectral_overlap": 0.833679682784943,
+        "envelope_correlation": -0.12000364003432011,
+        "level_delta_db": 20.006887825391306,
+        "masking_risk": 0.3174930542758299
+      },
+      {
+        "role_a": "backing_vocals",
+        "role_b": "keyboards",
+        "temporal_overlap": 0.8052417532760958,
+        "spectral_overlap": 0.9350381543142402,
+        "envelope_correlation": 0.012485906471645911,
+        "level_delta_db": 19.11881429069117,
+        "masking_risk": 0.3160497989415554
+      },
+      {
+        "role_a": "strings",
+        "role_b": "other",
+        "temporal_overlap": 0.9779179810725552,
+        "spectral_overlap": 0.7309617176628093,
+        "envelope_correlation": -0.0556289826593363,
+        "level_delta_db": 15.99318491025165,
+        "masking_risk": 0.3106938915475939
+      },
+      {
+        "role_a": "percussion",
+        "role_b": "other",
+        "temporal_overlap": 0.960672148730783,
+        "spectral_overlap": 0.5815811179772814,
+        "envelope_correlation": 0.20481257672334252,
+        "level_delta_db": 9.7702492876939,
+        "masking_risk": 0.3021463173168796
+      },
+      {
+        "role_a": "backing_vocals",
+        "role_b": "guitar",
+        "temporal_overlap": 0.8370786516853933,
+        "spectral_overlap": 0.8424134317522206,
+        "envelope_correlation": 0.013075957461024947,
+        "level_delta_db": 21.150359710347022,
+        "masking_risk": 0.28951766935632384
+      },
+      {
+        "role_a": "percussion",
+        "role_b": "strings",
+        "temporal_overlap": 0.9779179810725552,
+        "spectral_overlap": 0.6757215727215911,
+        "envelope_correlation": 0.22218822952309664,
+        "level_delta_db": 26.331624952874193,
+        "masking_risk": 0.28861511222593195
+      },
+      {
+        "role_a": "lead_vocal",
+        "role_b": "synth",
+        "temporal_overlap": 0.9117745722911774,
+        "spectral_overlap": 0.5267915508102006,
+        "envelope_correlation": -0.08427308794154326,
+        "level_delta_db": 2.9018976884374084,
+        "masking_risk": 0.2820262401168524
+      },
+      {
+        "role_a": "backing_vocals",
+        "role_b": "synth",
+        "temporal_overlap": 0.925748502994012,
+        "spectral_overlap": 0.5158956097189037,
+        "envelope_correlation": 0.0057396475572068706,
+        "level_delta_db": 3.7139740571701054,
+        "masking_risk": 0.27409307740477085
+      },
+      {
+        "role_a": "drums",
+        "role_b": "strings",
+        "temporal_overlap": 0.9684542586750788,
+        "spectral_overlap": 0.6875540274021805,
+        "envelope_correlation": 0.06645622799695577,
+        "level_delta_db": 26.885565157540995,
+        "masking_risk": 0.2680313320341635
+      },
+      {
+        "role_a": "drums",
+        "role_b": "other",
+        "temporal_overlap": 0.9659714599341384,
+        "spectral_overlap": 0.5415499051941056,
+        "envelope_correlation": 0.13320693688258406,
+        "level_delta_db": 11.159145852827493,
+        "masking_risk": 0.26513687016761683
+      },
+      {
+        "role_a": "bass",
+        "role_b": "strings",
+        "temporal_overlap": 0.8780231335436383,
+        "spectral_overlap": 0.6230313176933675,
+        "envelope_correlation": 0.17649131585721142,
+        "level_delta_db": 27.357599041930378,
+        "masking_risk": 0.23207588062149992
+      },
+      {
+        "role_a": "lead_vocal",
+        "role_b": "percussion",
+        "temporal_overlap": 0.9109760457633178,
+        "spectral_overlap": 0.39317016897096807,
+        "envelope_correlation": -0.16102099773353476,
+        "level_delta_db": 1.2685431848278732,
+        "masking_risk": 0.2223000335869212
+      },
+      {
+        "role_a": "backing_vocals",
+        "role_b": "percussion",
+        "temporal_overlap": 0.9037924151696607,
+        "spectral_overlap": 0.36623478540714133,
+        "envelope_correlation": 0.0026981268864853976,
+        "level_delta_db": 1.0626412709449333,
+        "masking_risk": 0.20724591956410224
+      },
+      {
+        "role_a": "lead_vocal",
+        "role_b": "drums",
+        "temporal_overlap": 0.9195023783388218,
+        "spectral_overlap": 0.3376366604717621,
+        "envelope_correlation": -0.08363235363295475,
+        "level_delta_db": 0.254174077534266,
+        "masking_risk": 0.19989430165896735
+      },
+      {
+        "role_a": "lead_vocal",
+        "role_b": "strings",
+        "temporal_overlap": 0.8916929547844374,
+        "spectral_overlap": 0.5475548556151154,
+        "envelope_correlation": -0.1485092151915579,
+        "level_delta_db": 25.13787931971249,
+        "masking_risk": 0.1921288450644303
+      },
+      {
+        "role_a": "guitar",
+        "role_b": "woodwinds",
+        "temporal_overlap": 0.35674157303370785,
+        "spectral_overlap": 0.9982761528894815,
+        "envelope_correlation": -0.23573842941060108,
+        "level_delta_db": 5.745890125316983,
+        "masking_risk": 0.1918479250861237
+      },
+      {
+        "role_a": "strings",
+        "role_b": "woodwinds",
+        "temporal_overlap": 0.3943217665615142,
+        "spectral_overlap": 0.9184770428782987,
+        "envelope_correlation": -0.16335752664158487,
+        "level_delta_db": 7.101367888338885,
+        "masking_risk": 0.1880966631358084
+      },
+      {
+        "role_a": "backing_vocals",
+        "role_b": "strings",
+        "temporal_overlap": 0.85068349106204,
+        "spectral_overlap": 0.5626756662015988,
+        "envelope_correlation": -0.12930236909941978,
+        "level_delta_db": 28.625623507471616,
+        "masking_risk": 0.18400768494707825
+      },
+      {
+        "role_a": "backing_vocals",
+        "role_b": "drums",
+        "temporal_overlap": 0.8998003992015968,
+        "spectral_overlap": 0.3151009343135911,
+        "envelope_correlation": 0.018656550788890648,
+        "level_delta_db": 0.5691871886024558,
+        "masking_risk": 0.1822641339014198
+      },
+      {
+        "role_a": "bass",
+        "role_b": "other",
+        "temporal_overlap": 0.9669749009247027,
+        "spectral_overlap": 0.3314771878131457,
+        "envelope_correlation": 0.13112839145597321,
+        "level_delta_db": 11.352317616253295,
+        "masking_risk": 0.16165404798326943
+      },
+      {
+        "role_a": "brass",
+        "role_b": "woodwinds",
+        "temporal_overlap": 0.25,
+        "spectral_overlap": 0.9367917078682882,
+        "envelope_correlation": 0.3239247605118303,
+        "level_delta_db": 3.9702000005684326,
+        "masking_risk": 0.15611845467318888
+      },
+      {
+        "role_a": "lead_vocal",
+        "role_b": "brass",
+        "temporal_overlap": 0.609375,
+        "spectral_overlap": 0.6538910822598912,
+        "envelope_correlation": -0.2420228771198971,
+        "level_delta_db": 27.61095381973164,
+        "masking_risk": 0.1541257984946454
+      },
+      {
+        "role_a": "keyboards",
+        "role_b": "percussion",
+        "temporal_overlap": 0.9593312245820154,
+        "spectral_overlap": 0.3740486205394354,
+        "envelope_correlation": 0.015506252483340453,
+        "level_delta_db": 18.75349291847205,
+        "masking_risk": 0.15153315056679204
+      },
+      {
+        "role_a": "percussion",
+        "role_b": "woodwinds",
+        "temporal_overlap": 0.8276190476190476,
+        "spectral_overlap": 0.3415774575054578,
+        "envelope_correlation": -0.2216517310784063,
+        "level_delta_db": 6.593605249353452,
+        "masking_risk": 0.1487964155760682
+      },
+      {
+        "role_a": "drums",
+        "role_b": "guitar",
+        "temporal_overlap": 0.9775280898876404,
+        "spectral_overlap": 0.35319153459824154,
+        "envelope_correlation": 0.021598738473085157,
+        "level_delta_db": 22.500355856273266,
+        "masking_risk": 0.1405305255007842
+      },
+      {
+        "role_a": "guitar",
+        "role_b": "percussion",
+        "temporal_overlap": 0.9845505617977528,
+        "spectral_overlap": 0.34445604761964543,
+        "envelope_correlation": -0.11679143309635673,
+        "level_delta_db": 20.96093870907555,
+        "masking_risk": 0.13853456962276411
+      },
+      {
+        "role_a": "drums",
+        "role_b": "keyboards",
+        "temporal_overlap": 0.9435155896972436,
+        "spectral_overlap": 0.3483917346934484,
+        "envelope_correlation": 0.042534243541891184,
+        "level_delta_db": 20.22861610432031,
+        "masking_risk": 0.1384318507619528
+      },
+      {
+        "role_a": "backing_vocals",
+        "role_b": "brass",
+        "temporal_overlap": 0.484375,
+        "spectral_overlap": 0.6880316370652957,
+        "envelope_correlation": -0.1503726805133794,
+        "level_delta_db": 33.92875640299212,
+        "masking_risk": 0.12490992983310803
+      },
+      {
+        "role_a": "drums",
+        "role_b": "woodwinds",
+        "temporal_overlap": 0.78,
+        "spectral_overlap": 0.25976690490652754,
+        "envelope_correlation": -0.22509054874865747,
+        "level_delta_db": 8.787204884286965,
+        "masking_risk": 0.10093205664322982
+      },
+      {
+        "role_a": "bass",
+        "role_b": "keyboards",
+        "temporal_overlap": 0.8865793041120651,
+        "spectral_overlap": 0.22789823891335745,
+        "envelope_correlation": 0.1491698357132365,
+        "level_delta_db": 19.190215524900083,
+        "masking_risk": 0.09093564642694586
+      },
+      {
+        "role_a": "bass",
+        "role_b": "guitar",
+        "temporal_overlap": 0.9367977528089888,
+        "spectral_overlap": 0.20552182765918275,
+        "envelope_correlation": 0.07587140421065769,
+        "level_delta_db": 20.41255813629683,
+        "masking_risk": 0.08233936750621444
+      },
+      {
+        "role_a": "guitar",
+        "role_b": "brass",
+        "temporal_overlap": 0.140625,
+        "spectral_overlap": 0.7225761216623275,
+        "envelope_correlation": -0.27871477753691043,
+        "level_delta_db": 4.435798787246696,
+        "masking_risk": 0.05686329550892192
+      },
+      {
+        "role_a": "lead_vocal",
+        "role_b": "bass",
+        "temporal_overlap": 0.9251431087626596,
+        "spectral_overlap": 0.08489575869789323,
+        "envelope_correlation": -0.05701154266703708,
+        "level_delta_db": 1.3383948640852488,
+        "masking_risk": 0.0486269294102669
+      },
+      {
+        "role_a": "backing_vocals",
+        "role_b": "bass",
+        "temporal_overlap": 0.8168207837956847,
+        "spectral_overlap": 0.08069125003436214,
+        "envelope_correlation": -0.13665149552726438,
+        "level_delta_db": 0.3274483433479567,
+        "masking_risk": 0.0423227347075936
+      },
+      {
+        "role_a": "bass",
+        "role_b": "woodwinds",
+        "temporal_overlap": 0.6342857142857142,
+        "spectral_overlap": 0.08064248649892362,
+        "envelope_correlation": -0.22899076838274743,
+        "level_delta_db": 13.932445452514976,
+        "masking_risk": 0.02297161692048755
+      }
+    ]
+  },
+  "protection_policy": {
+    "lead_vocal": {
+      "policy": "PROTECTED_MOBILE_ANCHOR",
+      "reason": "Primary intelligibility reference. Allow adaptive low/moderate motion, preserve audibility."
+    },
+    "bass": {
+      "policy": "PROTECTED_LOW_ANCHOR",
+      "reason": "Low-frequency anchor; highly correlated/narrow source."
+    },
+    "drums": {
+      "policy": "PROTECTED_RHYTHMIC_ANCHOR",
+      "reason": "Preserve attack and rhythmic reference; limited movement."
+    },
+    "keyboards": {
+      "policy": "WIDE_SOURCE_CAUTION",
+      "reason": "Strong side dominance / negative L-R correlation measured."
+    },
+    "other": {
+      "policy": "WIDE_SOURCE_CAUTION",
+      "reason": "Wide and partially anticorrelated source; content identity not assumed."
+    }
+  },
+  "sections": [
+    {
+      "section_id": "tuk2_section_01",
+      "start_seconds": 0.0,
+      "end_seconds": 8.3,
+      "duration_seconds": 8.3,
+      "novelty_at_start": 0.0,
+      "mean_active_stem_count": 4.0,
+      "max_active_stem_count": 5,
+      "active_roles": [
+        "lead_vocal",
+        "backing_vocals",
+        "synth",
+        "other",
+        "woodwinds"
+      ],
+      "dominant_roles": [
+        "woodwinds",
+        "lead_vocal",
+        "synth",
+        "other",
+        "brass"
+      ],
+      "activity_fraction_by_role": {
+        "lead_vocal": 0.9759036144578314,
+        "backing_vocals": 0.26506024096385544,
+        "drums": 0.0,
+        "bass": 0.0,
+        "guitar": 0.0,
+        "keyboards": 0.0,
+        "percussion": 0.024096385542168676,
+        "strings": 0.0,
+        "synth": 0.9759036144578314,
+        "other": 0.7831325301204819,
+        "brass": 0.0,
+        "woodwinds": 0.9759036144578314
+      },
+      "top_masking_pairs": [
+        {
+          "role_a": "lead_vocal",
+          "role_b": "woodwinds",
+          "simultaneous_fraction": 0.9759036144578314,
+          "global_masking_risk": 0.507213986773766,
+          "local_priority": 0.49499196299608483
+        },
+        {
+          "role_a": "synth",
+          "role_b": "woodwinds",
+          "simultaneous_fraction": 0.9759036144578314,
+          "global_masking_risk": 0.4773143120343343,
+          "local_priority": 0.46581276234675995
+        },
+        {
+          "role_a": "other",
+          "role_b": "woodwinds",
+          "simultaneous_fraction": 0.7831325301204819,
+          "global_masking_risk": 0.4797073768550208,
+          "local_priority": 0.37567445175393194
+        },
+        {
+          "role_a": "lead_vocal",
+          "role_b": "other",
+          "simultaneous_fraction": 0.7831325301204819,
+          "global_masking_risk": 0.42866185786182454,
+          "local_priority": 0.33569904531347705
+        },
+        {
+          "role_a": "lead_vocal",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.9759036144578314,
+          "global_masking_risk": 0.2820262401168524,
+          "local_priority": 0.2752304271019885
+        },
+        {
+          "role_a": "synth",
+          "role_b": "other",
+          "simultaneous_fraction": 0.7831325301204819,
+          "global_masking_risk": 0.33286392009426424,
+          "local_priority": 0.26067656392924304
+        }
+      ],
+      "expressive_motion_candidates": [
+        {
+          "role": "percussion",
+          "score": 0.9100949251551662,
+          "active_fraction": 0.024096385542168676
+        },
+        {
+          "role": "backing_vocals",
+          "score": 0.7555896312522818,
+          "active_fraction": 0.26506024096385544
+        },
+        {
+          "role": "synth",
+          "score": 0.3062687112084702,
+          "active_fraction": 0.9759036144578314
+        },
+        {
+          "role": "woodwinds",
+          "score": 0.2341474990872581,
+          "active_fraction": 0.9759036144578314
+        },
+        {
+          "role": "lead_vocal",
+          "score": -0.33736765242789346,
+          "active_fraction": 0.9759036144578314
+        }
+      ],
+      "movement_budget_large_motion_objects": 2
+    },
+    {
+      "section_id": "tuk2_section_02",
+      "start_seconds": 8.3,
+      "end_seconds": 30.1,
+      "duration_seconds": 21.8,
+      "novelty_at_start": 0.4980582439176308,
+      "mean_active_stem_count": 4.701834862385321,
+      "max_active_stem_count": 10,
+      "active_roles": [
+        "lead_vocal",
+        "backing_vocals",
+        "drums",
+        "bass",
+        "keyboards",
+        "percussion",
+        "strings",
+        "synth",
+        "other",
+        "woodwinds"
+      ],
+      "dominant_roles": [
+        "other",
+        "backing_vocals",
+        "lead_vocal",
+        "woodwinds",
+        "percussion"
+      ],
+      "activity_fraction_by_role": {
+        "lead_vocal": 0.9678899082568807,
+        "backing_vocals": 0.5688073394495413,
+        "drums": 0.3348623853211009,
+        "bass": 0.11467889908256881,
+        "guitar": 0.0,
+        "keyboards": 0.41284403669724773,
+        "percussion": 0.4908256880733945,
+        "strings": 0.06422018348623854,
+        "synth": 0.7889908256880734,
+        "other": 0.7201834862385321,
+        "brass": 0.0,
+        "woodwinds": 0.23853211009174313
+      },
+      "top_masking_pairs": [
+        {
+          "role_a": "lead_vocal",
+          "role_b": "backing_vocals",
+          "simultaneous_fraction": 0.5596330275229358,
+          "global_masking_risk": 0.7618333490387034,
+          "local_priority": 0.426347103590467
+        },
+        {
+          "role_a": "lead_vocal",
+          "role_b": "other",
+          "simultaneous_fraction": 0.6880733944954128,
+          "global_masking_risk": 0.42866185786182454,
+          "local_priority": 0.29495081962969577
+        },
+        {
+          "role_a": "drums",
+          "role_b": "percussion",
+          "simultaneous_fraction": 0.3348623853211009,
+          "global_masking_risk": 0.8588768879225668,
+          "local_priority": 0.28760556338691456
+        },
+        {
+          "role_a": "percussion",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.41284403669724773,
+          "global_masking_risk": 0.5743096979852039,
+          "local_priority": 0.23710033403058878
+        },
+        {
+          "role_a": "lead_vocal",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.7568807339449541,
+          "global_masking_risk": 0.2820262401168524,
+          "local_priority": 0.21346022761137912
+        },
+        {
+          "role_a": "drums",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.3256880733944954,
+          "global_masking_risk": 0.542659036228224,
+          "local_priority": 0.17673757601928394
+        }
+      ],
+      "expressive_motion_candidates": [
+        {
+          "role": "strings",
+          "score": 0.8564386989157631,
+          "active_fraction": 0.06422018348623854
+        },
+        {
+          "role": "woodwinds",
+          "score": 0.7134389769252154,
+          "active_fraction": 0.23853211009174313
+        },
+        {
+          "role": "percussion",
+          "score": 0.6067208785098692,
+          "active_fraction": 0.4908256880733945
+        },
+        {
+          "role": "backing_vocals",
+          "score": 0.558154017236586,
+          "active_fraction": 0.5688073394495413
+        },
+        {
+          "role": "synth",
+          "score": 0.42776202390881285,
+          "active_fraction": 0.7889908256880734
+        }
+      ],
+      "movement_budget_large_motion_objects": 2
+    },
+    {
+      "section_id": "tuk2_section_03",
+      "start_seconds": 30.1,
+      "end_seconds": 116.8,
+      "duration_seconds": 86.69999999999999,
+      "novelty_at_start": 0.44715960803994637,
+      "mean_active_stem_count": 6.767012687427912,
+      "max_active_stem_count": 10,
+      "active_roles": [
+        "lead_vocal",
+        "backing_vocals",
+        "drums",
+        "bass",
+        "keyboards",
+        "percussion",
+        "strings",
+        "synth",
+        "other",
+        "woodwinds"
+      ],
+      "dominant_roles": [
+        "lead_vocal",
+        "bass",
+        "drums",
+        "synth",
+        "other"
+      ],
+      "activity_fraction_by_role": {
+        "lead_vocal": 0.895040369088812,
+        "backing_vocals": 0.649365628604383,
+        "drums": 0.8200692041522492,
+        "bass": 0.7716262975778547,
+        "guitar": 0.04152249134948097,
+        "keyboards": 0.6747404844290658,
+        "percussion": 0.8477508650519031,
+        "strings": 0.1580161476355248,
+        "synth": 0.889273356401384,
+        "other": 0.922722029988466,
+        "brass": 0.0,
+        "woodwinds": 0.09688581314878893
+      },
+      "top_masking_pairs": [
+        {
+          "role_a": "drums",
+          "role_b": "percussion",
+          "simultaneous_fraction": 0.7923875432525952,
+          "global_masking_risk": 0.8588768879225668,
+          "local_priority": 0.6805633471773972
+        },
+        {
+          "role_a": "bass",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.7693194925028836,
+          "global_masking_risk": 0.6945847520627675,
+          "local_priority": 0.5343575889571694
+        },
+        {
+          "role_a": "lead_vocal",
+          "role_b": "backing_vocals",
+          "simultaneous_fraction": 0.649365628604383,
+          "global_masking_risk": 0.7618333490387034,
+          "local_priority": 0.4947083915902999
+        },
+        {
+          "role_a": "percussion",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.7531718569780853,
+          "global_masking_risk": 0.5743096979852039,
+          "local_priority": 0.4325539017120394
+        },
+        {
+          "role_a": "bass",
+          "role_b": "percussion",
+          "simultaneous_fraction": 0.7047289504036909,
+          "global_masking_risk": 0.6092161038577544,
+          "local_priority": 0.42933222544070115
+        },
+        {
+          "role_a": "drums",
+          "role_b": "bass",
+          "simultaneous_fraction": 0.6908881199538639,
+          "global_masking_risk": 0.6022507490958259,
+          "local_priority": 0.4160878877836213
+        }
+      ],
+      "expressive_motion_candidates": [
+        {
+          "role": "woodwinds",
+          "score": 0.8055090699381356,
+          "active_fraction": 0.09688581314878893
+        },
+        {
+          "role": "strings",
+          "score": 0.7954713222187271,
+          "active_fraction": 0.1580161476355248
+        },
+        {
+          "role": "guitar",
+          "score": 0.527555835168292,
+          "active_fraction": 0.04152249134948097
+        },
+        {
+          "role": "backing_vocals",
+          "score": 0.505791129285939,
+          "active_fraction": 0.649365628604383
+        },
+        {
+          "role": "percussion",
+          "score": 0.3747195134738387,
+          "active_fraction": 0.8477508650519031
+        }
+      ],
+      "movement_budget_large_motion_objects": 1
+    },
+    {
+      "section_id": "tuk2_section_04",
+      "start_seconds": 116.8,
+      "end_seconds": 126.3,
+      "duration_seconds": 9.5,
+      "novelty_at_start": 0.5638184111535929,
+      "mean_active_stem_count": 8.873684210526315,
+      "max_active_stem_count": 11,
+      "active_roles": [
+        "lead_vocal",
+        "backing_vocals",
+        "drums",
+        "bass",
+        "guitar",
+        "keyboards",
+        "percussion",
+        "strings",
+        "synth",
+        "other",
+        "woodwinds"
+      ],
+      "dominant_roles": [
+        "guitar",
+        "synth",
+        "bass",
+        "keyboards",
+        "drums"
+      ],
+      "activity_fraction_by_role": {
+        "lead_vocal": 0.6947368421052632,
+        "backing_vocals": 0.24210526315789474,
+        "drums": 1.0,
+        "bass": 1.0,
+        "guitar": 0.9157894736842105,
+        "keyboards": 1.0,
+        "percussion": 1.0,
+        "strings": 0.07368421052631578,
+        "synth": 1.0,
+        "other": 1.0,
+        "brass": 0.010526315789473684,
+        "woodwinds": 0.9368421052631579
+      },
+      "top_masking_pairs": [
+        {
+          "role_a": "drums",
+          "role_b": "percussion",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.8588768879225668,
+          "local_priority": 0.8588768879225668
+        },
+        {
+          "role_a": "bass",
+          "role_b": "synth",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.6945847520627675,
+          "local_priority": 0.6945847520627675
+        },
+        {
+          "role_a": "bass",
+          "role_b": "percussion",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.6092161038577544,
+          "local_priority": 0.6092161038577544
+        },
+        {
+          "role_a": "drums",
+          "role_b": "bass",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.6022507490958259,
+          "local_priority": 0.6022507490958259
+        },
+        {
+          "role_a": "percussion",
+          "role_b": "synth",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.5743096979852039,
+          "local_priority": 0.5743096979852039
+        },
+        {
+          "role_a": "drums",
+          "role_b": "synth",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.542659036228224,
+          "local_priority": 0.542659036228224
+        }
+      ],
+      "expressive_motion_candidates": [
+        {
+          "role": "strings",
+          "score": 0.8502870813397129,
+          "active_fraction": 0.07368421052631578
+        },
+        {
+          "role": "backing_vocals",
+          "score": 0.7705103668261564,
+          "active_fraction": 0.24210526315789474
+        },
+        {
+          "role": "synth",
+          "score": 0.2906060606060606,
+          "active_fraction": 1.0
+        },
+        {
+          "role": "percussion",
+          "score": 0.2757575757575757,
+          "active_fraction": 1.0
+        },
+        {
+          "role": "woodwinds",
+          "score": 0.25953748006379584,
+          "active_fraction": 0.9368421052631579
+        }
+      ],
+      "movement_budget_large_motion_objects": 1
+    },
+    {
+      "section_id": "tuk2_section_05",
+      "start_seconds": 126.3,
+      "end_seconds": 135.1,
+      "duration_seconds": 8.799999999999997,
+      "novelty_at_start": 0.5049196518963214,
+      "mean_active_stem_count": 6.75,
+      "max_active_stem_count": 11,
+      "active_roles": [
+        "lead_vocal",
+        "backing_vocals",
+        "drums",
+        "bass",
+        "keyboards",
+        "percussion",
+        "strings",
+        "synth",
+        "other",
+        "brass",
+        "woodwinds"
+      ],
+      "dominant_roles": [
+        "lead_vocal",
+        "backing_vocals",
+        "other",
+        "brass",
+        "drums"
+      ],
+      "activity_fraction_by_role": {
+        "lead_vocal": 1.0,
+        "backing_vocals": 1.0,
+        "drums": 1.0,
+        "bass": 0.18181818181818182,
+        "guitar": 0.0,
+        "keyboards": 0.125,
+        "percussion": 0.9545454545454546,
+        "strings": 0.14772727272727273,
+        "synth": 1.0,
+        "other": 1.0,
+        "brass": 0.10227272727272728,
+        "woodwinds": 0.23863636363636365
+      },
+      "top_masking_pairs": [
+        {
+          "role_a": "drums",
+          "role_b": "percussion",
+          "simultaneous_fraction": 0.9545454545454546,
+          "global_masking_risk": 0.8588768879225668,
+          "local_priority": 0.819837029380632
+        },
+        {
+          "role_a": "lead_vocal",
+          "role_b": "backing_vocals",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.7618333490387034,
+          "local_priority": 0.7618333490387034
+        },
+        {
+          "role_a": "percussion",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.9545454545454546,
+          "global_masking_risk": 0.5743096979852039,
+          "local_priority": 0.5482047117131492
+        },
+        {
+          "role_a": "drums",
+          "role_b": "synth",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.542659036228224,
+          "local_priority": 0.542659036228224
+        },
+        {
+          "role_a": "lead_vocal",
+          "role_b": "other",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.42866185786182454,
+          "local_priority": 0.42866185786182454
+        },
+        {
+          "role_a": "backing_vocals",
+          "role_b": "other",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.4189984091832742,
+          "local_priority": 0.4189984091832742
+        }
+      ],
+      "expressive_motion_candidates": [
+        {
+          "role": "strings",
+          "score": 0.8021590909090909,
+          "active_fraction": 0.14772727272727273
+        },
+        {
+          "role": "woodwinds",
+          "score": 0.7133712121212121,
+          "active_fraction": 0.23863636363636365
+        },
+        {
+          "role": "brass",
+          "score": 0.6726136363636364,
+          "active_fraction": 0.10227272727272728
+        },
+        {
+          "role": "percussion",
+          "score": 0.30530303030303024,
+          "active_fraction": 0.9545454545454546
+        },
+        {
+          "role": "synth",
+          "score": 0.2906060606060606,
+          "active_fraction": 1.0
+        }
+      ],
+      "movement_budget_large_motion_objects": 1
+    },
+    {
+      "section_id": "tuk2_section_06",
+      "start_seconds": 135.1,
+      "end_seconds": 143.9,
+      "duration_seconds": 8.800000000000011,
+      "novelty_at_start": 0.5246780469312348,
+      "mean_active_stem_count": 8.568181818181818,
+      "max_active_stem_count": 10,
+      "active_roles": [
+        "lead_vocal",
+        "backing_vocals",
+        "drums",
+        "bass",
+        "guitar",
+        "keyboards",
+        "percussion",
+        "synth",
+        "other",
+        "woodwinds"
+      ],
+      "dominant_roles": [
+        "woodwinds",
+        "other",
+        "synth",
+        "drums",
+        "bass"
+      ],
+      "activity_fraction_by_role": {
+        "lead_vocal": 1.0,
+        "backing_vocals": 0.5340909090909091,
+        "drums": 1.0,
+        "bass": 1.0,
+        "guitar": 0.13636363636363635,
+        "keyboards": 0.9545454545454546,
+        "percussion": 1.0,
+        "strings": 0.0,
+        "synth": 1.0,
+        "other": 1.0,
+        "brass": 0.0,
+        "woodwinds": 0.9431818181818182
+      },
+      "top_masking_pairs": [
+        {
+          "role_a": "drums",
+          "role_b": "percussion",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.8588768879225668,
+          "local_priority": 0.8588768879225668
+        },
+        {
+          "role_a": "bass",
+          "role_b": "synth",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.6945847520627675,
+          "local_priority": 0.6945847520627675
+        },
+        {
+          "role_a": "bass",
+          "role_b": "percussion",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.6092161038577544,
+          "local_priority": 0.6092161038577544
+        },
+        {
+          "role_a": "drums",
+          "role_b": "bass",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.6022507490958259,
+          "local_priority": 0.6022507490958259
+        },
+        {
+          "role_a": "percussion",
+          "role_b": "synth",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.5743096979852039,
+          "local_priority": 0.5743096979852039
+        },
+        {
+          "role_a": "drums",
+          "role_b": "synth",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.542659036228224,
+          "local_priority": 0.542659036228224
+        }
+      ],
+      "expressive_motion_candidates": [
+        {
+          "role": "backing_vocals",
+          "score": 0.5807196969696969,
+          "active_fraction": 0.5340909090909091
+        },
+        {
+          "role": "guitar",
+          "score": 0.46590909090909094,
+          "active_fraction": 0.13636363636363635
+        },
+        {
+          "role": "synth",
+          "score": 0.2906060606060606,
+          "active_fraction": 1.0
+        },
+        {
+          "role": "percussion",
+          "score": 0.2757575757575757,
+          "active_fraction": 1.0
+        },
+        {
+          "role": "woodwinds",
+          "score": 0.2554166666666666,
+          "active_fraction": 0.9431818181818182
+        }
+      ],
+      "movement_budget_large_motion_objects": 1
+    },
+    {
+      "section_id": "tuk2_section_07",
+      "start_seconds": 143.9,
+      "end_seconds": 165.1,
+      "duration_seconds": 21.19999999999999,
+      "novelty_at_start": 0.4929694458496947,
+      "mean_active_stem_count": 6.372641509433962,
+      "max_active_stem_count": 10,
+      "active_roles": [
+        "lead_vocal",
+        "backing_vocals",
+        "drums",
+        "bass",
+        "keyboards",
+        "percussion",
+        "strings",
+        "synth",
+        "other",
+        "brass"
+      ],
+      "dominant_roles": [
+        "lead_vocal",
+        "backing_vocals",
+        "other",
+        "brass",
+        "drums"
+      ],
+      "activity_fraction_by_role": {
+        "lead_vocal": 1.0,
+        "backing_vocals": 1.0,
+        "drums": 0.8113207547169812,
+        "bass": 0.5330188679245284,
+        "guitar": 0.0,
+        "keyboards": 0.33962264150943394,
+        "percussion": 0.8160377358490566,
+        "strings": 0.28773584905660377,
+        "synth": 0.7358490566037735,
+        "other": 0.7877358490566038,
+        "brass": 0.06132075471698113,
+        "woodwinds": 0.0
+      },
+      "top_masking_pairs": [
+        {
+          "role_a": "lead_vocal",
+          "role_b": "backing_vocals",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.7618333490387034,
+          "local_priority": 0.7618333490387034
+        },
+        {
+          "role_a": "drums",
+          "role_b": "percussion",
+          "simultaneous_fraction": 0.8018867924528302,
+          "global_masking_risk": 0.8588768879225668,
+          "local_priority": 0.6887220327680961
+        },
+        {
+          "role_a": "percussion",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.7311320754716981,
+          "global_masking_risk": 0.5743096979852039,
+          "local_priority": 0.4198962414514463
+        },
+        {
+          "role_a": "drums",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.7358490566037735,
+          "global_masking_risk": 0.542659036228224,
+          "local_priority": 0.3993151398660516
+        },
+        {
+          "role_a": "bass",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.5235849056603774,
+          "global_masking_risk": 0.6945847520627675,
+          "local_priority": 0.36367409188192074
+        },
+        {
+          "role_a": "lead_vocal",
+          "role_b": "other",
+          "simultaneous_fraction": 0.7877358490566038,
+          "global_masking_risk": 0.42866185786182454,
+          "local_priority": 0.3376723125609655
+        }
+      ],
+      "expressive_motion_candidates": [
+        {
+          "role": "strings",
+          "score": 0.7111535162950258,
+          "active_fraction": 0.28773584905660377
+        },
+        {
+          "role": "brass",
+          "score": 0.6992324185248714,
+          "active_fraction": 0.06132075471698113
+        },
+        {
+          "role": "synth",
+          "score": 0.4623041738136078,
+          "active_fraction": 0.7358490566037735
+        },
+        {
+          "role": "percussion",
+          "score": 0.3953330474556889,
+          "active_fraction": 0.8160377358490566
+        },
+        {
+          "role": "backing_vocals",
+          "score": 0.27787878787878784,
+          "active_fraction": 1.0
+        }
+      ],
+      "movement_budget_large_motion_objects": 1
+    },
+    {
+      "section_id": "tuk2_section_08",
+      "start_seconds": 165.1,
+      "end_seconds": 202.3,
+      "duration_seconds": 37.20000000000002,
+      "novelty_at_start": 0.44851827073358386,
+      "mean_active_stem_count": 9.50268817204301,
+      "max_active_stem_count": 11,
+      "active_roles": [
+        "lead_vocal",
+        "backing_vocals",
+        "drums",
+        "bass",
+        "guitar",
+        "keyboards",
+        "percussion",
+        "strings",
+        "synth",
+        "other",
+        "woodwinds"
+      ],
+      "dominant_roles": [
+        "keyboards",
+        "other",
+        "synth",
+        "backing_vocals",
+        "drums"
+      ],
+      "activity_fraction_by_role": {
+        "lead_vocal": 1.0,
+        "backing_vocals": 1.0,
+        "drums": 1.0,
+        "bass": 1.0,
+        "guitar": 0.5268817204301075,
+        "keyboards": 1.0,
+        "percussion": 1.0,
+        "strings": 0.510752688172043,
+        "synth": 1.0,
+        "other": 1.0,
+        "brass": 0.0,
+        "woodwinds": 0.4650537634408602
+      },
+      "top_masking_pairs": [
+        {
+          "role_a": "drums",
+          "role_b": "percussion",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.8588768879225668,
+          "local_priority": 0.8588768879225668
+        },
+        {
+          "role_a": "lead_vocal",
+          "role_b": "backing_vocals",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.7618333490387034,
+          "local_priority": 0.7618333490387034
+        },
+        {
+          "role_a": "bass",
+          "role_b": "synth",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.6945847520627675,
+          "local_priority": 0.6945847520627675
+        },
+        {
+          "role_a": "bass",
+          "role_b": "percussion",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.6092161038577544,
+          "local_priority": 0.6092161038577544
+        },
+        {
+          "role_a": "drums",
+          "role_b": "bass",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.6022507490958259,
+          "local_priority": 0.6022507490958259
+        },
+        {
+          "role_a": "percussion",
+          "role_b": "synth",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.5743096979852039,
+          "local_priority": 0.5743096979852039
+        }
+      ],
+      "expressive_motion_candidates": [
+        {
+          "role": "woodwinds",
+          "score": 0.5661999022482893,
+          "active_fraction": 0.4650537634408602
+        },
+        {
+          "role": "strings",
+          "score": 0.5661925708699902,
+          "active_fraction": 0.510752688172043
+        },
+        {
+          "role": "synth",
+          "score": 0.2906060606060606,
+          "active_fraction": 1.0
+        },
+        {
+          "role": "backing_vocals",
+          "score": 0.27787878787878784,
+          "active_fraction": 1.0
+        },
+        {
+          "role": "percussion",
+          "score": 0.2757575757575757,
+          "active_fraction": 1.0
+        }
+      ],
+      "movement_budget_large_motion_objects": 1
+    },
+    {
+      "section_id": "tuk2_section_09",
+      "start_seconds": 202.3,
+      "end_seconds": 239.2,
+      "duration_seconds": 36.89999999999998,
+      "novelty_at_start": 0.5383707665072077,
+      "mean_active_stem_count": 9.319783197831978,
+      "max_active_stem_count": 11,
+      "active_roles": [
+        "lead_vocal",
+        "backing_vocals",
+        "drums",
+        "bass",
+        "guitar",
+        "keyboards",
+        "percussion",
+        "strings",
+        "synth",
+        "other"
+      ],
+      "dominant_roles": [
+        "lead_vocal",
+        "keyboards",
+        "backing_vocals",
+        "drums",
+        "percussion"
+      ],
+      "activity_fraction_by_role": {
+        "lead_vocal": 1.0,
+        "backing_vocals": 1.0,
+        "drums": 1.0,
+        "bass": 0.989159891598916,
+        "guitar": 0.7994579945799458,
+        "keyboards": 0.981029810298103,
+        "percussion": 1.0,
+        "strings": 0.5257452574525745,
+        "synth": 1.0,
+        "other": 1.0,
+        "brass": 0.0,
+        "woodwinds": 0.024390243902439025
+      },
+      "top_masking_pairs": [
+        {
+          "role_a": "drums",
+          "role_b": "percussion",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.8588768879225668,
+          "local_priority": 0.8588768879225668
+        },
+        {
+          "role_a": "lead_vocal",
+          "role_b": "backing_vocals",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.7618333490387034,
+          "local_priority": 0.7618333490387034
+        },
+        {
+          "role_a": "bass",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.989159891598916,
+          "global_masking_risk": 0.6945847520627675,
+          "local_priority": 0.687055378056667
+        },
+        {
+          "role_a": "bass",
+          "role_b": "percussion",
+          "simultaneous_fraction": 0.989159891598916,
+          "global_masking_risk": 0.6092161038577544,
+          "local_priority": 0.6026121352522503
+        },
+        {
+          "role_a": "drums",
+          "role_b": "bass",
+          "simultaneous_fraction": 0.989159891598916,
+          "global_masking_risk": 0.6022507490958259,
+          "local_priority": 0.5957222856909931
+        },
+        {
+          "role_a": "percussion",
+          "role_b": "synth",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.5743096979852039,
+          "local_priority": 0.5743096979852039
+        }
+      ],
+      "expressive_motion_candidates": [
+        {
+          "role": "woodwinds",
+          "score": 0.8526311899482631,
+          "active_fraction": 0.024390243902439025
+        },
+        {
+          "role": "strings",
+          "score": 0.5564474008376448,
+          "active_fraction": 0.5257452574525745
+        },
+        {
+          "role": "synth",
+          "score": 0.2906060606060606,
+          "active_fraction": 1.0
+        },
+        {
+          "role": "backing_vocals",
+          "score": 0.27787878787878784,
+          "active_fraction": 1.0
+        },
+        {
+          "role": "percussion",
+          "score": 0.2757575757575757,
+          "active_fraction": 1.0
+        }
+      ],
+      "movement_budget_large_motion_objects": 1
+    },
+    {
+      "section_id": "tuk2_section_10",
+      "start_seconds": 239.2,
+      "end_seconds": 280.3,
+      "duration_seconds": 41.10000000000002,
+      "novelty_at_start": 0.7228105371296197,
+      "mean_active_stem_count": 7.442822384428224,
+      "max_active_stem_count": 11,
+      "active_roles": [
+        "lead_vocal",
+        "backing_vocals",
+        "drums",
+        "bass",
+        "guitar",
+        "keyboards",
+        "percussion",
+        "strings",
+        "synth",
+        "other",
+        "brass",
+        "woodwinds"
+      ],
+      "dominant_roles": [
+        "percussion",
+        "synth",
+        "drums",
+        "bass",
+        "strings"
+      ],
+      "activity_fraction_by_role": {
+        "lead_vocal": 0.7250608272506083,
+        "backing_vocals": 0.6253041362530414,
+        "drums": 0.927007299270073,
+        "bass": 0.5961070559610706,
+        "guitar": 0.20924574209245742,
+        "keyboards": 0.51338199513382,
+        "percussion": 0.9537712895377128,
+        "strings": 0.4233576642335766,
+        "synth": 0.9854014598540146,
+        "other": 0.9391727493917275,
+        "brass": 0.05596107055961071,
+        "woodwinds": 0.48905109489051096
+      },
+      "top_masking_pairs": [
+        {
+          "role_a": "drums",
+          "role_b": "percussion",
+          "simultaneous_fraction": 0.9197080291970803,
+          "global_masking_risk": 0.8588768879225668,
+          "local_priority": 0.7899159699141854
+        },
+        {
+          "role_a": "percussion",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.9391727493917275,
+          "global_masking_risk": 0.5743096979852039,
+          "local_priority": 0.5393760180590966
+        },
+        {
+          "role_a": "drums",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.9124087591240876,
+          "global_masking_risk": 0.542659036228224,
+          "local_priority": 0.49512685787246713
+        },
+        {
+          "role_a": "lead_vocal",
+          "role_b": "backing_vocals",
+          "simultaneous_fraction": 0.5742092457420924,
+          "global_masking_risk": 0.7618333490387034,
+          "local_priority": 0.4374517527326861
+        },
+        {
+          "role_a": "bass",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.5961070559610706,
+          "global_masking_risk": 0.6945847520627675,
+          "local_priority": 0.41404687166758647
+        },
+        {
+          "role_a": "bass",
+          "role_b": "percussion",
+          "simultaneous_fraction": 0.5961070559610706,
+          "global_masking_risk": 0.6092161038577544,
+          "local_priority": 0.3631580181147198
+        }
+      ],
+      "expressive_motion_candidates": [
+        {
+          "role": "brass",
+          "score": 0.7027162132271622,
+          "active_fraction": 0.05596107055961071
+        },
+        {
+          "role": "strings",
+          "score": 0.6229993364299934,
+          "active_fraction": 0.4233576642335766
+        },
+        {
+          "role": "woodwinds",
+          "score": 0.5506016368060164,
+          "active_fraction": 0.48905109489051096
+        },
+        {
+          "role": "backing_vocals",
+          "score": 0.521431099314311,
+          "active_fraction": 0.6253041362530414
+        },
+        {
+          "role": "guitar",
+          "score": 0.4185357221853573,
+          "active_fraction": 0.20924574209245742
+        }
+      ],
+      "movement_budget_large_motion_objects": 1
+    },
+    {
+      "section_id": "tuk2_section_11",
+      "start_seconds": 280.3,
+      "end_seconds": 324.1,
+      "duration_seconds": 43.80000000000001,
+      "novelty_at_start": 0.4425165565769531,
+      "mean_active_stem_count": 6.986301369863014,
+      "max_active_stem_count": 11,
+      "active_roles": [
+        "lead_vocal",
+        "backing_vocals",
+        "drums",
+        "bass",
+        "keyboards",
+        "percussion",
+        "strings",
+        "synth",
+        "other",
+        "woodwinds"
+      ],
+      "dominant_roles": [
+        "bass",
+        "other",
+        "lead_vocal",
+        "drums",
+        "synth"
+      ],
+      "activity_fraction_by_role": {
+        "lead_vocal": 0.865296803652968,
+        "backing_vocals": 0.9269406392694064,
+        "drums": 0.7602739726027398,
+        "bass": 0.5273972602739726,
+        "guitar": 0.0,
+        "keyboards": 0.6438356164383562,
+        "percussion": 0.7557077625570776,
+        "strings": 0.2922374429223744,
+        "synth": 0.865296803652968,
+        "other": 0.8424657534246576,
+        "brass": 0.00228310502283105,
+        "woodwinds": 0.5045662100456622
+      },
+      "top_masking_pairs": [
+        {
+          "role_a": "drums",
+          "role_b": "percussion",
+          "simultaneous_fraction": 0.7534246575342466,
+          "global_masking_risk": 0.8588768879225668,
+          "local_priority": 0.6470990251471394
+        },
+        {
+          "role_a": "lead_vocal",
+          "role_b": "backing_vocals",
+          "simultaneous_fraction": 0.8493150684931506,
+          "global_masking_risk": 0.7618333490387034,
+          "local_priority": 0.6470365430191727
+        },
+        {
+          "role_a": "percussion",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.7557077625570776,
+          "global_masking_risk": 0.5743096979852039,
+          "local_priority": 0.43401029687922943
+        },
+        {
+          "role_a": "drums",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.7602739726027398,
+          "global_masking_risk": 0.542659036228224,
+          "local_priority": 0.4125695412420059
+        },
+        {
+          "role_a": "bass",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.5273972602739726,
+          "global_masking_risk": 0.6945847520627675,
+          "local_priority": 0.3663220952659801
+        },
+        {
+          "role_a": "backing_vocals",
+          "role_b": "other",
+          "simultaneous_fraction": 0.769406392694064,
+          "global_masking_risk": 0.4189984091832742,
+          "local_priority": 0.32238005455425434
+        }
+      ],
+      "expressive_motion_candidates": [
+        {
+          "role": "strings",
+          "score": 0.7082274802822748,
+          "active_fraction": 0.2922374429223744
+        },
+        {
+          "role": "woodwinds",
+          "score": 0.5405168119551681,
+          "active_fraction": 0.5045662100456622
+        },
+        {
+          "role": "percussion",
+          "score": 0.43454753009547525,
+          "active_fraction": 0.7557077625570776
+        },
+        {
+          "role": "synth",
+          "score": 0.3781631382316314,
+          "active_fraction": 0.865296803652968
+        },
+        {
+          "role": "backing_vocals",
+          "score": 0.3253673723536737,
+          "active_fraction": 0.9269406392694064
+        }
+      ],
+      "movement_budget_large_motion_objects": 1
+    },
+    {
+      "section_id": "tuk2_section_12",
+      "start_seconds": 324.1,
+      "end_seconds": 330.0,
+      "duration_seconds": 5.899999999999977,
+      "novelty_at_start": 0.5965443034397384,
+      "mean_active_stem_count": 7.6440677966101696,
+      "max_active_stem_count": 10,
+      "active_roles": [
+        "lead_vocal",
+        "backing_vocals",
+        "drums",
+        "bass",
+        "keyboards",
+        "percussion",
+        "strings",
+        "synth",
+        "other",
+        "brass",
+        "woodwinds"
+      ],
+      "dominant_roles": [
+        "other",
+        "bass",
+        "brass",
+        "percussion",
+        "keyboards"
+      ],
+      "activity_fraction_by_role": {
+        "lead_vocal": 0.6949152542372882,
+        "backing_vocals": 0.3728813559322034,
+        "drums": 0.864406779661017,
+        "bass": 0.8813559322033898,
+        "guitar": 0.0,
+        "keyboards": 0.8305084745762712,
+        "percussion": 0.8305084745762712,
+        "strings": 0.559322033898305,
+        "synth": 0.847457627118644,
+        "other": 0.864406779661017,
+        "brass": 0.288135593220339,
+        "woodwinds": 0.6101694915254238
+      },
+      "top_masking_pairs": [
+        {
+          "role_a": "drums",
+          "role_b": "percussion",
+          "simultaneous_fraction": 0.8305084745762712,
+          "global_masking_risk": 0.8588768879225668,
+          "local_priority": 0.713304534037386
+        },
+        {
+          "role_a": "bass",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.8305084745762712,
+          "global_masking_risk": 0.6945847520627675,
+          "local_priority": 0.5768585228995866
+        },
+        {
+          "role_a": "drums",
+          "role_b": "bass",
+          "simultaneous_fraction": 0.847457627118644,
+          "global_masking_risk": 0.6022507490958259,
+          "local_priority": 0.5103819907591745
+        },
+        {
+          "role_a": "bass",
+          "role_b": "percussion",
+          "simultaneous_fraction": 0.8305084745762712,
+          "global_masking_risk": 0.6092161038577544,
+          "local_priority": 0.5059591371022027
+        },
+        {
+          "role_a": "percussion",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.8305084745762712,
+          "global_masking_risk": 0.5743096979852039,
+          "local_priority": 0.4769690712080507
+        },
+        {
+          "role_a": "drums",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.847457627118644,
+          "global_masking_risk": 0.542659036228224,
+          "local_priority": 0.459880539176461
+        }
+      ],
+      "expressive_motion_candidates": [
+        {
+          "role": "backing_vocals",
+          "score": 0.6855059065228557,
+          "active_fraction": 0.3728813559322034
+        },
+        {
+          "role": "brass",
+          "score": 0.5518027734976888,
+          "active_fraction": 0.288135593220339
+        },
+        {
+          "role": "strings",
+          "score": 0.5346224961479199,
+          "active_fraction": 0.559322033898305
+        },
+        {
+          "role": "woodwinds",
+          "score": 0.471874678993323,
+          "active_fraction": 0.6101694915254238
+        },
+        {
+          "role": "synth",
+          "score": 0.389758602978942,
+          "active_fraction": 0.847457627118644
+        }
+      ],
+      "movement_budget_large_motion_objects": 1
+    }
+  ]
+}

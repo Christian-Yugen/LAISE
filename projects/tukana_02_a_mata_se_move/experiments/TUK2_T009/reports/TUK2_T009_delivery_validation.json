@@ -1,0 +1,125 @@
+{
+  "schema": "LAISE TUK2 Final Delivery Validation v1.0",
+  "project": "tukana_02_a_mata_se_move",
+  "test_id": "TUK2-T009",
+  "status": "PASS",
+  "approved_master_source": {
+    "path": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\experiments\\TUK2_T008R1\\selected\\TUKANA02_APPROVED_MASTER_PCM24_48k.wav",
+    "sha256": "4f4d46a870faf29fa51867450a5a70cc82faad1b863d83bd40e89c6d27a3e271",
+    "mastering_selection": "B_OPTIMIZED",
+    "mastering_gate": "TUK2-T008R1 PASS"
+  },
+  "checks": {
+    "approved_PCM_hash_preserved": true,
+    "WAV_48k_stereo": true,
+    "FLAC_48k_stereo": true,
+    "ALAC_48k_stereo": true,
+    "AAC_48k_stereo": true,
+    "FLAC_bitperfect": true,
+    "ALAC_bitperfect": true,
+    "AAC_delivery_pass": true
+  },
+  "lossless_validation": {
+    "method": "Decode approved WAV, FLAC and ALAC to 48-kHz stereo signed PCM and require sample-for-sample identity.",
+    "FLAC_bitperfect": true,
+    "ALAC_bitperfect": true
+  },
+  "AAC320_validation": {
+    "status": "PASS",
+    "policy": "AAC is evaluated as a lossy delivery representation using the pre-existing T008 composite codec metric. The prior spatial-only >=90 T008 failure remains recorded and is not rewritten.",
+    "composite_score": 90.9195212154579,
+    "spatial_subscore": 85.01264077721841,
+    "transient_subscore": 99.97673704100355,
+    "spectral_delta_db": 0.08108436317420788,
+    "safety": true,
+    "checks": {
+      "finite_safe_from_T008": true,
+      "composite_codec_score_ge_90": true,
+      "transient_fidelity_ge_95": true,
+      "T008_spatial_subscore_recorded": true,
+      "T008_spatial_gate_failure_preserved": true,
+      "AAC320_reencode_decode_deterministic": true,
+      "aligned_source_frames": true
+    },
+    "technical_caution": "AAC PASS means acceptable performance under LAISE engineering fidelity proxies. It is not a claim of perceptual transparency for every listener."
+  },
+  "artifacts": {
+    "wav_pcm24_48k": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\experiments\\TUK2_T009\\delivery\\TUKANA02_FINAL_MASTER_PCM24_48k.wav",
+      "sha256": "4f4d46a870faf29fa51867450a5a70cc82faad1b863d83bd40e89c6d27a3e271",
+      "format": {
+        "codec_name": "pcm_s24le",
+        "sample_fmt": "s32",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "330.000000",
+        "bit_rate": "2304000"
+      }
+    },
+    "flac": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\experiments\\TUK2_T009\\delivery\\TUKANA02_FINAL_MASTER_FLAC_48k.flac",
+      "sha256": "bebd8ad343025a1c035ea285e3c23795965e0595e4335121f53392d3fee69ce9",
+      "format": {
+        "codec_name": "flac",
+        "sample_fmt": "s32",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "330.000000"
+      },
+      "bitperfect_pcm_decode": true
+    },
+    "alac": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\experiments\\TUK2_T009\\delivery\\TUKANA02_FINAL_MASTER_ALAC_48k.m4a",
+      "sha256": "0428a52e92303917fe56c2df97e1f4082e959d08367b7baac063718f66206103",
+      "format": {
+        "codec_name": "alac",
+        "sample_fmt": "s32p",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "330.000000",
+        "bit_rate": "1680101"
+      },
+      "bitperfect_pcm_decode": true
+    },
+    "aac_lc_320": {
+      "path": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\experiments\\TUK2_T009\\delivery\\TUKANA02_FINAL_MASTER_AAC_LC_320k.m4a",
+      "sha256": "25e64d6c001db06d4031c1a5b7ed3458420425d5e6b893216ae9001ba52ca02b",
+      "format": {
+        "codec_name": "aac",
+        "sample_fmt": "fltp",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "330.000000",
+        "bit_rate": "322197"
+      },
+      "decoded_frames_before_alignment": 15840256,
+      "end_padding_removed_frames": 256,
+      "objective_metrics_from_T008": {
+        "codec_score": 90.9195212154579,
+        "spatial_integrity_score": 85.01264077721841,
+        "transient_score": 99.97673704100355,
+        "spectral_distribution_mean_delta_db": 0.08108436317420788,
+        "safety_pass": true
+      },
+      "reencoded_decode_identical_to_T008": true,
+      "delivery_checks": {
+        "finite_safe_from_T008": true,
+        "composite_codec_score_ge_90": true,
+        "transient_fidelity_ge_95": true,
+        "T008_spatial_subscore_recorded": true,
+        "T008_spatial_gate_failure_preserved": true,
+        "AAC320_reencode_decode_deterministic": true,
+        "aligned_source_frames": true
+      }
+    }
+  },
+  "final_master_metrics": {
+    "master_score": 97.10577144150166,
+    "integrated_lufs": -16.9,
+    "true_peak_dbtp": -2.0,
+    "crest_factor_db": 16.7214787046315,
+    "spatial_integrity": 97.34103450500878,
+    "transient_fidelity": 99.14143120973756
+  },
+  "release_state": "FINAL_DELIVERY_VALIDATED"
+}

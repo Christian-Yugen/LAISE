@@ -1,0 +1,1180 @@
+{
+  "schema": "LAISE TUK2 Dynamic Spatial Validation v1.0",
+  "project": "tukana_02_a_mata_se_move",
+  "test_id": "TUK2-T005B",
+  "status": "PASS",
+  "reference_library": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\experiments\\TUK2_T005\\reports\\probe_library_native256.json",
+  "continuous_360": {
+    "status": "PASS",
+    "duration_seconds": 24.0,
+    "unwrapped_range_deg": [
+      0.0,
+      359.92
+    ],
+    "wrapped_crossings": 1,
+    "max_circular_step_deg": 0.08000000000015461,
+    "ild_progression_correlation": 0.9991145778961533,
+    "median_paired_signature_distance": 0.4470033051412504,
+    "windows": [
+      {
+        "nominal_azimuth_unwrapped_deg": 4.5,
+        "nominal_azimuth_wrapped_deg": 4.5,
+        "paired_signature_distance": 0.13383057847125887,
+        "expected_ild_db": -0.23183918033163028,
+        "actual_ild_db": -0.3753703571017841,
+        "static_classification": {
+          "azimuth_deg": 0,
+          "elevation_deg": 20,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.14435037156538436,
+          "coverage": 1.0,
+          "feature_distance": 0.4867584704748908,
+          "alternatives": [
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": 20,
+              "distance": 0.4867584704748908
+            },
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": -20,
+              "distance": 0.5688759210535745
+            },
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": 60,
+              "distance": 0.6762822858408954
+            }
+          ]
+        },
+        "dynamic_classification": {
+          "azimuth_deg": 0,
+          "elevation_deg": 20,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.13491498786611747,
+          "coverage": 1.0,
+          "feature_distance": 0.5417260222885881,
+          "alternatives": [
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": 20,
+              "distance": 0.5417260222885881
+            },
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": -20,
+              "distance": 0.626211314137008
+            },
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": 45,
+              "distance": 0.7249886243589672
+            }
+          ]
+        }
+      },
+      {
+        "nominal_azimuth_unwrapped_deg": 30.0,
+        "nominal_azimuth_wrapped_deg": 30.0,
+        "paired_signature_distance": 0.3111764377669771,
+        "expected_ild_db": -4.145820222374878,
+        "actual_ild_db": -4.345454122895058,
+        "static_classification": {
+          "azimuth_deg": 30,
+          "elevation_deg": 0,
+          "front_rear": "front",
+          "elevation_band": "ear",
+          "confidence": 0.8959672949630838,
+          "coverage": 1.0,
+          "feature_distance": 0.03787881511976154,
+          "alternatives": [
+            {
+              "azimuth_deg": 30,
+              "elevation_deg": 0,
+              "distance": 0.03787881511976154
+            },
+            {
+              "azimuth_deg": 30,
+              "elevation_deg": -20,
+              "distance": 0.36410487554197674
+            },
+            {
+              "azimuth_deg": 30,
+              "elevation_deg": 20,
+              "distance": 0.5292797652066151
+            }
+          ]
+        },
+        "dynamic_classification": {
+          "azimuth_deg": 30,
+          "elevation_deg": 0,
+          "front_rear": "front",
+          "elevation_band": "ear",
+          "confidence": 0.26225277233782834,
+          "coverage": 1.0,
+          "feature_distance": 0.3010671071965903,
+          "alternatives": [
+            {
+              "azimuth_deg": 30,
+              "elevation_deg": 0,
+              "distance": 0.3010671071965903
+            },
+            {
+              "azimuth_deg": 30,
+              "elevation_deg": -20,
+              "distance": 0.40808978456026757
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": -45,
+              "distance": 0.5813658538806578
+            }
+          ]
+        }
+      },
+      {
+        "nominal_azimuth_unwrapped_deg": 60.0,
+        "nominal_azimuth_wrapped_deg": 60.0,
+        "paired_signature_distance": 0.07796276047922217,
+        "expected_ild_db": -6.529194912955613,
+        "actual_ild_db": -6.538903465510451,
+        "static_classification": {
+          "azimuth_deg": 60,
+          "elevation_deg": 0,
+          "front_rear": "front",
+          "elevation_band": "ear",
+          "confidence": 0.7579697940770548,
+          "coverage": 1.0,
+          "feature_distance": 0.07015979609292404,
+          "alternatives": [
+            {
+              "azimuth_deg": 60,
+              "elevation_deg": 0,
+              "distance": 0.07015979609292404
+            },
+            {
+              "azimuth_deg": 60,
+              "elevation_deg": 20,
+              "distance": 0.28988033053717566
+            },
+            {
+              "azimuth_deg": 120,
+              "elevation_deg": 20,
+              "distance": 0.5442093427797005
+            }
+          ]
+        },
+        "dynamic_classification": {
+          "azimuth_deg": 60,
+          "elevation_deg": 0,
+          "front_rear": "front",
+          "elevation_band": "ear",
+          "confidence": 0.5673798047399321,
+          "coverage": 1.0,
+          "feature_distance": 0.11968093188131218,
+          "alternatives": [
+            {
+              "azimuth_deg": 60,
+              "elevation_deg": 0,
+              "distance": 0.11968093188131218
+            },
+            {
+              "azimuth_deg": 60,
+              "elevation_deg": 20,
+              "distance": 0.2766420365775261
+            },
+            {
+              "azimuth_deg": 120,
+              "elevation_deg": 20,
+              "distance": 0.5601861522117404
+            }
+          ]
+        }
+      },
+      {
+        "nominal_azimuth_unwrapped_deg": 90.0,
+        "nominal_azimuth_wrapped_deg": 90.0,
+        "paired_signature_distance": 0.5973205625794701,
+        "expected_ild_db": -7.399607610905679,
+        "actual_ild_db": -7.582224958608368,
+        "static_classification": {
+          "azimuth_deg": 90,
+          "elevation_deg": 0,
+          "front_rear": "lateral",
+          "elevation_band": "ear",
+          "confidence": 0.4511540065444156,
+          "coverage": 1.0,
+          "feature_distance": 0.1475099451018867,
+          "alternatives": [
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 0,
+              "distance": 0.1475099451018867
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 20,
+              "distance": 0.26876381874112015
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": -20,
+              "distance": 0.7544548083625093
+            }
+          ]
+        },
+        "dynamic_classification": {
+          "azimuth_deg": 90,
+          "elevation_deg": 0,
+          "front_rear": "lateral",
+          "elevation_band": "ear",
+          "confidence": 0.06513374273322432,
+          "coverage": 1.0,
+          "feature_distance": 0.5746489056581093,
+          "alternatives": [
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 0,
+              "distance": 0.5746489056581093
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": -20,
+              "distance": 0.6146856849215878
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": 20,
+              "distance": 0.6157548603129649
+            }
+          ]
+        }
+      },
+      {
+        "nominal_azimuth_unwrapped_deg": 120.0,
+        "nominal_azimuth_wrapped_deg": 120.0,
+        "paired_signature_distance": 0.5812218446882035,
+        "expected_ild_db": -6.62525004970517,
+        "actual_ild_db": -6.408963451329378,
+        "static_classification": {
+          "azimuth_deg": 120,
+          "elevation_deg": 0,
+          "front_rear": "rear",
+          "elevation_band": "ear",
+          "confidence": 0.7029313751715036,
+          "coverage": 1.0,
+          "feature_distance": 0.1506542549169879,
+          "alternatives": [
+            {
+              "azimuth_deg": 120,
+              "elevation_deg": 0,
+              "distance": 0.1506542549169879
+            },
+            {
+              "azimuth_deg": 120,
+              "elevation_deg": 20,
+              "distance": 0.5071362046529269
+            },
+            {
+              "azimuth_deg": 60,
+              "elevation_deg": 0,
+              "distance": 0.528244169463366
+            }
+          ]
+        },
+        "dynamic_classification": {
+          "azimuth_deg": 120,
+          "elevation_deg": 0,
+          "front_rear": "rear",
+          "elevation_band": "ear",
+          "confidence": 0.12576134054856308,
+          "coverage": 1.0,
+          "feature_distance": 0.6034129050554097,
+          "alternatives": [
+            {
+              "azimuth_deg": 120,
+              "elevation_deg": 0,
+              "distance": 0.6034129050554097
+            },
+            {
+              "azimuth_deg": 90,
+              "elevation_deg": -45,
+              "distance": 0.6902153073784638
+            },
+            {
+              "azimuth_deg": 120,
+              "elevation_deg": 20,
+              "distance": 0.7028105670016696
+            }
+          ]
+        }
+      },
+      {
+        "nominal_azimuth_unwrapped_deg": 150.0,
+        "nominal_azimuth_wrapped_deg": 150.0,
+        "paired_signature_distance": 0.3714732276733926,
+        "expected_ild_db": -3.748921104362628,
+        "actual_ild_db": -3.956343965971032,
+        "static_classification": {
+          "azimuth_deg": 150,
+          "elevation_deg": 0,
+          "front_rear": "rear",
+          "elevation_band": "ear",
+          "confidence": 0.8517158664233431,
+          "coverage": 1.0,
+          "feature_distance": 0.05230622843100149,
+          "alternatives": [
+            {
+              "azimuth_deg": 150,
+              "elevation_deg": 0,
+              "distance": 0.05230622843100149
+            },
+            {
+              "azimuth_deg": 150,
+              "elevation_deg": 20,
+              "distance": 0.35274325829311504
+            },
+            {
+              "azimuth_deg": 120,
+              "elevation_deg": 45,
+              "distance": 0.558264000558397
+            }
+          ]
+        },
+        "dynamic_classification": {
+          "azimuth_deg": 150,
+          "elevation_deg": 20,
+          "front_rear": "rear",
+          "elevation_band": "high",
+          "confidence": 0.04073866050724243,
+          "coverage": 1.0,
+          "feature_distance": 0.33174264391591446,
+          "alternatives": [
+            {
+              "azimuth_deg": 150,
+              "elevation_deg": 20,
+              "distance": 0.33174264391591446
+            },
+            {
+              "azimuth_deg": 150,
+              "elevation_deg": 0,
+              "distance": 0.3458313498710735
+            },
+            {
+              "azimuth_deg": 120,
+              "elevation_deg": 60,
+              "distance": 0.6010004613644446
+            }
+          ]
+        }
+      },
+      {
+        "nominal_azimuth_unwrapped_deg": 180.0,
+        "nominal_azimuth_wrapped_deg": -180.0,
+        "paired_signature_distance": 0.23642744846715508,
+        "expected_ild_db": -0.36252979780007755,
+        "actual_ild_db": -0.09191005629140633,
+        "static_classification": {
+          "azimuth_deg": 180,
+          "elevation_deg": 0,
+          "front_rear": "rear",
+          "elevation_band": "ear",
+          "confidence": 0.966327898623836,
+          "coverage": 1.0,
+          "feature_distance": 0.006872768376208181,
+          "alternatives": [
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": 0,
+              "distance": 0.006872768376208181
+            },
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": -20,
+              "distance": 0.20410868628096088
+            },
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": 20,
+              "distance": 0.33570521047400176
+            }
+          ]
+        },
+        "dynamic_classification": {
+          "azimuth_deg": 180,
+          "elevation_deg": 0,
+          "front_rear": "rear",
+          "elevation_band": "ear",
+          "confidence": 0.13851644776254168,
+          "coverage": 1.0,
+          "feature_distance": 0.24164099004907247,
+          "alternatives": [
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": 0,
+              "distance": 0.24164099004907247
+            },
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": 20,
+              "distance": 0.28049402617319713
+            },
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": -20,
+              "distance": 0.3082575555283648
+            }
+          ]
+        }
+      },
+      {
+        "nominal_azimuth_unwrapped_deg": 210.0,
+        "nominal_azimuth_wrapped_deg": -150.0,
+        "paired_signature_distance": 0.62090111136682,
+        "expected_ild_db": 4.125919035253748,
+        "actual_ild_db": 4.590229646125838,
+        "static_classification": {
+          "azimuth_deg": -150,
+          "elevation_deg": 0,
+          "front_rear": "rear",
+          "elevation_band": "ear",
+          "confidence": 0.8281345549436621,
+          "coverage": 1.0,
+          "feature_distance": 0.0764779866331362,
+          "alternatives": [
+            {
+              "azimuth_deg": -150,
+              "elevation_deg": 0,
+              "distance": 0.0764779866331362
+            },
+            {
+              "azimuth_deg": -150,
+              "elevation_deg": 20,
+              "distance": 0.44498756924678223
+            },
+            {
+              "azimuth_deg": -30,
+              "elevation_deg": 20,
+              "distance": 0.5362551388341895
+            }
+          ]
+        },
+        "dynamic_classification": {
+          "azimuth_deg": -60,
+          "elevation_deg": 60,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.2967078520507491,
+          "coverage": 1.0,
+          "feature_distance": 0.3878333991689229,
+          "alternatives": [
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 60,
+              "distance": 0.3878333991689229
+            },
+            {
+              "azimuth_deg": -150,
+              "elevation_deg": 20,
+              "distance": 0.551454186286335
+            },
+            {
+              "azimuth_deg": -150,
+              "elevation_deg": 0,
+              "distance": 0.6143566929215859
+            }
+          ]
+        }
+      },
+      {
+        "nominal_azimuth_unwrapped_deg": 240.0,
+        "nominal_azimuth_wrapped_deg": -120.0,
+        "paired_signature_distance": 0.4470033051412504,
+        "expected_ild_db": 6.365113861132627,
+        "actual_ild_db": 6.52978869004151,
+        "static_classification": {
+          "azimuth_deg": -120,
+          "elevation_deg": 0,
+          "front_rear": "rear",
+          "elevation_band": "ear",
+          "confidence": 0.9192952889810564,
+          "coverage": 1.0,
+          "feature_distance": 0.05193653734185978,
+          "alternatives": [
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": 0,
+              "distance": 0.05193653734185978
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 45,
+              "distance": 0.6435378639751136
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": -20,
+              "distance": 0.6594870052078714
+            }
+          ]
+        },
+        "dynamic_classification": {
+          "azimuth_deg": -120,
+          "elevation_deg": 0,
+          "front_rear": "rear",
+          "elevation_band": "ear",
+          "confidence": 0.3389920418791605,
+          "coverage": 1.0,
+          "feature_distance": 0.4326371339310681,
+          "alternatives": [
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": 0,
+              "distance": 0.4326371339310681
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": 45,
+              "distance": 0.6545112333609413
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 20,
+              "distance": 0.6709759865472334
+            }
+          ]
+        }
+      },
+      {
+        "nominal_azimuth_unwrapped_deg": 270.0,
+        "nominal_azimuth_wrapped_deg": -90.0,
+        "paired_signature_distance": 0.4906060731237532,
+        "expected_ild_db": 7.531942256568277,
+        "actual_ild_db": 7.211886174219106,
+        "static_classification": {
+          "azimuth_deg": -90,
+          "elevation_deg": 0,
+          "front_rear": "lateral",
+          "elevation_band": "ear",
+          "confidence": 0.6768541361838244,
+          "coverage": 1.0,
+          "feature_distance": 0.25155828219643117,
+          "alternatives": [
+            {
+              "azimuth_deg": -90,
+              "elevation_deg": 0,
+              "distance": 0.25155828219643117
+            },
+            {
+              "azimuth_deg": -90,
+              "elevation_deg": 20,
+              "distance": 0.7784666627809055
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": -20,
+              "distance": 0.8017942630730918
+            }
+          ]
+        },
+        "dynamic_classification": {
+          "azimuth_deg": -90,
+          "elevation_deg": 0,
+          "front_rear": "lateral",
+          "elevation_band": "ear",
+          "confidence": 0.07241747706802128,
+          "coverage": 1.0,
+          "feature_distance": 0.488746291214426,
+          "alternatives": [
+            {
+              "azimuth_deg": -90,
+              "elevation_deg": 0,
+              "distance": 0.488746291214426
+            },
+            {
+              "azimuth_deg": -90,
+              "elevation_deg": 20,
+              "distance": 0.5269032987701803
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 20,
+              "distance": 0.7654012825873107
+            }
+          ]
+        }
+      },
+      {
+        "nominal_azimuth_unwrapped_deg": 300.0,
+        "nominal_azimuth_wrapped_deg": -60.0,
+        "paired_signature_distance": 0.5436160113690633,
+        "expected_ild_db": 7.436366149876671,
+        "actual_ild_db": 7.369651913223448,
+        "static_classification": {
+          "azimuth_deg": -60,
+          "elevation_deg": 0,
+          "front_rear": "front",
+          "elevation_band": "ear",
+          "confidence": 0.7626012473675341,
+          "coverage": 1.0,
+          "feature_distance": 0.07757992624519891,
+          "alternatives": [
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 0,
+              "distance": 0.07757992624519891
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": 20,
+              "distance": 0.32679163384361154
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": -20,
+              "distance": 0.6287963591938601
+            }
+          ]
+        },
+        "dynamic_classification": {
+          "azimuth_deg": -60,
+          "elevation_deg": 20,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.2819479559167951,
+          "coverage": 1.0,
+          "feature_distance": 0.384130759118572,
+          "alternatives": [
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 20,
+              "distance": 0.384130759118572
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 0,
+              "distance": 0.5349622806366672
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": 20,
+              "distance": 0.5799344538768101
+            }
+          ]
+        }
+      },
+      {
+        "nominal_azimuth_unwrapped_deg": 330.0,
+        "nominal_azimuth_wrapped_deg": -30.0,
+        "paired_signature_distance": 0.25761568326318923,
+        "expected_ild_db": 4.4365694607283155,
+        "actual_ild_db": 4.228757899831588,
+        "static_classification": {
+          "azimuth_deg": -30,
+          "elevation_deg": 0,
+          "front_rear": "front",
+          "elevation_band": "ear",
+          "confidence": 0.9277904381462446,
+          "coverage": 1.0,
+          "feature_distance": 0.030056334340526333,
+          "alternatives": [
+            {
+              "azimuth_deg": -30,
+              "elevation_deg": 0,
+              "distance": 0.030056334340526333
+            },
+            {
+              "azimuth_deg": -150,
+              "elevation_deg": -20,
+              "distance": 0.4162375947024697
+            },
+            {
+              "azimuth_deg": -30,
+              "elevation_deg": 20,
+              "distance": 0.5108319998287586
+            }
+          ]
+        },
+        "dynamic_classification": {
+          "azimuth_deg": -30,
+          "elevation_deg": 0,
+          "front_rear": "front",
+          "elevation_band": "ear",
+          "confidence": 0.36831328920836665,
+          "coverage": 1.0,
+          "feature_distance": 0.25675088675151464,
+          "alternatives": [
+            {
+              "azimuth_deg": -30,
+              "elevation_deg": 0,
+              "distance": 0.25675088675151464
+            },
+            {
+              "azimuth_deg": -30,
+              "elevation_deg": 20,
+              "distance": 0.4064528861621182
+            },
+            {
+              "azimuth_deg": -150,
+              "elevation_deg": 20,
+              "distance": 0.45120518790697184
+            }
+          ]
+        }
+      },
+      {
+        "nominal_azimuth_unwrapped_deg": 355.5,
+        "nominal_azimuth_wrapped_deg": -4.5,
+        "paired_signature_distance": 0.5915455237704532,
+        "expected_ild_db": 0.7102236824837076,
+        "actual_ild_db": 0.7151029734469726,
+        "static_classification": {
+          "azimuth_deg": 0,
+          "elevation_deg": 45,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.18180685731256788,
+          "coverage": 1.0,
+          "feature_distance": 0.21564959324516114,
+          "alternatives": [
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": 45,
+              "distance": 0.21564959324516114
+            },
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": 60,
+              "distance": 0.26356807701521406
+            },
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": 60,
+              "distance": 0.34651622656088216
+            }
+          ]
+        },
+        "dynamic_classification": {
+          "azimuth_deg": 0,
+          "elevation_deg": -45,
+          "front_rear": "front",
+          "elevation_band": "low",
+          "confidence": 0.12002473209624431,
+          "coverage": 1.0,
+          "feature_distance": 0.4257168135953819,
+          "alternatives": [
+            {
+              "azimuth_deg": 0,
+              "elevation_deg": -45,
+              "distance": 0.4257168135953819
+            },
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": 20,
+              "distance": 0.483782702904263
+            },
+            {
+              "azimuth_deg": 180,
+              "elevation_deg": -20,
+              "distance": 0.487473533746489
+            }
+          ]
+        }
+      }
+    ],
+    "render": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\experiments\\TUK2_T005\\renders\\dynamic_validation\\TUK2_T005B_360_orbit.wav"
+  },
+  "plus_minus_180_crossing": {
+    "status": "PASS",
+    "trajectory_unwrapped_deg": [
+      150,
+      210
+    ],
+    "wrapped_crossings": 1,
+    "max_circular_step_deg": 0.08000000000004093,
+    "boundary_continuity": {
+      "nearest_crossing_boundary_sample": 96000,
+      "distance_from_theoretical_crossing_samples": 0,
+      "crossing_boundary_jump": 0.0022618677467107773,
+      "other_boundary_p95": 0.004066321067512035,
+      "other_boundary_p99": 0.004590622931718826,
+      "global_sample_delta_p999": 0.004994787275791168,
+      "crossing_vs_other_p99_ratio": 0.4927147753919066,
+      "crossing_vs_global_p999_ratio": 0.45284566125040837
+    },
+    "render": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\experiments\\TUK2_T005\\renders\\dynamic_validation\\TUK2_T005B_180_crossing.wav"
+  },
+  "elevation_sweep": {
+    "status": "PASS",
+    "tested_elevations_deg": [
+      -45,
+      -20,
+      0,
+      20,
+      45,
+      60
+    ],
+    "median_paired_signature_distance": 0.052134324473685476,
+    "dynamic_vs_static_elevation_band_accuracy": 0.8333333333333334,
+    "windows": [
+      {
+        "target_elevation_deg": -45,
+        "paired_signature_distance": 0.6969666144620006,
+        "dynamic_classification": {
+          "azimuth_deg": -120,
+          "elevation_deg": -45,
+          "front_rear": "rear",
+          "elevation_band": "low",
+          "confidence": 0.04922528266996716,
+          "coverage": 1.0,
+          "feature_distance": 0.586363902575835,
+          "alternatives": [
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": -45,
+              "distance": 0.586363902575835
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 20,
+              "distance": 0.6167222286079116
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": 45,
+              "distance": 0.6635246707195476
+            }
+          ]
+        },
+        "static_classification": {
+          "azimuth_deg": -60,
+          "elevation_deg": -45,
+          "front_rear": "front",
+          "elevation_band": "low",
+          "confidence": 0.9208424839975328,
+          "coverage": 1.0,
+          "feature_distance": 0.046269379624741994,
+          "alternatives": [
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": -45,
+              "distance": 0.046269379624741994
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": -20,
+              "distance": 0.5845228850195324
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 45,
+              "distance": 0.6995133037735768
+            }
+          ]
+        },
+        "elevation_band_match": true
+      },
+      {
+        "target_elevation_deg": -20,
+        "paired_signature_distance": 0.07882617055701346,
+        "dynamic_classification": {
+          "azimuth_deg": -60,
+          "elevation_deg": -20,
+          "front_rear": "front",
+          "elevation_band": "low",
+          "confidence": 0.8421765599922117,
+          "coverage": 1.0,
+          "feature_distance": 0.0816628581226824,
+          "alternatives": [
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": -20,
+              "distance": 0.0816628581226824
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 20,
+              "distance": 0.5174317459982656
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": -45,
+              "distance": 0.5966547342333601
+            }
+          ]
+        },
+        "static_classification": {
+          "azimuth_deg": -60,
+          "elevation_deg": -20,
+          "front_rear": "front",
+          "elevation_band": "low",
+          "confidence": 0.8168025706663619,
+          "coverage": 1.0,
+          "feature_distance": 0.10132938273207337,
+          "alternatives": [
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": -20,
+              "distance": 0.10132938273207337
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 20,
+              "distance": 0.5531157456774837
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 45,
+              "distance": 0.570771898956127
+            }
+          ]
+        },
+        "elevation_band_match": true
+      },
+      {
+        "target_elevation_deg": 0,
+        "paired_signature_distance": 0.6420143326141751,
+        "dynamic_classification": {
+          "azimuth_deg": -60,
+          "elevation_deg": 20,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.6967684323673036,
+          "coverage": 1.0,
+          "feature_distance": 0.17792371809834415,
+          "alternatives": [
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 20,
+              "distance": 0.17792371809834415
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": -20,
+              "distance": 0.5867585604209343
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 0,
+              "distance": 0.6327291109358443
+            }
+          ]
+        },
+        "static_classification": {
+          "azimuth_deg": -60,
+          "elevation_deg": 0,
+          "front_rear": "front",
+          "elevation_band": "ear",
+          "confidence": 0.8253641132047957,
+          "coverage": 1.0,
+          "feature_distance": 0.057478479385571754,
+          "alternatives": [
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 0,
+              "distance": 0.057478479385571754
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": 20,
+              "distance": 0.32913326373162277
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": -20,
+              "distance": 0.6093971983645291
+            }
+          ]
+        },
+        "elevation_band_match": false
+      },
+      {
+        "target_elevation_deg": 20,
+        "paired_signature_distance": 0.025442478390357483,
+        "dynamic_classification": {
+          "azimuth_deg": -60,
+          "elevation_deg": 20,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.8778519712921703,
+          "coverage": 1.0,
+          "feature_distance": 0.06667506174458974,
+          "alternatives": [
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 20,
+              "distance": 0.06667506174458974
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": -20,
+              "distance": 0.5458545868478343
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": 45,
+              "distance": 0.6934195254752578
+            }
+          ]
+        },
+        "static_classification": {
+          "azimuth_deg": -60,
+          "elevation_deg": 20,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.8797207400811309,
+          "coverage": 1.0,
+          "feature_distance": 0.06582404824858144,
+          "alternatives": [
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 20,
+              "distance": 0.06582404824858144
+            },
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": -20,
+              "distance": 0.5472601701488783
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": 45,
+              "distance": 0.6910342242737392
+            }
+          ]
+        },
+        "elevation_band_match": true
+      },
+      {
+        "target_elevation_deg": 45,
+        "paired_signature_distance": 0.019271626803217454,
+        "dynamic_classification": {
+          "azimuth_deg": -60,
+          "elevation_deg": 45,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.903896874813389,
+          "coverage": 1.0,
+          "feature_distance": 0.048441603366256386,
+          "alternatives": [
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 45,
+              "distance": 0.048441603366256386
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": 45,
+              "distance": 0.5040585649238093
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": -45,
+              "distance": 0.5325701264597147
+            }
+          ]
+        },
+        "static_classification": {
+          "azimuth_deg": -60,
+          "elevation_deg": 45,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.9039785830202224,
+          "coverage": 1.0,
+          "feature_distance": 0.04907398217535354,
+          "alternatives": [
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 45,
+              "distance": 0.04907398217535354
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": 45,
+              "distance": 0.5110732971758648
+            },
+            {
+              "azimuth_deg": -120,
+              "elevation_deg": -45,
+              "distance": 0.5376819684969834
+            }
+          ]
+        },
+        "elevation_band_match": true
+      },
+      {
+        "target_elevation_deg": 60,
+        "paired_signature_distance": 0.010287034564980828,
+        "dynamic_classification": {
+          "azimuth_deg": -60,
+          "elevation_deg": 60,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.9420553483726662,
+          "coverage": 1.0,
+          "feature_distance": 0.035841359449462644,
+          "alternatives": [
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 60,
+              "distance": 0.035841359449462644
+            },
+            {
+              "azimuth_deg": -150,
+              "elevation_deg": 20,
+              "distance": 0.6185447395554879
+            },
+            {
+              "azimuth_deg": -30,
+              "elevation_deg": -20,
+              "distance": 0.707256624492901
+            }
+          ]
+        },
+        "static_classification": {
+          "azimuth_deg": -60,
+          "elevation_deg": 60,
+          "front_rear": "front",
+          "elevation_band": "high",
+          "confidence": 0.9432853897193088,
+          "coverage": 1.0,
+          "feature_distance": 0.035136493427709616,
+          "alternatives": [
+            {
+              "azimuth_deg": -60,
+              "elevation_deg": 60,
+              "distance": 0.035136493427709616
+            },
+            {
+              "azimuth_deg": -150,
+              "elevation_deg": 20,
+              "distance": 0.6195316031232968
+            },
+            {
+              "azimuth_deg": -30,
+              "elevation_deg": -20,
+              "distance": 0.7039749498694176
+            }
+          ]
+        },
+        "elevation_band_match": true
+      }
+    ],
+    "render": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\experiments\\TUK2_T005\\renders\\dynamic_validation\\TUK2_T005B_elevation_sweep.wav"
+  },
+  "gates": {
+    "orbit_ild_correlation_min": 0.8,
+    "orbit_signature_distance_max": 1.5,
+    "max_circular_step_deg": 1.0,
+    "crossing_artifact_ratio_max": 3.0,
+    "elevation_band_accuracy_min": 0.8,
+    "elevation_signature_distance_max": 1.5
+  },
+  "limits": [
+    "These are technical controlled-signal measurements, not universal human localization probabilities.",
+    "A successful technical 360 orbit does not require a full musical stem orbit in the final arrangement.",
+    "Musical motion remains subordinate to clarity, transient preservation and lead-vocal audibility."
+  ]
+}

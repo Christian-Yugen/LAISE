@@ -1,0 +1,1404 @@
+{
+  "schema": "LAISE TUK2 Section-Adaptive Hybrid Validation v1.0",
+  "project": "tukana_02_a_mata_se_move",
+  "test_id": "TUK2-T006D",
+  "status": "PASS",
+  "section_architecture_map": {
+    "tuk2_section_01": "D_ADAPTIVE",
+    "tuk2_section_02": "D_ADAPTIVE",
+    "tuk2_section_03": "A_CLARITY",
+    "tuk2_section_04": "C_MOTION",
+    "tuk2_section_05": "C_MOTION",
+    "tuk2_section_06": "D_ADAPTIVE",
+    "tuk2_section_07": "A_CLARITY",
+    "tuk2_section_08": "D_ADAPTIVE",
+    "tuk2_section_09": "A_CLARITY",
+    "tuk2_section_10": "C_MOTION",
+    "tuk2_section_11": "A_CLARITY",
+    "tuk2_section_12": "C_MOTION"
+  },
+  "boundary_audit": [
+    {
+      "time_seconds": 0.0,
+      "role": "lead_vocal",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 0.0,
+      "role": "backing_vocals",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 0.0,
+      "role": "drums",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 0.0,
+      "role": "bass",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 0.0,
+      "role": "guitar",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 0.0,
+      "role": "keyboards",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 0.0,
+      "role": "percussion",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 0.0,
+      "role": "strings",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 0.0,
+      "role": "synth",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 0.0,
+      "role": "other",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 0.0,
+      "role": "brass",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 0.0,
+      "role": "woodwinds",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 8.3,
+      "role": "lead_vocal",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 8.3,
+      "role": "backing_vocals",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 8.3,
+      "role": "drums",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 8.3,
+      "role": "bass",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 8.3,
+      "role": "guitar",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 8.3,
+      "role": "keyboards",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 8.3,
+      "role": "percussion",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 8.3,
+      "role": "strings",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 8.3,
+      "role": "synth",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 8.3,
+      "role": "other",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 8.3,
+      "role": "brass",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 8.3,
+      "role": "woodwinds",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 30.1,
+      "role": "lead_vocal",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 30.1,
+      "role": "backing_vocals",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 30.1,
+      "role": "drums",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 30.1,
+      "role": "bass",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 30.1,
+      "role": "guitar",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 30.1,
+      "role": "keyboards",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 30.1,
+      "role": "percussion",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 30.1,
+      "role": "strings",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 30.1,
+      "role": "synth",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 30.1,
+      "role": "other",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 30.1,
+      "role": "brass",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 30.1,
+      "role": "woodwinds",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 116.8,
+      "role": "lead_vocal",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 116.8,
+      "role": "backing_vocals",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 116.8,
+      "role": "drums",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 116.8,
+      "role": "bass",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 116.8,
+      "role": "guitar",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 116.8,
+      "role": "keyboards",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 116.8,
+      "role": "percussion",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 116.8,
+      "role": "strings",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 116.8,
+      "role": "synth",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 116.8,
+      "role": "other",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 116.8,
+      "role": "brass",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 116.8,
+      "role": "woodwinds",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 126.3,
+      "role": "lead_vocal",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 126.3,
+      "role": "backing_vocals",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 126.3,
+      "role": "drums",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 126.3,
+      "role": "bass",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 126.3,
+      "role": "guitar",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 126.3,
+      "role": "keyboards",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 126.3,
+      "role": "percussion",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 126.3,
+      "role": "strings",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 126.3,
+      "role": "synth",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 126.3,
+      "role": "other",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 126.3,
+      "role": "brass",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 126.3,
+      "role": "woodwinds",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 135.1,
+      "role": "lead_vocal",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 135.1,
+      "role": "backing_vocals",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 135.1,
+      "role": "drums",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 135.1,
+      "role": "bass",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 135.1,
+      "role": "guitar",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 135.1,
+      "role": "keyboards",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 135.1,
+      "role": "percussion",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 135.1,
+      "role": "strings",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 135.1,
+      "role": "synth",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 135.1,
+      "role": "other",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 135.1,
+      "role": "brass",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 135.1,
+      "role": "woodwinds",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 143.9,
+      "role": "lead_vocal",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 143.9,
+      "role": "backing_vocals",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 143.9,
+      "role": "drums",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 143.9,
+      "role": "bass",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 143.9,
+      "role": "guitar",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 143.9,
+      "role": "keyboards",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 143.9,
+      "role": "percussion",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 143.9,
+      "role": "strings",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 143.9,
+      "role": "synth",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 143.9,
+      "role": "other",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 143.9,
+      "role": "brass",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 143.9,
+      "role": "woodwinds",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 165.1,
+      "role": "lead_vocal",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 165.1,
+      "role": "backing_vocals",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 165.1,
+      "role": "drums",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 165.1,
+      "role": "bass",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 165.1,
+      "role": "guitar",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 165.1,
+      "role": "keyboards",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 165.1,
+      "role": "percussion",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 165.1,
+      "role": "strings",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 165.1,
+      "role": "synth",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 165.1,
+      "role": "other",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 165.1,
+      "role": "brass",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 165.1,
+      "role": "woodwinds",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 202.3,
+      "role": "lead_vocal",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 202.3,
+      "role": "backing_vocals",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 202.3,
+      "role": "drums",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 202.3,
+      "role": "bass",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 202.3,
+      "role": "guitar",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 202.3,
+      "role": "keyboards",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 202.3,
+      "role": "percussion",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 202.3,
+      "role": "strings",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 202.3,
+      "role": "synth",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 202.3,
+      "role": "other",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 202.3,
+      "role": "brass",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 202.3,
+      "role": "woodwinds",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 239.2,
+      "role": "lead_vocal",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 239.2,
+      "role": "backing_vocals",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 239.2,
+      "role": "drums",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 239.2,
+      "role": "bass",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 239.2,
+      "role": "guitar",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 239.2,
+      "role": "keyboards",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 239.2,
+      "role": "percussion",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 239.2,
+      "role": "strings",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 239.2,
+      "role": "synth",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 239.2,
+      "role": "other",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 239.2,
+      "role": "brass",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 239.2,
+      "role": "woodwinds",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 280.3,
+      "role": "lead_vocal",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 280.3,
+      "role": "backing_vocals",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 280.3,
+      "role": "drums",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 280.3,
+      "role": "bass",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 280.3,
+      "role": "guitar",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 280.3,
+      "role": "keyboards",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 280.3,
+      "role": "percussion",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 280.3,
+      "role": "strings",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 280.3,
+      "role": "synth",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 280.3,
+      "role": "other",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 280.3,
+      "role": "brass",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 280.3,
+      "role": "woodwinds",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 324.1,
+      "role": "lead_vocal",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 324.1,
+      "role": "backing_vocals",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 324.1,
+      "role": "drums",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 324.1,
+      "role": "bass",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 324.1,
+      "role": "guitar",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 324.1,
+      "role": "keyboards",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 324.1,
+      "role": "percussion",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 324.1,
+      "role": "strings",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 324.1,
+      "role": "synth",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 324.1,
+      "role": "other",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 324.1,
+      "role": "brass",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 324.1,
+      "role": "woodwinds",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 330.0,
+      "role": "lead_vocal",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 330.0,
+      "role": "backing_vocals",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 330.0,
+      "role": "drums",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 330.0,
+      "role": "bass",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 330.0,
+      "role": "guitar",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 330.0,
+      "role": "keyboards",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 330.0,
+      "role": "percussion",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 330.0,
+      "role": "strings",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 330.0,
+      "role": "synth",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 330.0,
+      "role": "other",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 330.0,
+      "role": "brass",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    },
+    {
+      "time_seconds": 330.0,
+      "role": "woodwinds",
+      "max_candidate_azimuth_difference_deg": 0.0,
+      "max_candidate_elevation_difference_deg": 0.0,
+      "status": "PASS"
+    }
+  ],
+  "geometry": {
+    "lead_vocal": {
+      "status": "PASS",
+      "max_circular_step_deg": 0.03478260869570704,
+      "max_elevation_step_deg": 0.01739130434784819
+    },
+    "backing_vocals": {
+      "status": "PASS",
+      "max_circular_step_deg": 1.050766306945917,
+      "max_elevation_step_deg": 0.13134578836823962
+    },
+    "drums": {
+      "status": "PASS",
+      "max_circular_step_deg": 0.0,
+      "max_elevation_step_deg": 0.0
+    },
+    "bass": {
+      "status": "PASS",
+      "max_circular_step_deg": 0.0,
+      "max_elevation_step_deg": 0.0
+    },
+    "guitar": {
+      "status": "PASS",
+      "max_circular_step_deg": 0.2502715695307245,
+      "max_elevation_step_deg": 0.05122517505014379
+    },
+    "keyboards": {
+      "status": "PASS",
+      "max_circular_step_deg": 0.0,
+      "max_elevation_step_deg": 0.0
+    },
+    "percussion": {
+      "status": "PASS",
+      "max_circular_step_deg": 0.0,
+      "max_elevation_step_deg": 0.0
+    },
+    "strings": {
+      "status": "PASS",
+      "max_circular_step_deg": 2.194285714288327,
+      "max_elevation_step_deg": 0.5079365079371101
+    },
+    "synth": {
+      "status": "PASS",
+      "max_circular_step_deg": 0.0,
+      "max_elevation_step_deg": 0.0
+    },
+    "other": {
+      "status": "PASS",
+      "max_circular_step_deg": 0.0,
+      "max_elevation_step_deg": 0.0
+    },
+    "brass": {
+      "status": "PASS",
+      "max_circular_step_deg": 1.6640000000020336,
+      "max_elevation_step_deg": 0.8000000000009493
+    },
+    "woodwinds": {
+      "status": "PASS",
+      "max_circular_step_deg": 1.0793650793667098,
+      "max_elevation_step_deg": 0.31746031746080305
+    }
+  },
+  "full_mix": {
+    "path": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\experiments\\TUK2_T006\\section_adaptive_hybrid\\TUK2_T006D_SECTION_HYBRID_full_PCM24.wav",
+    "sha256": "2eacde3c090c51100a397b05828f7ceeab1f829f295c6fd57500d3d856fbc226",
+    "frames": 15840000,
+    "peak_dbfs": -19.70038697999884
+  },
+  "components": {
+    "spatial_discriminability": 64.69819345181371,
+    "clarity": 72.19452155057434,
+    "orbit_integrity": 92.20701157700246,
+    "front_back": 45.78728029733278,
+    "elevation": 32.30877139234703,
+    "transient_preservation": 92.77005832434848,
+    "peak_safety": 100.0,
+    "mono_stability": 100.0
+  },
+  "hybrid_score": 71.53111541102149,
+  "best_single_architecture": "D_ADAPTIVE",
+  "best_single_score": 71.47232180352368,
+  "improvement": 0.0587936074978046,
+  "sections": [
+    {
+      "section_id": "tuk2_section_01",
+      "source_architecture": "D_ADAPTIVE",
+      "hybrid_score": 69.81994717251278,
+      "original_winner_score": 69.81994717251278,
+      "delta_vs_original_winner": 0.0,
+      "components": {
+        "spatial_discriminability": 63.93071533990803,
+        "clarity": 61.47933203439631,
+        "front_back": 47.19387755102041,
+        "elevation": 32.39795918367348,
+        "transient_preservation": 97.51166520636755,
+        "peak_safety": 100.0,
+        "mono_stability": 100.0,
+        "orbit_integrity": 92.20701157700246
+      }
+    },
+    {
+      "section_id": "tuk2_section_02",
+      "source_architecture": "D_ADAPTIVE",
+      "hybrid_score": 72.0096054167041,
+      "original_winner_score": 72.0096054167041,
+      "delta_vs_original_winner": 0.0,
+      "components": {
+        "spatial_discriminability": 63.83895212983662,
+        "clarity": 78.72798850650523,
+        "front_back": 41.19547657512116,
+        "elevation": 29.240710823909534,
+        "transient_preservation": 94.2959920649047,
+        "peak_safety": 100.0,
+        "mono_stability": 100.0,
+        "orbit_integrity": 92.20701157700246
+      }
+    },
+    {
+      "section_id": "tuk2_section_03",
+      "source_architecture": "A_CLARITY",
+      "hybrid_score": 73.81549790655124,
+      "original_winner_score": 73.81549790655124,
+      "delta_vs_original_winner": 0.0,
+      "components": {
+        "spatial_discriminability": 64.76438854348233,
+        "clarity": 76.56794107937877,
+        "front_back": 51.89345314505776,
+        "elevation": 39.473684210526315,
+        "transient_preservation": 93.43047082696133,
+        "peak_safety": 100.0,
+        "mono_stability": 100.0,
+        "orbit_integrity": 92.20701157700246
+      }
+    },
+    {
+      "section_id": "tuk2_section_04",
+      "source_architecture": "C_MOTION",
+      "hybrid_score": 70.62158073706733,
+      "original_winner_score": 70.62158073706733,
+      "delta_vs_original_winner": 0.0,
+      "components": {
+        "spatial_discriminability": 63.67401622084262,
+        "clarity": 63.295874990606045,
+        "front_back": 54.50901803607215,
+        "elevation": 34.46893787575151,
+        "transient_preservation": 93.1505435600274,
+        "peak_safety": 100.0,
+        "mono_stability": 100.0,
+        "orbit_integrity": 92.20701157700246
+      }
+    },
+    {
+      "section_id": "tuk2_section_05",
+      "source_architecture": "C_MOTION",
+      "hybrid_score": 71.18681680593562,
+      "original_winner_score": 71.18681680593562,
+      "delta_vs_original_winner": 0.0,
+      "components": {
+        "spatial_discriminability": 64.03714113209425,
+        "clarity": 71.80419145091938,
+        "front_back": 46.09164420485175,
+        "elevation": 29.380053908355794,
+        "transient_preservation": 94.38471684857058,
+        "peak_safety": 100.0,
+        "mono_stability": 100.0,
+        "orbit_integrity": 92.20701157700246
+      }
+    },
+    {
+      "section_id": "tuk2_section_06",
+      "source_architecture": "D_ADAPTIVE",
+      "hybrid_score": 70.43604811502381,
+      "original_winner_score": 70.43604811502381,
+      "delta_vs_original_winner": 0.0,
+      "components": {
+        "spatial_discriminability": 65.41774001156192,
+        "clarity": 62.695756141529266,
+        "front_back": 56.903765690376574,
+        "elevation": 25.94142259414226,
+        "transient_preservation": 94.26891318825223,
+        "peak_safety": 100.0,
+        "mono_stability": 100.0,
+        "orbit_integrity": 92.20701157700246
+      }
+    },
+    {
+      "section_id": "tuk2_section_07",
+      "source_architecture": "A_CLARITY",
+      "hybrid_score": 67.37532568536953,
+      "original_winner_score": 67.37532568536953,
+      "delta_vs_original_winner": 0.0,
+      "components": {
+        "spatial_discriminability": 62.79922431638109,
+        "clarity": 65.2603155056305,
+        "front_back": 38.4395813510942,
+        "elevation": 17.50713606089439,
+        "transient_preservation": 91.97733027398934,
+        "peak_safety": 100.0,
+        "mono_stability": 100.0,
+        "orbit_integrity": 92.20701157700246
+      }
+    },
+    {
+      "section_id": "tuk2_section_08",
+      "source_architecture": "D_ADAPTIVE",
+      "hybrid_score": 71.56890241826316,
+      "original_winner_score": 71.56890241826316,
+      "delta_vs_original_winner": 0.0,
+      "components": {
+        "spatial_discriminability": 65.81634820856374,
+        "clarity": 65.87406249455454,
+        "front_back": 54.21496311907271,
+        "elevation": 34.562697576396204,
+        "transient_preservation": 92.31185061114058,
+        "peak_safety": 100.0,
+        "mono_stability": 100.0,
+        "orbit_integrity": 92.20701157700246
+      }
+    },
+    {
+      "section_id": "tuk2_section_09",
+      "source_architecture": "A_CLARITY",
+      "hybrid_score": 70.96313241010776,
+      "original_winner_score": 70.96313241010776,
+      "delta_vs_original_winner": 0.0,
+      "components": {
+        "spatial_discriminability": 65.45786102421042,
+        "clarity": 66.60810614958892,
+        "front_back": 47.566265060240966,
+        "elevation": 32.33734939759036,
+        "transient_preservation": 94.55632741803868,
+        "peak_safety": 100.0,
+        "mono_stability": 100.0,
+        "orbit_integrity": 92.20701157700246
+      }
+    },
+    {
+      "section_id": "tuk2_section_10",
+      "source_architecture": "C_MOTION",
+      "hybrid_score": 71.02111510799179,
+      "original_winner_score": 71.02111510799179,
+      "delta_vs_original_winner": 0.0,
+      "components": {
+        "spatial_discriminability": 64.33883128524246,
+        "clarity": 77.22596458661617,
+        "front_back": 37.59398496240602,
+        "elevation": 30.14354066985646,
+        "transient_preservation": 88.86410069581319,
+        "peak_safety": 100.0,
+        "mono_stability": 100.0,
+        "orbit_integrity": 92.20701157700246
+      }
+    },
+    {
+      "section_id": "tuk2_section_11",
+      "source_architecture": "A_CLARITY",
+      "hybrid_score": 70.91934867860608,
+      "original_winner_score": 70.91934867860608,
+      "delta_vs_original_winner": 0.0,
+      "components": {
+        "spatial_discriminability": 65.18991290777484,
+        "clarity": 76.07792286538862,
+        "front_back": 35.69667077681874,
+        "elevation": 28.236744759556103,
+        "transient_preservation": 91.81892588396799,
+        "peak_safety": 100.0,
+        "mono_stability": 100.0,
+        "orbit_integrity": 92.20701157700246
+      }
+    },
+    {
+      "section_id": "tuk2_section_12",
+      "source_architecture": "C_MOTION",
+      "hybrid_score": 68.5539433445597,
+      "original_winner_score": 68.5539433445597,
+      "delta_vs_original_winner": 0.0,
+      "components": {
+        "spatial_discriminability": 63.41698620703928,
+        "clarity": 63.76602832291635,
+        "front_back": 34.09090909090909,
+        "elevation": 32.72727272727273,
+        "transient_preservation": 94.33621209848052,
+        "peak_safety": 100.0,
+        "mono_stability": 100.0,
+        "orbit_integrity": 92.20701157700246
+      }
+    }
+  ],
+  "selection_state": "HYBRID_SELECTED_FOR_INDEPENDENT_QA",
+  "epistemic_limit": "Selection is based on measured technical proxies, not universal human perception."
+}

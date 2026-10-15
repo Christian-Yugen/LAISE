@@ -1,0 +1,112 @@
+﻿{
+    "schema":  "LAISE Delivery Validation v1.0",
+    "project":  "MUSIC 02",
+    "selected_spatial_candidate":  "T004",
+    "selected_master":  "C",
+    "reference_master":  {
+                             "filename":  "MUSIC02_FINAL_binaural_master_PCM24_48k.wav",
+                             "path":  "C:\\Projetos2026\\LAISE\\projects\\music_02\\final_release\\MUSIC02_FINAL_binaural_master_PCM24_48k.wav",
+                             "sha256":  "e5342108bb9de47aaabe2c111681f8055b714130a17356198a8e328c50f3ed17",
+                             "format":  "WAV PCM",
+                             "bit_depth":  24,
+                             "sample_rate_hz":  48000,
+                             "channels":  2,
+                             "integrated_lufs":  -17.2,
+                             "true_peak_dbtp":  -2,
+                             "lra_lu":  6.9,
+                             "crest_factor_db":  17.28,
+                             "role":  "OFFICIAL_REFERENCE_MASTER"
+                         },
+    "lossless_validation":  {
+                                "methodology":  "Decoded PCM SHA-256 comparison against approved WAV master",
+                                "pcm_sha256_reference":  "85beb8b387ecba92d40f95027b468a78f8ec7eb60be89526fa52fbb59af8076c",
+                                "pcm_bytes":  71308806,
+                                "flac":  {
+                                             "decoded_pcm_sha256":  "85beb8b387ecba92d40f95027b468a78f8ec7eb60be89526fa52fbb59af8076c",
+                                             "result":  "BIT-PERFECT PASS"
+                                         },
+                                "alac":  {
+                                             "decoded_pcm_sha256":  "85beb8b387ecba92d40f95027b468a78f8ec7eb60be89526fa52fbb59af8076c",
+                                             "result":  "BIT-PERFECT PASS"
+                                         }
+                            },
+    "codec_validation":  {
+                             "metric":  "T005 gain-invariant spatial signature integrity",
+                             "metric_reproduction":  "PASS",
+                             "spatial_gate":  90,
+                             "technical_proxy_only":  true,
+                             "universal_human_perception_claim":  false,
+                             "historical_aac_256":  {
+                                                        "spatial_score_stored":  88.5602,
+                                                        "spatial_score_recalculated":  88.5602,
+                                                        "transient_score":  99.8926,
+                                                        "result":  "FAIL",
+                                                        "role":  "HISTORICAL_ONLY_NOT_RECOMMENDED"
+                                                    },
+                             "aac_320":  {
+                                             "spatial_score":  90.8532,
+                                             "transient_score":  99.9486,
+                                             "mean_feature_distance":  0.023981,
+                                             "p95_feature_distance":  0.048042,
+                                             "median_ild_delta_db":  0.004123,
+                                             "median_itd_delta_us":  0.365009,
+                                             "median_side_mid_delta_db":  0.019249,
+                                             "median_lr_correlation_delta":  0.00098622,
+                                             "score_delta_vs_aac256":  2.293,
+                                             "result":  "PASS"
+                                         }
+                         },
+    "delivery_files":  [
+                           {
+                               "filename":  "MUSIC02_binaural_24bit_48k.flac",
+                               "path":  "C:\\Projetos2026\\LAISE\\projects\\music_02\\delivery\\MUSIC02_binaural_24bit_48k.flac",
+                               "size_bytes":  50040041,
+                               "size_mb":  47.72,
+                               "sha256":  "dfe35503601cf8a4a1a28669a63e48b1621a4b942bf8a8e99f92cbfc147a16f7",
+                               "format":  "FLAC 24-bit/48 kHz",
+                               "sample_rate_hz":  48000,
+                               "channels":  2,
+                               "status":  "BIT-PERFECT PASS"
+                           },
+                           {
+                               "filename":  "MUSIC02_binaural_ALAC_24bit_48k.m4a",
+                               "path":  "C:\\Projetos2026\\LAISE\\projects\\music_02\\delivery\\MUSIC02_binaural_ALAC_24bit_48k.m4a",
+                               "size_bytes":  51586576,
+                               "size_mb":  49.2,
+                               "sha256":  "aaf99cd58ea16ae07d5bd32a714e23a5103a2ca0c3daf325a3de7542b9cb6f9b",
+                               "format":  "ALAC 24-bit/48 kHz",
+                               "sample_rate_hz":  48000,
+                               "channels":  2,
+                               "status":  "BIT-PERFECT PASS"
+                           },
+                           {
+                               "filename":  "MUSIC02_binaural_AAC_320k.m4a",
+                               "path":  "C:\\Projetos2026\\LAISE\\projects\\music_02\\delivery\\MUSIC02_binaural_AAC_320k.m4a",
+                               "size_bytes":  9945965,
+                               "size_mb":  9.49,
+                               "sha256":  "1ddf557e8dc7436a5d7b9b80faca890dc6809ff219132db0add57b12cd3fce0f",
+                               "format":  "AAC-LC 320 kbps/48 kHz",
+                               "sample_rate_hz":  48000,
+                               "channels":  2,
+                               "status":  "SPATIAL QA PASS",
+                               "spatial_preservation_score":  90.8532,
+                               "spatial_gate":  90,
+                               "spatial_gate_result":  "PASS"
+                           }
+                       ],
+    "recommended_usage":  {
+                              "wav":  "Reference master, video production and future conversions",
+                              "flac":  "Preferred lossless portable format for Windows, Android and compatible players",
+                              "alac":  "Preferred lossless portable format for Apple ecosystem",
+                              "aac_320":  "Lightweight high-compatibility portable distribution",
+                              "aac_256":  "Historical validation artifact only; not recommended for final distribution"
+                          },
+    "notes":  [
+                  "Binaural and 3D spatial rendering are already encoded in the stereo L/R master.",
+                  "No stems or dearVR processing are required during playback.",
+                  "FLAC and ALAC reproduce the exact decoded PCM samples of the approved WAV master.",
+                  "AAC 320 surpassed the original T005 spatial gate of 90.",
+                  "AAC 256 remains preserved only as historical evidence.",
+                  "Codec spatial scores are technical fidelity proxies, not universal human localization probabilities."
+              ]
+}
