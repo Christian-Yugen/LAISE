@@ -1,0 +1,153 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>LAISE Visualizer</title>
+</head>
+
+<body>
+
+  <div id="app">
+
+    <canvas id="scene"></canvas>
+
+    <header class="brand">
+      <div class="mark">△</div>
+
+      <div>
+        <div class="laise">LAISE</div>
+        <div class="subtitle">
+          SPATIAL AUDIO VISUALIZER
+        </div>
+        <div class="version">
+          ORIGINAL CONCEPT · V001
+        </div>
+      </div>
+    </header>
+
+    <aside class="rail">
+
+      <section>
+        <span class="rail-dot active"></span>
+        <div>
+          <strong>SPATIAL FIELD</strong>
+          <small>REACTIVE TERRAIN</small>
+          <small>REAL-TIME FFT</small>
+        </div>
+      </section>
+
+      <section>
+        <span class="rail-dot"></span>
+        <div>
+          <strong>BINAURAL</strong>
+          <small>T007 LOCKED</small>
+          <small>MASTER SOURCE</small>
+        </div>
+      </section>
+
+      <section>
+        <span class="rail-dot"></span>
+        <div>
+          <strong>STEMS</strong>
+          <small>12 SOURCES</small>
+          <small>V002 READY</small>
+        </div>
+      </section>
+
+      <section>
+        <span class="rail-dot"></span>
+        <div>
+          <strong>MOTION</strong>
+          <small>SPATIAL DATA</small>
+          <small>V002 READY</small>
+        </div>
+      </section>
+
+    </aside>
+
+    <div class="status">
+      <div class="status-title">
+        MASTER REACTIVE TERRAIN
+      </div>
+
+      <div class="status-value" id="energy">
+        ENERGY 0%
+      </div>
+    </div>
+
+    <div class="listener">
+      <div class="headphones">◉</div>
+      <div>LISTENER POSITION</div>
+      <small>BINAURAL FIELD</small>
+    </div>
+
+    <footer class="hud">
+
+      <div class="now-playing">
+        <small>NOW PLAYING</small>
+        <strong>Tukãna — A Mata se Move</strong>
+        <span>LAISE FINAL MASTER</span>
+      </div>
+
+      <div class="progress-area">
+
+        <div class="timeline" id="timeline">
+          <div class="timeline-fill" id="timelineFill"></div>
+        </div>
+
+        <div class="time">
+          <span id="currentTime">00:00</span>
+          <span id="duration">00:00</span>
+        </div>
+
+      </div>
+
+      <div class="metric">
+        <small>INTEGRATED</small>
+        <strong>-16.90</strong>
+        <span>LUFS</span>
+      </div>
+
+      <div class="metric">
+        <small>TRUE PEAK</small>
+        <strong>-2.00</strong>
+        <span>dBTP</span>
+      </div>
+
+      <div class="metric">
+        <small>SPATIAL</small>
+        <strong>97.34</strong>
+        <span>% integrity</span>
+      </div>
+
+      <div class="release">
+        <div class="release-dot"></div>
+        <div>
+          <strong>FINAL DELIVERY</strong>
+          <span>VALIDATED</span>
+        </div>
+      </div>
+
+    </footer>
+
+    <button id="startButton">
+      <span>▶</span>
+      INICIAR VISUALIZAÇÃO
+    </button>
+
+    <audio
+      id="audio"
+      preload="auto"
+      src="/audio/TUKANA02_FINAL_MASTER_PCM24_48k.wav">
+    </audio>
+
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+
+</body>
+</html>

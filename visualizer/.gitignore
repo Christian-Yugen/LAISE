@@ -1,0 +1,5 @@
+﻿node_modules/
+dist/
+public/audio/*.wav
+public/audio/*.flac
+public/audio/*.m4a
