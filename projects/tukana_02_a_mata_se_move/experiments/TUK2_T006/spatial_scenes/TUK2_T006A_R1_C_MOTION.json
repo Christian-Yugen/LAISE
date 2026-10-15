@@ -1,0 +1,1892 @@
+{
+  "schema": "LAISE TUK2 Candidate Scene v1.0",
+  "project": "tukana_02_a_mata_se_move",
+  "test_id": "TUK2-T006A-R1",
+  "candidate": "C_MOTION",
+  "duration_seconds": 330.0,
+  "status": "GENERATED_NOT_YET_VALIDATED",
+  "source_blueprint": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\spatial_scenes\\TUK2_T004R1_blueprint.json",
+  "source_blueprint_sha256": "ffd8ec2b9726a7b9e31a7cd294e110138053433cffa1371e58d38ca2152ce74a",
+  "technical_360_validation": "TUK2-T005B PASS",
+  "principles": {
+    "event_gated_motion": true,
+    "return_home": true,
+    "lead_is_protected_mobile_anchor": true,
+    "lead_rear_motion": false,
+    "fixed_candidate_depth_order": true,
+    "distance_nearfield_bonus": false,
+    "reflection": false,
+    "reverb": false,
+    "T018_logic": false
+  },
+  "sources": [
+    {
+      "source_id": "lead_vocal",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\stems_original\\0 Lead Vocals.wav",
+      "input_sha256": "df0779b9ade5f59bcfa0ed4b43317538620124643a35e7c75305eb651980e8e3",
+      "class": "PROTECTED_MOBILE_ANCHOR",
+      "home": {
+        "azimuth_deg": 0,
+        "elevation_deg": 5,
+        "distance_m": 0.85
+      },
+      "gain_db": 0.0,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "HOME"
+        },
+        {
+          "time_seconds": 1.1,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "Event start / home"
+        },
+        {
+          "time_seconds": 3.2600000000000002,
+          "azimuth_deg_unwrapped": 10.799999999999999,
+          "elevation_deg": 8.6,
+          "gain_db": 0.0,
+          "reason": "ARC expressive target"
+        },
+        {
+          "time_seconds": 6.284000000000001,
+          "azimuth_deg_unwrapped": 10.799999999999999,
+          "elevation_deg": 8.6,
+          "gain_db": 0.0,
+          "reason": "ARC hold"
+        },
+        {
+          "time_seconds": 8.3,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "RETURN_HOME"
+        },
+        {
+          "time_seconds": 14.2,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "Event start / home"
+        },
+        {
+          "time_seconds": 18.61,
+          "azimuth_deg_unwrapped": -10.799999999999999,
+          "elevation_deg": 1.4000000000000004,
+          "gain_db": 0.0,
+          "reason": "ARC expressive target"
+        },
+        {
+          "time_seconds": 24.784,
+          "azimuth_deg_unwrapped": -10.799999999999999,
+          "elevation_deg": 1.4000000000000004,
+          "gain_db": 0.0,
+          "reason": "ARC hold"
+        },
+        {
+          "time_seconds": 28.9,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "RETURN_HOME"
+        },
+        {
+          "time_seconds": 91.05,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "Event start / home"
+        },
+        {
+          "time_seconds": 98.685,
+          "azimuth_deg_unwrapped": 7.199999999999999,
+          "elevation_deg": 8.6,
+          "gain_db": 0.0,
+          "reason": "ARC expressive target"
+        },
+        {
+          "time_seconds": 109.374,
+          "azimuth_deg_unwrapped": 7.199999999999999,
+          "elevation_deg": 8.6,
+          "gain_db": 0.0,
+          "reason": "ARC hold"
+        },
+        {
+          "time_seconds": 116.5,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "RETURN_HOME"
+        },
+        {
+          "time_seconds": 124.0,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "Event start / home"
+        },
+        {
+          "time_seconds": 124.69,
+          "azimuth_deg_unwrapped": -4.2,
+          "elevation_deg": 2.9,
+          "gain_db": 0.0,
+          "reason": "ARC expressive target"
+        },
+        {
+          "time_seconds": 125.65599999999999,
+          "azimuth_deg_unwrapped": -4.2,
+          "elevation_deg": 2.9,
+          "gain_db": 0.0,
+          "reason": "ARC hold"
+        },
+        {
+          "time_seconds": 126.3,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "Event start / home"
+        },
+        {
+          "time_seconds": 128.94,
+          "azimuth_deg_unwrapped": 7.199999999999999,
+          "elevation_deg": 8.6,
+          "gain_db": 0.0,
+          "reason": "ARC expressive target"
+        },
+        {
+          "time_seconds": 132.636,
+          "azimuth_deg_unwrapped": 7.199999999999999,
+          "elevation_deg": 8.6,
+          "gain_db": 0.0,
+          "reason": "ARC hold"
+        },
+        {
+          "time_seconds": 135.1,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "RETURN_HOME"
+        },
+        {
+          "time_seconds": 138.9,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "Event start / home"
+        },
+        {
+          "time_seconds": 140.4,
+          "azimuth_deg_unwrapped": -4.2,
+          "elevation_deg": 2.9,
+          "gain_db": 0.0,
+          "reason": "ARC expressive target"
+        },
+        {
+          "time_seconds": 142.5,
+          "azimuth_deg_unwrapped": -4.2,
+          "elevation_deg": 2.9,
+          "gain_db": 0.0,
+          "reason": "ARC hold"
+        },
+        {
+          "time_seconds": 143.9,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "Event start / home"
+        },
+        {
+          "time_seconds": 150.26,
+          "azimuth_deg_unwrapped": 7.199999999999999,
+          "elevation_deg": 8.6,
+          "gain_db": 0.0,
+          "reason": "ARC expressive target"
+        },
+        {
+          "time_seconds": 159.164,
+          "azimuth_deg_unwrapped": 7.199999999999999,
+          "elevation_deg": 8.6,
+          "gain_db": 0.0,
+          "reason": "ARC hold"
+        },
+        {
+          "time_seconds": 165.1,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "Event start / home"
+        },
+        {
+          "time_seconds": 176.26,
+          "azimuth_deg_unwrapped": -4.2,
+          "elevation_deg": 2.9,
+          "gain_db": 0.0,
+          "reason": "ARC expressive target"
+        },
+        {
+          "time_seconds": 191.88400000000001,
+          "azimuth_deg_unwrapped": -4.2,
+          "elevation_deg": 2.9,
+          "gain_db": 0.0,
+          "reason": "ARC hold"
+        },
+        {
+          "time_seconds": 202.3,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "Event start / home"
+        },
+        {
+          "time_seconds": 213.29500000000002,
+          "azimuth_deg_unwrapped": 4.2,
+          "elevation_deg": 7.1,
+          "gain_db": 0.0,
+          "reason": "ARC expressive target"
+        },
+        {
+          "time_seconds": 228.688,
+          "azimuth_deg_unwrapped": 4.2,
+          "elevation_deg": 7.1,
+          "gain_db": 0.0,
+          "reason": "ARC hold"
+        },
+        {
+          "time_seconds": 238.95,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "RETURN_HOME"
+        },
+        {
+          "time_seconds": 248.95,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "Event start / home"
+        },
+        {
+          "time_seconds": 252.805,
+          "azimuth_deg_unwrapped": -7.199999999999999,
+          "elevation_deg": 1.4000000000000004,
+          "gain_db": 0.0,
+          "reason": "ARC expressive target"
+        },
+        {
+          "time_seconds": 258.202,
+          "azimuth_deg_unwrapped": -7.199999999999999,
+          "elevation_deg": 1.4000000000000004,
+          "gain_db": 0.0,
+          "reason": "ARC hold"
+        },
+        {
+          "time_seconds": 261.8,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "RETURN_HOME"
+        },
+        {
+          "time_seconds": 285.15,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "Event start / home"
+        },
+        {
+          "time_seconds": 292.11,
+          "azimuth_deg_unwrapped": 7.199999999999999,
+          "elevation_deg": 8.6,
+          "gain_db": 0.0,
+          "reason": "ARC expressive target"
+        },
+        {
+          "time_seconds": 301.854,
+          "azimuth_deg_unwrapped": 7.199999999999999,
+          "elevation_deg": 8.6,
+          "gain_db": 0.0,
+          "reason": "ARC hold"
+        },
+        {
+          "time_seconds": 308.35,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "RETURN_HOME"
+        },
+        {
+          "time_seconds": 324.1,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "Event start / home"
+        },
+        {
+          "time_seconds": 325.315,
+          "azimuth_deg_unwrapped": -7.199999999999999,
+          "elevation_deg": 1.4000000000000004,
+          "gain_db": 0.0,
+          "reason": "ARC expressive target"
+        },
+        {
+          "time_seconds": 327.01599999999996,
+          "azimuth_deg_unwrapped": -7.199999999999999,
+          "elevation_deg": 1.4000000000000004,
+          "gain_db": 0.0,
+          "reason": "ARC hold"
+        },
+        {
+          "time_seconds": 328.15,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "RETURN_HOME"
+        },
+        {
+          "time_seconds": 330.0,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "HOME END"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 0.85
+        },
+        {
+          "time_seconds": 330.0,
+          "distance_m": 0.85
+        }
+      ],
+      "growth_reference_distance_m": 0.85,
+      "selected_motion_events": [
+        {
+          "section_id": "tuk2_section_01",
+          "motion_class": "PROTECTED_SMALL_ARC",
+          "event": {
+            "role": "lead_vocal",
+            "start_seconds": 1.1,
+            "end_seconds": 8.3,
+            "duration_seconds": 7.2,
+            "peak_relative_to_section_p95": 1.0886868237280143,
+            "mean_relative_to_section_p95": 0.5393888627716977,
+            "lead_active_fraction": 1.0,
+            "salience_score": 0.9597853879851611
+          },
+          "azimuth_excursion_deg": 10.799999999999999,
+          "elevation_excursion_deg": 3.5999999999999996
+        },
+        {
+          "section_id": "tuk2_section_02",
+          "motion_class": "PROTECTED_SMALL_ARC",
+          "event": {
+            "role": "lead_vocal",
+            "start_seconds": 14.2,
+            "end_seconds": 28.9,
+            "duration_seconds": 14.7,
+            "peak_relative_to_section_p95": 1.2725611729126483,
+            "mean_relative_to_section_p95": 0.5807319503618369,
+            "lead_active_fraction": 0.9863945578231292,
+            "salience_score": 1.1042074567555185
+          },
+          "azimuth_excursion_deg": 10.799999999999999,
+          "elevation_excursion_deg": 3.5999999999999996
+        },
+        {
+          "section_id": "tuk2_section_03",
+          "motion_class": "PROTECTED_SMALL_ARC",
+          "event": {
+            "role": "lead_vocal",
+            "start_seconds": 91.05,
+            "end_seconds": 116.5,
+            "duration_seconds": 25.45,
+            "peak_relative_to_section_p95": 1.3246614777340233,
+            "mean_relative_to_section_p95": 0.6541391128995517,
+            "lead_active_fraction": 1.0,
+            "salience_score": 1.1433993693184974
+          },
+          "azimuth_excursion_deg": 7.199999999999999,
+          "elevation_excursion_deg": 3.5999999999999996
+        },
+        {
+          "section_id": "tuk2_section_04",
+          "motion_class": "PROTECTED_SMALL_ARC",
+          "event": {
+            "role": "lead_vocal",
+            "start_seconds": 124.0,
+            "end_seconds": 126.3,
+            "duration_seconds": 2.3,
+            "peak_relative_to_section_p95": 1.1099023854820205,
+            "mean_relative_to_section_p95": 0.7850197689631502,
+            "lead_active_fraction": 0.8913043478260869,
+            "salience_score": 1.0552158964335958
+          },
+          "azimuth_excursion_deg": 4.2,
+          "elevation_excursion_deg": 2.1
+        },
+        {
+          "section_id": "tuk2_section_05",
+          "motion_class": "PROTECTED_SMALL_ARC",
+          "event": {
+            "role": "lead_vocal",
+            "start_seconds": 126.3,
+            "end_seconds": 135.1,
+            "duration_seconds": 8.8,
+            "peak_relative_to_section_p95": 1.1213465379670324,
+            "mean_relative_to_section_p95": 0.6735119712897096,
+            "lead_active_fraction": 0.9772727272727273,
+            "salience_score": 1.0669166080092405
+          },
+          "azimuth_excursion_deg": 7.199999999999999,
+          "elevation_excursion_deg": 3.5999999999999996
+        },
+        {
+          "section_id": "tuk2_section_06",
+          "motion_class": "PROTECTED_SMALL_ARC",
+          "event": {
+            "role": "lead_vocal",
+            "start_seconds": 138.9,
+            "end_seconds": 143.9,
+            "duration_seconds": 5.0,
+            "peak_relative_to_section_p95": 1.2607510136773132,
+            "mean_relative_to_section_p95": 0.3448007007853036,
+            "lead_active_fraction": 0.64,
+            "salience_score": 1.0278674039193918
+          },
+          "azimuth_excursion_deg": 4.2,
+          "elevation_excursion_deg": 2.1
+        },
+        {
+          "section_id": "tuk2_section_07",
+          "motion_class": "PROTECTED_SMALL_ARC",
+          "event": {
+            "role": "lead_vocal",
+            "start_seconds": 143.9,
+            "end_seconds": 165.1,
+            "duration_seconds": 21.2,
+            "peak_relative_to_section_p95": 1.1455272277322701,
+            "mean_relative_to_section_p95": 0.64232267560962,
+            "lead_active_fraction": 1.0,
+            "salience_score": 1.068791559995313
+          },
+          "azimuth_excursion_deg": 7.199999999999999,
+          "elevation_excursion_deg": 3.5999999999999996
+        },
+        {
+          "section_id": "tuk2_section_08",
+          "motion_class": "PROTECTED_SMALL_ARC",
+          "event": {
+            "role": "lead_vocal",
+            "start_seconds": 165.1,
+            "end_seconds": 202.3,
+            "duration_seconds": 37.2,
+            "peak_relative_to_section_p95": 1.206671790326904,
+            "mean_relative_to_section_p95": 0.4803346731021517,
+            "lead_active_fraction": 0.9973118279569892,
+            "salience_score": 1.0527523844062996
+          },
+          "azimuth_excursion_deg": 4.2,
+          "elevation_excursion_deg": 2.1
+        },
+        {
+          "section_id": "tuk2_section_09",
+          "motion_class": "PROTECTED_SMALL_ARC",
+          "event": {
+            "role": "lead_vocal",
+            "start_seconds": 202.3,
+            "end_seconds": 238.95,
+            "duration_seconds": 36.65,
+            "peak_relative_to_section_p95": 1.183675963385608,
+            "mean_relative_to_section_p95": 0.6316895069527211,
+            "lead_active_fraction": 1.0,
+            "salience_score": 1.0813927620924235
+          },
+          "azimuth_excursion_deg": 4.2,
+          "elevation_excursion_deg": 2.1
+        },
+        {
+          "section_id": "tuk2_section_10",
+          "motion_class": "PROTECTED_SMALL_ARC",
+          "event": {
+            "role": "lead_vocal",
+            "start_seconds": 248.95,
+            "end_seconds": 261.8,
+            "duration_seconds": 12.85,
+            "peak_relative_to_section_p95": 1.4282982630270498,
+            "mean_relative_to_section_p95": 0.5614864443772001,
+            "lead_active_fraction": 0.9727626459143969,
+            "salience_score": 1.16169091630512
+          },
+          "azimuth_excursion_deg": 7.199999999999999,
+          "elevation_excursion_deg": 3.5999999999999996
+        },
+        {
+          "section_id": "tuk2_section_11",
+          "motion_class": "PROTECTED_SMALL_ARC",
+          "event": {
+            "role": "lead_vocal",
+            "start_seconds": 285.15,
+            "end_seconds": 308.35,
+            "duration_seconds": 23.2,
+            "peak_relative_to_section_p95": 1.303700966356195,
+            "mean_relative_to_section_p95": 0.5108846171340437,
+            "lead_active_fraction": 0.9719827586206896,
+            "salience_score": 1.099201540825989
+          },
+          "azimuth_excursion_deg": 7.199999999999999,
+          "elevation_excursion_deg": 3.5999999999999996
+        },
+        {
+          "section_id": "tuk2_section_12",
+          "motion_class": "PROTECTED_SMALL_ARC",
+          "event": {
+            "role": "lead_vocal",
+            "start_seconds": 324.1,
+            "end_seconds": 328.15,
+            "duration_seconds": 4.05,
+            "peak_relative_to_section_p95": 1.029491183493344,
+            "mean_relative_to_section_p95": 0.6400374828124972,
+            "lead_active_fraction": 0.0,
+            "salience_score": 0.8987884374756736
+          },
+          "azimuth_excursion_deg": 7.199999999999999,
+          "elevation_excursion_deg": 3.5999999999999996
+        }
+      ]
+    },
+    {
+      "source_id": "backing_vocals",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\stems_original\\1 Backing Vocals.wav",
+      "input_sha256": "9b424c02e66d059c91125f369cdd1335f9eb546097b2835b311a3a624e9e9def",
+      "class": "VOCAL_SURROUND_SUPPORT",
+      "home": {
+        "azimuth_deg": -105,
+        "elevation_deg": 22,
+        "distance_m": 1.25
+      },
+      "gain_db": 0.0,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": -105.0,
+          "elevation_deg": 22.0,
+          "gain_db": 0.0,
+          "reason": "HOME"
+        },
+        {
+          "time_seconds": 2.95,
+          "azimuth_deg_unwrapped": -105.0,
+          "elevation_deg": 22.0,
+          "gain_db": 0.0,
+          "reason": "Event start / home"
+        },
+        {
+          "time_seconds": 3.13,
+          "azimuth_deg_unwrapped": -63.0,
+          "elevation_deg": 27.25,
+          "gain_db": 0.0,
+          "reason": "SLOW_ARC expressive target"
+        },
+        {
+          "time_seconds": 3.3819999999999997,
+          "azimuth_deg_unwrapped": -63.0,
+          "elevation_deg": 27.25,
+          "gain_db": 0.0,
+          "reason": "SLOW_ARC hold"
+        },
+        {
+          "time_seconds": 3.55,
+          "azimuth_deg_unwrapped": -105.0,
+          "elevation_deg": 22.0,
+          "gain_db": 0.0,
+          "reason": "RETURN_HOME"
+        },
+        {
+          "time_seconds": 330.0,
+          "azimuth_deg_unwrapped": -105.0,
+          "elevation_deg": 22.0,
+          "gain_db": 0.0,
+          "reason": "HOME END"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.25
+        },
+        {
+          "time_seconds": 330.0,
+          "distance_m": 1.25
+        }
+      ],
+      "growth_reference_distance_m": 1.25,
+      "selected_motion_events": [
+        {
+          "section_id": "tuk2_section_01",
+          "motion_class": "SLOW_ARC",
+          "event": {
+            "role": "backing_vocals",
+            "start_seconds": 2.95,
+            "end_seconds": 3.55,
+            "duration_seconds": 0.6,
+            "peak_relative_to_section_p95": 1.2524092661218895,
+            "mean_relative_to_section_p95": 0.9072592373587515,
+            "lead_active_fraction": 1.0,
+            "salience_score": 0.7404449610519106
+          },
+          "azimuth_excursion_deg": 42.0,
+          "elevation_excursion_deg": 5.25
+        }
+      ]
+    },
+    {
+      "source_id": "drums",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\stems_original\\2 Drums.wav",
+      "input_sha256": "f015176c732b3e757a285ec8b77ec78aecef85df7deae668722afe1486b00b60",
+      "class": "PROTECTED_RHYTHMIC_ANCHOR",
+      "home": {
+        "azimuth_deg": 18,
+        "elevation_deg": -14,
+        "distance_m": 1.1
+      },
+      "gain_db": 0.0,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 18.0,
+          "elevation_deg": -14.0,
+          "gain_db": 0.0,
+          "reason": "HOME"
+        },
+        {
+          "time_seconds": 330.0,
+          "azimuth_deg_unwrapped": 18.0,
+          "elevation_deg": -14.0,
+          "gain_db": 0.0,
+          "reason": "HOME END"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.1
+        },
+        {
+          "time_seconds": 330.0,
+          "distance_m": 1.1
+        }
+      ],
+      "growth_reference_distance_m": 1.1,
+      "selected_motion_events": []
+    },
+    {
+      "source_id": "bass",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\stems_original\\3 Bass.wav",
+      "input_sha256": "4a3c75a781dc0dc62ad53488e22aae1fab90b1e386829c655d19df1f90d74c88",
+      "class": "PROTECTED_LOW_ANCHOR",
+      "home": {
+        "azimuth_deg": 0,
+        "elevation_deg": -34,
+        "distance_m": 1.2
+      },
+      "gain_db": 0.0,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": -34.0,
+          "gain_db": 0.0,
+          "reason": "HOME"
+        },
+        {
+          "time_seconds": 330.0,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": -34.0,
+          "gain_db": 0.0,
+          "reason": "HOME END"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.2
+        },
+        {
+          "time_seconds": 330.0,
+          "distance_m": 1.2
+        }
+      ],
+      "growth_reference_distance_m": 1.2,
+      "selected_motion_events": []
+    },
+    {
+      "source_id": "guitar",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\stems_original\\4 Guitar.wav",
+      "input_sha256": "3f941f7490391186a3f0c7b780f95dc0b687aa7975f5ca0a1b4debbcfbedd510",
+      "class": "INTERMITTENT_LATERAL_OBJECT",
+      "home": {
+        "azimuth_deg": -52,
+        "elevation_deg": 3,
+        "distance_m": 1.25
+      },
+      "gain_db": 0.0,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": -52.0,
+          "elevation_deg": 3.0,
+          "gain_db": 0.0,
+          "reason": "HOME"
+        },
+        {
+          "time_seconds": 140.6,
+          "azimuth_deg_unwrapped": -52.0,
+          "elevation_deg": 3.0,
+          "gain_db": 0.0,
+          "reason": "Event start / home"
+        },
+        {
+          "time_seconds": 141.005,
+          "azimuth_deg_unwrapped": -24.64,
+          "elevation_deg": 8.6,
+          "gain_db": 0.0,
+          "reason": "CALL_RESPONSE expressive target"
+        },
+        {
+          "time_seconds": 141.572,
+          "azimuth_deg_unwrapped": -24.64,
+          "elevation_deg": 8.6,
+          "gain_db": 0.0,
+          "reason": "CALL_RESPONSE hold"
+        },
+        {
+          "time_seconds": 141.95,
+          "azimuth_deg_unwrapped": -52.0,
+          "elevation_deg": 3.0,
+          "gain_db": 0.0,
+          "reason": "RETURN_HOME"
+        },
+        {
+          "time_seconds": 330.0,
+          "azimuth_deg_unwrapped": -52.0,
+          "elevation_deg": 3.0,
+          "gain_db": 0.0,
+          "reason": "HOME END"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.25
+        },
+        {
+          "time_seconds": 330.0,
+          "distance_m": 1.25
+        }
+      ],
+      "growth_reference_distance_m": 1.25,
+      "selected_motion_events": [
+        {
+          "section_id": "tuk2_section_06",
+          "motion_class": "CALL_RESPONSE",
+          "event": {
+            "role": "guitar",
+            "start_seconds": 140.6,
+            "end_seconds": 141.95,
+            "duration_seconds": 1.35,
+            "peak_relative_to_section_p95": 1.209365054636051,
+            "mean_relative_to_section_p95": 0.8920128827250794,
+            "lead_active_fraction": 0.5925925925925926,
+            "salience_score": 1.053053707789751
+          },
+          "azimuth_excursion_deg": 27.36,
+          "elevation_excursion_deg": 5.6
+        }
+      ]
+    },
+    {
+      "source_id": "keyboards",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\stems_original\\5 Keyboard.wav",
+      "input_sha256": "80850b6f451ef5edde42b856e8f98b55af3d35c2cace235d3a9ffd90d3bc15f2",
+      "class": "WIDE_SUPPORT_CAUTION",
+      "home": {
+        "azimuth_deg": 52,
+        "elevation_deg": 24,
+        "distance_m": 1.4
+      },
+      "gain_db": 0.0,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 52.0,
+          "elevation_deg": 24.0,
+          "gain_db": 0.0,
+          "reason": "HOME"
+        },
+        {
+          "time_seconds": 330.0,
+          "azimuth_deg_unwrapped": 52.0,
+          "elevation_deg": 24.0,
+          "gain_db": 0.0,
+          "reason": "HOME END"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.4
+        },
+        {
+          "time_seconds": 330.0,
+          "distance_m": 1.4
+        }
+      ],
+      "growth_reference_distance_m": 1.4,
+      "selected_motion_events": []
+    },
+    {
+      "source_id": "percussion",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\stems_original\\6 Percussion.wav",
+      "input_sha256": "57f34332c135ef7a60ec94ffbaf2b7597b14dce6a3e37975263982645a06d8c6",
+      "class": "RHYTHMIC_EXPRESSIVE_MOVER",
+      "home": {
+        "azimuth_deg": 82,
+        "elevation_deg": -8,
+        "distance_m": 0.95
+      },
+      "gain_db": 0.0,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 82.0,
+          "elevation_deg": -8.0,
+          "gain_db": 0.0,
+          "reason": "HOME"
+        },
+        {
+          "time_seconds": 330.0,
+          "azimuth_deg_unwrapped": 82.0,
+          "elevation_deg": -8.0,
+          "gain_db": 0.0,
+          "reason": "HOME END"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 0.95
+        },
+        {
+          "time_seconds": 330.0,
+          "distance_m": 0.95
+        }
+      ],
+      "growth_reference_distance_m": 0.95,
+      "selected_motion_events": []
+    },
+    {
+      "source_id": "strings",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\stems_original\\7 Strings.wav",
+      "input_sha256": "e95e8893d1d89b714405eddc7ec50a3f340c48b5088eda19121372ca759d5fe9",
+      "class": "SLOW_CINEMATIC_MOVER",
+      "home": {
+        "azimuth_deg": -142,
+        "elevation_deg": 34,
+        "distance_m": 1.55
+      },
+      "gain_db": 0.0,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "HOME"
+        },
+        {
+          "time_seconds": 27.85,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "Event start / home"
+        },
+        {
+          "time_seconds": 28.285,
+          "azimuth_deg_unwrapped": -130.0,
+          "elevation_deg": 58.0,
+          "gain_db": 0.0,
+          "reason": "ELEVATION_SWEEP expressive target"
+        },
+        {
+          "time_seconds": 28.894000000000002,
+          "azimuth_deg_unwrapped": -130.0,
+          "elevation_deg": 58.0,
+          "gain_db": 0.0,
+          "reason": "ELEVATION_SWEEP hold"
+        },
+        {
+          "time_seconds": 29.3,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "RETURN_HOME"
+        },
+        {
+          "time_seconds": 124.7,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "Event start / home"
+        },
+        {
+          "time_seconds": 124.79,
+          "azimuth_deg_unwrapped": -107.44,
+          "elevation_deg": 42.0,
+          "gain_db": 0.0,
+          "reason": "SLOW_ARC expressive target"
+        },
+        {
+          "time_seconds": 124.916,
+          "azimuth_deg_unwrapped": -107.44,
+          "elevation_deg": 42.0,
+          "gain_db": 0.0,
+          "reason": "SLOW_ARC hold"
+        },
+        {
+          "time_seconds": 125.0,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "RETURN_HOME"
+        },
+        {
+          "time_seconds": 133.1,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "Event start / home"
+        },
+        {
+          "time_seconds": 133.51999999999998,
+          "azimuth_deg_unwrapped": -99.75999999999999,
+          "elevation_deg": 42.0,
+          "gain_db": 0.0,
+          "reason": "SLOW_ARC expressive target"
+        },
+        {
+          "time_seconds": 134.108,
+          "azimuth_deg_unwrapped": -99.75999999999999,
+          "elevation_deg": 42.0,
+          "gain_db": 0.0,
+          "reason": "SLOW_ARC hold"
+        },
+        {
+          "time_seconds": 134.5,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "RETURN_HOME"
+        },
+        {
+          "time_seconds": 283.75,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "Event start / home"
+        },
+        {
+          "time_seconds": 286.525,
+          "azimuth_deg_unwrapped": -99.75999999999999,
+          "elevation_deg": 42.0,
+          "gain_db": 0.0,
+          "reason": "SLOW_ARC expressive target"
+        },
+        {
+          "time_seconds": 290.41,
+          "azimuth_deg_unwrapped": -99.75999999999999,
+          "elevation_deg": 42.0,
+          "gain_db": 0.0,
+          "reason": "SLOW_ARC hold"
+        },
+        {
+          "time_seconds": 293.0,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "RETURN_HOME"
+        },
+        {
+          "time_seconds": 297.7,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "Event start / home"
+        },
+        {
+          "time_seconds": 297.97,
+          "azimuth_deg_unwrapped": -99.75999999999999,
+          "elevation_deg": 42.0,
+          "gain_db": 0.0,
+          "reason": "SLOW_ARC expressive target"
+        },
+        {
+          "time_seconds": 298.348,
+          "azimuth_deg_unwrapped": -99.75999999999999,
+          "elevation_deg": 42.0,
+          "gain_db": 0.0,
+          "reason": "SLOW_ARC hold"
+        },
+        {
+          "time_seconds": 298.6,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "RETURN_HOME"
+        },
+        {
+          "time_seconds": 323.05,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "Event start / home"
+        },
+        {
+          "time_seconds": 323.365,
+          "azimuth_deg_unwrapped": -184.24,
+          "elevation_deg": 26.0,
+          "gain_db": 0.0,
+          "reason": "SLOW_ARC expressive target"
+        },
+        {
+          "time_seconds": 323.80600000000004,
+          "azimuth_deg_unwrapped": -184.24,
+          "elevation_deg": 26.0,
+          "gain_db": 0.0,
+          "reason": "SLOW_ARC hold"
+        },
+        {
+          "time_seconds": 324.1,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "RETURN_HOME"
+        },
+        {
+          "time_seconds": 330.0,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "HOME END"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.55
+        },
+        {
+          "time_seconds": 330.0,
+          "distance_m": 1.55
+        }
+      ],
+      "growth_reference_distance_m": 1.55,
+      "selected_motion_events": [
+        {
+          "section_id": "tuk2_section_02",
+          "motion_class": "ELEVATION_SWEEP",
+          "event": {
+            "role": "strings",
+            "start_seconds": 27.85,
+            "end_seconds": 29.3,
+            "duration_seconds": 1.45,
+            "peak_relative_to_section_p95": 2.329667940390197,
+            "mean_relative_to_section_p95": 1.4526779077893948,
+            "lead_active_fraction": 0.5862068965517241,
+            "salience_score": 1.5356694769473487
+          },
+          "azimuth_excursion_deg": 12.0,
+          "elevation_excursion_deg": 24.0
+        },
+        {
+          "section_id": "tuk2_section_04",
+          "motion_class": "SLOW_ARC",
+          "event": {
+            "role": "strings",
+            "start_seconds": 124.7,
+            "end_seconds": 125.0,
+            "duration_seconds": 0.3,
+            "peak_relative_to_section_p95": 1.135478686447988,
+            "mean_relative_to_section_p95": 1.037424575483499,
+            "lead_active_fraction": 1.0,
+            "salience_score": 0.9536021158021711
+          },
+          "azimuth_excursion_deg": 34.56,
+          "elevation_excursion_deg": 8.4
+        },
+        {
+          "section_id": "tuk2_section_05",
+          "motion_class": "SLOW_ARC",
+          "event": {
+            "role": "strings",
+            "start_seconds": 133.1,
+            "end_seconds": 134.5,
+            "duration_seconds": 1.4,
+            "peak_relative_to_section_p95": 1.8703583554123886,
+            "mean_relative_to_section_p95": 0.7396102561746437,
+            "lead_active_fraction": 1.0,
+            "salience_score": 1.3030459062086164
+          },
+          "azimuth_excursion_deg": 42.24,
+          "elevation_excursion_deg": 8.4
+        },
+        {
+          "section_id": "tuk2_section_11",
+          "motion_class": "SLOW_ARC",
+          "event": {
+            "role": "strings",
+            "start_seconds": 283.75,
+            "end_seconds": 293.0,
+            "duration_seconds": 9.25,
+            "peak_relative_to_section_p95": 2.625660747225817,
+            "mean_relative_to_section_p95": 0.6943330298699895,
+            "lead_active_fraction": 0.8486486486486486,
+            "salience_score": 1.4235832574674974
+          },
+          "azimuth_excursion_deg": 42.24,
+          "elevation_excursion_deg": 8.4
+        },
+        {
+          "section_id": "tuk2_section_11",
+          "motion_class": "SLOW_ARC",
+          "event": {
+            "role": "strings",
+            "start_seconds": 323.05,
+            "end_seconds": 324.1,
+            "duration_seconds": 1.05,
+            "peak_relative_to_section_p95": 0.429395831887486,
+            "mean_relative_to_section_p95": 0.24187344480456147,
+            "lead_active_fraction": 0.0,
+            "salience_score": 0.5135972403736223
+          },
+          "azimuth_excursion_deg": 42.24,
+          "elevation_excursion_deg": 8.4
+        },
+        {
+          "section_id": "tuk2_section_11",
+          "motion_class": "SLOW_ARC",
+          "event": {
+            "role": "strings",
+            "start_seconds": 297.7,
+            "end_seconds": 298.6,
+            "duration_seconds": 0.9,
+            "peak_relative_to_section_p95": 0.30038157523830844,
+            "mean_relative_to_section_p95": 0.20444803590138305,
+            "lead_active_fraction": 1.0,
+            "salience_score": 0.31823966386378433
+          },
+          "azimuth_excursion_deg": 42.24,
+          "elevation_excursion_deg": 8.4
+        }
+      ]
+    },
+    {
+      "source_id": "synth",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\stems_original\\8 Synth.wav",
+      "input_sha256": "ed5c0dee0d005a48cee1beaa445639e4d19a0335a1ea55a075846faeb3cbba60",
+      "class": "SUSTAINED_REAR_TEXTURE",
+      "home": {
+        "azimuth_deg": 152,
+        "elevation_deg": 38,
+        "distance_m": 1.65
+      },
+      "gain_db": 0.0,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 152.0,
+          "elevation_deg": 38.0,
+          "gain_db": 0.0,
+          "reason": "HOME"
+        },
+        {
+          "time_seconds": 330.0,
+          "azimuth_deg_unwrapped": 152.0,
+          "elevation_deg": 38.0,
+          "gain_db": 0.0,
+          "reason": "HOME END"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.65
+        },
+        {
+          "time_seconds": 330.0,
+          "distance_m": 1.65
+        }
+      ],
+      "growth_reference_distance_m": 1.65,
+      "selected_motion_events": []
+    },
+    {
+      "source_id": "other",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\stems_original\\9 Other.wav",
+      "input_sha256": "a6a329feb81a07e300ce1a57b3e2b6493f4cee85400721c8e41dca8007aa1adc",
+      "class": "WIDE_AMBIGUOUS_SUPPORT",
+      "home": {
+        "azimuth_deg": -160,
+        "elevation_deg": 10,
+        "distance_m": 1.65
+      },
+      "gain_db": 0.0,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": -160.0,
+          "elevation_deg": 10.0,
+          "gain_db": 0.0,
+          "reason": "HOME"
+        },
+        {
+          "time_seconds": 330.0,
+          "azimuth_deg_unwrapped": -160.0,
+          "elevation_deg": 10.0,
+          "gain_db": 0.0,
+          "reason": "HOME END"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.65
+        },
+        {
+          "time_seconds": 330.0,
+          "distance_m": 1.65
+        }
+      ],
+      "growth_reference_distance_m": 1.65,
+      "selected_motion_events": []
+    },
+    {
+      "source_id": "brass",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\stems_original\\10 Brass.wav",
+      "input_sha256": "e4e61d33e129d73e332cd647a1e7c2d241b37cc9e79e05c9bca56dff376e4fb7",
+      "class": "SPARSE_POINT_OBJECT",
+      "home": {
+        "azimuth_deg": 126,
+        "elevation_deg": -18,
+        "distance_m": 1.15
+      },
+      "gain_db": 0.0,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "HOME"
+        },
+        {
+          "time_seconds": 158.82999999999998,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "POINT_EVENT pre-position start"
+        },
+        {
+          "time_seconds": 158.95,
+          "azimuth_deg_unwrapped": 171.76,
+          "elevation_deg": 4.0,
+          "gain_db": 0.0,
+          "reason": "POINT_EVENT positioned before attack"
+        },
+        {
+          "time_seconds": 159.3,
+          "azimuth_deg_unwrapped": 171.76,
+          "elevation_deg": 4.0,
+          "gain_db": 0.0,
+          "reason": "POINT_EVENT stable during audible event"
+        },
+        {
+          "time_seconds": 159.42000000000002,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "POINT_EVENT return after event"
+        },
+        {
+          "time_seconds": 161.13,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "POINT_EVENT pre-position start"
+        },
+        {
+          "time_seconds": 161.25,
+          "azimuth_deg_unwrapped": 80.24000000000001,
+          "elevation_deg": -40.0,
+          "gain_db": 0.0,
+          "reason": "POINT_EVENT positioned before attack"
+        },
+        {
+          "time_seconds": 161.7,
+          "azimuth_deg_unwrapped": 80.24000000000001,
+          "elevation_deg": -40.0,
+          "gain_db": 0.0,
+          "reason": "POINT_EVENT stable during audible event"
+        },
+        {
+          "time_seconds": 161.82,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "POINT_EVENT return after event"
+        },
+        {
+          "time_seconds": 269.7125,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "POINT_EVENT pre-position start"
+        },
+        {
+          "time_seconds": 269.95,
+          "azimuth_deg_unwrapped": 163.44,
+          "elevation_deg": 0.0,
+          "gain_db": 0.0,
+          "reason": "POINT_EVENT positioned before attack"
+        },
+        {
+          "time_seconds": 270.9,
+          "azimuth_deg_unwrapped": 163.44,
+          "elevation_deg": 0.0,
+          "gain_db": 0.0,
+          "reason": "POINT_EVENT stable during audible event"
+        },
+        {
+          "time_seconds": 271.1375,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "POINT_EVENT return after event"
+        },
+        {
+          "time_seconds": 271.975,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "POINT_EVENT pre-position start"
+        },
+        {
+          "time_seconds": 272.25,
+          "azimuth_deg_unwrapped": 88.56,
+          "elevation_deg": -36.0,
+          "gain_db": 0.0,
+          "reason": "POINT_EVENT positioned before attack"
+        },
+        {
+          "time_seconds": 273.35,
+          "azimuth_deg_unwrapped": 88.56,
+          "elevation_deg": -36.0,
+          "gain_db": 0.0,
+          "reason": "POINT_EVENT stable during audible event"
+        },
+        {
+          "time_seconds": 273.625,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "POINT_EVENT return after event"
+        },
+        {
+          "time_seconds": 274.48,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "POINT_EVENT pre-position start"
+        },
+        {
+          "time_seconds": 274.6,
+          "azimuth_deg_unwrapped": 163.44,
+          "elevation_deg": 0.0,
+          "gain_db": 0.0,
+          "reason": "POINT_EVENT positioned before attack"
+        },
+        {
+          "time_seconds": 275.0,
+          "azimuth_deg_unwrapped": 163.44,
+          "elevation_deg": 0.0,
+          "gain_db": 0.0,
+          "reason": "POINT_EVENT stable during audible event"
+        },
+        {
+          "time_seconds": 275.12,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "POINT_EVENT return after event"
+        },
+        {
+          "time_seconds": 327.34999999999997,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "POINT_EVENT pre-position start"
+        },
+        {
+          "time_seconds": 327.7,
+          "azimuth_deg_unwrapped": 88.56,
+          "elevation_deg": -36.0,
+          "gain_db": 0.0,
+          "reason": "POINT_EVENT positioned before attack"
+        },
+        {
+          "time_seconds": 329.1,
+          "azimuth_deg_unwrapped": 88.56,
+          "elevation_deg": -36.0,
+          "gain_db": 0.0,
+          "reason": "POINT_EVENT stable during audible event"
+        },
+        {
+          "time_seconds": 329.45000000000005,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "POINT_EVENT return after event"
+        },
+        {
+          "time_seconds": 330.0,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "HOME END"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.15
+        },
+        {
+          "time_seconds": 330.0,
+          "distance_m": 1.15
+        }
+      ],
+      "growth_reference_distance_m": 1.15,
+      "selected_motion_events": [
+        {
+          "section_id": "tuk2_section_07",
+          "motion_class": "POINT_EVENT",
+          "event": {
+            "role": "brass",
+            "start_seconds": 161.25,
+            "end_seconds": 161.7,
+            "duration_seconds": 0.45,
+            "peak_relative_to_section_p95": 2.2992841627773855,
+            "mean_relative_to_section_p95": 1.7607851554064016,
+            "lead_active_fraction": 1.0,
+            "salience_score": 1.4975
+          },
+          "azimuth_excursion_deg": 45.76,
+          "elevation_excursion_deg": 22.0
+        },
+        {
+          "section_id": "tuk2_section_07",
+          "motion_class": "POINT_EVENT",
+          "event": {
+            "role": "brass",
+            "start_seconds": 158.95,
+            "end_seconds": 159.3,
+            "duration_seconds": 0.35,
+            "peak_relative_to_section_p95": 2.0666656704109996,
+            "mean_relative_to_section_p95": 1.5643796368041698,
+            "lead_active_fraction": 1.0,
+            "salience_score": 1.4925000000000002
+          },
+          "azimuth_excursion_deg": 45.76,
+          "elevation_excursion_deg": 22.0
+        },
+        {
+          "section_id": "tuk2_section_10",
+          "motion_class": "POINT_EVENT",
+          "event": {
+            "role": "brass",
+            "start_seconds": 272.25,
+            "end_seconds": 273.35,
+            "duration_seconds": 1.1,
+            "peak_relative_to_section_p95": 18.024605925660104,
+            "mean_relative_to_section_p95": 6.0907964743347724,
+            "lead_active_fraction": 0.0,
+            "salience_score": 1.53
+          },
+          "azimuth_excursion_deg": 37.44,
+          "elevation_excursion_deg": 18.0
+        },
+        {
+          "section_id": "tuk2_section_10",
+          "motion_class": "POINT_EVENT",
+          "event": {
+            "role": "brass",
+            "start_seconds": 269.95,
+            "end_seconds": 270.9,
+            "duration_seconds": 0.95,
+            "peak_relative_to_section_p95": 11.994053069064147,
+            "mean_relative_to_section_p95": 4.560699271303103,
+            "lead_active_fraction": 0.0,
+            "salience_score": 1.5225000000000002
+          },
+          "azimuth_excursion_deg": 37.44,
+          "elevation_excursion_deg": 18.0
+        },
+        {
+          "section_id": "tuk2_section_10",
+          "motion_class": "POINT_EVENT",
+          "event": {
+            "role": "brass",
+            "start_seconds": 274.6,
+            "end_seconds": 275.0,
+            "duration_seconds": 0.4,
+            "peak_relative_to_section_p95": 1.73047176991085,
+            "mean_relative_to_section_p95": 1.1741577259690044,
+            "lead_active_fraction": 0.0,
+            "salience_score": 1.3057281394565912
+          },
+          "azimuth_excursion_deg": 37.44,
+          "elevation_excursion_deg": 18.0
+        },
+        {
+          "section_id": "tuk2_section_12",
+          "motion_class": "POINT_EVENT",
+          "event": {
+            "role": "brass",
+            "start_seconds": 327.7,
+            "end_seconds": 329.1,
+            "duration_seconds": 1.4,
+            "peak_relative_to_section_p95": 1.8607587392620875,
+            "mean_relative_to_section_p95": 0.7359524756660794,
+            "lead_active_fraction": 0.0,
+            "salience_score": 1.298291614621355
+          },
+          "azimuth_excursion_deg": 37.44,
+          "elevation_excursion_deg": 18.0
+        }
+      ]
+    },
+    {
+      "source_id": "woodwinds",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\stems_original\\11 Woodwinds.wav",
+      "input_sha256": "2d2ddc000dcedf295abfe907fa4e6a0754883af31c2b709a739988e45c6b91eb",
+      "class": "MELODIC_EXPRESSIVE_MOVER",
+      "home": {
+        "azimuth_deg": -78,
+        "elevation_deg": 31,
+        "distance_m": 1.1
+      },
+      "gain_db": 0.0,
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "HOME"
+        },
+        {
+          "time_seconds": 8.3,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "Event start / home"
+        },
+        {
+          "time_seconds": 8.690000000000001,
+          "azimuth_deg_unwrapped": -112.0,
+          "elevation_deg": 23.0,
+          "gain_db": 0.0,
+          "reason": "HIGH_SIDE_ARC expressive target"
+        },
+        {
+          "time_seconds": 9.236,
+          "azimuth_deg_unwrapped": -112.0,
+          "elevation_deg": 23.0,
+          "gain_db": 0.0,
+          "reason": "HIGH_SIDE_ARC hold"
+        },
+        {
+          "time_seconds": 9.6,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "RETURN_HOME"
+        },
+        {
+          "time_seconds": 28.0,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "Event start / home"
+        },
+        {
+          "time_seconds": 28.63,
+          "azimuth_deg_unwrapped": -44.0,
+          "elevation_deg": 39.0,
+          "gain_db": 0.0,
+          "reason": "HIGH_SIDE_ARC expressive target"
+        },
+        {
+          "time_seconds": 29.512,
+          "azimuth_deg_unwrapped": -44.0,
+          "elevation_deg": 39.0,
+          "gain_db": 0.0,
+          "reason": "HIGH_SIDE_ARC hold"
+        },
+        {
+          "time_seconds": 30.1,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "Event start / home"
+        },
+        {
+          "time_seconds": 32.11,
+          "azimuth_deg_unwrapped": -44.0,
+          "elevation_deg": 39.0,
+          "gain_db": 0.0,
+          "reason": "HIGH_SIDE_ARC expressive target"
+        },
+        {
+          "time_seconds": 34.924,
+          "azimuth_deg_unwrapped": -44.0,
+          "elevation_deg": 39.0,
+          "gain_db": 0.0,
+          "reason": "HIGH_SIDE_ARC hold"
+        },
+        {
+          "time_seconds": 36.8,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "RETURN_HOME"
+        },
+        {
+          "time_seconds": 183.5,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "Event start / home"
+        },
+        {
+          "time_seconds": 186.53,
+          "azimuth_deg_unwrapped": -44.0,
+          "elevation_deg": 39.0,
+          "gain_db": 0.0,
+          "reason": "HIGH_SIDE_ARC expressive target"
+        },
+        {
+          "time_seconds": 190.772,
+          "azimuth_deg_unwrapped": -44.0,
+          "elevation_deg": 39.0,
+          "gain_db": 0.0,
+          "reason": "HIGH_SIDE_ARC hold"
+        },
+        {
+          "time_seconds": 193.6,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "RETURN_HOME"
+        },
+        {
+          "time_seconds": 198.9,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "Event start / home"
+        },
+        {
+          "time_seconds": 198.99,
+          "azimuth_deg_unwrapped": -112.0,
+          "elevation_deg": 23.0,
+          "gain_db": 0.0,
+          "reason": "HIGH_SIDE_ARC expressive target"
+        },
+        {
+          "time_seconds": 199.116,
+          "azimuth_deg_unwrapped": -112.0,
+          "elevation_deg": 23.0,
+          "gain_db": 0.0,
+          "reason": "HIGH_SIDE_ARC hold"
+        },
+        {
+          "time_seconds": 199.2,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "RETURN_HOME"
+        },
+        {
+          "time_seconds": 238.35,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "Event start / home"
+        },
+        {
+          "time_seconds": 238.605,
+          "azimuth_deg_unwrapped": -44.0,
+          "elevation_deg": 39.0,
+          "gain_db": 0.0,
+          "reason": "HIGH_SIDE_ARC expressive target"
+        },
+        {
+          "time_seconds": 238.962,
+          "azimuth_deg_unwrapped": -44.0,
+          "elevation_deg": 39.0,
+          "gain_db": 0.0,
+          "reason": "HIGH_SIDE_ARC hold"
+        },
+        {
+          "time_seconds": 239.2,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "RETURN_HOME"
+        },
+        {
+          "time_seconds": 330.0,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "HOME END"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.1
+        },
+        {
+          "time_seconds": 330.0,
+          "distance_m": 1.1
+        }
+      ],
+      "growth_reference_distance_m": 1.1,
+      "selected_motion_events": [
+        {
+          "section_id": "tuk2_section_02",
+          "motion_class": "HIGH_SIDE_ARC",
+          "event": {
+            "role": "woodwinds",
+            "start_seconds": 28.0,
+            "end_seconds": 30.1,
+            "duration_seconds": 2.1,
+            "peak_relative_to_section_p95": 1.2909037218122534,
+            "mean_relative_to_section_p95": 0.8840936193144499,
+            "lead_active_fraction": 0.3333333333333333,
+            "salience_score": 1.0281464041981625
+          },
+          "azimuth_excursion_deg": 34.0,
+          "elevation_excursion_deg": 10.0
+        },
+        {
+          "section_id": "tuk2_section_02",
+          "motion_class": "HIGH_SIDE_ARC",
+          "event": {
+            "role": "woodwinds",
+            "start_seconds": 8.3,
+            "end_seconds": 9.6,
+            "duration_seconds": 1.3,
+            "peak_relative_to_section_p95": 0.47266812498858546,
+            "mean_relative_to_section_p95": 0.28753657335282734,
+            "lead_active_fraction": 1.0,
+            "salience_score": 0.2370953020758806
+          },
+          "azimuth_excursion_deg": 34.0,
+          "elevation_excursion_deg": 10.0
+        },
+        {
+          "section_id": "tuk2_section_03",
+          "motion_class": "HIGH_SIDE_ARC",
+          "event": {
+            "role": "woodwinds",
+            "start_seconds": 30.1,
+            "end_seconds": 36.8,
+            "duration_seconds": 6.7,
+            "peak_relative_to_section_p95": 2.380352653578717,
+            "mean_relative_to_section_p95": 1.2147354571325961,
+            "lead_active_fraction": 0.1044776119402985,
+            "salience_score": 1.5049863103280054
+          },
+          "azimuth_excursion_deg": 34.0,
+          "elevation_excursion_deg": 10.0
+        },
+        {
+          "section_id": "tuk2_section_08",
+          "motion_class": "HIGH_SIDE_ARC",
+          "event": {
+            "role": "woodwinds",
+            "start_seconds": 183.5,
+            "end_seconds": 193.6,
+            "duration_seconds": 10.1,
+            "peak_relative_to_section_p95": 1.4400090423708618,
+            "mean_relative_to_section_p95": 0.7469818874179649,
+            "lead_active_fraction": 0.9900990099009901,
+            "salience_score": 0.8399204310326992
+          },
+          "azimuth_excursion_deg": 34.0,
+          "elevation_excursion_deg": 10.0
+        },
+        {
+          "section_id": "tuk2_section_08",
+          "motion_class": "HIGH_SIDE_ARC",
+          "event": {
+            "role": "woodwinds",
+            "start_seconds": 198.9,
+            "end_seconds": 199.2,
+            "duration_seconds": 0.3,
+            "peak_relative_to_section_p95": 0.16137452537342112,
+            "mean_relative_to_section_p95": 0.13578332684944877,
+            "lead_active_fraction": 1.0,
+            "salience_score": 0.1263673872528932
+          },
+          "azimuth_excursion_deg": 34.0,
+          "elevation_excursion_deg": 10.0
+        },
+        {
+          "section_id": "tuk2_section_09",
+          "motion_class": "HIGH_SIDE_ARC",
+          "event": {
+            "role": "woodwinds",
+            "start_seconds": 238.35,
+            "end_seconds": 239.2,
+            "duration_seconds": 0.85,
+            "peak_relative_to_section_p95": 7.014584454355107,
+            "mean_relative_to_section_p95": 5.49778427608728,
+            "lead_active_fraction": 0.8823529411764706,
+            "salience_score": 1.115808823529412
+          },
+          "azimuth_excursion_deg": 34.0,
+          "elevation_excursion_deg": 10.0
+        }
+      ]
+    }
+  ],
+  "source_candidate": "C_MOTION",
+  "supersedes": "TUK2_T006A_C_MOTION",
+  "source_scene_sha256": "2e09236893c85206d2437a861b623438bf63004ea15b8533dc09de6804bf82a5",
+  "point_event_policy": {
+    "method": "Pre-position during preceding low-activity gap, hold fixed position throughout detected event, return during following low-activity gap.",
+    "movement_during_audible_point_event": false,
+    "transient_priority": true,
+    "reason": "Protect attack definition and point-source localization instead of sweeping the accent."
+  }
+}

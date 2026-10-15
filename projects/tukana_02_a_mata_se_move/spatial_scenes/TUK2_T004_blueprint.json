@@ -1,0 +1,934 @@
+{
+  "schema": "LAISE Spatial Blueprint v1.0",
+  "project": "tukana_02_a_mata_se_move",
+  "test_id": "TUK2-T004",
+  "status": "PASS",
+  "principles": {
+    "quality_first": true,
+    "lead_audibility_protected": true,
+    "large_motion_turn_taking": true,
+    "no_distance_as_nearfield_proof": true,
+    "no_continuous_everything_moves": true,
+    "return_home_after_expressive_motion": true,
+    "human_instrument_identification_required": false
+  },
+  "roles": {
+    "lead_vocal": {
+      "class": "PROTECTED_MOBILE_ANCHOR",
+      "home": {
+        "azimuth_deg": 0,
+        "elevation_deg": 5,
+        "distance_m": 0.85
+      },
+      "mobility": "LOW_MODERATE_ADAPTIVE",
+      "max_azimuth_excursion_deg": 22,
+      "max_elevation_excursion_deg": 8,
+      "allowed_motion": [
+        "STATIC",
+        "MICRO_DRIFT",
+        "SMALL_ARC",
+        "DEPTH_EMPHASIS",
+        "RETURN_HOME"
+      ],
+      "forbidden_motion": [
+        "REAR_HOLD",
+        "FULL_ORBIT",
+        "FAST_CROSSING",
+        "LARGE_ELEVATION_SWEEP"
+      ],
+      "audibility_priority": 1.0,
+      "notes": "Primary voice remains close, frontal and intelligible. Motion is expressive but subordinate to vocal clarity."
+    },
+    "backing_vocals": {
+      "class": "VOCAL_SURROUND_SUPPORT",
+      "home": {
+        "azimuth_deg": -105,
+        "elevation_deg": 22,
+        "distance_m": 1.25
+      },
+      "alternate_home": {
+        "azimuth_deg": 105,
+        "elevation_deg": 22,
+        "distance_m": 1.25
+      },
+      "mobility": "MODERATE",
+      "max_azimuth_excursion_deg": 42,
+      "max_elevation_excursion_deg": 15,
+      "allowed_motion": [
+        "STATIC_OFFSET",
+        "SLOW_ARC",
+        "CALL_RESPONSE",
+        "RETURN_HOME"
+      ]
+    },
+    "drums": {
+      "class": "PROTECTED_RHYTHMIC_ANCHOR",
+      "home": {
+        "azimuth_deg": 18,
+        "elevation_deg": -14,
+        "distance_m": 1.1
+      },
+      "mobility": "LOW",
+      "max_azimuth_excursion_deg": 10,
+      "max_elevation_excursion_deg": 6,
+      "allowed_motion": [
+        "STATIC",
+        "MICRO_DRIFT"
+      ],
+      "transient_priority": 1.0
+    },
+    "bass": {
+      "class": "PROTECTED_LOW_ANCHOR",
+      "home": {
+        "azimuth_deg": 0,
+        "elevation_deg": -34,
+        "distance_m": 1.2
+      },
+      "mobility": "MINIMAL",
+      "max_azimuth_excursion_deg": 5,
+      "max_elevation_excursion_deg": 5,
+      "allowed_motion": [
+        "STATIC",
+        "MICRO_DRIFT"
+      ]
+    },
+    "guitar": {
+      "class": "INTERMITTENT_LATERAL_OBJECT",
+      "home": {
+        "azimuth_deg": -52,
+        "elevation_deg": 3,
+        "distance_m": 1.25
+      },
+      "mobility": "MODERATE",
+      "max_azimuth_excursion_deg": 38,
+      "max_elevation_excursion_deg": 16,
+      "allowed_motion": [
+        "STATIC_OFFSET",
+        "ARC",
+        "CALL_RESPONSE",
+        "RETURN_HOME"
+      ]
+    },
+    "keyboards": {
+      "class": "WIDE_SUPPORT_CAUTION",
+      "home": {
+        "azimuth_deg": 52,
+        "elevation_deg": 24,
+        "distance_m": 1.4
+      },
+      "mobility": "LOW",
+      "max_azimuth_excursion_deg": 12,
+      "max_elevation_excursion_deg": 8,
+      "allowed_motion": [
+        "STATIC_OFFSET",
+        "SLOW_MICRO_DRIFT"
+      ],
+      "large_motion_allowed": false,
+      "reason": "T002 measured strong side dominance and negative L/R correlation."
+    },
+    "percussion": {
+      "class": "RHYTHMIC_EXPRESSIVE_MOVER",
+      "home": {
+        "azimuth_deg": 82,
+        "elevation_deg": -8,
+        "distance_m": 0.95
+      },
+      "mobility": "HIGH_EVENT_BASED",
+      "max_azimuth_excursion_deg": 72,
+      "max_elevation_excursion_deg": 22,
+      "allowed_motion": [
+        "STATIC_OFFSET",
+        "ARC",
+        "CROSSING",
+        "ORBIT_SEGMENT",
+        "POINT_EVENT",
+        "CALL_RESPONSE",
+        "RETURN_HOME"
+      ],
+      "notes": "Large movement only by section/event. Avoid continuous motion."
+    },
+    "strings": {
+      "class": "SLOW_CINEMATIC_MOVER",
+      "home": {
+        "azimuth_deg": -142,
+        "elevation_deg": 34,
+        "distance_m": 1.55
+      },
+      "mobility": "MODERATE_SLOW",
+      "max_azimuth_excursion_deg": 48,
+      "max_elevation_excursion_deg": 24,
+      "allowed_motion": [
+        "STATIC_OFFSET",
+        "SLOW_ARC",
+        "ELEVATION_SWEEP",
+        "DEPTH_SHIFT",
+        "RETURN_HOME"
+      ]
+    },
+    "synth": {
+      "class": "SUSTAINED_REAR_TEXTURE",
+      "home": {
+        "azimuth_deg": 152,
+        "elevation_deg": 38,
+        "distance_m": 1.65
+      },
+      "mobility": "LOW_SLOW",
+      "max_azimuth_excursion_deg": 20,
+      "max_elevation_excursion_deg": 12,
+      "allowed_motion": [
+        "STATIC_OFFSET",
+        "SLOW_MICRO_DRIFT",
+        "DEPTH_SHIFT"
+      ],
+      "large_motion_allowed": false,
+      "reason": "Highly active stem with strong masking relationships to bass/percussion/drums."
+    },
+    "other": {
+      "class": "WIDE_AMBIGUOUS_SUPPORT",
+      "home": {
+        "azimuth_deg": -160,
+        "elevation_deg": 10,
+        "distance_m": 1.65
+      },
+      "mobility": "CONSERVATIVE",
+      "max_azimuth_excursion_deg": 10,
+      "max_elevation_excursion_deg": 8,
+      "allowed_motion": [
+        "STATIC_OFFSET",
+        "SLOW_MICRO_DRIFT"
+      ],
+      "large_motion_allowed": false,
+      "reason": "T002 measured wide/partially anticorrelated stereo; content identity is not assumed."
+    },
+    "brass": {
+      "class": "SPARSE_POINT_OBJECT",
+      "home": {
+        "azimuth_deg": 126,
+        "elevation_deg": -18,
+        "distance_m": 1.15
+      },
+      "mobility": "HIGH_WHEN_ACTIVE",
+      "max_azimuth_excursion_deg": 52,
+      "max_elevation_excursion_deg": 25,
+      "allowed_motion": [
+        "POINT_EVENT",
+        "CALL_RESPONSE",
+        "SHORT_ARC",
+        "RETURN_HOME"
+      ],
+      "notes": "Only 1.94% global activity; use as event, never as continuous motion bed."
+    },
+    "woodwinds": {
+      "class": "MELODIC_EXPRESSIVE_MOVER",
+      "home": {
+        "azimuth_deg": -78,
+        "elevation_deg": 31,
+        "distance_m": 1.1
+      },
+      "mobility": "HIGH_PHRASE_BASED",
+      "max_azimuth_excursion_deg": 62,
+      "max_elevation_excursion_deg": 30,
+      "allowed_motion": [
+        "ARC",
+        "CROSSING",
+        "ELEVATION_SWEEP",
+        "ORBIT_SEGMENT",
+        "CALL_RESPONSE",
+        "RETURN_HOME"
+      ],
+      "notes": "Avoid prolonged front-center crossing during strong lead-vocal activity."
+    }
+  },
+  "sections": [
+    {
+      "section_id": "tuk2_section_01",
+      "start_seconds": 0.0,
+      "end_seconds": 8.3,
+      "mean_density": 4.0,
+      "large_motion_budget": 2,
+      "large_motion_objects": [
+        {
+          "role": "percussion",
+          "motion_class": "ORBIT_SEGMENT",
+          "azimuth_excursion_deg": 72.0,
+          "return_home": true,
+          "score": 1.230095
+        },
+        {
+          "role": "backing_vocals",
+          "motion_class": "SLOW_ARC",
+          "azimuth_excursion_deg": 42.0,
+          "return_home": true,
+          "score": 0.98559
+        }
+      ],
+      "lead_behavior": {
+        "role": "lead_vocal",
+        "motion_class": "PROTECTED_SMALL_ARC",
+        "azimuth_excursion_deg": 18,
+        "elevation_excursion_deg": 6,
+        "return_home": true,
+        "rear_allowed": false,
+        "audibility_priority": 1.0
+      },
+      "top_masking_pairs": [
+        {
+          "role_a": "lead_vocal",
+          "role_b": "woodwinds",
+          "simultaneous_fraction": 0.9759036144578314,
+          "global_masking_risk": 0.507213986773766,
+          "local_priority": 0.49499196299608483
+        },
+        {
+          "role_a": "synth",
+          "role_b": "woodwinds",
+          "simultaneous_fraction": 0.9759036144578314,
+          "global_masking_risk": 0.4773143120343343,
+          "local_priority": 0.46581276234675995
+        },
+        {
+          "role_a": "other",
+          "role_b": "woodwinds",
+          "simultaneous_fraction": 0.7831325301204819,
+          "global_masking_risk": 0.4797073768550208,
+          "local_priority": 0.37567445175393194
+        },
+        {
+          "role_a": "lead_vocal",
+          "role_b": "other",
+          "simultaneous_fraction": 0.7831325301204819,
+          "global_masking_risk": 0.42866185786182454,
+          "local_priority": 0.33569904531347705
+        }
+      ]
+    },
+    {
+      "section_id": "tuk2_section_02",
+      "start_seconds": 8.3,
+      "end_seconds": 30.1,
+      "mean_density": 4.701834862385321,
+      "large_motion_budget": 2,
+      "large_motion_objects": [
+        {
+          "role": "strings",
+          "motion_class": "ELEVATION_SWEEP",
+          "azimuth_excursion_deg": 48.0,
+          "return_home": true,
+          "score": 1.206439
+        },
+        {
+          "role": "woodwinds",
+          "motion_class": "HIGH_SIDE_ARC",
+          "azimuth_excursion_deg": 34.0,
+          "return_home": true,
+          "score": 1.103439
+        }
+      ],
+      "lead_behavior": {
+        "role": "lead_vocal",
+        "motion_class": "PROTECTED_SMALL_ARC",
+        "azimuth_excursion_deg": 18,
+        "elevation_excursion_deg": 6,
+        "return_home": true,
+        "rear_allowed": false,
+        "audibility_priority": 1.0
+      },
+      "top_masking_pairs": [
+        {
+          "role_a": "lead_vocal",
+          "role_b": "backing_vocals",
+          "simultaneous_fraction": 0.5596330275229358,
+          "global_masking_risk": 0.7618333490387034,
+          "local_priority": 0.426347103590467
+        },
+        {
+          "role_a": "lead_vocal",
+          "role_b": "other",
+          "simultaneous_fraction": 0.6880733944954128,
+          "global_masking_risk": 0.42866185786182454,
+          "local_priority": 0.29495081962969577
+        },
+        {
+          "role_a": "drums",
+          "role_b": "percussion",
+          "simultaneous_fraction": 0.3348623853211009,
+          "global_masking_risk": 0.8588768879225668,
+          "local_priority": 0.28760556338691456
+        },
+        {
+          "role_a": "percussion",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.41284403669724773,
+          "global_masking_risk": 0.5743096979852039,
+          "local_priority": 0.23710033403058878
+        }
+      ]
+    },
+    {
+      "section_id": "tuk2_section_03",
+      "start_seconds": 30.1,
+      "end_seconds": 116.8,
+      "mean_density": 6.767012687427912,
+      "large_motion_budget": 1,
+      "large_motion_objects": [
+        {
+          "role": "woodwinds",
+          "motion_class": "HIGH_SIDE_ARC",
+          "azimuth_excursion_deg": 34.0,
+          "return_home": true,
+          "score": 1.195509
+        }
+      ],
+      "lead_behavior": {
+        "role": "lead_vocal",
+        "motion_class": "PROTECTED_SMALL_ARC",
+        "azimuth_excursion_deg": 12,
+        "elevation_excursion_deg": 6,
+        "return_home": true,
+        "rear_allowed": false,
+        "audibility_priority": 1.0
+      },
+      "top_masking_pairs": [
+        {
+          "role_a": "drums",
+          "role_b": "percussion",
+          "simultaneous_fraction": 0.7923875432525952,
+          "global_masking_risk": 0.8588768879225668,
+          "local_priority": 0.6805633471773972
+        },
+        {
+          "role_a": "bass",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.7693194925028836,
+          "global_masking_risk": 0.6945847520627675,
+          "local_priority": 0.5343575889571694
+        },
+        {
+          "role_a": "lead_vocal",
+          "role_b": "backing_vocals",
+          "simultaneous_fraction": 0.649365628604383,
+          "global_masking_risk": 0.7618333490387034,
+          "local_priority": 0.4947083915902999
+        },
+        {
+          "role_a": "percussion",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.7531718569780853,
+          "global_masking_risk": 0.5743096979852039,
+          "local_priority": 0.4325539017120394
+        }
+      ]
+    },
+    {
+      "section_id": "tuk2_section_04",
+      "start_seconds": 116.8,
+      "end_seconds": 126.3,
+      "mean_density": 8.873684210526315,
+      "large_motion_budget": 1,
+      "large_motion_objects": [
+        {
+          "role": "strings",
+          "motion_class": "SLOW_ARC",
+          "azimuth_excursion_deg": 34.56,
+          "return_home": true,
+          "score": 1.200287
+        }
+      ],
+      "lead_behavior": {
+        "role": "lead_vocal",
+        "motion_class": "PROTECTED_SMALL_ARC",
+        "azimuth_excursion_deg": 7,
+        "elevation_excursion_deg": 3.5,
+        "return_home": true,
+        "rear_allowed": false,
+        "audibility_priority": 1.0
+      },
+      "top_masking_pairs": [
+        {
+          "role_a": "drums",
+          "role_b": "percussion",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.8588768879225668,
+          "local_priority": 0.8588768879225668
+        },
+        {
+          "role_a": "bass",
+          "role_b": "synth",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.6945847520627675,
+          "local_priority": 0.6945847520627675
+        },
+        {
+          "role_a": "bass",
+          "role_b": "percussion",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.6092161038577544,
+          "local_priority": 0.6092161038577544
+        },
+        {
+          "role_a": "drums",
+          "role_b": "bass",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.6022507490958259,
+          "local_priority": 0.6022507490958259
+        }
+      ]
+    },
+    {
+      "section_id": "tuk2_section_05",
+      "start_seconds": 126.3,
+      "end_seconds": 135.1,
+      "mean_density": 6.75,
+      "large_motion_budget": 1,
+      "large_motion_objects": [
+        {
+          "role": "strings",
+          "motion_class": "SLOW_ARC",
+          "azimuth_excursion_deg": 42.24,
+          "return_home": true,
+          "score": 1.152159
+        }
+      ],
+      "lead_behavior": {
+        "role": "lead_vocal",
+        "motion_class": "PROTECTED_SMALL_ARC",
+        "azimuth_excursion_deg": 12,
+        "elevation_excursion_deg": 6,
+        "return_home": true,
+        "rear_allowed": false,
+        "audibility_priority": 1.0
+      },
+      "top_masking_pairs": [
+        {
+          "role_a": "drums",
+          "role_b": "percussion",
+          "simultaneous_fraction": 0.9545454545454546,
+          "global_masking_risk": 0.8588768879225668,
+          "local_priority": 0.819837029380632
+        },
+        {
+          "role_a": "lead_vocal",
+          "role_b": "backing_vocals",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.7618333490387034,
+          "local_priority": 0.7618333490387034
+        },
+        {
+          "role_a": "percussion",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.9545454545454546,
+          "global_masking_risk": 0.5743096979852039,
+          "local_priority": 0.5482047117131492
+        },
+        {
+          "role_a": "drums",
+          "role_b": "synth",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.542659036228224,
+          "local_priority": 0.542659036228224
+        }
+      ]
+    },
+    {
+      "section_id": "tuk2_section_06",
+      "start_seconds": 135.1,
+      "end_seconds": 143.9,
+      "mean_density": 8.568181818181818,
+      "large_motion_budget": 1,
+      "large_motion_objects": [
+        {
+          "role": "guitar",
+          "motion_class": "CALL_RESPONSE",
+          "azimuth_excursion_deg": 27.36,
+          "return_home": true,
+          "score": 0.735909
+        }
+      ],
+      "lead_behavior": {
+        "role": "lead_vocal",
+        "motion_class": "PROTECTED_SMALL_ARC",
+        "azimuth_excursion_deg": 7,
+        "elevation_excursion_deg": 3.5,
+        "return_home": true,
+        "rear_allowed": false,
+        "audibility_priority": 1.0
+      },
+      "top_masking_pairs": [
+        {
+          "role_a": "drums",
+          "role_b": "percussion",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.8588768879225668,
+          "local_priority": 0.8588768879225668
+        },
+        {
+          "role_a": "bass",
+          "role_b": "synth",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.6945847520627675,
+          "local_priority": 0.6945847520627675
+        },
+        {
+          "role_a": "bass",
+          "role_b": "percussion",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.6092161038577544,
+          "local_priority": 0.6092161038577544
+        },
+        {
+          "role_a": "drums",
+          "role_b": "bass",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.6022507490958259,
+          "local_priority": 0.6022507490958259
+        }
+      ]
+    },
+    {
+      "section_id": "tuk2_section_07",
+      "start_seconds": 143.9,
+      "end_seconds": 165.1,
+      "mean_density": 6.372641509433962,
+      "large_motion_budget": 1,
+      "large_motion_objects": [
+        {
+          "role": "brass",
+          "motion_class": "POINT_EVENT",
+          "azimuth_excursion_deg": 45.76,
+          "return_home": true,
+          "score": 1.099232
+        }
+      ],
+      "lead_behavior": {
+        "role": "lead_vocal",
+        "motion_class": "PROTECTED_SMALL_ARC",
+        "azimuth_excursion_deg": 12,
+        "elevation_excursion_deg": 6,
+        "return_home": true,
+        "rear_allowed": false,
+        "audibility_priority": 1.0
+      },
+      "top_masking_pairs": [
+        {
+          "role_a": "lead_vocal",
+          "role_b": "backing_vocals",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.7618333490387034,
+          "local_priority": 0.7618333490387034
+        },
+        {
+          "role_a": "drums",
+          "role_b": "percussion",
+          "simultaneous_fraction": 0.8018867924528302,
+          "global_masking_risk": 0.8588768879225668,
+          "local_priority": 0.6887220327680961
+        },
+        {
+          "role_a": "percussion",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.7311320754716981,
+          "global_masking_risk": 0.5743096979852039,
+          "local_priority": 0.4198962414514463
+        },
+        {
+          "role_a": "drums",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.7358490566037735,
+          "global_masking_risk": 0.542659036228224,
+          "local_priority": 0.3993151398660516
+        }
+      ]
+    },
+    {
+      "section_id": "tuk2_section_08",
+      "start_seconds": 165.1,
+      "end_seconds": 202.3,
+      "mean_density": 9.50268817204301,
+      "large_motion_budget": 1,
+      "large_motion_objects": [
+        {
+          "role": "woodwinds",
+          "motion_class": "HIGH_SIDE_ARC",
+          "azimuth_excursion_deg": 34.0,
+          "return_home": true,
+          "score": 0.8062
+        }
+      ],
+      "lead_behavior": {
+        "role": "lead_vocal",
+        "motion_class": "PROTECTED_SMALL_ARC",
+        "azimuth_excursion_deg": 7,
+        "elevation_excursion_deg": 3.5,
+        "return_home": true,
+        "rear_allowed": false,
+        "audibility_priority": 1.0
+      },
+      "top_masking_pairs": [
+        {
+          "role_a": "drums",
+          "role_b": "percussion",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.8588768879225668,
+          "local_priority": 0.8588768879225668
+        },
+        {
+          "role_a": "lead_vocal",
+          "role_b": "backing_vocals",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.7618333490387034,
+          "local_priority": 0.7618333490387034
+        },
+        {
+          "role_a": "bass",
+          "role_b": "synth",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.6945847520627675,
+          "local_priority": 0.6945847520627675
+        },
+        {
+          "role_a": "bass",
+          "role_b": "percussion",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.6092161038577544,
+          "local_priority": 0.6092161038577544
+        }
+      ]
+    },
+    {
+      "section_id": "tuk2_section_09",
+      "start_seconds": 202.3,
+      "end_seconds": 239.2,
+      "mean_density": 9.319783197831978,
+      "large_motion_budget": 1,
+      "large_motion_objects": [
+        {
+          "role": "woodwinds",
+          "motion_class": "HIGH_SIDE_ARC",
+          "azimuth_excursion_deg": 34.0,
+          "return_home": true,
+          "score": 1.242631
+        }
+      ],
+      "lead_behavior": {
+        "role": "lead_vocal",
+        "motion_class": "PROTECTED_SMALL_ARC",
+        "azimuth_excursion_deg": 7,
+        "elevation_excursion_deg": 3.5,
+        "return_home": true,
+        "rear_allowed": false,
+        "audibility_priority": 1.0
+      },
+      "top_masking_pairs": [
+        {
+          "role_a": "drums",
+          "role_b": "percussion",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.8588768879225668,
+          "local_priority": 0.8588768879225668
+        },
+        {
+          "role_a": "lead_vocal",
+          "role_b": "backing_vocals",
+          "simultaneous_fraction": 1.0,
+          "global_masking_risk": 0.7618333490387034,
+          "local_priority": 0.7618333490387034
+        },
+        {
+          "role_a": "bass",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.989159891598916,
+          "global_masking_risk": 0.6945847520627675,
+          "local_priority": 0.687055378056667
+        },
+        {
+          "role_a": "bass",
+          "role_b": "percussion",
+          "simultaneous_fraction": 0.989159891598916,
+          "global_masking_risk": 0.6092161038577544,
+          "local_priority": 0.6026121352522503
+        }
+      ]
+    },
+    {
+      "section_id": "tuk2_section_10",
+      "start_seconds": 239.2,
+      "end_seconds": 280.3,
+      "mean_density": 7.442822384428224,
+      "large_motion_budget": 1,
+      "large_motion_objects": [
+        {
+          "role": "brass",
+          "motion_class": "POINT_EVENT",
+          "azimuth_excursion_deg": 37.44,
+          "return_home": true,
+          "score": 1.102716
+        }
+      ],
+      "lead_behavior": {
+        "role": "lead_vocal",
+        "motion_class": "PROTECTED_SMALL_ARC",
+        "azimuth_excursion_deg": 12,
+        "elevation_excursion_deg": 6,
+        "return_home": true,
+        "rear_allowed": false,
+        "audibility_priority": 1.0
+      },
+      "top_masking_pairs": [
+        {
+          "role_a": "drums",
+          "role_b": "percussion",
+          "simultaneous_fraction": 0.9197080291970803,
+          "global_masking_risk": 0.8588768879225668,
+          "local_priority": 0.7899159699141854
+        },
+        {
+          "role_a": "percussion",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.9391727493917275,
+          "global_masking_risk": 0.5743096979852039,
+          "local_priority": 0.5393760180590966
+        },
+        {
+          "role_a": "drums",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.9124087591240876,
+          "global_masking_risk": 0.542659036228224,
+          "local_priority": 0.49512685787246713
+        },
+        {
+          "role_a": "lead_vocal",
+          "role_b": "backing_vocals",
+          "simultaneous_fraction": 0.5742092457420924,
+          "global_masking_risk": 0.7618333490387034,
+          "local_priority": 0.4374517527326861
+        }
+      ]
+    },
+    {
+      "section_id": "tuk2_section_11",
+      "start_seconds": 280.3,
+      "end_seconds": 324.1,
+      "mean_density": 6.986301369863014,
+      "large_motion_budget": 1,
+      "large_motion_objects": [
+        {
+          "role": "strings",
+          "motion_class": "SLOW_ARC",
+          "azimuth_excursion_deg": 42.24,
+          "return_home": true,
+          "score": 1.058227
+        }
+      ],
+      "lead_behavior": {
+        "role": "lead_vocal",
+        "motion_class": "PROTECTED_SMALL_ARC",
+        "azimuth_excursion_deg": 12,
+        "elevation_excursion_deg": 6,
+        "return_home": true,
+        "rear_allowed": false,
+        "audibility_priority": 1.0
+      },
+      "top_masking_pairs": [
+        {
+          "role_a": "drums",
+          "role_b": "percussion",
+          "simultaneous_fraction": 0.7534246575342466,
+          "global_masking_risk": 0.8588768879225668,
+          "local_priority": 0.6470990251471394
+        },
+        {
+          "role_a": "lead_vocal",
+          "role_b": "backing_vocals",
+          "simultaneous_fraction": 0.8493150684931506,
+          "global_masking_risk": 0.7618333490387034,
+          "local_priority": 0.6470365430191727
+        },
+        {
+          "role_a": "percussion",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.7557077625570776,
+          "global_masking_risk": 0.5743096979852039,
+          "local_priority": 0.43401029687922943
+        },
+        {
+          "role_a": "drums",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.7602739726027398,
+          "global_masking_risk": 0.542659036228224,
+          "local_priority": 0.4125695412420059
+        }
+      ]
+    },
+    {
+      "section_id": "tuk2_section_12",
+      "start_seconds": 324.1,
+      "end_seconds": 330.0,
+      "mean_density": 7.6440677966101696,
+      "large_motion_budget": 1,
+      "large_motion_objects": [
+        {
+          "role": "brass",
+          "motion_class": "POINT_EVENT",
+          "azimuth_excursion_deg": 37.44,
+          "return_home": true,
+          "score": 0.951803
+        }
+      ],
+      "lead_behavior": {
+        "role": "lead_vocal",
+        "motion_class": "PROTECTED_SMALL_ARC",
+        "azimuth_excursion_deg": 12,
+        "elevation_excursion_deg": 6,
+        "return_home": true,
+        "rear_allowed": false,
+        "audibility_priority": 1.0
+      },
+      "top_masking_pairs": [
+        {
+          "role_a": "drums",
+          "role_b": "percussion",
+          "simultaneous_fraction": 0.8305084745762712,
+          "global_masking_risk": 0.8588768879225668,
+          "local_priority": 0.713304534037386
+        },
+        {
+          "role_a": "bass",
+          "role_b": "synth",
+          "simultaneous_fraction": 0.8305084745762712,
+          "global_masking_risk": 0.6945847520627675,
+          "local_priority": 0.5768585228995866
+        },
+        {
+          "role_a": "drums",
+          "role_b": "bass",
+          "simultaneous_fraction": 0.847457627118644,
+          "global_masking_risk": 0.6022507490958259,
+          "local_priority": 0.5103819907591745
+        },
+        {
+          "role_a": "bass",
+          "role_b": "percussion",
+          "simultaneous_fraction": 0.8305084745762712,
+          "global_masking_risk": 0.6092161038577544,
+          "local_priority": 0.5059591371022027
+        }
+      ]
+    }
+  ],
+  "orbit_test_candidate": {
+    "section_id": "tuk2_section_02",
+    "role": "strings",
+    "start_seconds": 8.3,
+    "end_seconds": 30.1,
+    "density": 4.701834862385321,
+    "activity_fraction": 0.06422018348623854,
+    "selection_score": 1.2702922110091743,
+    "policy": "Candidate only. Actual continuous 360 path must pass dearVR probe/orbit validation before final scene use."
+  },
+  "limitations": [
+    "Role names originate from separated stem labels; exact instrument identity is not assumed.",
+    "Masking values are engineering proxies using coarse spectral bands and temporal overlap.",
+    "Home distance is a scene-control parameter and is not treated as proof of perceived near-field distance.",
+    "No render has been performed in TUK2-T004; this file is a deterministic spatial plan."
+  ]
+}

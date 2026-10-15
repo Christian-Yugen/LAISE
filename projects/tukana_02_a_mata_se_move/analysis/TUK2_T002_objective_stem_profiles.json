@@ -1,0 +1,5108 @@
+{
+  "schema": "LAISE TUK2 Objective Stem Profiles v1.0",
+  "project": "tukana_02_a_mata_se_move",
+  "test_id": "TUK2-T002",
+  "status": "PASS",
+  "analysis_window_seconds": 0.1,
+  "activity_threshold_dbfs": -60.0,
+  "instrument_identity_policy": "Filename role is retained only as separator role. Spatial behavior must be derived from measured signal characteristics and project protection rules.",
+  "original_hashes_verified": true,
+  "stems": {
+    "lead_vocal": {
+      "filename": "0 Lead Vocals.wav",
+      "sha256": "df0779b9ade5f59bcfa0ed4b43317538620124643a35e7c75305eb651980e8e3",
+      "duration_seconds": 330.0,
+      "activity": {
+        "active_seconds": 298.1,
+        "active_fraction": 0.9033333333333334,
+        "active_region_count": 32,
+        "median_region_duration_seconds": 0.6,
+        "p90_region_duration_seconds": 16.960000000000004
+      },
+      "temporal": {
+        "onset_event_count": 140,
+        "onset_events_per_minute": 25.454545454545453,
+        "median_active_rms_dbfs": -27.203764300222115,
+        "p95_active_rms_dbfs": -19.405841292650305,
+        "dynamic_range_p95_p10_db": 26.59536968883887,
+        "median_crest_db": 11.678490138437196,
+        "p90_crest_db": 15.601374003453081
+      },
+      "spectral": {
+        "median_centroid_hz": 1231.8667478370942,
+        "p90_centroid_hz": 2407.8502550979993,
+        "median_zero_crossing_rate": 0.07105647009793707,
+        "median_band_fractions": {
+          "20_150_hz": 0.00014843590597962833,
+          "150_500_hz": 0.06891605153977626,
+          "500_2000_hz": 0.7008209778753904,
+          "2000_6000_hz": 0.06944015752021282,
+          "6000_12000_hz": 0.009956169677501164,
+          "12000_20000_hz": 0.0020836285208317355
+        }
+      },
+      "stereo": {
+        "median_lr_correlation": 0.6945371611563771,
+        "p10_lr_correlation": -0.07989196231449634,
+        "median_side_mid_db": -7.112192807334791,
+        "median_width_index": 0.16278604693558957,
+        "median_ild_db": 0.46440814798192254,
+        "p90_abs_ild_db": 3.002267398330894
+      },
+      "events_preview": [
+        {
+          "time_seconds": 5.6,
+          "strength": 0.035168149379254644
+        },
+        {
+          "time_seconds": 6.1,
+          "strength": 0.04171574833473808
+        },
+        {
+          "time_seconds": 14.2,
+          "strength": 0.0341752424889955
+        },
+        {
+          "time_seconds": 17.6,
+          "strength": 0.039656530792981995
+        },
+        {
+          "time_seconds": 18.5,
+          "strength": 0.03216246553687472
+        },
+        {
+          "time_seconds": 25.6,
+          "strength": 0.03389908958783702
+        },
+        {
+          "time_seconds": 27.4,
+          "strength": 0.04222322629298459
+        },
+        {
+          "time_seconds": 36.2,
+          "strength": 0.04684353775046726
+        },
+        {
+          "time_seconds": 39.9,
+          "strength": 0.06752355979199366
+        },
+        {
+          "time_seconds": 40.4,
+          "strength": 0.03504951980420004
+        },
+        {
+          "time_seconds": 41.2,
+          "strength": 0.05075972967684797
+        },
+        {
+          "time_seconds": 44.1,
+          "strength": 0.0385427730121517
+        },
+        {
+          "time_seconds": 45.1,
+          "strength": 0.04407457740029521
+        },
+        {
+          "time_seconds": 51.9,
+          "strength": 0.04688534961832387
+        },
+        {
+          "time_seconds": 52.5,
+          "strength": 0.060459370579114824
+        },
+        {
+          "time_seconds": 59.6,
+          "strength": 0.04583518464445936
+        },
+        {
+          "time_seconds": 70.1,
+          "strength": 0.03430136868346145
+        },
+        {
+          "time_seconds": 71.6,
+          "strength": 0.06085156209251591
+        },
+        {
+          "time_seconds": 82.2,
+          "strength": 0.05532196104121016
+        },
+        {
+          "time_seconds": 83.1,
+          "strength": 0.05203211404592353
+        },
+        {
+          "time_seconds": 92.2,
+          "strength": 0.04012030295594988
+        },
+        {
+          "time_seconds": 95.0,
+          "strength": 0.037395310350846804
+        },
+        {
+          "time_seconds": 95.3,
+          "strength": 0.04132466123842982
+        },
+        {
+          "time_seconds": 95.6,
+          "strength": 0.03993508917135779
+        },
+        {
+          "time_seconds": 96.3,
+          "strength": 0.06134926061199747
+        },
+        {
+          "time_seconds": 96.7,
+          "strength": 0.08393262537330512
+        },
+        {
+          "time_seconds": 97.0,
+          "strength": 0.044942075635441045
+        },
+        {
+          "time_seconds": 97.3,
+          "strength": 0.057444655387496615
+        },
+        {
+          "time_seconds": 97.9,
+          "strength": 0.03728576957503764
+        },
+        {
+          "time_seconds": 98.5,
+          "strength": 0.0654387832811393
+        },
+        {
+          "time_seconds": 99.0,
+          "strength": 0.07030083643574397
+        },
+        {
+          "time_seconds": 99.8,
+          "strength": 0.0402041502727397
+        },
+        {
+          "time_seconds": 100.1,
+          "strength": 0.052935903199767056
+        },
+        {
+          "time_seconds": 100.8,
+          "strength": 0.08422501200297816
+        },
+        {
+          "time_seconds": 101.2,
+          "strength": 0.05211736350590061
+        },
+        {
+          "time_seconds": 101.5,
+          "strength": 0.0881551719243849
+        },
+        {
+          "time_seconds": 102.2,
+          "strength": 0.036370362413573165
+        },
+        {
+          "time_seconds": 104.0,
+          "strength": 0.03175244064126469
+        },
+        {
+          "time_seconds": 105.4,
+          "strength": 0.06036482372822882
+        },
+        {
+          "time_seconds": 106.0,
+          "strength": 0.06681221135432558
+        },
+        {
+          "time_seconds": 107.4,
+          "strength": 0.050757220229145326
+        },
+        {
+          "time_seconds": 109.1,
+          "strength": 0.07897508015623186
+        },
+        {
+          "time_seconds": 109.7,
+          "strength": 0.08231099595667765
+        },
+        {
+          "time_seconds": 110.0,
+          "strength": 0.03177766270487295
+        },
+        {
+          "time_seconds": 110.4,
+          "strength": 0.0476733041998514
+        },
+        {
+          "time_seconds": 111.4,
+          "strength": 0.08396806363897541
+        },
+        {
+          "time_seconds": 111.8,
+          "strength": 0.03789518553786747
+        },
+        {
+          "time_seconds": 113.0,
+          "strength": 0.04119009613332938
+        },
+        {
+          "time_seconds": 115.0,
+          "strength": 0.06276179996076331
+        },
+        {
+          "time_seconds": 115.4,
+          "strength": 0.05719185714851199
+        },
+        {
+          "time_seconds": 130.5,
+          "strength": 0.042274323877286586
+        },
+        {
+          "time_seconds": 130.8,
+          "strength": 0.042810888940558525
+        },
+        {
+          "time_seconds": 131.2,
+          "strength": 0.033447657196171585
+        },
+        {
+          "time_seconds": 131.6,
+          "strength": 0.04469814046215892
+        },
+        {
+          "time_seconds": 131.9,
+          "strength": 0.03198319697096633
+        },
+        {
+          "time_seconds": 132.2,
+          "strength": 0.04624040814131673
+        },
+        {
+          "time_seconds": 132.7,
+          "strength": 0.05225264312218868
+        },
+        {
+          "time_seconds": 133.0,
+          "strength": 0.04536953535421809
+        },
+        {
+          "time_seconds": 133.3,
+          "strength": 0.05356203700005694
+        },
+        {
+          "time_seconds": 143.0,
+          "strength": 0.03324699962872188
+        },
+        {
+          "time_seconds": 144.1,
+          "strength": 0.07134032686873457
+        },
+        {
+          "time_seconds": 144.3,
+          "strength": 0.0534235776469646
+        },
+        {
+          "time_seconds": 144.7,
+          "strength": 0.0634685676523716
+        },
+        {
+          "time_seconds": 145.6,
+          "strength": 0.032957126458581135
+        },
+        {
+          "time_seconds": 146.0,
+          "strength": 0.04628561109942536
+        },
+        {
+          "time_seconds": 146.9,
+          "strength": 0.045860427635594614
+        },
+        {
+          "time_seconds": 147.1,
+          "strength": 0.05352184854618017
+        },
+        {
+          "time_seconds": 148.0,
+          "strength": 0.0384271472868472
+        },
+        {
+          "time_seconds": 149.0,
+          "strength": 0.03104057916496602
+        },
+        {
+          "time_seconds": 149.7,
+          "strength": 0.05866900078508321
+        },
+        {
+          "time_seconds": 150.3,
+          "strength": 0.05983476921918672
+        },
+        {
+          "time_seconds": 151.6,
+          "strength": 0.038801388555406616
+        },
+        {
+          "time_seconds": 155.1,
+          "strength": 0.048224840003524116
+        },
+        {
+          "time_seconds": 155.5,
+          "strength": 0.04624248206015562
+        },
+        {
+          "time_seconds": 155.9,
+          "strength": 0.05929276652269595
+        },
+        {
+          "time_seconds": 156.1,
+          "strength": 0.051339999954064665
+        },
+        {
+          "time_seconds": 157.0,
+          "strength": 0.05493291307848901
+        },
+        {
+          "time_seconds": 157.8,
+          "strength": 0.06959768594028955
+        },
+        {
+          "time_seconds": 159.5,
+          "strength": 0.055024845966803536
+        },
+        {
+          "time_seconds": 160.1,
+          "strength": 0.07740676879387347
+        },
+        {
+          "time_seconds": 160.6,
+          "strength": 0.03920051264557001
+        },
+        {
+          "time_seconds": 161.7,
+          "strength": 0.060498235960460583
+        },
+        {
+          "time_seconds": 162.6,
+          "strength": 0.04419804688520873
+        },
+        {
+          "time_seconds": 171.3,
+          "strength": 0.05184629422207616
+        },
+        {
+          "time_seconds": 176.1,
+          "strength": 0.06242185942723842
+        },
+        {
+          "time_seconds": 177.2,
+          "strength": 0.05236074443634818
+        },
+        {
+          "time_seconds": 178.3,
+          "strength": 0.032229685655196294
+        },
+        {
+          "time_seconds": 178.9,
+          "strength": 0.055981935819921766
+        },
+        {
+          "time_seconds": 182.6,
+          "strength": 0.031197353921042288
+        },
+        {
+          "time_seconds": 183.6,
+          "strength": 0.042177113317334855
+        },
+        {
+          "time_seconds": 195.6,
+          "strength": 0.03631228450967591
+        },
+        {
+          "time_seconds": 198.4,
+          "strength": 0.03526423117407083
+        },
+        {
+          "time_seconds": 198.8,
+          "strength": 0.04835265601959142
+        },
+        {
+          "time_seconds": 199.8,
+          "strength": 0.04491825674638818
+        },
+        {
+          "time_seconds": 200.7,
+          "strength": 0.03340656394874993
+        },
+        {
+          "time_seconds": 201.8,
+          "strength": 0.04155256241080245
+        },
+        {
+          "time_seconds": 206.4,
+          "strength": 0.03603598847654548
+        },
+        {
+          "time_seconds": 207.1,
+          "strength": 0.052023316806146025
+        },
+        {
+          "time_seconds": 208.3,
+          "strength": 0.03167881276700173
+        },
+        {
+          "time_seconds": 209.4,
+          "strength": 0.07239515371140841
+        }
+      ]
+    },
+    "backing_vocals": {
+      "filename": "1 Backing Vocals.wav",
+      "sha256": "9b424c02e66d059c91125f369cdd1335f9eb546097b2835b311a3a624e9e9def",
+      "duration_seconds": 330.0,
+      "activity": {
+        "active_seconds": 250.5,
+        "active_fraction": 0.759090909090909,
+        "active_region_count": 39,
+        "median_region_duration_seconds": 0.2,
+        "p90_region_duration_seconds": 16.080000000000005
+      },
+      "temporal": {
+        "onset_event_count": 131,
+        "onset_events_per_minute": 23.818181818181817,
+        "median_active_rms_dbfs": -26.79893686113038,
+        "p95_active_rms_dbfs": -17.413571061485506,
+        "dynamic_range_p95_p10_db": 28.335362926939872,
+        "median_crest_db": 11.727155004701014,
+        "p90_crest_db": 15.264119645501202
+      },
+      "spectral": {
+        "median_centroid_hz": 1227.845436004037,
+        "p90_centroid_hz": 2364.2967085577684,
+        "median_zero_crossing_rate": 0.07043133986247135,
+        "median_band_fractions": {
+          "20_150_hz": 8.838561872834673e-05,
+          "150_500_hz": 0.05195554572918895,
+          "500_2000_hz": 0.7526809505598497,
+          "2000_6000_hz": 0.06724951648096507,
+          "6000_12000_hz": 0.00972485546403672,
+          "12000_20000_hz": 0.0015959423720635613
+        }
+      },
+      "stereo": {
+        "median_lr_correlation": 0.5196490092211543,
+        "p10_lr_correlation": -0.05814374280444418,
+        "median_side_mid_db": -4.805343915985325,
+        "median_width_index": 0.24852932744420744,
+        "median_ild_db": 0.9826795439025413,
+        "p90_abs_ild_db": 3.5679046610211635
+      },
+      "events_preview": [
+        {
+          "time_seconds": 21.0,
+          "strength": 0.046085898740035366
+        },
+        {
+          "time_seconds": 21.6,
+          "strength": 0.05125855003671381
+        },
+        {
+          "time_seconds": 22.2,
+          "strength": 0.03898611424330528
+        },
+        {
+          "time_seconds": 22.6,
+          "strength": 0.042933816383629
+        },
+        {
+          "time_seconds": 23.3,
+          "strength": 0.05079030997782989
+        },
+        {
+          "time_seconds": 25.6,
+          "strength": 0.06895105303897228
+        },
+        {
+          "time_seconds": 26.2,
+          "strength": 0.042617928282092404
+        },
+        {
+          "time_seconds": 27.4,
+          "strength": 0.0622374008698417
+        },
+        {
+          "time_seconds": 52.5,
+          "strength": 0.04333849116508885
+        },
+        {
+          "time_seconds": 54.7,
+          "strength": 0.06300657589282545
+        },
+        {
+          "time_seconds": 57.0,
+          "strength": 0.09406856976559486
+        },
+        {
+          "time_seconds": 58.1,
+          "strength": 0.05414508078947738
+        },
+        {
+          "time_seconds": 58.9,
+          "strength": 0.04908607721143208
+        },
+        {
+          "time_seconds": 59.3,
+          "strength": 0.10797556512245457
+        },
+        {
+          "time_seconds": 77.7,
+          "strength": 0.08187270096181418
+        },
+        {
+          "time_seconds": 78.3,
+          "strength": 0.03740144998939893
+        },
+        {
+          "time_seconds": 92.2,
+          "strength": 0.0765310143463232
+        },
+        {
+          "time_seconds": 92.8,
+          "strength": 0.0400620163133031
+        },
+        {
+          "time_seconds": 93.3,
+          "strength": 0.042453233198307856
+        },
+        {
+          "time_seconds": 93.6,
+          "strength": 0.05099760447043748
+        },
+        {
+          "time_seconds": 94.0,
+          "strength": 0.03752964427499261
+        },
+        {
+          "time_seconds": 94.7,
+          "strength": 0.037404566027330416
+        },
+        {
+          "time_seconds": 95.0,
+          "strength": 0.0677797162374046
+        },
+        {
+          "time_seconds": 95.3,
+          "strength": 0.06743441154182273
+        },
+        {
+          "time_seconds": 95.6,
+          "strength": 0.07640588662836494
+        },
+        {
+          "time_seconds": 96.3,
+          "strength": 0.09206400675031341
+        },
+        {
+          "time_seconds": 96.7,
+          "strength": 0.10430671262595118
+        },
+        {
+          "time_seconds": 97.0,
+          "strength": 0.07233754388283681
+        },
+        {
+          "time_seconds": 97.3,
+          "strength": 0.08297536132657983
+        },
+        {
+          "time_seconds": 97.9,
+          "strength": 0.04992545294980126
+        },
+        {
+          "time_seconds": 98.5,
+          "strength": 0.08365719305069647
+        },
+        {
+          "time_seconds": 99.0,
+          "strength": 0.10482248949394342
+        },
+        {
+          "time_seconds": 99.8,
+          "strength": 0.055029009618772204
+        },
+        {
+          "time_seconds": 100.1,
+          "strength": 0.0638138984571974
+        },
+        {
+          "time_seconds": 100.4,
+          "strength": 0.044446079380132814
+        },
+        {
+          "time_seconds": 100.8,
+          "strength": 0.11322926725280136
+        },
+        {
+          "time_seconds": 101.2,
+          "strength": 0.04213554374486754
+        },
+        {
+          "time_seconds": 109.1,
+          "strength": 0.12685644645888208
+        },
+        {
+          "time_seconds": 111.4,
+          "strength": 0.09754187912135842
+        },
+        {
+          "time_seconds": 124.3,
+          "strength": 0.05668923647123985
+        },
+        {
+          "time_seconds": 124.6,
+          "strength": 0.043616568394706345
+        },
+        {
+          "time_seconds": 124.9,
+          "strength": 0.045293703409070796
+        },
+        {
+          "time_seconds": 129.6,
+          "strength": 0.09708737281690391
+        },
+        {
+          "time_seconds": 130.5,
+          "strength": 0.06490364990623262
+        },
+        {
+          "time_seconds": 130.8,
+          "strength": 0.038313284468967646
+        },
+        {
+          "time_seconds": 131.6,
+          "strength": 0.048748829691632245
+        },
+        {
+          "time_seconds": 131.9,
+          "strength": 0.03789082242597561
+        },
+        {
+          "time_seconds": 132.2,
+          "strength": 0.05460970495712601
+        },
+        {
+          "time_seconds": 132.7,
+          "strength": 0.05544330177753824
+        },
+        {
+          "time_seconds": 133.0,
+          "strength": 0.0537511711742492
+        },
+        {
+          "time_seconds": 133.3,
+          "strength": 0.05932432845396897
+        },
+        {
+          "time_seconds": 133.6,
+          "strength": 0.04121446777067635
+        },
+        {
+          "time_seconds": 144.1,
+          "strength": 0.06169506172883125
+        },
+        {
+          "time_seconds": 144.3,
+          "strength": 0.04191690610341199
+        },
+        {
+          "time_seconds": 144.7,
+          "strength": 0.0560351158227894
+        },
+        {
+          "time_seconds": 146.9,
+          "strength": 0.05353541635954187
+        },
+        {
+          "time_seconds": 147.1,
+          "strength": 0.057036367824171
+        },
+        {
+          "time_seconds": 148.0,
+          "strength": 0.04738345639592194
+        },
+        {
+          "time_seconds": 149.7,
+          "strength": 0.06909686187063609
+        },
+        {
+          "time_seconds": 149.9,
+          "strength": 0.04555518224035127
+        },
+        {
+          "time_seconds": 150.3,
+          "strength": 0.06380907203424233
+        },
+        {
+          "time_seconds": 151.6,
+          "strength": 0.04219328904126626
+        },
+        {
+          "time_seconds": 153.7,
+          "strength": 0.03838333561201575
+        },
+        {
+          "time_seconds": 154.4,
+          "strength": 0.04165837672976229
+        },
+        {
+          "time_seconds": 155.5,
+          "strength": 0.07549548034553927
+        },
+        {
+          "time_seconds": 156.1,
+          "strength": 0.08412908928518964
+        },
+        {
+          "time_seconds": 158.3,
+          "strength": 0.1033664655384879
+        },
+        {
+          "time_seconds": 160.6,
+          "strength": 0.1299460126578996
+        },
+        {
+          "time_seconds": 161.2,
+          "strength": 0.0402488458859496
+        },
+        {
+          "time_seconds": 161.5,
+          "strength": 0.04637443076827867
+        },
+        {
+          "time_seconds": 164.5,
+          "strength": 0.07668836294629824
+        },
+        {
+          "time_seconds": 165.2,
+          "strength": 0.07080431051532113
+        },
+        {
+          "time_seconds": 166.8,
+          "strength": 0.07959730081439666
+        },
+        {
+          "time_seconds": 169.0,
+          "strength": 0.05543215982581244
+        },
+        {
+          "time_seconds": 169.7,
+          "strength": 0.05597037485189897
+        },
+        {
+          "time_seconds": 170.2,
+          "strength": 0.06366406302288596
+        },
+        {
+          "time_seconds": 171.0,
+          "strength": 0.03669599550836873
+        },
+        {
+          "time_seconds": 171.3,
+          "strength": 0.0590590404163842
+        },
+        {
+          "time_seconds": 171.9,
+          "strength": 0.04372777332880659
+        },
+        {
+          "time_seconds": 175.0,
+          "strength": 0.052746780334395435
+        },
+        {
+          "time_seconds": 175.5,
+          "strength": 0.036919733829656534
+        },
+        {
+          "time_seconds": 176.1,
+          "strength": 0.08048776558400356
+        },
+        {
+          "time_seconds": 177.2,
+          "strength": 0.06219415794773244
+        },
+        {
+          "time_seconds": 177.8,
+          "strength": 0.0547280512425454
+        },
+        {
+          "time_seconds": 178.3,
+          "strength": 0.038199797293584366
+        },
+        {
+          "time_seconds": 178.9,
+          "strength": 0.04378736359513152
+        },
+        {
+          "time_seconds": 179.2,
+          "strength": 0.03701111079247268
+        },
+        {
+          "time_seconds": 179.8,
+          "strength": 0.043712469525841804
+        },
+        {
+          "time_seconds": 180.6,
+          "strength": 0.0586086884640456
+        },
+        {
+          "time_seconds": 181.7,
+          "strength": 0.049384138159179684
+        },
+        {
+          "time_seconds": 182.3,
+          "strength": 0.041294095586441565
+        },
+        {
+          "time_seconds": 182.6,
+          "strength": 0.04852820115759835
+        },
+        {
+          "time_seconds": 188.3,
+          "strength": 0.045967170126102845
+        },
+        {
+          "time_seconds": 193.9,
+          "strength": 0.08276530416019705
+        },
+        {
+          "time_seconds": 196.1,
+          "strength": 0.05935194037997112
+        },
+        {
+          "time_seconds": 201.8,
+          "strength": 0.05619074028394214
+        },
+        {
+          "time_seconds": 206.3,
+          "strength": 0.043462889871079005
+        },
+        {
+          "time_seconds": 207.1,
+          "strength": 0.06787092322410165
+        },
+        {
+          "time_seconds": 208.3,
+          "strength": 0.056441644074389584
+        },
+        {
+          "time_seconds": 208.6,
+          "strength": 0.04551117296050496
+        }
+      ]
+    },
+    "drums": {
+      "filename": "2 Drums.wav",
+      "sha256": "f015176c732b3e757a285ec8b77ec78aecef85df7deae668722afe1486b00b60",
+      "duration_seconds": 330.0,
+      "activity": {
+        "active_seconds": 273.3,
+        "active_fraction": 0.8281818181818182,
+        "active_region_count": 29,
+        "median_region_duration_seconds": 0.2,
+        "p90_region_duration_seconds": 30.999999999999993
+      },
+      "temporal": {
+        "onset_event_count": 125,
+        "onset_events_per_minute": 22.727272727272727,
+        "median_active_rms_dbfs": -26.485949923591043,
+        "p95_active_rms_dbfs": -16.94705606239003,
+        "dynamic_range_p95_p10_db": 25.1724795910872,
+        "median_crest_db": 11.599543818208444,
+        "p90_crest_db": 18.4458962124122
+      },
+      "spectral": {
+        "median_centroid_hz": 423.9815465887078,
+        "p90_centroid_hz": 2194.614322227341,
+        "median_zero_crossing_rate": 0.04480100020837675,
+        "median_band_fractions": {
+          "20_150_hz": 0.6984991145328344,
+          "150_500_hz": 0.0985436199718093,
+          "500_2000_hz": 0.06802378645940863,
+          "2000_6000_hz": 0.024951353351464714,
+          "6000_12000_hz": 0.0071929504421742035,
+          "12000_20000_hz": 0.0014965277010367027
+        }
+      },
+      "stereo": {
+        "median_lr_correlation": 0.7642791737720901,
+        "p10_lr_correlation": -0.10115913879616291,
+        "median_side_mid_db": -8.576667478062948,
+        "median_width_index": 0.12186883087550707,
+        "median_ild_db": 0.1638131046278665,
+        "p90_abs_ild_db": 2.008742939336512
+      },
+      "events_preview": [
+        {
+          "time_seconds": 46.5,
+          "strength": 0.09964121381513265
+        },
+        {
+          "time_seconds": 47.1,
+          "strength": 0.14432993449101528
+        },
+        {
+          "time_seconds": 48.8,
+          "strength": 0.12079022075957929
+        },
+        {
+          "time_seconds": 49.4,
+          "strength": 0.11045320806141935
+        },
+        {
+          "time_seconds": 50.5,
+          "strength": 0.10011313195653235
+        },
+        {
+          "time_seconds": 51.1,
+          "strength": 0.12028719844361532
+        },
+        {
+          "time_seconds": 52.2,
+          "strength": 0.12523275366987419
+        },
+        {
+          "time_seconds": 52.8,
+          "strength": 0.11113302072760489
+        },
+        {
+          "time_seconds": 53.9,
+          "strength": 0.14089816434244082
+        },
+        {
+          "time_seconds": 54.5,
+          "strength": 0.10309127016889422
+        },
+        {
+          "time_seconds": 55.6,
+          "strength": 0.12022049248716779
+        },
+        {
+          "time_seconds": 56.2,
+          "strength": 0.11379957301097189
+        },
+        {
+          "time_seconds": 61.3,
+          "strength": 0.11733128484899776
+        },
+        {
+          "time_seconds": 62.4,
+          "strength": 0.10723789116613694
+        },
+        {
+          "time_seconds": 63.0,
+          "strength": 0.12548389645438635
+        },
+        {
+          "time_seconds": 64.1,
+          "strength": 0.12053754932904377
+        },
+        {
+          "time_seconds": 64.7,
+          "strength": 0.11937589500446932
+        },
+        {
+          "time_seconds": 68.1,
+          "strength": 0.11326015983799279
+        },
+        {
+          "time_seconds": 69.2,
+          "strength": 0.10720110132108222
+        },
+        {
+          "time_seconds": 69.8,
+          "strength": 0.12701030801049665
+        },
+        {
+          "time_seconds": 70.4,
+          "strength": 0.11313392058756183
+        },
+        {
+          "time_seconds": 70.9,
+          "strength": 0.10568027129922654
+        },
+        {
+          "time_seconds": 71.5,
+          "strength": 0.14725512880082575
+        },
+        {
+          "time_seconds": 72.1,
+          "strength": 0.11777593650080034
+        },
+        {
+          "time_seconds": 72.6,
+          "strength": 0.10674125001760482
+        },
+        {
+          "time_seconds": 73.2,
+          "strength": 0.13982687766777283
+        },
+        {
+          "time_seconds": 73.8,
+          "strength": 0.10995225826391057
+        },
+        {
+          "time_seconds": 74.9,
+          "strength": 0.1423800287282926
+        },
+        {
+          "time_seconds": 76.6,
+          "strength": 0.1563946562215317
+        },
+        {
+          "time_seconds": 77.2,
+          "strength": 0.10548534187368333
+        },
+        {
+          "time_seconds": 78.3,
+          "strength": 0.11996441178790158
+        },
+        {
+          "time_seconds": 78.9,
+          "strength": 0.13349252541249204
+        },
+        {
+          "time_seconds": 80.0,
+          "strength": 0.10877854467335976
+        },
+        {
+          "time_seconds": 80.6,
+          "strength": 0.1285535589112978
+        },
+        {
+          "time_seconds": 86.2,
+          "strength": 0.14418428939418534
+        },
+        {
+          "time_seconds": 88.5,
+          "strength": 0.09968759230958424
+        },
+        {
+          "time_seconds": 90.2,
+          "strength": 0.10821743426924779
+        },
+        {
+          "time_seconds": 92.5,
+          "strength": 0.13113882121485065
+        },
+        {
+          "time_seconds": 93.6,
+          "strength": 0.10882516267991076
+        },
+        {
+          "time_seconds": 98.7,
+          "strength": 0.1060120136515259
+        },
+        {
+          "time_seconds": 104.9,
+          "strength": 0.12292362463585808
+        },
+        {
+          "time_seconds": 109.4,
+          "strength": 0.10014497227205076
+        },
+        {
+          "time_seconds": 116.2,
+          "strength": 0.13785562015540054
+        },
+        {
+          "time_seconds": 136.4,
+          "strength": 0.10255470956867653
+        },
+        {
+          "time_seconds": 139.2,
+          "strength": 0.10762080402511805
+        },
+        {
+          "time_seconds": 140.3,
+          "strength": 0.10672967143342434
+        },
+        {
+          "time_seconds": 142.0,
+          "strength": 0.11854287834027184
+        },
+        {
+          "time_seconds": 145.4,
+          "strength": 0.11446661837316979
+        },
+        {
+          "time_seconds": 149.9,
+          "strength": 0.13560702188964968
+        },
+        {
+          "time_seconds": 166.1,
+          "strength": 0.09978170420080995
+        },
+        {
+          "time_seconds": 170.2,
+          "strength": 0.1052680421855731
+        },
+        {
+          "time_seconds": 174.7,
+          "strength": 0.11179992456653366
+        },
+        {
+          "time_seconds": 175.8,
+          "strength": 0.10065599254911067
+        },
+        {
+          "time_seconds": 177.5,
+          "strength": 0.11525108921108848
+        },
+        {
+          "time_seconds": 179.2,
+          "strength": 0.10692312652384436
+        },
+        {
+          "time_seconds": 180.3,
+          "strength": 0.10804032956594722
+        },
+        {
+          "time_seconds": 182.0,
+          "strength": 0.11058667424117108
+        },
+        {
+          "time_seconds": 183.1,
+          "strength": 0.11819264238783783
+        },
+        {
+          "time_seconds": 185.4,
+          "strength": 0.12821333194746437
+        },
+        {
+          "time_seconds": 186.5,
+          "strength": 0.11861024345201898
+        },
+        {
+          "time_seconds": 187.1,
+          "strength": 0.13943043124527463
+        },
+        {
+          "time_seconds": 187.6,
+          "strength": 0.10035892161881874
+        },
+        {
+          "time_seconds": 188.2,
+          "strength": 0.12348057706174902
+        },
+        {
+          "time_seconds": 189.9,
+          "strength": 0.117482416777523
+        },
+        {
+          "time_seconds": 190.5,
+          "strength": 0.13277224864770437
+        },
+        {
+          "time_seconds": 191.6,
+          "strength": 0.11185910831909926
+        },
+        {
+          "time_seconds": 192.2,
+          "strength": 0.14205793999246263
+        },
+        {
+          "time_seconds": 193.3,
+          "strength": 0.10240644526639284
+        },
+        {
+          "time_seconds": 193.9,
+          "strength": 0.1263747222376766
+        },
+        {
+          "time_seconds": 195.0,
+          "strength": 0.11835476090545474
+        },
+        {
+          "time_seconds": 195.6,
+          "strength": 0.1278960502159551
+        },
+        {
+          "time_seconds": 196.7,
+          "strength": 0.12593562219513277
+        },
+        {
+          "time_seconds": 197.3,
+          "strength": 0.10384160721403428
+        },
+        {
+          "time_seconds": 198.4,
+          "strength": 0.12318797450589418
+        },
+        {
+          "time_seconds": 199.5,
+          "strength": 0.11069440704629277
+        },
+        {
+          "time_seconds": 200.1,
+          "strength": 0.14146466216906378
+        },
+        {
+          "time_seconds": 201.2,
+          "strength": 0.11929865790009228
+        },
+        {
+          "time_seconds": 201.8,
+          "strength": 0.13724923184174578
+        },
+        {
+          "time_seconds": 205.2,
+          "strength": 0.1300365774616754
+        },
+        {
+          "time_seconds": 226.1,
+          "strength": 0.11854240320915113
+        },
+        {
+          "time_seconds": 230.6,
+          "strength": 0.10248936558240443
+        },
+        {
+          "time_seconds": 234.6,
+          "strength": 0.10420301171776203
+        },
+        {
+          "time_seconds": 236.8,
+          "strength": 0.1041330204692551
+        },
+        {
+          "time_seconds": 237.4,
+          "strength": 0.10874712082651328
+        },
+        {
+          "time_seconds": 242.5,
+          "strength": 0.13537090373078514
+        },
+        {
+          "time_seconds": 252.8,
+          "strength": 0.13673123001787157
+        },
+        {
+          "time_seconds": 253.9,
+          "strength": 0.11976933027302168
+        },
+        {
+          "time_seconds": 254.5,
+          "strength": 0.1338804689128134
+        },
+        {
+          "time_seconds": 256.2,
+          "strength": 0.1746803215674131
+        },
+        {
+          "time_seconds": 260.8,
+          "strength": 0.15808067093816408
+        },
+        {
+          "time_seconds": 261.4,
+          "strength": 0.15890886057366058
+        },
+        {
+          "time_seconds": 261.9,
+          "strength": 0.135520363801511
+        },
+        {
+          "time_seconds": 262.5,
+          "strength": 0.1973235301956957
+        },
+        {
+          "time_seconds": 263.1,
+          "strength": 0.16806384474489108
+        },
+        {
+          "time_seconds": 263.7,
+          "strength": 0.10744153368666517
+        },
+        {
+          "time_seconds": 264.2,
+          "strength": 0.15431698103805547
+        },
+        {
+          "time_seconds": 264.8,
+          "strength": 0.18792248046221194
+        },
+        {
+          "time_seconds": 265.4,
+          "strength": 0.19327688063142007
+        },
+        {
+          "time_seconds": 265.9,
+          "strength": 0.1055653679540711
+        },
+        {
+          "time_seconds": 266.5,
+          "strength": 0.14534500812409107
+        }
+      ]
+    },
+    "bass": {
+      "filename": "3 Bass.wav",
+      "sha256": "4a3c75a781dc0dc62ad53488e22aae1fab90b1e386829c655d19df1f90d74c88",
+      "duration_seconds": 330.0,
+      "activity": {
+        "active_seconds": 227.1,
+        "active_fraction": 0.6881818181818181,
+        "active_region_count": 34,
+        "median_region_duration_seconds": 1.05,
+        "p90_region_duration_seconds": 16.959999999999994
+      },
+      "temporal": {
+        "onset_event_count": 141,
+        "onset_events_per_minute": 25.636363636363637,
+        "median_active_rms_dbfs": -25.454185002576054,
+        "p95_active_rms_dbfs": -18.370635013819538,
+        "dynamic_range_p95_p10_db": 22.749506199628968,
+        "median_crest_db": 9.04956654201918,
+        "p90_crest_db": 11.747530801085798
+      },
+      "spectral": {
+        "median_centroid_hz": 104.09405018536503,
+        "p90_centroid_hz": 193.3470736701799,
+        "median_zero_crossing_rate": 0.006668055844967702,
+        "median_band_fractions": {
+          "20_150_hz": 0.8629443826324426,
+          "150_500_hz": 0.11661475971270113,
+          "500_2000_hz": 0.007945216748037198,
+          "2000_6000_hz": 0.0006687049990019783,
+          "6000_12000_hz": 2.3576729224115604e-05,
+          "12000_20000_hz": 7.947079263564064e-06
+        }
+      },
+      "stereo": {
+        "median_lr_correlation": 0.9276153914603825,
+        "p10_lr_correlation": 0.6444189490246096,
+        "median_side_mid_db": -13.743037352165622,
+        "median_width_index": 0.0405256181734906,
+        "median_ild_db": 0.39695967550432976,
+        "p90_abs_ild_db": 2.5865902755669437
+      },
+      "events_preview": [
+        {
+          "time_seconds": 46.0,
+          "strength": 0.03613977317740863
+        },
+        {
+          "time_seconds": 47.8,
+          "strength": 0.030787675185065387
+        },
+        {
+          "time_seconds": 49.8,
+          "strength": 0.03444235842226099
+        },
+        {
+          "time_seconds": 57.2,
+          "strength": 0.032553263767489446
+        },
+        {
+          "time_seconds": 66.0,
+          "strength": 0.03440317273013144
+        },
+        {
+          "time_seconds": 86.3,
+          "strength": 0.03602311248974977
+        },
+        {
+          "time_seconds": 88.3,
+          "strength": 0.03732988783273554
+        },
+        {
+          "time_seconds": 90.1,
+          "strength": 0.03083322489110632
+        },
+        {
+          "time_seconds": 90.5,
+          "strength": 0.042199600260459186
+        },
+        {
+          "time_seconds": 91.6,
+          "strength": 0.043549620470744115
+        },
+        {
+          "time_seconds": 92.2,
+          "strength": 0.03314558832920121
+        },
+        {
+          "time_seconds": 92.8,
+          "strength": 0.042661626173289315
+        },
+        {
+          "time_seconds": 93.3,
+          "strength": 0.037896555794586825
+        },
+        {
+          "time_seconds": 93.9,
+          "strength": 0.06081441950462684
+        },
+        {
+          "time_seconds": 95.6,
+          "strength": 0.03135807957368035
+        },
+        {
+          "time_seconds": 98.0,
+          "strength": 0.0324944538035221
+        },
+        {
+          "time_seconds": 100.7,
+          "strength": 0.04715223874026019
+        },
+        {
+          "time_seconds": 104.6,
+          "strength": 0.036462196083577994
+        },
+        {
+          "time_seconds": 104.8,
+          "strength": 0.04237704778232785
+        },
+        {
+          "time_seconds": 116.2,
+          "strength": 0.0341586403009381
+        },
+        {
+          "time_seconds": 117.5,
+          "strength": 0.03280659212144933
+        },
+        {
+          "time_seconds": 119.3,
+          "strength": 0.03318898047159066
+        },
+        {
+          "time_seconds": 123.8,
+          "strength": 0.037317652987187394
+        },
+        {
+          "time_seconds": 145.4,
+          "strength": 0.051548255208630364
+        },
+        {
+          "time_seconds": 147.7,
+          "strength": 0.043917548038829204
+        },
+        {
+          "time_seconds": 149.9,
+          "strength": 0.11426647854550354
+        },
+        {
+          "time_seconds": 166.4,
+          "strength": 0.0343187208065386
+        },
+        {
+          "time_seconds": 166.7,
+          "strength": 0.034939224417104967
+        },
+        {
+          "time_seconds": 167.1,
+          "strength": 0.030201634765458736
+        },
+        {
+          "time_seconds": 169.0,
+          "strength": 0.03069744451332798
+        },
+        {
+          "time_seconds": 170.0,
+          "strength": 0.033743967434535664
+        },
+        {
+          "time_seconds": 170.5,
+          "strength": 0.04462692248816758
+        },
+        {
+          "time_seconds": 170.9,
+          "strength": 0.054892955021898546
+        },
+        {
+          "time_seconds": 172.6,
+          "strength": 0.044262977450016415
+        },
+        {
+          "time_seconds": 174.3,
+          "strength": 0.03298416773366662
+        },
+        {
+          "time_seconds": 175.4,
+          "strength": 0.038510757885625274
+        },
+        {
+          "time_seconds": 176.7,
+          "strength": 0.030500281074484756
+        },
+        {
+          "time_seconds": 178.2,
+          "strength": 0.03037740890304512
+        },
+        {
+          "time_seconds": 178.8,
+          "strength": 0.032296156654846794
+        },
+        {
+          "time_seconds": 182.3,
+          "strength": 0.0467699477817064
+        },
+        {
+          "time_seconds": 182.9,
+          "strength": 0.03013371152632241
+        },
+        {
+          "time_seconds": 184.6,
+          "strength": 0.0323602864706665
+        },
+        {
+          "time_seconds": 185.1,
+          "strength": 0.033914563273611795
+        },
+        {
+          "time_seconds": 185.7,
+          "strength": 0.04137713065756964
+        },
+        {
+          "time_seconds": 186.2,
+          "strength": 0.031833603611176084
+        },
+        {
+          "time_seconds": 186.8,
+          "strength": 0.050514466531513265
+        },
+        {
+          "time_seconds": 187.4,
+          "strength": 0.04575166048617807
+        },
+        {
+          "time_seconds": 187.9,
+          "strength": 0.04059275255790512
+        },
+        {
+          "time_seconds": 188.5,
+          "strength": 0.03451354508039102
+        },
+        {
+          "time_seconds": 189.1,
+          "strength": 0.03910415988781327
+        },
+        {
+          "time_seconds": 190.2,
+          "strength": 0.06672815499127367
+        },
+        {
+          "time_seconds": 190.8,
+          "strength": 0.06216696061812059
+        },
+        {
+          "time_seconds": 191.3,
+          "strength": 0.0443701001038262
+        },
+        {
+          "time_seconds": 191.9,
+          "strength": 0.050955934508363894
+        },
+        {
+          "time_seconds": 192.5,
+          "strength": 0.058849811112718
+        },
+        {
+          "time_seconds": 193.1,
+          "strength": 0.03340037522657989
+        },
+        {
+          "time_seconds": 193.6,
+          "strength": 0.0696338202345194
+        },
+        {
+          "time_seconds": 194.2,
+          "strength": 0.05352925125096554
+        },
+        {
+          "time_seconds": 194.7,
+          "strength": 0.03922607130668403
+        },
+        {
+          "time_seconds": 195.3,
+          "strength": 0.05561825765863633
+        },
+        {
+          "time_seconds": 195.9,
+          "strength": 0.05145426599458042
+        },
+        {
+          "time_seconds": 196.4,
+          "strength": 0.05026617909702295
+        },
+        {
+          "time_seconds": 197.0,
+          "strength": 0.058442518218681586
+        },
+        {
+          "time_seconds": 197.6,
+          "strength": 0.05607461275481902
+        },
+        {
+          "time_seconds": 198.1,
+          "strength": 0.05301761736940679
+        },
+        {
+          "time_seconds": 198.7,
+          "strength": 0.06961765540042585
+        },
+        {
+          "time_seconds": 199.3,
+          "strength": 0.04493771954414274
+        },
+        {
+          "time_seconds": 199.8,
+          "strength": 0.04577410808421368
+        },
+        {
+          "time_seconds": 200.4,
+          "strength": 0.06753073526571773
+        },
+        {
+          "time_seconds": 200.9,
+          "strength": 0.03828164967647623
+        },
+        {
+          "time_seconds": 201.5,
+          "strength": 0.04325068584242102
+        },
+        {
+          "time_seconds": 216.8,
+          "strength": 0.047428139980946596
+        },
+        {
+          "time_seconds": 218.1,
+          "strength": 0.06353448811901846
+        },
+        {
+          "time_seconds": 218.5,
+          "strength": 0.04099593638119067
+        },
+        {
+          "time_seconds": 220.0,
+          "strength": 0.04478181251651561
+        },
+        {
+          "time_seconds": 221.6,
+          "strength": 0.031250591221029474
+        },
+        {
+          "time_seconds": 222.2,
+          "strength": 0.03689098929770961
+        },
+        {
+          "time_seconds": 222.6,
+          "strength": 0.030198800796873218
+        },
+        {
+          "time_seconds": 223.0,
+          "strength": 0.03924899412799637
+        },
+        {
+          "time_seconds": 223.6,
+          "strength": 0.03959530224814916
+        },
+        {
+          "time_seconds": 224.3,
+          "strength": 0.030803317800334504
+        },
+        {
+          "time_seconds": 224.9,
+          "strength": 0.0375436561127372
+        },
+        {
+          "time_seconds": 225.3,
+          "strength": 0.047816620060525415
+        },
+        {
+          "time_seconds": 226.7,
+          "strength": 0.03522860987531833
+        },
+        {
+          "time_seconds": 227.6,
+          "strength": 0.041162901937603455
+        },
+        {
+          "time_seconds": 252.5,
+          "strength": 0.03600226751432215
+        },
+        {
+          "time_seconds": 260.8,
+          "strength": 0.06579415759263614
+        },
+        {
+          "time_seconds": 261.6,
+          "strength": 0.04737604505766768
+        },
+        {
+          "time_seconds": 261.8,
+          "strength": 0.03832629790453061
+        },
+        {
+          "time_seconds": 262.2,
+          "strength": 0.061628632424929955
+        },
+        {
+          "time_seconds": 262.8,
+          "strength": 0.05131679794548903
+        },
+        {
+          "time_seconds": 263.3,
+          "strength": 0.039851408934097374
+        },
+        {
+          "time_seconds": 263.8,
+          "strength": 0.04464822974545068
+        },
+        {
+          "time_seconds": 264.5,
+          "strength": 0.06068334222544955
+        },
+        {
+          "time_seconds": 265.0,
+          "strength": 0.06364172158877854
+        },
+        {
+          "time_seconds": 265.7,
+          "strength": 0.0489808624578907
+        },
+        {
+          "time_seconds": 266.2,
+          "strength": 0.04350956901962552
+        },
+        {
+          "time_seconds": 266.7,
+          "strength": 0.053721778892131214
+        },
+        {
+          "time_seconds": 267.3,
+          "strength": 0.05144470374120387
+        },
+        {
+          "time_seconds": 267.9,
+          "strength": 0.05402510765022681
+        }
+      ]
+    },
+    "guitar": {
+      "filename": "4 Guitar.wav",
+      "sha256": "3f941f7490391186a3f0c7b780f95dc0b687aa7975f5ca0a1b4debbcfbedd510",
+      "duration_seconds": 330.0,
+      "activity": {
+        "active_seconds": 71.2,
+        "active_fraction": 0.21575757575757576,
+        "active_region_count": 23,
+        "median_region_duration_seconds": 0.5,
+        "p90_region_duration_seconds": 6.980000000000002
+      },
+      "temporal": {
+        "onset_event_count": 120,
+        "onset_events_per_minute": 21.818181818181817,
+        "median_active_rms_dbfs": -46.000437299767825,
+        "p95_active_rms_dbfs": -34.31254600631269,
+        "dynamic_range_p95_p10_db": 20.374862714159875,
+        "median_crest_db": 14.546648000549652,
+        "p90_crest_db": 22.75876954319999
+      },
+      "spectral": {
+        "median_centroid_hz": 1021.8910920578222,
+        "p90_centroid_hz": 3085.4066696045666,
+        "median_zero_crossing_rate": 0.0748072515107314,
+        "median_band_fractions": {
+          "20_150_hz": 0.007058537559854465,
+          "150_500_hz": 0.3458781034691265,
+          "500_2000_hz": 0.3023352542599659,
+          "2000_6000_hz": 0.10103334958217093,
+          "6000_12000_hz": 0.007185060963435273,
+          "12000_20000_hz": 0.0030131274809947033
+        }
+      },
+      "stereo": {
+        "median_lr_correlation": -0.015975869517740215,
+        "p10_lr_correlation": -0.580740778391001,
+        "median_side_mid_db": 0.13667736717511075,
+        "median_width_index": 0.5078671265147501,
+        "median_ild_db": 1.171391784625599,
+        "p90_abs_ild_db": 3.4104253374914957
+      },
+      "events_preview": [
+        {
+          "time_seconds": 66.9,
+          "strength": 0.009226690020901485
+        },
+        {
+          "time_seconds": 67.5,
+          "strength": 0.003462922354253167
+        },
+        {
+          "time_seconds": 67.8,
+          "strength": 0.0021203089761821
+        },
+        {
+          "time_seconds": 68.1,
+          "strength": 0.011622169729587455
+        },
+        {
+          "time_seconds": 68.5,
+          "strength": 0.011976881078984324
+        },
+        {
+          "time_seconds": 81.0,
+          "strength": 0.0020306860114738083
+        },
+        {
+          "time_seconds": 116.2,
+          "strength": 0.01948735912897063
+        },
+        {
+          "time_seconds": 116.6,
+          "strength": 0.014182597792179709
+        },
+        {
+          "time_seconds": 116.9,
+          "strength": 0.024032449256313666
+        },
+        {
+          "time_seconds": 117.2,
+          "strength": 0.01662899077800824
+        },
+        {
+          "time_seconds": 117.5,
+          "strength": 0.015148549664039758
+        },
+        {
+          "time_seconds": 117.8,
+          "strength": 0.003039974826973754
+        },
+        {
+          "time_seconds": 118.0,
+          "strength": 0.012699477060133392
+        },
+        {
+          "time_seconds": 118.3,
+          "strength": 0.009269610963491097
+        },
+        {
+          "time_seconds": 118.6,
+          "strength": 0.005806844403065409
+        },
+        {
+          "time_seconds": 118.9,
+          "strength": 0.0020249241419574536
+        },
+        {
+          "time_seconds": 119.4,
+          "strength": 0.005822135004238494
+        },
+        {
+          "time_seconds": 120.0,
+          "strength": 0.0030853288108066666
+        },
+        {
+          "time_seconds": 120.4,
+          "strength": 0.003927989339452008
+        },
+        {
+          "time_seconds": 120.7,
+          "strength": 0.00618865065090228
+        },
+        {
+          "time_seconds": 121.1,
+          "strength": 0.005924688705537879
+        },
+        {
+          "time_seconds": 121.4,
+          "strength": 0.004048603071549431
+        },
+        {
+          "time_seconds": 122.1,
+          "strength": 0.004471612185543183
+        },
+        {
+          "time_seconds": 122.5,
+          "strength": 0.004754555082822617
+        },
+        {
+          "time_seconds": 122.9,
+          "strength": 0.003268642671962762
+        },
+        {
+          "time_seconds": 123.2,
+          "strength": 0.0026438077196848635
+        },
+        {
+          "time_seconds": 123.6,
+          "strength": 0.0018246463719841007
+        },
+        {
+          "time_seconds": 124.3,
+          "strength": 0.002649498897311482
+        },
+        {
+          "time_seconds": 165.7,
+          "strength": 0.008090844747964964
+        },
+        {
+          "time_seconds": 166.1,
+          "strength": 0.002598974456070404
+        },
+        {
+          "time_seconds": 166.7,
+          "strength": 0.0026934653803876267
+        },
+        {
+          "time_seconds": 167.1,
+          "strength": 0.005408655186834553
+        },
+        {
+          "time_seconds": 167.6,
+          "strength": 0.0034417481922866793
+        },
+        {
+          "time_seconds": 167.9,
+          "strength": 0.0024806948166131923
+        },
+        {
+          "time_seconds": 168.1,
+          "strength": 0.0031262588962254582
+        },
+        {
+          "time_seconds": 168.5,
+          "strength": 0.007362595132117709
+        },
+        {
+          "time_seconds": 168.8,
+          "strength": 0.0021196997288920466
+        },
+        {
+          "time_seconds": 175.9,
+          "strength": 0.0017991014224393
+        },
+        {
+          "time_seconds": 176.7,
+          "strength": 0.0018108555554705572
+        },
+        {
+          "time_seconds": 178.2,
+          "strength": 0.002475655027147919
+        },
+        {
+          "time_seconds": 178.9,
+          "strength": 0.002903016158559618
+        },
+        {
+          "time_seconds": 185.1,
+          "strength": 0.002365443743046221
+        },
+        {
+          "time_seconds": 193.6,
+          "strength": 0.002127352235201823
+        },
+        {
+          "time_seconds": 193.9,
+          "strength": 0.0038083491306773903
+        },
+        {
+          "time_seconds": 194.3,
+          "strength": 0.0017677566848780255
+        },
+        {
+          "time_seconds": 194.6,
+          "strength": 0.0038608155178249046
+        },
+        {
+          "time_seconds": 195.0,
+          "strength": 0.00811753303312012
+        },
+        {
+          "time_seconds": 195.3,
+          "strength": 0.0035711664849841663
+        },
+        {
+          "time_seconds": 195.6,
+          "strength": 0.013297801927804467
+        },
+        {
+          "time_seconds": 196.0,
+          "strength": 0.004900511753587616
+        },
+        {
+          "time_seconds": 196.3,
+          "strength": 0.001884385352420379
+        },
+        {
+          "time_seconds": 196.6,
+          "strength": 0.001644014672465873
+        },
+        {
+          "time_seconds": 197.0,
+          "strength": 0.014386900878551033
+        },
+        {
+          "time_seconds": 197.2,
+          "strength": 0.011777766002589285
+        },
+        {
+          "time_seconds": 197.7,
+          "strength": 0.0038057754348989666
+        },
+        {
+          "time_seconds": 198.0,
+          "strength": 0.004910510291788141
+        },
+        {
+          "time_seconds": 198.4,
+          "strength": 0.015315385375708803
+        },
+        {
+          "time_seconds": 199.5,
+          "strength": 0.002680828904443185
+        },
+        {
+          "time_seconds": 199.8,
+          "strength": 0.002615453430164992
+        },
+        {
+          "time_seconds": 200.1,
+          "strength": 0.005795050985111178
+        },
+        {
+          "time_seconds": 200.7,
+          "strength": 0.001783572507958142
+        },
+        {
+          "time_seconds": 210.8,
+          "strength": 0.0017446751562344522
+        },
+        {
+          "time_seconds": 211.1,
+          "strength": 0.001982163257353296
+        },
+        {
+          "time_seconds": 212.1,
+          "strength": 0.002065678046998239
+        },
+        {
+          "time_seconds": 212.4,
+          "strength": 0.0023789788002208947
+        },
+        {
+          "time_seconds": 213.5,
+          "strength": 0.0016608014383359868
+        },
+        {
+          "time_seconds": 213.8,
+          "strength": 0.001934224154394038
+        },
+        {
+          "time_seconds": 214.5,
+          "strength": 0.001993655364494407
+        },
+        {
+          "time_seconds": 215.2,
+          "strength": 0.001596479855767398
+        },
+        {
+          "time_seconds": 216.2,
+          "strength": 0.002939870348017947
+        },
+        {
+          "time_seconds": 217.0,
+          "strength": 0.0016353403921080907
+        },
+        {
+          "time_seconds": 217.9,
+          "strength": 0.001776420939892036
+        },
+        {
+          "time_seconds": 218.6,
+          "strength": 0.002681838209787695
+        },
+        {
+          "time_seconds": 218.9,
+          "strength": 0.0025256112360187476
+        },
+        {
+          "time_seconds": 220.3,
+          "strength": 0.0018827348946669352
+        },
+        {
+          "time_seconds": 220.6,
+          "strength": 0.0020301477816157517
+        },
+        {
+          "time_seconds": 222.0,
+          "strength": 0.0024170650593081087
+        },
+        {
+          "time_seconds": 223.4,
+          "strength": 0.0018765440925001698
+        },
+        {
+          "time_seconds": 223.7,
+          "strength": 0.003026272490440126
+        },
+        {
+          "time_seconds": 224.1,
+          "strength": 0.0025905494677568633
+        },
+        {
+          "time_seconds": 225.1,
+          "strength": 0.001829627717600544
+        },
+        {
+          "time_seconds": 225.4,
+          "strength": 0.0033486607196541148
+        },
+        {
+          "time_seconds": 228.0,
+          "strength": 0.0018256577464651567
+        },
+        {
+          "time_seconds": 228.2,
+          "strength": 0.004677525521118807
+        },
+        {
+          "time_seconds": 228.9,
+          "strength": 0.004054449319092118
+        },
+        {
+          "time_seconds": 229.6,
+          "strength": 0.003981239415623486
+        },
+        {
+          "time_seconds": 229.9,
+          "strength": 0.005350906698428358
+        },
+        {
+          "time_seconds": 230.2,
+          "strength": 0.003706729679466359
+        },
+        {
+          "time_seconds": 231.0,
+          "strength": 0.007202017899491741
+        },
+        {
+          "time_seconds": 231.3,
+          "strength": 0.004181521201266093
+        },
+        {
+          "time_seconds": 231.7,
+          "strength": 0.005026834049620371
+        },
+        {
+          "time_seconds": 232.7,
+          "strength": 0.003753476244392054
+        },
+        {
+          "time_seconds": 233.0,
+          "strength": 0.005885178425883814
+        },
+        {
+          "time_seconds": 233.3,
+          "strength": 0.008523721744421543
+        },
+        {
+          "time_seconds": 233.7,
+          "strength": 0.004059346820462778
+        },
+        {
+          "time_seconds": 234.4,
+          "strength": 0.0023464739239218747
+        },
+        {
+          "time_seconds": 234.7,
+          "strength": 0.004907862895388105
+        },
+        {
+          "time_seconds": 236.1,
+          "strength": 0.001682347594865955
+        },
+        {
+          "time_seconds": 236.4,
+          "strength": 0.0020094388948385996
+        },
+        {
+          "time_seconds": 238.5,
+          "strength": 0.0016597436492603243
+        }
+      ]
+    },
+    "keyboards": {
+      "filename": "5 Keyboard.wav",
+      "sha256": "80850b6f451ef5edde42b856e8f98b55af3d35c2cace235d3a9ffd90d3bc15f2",
+      "duration_seconds": 330.0,
+      "activity": {
+        "active_seconds": 221.3,
+        "active_fraction": 0.6706060606060606,
+        "active_region_count": 46,
+        "median_region_duration_seconds": 0.4,
+        "p90_region_duration_seconds": 14.4
+      },
+      "temporal": {
+        "onset_event_count": 146,
+        "onset_events_per_minute": 26.545454545454547,
+        "median_active_rms_dbfs": -45.49711484397696,
+        "p95_active_rms_dbfs": -35.64611365184371,
+        "dynamic_range_p95_p10_db": 20.78561672102807,
+        "median_crest_db": 14.166151364186874,
+        "p90_crest_db": 20.838944647946427
+      },
+      "spectral": {
+        "median_centroid_hz": 1140.0710989722452,
+        "p90_centroid_hz": 2166.1007577943315,
+        "median_zero_crossing_rate": 0.072723484059179,
+        "median_band_fractions": {
+          "20_150_hz": 0.014941835318237723,
+          "150_500_hz": 0.325809080795583,
+          "500_2000_hz": 0.46664533915335255,
+          "2000_6000_hz": 0.08497083603624825,
+          "6000_12000_hz": 0.013650548023663443,
+          "12000_20000_hz": 0.004770582981745757
+        }
+      },
+      "stereo": {
+        "median_lr_correlation": -0.5000102137790655,
+        "p10_lr_correlation": -0.7901719821519723,
+        "median_side_mid_db": 4.737684654899054,
+        "median_width_index": 0.7485496926111505,
+        "median_ild_db": 0.19446075162388818,
+        "p90_abs_ild_db": 1.9723034431737532
+      },
+      "events_preview": [
+        {
+          "time_seconds": 49.5,
+          "strength": 0.0038770443727718555
+        },
+        {
+          "time_seconds": 50.8,
+          "strength": 0.00305750322270061
+        },
+        {
+          "time_seconds": 51.5,
+          "strength": 0.0035825608348409627
+        },
+        {
+          "time_seconds": 52.9,
+          "strength": 0.0030730651987974384
+        },
+        {
+          "time_seconds": 54.6,
+          "strength": 0.002571048620571002
+        },
+        {
+          "time_seconds": 57.6,
+          "strength": 0.003222407240221488
+        },
+        {
+          "time_seconds": 65.7,
+          "strength": 0.004979382956735817
+        },
+        {
+          "time_seconds": 66.4,
+          "strength": 0.0026439465206106114
+        },
+        {
+          "time_seconds": 66.8,
+          "strength": 0.002826647714817025
+        },
+        {
+          "time_seconds": 67.1,
+          "strength": 0.003958703277089766
+        },
+        {
+          "time_seconds": 67.4,
+          "strength": 0.0036048810632116736
+        },
+        {
+          "time_seconds": 68.1,
+          "strength": 0.006416809533464989
+        },
+        {
+          "time_seconds": 79.9,
+          "strength": 0.005311823288969864
+        },
+        {
+          "time_seconds": 86.8,
+          "strength": 0.002971981465836472
+        },
+        {
+          "time_seconds": 87.8,
+          "strength": 0.004988816045927116
+        },
+        {
+          "time_seconds": 88.8,
+          "strength": 0.003619662086292271
+        },
+        {
+          "time_seconds": 89.5,
+          "strength": 0.003480038952072534
+        },
+        {
+          "time_seconds": 89.8,
+          "strength": 0.003546631257543637
+        },
+        {
+          "time_seconds": 90.5,
+          "strength": 0.0036812706500874105
+        },
+        {
+          "time_seconds": 91.2,
+          "strength": 0.004444046181624558
+        },
+        {
+          "time_seconds": 91.5,
+          "strength": 0.002937544800556533
+        },
+        {
+          "time_seconds": 92.2,
+          "strength": 0.0035320726532756335
+        },
+        {
+          "time_seconds": 92.5,
+          "strength": 0.0029250875853897604
+        },
+        {
+          "time_seconds": 92.9,
+          "strength": 0.0034332801655340313
+        },
+        {
+          "time_seconds": 93.2,
+          "strength": 0.0038222382835821295
+        },
+        {
+          "time_seconds": 93.9,
+          "strength": 0.005214897278066738
+        },
+        {
+          "time_seconds": 94.3,
+          "strength": 0.004769824104828434
+        },
+        {
+          "time_seconds": 94.6,
+          "strength": 0.005157660152692233
+        },
+        {
+          "time_seconds": 94.9,
+          "strength": 0.0036632493212454638
+        },
+        {
+          "time_seconds": 96.3,
+          "strength": 0.006125471343206616
+        },
+        {
+          "time_seconds": 97.3,
+          "strength": 0.003062920506396072
+        },
+        {
+          "time_seconds": 98.0,
+          "strength": 0.004998018212549291
+        },
+        {
+          "time_seconds": 99.7,
+          "strength": 0.004928042016086959
+        },
+        {
+          "time_seconds": 100.4,
+          "strength": 0.003085819492966783
+        },
+        {
+          "time_seconds": 101.1,
+          "strength": 0.0039257816307538
+        },
+        {
+          "time_seconds": 101.4,
+          "strength": 0.0032847105763363065
+        },
+        {
+          "time_seconds": 102.1,
+          "strength": 0.003713293623395649
+        },
+        {
+          "time_seconds": 102.8,
+          "strength": 0.0036930605452238927
+        },
+        {
+          "time_seconds": 103.1,
+          "strength": 0.0033929354714276223
+        },
+        {
+          "time_seconds": 103.8,
+          "strength": 0.004324132240690198
+        },
+        {
+          "time_seconds": 104.5,
+          "strength": 0.0036492339098268016
+        },
+        {
+          "time_seconds": 120.7,
+          "strength": 0.002568016580064709
+        },
+        {
+          "time_seconds": 121.1,
+          "strength": 0.003136716945171504
+        },
+        {
+          "time_seconds": 123.3,
+          "strength": 0.0032759829691590293
+        },
+        {
+          "time_seconds": 124.3,
+          "strength": 0.0034089558844037846
+        },
+        {
+          "time_seconds": 143.0,
+          "strength": 0.002795006872732626
+        },
+        {
+          "time_seconds": 152.4,
+          "strength": 0.0027524567789331527
+        },
+        {
+          "time_seconds": 173.4,
+          "strength": 0.0026176762243958216
+        },
+        {
+          "time_seconds": 173.7,
+          "strength": 0.002715371695532335
+        },
+        {
+          "time_seconds": 174.7,
+          "strength": 0.0035023687819512924
+        },
+        {
+          "time_seconds": 174.9,
+          "strength": 0.003989619772030684
+        },
+        {
+          "time_seconds": 175.5,
+          "strength": 0.0050275855179509835
+        },
+        {
+          "time_seconds": 176.1,
+          "strength": 0.006272749264179995
+        },
+        {
+          "time_seconds": 177.2,
+          "strength": 0.004368859335011941
+        },
+        {
+          "time_seconds": 177.5,
+          "strength": 0.004161624119998786
+        },
+        {
+          "time_seconds": 177.8,
+          "strength": 0.005000387804017148
+        },
+        {
+          "time_seconds": 178.5,
+          "strength": 0.007178785884542261
+        },
+        {
+          "time_seconds": 178.9,
+          "strength": 0.007757061632743371
+        },
+        {
+          "time_seconds": 179.2,
+          "strength": 0.0054420445414878095
+        },
+        {
+          "time_seconds": 179.4,
+          "strength": 0.002776152447774908
+        },
+        {
+          "time_seconds": 179.6,
+          "strength": 0.0037496865223543042
+        },
+        {
+          "time_seconds": 180.0,
+          "strength": 0.006799674266819728
+        },
+        {
+          "time_seconds": 180.6,
+          "strength": 0.008582116255957018
+        },
+        {
+          "time_seconds": 180.9,
+          "strength": 0.0026230851805473313
+        },
+        {
+          "time_seconds": 181.1,
+          "strength": 0.006384725570471355
+        },
+        {
+          "time_seconds": 181.3,
+          "strength": 0.004645699956318472
+        },
+        {
+          "time_seconds": 181.7,
+          "strength": 0.008860551408977312
+        },
+        {
+          "time_seconds": 182.0,
+          "strength": 0.006898919451587632
+        },
+        {
+          "time_seconds": 182.3,
+          "strength": 0.005582710439345219
+        },
+        {
+          "time_seconds": 182.8,
+          "strength": 0.004289317075954287
+        },
+        {
+          "time_seconds": 183.0,
+          "strength": 0.0030093496870249176
+        },
+        {
+          "time_seconds": 196.0,
+          "strength": 0.0033001415633060437
+        },
+        {
+          "time_seconds": 196.4,
+          "strength": 0.0039034230704681466
+        },
+        {
+          "time_seconds": 197.0,
+          "strength": 0.0030627373127664337
+        },
+        {
+          "time_seconds": 197.2,
+          "strength": 0.0025739462699795566
+        },
+        {
+          "time_seconds": 197.5,
+          "strength": 0.002997684025833891
+        },
+        {
+          "time_seconds": 197.7,
+          "strength": 0.004128177113504862
+        },
+        {
+          "time_seconds": 198.1,
+          "strength": 0.005057442326603809
+        },
+        {
+          "time_seconds": 198.4,
+          "strength": 0.003512892600937914
+        },
+        {
+          "time_seconds": 198.8,
+          "strength": 0.004762778735516324
+        },
+        {
+          "time_seconds": 199.4,
+          "strength": 0.0063454545566534945
+        },
+        {
+          "time_seconds": 200.4,
+          "strength": 0.0060735231940364474
+        },
+        {
+          "time_seconds": 200.9,
+          "strength": 0.0057935878042915875
+        },
+        {
+          "time_seconds": 201.1,
+          "strength": 0.007486632542421361
+        },
+        {
+          "time_seconds": 201.5,
+          "strength": 0.005037891526511153
+        },
+        {
+          "time_seconds": 210.1,
+          "strength": 0.005751178214847602
+        },
+        {
+          "time_seconds": 210.7,
+          "strength": 0.005100291917166067
+        },
+        {
+          "time_seconds": 212.1,
+          "strength": 0.0035261390372571507
+        },
+        {
+          "time_seconds": 212.8,
+          "strength": 0.005095585577402695
+        },
+        {
+          "time_seconds": 213.1,
+          "strength": 0.005595314190791311
+        },
+        {
+          "time_seconds": 213.8,
+          "strength": 0.0031965522085950562
+        },
+        {
+          "time_seconds": 214.1,
+          "strength": 0.004870947855387457
+        },
+        {
+          "time_seconds": 215.5,
+          "strength": 0.0036433143455911607
+        },
+        {
+          "time_seconds": 216.2,
+          "strength": 0.003322210256319862
+        },
+        {
+          "time_seconds": 217.2,
+          "strength": 0.005767476843813373
+        },
+        {
+          "time_seconds": 217.5,
+          "strength": 0.00283816146221342
+        },
+        {
+          "time_seconds": 217.9,
+          "strength": 0.00525484435317742
+        },
+        {
+          "time_seconds": 218.9,
+          "strength": 0.00265939195737687
+        },
+        {
+          "time_seconds": 220.3,
+          "strength": 0.0037597379533417276
+        },
+        {
+          "time_seconds": 220.6,
+          "strength": 0.007326776633115025
+        }
+      ]
+    },
+    "percussion": {
+      "filename": "6 Percussion.wav",
+      "sha256": "57f34332c135ef7a60ec94ffbaf2b7597b14dce6a3e37975263982645a06d8c6",
+      "duration_seconds": 330.0,
+      "activity": {
+        "active_seconds": 279.7,
+        "active_fraction": 0.8475757575757575,
+        "active_region_count": 34,
+        "median_region_duration_seconds": 0.55,
+        "p90_region_duration_seconds": 24.539999999999992
+      },
+      "temporal": {
+        "onset_event_count": 130,
+        "onset_events_per_minute": 23.636363636363637,
+        "median_active_rms_dbfs": -27.996354396664582,
+        "p95_active_rms_dbfs": -15.917136809285592,
+        "dynamic_range_p95_p10_db": 27.871914578378778,
+        "median_crest_db": 12.352770292638567,
+        "p90_crest_db": 20.35935965323489
+      },
+      "spectral": {
+        "median_centroid_hz": 598.9483730309244,
+        "p90_centroid_hz": 2398.373364644094,
+        "median_zero_crossing_rate": 0.0568868514273807,
+        "median_band_fractions": {
+          "20_150_hz": 0.6165417738717126,
+          "150_500_hz": 0.10023481701556322,
+          "500_2000_hz": 0.09239632973462697,
+          "2000_6000_hz": 0.03932785521577852,
+          "6000_12000_hz": 0.011722127096715428,
+          "12000_20000_hz": 0.0020991621886492463
+        }
+      },
+      "stereo": {
+        "median_lr_correlation": 0.7348460568540536,
+        "p10_lr_correlation": -0.20437899035745377,
+        "median_side_mid_db": -8.066122654332395,
+        "median_width_index": 0.1350188427886953,
+        "median_ild_db": 0.11802499573601385,
+        "p90_abs_ild_db": 2.109152293399066
+      },
+      "events_preview": [
+        {
+          "time_seconds": 47.1,
+          "strength": 0.09754098840105838
+        },
+        {
+          "time_seconds": 48.8,
+          "strength": 0.08509239938708373
+        },
+        {
+          "time_seconds": 49.4,
+          "strength": 0.08107740571429337
+        },
+        {
+          "time_seconds": 50.5,
+          "strength": 0.08256413035302693
+        },
+        {
+          "time_seconds": 51.1,
+          "strength": 0.08988138236768964
+        },
+        {
+          "time_seconds": 52.2,
+          "strength": 0.10040319869505686
+        },
+        {
+          "time_seconds": 52.8,
+          "strength": 0.08707903225524062
+        },
+        {
+          "time_seconds": 53.9,
+          "strength": 0.10885864542884639
+        },
+        {
+          "time_seconds": 54.5,
+          "strength": 0.0758770135378256
+        },
+        {
+          "time_seconds": 55.0,
+          "strength": 0.0750353600503887
+        },
+        {
+          "time_seconds": 55.6,
+          "strength": 0.10824702030770286
+        },
+        {
+          "time_seconds": 56.2,
+          "strength": 0.09601785218435598
+        },
+        {
+          "time_seconds": 56.7,
+          "strength": 0.0772383100037382
+        },
+        {
+          "time_seconds": 57.3,
+          "strength": 0.09000728888106155
+        },
+        {
+          "time_seconds": 57.9,
+          "strength": 0.08952377989802726
+        },
+        {
+          "time_seconds": 59.0,
+          "strength": 0.08079244753286817
+        },
+        {
+          "time_seconds": 61.3,
+          "strength": 0.07896844465246816
+        },
+        {
+          "time_seconds": 63.0,
+          "strength": 0.0931450360285654
+        },
+        {
+          "time_seconds": 64.1,
+          "strength": 0.0803212923879574
+        },
+        {
+          "time_seconds": 64.7,
+          "strength": 0.07774039399746308
+        },
+        {
+          "time_seconds": 97.0,
+          "strength": 0.07371879932513609
+        },
+        {
+          "time_seconds": 100.4,
+          "strength": 0.07291960041693761
+        },
+        {
+          "time_seconds": 101.0,
+          "strength": 0.10124771735071876
+        },
+        {
+          "time_seconds": 102.1,
+          "strength": 0.10015751981653097
+        },
+        {
+          "time_seconds": 104.9,
+          "strength": 0.0900296843525493
+        },
+        {
+          "time_seconds": 109.4,
+          "strength": 0.09748799246909026
+        },
+        {
+          "time_seconds": 116.2,
+          "strength": 0.07890976466549264
+        },
+        {
+          "time_seconds": 120.2,
+          "strength": 0.07792918238820898
+        },
+        {
+          "time_seconds": 123.5,
+          "strength": 0.09540887167777075
+        },
+        {
+          "time_seconds": 124.6,
+          "strength": 0.08108979172610487
+        },
+        {
+          "time_seconds": 136.4,
+          "strength": 0.07943948876179954
+        },
+        {
+          "time_seconds": 145.4,
+          "strength": 0.07660971866471382
+        },
+        {
+          "time_seconds": 149.9,
+          "strength": 0.11029349881901675
+        },
+        {
+          "time_seconds": 158.9,
+          "strength": 0.08664836351171548
+        },
+        {
+          "time_seconds": 161.2,
+          "strength": 0.08269748192149656
+        },
+        {
+          "time_seconds": 165.7,
+          "strength": 0.10471633422162452
+        },
+        {
+          "time_seconds": 166.1,
+          "strength": 0.08385517126538938
+        },
+        {
+          "time_seconds": 166.5,
+          "strength": 0.0835408449783525
+        },
+        {
+          "time_seconds": 167.4,
+          "strength": 0.08451674948488123
+        },
+        {
+          "time_seconds": 167.9,
+          "strength": 0.0753366750362296
+        },
+        {
+          "time_seconds": 168.8,
+          "strength": 0.10759051702291626
+        },
+        {
+          "time_seconds": 169.6,
+          "strength": 0.10329161963642708
+        },
+        {
+          "time_seconds": 170.2,
+          "strength": 0.12202144268340762
+        },
+        {
+          "time_seconds": 170.6,
+          "strength": 0.08367547183194321
+        },
+        {
+          "time_seconds": 171.9,
+          "strength": 0.1211885901352374
+        },
+        {
+          "time_seconds": 172.4,
+          "strength": 0.07596629660609013
+        },
+        {
+          "time_seconds": 173.0,
+          "strength": 0.07511135518925965
+        },
+        {
+          "time_seconds": 174.1,
+          "strength": 0.0958058864255097
+        },
+        {
+          "time_seconds": 174.7,
+          "strength": 0.0988018066713285
+        },
+        {
+          "time_seconds": 185.4,
+          "strength": 0.08481450546993843
+        },
+        {
+          "time_seconds": 192.9,
+          "strength": 0.07980252252838518
+        },
+        {
+          "time_seconds": 197.3,
+          "strength": 0.07642707169892779
+        },
+        {
+          "time_seconds": 199.0,
+          "strength": 0.07583745611662637
+        },
+        {
+          "time_seconds": 200.1,
+          "strength": 0.10070693332424728
+        },
+        {
+          "time_seconds": 201.2,
+          "strength": 0.11472732576883155
+        },
+        {
+          "time_seconds": 201.8,
+          "strength": 0.17833616010533992
+        },
+        {
+          "time_seconds": 202.2,
+          "strength": 0.07392815957486443
+        },
+        {
+          "time_seconds": 202.4,
+          "strength": 0.10740482749468179
+        },
+        {
+          "time_seconds": 202.9,
+          "strength": 0.11141633573649674
+        },
+        {
+          "time_seconds": 203.2,
+          "strength": 0.11168952356065616
+        },
+        {
+          "time_seconds": 203.5,
+          "strength": 0.16210358810451303
+        },
+        {
+          "time_seconds": 203.9,
+          "strength": 0.09229785521235007
+        },
+        {
+          "time_seconds": 204.5,
+          "strength": 0.10789939569868297
+        },
+        {
+          "time_seconds": 204.9,
+          "strength": 0.13319991062365066
+        },
+        {
+          "time_seconds": 205.2,
+          "strength": 0.18257856023802943
+        },
+        {
+          "time_seconds": 205.5,
+          "strength": 0.07291641581207504
+        },
+        {
+          "time_seconds": 206.3,
+          "strength": 0.10938734889804555
+        },
+        {
+          "time_seconds": 206.9,
+          "strength": 0.10379670155201834
+        },
+        {
+          "time_seconds": 207.4,
+          "strength": 0.07502790385652536
+        },
+        {
+          "time_seconds": 207.7,
+          "strength": 0.10645931023101232
+        },
+        {
+          "time_seconds": 208.0,
+          "strength": 0.11327630284459696
+        },
+        {
+          "time_seconds": 209.0,
+          "strength": 0.15032911950924924
+        },
+        {
+          "time_seconds": 209.4,
+          "strength": 0.08602263599976626
+        },
+        {
+          "time_seconds": 209.7,
+          "strength": 0.12718727997623033
+        },
+        {
+          "time_seconds": 211.7,
+          "strength": 0.07621154175611236
+        },
+        {
+          "time_seconds": 212.0,
+          "strength": 0.11075525846758599
+        },
+        {
+          "time_seconds": 212.5,
+          "strength": 0.10365312488742162
+        },
+        {
+          "time_seconds": 213.5,
+          "strength": 0.1132470130083022
+        },
+        {
+          "time_seconds": 213.7,
+          "strength": 0.07512434532023088
+        },
+        {
+          "time_seconds": 214.8,
+          "strength": 0.09432252647651478
+        },
+        {
+          "time_seconds": 226.1,
+          "strength": 0.08156886352756772
+        },
+        {
+          "time_seconds": 230.6,
+          "strength": 0.08302290394400483
+        },
+        {
+          "time_seconds": 232.9,
+          "strength": 0.09471227789712637
+        },
+        {
+          "time_seconds": 242.5,
+          "strength": 0.19188128781215047
+        },
+        {
+          "time_seconds": 244.8,
+          "strength": 0.12494004520179008
+        },
+        {
+          "time_seconds": 247.1,
+          "strength": 0.11113559685956849
+        },
+        {
+          "time_seconds": 251.6,
+          "strength": 0.08647065587816444
+        },
+        {
+          "time_seconds": 252.2,
+          "strength": 0.08674725274106466
+        },
+        {
+          "time_seconds": 252.8,
+          "strength": 0.11388813794692741
+        },
+        {
+          "time_seconds": 253.9,
+          "strength": 0.08509925729101447
+        },
+        {
+          "time_seconds": 254.5,
+          "strength": 0.09354808469873413
+        },
+        {
+          "time_seconds": 256.2,
+          "strength": 0.1060023305201774
+        },
+        {
+          "time_seconds": 260.8,
+          "strength": 0.2115434824943627
+        },
+        {
+          "time_seconds": 261.4,
+          "strength": 0.18879763222214746
+        },
+        {
+          "time_seconds": 261.9,
+          "strength": 0.12050264641263092
+        },
+        {
+          "time_seconds": 262.5,
+          "strength": 0.205195272829315
+        },
+        {
+          "time_seconds": 263.1,
+          "strength": 0.13610647396319608
+        },
+        {
+          "time_seconds": 263.7,
+          "strength": 0.08942838230721845
+        },
+        {
+          "time_seconds": 264.2,
+          "strength": 0.11911062228859562
+        },
+        {
+          "time_seconds": 264.8,
+          "strength": 0.20616072880696937
+        }
+      ]
+    },
+    "strings": {
+      "filename": "7 Strings.wav",
+      "sha256": "e95e8893d1d89b714405eddc7ec50a3f340c48b5088eda19121372ca759d5fe9",
+      "duration_seconds": 330.0,
+      "activity": {
+        "active_seconds": 95.1,
+        "active_fraction": 0.28818181818181815,
+        "active_region_count": 134,
+        "median_region_duration_seconds": 0.2,
+        "p90_region_duration_seconds": 1.2
+      },
+      "temporal": {
+        "onset_event_count": 117,
+        "onset_events_per_minute": 21.272727272727273,
+        "median_active_rms_dbfs": -51.6220969294922,
+        "p95_active_rms_dbfs": -34.517584669950246,
+        "dynamic_range_p95_p10_db": 24.046453624678072,
+        "median_crest_db": 11.696378563120236,
+        "p90_crest_db": 14.597268950562674
+      },
+      "spectral": {
+        "median_centroid_hz": 419.91767099603925,
+        "p90_centroid_hz": 1483.428473682518,
+        "median_zero_crossing_rate": 0.0302146280475099,
+        "median_band_fractions": {
+          "20_150_hz": 0.11845696995105977,
+          "150_500_hz": 0.42793815870320273,
+          "500_2000_hz": 0.0921436877304486,
+          "2000_6000_hz": 0.007946410333523581,
+          "6000_12000_hz": 0.00070337118528882,
+          "12000_20000_hz": 0.0007138584671033051
+        }
+      },
+      "stereo": {
+        "median_lr_correlation": 0.5896074648827261,
+        "p10_lr_correlation": 0.09314761254673531,
+        "median_side_mid_db": -5.612284594352024,
+        "median_width_index": 0.21546777526874383,
+        "median_ild_db": 0.38769741857942963,
+        "p90_abs_ild_db": 3.867444029897656
+      },
+      "events_preview": [
+        {
+          "time_seconds": 54.7,
+          "strength": 0.003074623614239813
+        },
+        {
+          "time_seconds": 56.9,
+          "strength": 0.002615861624132151
+        },
+        {
+          "time_seconds": 104.5,
+          "strength": 0.0024778175362404915
+        },
+        {
+          "time_seconds": 133.5,
+          "strength": 0.004919413236029364
+        },
+        {
+          "time_seconds": 133.8,
+          "strength": 0.003848957344095615
+        },
+        {
+          "time_seconds": 149.9,
+          "strength": 0.002116597218646199
+        },
+        {
+          "time_seconds": 154.0,
+          "strength": 0.0022320857831165373
+        },
+        {
+          "time_seconds": 156.7,
+          "strength": 0.0022757385837609873
+        },
+        {
+          "time_seconds": 158.9,
+          "strength": 0.002627825950785566
+        },
+        {
+          "time_seconds": 167.1,
+          "strength": 0.002131697819224217
+        },
+        {
+          "time_seconds": 175.3,
+          "strength": 0.0029245660881275187
+        },
+        {
+          "time_seconds": 175.5,
+          "strength": 0.002493867757606281
+        },
+        {
+          "time_seconds": 175.7,
+          "strength": 0.005251175793686395
+        },
+        {
+          "time_seconds": 175.9,
+          "strength": 0.008493475214817392
+        },
+        {
+          "time_seconds": 176.1,
+          "strength": 0.0032692245695980504
+        },
+        {
+          "time_seconds": 176.3,
+          "strength": 0.004478301795895796
+        },
+        {
+          "time_seconds": 176.5,
+          "strength": 0.005414526963682612
+        },
+        {
+          "time_seconds": 177.0,
+          "strength": 0.0028516879111706323
+        },
+        {
+          "time_seconds": 177.4,
+          "strength": 0.006222731396933707
+        },
+        {
+          "time_seconds": 177.8,
+          "strength": 0.014901811767936578
+        },
+        {
+          "time_seconds": 178.0,
+          "strength": 0.0028803096680385977
+        },
+        {
+          "time_seconds": 178.3,
+          "strength": 0.00789122215927062
+        },
+        {
+          "time_seconds": 178.5,
+          "strength": 0.0036521025860652215
+        },
+        {
+          "time_seconds": 178.9,
+          "strength": 0.002137881390555634
+        },
+        {
+          "time_seconds": 179.1,
+          "strength": 0.002039956149883417
+        },
+        {
+          "time_seconds": 179.5,
+          "strength": 0.0037083655215164185
+        },
+        {
+          "time_seconds": 179.8,
+          "strength": 0.002799390316196363
+        },
+        {
+          "time_seconds": 197.5,
+          "strength": 0.0021894749177473363
+        },
+        {
+          "time_seconds": 198.0,
+          "strength": 0.0024000866599981872
+        },
+        {
+          "time_seconds": 198.6,
+          "strength": 0.0018811414056112514
+        },
+        {
+          "time_seconds": 198.8,
+          "strength": 0.004088878037483966
+        },
+        {
+          "time_seconds": 199.4,
+          "strength": 0.002245930437618663
+        },
+        {
+          "time_seconds": 199.7,
+          "strength": 0.0024514074231021745
+        },
+        {
+          "time_seconds": 200.0,
+          "strength": 0.0020883093813389734
+        },
+        {
+          "time_seconds": 200.2,
+          "strength": 0.0028225520437488447
+        },
+        {
+          "time_seconds": 200.5,
+          "strength": 0.003097047053050025
+        },
+        {
+          "time_seconds": 200.8,
+          "strength": 0.004477427438472199
+        },
+        {
+          "time_seconds": 201.0,
+          "strength": 0.010801898754036438
+        },
+        {
+          "time_seconds": 201.4,
+          "strength": 0.006386465869217841
+        },
+        {
+          "time_seconds": 201.7,
+          "strength": 0.004123616610839371
+        },
+        {
+          "time_seconds": 201.9,
+          "strength": 0.005290643249432011
+        },
+        {
+          "time_seconds": 211.4,
+          "strength": 0.0020170625271772637
+        },
+        {
+          "time_seconds": 214.7,
+          "strength": 0.004906121393818795
+        },
+        {
+          "time_seconds": 215.0,
+          "strength": 0.014335291326734077
+        },
+        {
+          "time_seconds": 215.5,
+          "strength": 0.004615938215787025
+        },
+        {
+          "time_seconds": 216.1,
+          "strength": 0.0044105461979992286
+        },
+        {
+          "time_seconds": 216.3,
+          "strength": 0.003126176567824053
+        },
+        {
+          "time_seconds": 216.9,
+          "strength": 0.004958013325835493
+        },
+        {
+          "time_seconds": 217.2,
+          "strength": 0.009749052278899271
+        },
+        {
+          "time_seconds": 217.9,
+          "strength": 0.008086213571522382
+        },
+        {
+          "time_seconds": 218.3,
+          "strength": 0.0035388711607904234
+        },
+        {
+          "time_seconds": 219.1,
+          "strength": 0.0034108467234365285
+        },
+        {
+          "time_seconds": 219.5,
+          "strength": 0.004424947146826282
+        },
+        {
+          "time_seconds": 220.2,
+          "strength": 0.007493909804491187
+        },
+        {
+          "time_seconds": 220.6,
+          "strength": 0.006633208570093404
+        },
+        {
+          "time_seconds": 220.9,
+          "strength": 0.004091893660308533
+        },
+        {
+          "time_seconds": 232.0,
+          "strength": 0.0020599299724052065
+        },
+        {
+          "time_seconds": 235.2,
+          "strength": 0.0021416196006899973
+        },
+        {
+          "time_seconds": 235.5,
+          "strength": 0.002993384433444395
+        },
+        {
+          "time_seconds": 235.7,
+          "strength": 0.0052394132095532585
+        },
+        {
+          "time_seconds": 236.4,
+          "strength": 0.007815315195018562
+        },
+        {
+          "time_seconds": 237.1,
+          "strength": 0.00328717010502139
+        },
+        {
+          "time_seconds": 237.8,
+          "strength": 0.005472485022385015
+        },
+        {
+          "time_seconds": 238.1,
+          "strength": 0.004580712032897168
+        },
+        {
+          "time_seconds": 239.9,
+          "strength": 0.0026349357147999034
+        },
+        {
+          "time_seconds": 240.5,
+          "strength": 0.0027287281662588324
+        },
+        {
+          "time_seconds": 240.8,
+          "strength": 0.010172313965997742
+        },
+        {
+          "time_seconds": 241.2,
+          "strength": 0.004855026399337538
+        },
+        {
+          "time_seconds": 242.6,
+          "strength": 0.003971961967637213
+        },
+        {
+          "time_seconds": 242.8,
+          "strength": 0.003981656264844621
+        },
+        {
+          "time_seconds": 243.3,
+          "strength": 0.0019237272155095048
+        },
+        {
+          "time_seconds": 244.0,
+          "strength": 0.0020114135526805845
+        },
+        {
+          "time_seconds": 244.4,
+          "strength": 0.003982071863276423
+        },
+        {
+          "time_seconds": 244.9,
+          "strength": 0.0033616009982109316
+        },
+        {
+          "time_seconds": 245.2,
+          "strength": 0.01382297687221239
+        },
+        {
+          "time_seconds": 245.9,
+          "strength": 0.0035552946100437725
+        },
+        {
+          "time_seconds": 246.2,
+          "strength": 0.003819089838311359
+        },
+        {
+          "time_seconds": 270.0,
+          "strength": 0.02526289526472956
+        },
+        {
+          "time_seconds": 272.3,
+          "strength": 0.05418301970345812
+        },
+        {
+          "time_seconds": 272.6,
+          "strength": 0.010479367537963448
+        },
+        {
+          "time_seconds": 273.0,
+          "strength": 0.0027759438592659356
+        },
+        {
+          "time_seconds": 274.3,
+          "strength": 0.020132381165449093
+        },
+        {
+          "time_seconds": 274.6,
+          "strength": 0.039034478618069905
+        },
+        {
+          "time_seconds": 275.3,
+          "strength": 0.012096014418552669
+        },
+        {
+          "time_seconds": 275.5,
+          "strength": 0.0047598162171697215
+        },
+        {
+          "time_seconds": 276.0,
+          "strength": 0.002318941513174854
+        },
+        {
+          "time_seconds": 276.3,
+          "strength": 0.0067268149505295294
+        },
+        {
+          "time_seconds": 276.6,
+          "strength": 0.003287598437188918
+        },
+        {
+          "time_seconds": 277.0,
+          "strength": 0.017866439532557676
+        },
+        {
+          "time_seconds": 277.2,
+          "strength": 0.004434712834891375
+        },
+        {
+          "time_seconds": 277.5,
+          "strength": 0.005414225773634887
+        },
+        {
+          "time_seconds": 277.8,
+          "strength": 0.006815797729356329
+        },
+        {
+          "time_seconds": 278.2,
+          "strength": 0.005028702301221839
+        },
+        {
+          "time_seconds": 278.4,
+          "strength": 0.014269641640655206
+        },
+        {
+          "time_seconds": 278.8,
+          "strength": 0.01396471958211071
+        },
+        {
+          "time_seconds": 283.8,
+          "strength": 0.0025907784514485866
+        },
+        {
+          "time_seconds": 284.2,
+          "strength": 0.003183183252497491
+        },
+        {
+          "time_seconds": 284.6,
+          "strength": 0.006174742820894532
+        },
+        {
+          "time_seconds": 285.1,
+          "strength": 0.0040273971671674555
+        },
+        {
+          "time_seconds": 285.8,
+          "strength": 0.002870175454743279
+        }
+      ]
+    },
+    "synth": {
+      "filename": "8 Synth.wav",
+      "sha256": "ed5c0dee0d005a48cee1beaa445639e4d19a0335a1ea55a075846faeb3cbba60",
+      "duration_seconds": 330.0,
+      "activity": {
+        "active_seconds": 302.6,
+        "active_fraction": 0.916969696969697,
+        "active_region_count": 23,
+        "median_region_duration_seconds": 0.5,
+        "p90_region_duration_seconds": 48.44000000000002
+      },
+      "temporal": {
+        "onset_event_count": 137,
+        "onset_events_per_minute": 24.90909090909091,
+        "median_active_rms_dbfs": -30.110652974758978,
+        "p95_active_rms_dbfs": -19.720335316100034,
+        "dynamic_range_p95_p10_db": 26.363786845544958,
+        "median_crest_db": 11.113396593220365,
+        "p90_crest_db": 14.76663753933219
+      },
+      "spectral": {
+        "median_centroid_hz": 373.6991643859483,
+        "p90_centroid_hz": 1111.8098648954492,
+        "median_zero_crossing_rate": 0.03104813502813086,
+        "median_band_fractions": {
+          "20_150_hz": 0.4105854517789007,
+          "150_500_hz": 0.21518458606369406,
+          "500_2000_hz": 0.11024235322808165,
+          "2000_6000_hz": 0.01075382284309097,
+          "6000_12000_hz": 0.0014743957354201626,
+          "12000_20000_hz": 0.0005993113156864773
+        }
+      },
+      "stereo": {
+        "median_lr_correlation": 0.5655975927077477,
+        "p10_lr_correlation": -0.4907092718164914,
+        "median_side_mid_db": -5.388924821628784,
+        "median_width_index": 0.22428879699656518,
+        "median_ild_db": 0.5095176363912937,
+        "p90_abs_ild_db": 2.865069346436577
+      },
+      "events_preview": [
+        {
+          "time_seconds": 45.7,
+          "strength": 0.044166493094052225
+        },
+        {
+          "time_seconds": 46.0,
+          "strength": 0.03890320356537405
+        },
+        {
+          "time_seconds": 46.4,
+          "strength": 0.04694367990349459
+        },
+        {
+          "time_seconds": 47.0,
+          "strength": 0.03728353200294403
+        },
+        {
+          "time_seconds": 47.4,
+          "strength": 0.03430966528789292
+        },
+        {
+          "time_seconds": 48.5,
+          "strength": 0.026428532736947473
+        },
+        {
+          "time_seconds": 49.0,
+          "strength": 0.03451570153656057
+        },
+        {
+          "time_seconds": 49.8,
+          "strength": 0.03662486708420807
+        },
+        {
+          "time_seconds": 50.8,
+          "strength": 0.03542662162472226
+        },
+        {
+          "time_seconds": 51.5,
+          "strength": 0.02485919414219208
+        },
+        {
+          "time_seconds": 52.1,
+          "strength": 0.03714089456218683
+        },
+        {
+          "time_seconds": 55.3,
+          "strength": 0.0258755336972624
+        },
+        {
+          "time_seconds": 55.5,
+          "strength": 0.04274908824449426
+        },
+        {
+          "time_seconds": 56.0,
+          "strength": 0.028946871497399815
+        },
+        {
+          "time_seconds": 64.4,
+          "strength": 0.025072669379598105
+        },
+        {
+          "time_seconds": 65.7,
+          "strength": 0.031119019465287223
+        },
+        {
+          "time_seconds": 68.1,
+          "strength": 0.02492429049042209
+        },
+        {
+          "time_seconds": 95.0,
+          "strength": 0.02878016772935642
+        },
+        {
+          "time_seconds": 95.6,
+          "strength": 0.02686305323643253
+        },
+        {
+          "time_seconds": 98.4,
+          "strength": 0.0438847439927915
+        },
+        {
+          "time_seconds": 100.7,
+          "strength": 0.029873911748807675
+        },
+        {
+          "time_seconds": 116.3,
+          "strength": 0.05812862194450594
+        },
+        {
+          "time_seconds": 118.9,
+          "strength": 0.03700398200683683
+        },
+        {
+          "time_seconds": 119.3,
+          "strength": 0.0747088304470895
+        },
+        {
+          "time_seconds": 119.7,
+          "strength": 0.03356222923699766
+        },
+        {
+          "time_seconds": 120.3,
+          "strength": 0.03387002578293263
+        },
+        {
+          "time_seconds": 121.0,
+          "strength": 0.028628968506938038
+        },
+        {
+          "time_seconds": 121.4,
+          "strength": 0.051337058903243256
+        },
+        {
+          "time_seconds": 122.5,
+          "strength": 0.027174010666560396
+        },
+        {
+          "time_seconds": 123.8,
+          "strength": 0.03764748499218579
+        },
+        {
+          "time_seconds": 124.9,
+          "strength": 0.04813082590089439
+        },
+        {
+          "time_seconds": 134.3,
+          "strength": 0.02687847816764273
+        },
+        {
+          "time_seconds": 134.6,
+          "strength": 0.03430771918252928
+        },
+        {
+          "time_seconds": 136.7,
+          "strength": 0.026050945783675325
+        },
+        {
+          "time_seconds": 138.5,
+          "strength": 0.04045853475934809
+        },
+        {
+          "time_seconds": 149.9,
+          "strength": 0.027870337885872894
+        },
+        {
+          "time_seconds": 170.5,
+          "strength": 0.033590660413112886
+        },
+        {
+          "time_seconds": 171.6,
+          "strength": 0.0347683947791532
+        },
+        {
+          "time_seconds": 172.1,
+          "strength": 0.027760783629965514
+        },
+        {
+          "time_seconds": 172.9,
+          "strength": 0.035367190962496714
+        },
+        {
+          "time_seconds": 173.3,
+          "strength": 0.03140090568733264
+        },
+        {
+          "time_seconds": 174.4,
+          "strength": 0.027322409904257244
+        },
+        {
+          "time_seconds": 175.0,
+          "strength": 0.03545944487210079
+        },
+        {
+          "time_seconds": 179.5,
+          "strength": 0.02558797822369962
+        },
+        {
+          "time_seconds": 186.8,
+          "strength": 0.04618048206362602
+        },
+        {
+          "time_seconds": 187.4,
+          "strength": 0.03701047534985251
+        },
+        {
+          "time_seconds": 188.5,
+          "strength": 0.028829024429014208
+        },
+        {
+          "time_seconds": 189.1,
+          "strength": 0.03531896379847225
+        },
+        {
+          "time_seconds": 189.8,
+          "strength": 0.04464830930161763
+        },
+        {
+          "time_seconds": 190.2,
+          "strength": 0.06047705364642912
+        },
+        {
+          "time_seconds": 190.8,
+          "strength": 0.0367063855056592
+        },
+        {
+          "time_seconds": 191.3,
+          "strength": 0.041548116788039186
+        },
+        {
+          "time_seconds": 191.5,
+          "strength": 0.028519355153601073
+        },
+        {
+          "time_seconds": 191.9,
+          "strength": 0.045050950139805854
+        },
+        {
+          "time_seconds": 192.5,
+          "strength": 0.06062827149244161
+        },
+        {
+          "time_seconds": 193.2,
+          "strength": 0.028812135058250754
+        },
+        {
+          "time_seconds": 193.6,
+          "strength": 0.04451118714422115
+        },
+        {
+          "time_seconds": 194.2,
+          "strength": 0.05258470204368639
+        },
+        {
+          "time_seconds": 194.8,
+          "strength": 0.02783034250012366
+        },
+        {
+          "time_seconds": 195.3,
+          "strength": 0.03416244405885267
+        },
+        {
+          "time_seconds": 195.9,
+          "strength": 0.06421992023993571
+        },
+        {
+          "time_seconds": 196.4,
+          "strength": 0.03795040459281936
+        },
+        {
+          "time_seconds": 197.2,
+          "strength": 0.02937022882667474
+        },
+        {
+          "time_seconds": 197.6,
+          "strength": 0.04875746112580384
+        },
+        {
+          "time_seconds": 198.1,
+          "strength": 0.03334613749423361
+        },
+        {
+          "time_seconds": 198.7,
+          "strength": 0.052060826736030116
+        },
+        {
+          "time_seconds": 199.1,
+          "strength": 0.031478407218955604
+        },
+        {
+          "time_seconds": 199.3,
+          "strength": 0.034963901424332255
+        },
+        {
+          "time_seconds": 199.7,
+          "strength": 0.028106570477065662
+        },
+        {
+          "time_seconds": 199.9,
+          "strength": 0.030021810628317394
+        },
+        {
+          "time_seconds": 200.4,
+          "strength": 0.029189146519130474
+        },
+        {
+          "time_seconds": 201.0,
+          "strength": 0.02850982878674048
+        },
+        {
+          "time_seconds": 202.7,
+          "strength": 0.03936651224460107
+        },
+        {
+          "time_seconds": 208.4,
+          "strength": 0.03281132586201452
+        },
+        {
+          "time_seconds": 210.9,
+          "strength": 0.038992592380662994
+        },
+        {
+          "time_seconds": 211.7,
+          "strength": 0.0319618870004242
+        },
+        {
+          "time_seconds": 212.0,
+          "strength": 0.024836812987864026
+        },
+        {
+          "time_seconds": 214.0,
+          "strength": 0.03423737816344653
+        },
+        {
+          "time_seconds": 223.7,
+          "strength": 0.03520864051159879
+        },
+        {
+          "time_seconds": 225.4,
+          "strength": 0.029009421205087968
+        },
+        {
+          "time_seconds": 232.7,
+          "strength": 0.028749751490705522
+        },
+        {
+          "time_seconds": 235.7,
+          "strength": 0.028803204617626983
+        },
+        {
+          "time_seconds": 238.4,
+          "strength": 0.03527331073023065
+        },
+        {
+          "time_seconds": 238.8,
+          "strength": 0.0579030601602468
+        },
+        {
+          "time_seconds": 245.8,
+          "strength": 0.02540822055240018
+        },
+        {
+          "time_seconds": 255.8,
+          "strength": 0.02628464307256471
+        },
+        {
+          "time_seconds": 256.1,
+          "strength": 0.030408307532700324
+        },
+        {
+          "time_seconds": 260.8,
+          "strength": 0.0611729038947683
+        },
+        {
+          "time_seconds": 261.1,
+          "strength": 0.03969049163161796
+        },
+        {
+          "time_seconds": 261.6,
+          "strength": 0.0591774032075699
+        },
+        {
+          "time_seconds": 261.8,
+          "strength": 0.062265568769950305
+        },
+        {
+          "time_seconds": 262.2,
+          "strength": 0.08708771436368622
+        },
+        {
+          "time_seconds": 262.4,
+          "strength": 0.05057155938420607
+        },
+        {
+          "time_seconds": 262.8,
+          "strength": 0.09724430525131027
+        },
+        {
+          "time_seconds": 263.4,
+          "strength": 0.079060903611932
+        },
+        {
+          "time_seconds": 263.9,
+          "strength": 0.06514359499590945
+        },
+        {
+          "time_seconds": 264.5,
+          "strength": 0.09814421648352536
+        },
+        {
+          "time_seconds": 265.1,
+          "strength": 0.1059929979686689
+        },
+        {
+          "time_seconds": 265.7,
+          "strength": 0.07728421258753498
+        },
+        {
+          "time_seconds": 266.2,
+          "strength": 0.06220544134414473
+        }
+      ]
+    },
+    "other": {
+      "filename": "9 Other.wav",
+      "sha256": "a6a329feb81a07e300ce1a57b3e2b6493f4cee85400721c8e41dca8007aa1adc",
+      "duration_seconds": 330.0,
+      "activity": {
+        "active_seconds": 300.7,
+        "active_fraction": 0.9112121212121211,
+        "active_region_count": 25,
+        "median_region_duration_seconds": 0.3,
+        "p90_region_duration_seconds": 39.50000000000001
+      },
+      "temporal": {
+        "onset_event_count": 122,
+        "onset_events_per_minute": 22.181818181818183,
+        "median_active_rms_dbfs": -37.855066741951916,
+        "p95_active_rms_dbfs": -28.525537416993263,
+        "dynamic_range_p95_p10_db": 23.63881531263817,
+        "median_crest_db": 13.491106112273323,
+        "p90_crest_db": 20.15808698660807
+      },
+      "spectral": {
+        "median_centroid_hz": 1476.1804635144515,
+        "p90_centroid_hz": 2625.8981985330806,
+        "median_zero_crossing_rate": 0.0850177120233382,
+        "median_band_fractions": {
+          "20_150_hz": 0.010778211428532334,
+          "150_500_hz": 0.11053822748506541,
+          "500_2000_hz": 0.5557603259453132,
+          "2000_6000_hz": 0.16962507814567898,
+          "6000_12000_hz": 0.01597857000870804,
+          "12000_20000_hz": 0.0034641737223078976
+        }
+      },
+      "stereo": {
+        "median_lr_correlation": -0.20823769799116756,
+        "p10_lr_correlation": -0.5731490877497519,
+        "median_side_mid_db": 1.794334426021815,
+        "median_width_index": 0.6018455295176195,
+        "median_ild_db": 0.43290757850867606,
+        "p90_abs_ild_db": 2.1035126224218015
+      },
+      "events_preview": [
+        {
+          "time_seconds": 5.6,
+          "strength": 0.006259381238055153
+        },
+        {
+          "time_seconds": 9.4,
+          "strength": 0.03185806062253675
+        },
+        {
+          "time_seconds": 9.7,
+          "strength": 0.0066115979653734655
+        },
+        {
+          "time_seconds": 10.0,
+          "strength": 0.04694824167284525
+        },
+        {
+          "time_seconds": 10.3,
+          "strength": 0.035089270152575965
+        },
+        {
+          "time_seconds": 10.7,
+          "strength": 0.017851511465063925
+        },
+        {
+          "time_seconds": 12.3,
+          "strength": 0.005273504285969625
+        },
+        {
+          "time_seconds": 27.2,
+          "strength": 0.005636703987168131
+        },
+        {
+          "time_seconds": 27.8,
+          "strength": 0.09762607296543617
+        },
+        {
+          "time_seconds": 28.4,
+          "strength": 0.010308172020101064
+        },
+        {
+          "time_seconds": 33.9,
+          "strength": 0.007340497116847946
+        },
+        {
+          "time_seconds": 34.1,
+          "strength": 0.01010204563088785
+        },
+        {
+          "time_seconds": 34.4,
+          "strength": 0.010375636328018686
+        },
+        {
+          "time_seconds": 34.6,
+          "strength": 0.008296301518909924
+        },
+        {
+          "time_seconds": 45.7,
+          "strength": 0.0507214662864002
+        },
+        {
+          "time_seconds": 52.5,
+          "strength": 0.006970117738161405
+        },
+        {
+          "time_seconds": 52.7,
+          "strength": 0.006829911627686244
+        },
+        {
+          "time_seconds": 55.0,
+          "strength": 0.005918863933411242
+        },
+        {
+          "time_seconds": 57.3,
+          "strength": 0.010943109830741645
+        },
+        {
+          "time_seconds": 66.1,
+          "strength": 0.00971957713281821
+        },
+        {
+          "time_seconds": 76.9,
+          "strength": 0.006404528028183573
+        },
+        {
+          "time_seconds": 81.5,
+          "strength": 0.005569070048655049
+        },
+        {
+          "time_seconds": 81.7,
+          "strength": 0.009531940549635503
+        },
+        {
+          "time_seconds": 86.2,
+          "strength": 0.02217659162192591
+        },
+        {
+          "time_seconds": 86.7,
+          "strength": 0.008403574616417706
+        },
+        {
+          "time_seconds": 91.3,
+          "strength": 0.005791509494165155
+        },
+        {
+          "time_seconds": 95.8,
+          "strength": 0.007360543289677916
+        },
+        {
+          "time_seconds": 98.1,
+          "strength": 0.007286613605530658
+        },
+        {
+          "time_seconds": 100.4,
+          "strength": 0.006086873623941428
+        },
+        {
+          "time_seconds": 104.9,
+          "strength": 0.009307377343280986
+        },
+        {
+          "time_seconds": 107.1,
+          "strength": 0.02628466511353847
+        },
+        {
+          "time_seconds": 109.4,
+          "strength": 0.012718475127162602
+        },
+        {
+          "time_seconds": 111.6,
+          "strength": 0.006162600074467638
+        },
+        {
+          "time_seconds": 116.2,
+          "strength": 0.008635396023798658
+        },
+        {
+          "time_seconds": 125.1,
+          "strength": 0.0058006883369966095
+        },
+        {
+          "time_seconds": 134.1,
+          "strength": 0.014784519871842709
+        },
+        {
+          "time_seconds": 136.4,
+          "strength": 0.00818441600423845
+        },
+        {
+          "time_seconds": 138.6,
+          "strength": 0.011130270585349395
+        },
+        {
+          "time_seconds": 139.7,
+          "strength": 0.008970297343766944
+        },
+        {
+          "time_seconds": 141.9,
+          "strength": 0.0052643520078913195
+        },
+        {
+          "time_seconds": 142.5,
+          "strength": 0.008418111747012583
+        },
+        {
+          "time_seconds": 142.8,
+          "strength": 0.00704635464637287
+        },
+        {
+          "time_seconds": 143.0,
+          "strength": 0.006041001504067348
+        },
+        {
+          "time_seconds": 147.7,
+          "strength": 0.006328424777974684
+        },
+        {
+          "time_seconds": 149.9,
+          "strength": 0.009772273443255155
+        },
+        {
+          "time_seconds": 152.0,
+          "strength": 0.01789960646496831
+        },
+        {
+          "time_seconds": 154.3,
+          "strength": 0.005926335876009624
+        },
+        {
+          "time_seconds": 155.2,
+          "strength": 0.009521285510877608
+        },
+        {
+          "time_seconds": 155.5,
+          "strength": 0.013582368211563764
+        },
+        {
+          "time_seconds": 156.1,
+          "strength": 0.00967212139587667
+        },
+        {
+          "time_seconds": 156.4,
+          "strength": 0.008048367307713244
+        },
+        {
+          "time_seconds": 158.9,
+          "strength": 0.012222754979066434
+        },
+        {
+          "time_seconds": 161.2,
+          "strength": 0.007117269561225086
+        },
+        {
+          "time_seconds": 163.7,
+          "strength": 0.006314415025564485
+        },
+        {
+          "time_seconds": 167.9,
+          "strength": 0.0064276418100488
+        },
+        {
+          "time_seconds": 172.9,
+          "strength": 0.006134405156939474
+        },
+        {
+          "time_seconds": 183.0,
+          "strength": 0.006147916487217457
+        },
+        {
+          "time_seconds": 183.6,
+          "strength": 0.0076001521650463505
+        },
+        {
+          "time_seconds": 193.9,
+          "strength": 0.01229931763636792
+        },
+        {
+          "time_seconds": 196.1,
+          "strength": 0.0075161603593442185
+        },
+        {
+          "time_seconds": 198.4,
+          "strength": 0.005437431394249202
+        },
+        {
+          "time_seconds": 201.5,
+          "strength": 0.007936506455399235
+        },
+        {
+          "time_seconds": 201.7,
+          "strength": 0.007118278750944902
+        },
+        {
+          "time_seconds": 228.9,
+          "strength": 0.00623525502191603
+        },
+        {
+          "time_seconds": 237.9,
+          "strength": 0.039286969647670686
+        },
+        {
+          "time_seconds": 242.5,
+          "strength": 0.03230015612054786
+        },
+        {
+          "time_seconds": 244.8,
+          "strength": 0.02548534463936904
+        },
+        {
+          "time_seconds": 255.9,
+          "strength": 0.009176729744322702
+        },
+        {
+          "time_seconds": 256.2,
+          "strength": 0.012882937888260781
+        },
+        {
+          "time_seconds": 257.9,
+          "strength": 0.009654504322794046
+        },
+        {
+          "time_seconds": 258.2,
+          "strength": 0.008344183184114166
+        },
+        {
+          "time_seconds": 260.2,
+          "strength": 0.0069719074300743505
+        },
+        {
+          "time_seconds": 260.8,
+          "strength": 0.008870729463977496
+        },
+        {
+          "time_seconds": 269.9,
+          "strength": 0.00605264983635124
+        },
+        {
+          "time_seconds": 274.6,
+          "strength": 0.006669464922414133
+        },
+        {
+          "time_seconds": 279.0,
+          "strength": 0.007646572046746125
+        },
+        {
+          "time_seconds": 283.6,
+          "strength": 0.007060211814595648
+        },
+        {
+          "time_seconds": 283.9,
+          "strength": 0.007063984142949691
+        },
+        {
+          "time_seconds": 288.3,
+          "strength": 0.013844959940305478
+        },
+        {
+          "time_seconds": 288.9,
+          "strength": 0.012273368788123223
+        },
+        {
+          "time_seconds": 289.2,
+          "strength": 0.02723324466555039
+        },
+        {
+          "time_seconds": 289.5,
+          "strength": 0.006192684475169373
+        },
+        {
+          "time_seconds": 290.1,
+          "strength": 0.014796507858735188
+        },
+        {
+          "time_seconds": 290.6,
+          "strength": 0.0216963993774908
+        },
+        {
+          "time_seconds": 291.2,
+          "strength": 0.019161541982096724
+        },
+        {
+          "time_seconds": 291.8,
+          "strength": 0.007227667462545551
+        },
+        {
+          "time_seconds": 292.4,
+          "strength": 0.009891430888766999
+        },
+        {
+          "time_seconds": 292.7,
+          "strength": 0.0189160374203923
+        },
+        {
+          "time_seconds": 293.5,
+          "strength": 0.019727456986488263
+        },
+        {
+          "time_seconds": 293.8,
+          "strength": 0.03347663004782288
+        },
+        {
+          "time_seconds": 294.1,
+          "strength": 0.05514352131836185
+        },
+        {
+          "time_seconds": 294.4,
+          "strength": 0.007980945230237187
+        },
+        {
+          "time_seconds": 294.7,
+          "strength": 0.035284555940289265
+        },
+        {
+          "time_seconds": 295.0,
+          "strength": 0.010857334920167896
+        },
+        {
+          "time_seconds": 295.2,
+          "strength": 0.015550668594800685
+        },
+        {
+          "time_seconds": 296.0,
+          "strength": 0.013695972756779116
+        },
+        {
+          "time_seconds": 296.2,
+          "strength": 0.006329412525127268
+        },
+        {
+          "time_seconds": 297.1,
+          "strength": 0.008373166842428965
+        },
+        {
+          "time_seconds": 298.7,
+          "strength": 0.005429089101934941
+        },
+        {
+          "time_seconds": 299.9,
+          "strength": 0.010225259941426458
+        }
+      ]
+    },
+    "brass": {
+      "filename": "10 Brass.wav",
+      "sha256": "e4e61d33e129d73e332cd647a1e7c2d241b37cc9e79e05c9bca56dff376e4fb7",
+      "duration_seconds": 330.0,
+      "activity": {
+        "active_seconds": 6.4,
+        "active_fraction": 0.019393939393939394,
+        "active_region_count": 16,
+        "median_region_duration_seconds": 0.15000000000000002,
+        "p90_region_duration_seconds": 0.95
+      },
+      "temporal": {
+        "onset_event_count": 42,
+        "onset_events_per_minute": 7.636363636363637,
+        "median_active_rms_dbfs": -48.74533505961899,
+        "p95_active_rms_dbfs": -30.211181509865103,
+        "dynamic_range_p95_p10_db": 27.657214026831678,
+        "median_crest_db": 11.805154441098153,
+        "p90_crest_db": 15.396670093313633
+      },
+      "spectral": {
+        "median_centroid_hz": 588.26267542093,
+        "p90_centroid_hz": 2063.1819711194285,
+        "median_zero_crossing_rate": 0.048968535111481554,
+        "median_band_fractions": {
+          "20_150_hz": 0.31118335051780766,
+          "150_500_hz": 0.22435750429380202,
+          "500_2000_hz": 0.18175228277192895,
+          "2000_6000_hz": 0.02580984918192904,
+          "6000_12000_hz": 0.0010562656774648045,
+          "12000_20000_hz": 0.0001891137989251565
+        }
+      },
+      "stereo": {
+        "median_lr_correlation": 0.5831174204313377,
+        "p10_lr_correlation": -0.822806752724896,
+        "median_side_mid_db": -5.703139010711535,
+        "median_width_index": 0.21195293530207385,
+        "median_ild_db": -0.5764420134658514,
+        "p90_abs_ild_db": 2.313825118125601
+      },
+      "events_preview": [
+        {
+          "time_seconds": 124.4,
+          "strength": 0.0013146352684910477
+        },
+        {
+          "time_seconds": 133.1,
+          "strength": 0.0004557143266943845
+        },
+        {
+          "time_seconds": 133.4,
+          "strength": 0.0027032802954546527
+        },
+        {
+          "time_seconds": 133.8,
+          "strength": 0.0006064074380115339
+        },
+        {
+          "time_seconds": 134.0,
+          "strength": 0.005405306690602693
+        },
+        {
+          "time_seconds": 134.4,
+          "strength": 0.00042087238227862464
+        },
+        {
+          "time_seconds": 147.6,
+          "strength": 0.0012674465103752032
+        },
+        {
+          "time_seconds": 149.9,
+          "strength": 0.0010878089166088338
+        },
+        {
+          "time_seconds": 155.2,
+          "strength": 0.0004893859399830518
+        },
+        {
+          "time_seconds": 155.5,
+          "strength": 0.000612933261144973
+        },
+        {
+          "time_seconds": 156.1,
+          "strength": 0.0004080454131866819
+        },
+        {
+          "time_seconds": 156.7,
+          "strength": 0.0006886872051856379
+        },
+        {
+          "time_seconds": 157.0,
+          "strength": 0.00026111574665037263
+        },
+        {
+          "time_seconds": 158.9,
+          "strength": 0.0016093845362515505
+        },
+        {
+          "time_seconds": 161.2,
+          "strength": 0.0013405902836820902
+        },
+        {
+          "time_seconds": 215.1,
+          "strength": 0.0002843071621854912
+        },
+        {
+          "time_seconds": 215.6,
+          "strength": 0.0003768069226223181
+        },
+        {
+          "time_seconds": 219.0,
+          "strength": 0.00025193405359008445
+        },
+        {
+          "time_seconds": 219.6,
+          "strength": 0.00039205100646300166
+        },
+        {
+          "time_seconds": 230.6,
+          "strength": 0.0003176690362670225
+        },
+        {
+          "time_seconds": 270.0,
+          "strength": 0.02426451793610826
+        },
+        {
+          "time_seconds": 272.3,
+          "strength": 0.031539354659453414
+        },
+        {
+          "time_seconds": 273.2,
+          "strength": 0.000642080437674398
+        },
+        {
+          "time_seconds": 274.6,
+          "strength": 0.001947420765763168
+        },
+        {
+          "time_seconds": 276.8,
+          "strength": 0.00025571437307259217
+        },
+        {
+          "time_seconds": 277.0,
+          "strength": 0.0005229197154979779
+        },
+        {
+          "time_seconds": 286.9,
+          "strength": 0.0011434172450868793
+        },
+        {
+          "time_seconds": 287.6,
+          "strength": 0.0003725577851628578
+        },
+        {
+          "time_seconds": 288.3,
+          "strength": 0.00039947475210183787
+        },
+        {
+          "time_seconds": 289.2,
+          "strength": 0.00028807691707019643
+        },
+        {
+          "time_seconds": 289.5,
+          "strength": 0.0003516045161038678
+        },
+        {
+          "time_seconds": 290.6,
+          "strength": 0.0002516254961283643
+        },
+        {
+          "time_seconds": 290.8,
+          "strength": 0.00027022174747122723
+        },
+        {
+          "time_seconds": 291.1,
+          "strength": 0.0003997425833252553
+        },
+        {
+          "time_seconds": 291.8,
+          "strength": 0.00030036559645732654
+        },
+        {
+          "time_seconds": 292.4,
+          "strength": 0.00032657168984140535
+        },
+        {
+          "time_seconds": 293.8,
+          "strength": 0.00032743264152022345
+        },
+        {
+          "time_seconds": 327.0,
+          "strength": 0.00028334993360983914
+        },
+        {
+          "time_seconds": 327.4,
+          "strength": 0.0003612012327185259
+        },
+        {
+          "time_seconds": 327.8,
+          "strength": 0.0027902887570109463
+        },
+        {
+          "time_seconds": 328.1,
+          "strength": 0.01508077761324989
+        },
+        {
+          "time_seconds": 328.4,
+          "strength": 0.012483093966238184
+        }
+      ]
+    },
+    "woodwinds": {
+      "filename": "11 Woodwinds.wav",
+      "sha256": "2d2ddc000dcedf295abfe907fa4e6a0754883af31c2b709a739988e45c6b91eb",
+      "duration_seconds": 330.0,
+      "activity": {
+        "active_seconds": 105.0,
+        "active_fraction": 0.3181818181818182,
+        "active_region_count": 38,
+        "median_region_duration_seconds": 0.35,
+        "p90_region_duration_seconds": 10.4
+      },
+      "temporal": {
+        "onset_event_count": 103,
+        "onset_events_per_minute": 18.727272727272727,
+        "median_active_rms_dbfs": -31.264448712230653,
+        "p95_active_rms_dbfs": -20.402796280572034,
+        "dynamic_range_p95_p10_db": 34.02473484369969,
+        "median_crest_db": 10.27830300140996,
+        "p90_crest_db": 13.857089652429085
+      },
+      "spectral": {
+        "median_centroid_hz": 986.9723856101975,
+        "p90_centroid_hz": 1621.7665876244762,
+        "median_zero_crossing_rate": 0.051885809543654925,
+        "median_band_fractions": {
+          "20_150_hz": 3.144452409276786e-05,
+          "150_500_hz": 0.021601999225527826,
+          "500_2000_hz": 0.9302364149323887,
+          "2000_6000_hz": 0.009432930230316824,
+          "6000_12000_hz": 0.002187889610337456,
+          "12000_20000_hz": 0.0006626474964197336
+        }
+      },
+      "stereo": {
+        "median_lr_correlation": 0.5637782340391889,
+        "p10_lr_correlation": -0.3810813988662358,
+        "median_side_mid_db": -5.203161537503242,
+        "median_width_index": 0.23181836414616352,
+        "median_ild_db": 0.5919133613679424,
+        "p90_abs_ild_db": 3.92450004556402
+      },
+      "events_preview": [
+        {
+          "time_seconds": 2.3,
+          "strength": 0.021586269311462514
+        },
+        {
+          "time_seconds": 3.0,
+          "strength": 0.01110964076249895
+        },
+        {
+          "time_seconds": 4.1,
+          "strength": 0.01344435751573336
+        },
+        {
+          "time_seconds": 4.9,
+          "strength": 0.045929534698809615
+        },
+        {
+          "time_seconds": 5.1,
+          "strength": 0.03592269043131983
+        },
+        {
+          "time_seconds": 5.4,
+          "strength": 0.012702165532862353
+        },
+        {
+          "time_seconds": 5.6,
+          "strength": 0.07232967927363308
+        },
+        {
+          "time_seconds": 5.9,
+          "strength": 0.025355757614826974
+        },
+        {
+          "time_seconds": 6.1,
+          "strength": 0.06844847024122307
+        },
+        {
+          "time_seconds": 6.3,
+          "strength": 0.021882918308232052
+        },
+        {
+          "time_seconds": 6.5,
+          "strength": 0.01661220475198949
+        },
+        {
+          "time_seconds": 6.8,
+          "strength": 0.019188884219198565
+        },
+        {
+          "time_seconds": 28.0,
+          "strength": 0.021581282758746056
+        },
+        {
+          "time_seconds": 28.2,
+          "strength": 0.01989659889837394
+        },
+        {
+          "time_seconds": 28.5,
+          "strength": 0.020351206971226235
+        },
+        {
+          "time_seconds": 28.7,
+          "strength": 0.016743088771163595
+        },
+        {
+          "time_seconds": 28.9,
+          "strength": 0.02695959089189018
+        },
+        {
+          "time_seconds": 29.3,
+          "strength": 0.017030134286136936
+        },
+        {
+          "time_seconds": 29.6,
+          "strength": 0.048966756616314874
+        },
+        {
+          "time_seconds": 30.0,
+          "strength": 0.04493078771888828
+        },
+        {
+          "time_seconds": 30.2,
+          "strength": 0.01987035449892205
+        },
+        {
+          "time_seconds": 30.7,
+          "strength": 0.04541487042528314
+        },
+        {
+          "time_seconds": 31.1,
+          "strength": 0.017762611911377436
+        },
+        {
+          "time_seconds": 31.3,
+          "strength": 0.028819557522755737
+        },
+        {
+          "time_seconds": 31.5,
+          "strength": 0.01568003679764622
+        },
+        {
+          "time_seconds": 32.4,
+          "strength": 0.02033829649535647
+        },
+        {
+          "time_seconds": 32.6,
+          "strength": 0.01628173785126026
+        },
+        {
+          "time_seconds": 32.8,
+          "strength": 0.013287101887198963
+        },
+        {
+          "time_seconds": 33.2,
+          "strength": 0.012576965603662157
+        },
+        {
+          "time_seconds": 33.6,
+          "strength": 0.012294601921396045
+        },
+        {
+          "time_seconds": 118.9,
+          "strength": 0.01362263733827136
+        },
+        {
+          "time_seconds": 119.3,
+          "strength": 0.011716392753330371
+        },
+        {
+          "time_seconds": 119.6,
+          "strength": 0.018757422451491382
+        },
+        {
+          "time_seconds": 119.8,
+          "strength": 0.013636998324767315
+        },
+        {
+          "time_seconds": 120.0,
+          "strength": 0.017419168587476885
+        },
+        {
+          "time_seconds": 120.3,
+          "strength": 0.012951178908248775
+        },
+        {
+          "time_seconds": 120.7,
+          "strength": 0.014489420070848937
+        },
+        {
+          "time_seconds": 121.4,
+          "strength": 0.01022734793626954
+        },
+        {
+          "time_seconds": 134.0,
+          "strength": 0.01889358764074179
+        },
+        {
+          "time_seconds": 134.4,
+          "strength": 0.028518465463129132
+        },
+        {
+          "time_seconds": 134.6,
+          "strength": 0.03950610066873367
+        },
+        {
+          "time_seconds": 134.8,
+          "strength": 0.028678740649647906
+        },
+        {
+          "time_seconds": 135.9,
+          "strength": 0.02555077264212522
+        },
+        {
+          "time_seconds": 136.2,
+          "strength": 0.024577594279933043
+        },
+        {
+          "time_seconds": 136.5,
+          "strength": 0.0316921074994244
+        },
+        {
+          "time_seconds": 136.7,
+          "strength": 0.04768303027038429
+        },
+        {
+          "time_seconds": 137.1,
+          "strength": 0.03283687052161717
+        },
+        {
+          "time_seconds": 137.5,
+          "strength": 0.013163028611625605
+        },
+        {
+          "time_seconds": 138.7,
+          "strength": 0.031324898412200604
+        },
+        {
+          "time_seconds": 139.4,
+          "strength": 0.021321702418574777
+        },
+        {
+          "time_seconds": 139.8,
+          "strength": 0.01673736122645994
+        },
+        {
+          "time_seconds": 141.2,
+          "strength": 0.026442868633966277
+        },
+        {
+          "time_seconds": 183.6,
+          "strength": 0.01066196855642235
+        },
+        {
+          "time_seconds": 184.4,
+          "strength": 0.01698001064763423
+        },
+        {
+          "time_seconds": 186.4,
+          "strength": 0.01363561275375131
+        },
+        {
+          "time_seconds": 187.4,
+          "strength": 0.01677256448813682
+        },
+        {
+          "time_seconds": 188.3,
+          "strength": 0.01579503182025679
+        },
+        {
+          "time_seconds": 189.6,
+          "strength": 0.011031984915807279
+        },
+        {
+          "time_seconds": 240.0,
+          "strength": 0.03688848358963239
+        },
+        {
+          "time_seconds": 240.2,
+          "strength": 0.03369090615943658
+        },
+        {
+          "time_seconds": 240.6,
+          "strength": 0.039245401618355887
+        },
+        {
+          "time_seconds": 241.0,
+          "strength": 0.04534026294098112
+        },
+        {
+          "time_seconds": 241.3,
+          "strength": 0.053897161951713686
+        },
+        {
+          "time_seconds": 242.8,
+          "strength": 0.032168438456081604
+        },
+        {
+          "time_seconds": 243.1,
+          "strength": 0.01288951446225077
+        },
+        {
+          "time_seconds": 243.8,
+          "strength": 0.014500663283926268
+        },
+        {
+          "time_seconds": 244.2,
+          "strength": 0.032728963945492025
+        },
+        {
+          "time_seconds": 244.5,
+          "strength": 0.030801818440310963
+        },
+        {
+          "time_seconds": 245.1,
+          "strength": 0.023561868455975292
+        },
+        {
+          "time_seconds": 245.3,
+          "strength": 0.020057784609191685
+        },
+        {
+          "time_seconds": 245.6,
+          "strength": 0.02030015809122039
+        },
+        {
+          "time_seconds": 246.2,
+          "strength": 0.014032652570806686
+        },
+        {
+          "time_seconds": 246.5,
+          "strength": 0.018890240204185962
+        },
+        {
+          "time_seconds": 246.8,
+          "strength": 0.015911172219672642
+        },
+        {
+          "time_seconds": 248.0,
+          "strength": 0.013345507112621932
+        },
+        {
+          "time_seconds": 249.4,
+          "strength": 0.047487008010245635
+        },
+        {
+          "time_seconds": 249.8,
+          "strength": 0.03663916445328909
+        },
+        {
+          "time_seconds": 250.3,
+          "strength": 0.01597694413359249
+        },
+        {
+          "time_seconds": 250.5,
+          "strength": 0.012732866985060709
+        },
+        {
+          "time_seconds": 251.0,
+          "strength": 0.012615494080868046
+        },
+        {
+          "time_seconds": 276.7,
+          "strength": 0.011801648034825345
+        },
+        {
+          "time_seconds": 277.0,
+          "strength": 0.018551521474598404
+        },
+        {
+          "time_seconds": 277.8,
+          "strength": 0.015785514375866394
+        },
+        {
+          "time_seconds": 278.1,
+          "strength": 0.017008171927496395
+        },
+        {
+          "time_seconds": 278.6,
+          "strength": 0.028405575827934248
+        },
+        {
+          "time_seconds": 278.9,
+          "strength": 0.03688070525696236
+        },
+        {
+          "time_seconds": 279.3,
+          "strength": 0.016010037220245136
+        },
+        {
+          "time_seconds": 279.5,
+          "strength": 0.02020531990948763
+        },
+        {
+          "time_seconds": 280.5,
+          "strength": 0.01115769469544993
+        },
+        {
+          "time_seconds": 281.2,
+          "strength": 0.011078093278196664
+        },
+        {
+          "time_seconds": 281.6,
+          "strength": 0.012323493476951872
+        },
+        {
+          "time_seconds": 282.3,
+          "strength": 0.01267639454301521
+        },
+        {
+          "time_seconds": 307.9,
+          "strength": 0.051669244696195105
+        },
+        {
+          "time_seconds": 310.4,
+          "strength": 0.05958489977981633
+        },
+        {
+          "time_seconds": 319.4,
+          "strength": 0.01748833063887647
+        },
+        {
+          "time_seconds": 319.8,
+          "strength": 0.01385092073027671
+        },
+        {
+          "time_seconds": 320.1,
+          "strength": 0.03038915755012763
+        },
+        {
+          "time_seconds": 320.4,
+          "strength": 0.02183949212761615
+        },
+        {
+          "time_seconds": 320.7,
+          "strength": 0.03426292339434634
+        },
+        {
+          "time_seconds": 321.0,
+          "strength": 0.019987434785060956
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "test_id": "TUK2-T005A",
+  "status": "PASS",
+  "probe_count": 504,
+  "plugin_sha256": "c1f6c17958eb79200f2fe08556d031a89bee22ccdab98f97e31c7ce6ea78602f",
+  "front_back_accuracy": 1.0,
+  "elevation_band_accuracy": 1.0,
+  "median_angular_error_deg": 0.0,
+  "p95_angular_error_deg": 0.0,
+  "redundant_position_pair_count": 28,
+  "music02_reference_comparison": {
+    "available": true,
+    "old_test_id": "M02-T005-PROBES",
+    "common_probe_count": 504,
+    "identical_probe_hash_count": 363,
+    "all_common_probes_identical": false,
+    "note": "Hash equality means identical PCM probe rendering for that pose. Mismatch does not automatically invalidate current calibration."
+  },
+  "report": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\experiments\\TUK2_T005\\reports\\probe_library_native256.json"
+}

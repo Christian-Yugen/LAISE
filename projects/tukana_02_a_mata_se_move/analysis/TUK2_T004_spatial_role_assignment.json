@@ -1,0 +1,46 @@
+{
+  "schema": "LAISE TUK2 Automated Spatial Role Assignment v1.0",
+  "project": "tukana_02_a_mata_se_move",
+  "test_id": "TUK2-T004",
+  "status": "PASS",
+  "role_count": 12,
+  "section_count": 12,
+  "lead_policy": {
+    "class": "PROTECTED_MOBILE_ANCHOR",
+    "home": {
+      "azimuth_deg": 0,
+      "elevation_deg": 5,
+      "distance_m": 0.85
+    },
+    "mobility": "LOW_MODERATE_ADAPTIVE",
+    "max_azimuth_excursion_deg": 22,
+    "max_elevation_excursion_deg": 8,
+    "allowed_motion": [
+      "STATIC",
+      "MICRO_DRIFT",
+      "SMALL_ARC",
+      "DEPTH_EMPHASIS",
+      "RETURN_HOME"
+    ],
+    "forbidden_motion": [
+      "REAR_HOLD",
+      "FULL_ORBIT",
+      "FAST_CROSSING",
+      "LARGE_ELEVATION_SWEEP"
+    ],
+    "audibility_priority": 1.0,
+    "notes": "Primary voice remains close, frontal and intelligible. Motion is expressive but subordinate to vocal clarity."
+  },
+  "orbit_test_candidate": {
+    "section_id": "tuk2_section_02",
+    "role": "strings",
+    "start_seconds": 8.3,
+    "end_seconds": 30.1,
+    "density": 4.701834862385321,
+    "activity_fraction": 0.06422018348623854,
+    "selection_score": 1.2702922110091743,
+    "policy": "Candidate only. Actual continuous 360 path must pass dearVR probe/orbit validation before final scene use."
+  },
+  "scene_blueprint_path": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\spatial_scenes\\TUK2_T004_blueprint.json",
+  "decision_method": "T002 signal profile + T003 structural density, masking proxies, protection rules and movement budget."
+}

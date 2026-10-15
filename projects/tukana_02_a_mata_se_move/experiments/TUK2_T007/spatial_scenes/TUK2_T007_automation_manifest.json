@@ -1,0 +1,2031 @@
+{
+  "schema": "LAISE TUK2 Final Spatial Automation Manifest v1.0",
+  "project": "tukana_02_a_mata_se_move",
+  "test_id": "TUK2-T007",
+  "scene": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\experiments\\TUK2_T007\\spatial_scenes\\TUK2_T007_FINAL_SPATIAL_SCENE.json",
+  "scene_sha256": "0ca37a77a546103463e04fa675a5ec38eda3c40bb552437d2e55ab7509067b63",
+  "rate": 48000,
+  "frames": 15840000,
+  "block_size": 256,
+  "pre_roll_seconds": 1.0,
+  "plugin_latency_compensated_samples": 512,
+  "tail_padding_samples": 512,
+  "common_input_gain": 0.032731177425396434,
+  "roles": [
+    {
+      "source_id": "lead_vocal",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\stems_original\\0 Lead Vocals.wav",
+      "input_sha256": "df0779b9ade5f59bcfa0ed4b43317538620124643a35e7c75305eb651980e8e3",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_01 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 1.1,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_01/D_ADAPTIVE: Event start / home"
+        },
+        {
+          "time_seconds": 3.2600000000000002,
+          "azimuth_deg_unwrapped": 9.9,
+          "elevation_deg": 8.3,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_01/D_ADAPTIVE: ARC expressive target"
+        },
+        {
+          "time_seconds": 6.284000000000001,
+          "azimuth_deg_unwrapped": 9.9,
+          "elevation_deg": 8.3,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_01/D_ADAPTIVE: ARC hold"
+        },
+        {
+          "time_seconds": 8.3,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_02 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 14.2,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_02/D_ADAPTIVE: Event start / home"
+        },
+        {
+          "time_seconds": 18.61,
+          "azimuth_deg_unwrapped": -9.9,
+          "elevation_deg": 1.6999999999999997,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_02/D_ADAPTIVE: ARC expressive target"
+        },
+        {
+          "time_seconds": 24.784,
+          "azimuth_deg_unwrapped": -9.9,
+          "elevation_deg": 1.6999999999999997,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_02/D_ADAPTIVE: ARC hold"
+        },
+        {
+          "time_seconds": 28.9,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_02/D_ADAPTIVE: RETURN_HOME"
+        },
+        {
+          "time_seconds": 30.1,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_03 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 91.05,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_03/A_CLARITY: Event start / home"
+        },
+        {
+          "time_seconds": 98.685,
+          "azimuth_deg_unwrapped": 2.4000000000000004,
+          "elevation_deg": 6.2,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_03/A_CLARITY: ARC expressive target"
+        },
+        {
+          "time_seconds": 109.374,
+          "azimuth_deg_unwrapped": 2.4000000000000004,
+          "elevation_deg": 6.2,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_03/A_CLARITY: ARC hold"
+        },
+        {
+          "time_seconds": 116.5,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_03/A_CLARITY: RETURN_HOME"
+        },
+        {
+          "time_seconds": 116.8,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_04 START from C_MOTION"
+        },
+        {
+          "time_seconds": 124.0,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_04/C_MOTION: Event start / home"
+        },
+        {
+          "time_seconds": 124.69,
+          "azimuth_deg_unwrapped": -4.2,
+          "elevation_deg": 2.9,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_04/C_MOTION: ARC expressive target"
+        },
+        {
+          "time_seconds": 125.65599999999999,
+          "azimuth_deg_unwrapped": -4.2,
+          "elevation_deg": 2.9,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_04/C_MOTION: ARC hold"
+        },
+        {
+          "time_seconds": 126.3,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_05 START from C_MOTION"
+        },
+        {
+          "time_seconds": 128.94,
+          "azimuth_deg_unwrapped": 7.199999999999999,
+          "elevation_deg": 8.6,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_05/C_MOTION: ARC expressive target"
+        },
+        {
+          "time_seconds": 132.636,
+          "azimuth_deg_unwrapped": 7.199999999999999,
+          "elevation_deg": 8.6,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_05/C_MOTION: ARC hold"
+        },
+        {
+          "time_seconds": 135.1,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_06 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 138.9,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_06/D_ADAPTIVE: Event start / home"
+        },
+        {
+          "time_seconds": 140.4,
+          "azimuth_deg_unwrapped": -1.9600000000000002,
+          "elevation_deg": 4.02,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_06/D_ADAPTIVE: ARC expressive target"
+        },
+        {
+          "time_seconds": 142.5,
+          "azimuth_deg_unwrapped": -1.9600000000000002,
+          "elevation_deg": 4.02,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_06/D_ADAPTIVE: ARC hold"
+        },
+        {
+          "time_seconds": 143.9,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_07 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 150.26,
+          "azimuth_deg_unwrapped": 2.4000000000000004,
+          "elevation_deg": 6.2,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_07/A_CLARITY: ARC expressive target"
+        },
+        {
+          "time_seconds": 159.164,
+          "azimuth_deg_unwrapped": 2.4000000000000004,
+          "elevation_deg": 6.2,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_07/A_CLARITY: ARC hold"
+        },
+        {
+          "time_seconds": 165.1,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_08 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 176.26,
+          "azimuth_deg_unwrapped": -1.9600000000000002,
+          "elevation_deg": 4.02,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_08/D_ADAPTIVE: ARC expressive target"
+        },
+        {
+          "time_seconds": 191.88400000000001,
+          "azimuth_deg_unwrapped": -1.9600000000000002,
+          "elevation_deg": 4.02,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_08/D_ADAPTIVE: ARC hold"
+        },
+        {
+          "time_seconds": 202.3,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_09 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 213.29500000000002,
+          "azimuth_deg_unwrapped": 1.4000000000000001,
+          "elevation_deg": 5.7,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_09/A_CLARITY: ARC expressive target"
+        },
+        {
+          "time_seconds": 228.688,
+          "azimuth_deg_unwrapped": 1.4000000000000001,
+          "elevation_deg": 5.7,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_09/A_CLARITY: ARC hold"
+        },
+        {
+          "time_seconds": 238.95,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_09/A_CLARITY: RETURN_HOME"
+        },
+        {
+          "time_seconds": 239.2,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10 START from C_MOTION"
+        },
+        {
+          "time_seconds": 248.95,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10/C_MOTION: Event start / home"
+        },
+        {
+          "time_seconds": 252.805,
+          "azimuth_deg_unwrapped": -7.199999999999999,
+          "elevation_deg": 1.4000000000000004,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10/C_MOTION: ARC expressive target"
+        },
+        {
+          "time_seconds": 258.202,
+          "azimuth_deg_unwrapped": -7.199999999999999,
+          "elevation_deg": 1.4000000000000004,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10/C_MOTION: ARC hold"
+        },
+        {
+          "time_seconds": 261.8,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10/C_MOTION: RETURN_HOME"
+        },
+        {
+          "time_seconds": 280.3,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_11 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 285.15,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_11/A_CLARITY: Event start / home"
+        },
+        {
+          "time_seconds": 292.11,
+          "azimuth_deg_unwrapped": 2.4000000000000004,
+          "elevation_deg": 6.2,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_11/A_CLARITY: ARC expressive target"
+        },
+        {
+          "time_seconds": 301.854,
+          "azimuth_deg_unwrapped": 2.4000000000000004,
+          "elevation_deg": 6.2,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_11/A_CLARITY: ARC hold"
+        },
+        {
+          "time_seconds": 308.35,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_11/A_CLARITY: RETURN_HOME"
+        },
+        {
+          "time_seconds": 324.1,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12 START from C_MOTION"
+        },
+        {
+          "time_seconds": 325.315,
+          "azimuth_deg_unwrapped": -7.199999999999999,
+          "elevation_deg": 1.4000000000000004,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12/C_MOTION: ARC expressive target"
+        },
+        {
+          "time_seconds": 327.01599999999996,
+          "azimuth_deg_unwrapped": -7.199999999999999,
+          "elevation_deg": 1.4000000000000004,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12/C_MOTION: ARC hold"
+        },
+        {
+          "time_seconds": 328.15,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12/C_MOTION: RETURN_HOME"
+        },
+        {
+          "time_seconds": 330.0,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": 5.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12 END from C_MOTION"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 0.85
+        },
+        {
+          "time_seconds": 330.0,
+          "distance_m": 0.85
+        }
+      ],
+      "growth_reference_distance_m": 0.85
+    },
+    {
+      "source_id": "backing_vocals",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\stems_original\\1 Backing Vocals.wav",
+      "input_sha256": "9b424c02e66d059c91125f369cdd1335f9eb546097b2835b311a3a624e9e9def",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": -105.0,
+          "elevation_deg": 22.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_01 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 2.95,
+          "azimuth_deg_unwrapped": -105.0,
+          "elevation_deg": 22.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_01/D_ADAPTIVE: Event start / home"
+        },
+        {
+          "time_seconds": 3.13,
+          "azimuth_deg_unwrapped": -71.90086133120583,
+          "elevation_deg": 26.137392333599273,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_01/D_ADAPTIVE: SLOW_ARC expressive target"
+        },
+        {
+          "time_seconds": 3.3819999999999997,
+          "azimuth_deg_unwrapped": -71.90086133120583,
+          "elevation_deg": 26.137392333599273,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_01/D_ADAPTIVE: SLOW_ARC hold"
+        },
+        {
+          "time_seconds": 3.55,
+          "azimuth_deg_unwrapped": -105.0,
+          "elevation_deg": 22.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_01/D_ADAPTIVE: RETURN_HOME"
+        },
+        {
+          "time_seconds": 8.3,
+          "azimuth_deg_unwrapped": -105.0,
+          "elevation_deg": 22.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_02 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 30.1,
+          "azimuth_deg_unwrapped": -105.0,
+          "elevation_deg": 22.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_03 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 116.8,
+          "azimuth_deg_unwrapped": -105.0,
+          "elevation_deg": 22.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_04 START from C_MOTION"
+        },
+        {
+          "time_seconds": 126.3,
+          "azimuth_deg_unwrapped": -105.0,
+          "elevation_deg": 22.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_05 START from C_MOTION"
+        },
+        {
+          "time_seconds": 135.1,
+          "azimuth_deg_unwrapped": -105.0,
+          "elevation_deg": 22.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_06 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 143.9,
+          "azimuth_deg_unwrapped": -105.0,
+          "elevation_deg": 22.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_07 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 165.1,
+          "azimuth_deg_unwrapped": -105.0,
+          "elevation_deg": 22.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_08 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 202.3,
+          "azimuth_deg_unwrapped": -105.0,
+          "elevation_deg": 22.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_09 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 239.2,
+          "azimuth_deg_unwrapped": -105.0,
+          "elevation_deg": 22.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10 START from C_MOTION"
+        },
+        {
+          "time_seconds": 280.3,
+          "azimuth_deg_unwrapped": -105.0,
+          "elevation_deg": 22.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_11 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 324.1,
+          "azimuth_deg_unwrapped": -105.0,
+          "elevation_deg": 22.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12 START from C_MOTION"
+        },
+        {
+          "time_seconds": 330.0,
+          "azimuth_deg_unwrapped": -105.0,
+          "elevation_deg": 22.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12 END from C_MOTION"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.25
+        },
+        {
+          "time_seconds": 330.0,
+          "distance_m": 1.25
+        }
+      ],
+      "growth_reference_distance_m": 1.25
+    },
+    {
+      "source_id": "drums",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\stems_original\\2 Drums.wav",
+      "input_sha256": "f015176c732b3e757a285ec8b77ec78aecef85df7deae668722afe1486b00b60",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 18.0,
+          "elevation_deg": -14.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_01 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 8.3,
+          "azimuth_deg_unwrapped": 18.0,
+          "elevation_deg": -14.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_02 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 30.1,
+          "azimuth_deg_unwrapped": 18.0,
+          "elevation_deg": -14.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_03 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 116.8,
+          "azimuth_deg_unwrapped": 18.0,
+          "elevation_deg": -14.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_04 START from C_MOTION"
+        },
+        {
+          "time_seconds": 126.3,
+          "azimuth_deg_unwrapped": 18.0,
+          "elevation_deg": -14.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_05 START from C_MOTION"
+        },
+        {
+          "time_seconds": 135.1,
+          "azimuth_deg_unwrapped": 18.0,
+          "elevation_deg": -14.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_06 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 143.9,
+          "azimuth_deg_unwrapped": 18.0,
+          "elevation_deg": -14.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_07 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 165.1,
+          "azimuth_deg_unwrapped": 18.0,
+          "elevation_deg": -14.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_08 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 202.3,
+          "azimuth_deg_unwrapped": 18.0,
+          "elevation_deg": -14.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_09 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 239.2,
+          "azimuth_deg_unwrapped": 18.0,
+          "elevation_deg": -14.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10 START from C_MOTION"
+        },
+        {
+          "time_seconds": 280.3,
+          "azimuth_deg_unwrapped": 18.0,
+          "elevation_deg": -14.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_11 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 324.1,
+          "azimuth_deg_unwrapped": 18.0,
+          "elevation_deg": -14.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12 START from C_MOTION"
+        },
+        {
+          "time_seconds": 330.0,
+          "azimuth_deg_unwrapped": 18.0,
+          "elevation_deg": -14.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12 END from C_MOTION"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.1
+        },
+        {
+          "time_seconds": 330.0,
+          "distance_m": 1.1
+        }
+      ],
+      "growth_reference_distance_m": 1.1
+    },
+    {
+      "source_id": "bass",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\stems_original\\3 Bass.wav",
+      "input_sha256": "4a3c75a781dc0dc62ad53488e22aae1fab90b1e386829c655d19df1f90d74c88",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": -34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_01 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 8.3,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": -34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_02 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 30.1,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": -34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_03 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 116.8,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": -34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_04 START from C_MOTION"
+        },
+        {
+          "time_seconds": 126.3,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": -34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_05 START from C_MOTION"
+        },
+        {
+          "time_seconds": 135.1,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": -34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_06 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 143.9,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": -34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_07 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 165.1,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": -34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_08 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 202.3,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": -34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_09 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 239.2,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": -34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10 START from C_MOTION"
+        },
+        {
+          "time_seconds": 280.3,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": -34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_11 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 324.1,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": -34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12 START from C_MOTION"
+        },
+        {
+          "time_seconds": 330.0,
+          "azimuth_deg_unwrapped": 0.0,
+          "elevation_deg": -34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12 END from C_MOTION"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.2
+        },
+        {
+          "time_seconds": 330.0,
+          "distance_m": 1.2
+        }
+      ],
+      "growth_reference_distance_m": 1.2
+    },
+    {
+      "source_id": "guitar",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\stems_original\\4 Guitar.wav",
+      "input_sha256": "3f941f7490391186a3f0c7b780f95dc0b687aa7975f5ca0a1b4debbcfbedd510",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": -52.0,
+          "elevation_deg": 3.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_01 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 8.3,
+          "azimuth_deg_unwrapped": -52.0,
+          "elevation_deg": 3.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_02 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 30.1,
+          "azimuth_deg_unwrapped": -52.0,
+          "elevation_deg": 3.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_03 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 116.8,
+          "azimuth_deg_unwrapped": -52.0,
+          "elevation_deg": 3.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_04 START from C_MOTION"
+        },
+        {
+          "time_seconds": 126.3,
+          "azimuth_deg_unwrapped": -52.0,
+          "elevation_deg": 3.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_05 START from C_MOTION"
+        },
+        {
+          "time_seconds": 135.1,
+          "azimuth_deg_unwrapped": -52.0,
+          "elevation_deg": 3.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_06 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 140.6,
+          "azimuth_deg_unwrapped": -52.0,
+          "elevation_deg": 3.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_06/D_ADAPTIVE: Event start / home"
+        },
+        {
+          "time_seconds": 141.005,
+          "azimuth_deg_unwrapped": -34.26200250953409,
+          "elevation_deg": 6.630584281674309,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_06/D_ADAPTIVE: CALL_RESPONSE expressive target"
+        },
+        {
+          "time_seconds": 141.572,
+          "azimuth_deg_unwrapped": -34.26200250953409,
+          "elevation_deg": 6.630584281674309,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_06/D_ADAPTIVE: CALL_RESPONSE hold"
+        },
+        {
+          "time_seconds": 141.95,
+          "azimuth_deg_unwrapped": -52.0,
+          "elevation_deg": 3.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_06/D_ADAPTIVE: RETURN_HOME"
+        },
+        {
+          "time_seconds": 143.9,
+          "azimuth_deg_unwrapped": -52.0,
+          "elevation_deg": 3.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_07 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 165.1,
+          "azimuth_deg_unwrapped": -52.0,
+          "elevation_deg": 3.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_08 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 202.3,
+          "azimuth_deg_unwrapped": -52.0,
+          "elevation_deg": 3.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_09 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 239.2,
+          "azimuth_deg_unwrapped": -52.0,
+          "elevation_deg": 3.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10 START from C_MOTION"
+        },
+        {
+          "time_seconds": 280.3,
+          "azimuth_deg_unwrapped": -52.0,
+          "elevation_deg": 3.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_11 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 324.1,
+          "azimuth_deg_unwrapped": -52.0,
+          "elevation_deg": 3.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12 START from C_MOTION"
+        },
+        {
+          "time_seconds": 330.0,
+          "azimuth_deg_unwrapped": -52.0,
+          "elevation_deg": 3.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12 END from C_MOTION"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.25
+        },
+        {
+          "time_seconds": 330.0,
+          "distance_m": 1.25
+        }
+      ],
+      "growth_reference_distance_m": 1.25
+    },
+    {
+      "source_id": "keyboards",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\stems_original\\5 Keyboard.wav",
+      "input_sha256": "80850b6f451ef5edde42b856e8f98b55af3d35c2cace235d3a9ffd90d3bc15f2",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 52.0,
+          "elevation_deg": 24.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_01 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 8.3,
+          "azimuth_deg_unwrapped": 52.0,
+          "elevation_deg": 24.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_02 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 30.1,
+          "azimuth_deg_unwrapped": 52.0,
+          "elevation_deg": 24.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_03 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 116.8,
+          "azimuth_deg_unwrapped": 52.0,
+          "elevation_deg": 24.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_04 START from C_MOTION"
+        },
+        {
+          "time_seconds": 126.3,
+          "azimuth_deg_unwrapped": 52.0,
+          "elevation_deg": 24.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_05 START from C_MOTION"
+        },
+        {
+          "time_seconds": 135.1,
+          "azimuth_deg_unwrapped": 52.0,
+          "elevation_deg": 24.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_06 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 143.9,
+          "azimuth_deg_unwrapped": 52.0,
+          "elevation_deg": 24.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_07 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 165.1,
+          "azimuth_deg_unwrapped": 52.0,
+          "elevation_deg": 24.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_08 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 202.3,
+          "azimuth_deg_unwrapped": 52.0,
+          "elevation_deg": 24.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_09 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 239.2,
+          "azimuth_deg_unwrapped": 52.0,
+          "elevation_deg": 24.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10 START from C_MOTION"
+        },
+        {
+          "time_seconds": 280.3,
+          "azimuth_deg_unwrapped": 52.0,
+          "elevation_deg": 24.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_11 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 324.1,
+          "azimuth_deg_unwrapped": 52.0,
+          "elevation_deg": 24.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12 START from C_MOTION"
+        },
+        {
+          "time_seconds": 330.0,
+          "azimuth_deg_unwrapped": 52.0,
+          "elevation_deg": 24.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12 END from C_MOTION"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.4
+        },
+        {
+          "time_seconds": 330.0,
+          "distance_m": 1.4
+        }
+      ],
+      "growth_reference_distance_m": 1.4
+    },
+    {
+      "source_id": "percussion",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\stems_original\\6 Percussion.wav",
+      "input_sha256": "57f34332c135ef7a60ec94ffbaf2b7597b14dce6a3e37975263982645a06d8c6",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 82.0,
+          "elevation_deg": -8.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_01 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 8.3,
+          "azimuth_deg_unwrapped": 82.0,
+          "elevation_deg": -8.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_02 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 30.1,
+          "azimuth_deg_unwrapped": 82.0,
+          "elevation_deg": -8.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_03 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 116.8,
+          "azimuth_deg_unwrapped": 82.0,
+          "elevation_deg": -8.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_04 START from C_MOTION"
+        },
+        {
+          "time_seconds": 126.3,
+          "azimuth_deg_unwrapped": 82.0,
+          "elevation_deg": -8.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_05 START from C_MOTION"
+        },
+        {
+          "time_seconds": 135.1,
+          "azimuth_deg_unwrapped": 82.0,
+          "elevation_deg": -8.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_06 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 143.9,
+          "azimuth_deg_unwrapped": 82.0,
+          "elevation_deg": -8.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_07 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 165.1,
+          "azimuth_deg_unwrapped": 82.0,
+          "elevation_deg": -8.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_08 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 202.3,
+          "azimuth_deg_unwrapped": 82.0,
+          "elevation_deg": -8.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_09 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 239.2,
+          "azimuth_deg_unwrapped": 82.0,
+          "elevation_deg": -8.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10 START from C_MOTION"
+        },
+        {
+          "time_seconds": 280.3,
+          "azimuth_deg_unwrapped": 82.0,
+          "elevation_deg": -8.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_11 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 324.1,
+          "azimuth_deg_unwrapped": 82.0,
+          "elevation_deg": -8.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12 START from C_MOTION"
+        },
+        {
+          "time_seconds": 330.0,
+          "azimuth_deg_unwrapped": 82.0,
+          "elevation_deg": -8.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12 END from C_MOTION"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 0.95
+        },
+        {
+          "time_seconds": 330.0,
+          "distance_m": 0.95
+        }
+      ],
+      "growth_reference_distance_m": 0.95
+    },
+    {
+      "source_id": "strings",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\stems_original\\7 Strings.wav",
+      "input_sha256": "e95e8893d1d89b714405eddc7ec50a3f340c48b5088eda19121372ca759d5fe9",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_01 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 8.3,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_02 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 27.85,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_02/D_ADAPTIVE: Event start / home"
+        },
+        {
+          "time_seconds": 28.285,
+          "azimuth_deg_unwrapped": -130.40750344827586,
+          "elevation_deg": 57.18499310344828,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_02/D_ADAPTIVE: ELEVATION_SWEEP expressive target"
+        },
+        {
+          "time_seconds": 28.894000000000002,
+          "azimuth_deg_unwrapped": -130.40750344827586,
+          "elevation_deg": 57.18499310344828,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_02/D_ADAPTIVE: ELEVATION_SWEEP hold"
+        },
+        {
+          "time_seconds": 29.3,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_02/D_ADAPTIVE: RETURN_HOME"
+        },
+        {
+          "time_seconds": 30.1,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_03 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 116.8,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_04 START from C_MOTION"
+        },
+        {
+          "time_seconds": 124.7,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_04/C_MOTION: Event start / home"
+        },
+        {
+          "time_seconds": 124.79,
+          "azimuth_deg_unwrapped": -107.44,
+          "elevation_deg": 42.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_04/C_MOTION: SLOW_ARC expressive target"
+        },
+        {
+          "time_seconds": 124.916,
+          "azimuth_deg_unwrapped": -107.44,
+          "elevation_deg": 42.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_04/C_MOTION: SLOW_ARC hold"
+        },
+        {
+          "time_seconds": 125.0,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_04/C_MOTION: RETURN_HOME"
+        },
+        {
+          "time_seconds": 126.3,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_05 START from C_MOTION"
+        },
+        {
+          "time_seconds": 133.1,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_05/C_MOTION: Event start / home"
+        },
+        {
+          "time_seconds": 133.51999999999998,
+          "azimuth_deg_unwrapped": -99.75999999999999,
+          "elevation_deg": 42.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_05/C_MOTION: SLOW_ARC expressive target"
+        },
+        {
+          "time_seconds": 134.108,
+          "azimuth_deg_unwrapped": -99.75999999999999,
+          "elevation_deg": 42.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_05/C_MOTION: SLOW_ARC hold"
+        },
+        {
+          "time_seconds": 134.5,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_05/C_MOTION: RETURN_HOME"
+        },
+        {
+          "time_seconds": 135.1,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_06 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 143.9,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_07 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 165.1,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_08 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 202.3,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_09 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 239.2,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10 START from C_MOTION"
+        },
+        {
+          "time_seconds": 280.3,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_11 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 283.75,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_11/A_CLARITY: Event start / home"
+        },
+        {
+          "time_seconds": 286.525,
+          "azimuth_deg_unwrapped": -118.768,
+          "elevation_deg": 38.620000000000005,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_11/A_CLARITY: SLOW_ARC expressive target"
+        },
+        {
+          "time_seconds": 290.41,
+          "azimuth_deg_unwrapped": -118.768,
+          "elevation_deg": 38.620000000000005,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_11/A_CLARITY: SLOW_ARC hold"
+        },
+        {
+          "time_seconds": 293.0,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_11/A_CLARITY: RETURN_HOME"
+        },
+        {
+          "time_seconds": 324.1,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12 START from C_MOTION"
+        },
+        {
+          "time_seconds": 330.0,
+          "azimuth_deg_unwrapped": -142.0,
+          "elevation_deg": 34.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12 END from C_MOTION"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.55
+        },
+        {
+          "time_seconds": 330.0,
+          "distance_m": 1.55
+        }
+      ],
+      "growth_reference_distance_m": 1.55
+    },
+    {
+      "source_id": "synth",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\stems_original\\8 Synth.wav",
+      "input_sha256": "ed5c0dee0d005a48cee1beaa445639e4d19a0335a1ea55a075846faeb3cbba60",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 152.0,
+          "elevation_deg": 38.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_01 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 8.3,
+          "azimuth_deg_unwrapped": 152.0,
+          "elevation_deg": 38.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_02 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 30.1,
+          "azimuth_deg_unwrapped": 152.0,
+          "elevation_deg": 38.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_03 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 116.8,
+          "azimuth_deg_unwrapped": 152.0,
+          "elevation_deg": 38.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_04 START from C_MOTION"
+        },
+        {
+          "time_seconds": 126.3,
+          "azimuth_deg_unwrapped": 152.0,
+          "elevation_deg": 38.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_05 START from C_MOTION"
+        },
+        {
+          "time_seconds": 135.1,
+          "azimuth_deg_unwrapped": 152.0,
+          "elevation_deg": 38.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_06 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 143.9,
+          "azimuth_deg_unwrapped": 152.0,
+          "elevation_deg": 38.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_07 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 165.1,
+          "azimuth_deg_unwrapped": 152.0,
+          "elevation_deg": 38.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_08 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 202.3,
+          "azimuth_deg_unwrapped": 152.0,
+          "elevation_deg": 38.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_09 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 239.2,
+          "azimuth_deg_unwrapped": 152.0,
+          "elevation_deg": 38.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10 START from C_MOTION"
+        },
+        {
+          "time_seconds": 280.3,
+          "azimuth_deg_unwrapped": 152.0,
+          "elevation_deg": 38.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_11 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 324.1,
+          "azimuth_deg_unwrapped": 152.0,
+          "elevation_deg": 38.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12 START from C_MOTION"
+        },
+        {
+          "time_seconds": 330.0,
+          "azimuth_deg_unwrapped": 152.0,
+          "elevation_deg": 38.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12 END from C_MOTION"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.65
+        },
+        {
+          "time_seconds": 330.0,
+          "distance_m": 1.65
+        }
+      ],
+      "growth_reference_distance_m": 1.65
+    },
+    {
+      "source_id": "other",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\stems_original\\9 Other.wav",
+      "input_sha256": "a6a329feb81a07e300ce1a57b3e2b6493f4cee85400721c8e41dca8007aa1adc",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": -160.0,
+          "elevation_deg": 10.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_01 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 8.3,
+          "azimuth_deg_unwrapped": -160.0,
+          "elevation_deg": 10.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_02 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 30.1,
+          "azimuth_deg_unwrapped": -160.0,
+          "elevation_deg": 10.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_03 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 116.8,
+          "azimuth_deg_unwrapped": -160.0,
+          "elevation_deg": 10.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_04 START from C_MOTION"
+        },
+        {
+          "time_seconds": 126.3,
+          "azimuth_deg_unwrapped": -160.0,
+          "elevation_deg": 10.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_05 START from C_MOTION"
+        },
+        {
+          "time_seconds": 135.1,
+          "azimuth_deg_unwrapped": -160.0,
+          "elevation_deg": 10.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_06 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 143.9,
+          "azimuth_deg_unwrapped": -160.0,
+          "elevation_deg": 10.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_07 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 165.1,
+          "azimuth_deg_unwrapped": -160.0,
+          "elevation_deg": 10.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_08 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 202.3,
+          "azimuth_deg_unwrapped": -160.0,
+          "elevation_deg": 10.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_09 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 239.2,
+          "azimuth_deg_unwrapped": -160.0,
+          "elevation_deg": 10.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10 START from C_MOTION"
+        },
+        {
+          "time_seconds": 280.3,
+          "azimuth_deg_unwrapped": -160.0,
+          "elevation_deg": 10.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_11 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 324.1,
+          "azimuth_deg_unwrapped": -160.0,
+          "elevation_deg": 10.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12 START from C_MOTION"
+        },
+        {
+          "time_seconds": 330.0,
+          "azimuth_deg_unwrapped": -160.0,
+          "elevation_deg": 10.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12 END from C_MOTION"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.65
+        },
+        {
+          "time_seconds": 330.0,
+          "distance_m": 1.65
+        }
+      ],
+      "growth_reference_distance_m": 1.65
+    },
+    {
+      "source_id": "brass",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\stems_original\\10 Brass.wav",
+      "input_sha256": "e4e61d33e129d73e332cd647a1e7c2d241b37cc9e79e05c9bca56dff376e4fb7",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_01 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 8.3,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_02 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 30.1,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_03 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 116.8,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_04 START from C_MOTION"
+        },
+        {
+          "time_seconds": 126.3,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_05 START from C_MOTION"
+        },
+        {
+          "time_seconds": 135.1,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_06 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 143.9,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_07 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 161.13,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_07/A_CLARITY: POINT_EVENT pre-position start"
+        },
+        {
+          "time_seconds": 161.25,
+          "azimuth_deg_unwrapped": 151.168,
+          "elevation_deg": -5.899999999999999,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_07/A_CLARITY: POINT_EVENT positioned before attack"
+        },
+        {
+          "time_seconds": 161.7,
+          "azimuth_deg_unwrapped": 151.168,
+          "elevation_deg": -5.899999999999999,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_07/A_CLARITY: POINT_EVENT stable during audible event"
+        },
+        {
+          "time_seconds": 161.82,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_07/A_CLARITY: POINT_EVENT return after event"
+        },
+        {
+          "time_seconds": 165.1,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_08 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 202.3,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_09 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 239.2,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10 START from C_MOTION"
+        },
+        {
+          "time_seconds": 269.7125,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10/C_MOTION: POINT_EVENT pre-position start"
+        },
+        {
+          "time_seconds": 269.95,
+          "azimuth_deg_unwrapped": 163.44,
+          "elevation_deg": 0.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10/C_MOTION: POINT_EVENT positioned before attack"
+        },
+        {
+          "time_seconds": 270.9,
+          "azimuth_deg_unwrapped": 163.44,
+          "elevation_deg": 0.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10/C_MOTION: POINT_EVENT stable during audible event"
+        },
+        {
+          "time_seconds": 271.1375,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10/C_MOTION: POINT_EVENT return after event"
+        },
+        {
+          "time_seconds": 271.975,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10/C_MOTION: POINT_EVENT pre-position start"
+        },
+        {
+          "time_seconds": 272.25,
+          "azimuth_deg_unwrapped": 88.56,
+          "elevation_deg": -36.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10/C_MOTION: POINT_EVENT positioned before attack"
+        },
+        {
+          "time_seconds": 273.35,
+          "azimuth_deg_unwrapped": 88.56,
+          "elevation_deg": -36.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10/C_MOTION: POINT_EVENT stable during audible event"
+        },
+        {
+          "time_seconds": 273.625,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10/C_MOTION: POINT_EVENT return after event"
+        },
+        {
+          "time_seconds": 274.48,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10/C_MOTION: POINT_EVENT pre-position start"
+        },
+        {
+          "time_seconds": 274.6,
+          "azimuth_deg_unwrapped": 163.44,
+          "elevation_deg": 0.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10/C_MOTION: POINT_EVENT positioned before attack"
+        },
+        {
+          "time_seconds": 275.0,
+          "azimuth_deg_unwrapped": 163.44,
+          "elevation_deg": 0.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10/C_MOTION: POINT_EVENT stable during audible event"
+        },
+        {
+          "time_seconds": 275.12,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10/C_MOTION: POINT_EVENT return after event"
+        },
+        {
+          "time_seconds": 280.3,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_11 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 324.1,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12 START from C_MOTION"
+        },
+        {
+          "time_seconds": 327.34999999999997,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12/C_MOTION: POINT_EVENT pre-position start"
+        },
+        {
+          "time_seconds": 327.7,
+          "azimuth_deg_unwrapped": 88.56,
+          "elevation_deg": -36.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12/C_MOTION: POINT_EVENT positioned before attack"
+        },
+        {
+          "time_seconds": 329.1,
+          "azimuth_deg_unwrapped": 88.56,
+          "elevation_deg": -36.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12/C_MOTION: POINT_EVENT stable during audible event"
+        },
+        {
+          "time_seconds": 329.45000000000005,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12/C_MOTION: POINT_EVENT return after event"
+        },
+        {
+          "time_seconds": 330.0,
+          "azimuth_deg_unwrapped": 126.0,
+          "elevation_deg": -18.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12 END from C_MOTION"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.15
+        },
+        {
+          "time_seconds": 330.0,
+          "distance_m": 1.15
+        }
+      ],
+      "growth_reference_distance_m": 1.15
+    },
+    {
+      "source_id": "woodwinds",
+      "input_file": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\stems_original\\11 Woodwinds.wav",
+      "input_sha256": "2d2ddc000dcedf295abfe907fa4e6a0754883af31c2b709a739988e45c6b91eb",
+      "keyframes": [
+        {
+          "time_seconds": 0.0,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_01 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 8.3,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_02 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 8.690000000000001,
+          "azimuth_deg_unwrapped": -102.68953255328134,
+          "elevation_deg": 23.738372778446667,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_02/D_ADAPTIVE: HIGH_SIDE_ARC expressive target"
+        },
+        {
+          "time_seconds": 9.236,
+          "azimuth_deg_unwrapped": -102.68953255328134,
+          "elevation_deg": 23.738372778446667,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_02/D_ADAPTIVE: HIGH_SIDE_ARC hold"
+        },
+        {
+          "time_seconds": 9.6,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_02/D_ADAPTIVE: RETURN_HOME"
+        },
+        {
+          "time_seconds": 28.0,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_02/D_ADAPTIVE: Event start / home"
+        },
+        {
+          "time_seconds": 28.63,
+          "azimuth_deg_unwrapped": -45.90506613827401,
+          "elevation_deg": 39.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_02/D_ADAPTIVE: HIGH_SIDE_ARC expressive target"
+        },
+        {
+          "time_seconds": 29.512,
+          "azimuth_deg_unwrapped": -45.90506613827401,
+          "elevation_deg": 39.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_02/D_ADAPTIVE: HIGH_SIDE_ARC hold"
+        },
+        {
+          "time_seconds": 30.1,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_03 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 32.11,
+          "azimuth_deg_unwrapped": -59.3,
+          "elevation_deg": 36.5,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_03/A_CLARITY: HIGH_SIDE_ARC expressive target"
+        },
+        {
+          "time_seconds": 34.924,
+          "azimuth_deg_unwrapped": -59.3,
+          "elevation_deg": 36.5,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_03/A_CLARITY: HIGH_SIDE_ARC hold"
+        },
+        {
+          "time_seconds": 36.8,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_03/A_CLARITY: RETURN_HOME"
+        },
+        {
+          "time_seconds": 116.8,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_04 START from C_MOTION"
+        },
+        {
+          "time_seconds": 126.3,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_05 START from C_MOTION"
+        },
+        {
+          "time_seconds": 135.1,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_06 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 143.9,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_07 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 165.1,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_08 START from D_ADAPTIVE"
+        },
+        {
+          "time_seconds": 183.5,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_08/D_ADAPTIVE: Event start / home"
+        },
+        {
+          "time_seconds": 186.53,
+          "azimuth_deg_unwrapped": -61.0,
+          "elevation_deg": 36.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_08/D_ADAPTIVE: HIGH_SIDE_ARC expressive target"
+        },
+        {
+          "time_seconds": 190.772,
+          "azimuth_deg_unwrapped": -61.0,
+          "elevation_deg": 36.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_08/D_ADAPTIVE: HIGH_SIDE_ARC hold"
+        },
+        {
+          "time_seconds": 193.6,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_08/D_ADAPTIVE: RETURN_HOME"
+        },
+        {
+          "time_seconds": 198.9,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_08/D_ADAPTIVE: Event start / home"
+        },
+        {
+          "time_seconds": 198.99,
+          "azimuth_deg_unwrapped": -95.0,
+          "elevation_deg": 26.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_08/D_ADAPTIVE: HIGH_SIDE_ARC expressive target"
+        },
+        {
+          "time_seconds": 199.116,
+          "azimuth_deg_unwrapped": -95.0,
+          "elevation_deg": 26.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_08/D_ADAPTIVE: HIGH_SIDE_ARC hold"
+        },
+        {
+          "time_seconds": 199.2,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_08/D_ADAPTIVE: RETURN_HOME"
+        },
+        {
+          "time_seconds": 202.3,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_09 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 238.35,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_09/A_CLARITY: Event start / home"
+        },
+        {
+          "time_seconds": 238.605,
+          "azimuth_deg_unwrapped": -59.3,
+          "elevation_deg": 36.5,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_09/A_CLARITY: HIGH_SIDE_ARC expressive target"
+        },
+        {
+          "time_seconds": 238.962,
+          "azimuth_deg_unwrapped": -59.3,
+          "elevation_deg": 36.5,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_09/A_CLARITY: HIGH_SIDE_ARC hold"
+        },
+        {
+          "time_seconds": 239.2,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_10 START from C_MOTION"
+        },
+        {
+          "time_seconds": 280.3,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_11 START from A_CLARITY"
+        },
+        {
+          "time_seconds": 324.1,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12 START from C_MOTION"
+        },
+        {
+          "time_seconds": 330.0,
+          "azimuth_deg_unwrapped": -78.0,
+          "elevation_deg": 31.0,
+          "gain_db": 0.0,
+          "reason": "tuk2_section_12 END from C_MOTION"
+        }
+      ],
+      "distance_keyframes": [
+        {
+          "time_seconds": 0.0,
+          "distance_m": 1.1
+        },
+        {
+          "time_seconds": 330.0,
+          "distance_m": 1.1
+        }
+      ],
+      "growth_reference_distance_m": 1.1
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "LAISE TUK2 Point Event Correction v1.0",
+  "project": "tukana_02_a_mata_se_move",
+  "test_id": "TUK2-T006A-R1",
+  "status": "PASS",
+  "original_scenes_preserved": true,
+  "correction": "POINT_EVENT sources are positioned before the detected audible region and held static during the event.",
+  "candidates": {
+    "A_CLARITY": {
+      "source_scene": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\experiments\\TUK2_T006\\spatial_scenes\\TUK2_T006A_A_CLARITY.json",
+      "source_sha256": "9758eb3cc36d97c8e3ee322ecf0e9aec23eaf9c13c6e8bda74d20b033ec09ca5",
+      "revised_scene": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\experiments\\TUK2_T006\\spatial_scenes\\TUK2_T006A_R1_A_CLARITY.json",
+      "revised_sha256": "a9666a0463c8e0456d34ce026c53ad3546f114ab314fc297db4c9f6cd6ad468b",
+      "point_events_corrected": 3,
+      "keyframes": 119
+    },
+    "B_SEPARATION": {
+      "source_scene": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\experiments\\TUK2_T006\\spatial_scenes\\TUK2_T006A_B_SEPARATION.json",
+      "source_sha256": "0adc7421e30461353f200725614a251172e36ee88be4fa2ddadbb9ef5130a6cf",
+      "revised_scene": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\experiments\\TUK2_T006\\spatial_scenes\\TUK2_T006A_R1_B_SEPARATION.json",
+      "revised_sha256": "333a3f7e0f6f9808cf8723eeb53ff91187d1016297beff99f667a99df2a0eeb4",
+      "point_events_corrected": 4,
+      "keyframes": 127
+    },
+    "C_MOTION": {
+      "source_scene": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\experiments\\TUK2_T006\\spatial_scenes\\TUK2_T006A_C_MOTION.json",
+      "source_sha256": "2e09236893c85206d2437a861b623438bf63004ea15b8533dc09de6804bf82a5",
+      "revised_scene": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\experiments\\TUK2_T006\\spatial_scenes\\TUK2_T006A_R1_C_MOTION.json",
+      "revised_sha256": "318a40e406265c7e0b1db6017cc491469183f9be60931f09a733598963fbc20c",
+      "point_events_corrected": 6,
+      "keyframes": 147
+    },
+    "D_ADAPTIVE": {
+      "source_scene": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\experiments\\TUK2_T006\\spatial_scenes\\TUK2_T006A_D_ADAPTIVE.json",
+      "source_sha256": "c8aa43150838b214d30340e892bf882453167d50f447058eee20ba3497784963",
+      "revised_scene": "C:\\Projetos2026\\LAISE\\projects\\tukana_02_a_mata_se_move\\experiments\\TUK2_T006\\spatial_scenes\\TUK2_T006A_R1_D_ADAPTIVE.json",
+      "revised_sha256": "e70b003dad60a8f9d9f13d1db3e5dcaead0175537ff69be501e503273f2b93fb",
+      "point_events_corrected": 6,
+      "keyframes": 147
+    }
+  },
+  "next_stage": "TUK2-T006B objective candidate rendering and A/B/C/D scoring."
+}

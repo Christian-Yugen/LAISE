@@ -1,0 +1,2535 @@
+{
+  "schema": "LAISE TUK2 Immutable Stem Intake v1.0",
+  "project": "tukana_02_a_mata_se_move",
+  "test_id": "TUK2-T001",
+  "status": "PASS",
+  "originals_modified": false,
+  "stem_count": 12,
+  "alignment": {
+    "sample_aligned": true,
+    "same_sample_rate": true,
+    "same_bit_depth": true,
+    "same_channels": true,
+    "same_frame_count": true,
+    "same_duration": true,
+    "same_encoding": true
+  },
+  "common_format": {
+    "sample_rate_hz": 48000,
+    "bits_per_sample": 16,
+    "channels": 2,
+    "frames": 15840000,
+    "duration_seconds": 330.0
+  },
+  "safety": {
+    "all_48khz": true,
+    "all_stereo": true,
+    "all_zero_clipped_samples": true
+  },
+  "stems": {
+    "0 Lead Vocals.wav": {
+      "file_size_bytes": 63360116,
+      "sha256": "df0779b9ade5f59bcfa0ed4b43317538620124643a35e7c75305eb651980e8e3",
+      "wav": {
+        "encoding": 1,
+        "channels": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "block_align": 4,
+        "data_offset": 116,
+        "data_size": 63360000,
+        "frames": 15840000,
+        "duration_seconds": 330.0
+      },
+      "metrics": {
+        "peak": 0.760528564453125,
+        "peak_dbfs": -2.3776893954963714,
+        "rms": 0.055364593261312066,
+        "rms_dbfs": -25.135357726051208,
+        "dc_offset": -3.54338010152181e-05,
+        "clipped_sample_count": 0,
+        "silence_threshold_dbfs": -60.0,
+        "active_regions": [
+          {
+            "start_seconds": 0.256,
+            "end_seconds": 11.946666666666667
+          },
+          {
+            "start_seconds": 12.117333333333333,
+            "end_seconds": 12.288
+          },
+          {
+            "start_seconds": 12.544,
+            "end_seconds": 29.696
+          },
+          {
+            "start_seconds": 35.584,
+            "end_seconds": 35.669333333333334
+          },
+          {
+            "start_seconds": 35.754666666666665,
+            "end_seconds": 35.925333333333334
+          },
+          {
+            "start_seconds": 36.010666666666665,
+            "end_seconds": 39.424
+          },
+          {
+            "start_seconds": 39.68,
+            "end_seconds": 43.690666666666665
+          },
+          {
+            "start_seconds": 43.946666666666665,
+            "end_seconds": 46.848
+          },
+          {
+            "start_seconds": 49.92,
+            "end_seconds": 50.090666666666664
+          },
+          {
+            "start_seconds": 50.176,
+            "end_seconds": 50.26133333333333
+          },
+          {
+            "start_seconds": 50.346666666666664,
+            "end_seconds": 117.33333333333333
+          },
+          {
+            "start_seconds": 118.18666666666667,
+            "end_seconds": 118.272
+          },
+          {
+            "start_seconds": 118.86933333333333,
+            "end_seconds": 118.95466666666667
+          },
+          {
+            "start_seconds": 119.296,
+            "end_seconds": 119.38133333333333
+          },
+          {
+            "start_seconds": 119.808,
+            "end_seconds": 119.97866666666667
+          },
+          {
+            "start_seconds": 120.14933333333333,
+            "end_seconds": 120.49066666666667
+          },
+          {
+            "start_seconds": 120.66133333333333,
+            "end_seconds": 120.74666666666667
+          },
+          {
+            "start_seconds": 120.832,
+            "end_seconds": 120.91733333333333
+          },
+          {
+            "start_seconds": 121.00266666666667,
+            "end_seconds": 121.17333333333333
+          },
+          {
+            "start_seconds": 121.344,
+            "end_seconds": 122.70933333333333
+          },
+          {
+            "start_seconds": 122.79466666666667,
+            "end_seconds": 123.136
+          },
+          {
+            "start_seconds": 123.22133333333333,
+            "end_seconds": 240.81066666666666
+          },
+          {
+            "start_seconds": 241.32266666666666,
+            "end_seconds": 243.2
+          },
+          {
+            "start_seconds": 246.528,
+            "end_seconds": 246.61333333333334
+          },
+          {
+            "start_seconds": 246.784,
+            "end_seconds": 246.86933333333334
+          },
+          {
+            "start_seconds": 246.95466666666667,
+            "end_seconds": 247.296
+          },
+          {
+            "start_seconds": 247.46666666666667,
+            "end_seconds": 247.552
+          },
+          {
+            "start_seconds": 247.63733333333334,
+            "end_seconds": 247.72266666666667
+          },
+          {
+            "start_seconds": 247.89333333333335,
+            "end_seconds": 262.656
+          },
+          {
+            "start_seconds": 264.192,
+            "end_seconds": 270.592
+          },
+          {
+            "start_seconds": 274.176,
+            "end_seconds": 274.60266666666666
+          },
+          {
+            "start_seconds": 274.688,
+            "end_seconds": 274.8586666666667
+          },
+          {
+            "start_seconds": 275.02933333333334,
+            "end_seconds": 275.11466666666666
+          },
+          {
+            "start_seconds": 275.456,
+            "end_seconds": 275.54133333333334
+          },
+          {
+            "start_seconds": 275.712,
+            "end_seconds": 279.296
+          },
+          {
+            "start_seconds": 279.72266666666667,
+            "end_seconds": 279.808
+          },
+          {
+            "start_seconds": 283.73333333333335,
+            "end_seconds": 321.024
+          },
+          {
+            "start_seconds": 323.4986666666667,
+            "end_seconds": 328.1066666666667
+          },
+          {
+            "start_seconds": 329.984,
+            "end_seconds": 330.0
+          }
+        ]
+      }
+    },
+    "1 Backing Vocals.wav": {
+      "file_size_bytes": 63360116,
+      "sha256": "9b424c02e66d059c91125f369cdd1335f9eb546097b2835b311a3a624e9e9def",
+      "wav": {
+        "encoding": 1,
+        "channels": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "block_align": 4,
+        "data_offset": 116,
+        "data_size": 63360000,
+        "frames": 15840000,
+        "duration_seconds": 330.0
+      },
+      "metrics": {
+        "peak": 0.740203857421875,
+        "peak_dbfs": -2.612973119952711,
+        "rms": 0.06033392408127372,
+        "rms_dbfs": -24.388768550385905,
+        "dc_offset": -1.5436830424299145e-05,
+        "clipped_sample_count": 0,
+        "silence_threshold_dbfs": -60.0,
+        "active_regions": [
+          {
+            "start_seconds": 1.7066666666666668,
+            "end_seconds": 1.792
+          },
+          {
+            "start_seconds": 1.9626666666666666,
+            "end_seconds": 2.048
+          },
+          {
+            "start_seconds": 2.304,
+            "end_seconds": 2.3893333333333335
+          },
+          {
+            "start_seconds": 2.474666666666667,
+            "end_seconds": 2.56
+          },
+          {
+            "start_seconds": 2.9013333333333335,
+            "end_seconds": 3.2426666666666666
+          },
+          {
+            "start_seconds": 3.328,
+            "end_seconds": 3.498666666666667
+          },
+          {
+            "start_seconds": 5.12,
+            "end_seconds": 5.290666666666667
+          },
+          {
+            "start_seconds": 5.632,
+            "end_seconds": 5.802666666666667
+          },
+          {
+            "start_seconds": 6.314666666666667,
+            "end_seconds": 7.082666666666666
+          },
+          {
+            "start_seconds": 7.168,
+            "end_seconds": 7.338666666666667
+          },
+          {
+            "start_seconds": 7.509333333333333,
+            "end_seconds": 7.68
+          },
+          {
+            "start_seconds": 15.36,
+            "end_seconds": 15.445333333333334
+          },
+          {
+            "start_seconds": 17.664,
+            "end_seconds": 29.952
+          },
+          {
+            "start_seconds": 44.117333333333335,
+            "end_seconds": 44.373333333333335
+          },
+          {
+            "start_seconds": 45.141333333333336,
+            "end_seconds": 45.22666666666667
+          },
+          {
+            "start_seconds": 49.92,
+            "end_seconds": 50.090666666666664
+          },
+          {
+            "start_seconds": 50.346666666666664,
+            "end_seconds": 69.97333333333333
+          },
+          {
+            "start_seconds": 70.05866666666667,
+            "end_seconds": 71.33866666666667
+          },
+          {
+            "start_seconds": 72.02133333333333,
+            "end_seconds": 72.10666666666667
+          },
+          {
+            "start_seconds": 72.448,
+            "end_seconds": 72.53333333333333
+          },
+          {
+            "start_seconds": 72.61866666666667,
+            "end_seconds": 72.704
+          },
+          {
+            "start_seconds": 72.87466666666667,
+            "end_seconds": 83.712
+          },
+          {
+            "start_seconds": 85.58933333333333,
+            "end_seconds": 85.84533333333333
+          },
+          {
+            "start_seconds": 86.18666666666667,
+            "end_seconds": 103.424
+          },
+          {
+            "start_seconds": 103.50933333333333,
+            "end_seconds": 103.85066666666667
+          },
+          {
+            "start_seconds": 104.27733333333333,
+            "end_seconds": 104.36266666666667
+          },
+          {
+            "start_seconds": 105.472,
+            "end_seconds": 105.64266666666667
+          },
+          {
+            "start_seconds": 106.58133333333333,
+            "end_seconds": 106.66666666666667
+          },
+          {
+            "start_seconds": 107.008,
+            "end_seconds": 107.09333333333333
+          },
+          {
+            "start_seconds": 108.97066666666667,
+            "end_seconds": 113.664
+          },
+          {
+            "start_seconds": 115.28533333333333,
+            "end_seconds": 115.968
+          },
+          {
+            "start_seconds": 123.98933333333333,
+            "end_seconds": 135.76533333333333
+          },
+          {
+            "start_seconds": 136.36266666666666,
+            "end_seconds": 136.53333333333333
+          },
+          {
+            "start_seconds": 140.032,
+            "end_seconds": 239.70133333333334
+          },
+          {
+            "start_seconds": 239.78666666666666,
+            "end_seconds": 239.95733333333334
+          },
+          {
+            "start_seconds": 246.016,
+            "end_seconds": 261.80266666666665
+          },
+          {
+            "start_seconds": 264.6186666666667,
+            "end_seconds": 268.032
+          },
+          {
+            "start_seconds": 269.312,
+            "end_seconds": 269.824
+          },
+          {
+            "start_seconds": 270.08,
+            "end_seconds": 270.1653333333333
+          },
+          {
+            "start_seconds": 274.3466666666667,
+            "end_seconds": 274.60266666666666
+          },
+          {
+            "start_seconds": 274.688,
+            "end_seconds": 274.7733333333333
+          },
+          {
+            "start_seconds": 275.712,
+            "end_seconds": 320.9386666666667
+          },
+          {
+            "start_seconds": 325.80266666666665,
+            "end_seconds": 327.936
+          },
+          {
+            "start_seconds": 329.984,
+            "end_seconds": 330.0
+          }
+        ]
+      }
+    },
+    "2 Drums.wav": {
+      "file_size_bytes": 63360116,
+      "sha256": "f015176c732b3e757a285ec8b77ec78aecef85df7deae668722afe1486b00b60",
+      "wav": {
+        "encoding": 1,
+        "channels": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "block_align": 4,
+        "data_offset": 116,
+        "data_size": 63360000,
+        "frames": 15840000,
+        "duration_seconds": 330.0
+      },
+      "metrics": {
+        "peak": 0.694000244140625,
+        "peak_dbfs": -3.172807535314787,
+        "rms": 0.06784014802262173,
+        "rms_dbfs": -23.370264262981543,
+        "dc_offset": -0.00014641553994381066,
+        "clipped_sample_count": 0,
+        "silence_threshold_dbfs": -60.0,
+        "active_regions": [
+          {
+            "start_seconds": 8.96,
+            "end_seconds": 13.568
+          },
+          {
+            "start_seconds": 14.250666666666667,
+            "end_seconds": 14.336
+          },
+          {
+            "start_seconds": 17.92,
+            "end_seconds": 18.005333333333333
+          },
+          {
+            "start_seconds": 27.648,
+            "end_seconds": 30.378666666666668
+          },
+          {
+            "start_seconds": 35.498666666666665,
+            "end_seconds": 35.669333333333334
+          },
+          {
+            "start_seconds": 35.84,
+            "end_seconds": 36.010666666666665
+          },
+          {
+            "start_seconds": 37.205333333333336,
+            "end_seconds": 37.376
+          },
+          {
+            "start_seconds": 37.717333333333336,
+            "end_seconds": 37.888
+          },
+          {
+            "start_seconds": 38.05866666666667,
+            "end_seconds": 38.144
+          },
+          {
+            "start_seconds": 38.22933333333334,
+            "end_seconds": 38.31466666666667
+          },
+          {
+            "start_seconds": 44.714666666666666,
+            "end_seconds": 44.885333333333335
+          },
+          {
+            "start_seconds": 45.397333333333336,
+            "end_seconds": 84.82133333333333
+          },
+          {
+            "start_seconds": 85.58933333333333,
+            "end_seconds": 85.76
+          },
+          {
+            "start_seconds": 86.016,
+            "end_seconds": 114.432
+          },
+          {
+            "start_seconds": 114.51733333333334,
+            "end_seconds": 114.60266666666666
+          },
+          {
+            "start_seconds": 115.02933333333333,
+            "end_seconds": 132.096
+          },
+          {
+            "start_seconds": 132.18133333333333,
+            "end_seconds": 144.384
+          },
+          {
+            "start_seconds": 144.81066666666666,
+            "end_seconds": 144.98133333333334
+          },
+          {
+            "start_seconds": 145.23733333333334,
+            "end_seconds": 146.34666666666666
+          },
+          {
+            "start_seconds": 146.85866666666666,
+            "end_seconds": 146.944
+          },
+          {
+            "start_seconds": 147.02933333333334,
+            "end_seconds": 147.2
+          },
+          {
+            "start_seconds": 147.54133333333334,
+            "end_seconds": 148.56533333333334
+          },
+          {
+            "start_seconds": 149.84533333333334,
+            "end_seconds": 150.784
+          },
+          {
+            "start_seconds": 151.89333333333335,
+            "end_seconds": 240.04266666666666
+          },
+          {
+            "start_seconds": 242.432,
+            "end_seconds": 243.712
+          },
+          {
+            "start_seconds": 244.13866666666667,
+            "end_seconds": 244.30933333333334
+          },
+          {
+            "start_seconds": 244.48,
+            "end_seconds": 260.6933333333333
+          },
+          {
+            "start_seconds": 260.77866666666665,
+            "end_seconds": 311.12533333333334
+          },
+          {
+            "start_seconds": 311.552,
+            "end_seconds": 313.00266666666664
+          },
+          {
+            "start_seconds": 322.9866666666667,
+            "end_seconds": 329.04533333333336
+          },
+          {
+            "start_seconds": 329.984,
+            "end_seconds": 330.0
+          }
+        ]
+      }
+    },
+    "3 Bass.wav": {
+      "file_size_bytes": 63360116,
+      "sha256": "4a3c75a781dc0dc62ad53488e22aae1fab90b1e386829c655d19df1f90d74c88",
+      "wav": {
+        "encoding": 1,
+        "channels": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "block_align": 4,
+        "data_offset": 116,
+        "data_size": 63360000,
+        "frames": 15840000,
+        "duration_seconds": 330.0
+      },
+      "metrics": {
+        "peak": 0.419219970703125,
+        "peak_dbfs": -7.551160734247163,
+        "rms": 0.054199972404784615,
+        "rms_dbfs": -25.320018691539573,
+        "dc_offset": -7.409823350232057e-05,
+        "clipped_sample_count": 0,
+        "silence_threshold_dbfs": -60.0,
+        "active_regions": [
+          {
+            "start_seconds": 9.557333333333334,
+            "end_seconds": 11.434666666666667
+          },
+          {
+            "start_seconds": 26.965333333333334,
+            "end_seconds": 27.136
+          },
+          {
+            "start_seconds": 27.562666666666665,
+            "end_seconds": 27.733333333333334
+          },
+          {
+            "start_seconds": 28.074666666666666,
+            "end_seconds": 28.245333333333335
+          },
+          {
+            "start_seconds": 28.501333333333335,
+            "end_seconds": 28.672
+          },
+          {
+            "start_seconds": 37.205333333333336,
+            "end_seconds": 44.970666666666666
+          },
+          {
+            "start_seconds": 45.653333333333336,
+            "end_seconds": 84.05333333333333
+          },
+          {
+            "start_seconds": 86.18666666666667,
+            "end_seconds": 105.81333333333333
+          },
+          {
+            "start_seconds": 107.008,
+            "end_seconds": 107.60533333333333
+          },
+          {
+            "start_seconds": 116.13866666666667,
+            "end_seconds": 126.37866666666666
+          },
+          {
+            "start_seconds": 133.54666666666665,
+            "end_seconds": 144.04266666666666
+          },
+          {
+            "start_seconds": 145.32266666666666,
+            "end_seconds": 146.176
+          },
+          {
+            "start_seconds": 147.54133333333334,
+            "end_seconds": 148.48
+          },
+          {
+            "start_seconds": 149.84533333333334,
+            "end_seconds": 150.69866666666667
+          },
+          {
+            "start_seconds": 151.89333333333335,
+            "end_seconds": 157.26933333333332
+          },
+          {
+            "start_seconds": 157.44,
+            "end_seconds": 157.52533333333332
+          },
+          {
+            "start_seconds": 158.89066666666668,
+            "end_seconds": 159.488
+          },
+          {
+            "start_seconds": 161.19466666666668,
+            "end_seconds": 161.62133333333333
+          },
+          {
+            "start_seconds": 163.41333333333333,
+            "end_seconds": 238.76266666666666
+          },
+          {
+            "start_seconds": 249.17333333333335,
+            "end_seconds": 249.25866666666667
+          },
+          {
+            "start_seconds": 249.344,
+            "end_seconds": 249.42933333333335
+          },
+          {
+            "start_seconds": 249.51466666666667,
+            "end_seconds": 249.77066666666667
+          },
+          {
+            "start_seconds": 251.30666666666667,
+            "end_seconds": 251.47733333333332
+          },
+          {
+            "start_seconds": 251.56266666666667,
+            "end_seconds": 257.28
+          },
+          {
+            "start_seconds": 257.36533333333335,
+            "end_seconds": 257.70666666666665
+          },
+          {
+            "start_seconds": 257.792,
+            "end_seconds": 257.87733333333335
+          },
+          {
+            "start_seconds": 260.77866666666665,
+            "end_seconds": 271.53066666666666
+          },
+          {
+            "start_seconds": 272.2133333333333,
+            "end_seconds": 273.7493333333333
+          },
+          {
+            "start_seconds": 274.51733333333334,
+            "end_seconds": 275.8826666666667
+          },
+          {
+            "start_seconds": 276.3093333333333,
+            "end_seconds": 276.3946666666667
+          },
+          {
+            "start_seconds": 276.8213333333333,
+            "end_seconds": 298.496
+          },
+          {
+            "start_seconds": 302.2506666666667,
+            "end_seconds": 302.592
+          },
+          {
+            "start_seconds": 306.944,
+            "end_seconds": 308.224
+          },
+          {
+            "start_seconds": 309.41866666666664,
+            "end_seconds": 310.69866666666667
+          },
+          {
+            "start_seconds": 311.8933333333333,
+            "end_seconds": 313.088
+          },
+          {
+            "start_seconds": 323.328,
+            "end_seconds": 329.216
+          }
+        ]
+      }
+    },
+    "4 Guitar.wav": {
+      "file_size_bytes": 63360116,
+      "sha256": "3f941f7490391186a3f0c7b780f95dc0b687aa7975f5ca0a1b4debbcfbedd510",
+      "wav": {
+        "encoding": 1,
+        "channels": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "block_align": 4,
+        "data_offset": 116,
+        "data_size": 63360000,
+        "frames": 15840000,
+        "duration_seconds": 330.0
+      },
+      "metrics": {
+        "peak": 0.2835693359375,
+        "peak_dbfs": -10.946814676630401,
+        "rms": 0.004526096950917011,
+        "rms_dbfs": -46.8855229501918,
+        "dc_offset": -6.635325846045908e-06,
+        "clipped_sample_count": 0,
+        "silence_threshold_dbfs": -60.0,
+        "active_regions": [
+          {
+            "start_seconds": 66.816,
+            "end_seconds": 68.77866666666667
+          },
+          {
+            "start_seconds": 80.98133333333334,
+            "end_seconds": 81.23733333333334
+          },
+          {
+            "start_seconds": 81.32266666666666,
+            "end_seconds": 81.83466666666666
+          },
+          {
+            "start_seconds": 82.09066666666666,
+            "end_seconds": 82.34666666666666
+          },
+          {
+            "start_seconds": 116.224,
+            "end_seconds": 125.52533333333334
+          },
+          {
+            "start_seconds": 140.544,
+            "end_seconds": 141.48266666666666
+          },
+          {
+            "start_seconds": 141.65333333333334,
+            "end_seconds": 141.90933333333334
+          },
+          {
+            "start_seconds": 165.632,
+            "end_seconds": 169.728
+          },
+          {
+            "start_seconds": 175.104,
+            "end_seconds": 180.05333333333334
+          },
+          {
+            "start_seconds": 181.41866666666667,
+            "end_seconds": 181.504
+          },
+          {
+            "start_seconds": 182.86933333333334,
+            "end_seconds": 182.95466666666667
+          },
+          {
+            "start_seconds": 183.38133333333334,
+            "end_seconds": 183.46666666666667
+          },
+          {
+            "start_seconds": 183.552,
+            "end_seconds": 183.89333333333335
+          },
+          {
+            "start_seconds": 183.97866666666667,
+            "end_seconds": 184.91733333333335
+          },
+          {
+            "start_seconds": 185.00266666666667,
+            "end_seconds": 185.17333333333335
+          },
+          {
+            "start_seconds": 185.25866666666667,
+            "end_seconds": 186.02666666666667
+          },
+          {
+            "start_seconds": 186.368,
+            "end_seconds": 186.45333333333335
+          },
+          {
+            "start_seconds": 186.53866666666667,
+            "end_seconds": 186.88
+          },
+          {
+            "start_seconds": 193.19466666666668,
+            "end_seconds": 193.36533333333333
+          },
+          {
+            "start_seconds": 193.45066666666668,
+            "end_seconds": 200.78933333333333
+          },
+          {
+            "start_seconds": 209.664,
+            "end_seconds": 241.57866666666666
+          },
+          {
+            "start_seconds": 271.44533333333334,
+            "end_seconds": 271.53066666666666
+          },
+          {
+            "start_seconds": 272.128,
+            "end_seconds": 272.2133333333333
+          },
+          {
+            "start_seconds": 272.7253333333333,
+            "end_seconds": 272.896
+          },
+          {
+            "start_seconds": 272.98133333333334,
+            "end_seconds": 273.49333333333334
+          },
+          {
+            "start_seconds": 273.57866666666666,
+            "end_seconds": 274.7733333333333
+          },
+          {
+            "start_seconds": 274.8586666666667,
+            "end_seconds": 274.944
+          },
+          {
+            "start_seconds": 275.3706666666667,
+            "end_seconds": 275.54133333333334
+          },
+          {
+            "start_seconds": 275.712,
+            "end_seconds": 279.21066666666667
+          },
+          {
+            "start_seconds": 279.72266666666667,
+            "end_seconds": 279.808
+          },
+          {
+            "start_seconds": 288.34133333333335,
+            "end_seconds": 288.4266666666667
+          },
+          {
+            "start_seconds": 288.768,
+            "end_seconds": 288.85333333333335
+          },
+          {
+            "start_seconds": 329.984,
+            "end_seconds": 330.0
+          }
+        ]
+      }
+    },
+    "5 Keyboard.wav": {
+      "file_size_bytes": 63360116,
+      "sha256": "80850b6f451ef5edde42b856e8f98b55af3d35c2cace235d3a9ffd90d3bc15f2",
+      "wav": {
+        "encoding": 1,
+        "channels": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "block_align": 4,
+        "data_offset": 116,
+        "data_size": 63360000,
+        "frames": 15840000,
+        "duration_seconds": 330.0
+      },
+      "metrics": {
+        "peak": 0.301239013671875,
+        "peak_dbfs": -10.421775661034339,
+        "rms": 0.006555353538427982,
+        "rms_dbfs": -43.668077625937,
+        "dc_offset": -2.018643774167456e-05,
+        "clipped_sample_count": 0,
+        "silence_threshold_dbfs": -60.0,
+        "active_regions": [
+          {
+            "start_seconds": 9.472,
+            "end_seconds": 13.226666666666667
+          },
+          {
+            "start_seconds": 23.808,
+            "end_seconds": 23.893333333333334
+          },
+          {
+            "start_seconds": 23.978666666666665,
+            "end_seconds": 28.75733333333333
+          },
+          {
+            "start_seconds": 28.842666666666666,
+            "end_seconds": 28.928
+          },
+          {
+            "start_seconds": 29.098666666666666,
+            "end_seconds": 29.184
+          },
+          {
+            "start_seconds": 29.525333333333332,
+            "end_seconds": 29.696
+          },
+          {
+            "start_seconds": 34.56,
+            "end_seconds": 34.730666666666664
+          },
+          {
+            "start_seconds": 34.816,
+            "end_seconds": 35.157333333333334
+          },
+          {
+            "start_seconds": 35.328,
+            "end_seconds": 36.522666666666666
+          },
+          {
+            "start_seconds": 36.608,
+            "end_seconds": 37.12
+          },
+          {
+            "start_seconds": 37.205333333333336,
+            "end_seconds": 37.29066666666667
+          },
+          {
+            "start_seconds": 37.376,
+            "end_seconds": 37.461333333333336
+          },
+          {
+            "start_seconds": 37.54666666666667,
+            "end_seconds": 37.632
+          },
+          {
+            "start_seconds": 37.717333333333336,
+            "end_seconds": 40.02133333333333
+          },
+          {
+            "start_seconds": 40.192,
+            "end_seconds": 43.349333333333334
+          },
+          {
+            "start_seconds": 43.434666666666665,
+            "end_seconds": 43.52
+          },
+          {
+            "start_seconds": 43.605333333333334,
+            "end_seconds": 43.776
+          },
+          {
+            "start_seconds": 46.08,
+            "end_seconds": 69.71733333333333
+          },
+          {
+            "start_seconds": 77.312,
+            "end_seconds": 78.08
+          },
+          {
+            "start_seconds": 78.16533333333334,
+            "end_seconds": 78.25066666666666
+          },
+          {
+            "start_seconds": 78.336,
+            "end_seconds": 84.56533333333333
+          },
+          {
+            "start_seconds": 84.736,
+            "end_seconds": 84.82133333333333
+          },
+          {
+            "start_seconds": 86.528,
+            "end_seconds": 86.61333333333333
+          },
+          {
+            "start_seconds": 86.69866666666667,
+            "end_seconds": 105.55733333333333
+          },
+          {
+            "start_seconds": 116.30933333333333,
+            "end_seconds": 126.464
+          },
+          {
+            "start_seconds": 134.144,
+            "end_seconds": 134.48533333333333
+          },
+          {
+            "start_seconds": 134.57066666666665,
+            "end_seconds": 143.44533333333334
+          },
+          {
+            "start_seconds": 152.32,
+            "end_seconds": 157.44
+          },
+          {
+            "start_seconds": 158.976,
+            "end_seconds": 159.31733333333332
+          },
+          {
+            "start_seconds": 161.19466666666668,
+            "end_seconds": 161.87733333333333
+          },
+          {
+            "start_seconds": 164.01066666666668,
+            "end_seconds": 164.18133333333333
+          },
+          {
+            "start_seconds": 164.26666666666668,
+            "end_seconds": 205.39733333333334
+          },
+          {
+            "start_seconds": 205.568,
+            "end_seconds": 205.65333333333334
+          },
+          {
+            "start_seconds": 205.90933333333334,
+            "end_seconds": 205.99466666666666
+          },
+          {
+            "start_seconds": 206.16533333333334,
+            "end_seconds": 240.384
+          },
+          {
+            "start_seconds": 240.46933333333334,
+            "end_seconds": 240.55466666666666
+          },
+          {
+            "start_seconds": 242.51733333333334,
+            "end_seconds": 246.86933333333334
+          },
+          {
+            "start_seconds": 251.648,
+            "end_seconds": 251.81866666666667
+          },
+          {
+            "start_seconds": 251.904,
+            "end_seconds": 251.98933333333332
+          },
+          {
+            "start_seconds": 252.07466666666667,
+            "end_seconds": 256.85333333333335
+          },
+          {
+            "start_seconds": 269.99466666666666,
+            "end_seconds": 271.616
+          },
+          {
+            "start_seconds": 271.7013333333333,
+            "end_seconds": 272.04266666666666
+          },
+          {
+            "start_seconds": 272.128,
+            "end_seconds": 303.95733333333334
+          },
+          {
+            "start_seconds": 304.128,
+            "end_seconds": 304.2986666666667
+          },
+          {
+            "start_seconds": 304.64,
+            "end_seconds": 304.7253333333333
+          },
+          {
+            "start_seconds": 304.8106666666667,
+            "end_seconds": 305.06666666666666
+          },
+          {
+            "start_seconds": 305.152,
+            "end_seconds": 305.2373333333333
+          },
+          {
+            "start_seconds": 305.3226666666667,
+            "end_seconds": 305.408
+          },
+          {
+            "start_seconds": 305.49333333333334,
+            "end_seconds": 308.05333333333334
+          },
+          {
+            "start_seconds": 308.13866666666667,
+            "end_seconds": 308.224
+          },
+          {
+            "start_seconds": 308.3093333333333,
+            "end_seconds": 308.3946666666667
+          },
+          {
+            "start_seconds": 309.58933333333334,
+            "end_seconds": 310.016
+          },
+          {
+            "start_seconds": 311.97866666666664,
+            "end_seconds": 312.23466666666667
+          },
+          {
+            "start_seconds": 323.4986666666667,
+            "end_seconds": 328.87466666666666
+          },
+          {
+            "start_seconds": 329.984,
+            "end_seconds": 330.0
+          }
+        ]
+      }
+    },
+    "6 Percussion.wav": {
+      "file_size_bytes": 63360116,
+      "sha256": "57f34332c135ef7a60ec94ffbaf2b7597b14dce6a3e37975263982645a06d8c6",
+      "wav": {
+        "encoding": 1,
+        "channels": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "block_align": 4,
+        "data_offset": 116,
+        "data_size": 63360000,
+        "frames": 15840000,
+        "duration_seconds": 330.0
+      },
+      "metrics": {
+        "peak": 0.738494873046875,
+        "peak_dbfs": -2.633050308061086,
+        "rms": 0.06899308673736838,
+        "rms_dbfs": -23.223888487350848,
+        "dc_offset": -0.0001480572739032784,
+        "clipped_sample_count": 0,
+        "silence_threshold_dbfs": -60.0,
+        "active_regions": [
+          {
+            "start_seconds": 4.949333333333334,
+            "end_seconds": 5.034666666666666
+          },
+          {
+            "start_seconds": 5.376,
+            "end_seconds": 5.461333333333333
+          },
+          {
+            "start_seconds": 8.789333333333333,
+            "end_seconds": 13.568
+          },
+          {
+            "start_seconds": 14.250666666666667,
+            "end_seconds": 14.336
+          },
+          {
+            "start_seconds": 15.36,
+            "end_seconds": 16.042666666666666
+          },
+          {
+            "start_seconds": 17.664,
+            "end_seconds": 18.602666666666668
+          },
+          {
+            "start_seconds": 19.882666666666665,
+            "end_seconds": 20.394666666666666
+          },
+          {
+            "start_seconds": 22.186666666666667,
+            "end_seconds": 22.954666666666668
+          },
+          {
+            "start_seconds": 24.405333333333335,
+            "end_seconds": 24.661333333333335
+          },
+          {
+            "start_seconds": 27.562666666666665,
+            "end_seconds": 30.464
+          },
+          {
+            "start_seconds": 33.792,
+            "end_seconds": 39.33866666666667
+          },
+          {
+            "start_seconds": 45.397333333333336,
+            "end_seconds": 83.88266666666667
+          },
+          {
+            "start_seconds": 84.13866666666667,
+            "end_seconds": 84.224
+          },
+          {
+            "start_seconds": 86.18666666666667,
+            "end_seconds": 114.26133333333334
+          },
+          {
+            "start_seconds": 114.51733333333334,
+            "end_seconds": 114.60266666666666
+          },
+          {
+            "start_seconds": 115.02933333333333,
+            "end_seconds": 115.11466666666666
+          },
+          {
+            "start_seconds": 116.13866666666667,
+            "end_seconds": 132.096
+          },
+          {
+            "start_seconds": 132.18133333333333,
+            "end_seconds": 132.52266666666668
+          },
+          {
+            "start_seconds": 132.608,
+            "end_seconds": 132.94933333333333
+          },
+          {
+            "start_seconds": 133.03466666666668,
+            "end_seconds": 133.20533333333333
+          },
+          {
+            "start_seconds": 133.29066666666668,
+            "end_seconds": 144.29866666666666
+          },
+          {
+            "start_seconds": 144.81066666666666,
+            "end_seconds": 145.152
+          },
+          {
+            "start_seconds": 145.32266666666666,
+            "end_seconds": 146.34666666666666
+          },
+          {
+            "start_seconds": 147.02933333333334,
+            "end_seconds": 147.11466666666666
+          },
+          {
+            "start_seconds": 147.54133333333334,
+            "end_seconds": 148.65066666666667
+          },
+          {
+            "start_seconds": 149.84533333333334,
+            "end_seconds": 150.86933333333334
+          },
+          {
+            "start_seconds": 151.808,
+            "end_seconds": 239.70133333333334
+          },
+          {
+            "start_seconds": 240.04266666666666,
+            "end_seconds": 240.128
+          },
+          {
+            "start_seconds": 240.21333333333334,
+            "end_seconds": 240.55466666666666
+          },
+          {
+            "start_seconds": 240.64,
+            "end_seconds": 240.72533333333334
+          },
+          {
+            "start_seconds": 240.81066666666666,
+            "end_seconds": 241.152
+          },
+          {
+            "start_seconds": 241.32266666666666,
+            "end_seconds": 241.408
+          },
+          {
+            "start_seconds": 242.432,
+            "end_seconds": 311.21066666666667
+          },
+          {
+            "start_seconds": 311.8933333333333,
+            "end_seconds": 313.00266666666664
+          },
+          {
+            "start_seconds": 322.9866666666667,
+            "end_seconds": 329.04533333333336
+          },
+          {
+            "start_seconds": 329.984,
+            "end_seconds": 330.0
+          }
+        ]
+      }
+    },
+    "7 Strings.wav": {
+      "file_size_bytes": 63360116,
+      "sha256": "e95e8893d1d89b714405eddc7ec50a3f340c48b5088eda19121372ca759d5fe9",
+      "wav": {
+        "encoding": 1,
+        "channels": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "block_align": 4,
+        "data_offset": 116,
+        "data_size": 63360000,
+        "frames": 15840000,
+        "duration_seconds": 330.0
+      },
+      "metrics": {
+        "peak": 0.204010009765625,
+        "peak_dbfs": -13.806970467234294,
+        "rms": 0.004961381922328013,
+        "rms_dbfs": -46.08794680225038,
+        "dc_offset": -8.088738990552497e-06,
+        "clipped_sample_count": 0,
+        "silence_threshold_dbfs": -60.0,
+        "active_regions": [
+          {
+            "start_seconds": 27.818666666666665,
+            "end_seconds": 29.269333333333332
+          },
+          {
+            "start_seconds": 52.650666666666666,
+            "end_seconds": 52.736
+          },
+          {
+            "start_seconds": 54.69866666666667,
+            "end_seconds": 55.04
+          },
+          {
+            "start_seconds": 55.12533333333333,
+            "end_seconds": 55.21066666666667
+          },
+          {
+            "start_seconds": 55.89333333333333,
+            "end_seconds": 55.97866666666667
+          },
+          {
+            "start_seconds": 56.23466666666667,
+            "end_seconds": 56.32
+          },
+          {
+            "start_seconds": 56.49066666666667,
+            "end_seconds": 59.562666666666665
+          },
+          {
+            "start_seconds": 59.648,
+            "end_seconds": 59.989333333333335
+          },
+          {
+            "start_seconds": 60.757333333333335,
+            "end_seconds": 60.842666666666666
+          },
+          {
+            "start_seconds": 64.256,
+            "end_seconds": 64.34133333333334
+          },
+          {
+            "start_seconds": 65.96266666666666,
+            "end_seconds": 66.21866666666666
+          },
+          {
+            "start_seconds": 77.824,
+            "end_seconds": 78.08
+          },
+          {
+            "start_seconds": 78.50666666666666,
+            "end_seconds": 78.592
+          },
+          {
+            "start_seconds": 78.93333333333334,
+            "end_seconds": 79.104
+          },
+          {
+            "start_seconds": 79.872,
+            "end_seconds": 80.04266666666666
+          },
+          {
+            "start_seconds": 80.128,
+            "end_seconds": 80.21333333333334
+          },
+          {
+            "start_seconds": 81.32266666666666,
+            "end_seconds": 81.49333333333334
+          },
+          {
+            "start_seconds": 81.664,
+            "end_seconds": 81.74933333333334
+          },
+          {
+            "start_seconds": 81.92,
+            "end_seconds": 82.26133333333334
+          },
+          {
+            "start_seconds": 86.61333333333333,
+            "end_seconds": 86.69866666666667
+          },
+          {
+            "start_seconds": 87.21066666666667,
+            "end_seconds": 87.296
+          },
+          {
+            "start_seconds": 87.89333333333333,
+            "end_seconds": 87.97866666666667
+          },
+          {
+            "start_seconds": 88.49066666666667,
+            "end_seconds": 88.576
+          },
+          {
+            "start_seconds": 88.91733333333333,
+            "end_seconds": 89.00266666666667
+          },
+          {
+            "start_seconds": 89.088,
+            "end_seconds": 89.17333333333333
+          },
+          {
+            "start_seconds": 89.51466666666667,
+            "end_seconds": 89.6
+          },
+          {
+            "start_seconds": 89.94133333333333,
+            "end_seconds": 90.02666666666667
+          },
+          {
+            "start_seconds": 90.28266666666667,
+            "end_seconds": 90.88
+          },
+          {
+            "start_seconds": 91.05066666666667,
+            "end_seconds": 91.136
+          },
+          {
+            "start_seconds": 91.22133333333333,
+            "end_seconds": 91.81866666666667
+          },
+          {
+            "start_seconds": 91.98933333333333,
+            "end_seconds": 92.16
+          },
+          {
+            "start_seconds": 92.416,
+            "end_seconds": 92.84266666666667
+          },
+          {
+            "start_seconds": 92.928,
+            "end_seconds": 93.61066666666666
+          },
+          {
+            "start_seconds": 93.696,
+            "end_seconds": 93.86666666666666
+          },
+          {
+            "start_seconds": 94.03733333333334,
+            "end_seconds": 95.31733333333334
+          },
+          {
+            "start_seconds": 95.40266666666666,
+            "end_seconds": 95.65866666666666
+          },
+          {
+            "start_seconds": 95.744,
+            "end_seconds": 96.42666666666666
+          },
+          {
+            "start_seconds": 96.512,
+            "end_seconds": 96.768
+          },
+          {
+            "start_seconds": 96.85333333333334,
+            "end_seconds": 97.024
+          },
+          {
+            "start_seconds": 97.10933333333334,
+            "end_seconds": 97.19466666666666
+          },
+          {
+            "start_seconds": 97.70666666666666,
+            "end_seconds": 97.792
+          },
+          {
+            "start_seconds": 98.98666666666666,
+            "end_seconds": 99.072
+          },
+          {
+            "start_seconds": 99.15733333333333,
+            "end_seconds": 99.49866666666667
+          },
+          {
+            "start_seconds": 99.75466666666667,
+            "end_seconds": 99.92533333333333
+          },
+          {
+            "start_seconds": 100.01066666666667,
+            "end_seconds": 100.18133333333333
+          },
+          {
+            "start_seconds": 100.43733333333333,
+            "end_seconds": 100.608
+          },
+          {
+            "start_seconds": 104.448,
+            "end_seconds": 104.61866666666667
+          },
+          {
+            "start_seconds": 118.272,
+            "end_seconds": 118.35733333333333
+          },
+          {
+            "start_seconds": 122.28266666666667,
+            "end_seconds": 122.368
+          },
+          {
+            "start_seconds": 122.88,
+            "end_seconds": 123.05066666666667
+          },
+          {
+            "start_seconds": 123.30666666666667,
+            "end_seconds": 123.47733333333333
+          },
+          {
+            "start_seconds": 123.73333333333333,
+            "end_seconds": 123.81866666666667
+          },
+          {
+            "start_seconds": 124.58666666666667,
+            "end_seconds": 124.672
+          },
+          {
+            "start_seconds": 124.75733333333334,
+            "end_seconds": 124.928
+          },
+          {
+            "start_seconds": 125.01333333333334,
+            "end_seconds": 125.09866666666667
+          },
+          {
+            "start_seconds": 133.12,
+            "end_seconds": 134.22933333333333
+          },
+          {
+            "start_seconds": 134.31466666666665,
+            "end_seconds": 134.48533333333333
+          },
+          {
+            "start_seconds": 149.93066666666667,
+            "end_seconds": 150.10133333333334
+          },
+          {
+            "start_seconds": 152.14933333333335,
+            "end_seconds": 152.23466666666667
+          },
+          {
+            "start_seconds": 152.576,
+            "end_seconds": 152.74666666666667
+          },
+          {
+            "start_seconds": 152.832,
+            "end_seconds": 154.53866666666667
+          },
+          {
+            "start_seconds": 154.96533333333332,
+            "end_seconds": 155.98933333333332
+          },
+          {
+            "start_seconds": 156.07466666666667,
+            "end_seconds": 157.09866666666667
+          },
+          {
+            "start_seconds": 157.44,
+            "end_seconds": 157.52533333333332
+          },
+          {
+            "start_seconds": 158.89066666666668,
+            "end_seconds": 159.14666666666668
+          },
+          {
+            "start_seconds": 161.19466666666668,
+            "end_seconds": 161.36533333333333
+          },
+          {
+            "start_seconds": 163.66933333333333,
+            "end_seconds": 164.096
+          },
+          {
+            "start_seconds": 164.18133333333333,
+            "end_seconds": 166.144
+          },
+          {
+            "start_seconds": 166.22933333333333,
+            "end_seconds": 166.57066666666665
+          },
+          {
+            "start_seconds": 166.656,
+            "end_seconds": 166.82666666666665
+          },
+          {
+            "start_seconds": 167.08266666666665,
+            "end_seconds": 168.02133333333333
+          },
+          {
+            "start_seconds": 168.10666666666665,
+            "end_seconds": 168.192
+          },
+          {
+            "start_seconds": 168.27733333333333,
+            "end_seconds": 168.36266666666666
+          },
+          {
+            "start_seconds": 175.01866666666666,
+            "end_seconds": 183.63733333333334
+          },
+          {
+            "start_seconds": 183.72266666666667,
+            "end_seconds": 184.14933333333335
+          },
+          {
+            "start_seconds": 184.23466666666667,
+            "end_seconds": 184.32
+          },
+          {
+            "start_seconds": 184.576,
+            "end_seconds": 185.17333333333335
+          },
+          {
+            "start_seconds": 185.344,
+            "end_seconds": 185.42933333333335
+          },
+          {
+            "start_seconds": 185.51466666666667,
+            "end_seconds": 185.6
+          },
+          {
+            "start_seconds": 185.68533333333335,
+            "end_seconds": 185.94133333333335
+          },
+          {
+            "start_seconds": 186.02666666666667,
+            "end_seconds": 186.45333333333335
+          },
+          {
+            "start_seconds": 186.70933333333332,
+            "end_seconds": 186.88
+          },
+          {
+            "start_seconds": 187.392,
+            "end_seconds": 187.47733333333332
+          },
+          {
+            "start_seconds": 187.56266666666667,
+            "end_seconds": 187.648
+          },
+          {
+            "start_seconds": 193.45066666666668,
+            "end_seconds": 193.62133333333333
+          },
+          {
+            "start_seconds": 193.792,
+            "end_seconds": 193.87733333333333
+          },
+          {
+            "start_seconds": 195.328,
+            "end_seconds": 195.49866666666668
+          },
+          {
+            "start_seconds": 195.84,
+            "end_seconds": 195.92533333333333
+          },
+          {
+            "start_seconds": 196.608,
+            "end_seconds": 196.69333333333333
+          },
+          {
+            "start_seconds": 196.94933333333333,
+            "end_seconds": 197.12
+          },
+          {
+            "start_seconds": 197.20533333333333,
+            "end_seconds": 197.29066666666668
+          },
+          {
+            "start_seconds": 197.46133333333333,
+            "end_seconds": 197.80266666666665
+          },
+          {
+            "start_seconds": 197.97333333333333,
+            "end_seconds": 203.17866666666666
+          },
+          {
+            "start_seconds": 208.72533333333334,
+            "end_seconds": 209.49333333333334
+          },
+          {
+            "start_seconds": 209.83466666666666,
+            "end_seconds": 209.92
+          },
+          {
+            "start_seconds": 210.09066666666666,
+            "end_seconds": 210.26133333333334
+          },
+          {
+            "start_seconds": 210.432,
+            "end_seconds": 210.51733333333334
+          },
+          {
+            "start_seconds": 210.60266666666666,
+            "end_seconds": 210.688
+          },
+          {
+            "start_seconds": 210.85866666666666,
+            "end_seconds": 211.28533333333334
+          },
+          {
+            "start_seconds": 211.37066666666666,
+            "end_seconds": 212.48
+          },
+          {
+            "start_seconds": 212.56533333333334,
+            "end_seconds": 212.736
+          },
+          {
+            "start_seconds": 212.90666666666667,
+            "end_seconds": 213.07733333333334
+          },
+          {
+            "start_seconds": 213.16266666666667,
+            "end_seconds": 213.58933333333334
+          },
+          {
+            "start_seconds": 213.67466666666667,
+            "end_seconds": 214.016
+          },
+          {
+            "start_seconds": 214.10133333333334,
+            "end_seconds": 216.576
+          },
+          {
+            "start_seconds": 216.66133333333335,
+            "end_seconds": 218.53866666666667
+          },
+          {
+            "start_seconds": 218.624,
+            "end_seconds": 221.952
+          },
+          {
+            "start_seconds": 222.63466666666667,
+            "end_seconds": 222.72
+          },
+          {
+            "start_seconds": 223.14666666666668,
+            "end_seconds": 223.232
+          },
+          {
+            "start_seconds": 223.65866666666668,
+            "end_seconds": 223.82933333333332
+          },
+          {
+            "start_seconds": 226.048,
+            "end_seconds": 226.21866666666668
+          },
+          {
+            "start_seconds": 226.38933333333333,
+            "end_seconds": 226.47466666666668
+          },
+          {
+            "start_seconds": 226.98666666666668,
+            "end_seconds": 227.24266666666668
+          },
+          {
+            "start_seconds": 227.328,
+            "end_seconds": 227.41333333333333
+          },
+          {
+            "start_seconds": 227.49866666666668,
+            "end_seconds": 227.75466666666668
+          },
+          {
+            "start_seconds": 228.096,
+            "end_seconds": 228.352
+          },
+          {
+            "start_seconds": 230.4,
+            "end_seconds": 230.48533333333333
+          },
+          {
+            "start_seconds": 230.82666666666665,
+            "end_seconds": 230.912
+          },
+          {
+            "start_seconds": 231.08266666666665,
+            "end_seconds": 231.168
+          },
+          {
+            "start_seconds": 231.25333333333333,
+            "end_seconds": 231.424
+          },
+          {
+            "start_seconds": 231.68,
+            "end_seconds": 231.76533333333333
+          },
+          {
+            "start_seconds": 232.02133333333333,
+            "end_seconds": 232.192
+          },
+          {
+            "start_seconds": 232.36266666666666,
+            "end_seconds": 232.448
+          },
+          {
+            "start_seconds": 232.61866666666666,
+            "end_seconds": 233.04533333333333
+          },
+          {
+            "start_seconds": 233.216,
+            "end_seconds": 233.30133333333333
+          },
+          {
+            "start_seconds": 233.55733333333333,
+            "end_seconds": 233.64266666666666
+          },
+          {
+            "start_seconds": 233.728,
+            "end_seconds": 233.984
+          },
+          {
+            "start_seconds": 234.58133333333333,
+            "end_seconds": 234.66666666666666
+          },
+          {
+            "start_seconds": 234.752,
+            "end_seconds": 234.83733333333333
+          },
+          {
+            "start_seconds": 234.92266666666666,
+            "end_seconds": 239.104
+          },
+          {
+            "start_seconds": 239.18933333333334,
+            "end_seconds": 241.57866666666666
+          },
+          {
+            "start_seconds": 241.74933333333334,
+            "end_seconds": 242.00533333333334
+          },
+          {
+            "start_seconds": 242.09066666666666,
+            "end_seconds": 242.34666666666666
+          },
+          {
+            "start_seconds": 242.51733333333334,
+            "end_seconds": 244.736
+          },
+          {
+            "start_seconds": 244.82133333333334,
+            "end_seconds": 246.69866666666667
+          },
+          {
+            "start_seconds": 267.34933333333333,
+            "end_seconds": 267.43466666666666
+          },
+          {
+            "start_seconds": 267.52,
+            "end_seconds": 267.6053333333333
+          },
+          {
+            "start_seconds": 267.94666666666666,
+            "end_seconds": 268.1173333333333
+          },
+          {
+            "start_seconds": 268.45866666666666,
+            "end_seconds": 268.544
+          },
+          {
+            "start_seconds": 269.056,
+            "end_seconds": 269.1413333333333
+          },
+          {
+            "start_seconds": 269.2266666666667,
+            "end_seconds": 269.48266666666666
+          },
+          {
+            "start_seconds": 269.90933333333334,
+            "end_seconds": 271.1893333333333
+          },
+          {
+            "start_seconds": 272.128,
+            "end_seconds": 280.14933333333335
+          },
+          {
+            "start_seconds": 280.49066666666664,
+            "end_seconds": 280.832
+          },
+          {
+            "start_seconds": 281.00266666666664,
+            "end_seconds": 281.088
+          },
+          {
+            "start_seconds": 281.25866666666667,
+            "end_seconds": 281.51466666666664
+          },
+          {
+            "start_seconds": 281.9413333333333,
+            "end_seconds": 282.112
+          },
+          {
+            "start_seconds": 282.19733333333335,
+            "end_seconds": 282.28266666666667
+          },
+          {
+            "start_seconds": 282.53866666666664,
+            "end_seconds": 282.624
+          },
+          {
+            "start_seconds": 282.88,
+            "end_seconds": 282.9653333333333
+          },
+          {
+            "start_seconds": 283.73333333333335,
+            "end_seconds": 292.43733333333336
+          },
+          {
+            "start_seconds": 292.5226666666667,
+            "end_seconds": 292.94933333333336
+          },
+          {
+            "start_seconds": 297.6426666666667,
+            "end_seconds": 298.752
+          },
+          {
+            "start_seconds": 311.97866666666664,
+            "end_seconds": 312.14933333333335
+          },
+          {
+            "start_seconds": 312.23466666666667,
+            "end_seconds": 312.4053333333333
+          },
+          {
+            "start_seconds": 321.024,
+            "end_seconds": 321.1093333333333
+          },
+          {
+            "start_seconds": 322.90133333333335,
+            "end_seconds": 323.328
+          },
+          {
+            "start_seconds": 323.4986666666667,
+            "end_seconds": 326.82666666666665
+          },
+          {
+            "start_seconds": 328.448,
+            "end_seconds": 328.87466666666666
+          },
+          {
+            "start_seconds": 329.984,
+            "end_seconds": 330.0
+          }
+        ]
+      }
+    },
+    "8 Synth.wav": {
+      "file_size_bytes": 63360116,
+      "sha256": "ed5c0dee0d005a48cee1beaa445639e4d19a0335a1ea55a075846faeb3cbba60",
+      "wav": {
+        "encoding": 1,
+        "channels": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "block_align": 4,
+        "data_offset": 116,
+        "data_size": 63360000,
+        "frames": 15840000,
+        "duration_seconds": 330.0
+      },
+      "metrics": {
+        "peak": 0.585723876953125,
+        "peak_dbfs": -4.6461414331295225,
+        "rms": 0.04991391698123949,
+        "rms_dbfs": -26.03556695307279,
+        "dc_offset": -6.994594419845427e-05,
+        "clipped_sample_count": 0,
+        "silence_threshold_dbfs": -60.0,
+        "active_regions": [
+          {
+            "start_seconds": 0.256,
+            "end_seconds": 13.824
+          },
+          {
+            "start_seconds": 14.336,
+            "end_seconds": 14.506666666666666
+          },
+          {
+            "start_seconds": 18.602666666666668,
+            "end_seconds": 18.688
+          },
+          {
+            "start_seconds": 18.773333333333333,
+            "end_seconds": 105.984
+          },
+          {
+            "start_seconds": 107.09333333333333,
+            "end_seconds": 107.43466666666667
+          },
+          {
+            "start_seconds": 115.2,
+            "end_seconds": 115.28533333333333
+          },
+          {
+            "start_seconds": 115.62666666666667,
+            "end_seconds": 115.712
+          },
+          {
+            "start_seconds": 116.13866666666667,
+            "end_seconds": 144.384
+          },
+          {
+            "start_seconds": 144.81066666666666,
+            "end_seconds": 144.896
+          },
+          {
+            "start_seconds": 145.32266666666666,
+            "end_seconds": 146.26133333333334
+          },
+          {
+            "start_seconds": 146.34666666666666,
+            "end_seconds": 146.432
+          },
+          {
+            "start_seconds": 147.62666666666667,
+            "end_seconds": 148.39466666666667
+          },
+          {
+            "start_seconds": 149.84533333333334,
+            "end_seconds": 150.61333333333334
+          },
+          {
+            "start_seconds": 151.89333333333335,
+            "end_seconds": 160.34133333333332
+          },
+          {
+            "start_seconds": 161.10933333333332,
+            "end_seconds": 163.328
+          },
+          {
+            "start_seconds": 163.41333333333333,
+            "end_seconds": 260.0106666666667
+          },
+          {
+            "start_seconds": 260.096,
+            "end_seconds": 260.1813333333333
+          },
+          {
+            "start_seconds": 260.77866666666665,
+            "end_seconds": 314.19733333333335
+          },
+          {
+            "start_seconds": 320.0,
+            "end_seconds": 329.04533333333336
+          },
+          {
+            "start_seconds": 329.984,
+            "end_seconds": 330.0
+          }
+        ]
+      }
+    },
+    "9 Other.wav": {
+      "file_size_bytes": 63360116,
+      "sha256": "a6a329feb81a07e300ce1a57b3e2b6493f4cee85400721c8e41dca8007aa1adc",
+      "wav": {
+        "encoding": 1,
+        "channels": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "block_align": 4,
+        "data_offset": 116,
+        "data_size": 63360000,
+        "frames": 15840000,
+        "duration_seconds": 330.0
+      },
+      "metrics": {
+        "peak": 0.736328125,
+        "peak_dbfs": -2.658572215400758,
+        "rms": 0.023971263228522405,
+        "rms_dbfs": -32.40618158155379,
+        "dc_offset": -5.8187265107125946e-05,
+        "clipped_sample_count": 0,
+        "silence_threshold_dbfs": -60.0,
+        "active_regions": [
+          {
+            "start_seconds": 1.792,
+            "end_seconds": 18.773333333333333
+          },
+          {
+            "start_seconds": 18.858666666666668,
+            "end_seconds": 18.944
+          },
+          {
+            "start_seconds": 19.11466666666667,
+            "end_seconds": 19.2
+          },
+          {
+            "start_seconds": 19.370666666666665,
+            "end_seconds": 19.456
+          },
+          {
+            "start_seconds": 22.186666666666667,
+            "end_seconds": 22.272
+          },
+          {
+            "start_seconds": 23.381333333333334,
+            "end_seconds": 23.466666666666665
+          },
+          {
+            "start_seconds": 24.405333333333335,
+            "end_seconds": 24.576
+          },
+          {
+            "start_seconds": 25.6,
+            "end_seconds": 62.63466666666667
+          },
+          {
+            "start_seconds": 62.976,
+            "end_seconds": 63.06133333333333
+          },
+          {
+            "start_seconds": 64.17066666666666,
+            "end_seconds": 64.34133333333334
+          },
+          {
+            "start_seconds": 64.68266666666666,
+            "end_seconds": 69.46133333333333
+          },
+          {
+            "start_seconds": 69.54666666666667,
+            "end_seconds": 69.71733333333333
+          },
+          {
+            "start_seconds": 74.32533333333333,
+            "end_seconds": 115.37066666666666
+          },
+          {
+            "start_seconds": 115.79733333333333,
+            "end_seconds": 144.896
+          },
+          {
+            "start_seconds": 144.98133333333334,
+            "end_seconds": 145.06666666666666
+          },
+          {
+            "start_seconds": 145.408,
+            "end_seconds": 145.57866666666666
+          },
+          {
+            "start_seconds": 145.664,
+            "end_seconds": 145.74933333333334
+          },
+          {
+            "start_seconds": 147.62666666666667,
+            "end_seconds": 148.30933333333334
+          },
+          {
+            "start_seconds": 149.84533333333334,
+            "end_seconds": 150.528
+          },
+          {
+            "start_seconds": 151.12533333333334,
+            "end_seconds": 241.408
+          },
+          {
+            "start_seconds": 242.34666666666666,
+            "end_seconds": 243.28533333333334
+          },
+          {
+            "start_seconds": 244.224,
+            "end_seconds": 244.30933333333334
+          },
+          {
+            "start_seconds": 244.48,
+            "end_seconds": 244.56533333333334
+          },
+          {
+            "start_seconds": 244.65066666666667,
+            "end_seconds": 246.44266666666667
+          },
+          {
+            "start_seconds": 246.528,
+            "end_seconds": 246.61333333333334
+          },
+          {
+            "start_seconds": 246.784,
+            "end_seconds": 246.86933333333334
+          },
+          {
+            "start_seconds": 247.04,
+            "end_seconds": 313.088
+          },
+          {
+            "start_seconds": 320.0,
+            "end_seconds": 329.1306666666667
+          },
+          {
+            "start_seconds": 329.89866666666666,
+            "end_seconds": 330.0
+          }
+        ]
+      }
+    },
+    "10 Brass.wav": {
+      "file_size_bytes": 63360116,
+      "sha256": "e4e61d33e129d73e332cd647a1e7c2d241b37cc9e79e05c9bca56dff376e4fb7",
+      "wav": {
+        "encoding": 1,
+        "channels": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "block_align": 4,
+        "data_offset": 116,
+        "data_size": 63360000,
+        "frames": 15840000,
+        "duration_seconds": 330.0
+      },
+      "metrics": {
+        "peak": 0.178070068359375,
+        "peak_dbfs": -14.988181491566579,
+        "rms": 0.0016446078876141993,
+        "rms_dbfs": -55.67875262351566,
+        "dc_offset": 8.111616577764954e-07,
+        "clipped_sample_count": 0,
+        "silence_threshold_dbfs": -60.0,
+        "active_regions": [
+          {
+            "start_seconds": 124.416,
+            "end_seconds": 124.50133333333333
+          },
+          {
+            "start_seconds": 124.58666666666667,
+            "end_seconds": 124.672
+          },
+          {
+            "start_seconds": 133.376,
+            "end_seconds": 134.22933333333333
+          },
+          {
+            "start_seconds": 134.4,
+            "end_seconds": 134.48533333333333
+          },
+          {
+            "start_seconds": 147.62666666666667,
+            "end_seconds": 147.79733333333334
+          },
+          {
+            "start_seconds": 149.93066666666667,
+            "end_seconds": 150.016
+          },
+          {
+            "start_seconds": 156.672,
+            "end_seconds": 156.75733333333332
+          },
+          {
+            "start_seconds": 158.89066666666668,
+            "end_seconds": 159.232
+          },
+          {
+            "start_seconds": 161.19466666666668,
+            "end_seconds": 161.70666666666668
+          },
+          {
+            "start_seconds": 269.99466666666666,
+            "end_seconds": 270.848
+          },
+          {
+            "start_seconds": 272.2986666666667,
+            "end_seconds": 273.3226666666667
+          },
+          {
+            "start_seconds": 274.60266666666666,
+            "end_seconds": 275.02933333333334
+          },
+          {
+            "start_seconds": 286.8906666666667,
+            "end_seconds": 286.976
+          },
+          {
+            "start_seconds": 327.424,
+            "end_seconds": 327.50933333333336
+          },
+          {
+            "start_seconds": 327.5946666666667,
+            "end_seconds": 329.1306666666667
+          },
+          {
+            "start_seconds": 329.984,
+            "end_seconds": 330.0
+          }
+        ]
+      }
+    },
+    "11 Woodwinds.wav": {
+      "file_size_bytes": 63360116,
+      "sha256": "2d2ddc000dcedf295abfe907fa4e6a0754883af31c2b709a739988e45c6b91eb",
+      "wav": {
+        "encoding": 1,
+        "channels": 2,
+        "sample_rate": 48000,
+        "bits_per_sample": 16,
+        "block_align": 4,
+        "data_offset": 116,
+        "data_size": 63360000,
+        "frames": 15840000,
+        "duration_seconds": 330.0
+      },
+      "metrics": {
+        "peak": 0.468994140625,
+        "peak_dbfs": -6.5766516621216145,
+        "rms": 0.026132539527638877,
+        "rms_dbfs": -31.656367680502008,
+        "dc_offset": -8.188168689458058e-06,
+        "clipped_sample_count": 0,
+        "silence_threshold_dbfs": -60.0,
+        "active_regions": [
+          {
+            "start_seconds": 0.256,
+            "end_seconds": 11.264
+          },
+          {
+            "start_seconds": 27.904,
+            "end_seconds": 38.05866666666667
+          },
+          {
+            "start_seconds": 38.144,
+            "end_seconds": 38.22933333333334
+          },
+          {
+            "start_seconds": 116.65066666666667,
+            "end_seconds": 125.44
+          },
+          {
+            "start_seconds": 125.52533333333334,
+            "end_seconds": 125.696
+          },
+          {
+            "start_seconds": 133.03466666666668,
+            "end_seconds": 143.36
+          },
+          {
+            "start_seconds": 180.224,
+            "end_seconds": 180.56533333333334
+          },
+          {
+            "start_seconds": 180.736,
+            "end_seconds": 180.82133333333334
+          },
+          {
+            "start_seconds": 180.992,
+            "end_seconds": 181.07733333333334
+          },
+          {
+            "start_seconds": 181.16266666666667,
+            "end_seconds": 181.248
+          },
+          {
+            "start_seconds": 181.33333333333334,
+            "end_seconds": 181.67466666666667
+          },
+          {
+            "start_seconds": 182.016,
+            "end_seconds": 194.38933333333333
+          },
+          {
+            "start_seconds": 194.56,
+            "end_seconds": 194.90133333333333
+          },
+          {
+            "start_seconds": 195.66933333333333,
+            "end_seconds": 195.75466666666668
+          },
+          {
+            "start_seconds": 196.18133333333333,
+            "end_seconds": 196.864
+          },
+          {
+            "start_seconds": 197.03466666666668,
+            "end_seconds": 197.376
+          },
+          {
+            "start_seconds": 198.05866666666665,
+            "end_seconds": 198.144
+          },
+          {
+            "start_seconds": 198.4,
+            "end_seconds": 200.02133333333333
+          },
+          {
+            "start_seconds": 200.10666666666665,
+            "end_seconds": 200.192
+          },
+          {
+            "start_seconds": 200.27733333333333,
+            "end_seconds": 201.216
+          },
+          {
+            "start_seconds": 201.38666666666666,
+            "end_seconds": 201.472
+          },
+          {
+            "start_seconds": 201.64266666666666,
+            "end_seconds": 201.728
+          },
+          {
+            "start_seconds": 238.336,
+            "end_seconds": 253.78133333333332
+          },
+          {
+            "start_seconds": 274.176,
+            "end_seconds": 274.2613333333333
+          },
+          {
+            "start_seconds": 274.3466666666667,
+            "end_seconds": 274.51733333333334
+          },
+          {
+            "start_seconds": 274.688,
+            "end_seconds": 275.02933333333334
+          },
+          {
+            "start_seconds": 275.456,
+            "end_seconds": 275.54133333333334
+          },
+          {
+            "start_seconds": 275.712,
+            "end_seconds": 284.58666666666664
+          },
+          {
+            "start_seconds": 284.672,
+            "end_seconds": 284.928
+          },
+          {
+            "start_seconds": 285.09866666666665,
+            "end_seconds": 285.184
+          },
+          {
+            "start_seconds": 286.5493333333333,
+            "end_seconds": 286.63466666666665
+          },
+          {
+            "start_seconds": 286.72,
+            "end_seconds": 287.232
+          },
+          {
+            "start_seconds": 287.5733333333333,
+            "end_seconds": 288.0853333333333
+          },
+          {
+            "start_seconds": 288.17066666666665,
+            "end_seconds": 288.34133333333335
+          },
+          {
+            "start_seconds": 288.4266666666667,
+            "end_seconds": 292.352
+          },
+          {
+            "start_seconds": 292.43733333333336,
+            "end_seconds": 292.5226666666667
+          },
+          {
+            "start_seconds": 292.608,
+            "end_seconds": 293.0346666666667
+          },
+          {
+            "start_seconds": 293.29066666666665,
+            "end_seconds": 293.376
+          },
+          {
+            "start_seconds": 293.71733333333333,
+            "end_seconds": 293.80266666666665
+          },
+          {
+            "start_seconds": 294.912,
+            "end_seconds": 295.424
+          },
+          {
+            "start_seconds": 295.50933333333336,
+            "end_seconds": 295.5946666666667
+          },
+          {
+            "start_seconds": 296.6186666666667,
+            "end_seconds": 296.96
+          },
+          {
+            "start_seconds": 297.728,
+            "end_seconds": 297.81333333333333
+          },
+          {
+            "start_seconds": 298.1546666666667,
+            "end_seconds": 298.41066666666666
+          },
+          {
+            "start_seconds": 298.496,
+            "end_seconds": 298.58133333333336
+          },
+          {
+            "start_seconds": 299.6906666666667,
+            "end_seconds": 299.776
+          },
+          {
+            "start_seconds": 307.8826666666667,
+            "end_seconds": 312.9173333333333
+          },
+          {
+            "start_seconds": 319.4026666666667,
+            "end_seconds": 327.5946666666667
+          },
+          {
+            "start_seconds": 329.984,
+            "end_seconds": 330.0
+          }
+        ]
+      }
+    }
+  }
+}
