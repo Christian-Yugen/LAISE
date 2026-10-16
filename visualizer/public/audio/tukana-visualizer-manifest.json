@@ -1,0 +1,38 @@
+{
+  "schema_version": "laise-visualizer-manifest-v1",
+  "track": "Tukãna — A Mata se Move",
+  "master_url": "/audio/TUKANA02_FINAL_MASTER_PCM24_48k.wav",
+  "master_sha256": "4f4d46a870faf29fa51867450a5a70cc82faad1b863d83bd40e89c6d27a3e271",
+  "master_label": "LAISE FINAL MASTER",
+  "duration_seconds": 330.0,
+  "sample_rate": 48000,
+  "channels": 2,
+  "source_count": 12,
+  "spatial_source": "T007",
+  "integrated_lufs": -16.9,
+  "true_peak_dbtp": -2.0,
+  "spatial_integrity": 97.34103450500878,
+  "delivery_status": "VALIDATED",
+  "delivery_source": "T009",
+  "visualizer_version": "V1.1",
+  "stems_state": "READY",
+  "motion_state": "OFFLINE",
+  "provenance": {
+    "mastering": {
+      "path": "projects/tukana_02_a_mata_se_move/experiments/TUK2_T008R1/reports/TUK2_T008R1_master_adjudication.json",
+      "sha256": "4f10a9dcb75da245b66c74d137ce5c6cc5fa8ecc073b089a666a57fa4af0a308"
+    },
+    "delivery": {
+      "path": "projects/tukana_02_a_mata_se_move/experiments/TUK2_T009/reports/TUK2_T009_delivery_validation.json",
+      "sha256": "b7182eaf15788f0038f26ad17c62769e9061eaea13f143d778e14fc358a88dec"
+    },
+    "spatial": {
+      "path": "projects/tukana_02_a_mata_se_move/experiments/TUK2_T007/spatial_scenes/TUK2_T007_automation_manifest.json",
+      "sha256": "954b82b30ace79356dc31284891e561554b9b4eb67cc26386212f94b54e94792"
+    },
+    "cues": {
+      "path": "visualizer/public/audio/tukana-stem-cues.json",
+      "sha256": "c880676240a480f72cf3dc42fc5b3a656bd38fd466a79474698abd81b99e944c"
+    }
+  }
+}
