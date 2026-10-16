@@ -23,8 +23,8 @@
         <div class="subtitle">
           SPATIAL AUDIO VISUALIZER
         </div>
-        <div class="version">
-          ORIGINAL CONCEPT · V001
+        <div class="version" id="visualizerVersion">
+          --
         </div>
       </div>
     </header>
@@ -44,7 +44,7 @@
         <span class="rail-dot"></span>
         <div>
           <strong>BINAURAL</strong>
-          <small>T007 LOCKED</small>
+          <small id="spatialSource">--</small>
           <small>MASTER SOURCE</small>
         </div>
       </section>
@@ -53,8 +53,8 @@
         <span class="rail-dot"></span>
         <div>
           <strong>STEMS</strong>
-          <small>12 SOURCES</small>
-          <small>V002 READY</small>
+          <small id="sourceCount">--</small>
+          <small id="stemsState">--</small>
         </div>
       </section>
 
@@ -63,7 +63,7 @@
         <div>
           <strong>MOTION</strong>
           <small>SPATIAL DATA</small>
-          <small>V002 READY</small>
+          <small id="motionState">--</small>
         </div>
       </section>
 
@@ -89,8 +89,8 @@
 
       <div class="now-playing">
         <small>NOW PLAYING</small>
-        <strong>Tukãna — A Mata se Move</strong>
-        <span>LAISE FINAL MASTER</span>
+        <strong id="trackTitle">--</strong>
+        <span id="masterLabel">--</span>
       </div>
 
       <div class="progress-area">
@@ -108,19 +108,19 @@
 
       <div class="metric">
         <small>INTEGRATED</small>
-        <strong>-16.90</strong>
+        <strong id="integratedLufs">--</strong>
         <span>LUFS</span>
       </div>
 
       <div class="metric">
         <small>TRUE PEAK</small>
-        <strong>-2.00</strong>
+        <strong id="truePeak">--</strong>
         <span>dBTP</span>
       </div>
 
       <div class="metric">
         <small>SPATIAL</small>
-        <strong>97.34</strong>
+        <strong id="spatialIntegrity">--</strong>
         <span>% integrity</span>
       </div>
 
@@ -128,7 +128,7 @@
         <div class="release-dot"></div>
         <div>
           <strong>FINAL DELIVERY</strong>
-          <span>VALIDATED</span>
+          <span id="deliveryStatus">--</span>
         </div>
       </div>
 

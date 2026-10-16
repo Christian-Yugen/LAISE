@@ -77,3 +77,53 @@ python visualizer/validate_terrain.py
 The committed reports in `validation-stem-sync/` cover the full 330-second cue
 simulation and browser checks of two musical passages. Backups and intermediate
 screenshots/recordings remain local and are not required to build the app.
+
+## V1.1R1 — Stabilization & Data Integrity
+
+Duration is synchronized from the media element immediately and on
+`loadedmetadata` / `durationchange`. Technical HUD values now come from
+`public/audio/tukana-visualizer-manifest.json` (schema
+`laise-visualizer-manifest-v1`). A metadata failure displays neutral values and
+`UNAVAILABLE`, logs an error, and does not block playback when master/cues work.
+
+Regenerate only this manifest from the approved local reports and assets:
+
+```powershell
+python -B visualizer/tools/build_visualizer_manifest.py
+```
+
+The aggregator reads T008R1 mastering metrics, T009 delivery/format data, and the
+T007 manifest/stem references in the existing cue asset. It verifies their
+hashes and writes only the technical manifest. Track title, master label,
+version and READY/OFFLINE labels are explicit display configuration in that
+generator, not new measured quantities. T009 PASS plus its release state maps
+to VALIDATED. `provenance` records input paths and hashes. The browser validates
+the schema, fields, ranges, status and master URL, **not the full WAV SHA-256**;
+that hash is checked offline by the generator. Runtime duration uses the audio
+element, not the manifest's duration field.
+
+Unlit materials remain unchanged. Ineffective PointLights and their exclusive
+bass/intensity computations were removed; FFT, ENERGY and bloom remain intact.
+
+Run the complete unit suite and build:
+
+```powershell
+node --test visualizer/tests/*.test.js
+python -B -m unittest discover -s visualizer/tests -p "test_*.py"
+cd visualizer
+npm run build
+```
+
+`tools/validate_stabilization.py before|after` records controlled 1920×1080
+captures, tests playback/seek/duration and verifies that manifest failure does
+not block audio. The `before` mode uses the recorded pre-stabilization local
+snapshot; it requires that snapshot and is evidence tooling, not an application
+dependency. Controlled captures freeze the clock and seed particle creation;
+the musical sample injects the unchanged cues from 46 to 48 s. Live playback is
+tested separately without frozen animation. Evidence is written under
+`reports/v1_1r1-evidence/`.
+
+**KNOWN LIMITATION:** Full negative terrain envelope framing is deferred to
+LAISE Visualizer V1.2 — Spatial Field Composition. V1.1R1 intentionally preserves
+the approved camera, pose and geometry; it does not guarantee fit of all −2.8
+extremes. No V1.2 behavior is implemented.

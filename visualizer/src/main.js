@@ -41,6 +41,75 @@ const timelineFill =
 const energyLabel =
   document.querySelector("#energy");
 
+// Technical metadata is independent of cueReady and must never gate playback.
+// BEGIN TECHNICAL MANIFEST
+function validateTechnicalManifest(data, masterUrl) {
+  if (!data || data.schema_version !== "laise-visualizer-manifest-v1") {
+    throw new Error("Unsupported technical manifest schema");
+  }
+  for (const key of ["track", "master_url", "master_sha256", "master_label",
+    "spatial_source", "delivery_source", "visualizer_version", "stems_state", "motion_state"]) {
+    if (typeof data[key] !== "string" || !data[key].trim()) throw new Error(`Invalid ${key}`);
+  }
+  if (data.master_url !== masterUrl || !/^\/audio\/[^?#]+$/.test(data.master_url)) {
+    throw new Error("Technical manifest/master URL mismatch");
+  }
+  if (!/^[a-f0-9]{64}$/.test(data.master_sha256)) throw new Error("Invalid master hash");
+  for (const key of ["duration_seconds", "sample_rate", "channels", "source_count",
+    "integrated_lufs", "true_peak_dbtp", "spatial_integrity"]) {
+    if (!Number.isFinite(data[key])) throw new Error(`Invalid ${key}`);
+  }
+  for (const key of ["sample_rate", "channels", "source_count"]) {
+    if (!Number.isInteger(data[key]) || data[key] <= 0) throw new Error(`Invalid ${key}`);
+  }
+  if (data.duration_seconds <= 0 || data.spatial_integrity < 0 || data.spatial_integrity > 100) {
+    throw new Error("Invalid manifest measurement range");
+  }
+  if (data.delivery_status !== "VALIDATED" || data.stems_state !== "READY" || data.motion_state !== "OFFLINE") {
+    throw new Error("Unsupported technical status");
+  }
+  return data;
+}
+
+function renderTechnicalHud(data) {
+  const values = data ? {
+    trackTitle: data.track,
+    masterLabel: data.master_label,
+    integratedLufs: data.integrated_lufs.toFixed(2),
+    truePeak: data.true_peak_dbtp.toFixed(2),
+    spatialIntegrity: data.spatial_integrity.toFixed(2),
+    sourceCount: `${data.source_count} SOURCES`,
+    spatialSource: data.spatial_source,
+    stemsState: `${data.visualizer_version} ${data.stems_state}`,
+    motionState: `${data.visualizer_version} ${data.motion_state}`,
+    visualizerVersion: `ORIGINAL CONCEPT · ${data.visualizer_version}`,
+    deliveryStatus: data.delivery_status
+  } : {
+    trackTitle: "--", masterLabel: "--", integratedLufs: "--", truePeak: "--",
+    spatialIntegrity: "--", sourceCount: "--", spatialSource: "--", stemsState: "--",
+    motionState: "--", visualizerVersion: "--", deliveryStatus: "UNAVAILABLE"
+  };
+  for (const [id, text] of Object.entries(values)) document.getElementById(id).textContent = text;
+  const master = document.getElementById("masterLabel");
+  master.dataset.masterUrl = data?.master_url ?? "";
+  master.dataset.masterSha256 = data?.master_sha256 ?? "";
+  const delivery = document.getElementById("deliveryStatus");
+  delivery.dataset.source = data?.delivery_source ?? "";
+  delivery.title = data ? `Delivery provenance: ${data.delivery_source}` : "Technical metadata unavailable";
+}
+// END TECHNICAL MANIFEST
+
+fetch("/audio/tukana-visualizer-manifest.json")
+  .then(response => {
+    if (!response.ok) throw new Error("Could not load technical manifest");
+    return response.json();
+  })
+  .then(data => renderTechnicalHud(validateTechnicalManifest(data, audio.getAttribute("src"))))
+  .catch(error => {
+    renderTechnicalHud(null);
+    console.error("LAISE technical metadata unavailable:", error);
+  });
+
 
 /* =========================================================
    THREE
@@ -185,40 +254,8 @@ frameTerrain();
    LIGHT
 ========================================================= */
 
-const warmLight =
-  new THREE.PointLight(
-    0xe19a51,
-    12,
-    22
-  );
-
-warmLight.position.set(
-  0,
-  5,
-  1
-);
-
-scene.add(
-  warmLight
-);
-
-
-const coolLight =
-  new THREE.PointLight(
-    0x37d6bd,
-    8,
-    20
-  );
-
-coolLight.position.set(
-  5,
-  2,
-  -2
-);
-
-scene.add(
-  coolLight
-);
+// All active scene materials are unlit (MeshBasicMaterial / PointsMaterial).
+// PointLights and their exclusive intensity calculations have no visual effect.
 
 
 /* =========================================================
@@ -782,17 +819,15 @@ function formatTime(
 }
 
 
-audio.addEventListener(
-  "loadedmetadata",
-  () => {
-
-    durationLabel.textContent =
-      formatTime(
-        audio.duration
-      );
-
+function syncDurationLabel() {
+  if (Number.isFinite(audio.duration) && audio.duration > 0) {
+    durationLabel.textContent = formatTime(audio.duration);
   }
-);
+}
+
+audio.addEventListener("loadedmetadata", syncDurationLabel);
+audio.addEventListener("durationchange", syncDurationLabel);
+syncDurationLabel();
 
 
 audio.addEventListener(
@@ -904,14 +939,6 @@ startButton.addEventListener(
 const clock = new THREE.Clock();
 let previousTime = 0;
 
-function bandEnergy(lowHz, highHz) {
-  const hzPerBin = audioContext.sampleRate / analyser.fftSize;
-  const first = Math.max(1, Math.ceil(lowHz / hzPerBin));
-  const last = Math.min(smoothed.length, Math.ceil(highHz / hzPerBin));
-  let sum = 0;
-  for (let i = first; i < last; i++) sum += smoothed[i] / 255;
-  return sum / Math.max(1, last - first);
-}
 
 
 function updateSoundWaves(delta, flushPause = false) {
@@ -982,7 +1009,6 @@ function animate() {
     }%`;
 
 
-  const bass = bandEnergy(30, 220);
   updateSoundWaves(delta);
 
   for (let i = 0; i < positions.count; i++) {
@@ -1010,16 +1036,6 @@ function animate() {
     0.45 + Math.min(averageEnergy * 0.8, 0.25);
 
 
-  warmLight.intensity =
-    7
-    +
-    bass * 17;
-
-
-  coolLight.intensity =
-    5
-    +
-    averageEnergy * 12;
 
 
   composer.render();
