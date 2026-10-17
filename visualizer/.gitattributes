@@ -1,0 +1,13 @@
+# Approved artifact hashes are byte-exact, including their existing line endings.
+* whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# Unified patches contain intentional context-line prefixes; they are evidence.
+/reports/**/*.diff -whitespace
+/index.html -text
+/src/main.js -text
+/src/style.css -text
+/src/audio-cue-timeline.js -text
+/src/audio-motion-recovery.js -text
+/src/ripple-field.js -text
+/public/audio/tukana-stem-cues.json -text
+/public/audio/tukana-visualizer-manifest.json -text
+/tests/fixtures/** -text

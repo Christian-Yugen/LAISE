@@ -2,10 +2,12 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import assert from 'node:assert/strict';
 import { AudioCueTimeline } from '../src/audio-cue-timeline.js';
 import { RippleField } from '../src/ripple-field.js';
+import { fieldConfiguration } from './field_configuration.mjs';
 
 const data=JSON.parse(readFileSync(new URL('../public/audio/tukana-stem-cues.json',import.meta.url),'utf8'));
 const timeline=new AudioCueTimeline(data);
-const field=new RippleField(16,12,120,100);
+const {width,depth,segmentsX,segmentsZ}=fieldConfiguration();
+const field=new RippleField(width,depth,segmentsX,segmentsZ);
 let maxHeight=0;
 for(let frame=0;frame<=Math.ceil(data.duration*60);frame++) {
   timeline.step(Math.min(data.duration,frame/60),true,
@@ -23,7 +25,7 @@ assert.ok(settled<0.01);
 const report={durationSeconds:data.duration,expectedEvents:data.events.length,
   emittedEvents:field.impulseCount,sourceCount:data.stems.length,
   maxSampledRawHeight:maxHeight,settledHeight:settled,checks:'passed'};
-const output=new URL('../validation-stem-sync/',import.meta.url);
+const output=new URL('../reports/v1_2b-evidence/',import.meta.url);
 mkdirSync(output,{recursive:true});
 writeFileSync(new URL('full-track.json',output),JSON.stringify(report,null,2));
 console.log(JSON.stringify(report,null,2));

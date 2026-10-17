@@ -1,0 +1,64 @@
+{
+  "protected": {
+    "index.html": {
+      "before": "e891a183ce0944bc5cf84b0de33fac7030e06fd182dc05a7e73578745810d967",
+      "after": "e891a183ce0944bc5cf84b0de33fac7030e06fd182dc05a7e73578745810d967",
+      "identical": true
+    },
+    "src/style.css": {
+      "before": "f4001a9fd55a73c30072ef3ed843c2ae5da078f568fdda09cd15cbb8875c1343",
+      "after": "f4001a9fd55a73c30072ef3ed843c2ae5da078f568fdda09cd15cbb8875c1343",
+      "identical": true
+    },
+    "src/audio-motion-recovery.js": {
+      "before": "2a9939775cbd54c0025eca3c594a69ae0d3324bfbc1d2dd882d24836abc05e21",
+      "after": "2a9939775cbd54c0025eca3c594a69ae0d3324bfbc1d2dd882d24836abc05e21",
+      "identical": true
+    },
+    "src/ripple-field.js": {
+      "before": "3525e4ee424a4af054be7195129dc6c458b1132412b46921ef6b42e9f7a03f50",
+      "after": "3525e4ee424a4af054be7195129dc6c458b1132412b46921ef6b42e9f7a03f50",
+      "identical": true
+    },
+    "public/audio/TUKANA02_FINAL_MASTER_PCM24_48k.wav": {
+      "sha256": "4f4d46a870faf29fa51867450a5a70cc82faad1b863d83bd40e89c6d27a3e271"
+    },
+    "public/audio/tukana-stem-cues.json": {
+      "sha256": "c880676240a480f72cf3dc42fc5b3a656bd38fd466a79474698abd81b99e944c"
+    },
+    "public/audio/tukana-visualizer-manifest.json": {
+      "sha256": "d9e30acd15b532ce44e7a05ee3cffcf22c1e602e55623018ae9b241065e9f62d"
+    }
+  },
+  "visualSections": {
+    "camera": {
+      "identical": true,
+      "sha256": "9157137adf7dce5a16f401b49ed97b0ec1494ce31e2b7875370385003071b264"
+    },
+    "rendering": {
+      "identical": true,
+      "sha256": "5e72c8409492dfe08ebc2c8cf1e4dfeb0ae7ef8c57052ae6a4182af9d0c36d2f"
+    }
+  },
+  "captures": [
+    {
+      "time": 0,
+      "beforeSha256": "98c8583669870ac24aae80087ca9796dfc41cd843ee289701ff40751b69be67f",
+      "afterSha256": "98c8583669870ac24aae80087ca9796dfc41cd843ee289701ff40751b69be67f",
+      "identicalPng": true
+    },
+    {
+      "time": 46.5,
+      "beforeSha256": "24131777e63e695615c6f06cf4759905f9941b34984cf8b5649690a0e8b8026d",
+      "afterSha256": "24131777e63e695615c6f06cf4759905f9941b34984cf8b5649690a0e8b8026d",
+      "identicalPng": true
+    },
+    {
+      "time": 200.5,
+      "beforeSha256": "e17e2fde6a46774a1db0f961b3f59dcea063ce47f0843c5c270f444f2a256649",
+      "afterSha256": "e17e2fde6a46774a1db0f961b3f59dcea063ce47f0843c5c270f444f2a256649",
+      "identicalPng": true
+    }
+  ],
+  "pass": true
+}

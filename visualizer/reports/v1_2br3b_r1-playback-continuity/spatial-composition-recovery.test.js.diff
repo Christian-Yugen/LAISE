@@ -1,0 +1,18 @@
+--- R3B/tests/spatial-composition-recovery.test.js
++++ R3B-R1/tests/spatial-composition-recovery.test.js
+@@ -20,10 +20,12 @@
+     assert.ok(x>0&&x<w&&y>0&&q.z>-1&&q.z<1);
+   }
+ });
+-test('R2 leaves approved R1 calibration and musical pipeline byte-identical',()=>{
++test('approved R1 calibration and physical equations remain byte-identical',()=>{
+   for(const [name,expected] of Object.entries({
+     'audio-motion-recovery.js':'2a9939775cbd54c0025eca3c594a69ae0d3324bfbc1d2dd882d24836abc05e21',
+-    'ripple-field.js':'3525e4ee424a4af054be7195129dc6c458b1132412b46921ef6b42e9f7a03f50',
+-    'audio-cue-timeline.js':'035b469b9d8af2e4775bc8dfed8ff08f01aefc90427da286e0b18ed17ba18b9d'
++    'ripple-field.js':'3525e4ee424a4af054be7195129dc6c458b1132412b46921ef6b42e9f7a03f50'
+   }))assert.equal(createHash('sha256').update(readFileSync(new URL('../src/'+name,import.meta.url))).digest('hex'),expected);
+ });
++test('pre-recovery temporal baseline is retained for normal-before/after regression',()=>{
++  assert.equal(createHash('sha256').update(readFileSync(new URL('../backups/V1_2BR3B_R1_PRE_CONTINUITY/src/audio-cue-timeline.js',import.meta.url))).digest('hex'),'035b469b9d8af2e4775bc8dfed8ff08f01aefc90427da286e0b18ed17ba18b9d');
++});

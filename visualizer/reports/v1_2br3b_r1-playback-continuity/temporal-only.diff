@@ -1,0 +1,65 @@
+--- R3B
++++ R3B-R1
+@@ -766,15 +766,39 @@
+   });
+ 
+ // A seek starts a new acoustic moment; do not keep waves from the old section.
+-audio.addEventListener("seeking", () => {
++function beginMediaSeek() {
++  if (cueTimeline?.isSeeking) return;
+   rippleField.reset();
+   smoothed.fill(0);
+   cueTimeline?.seek(audio.currentTime);
++  if (cueTimeline) cueTimeline.isSeeking = true;
++}
++audio.addEventListener("seeking", beginMediaSeek);
++audio.addEventListener("seeked", () => {
++  if (!cueTimeline) return;
++  // Final destination may differ from the requested position after clamping.
++  const epoch = cueTimeline.playbackEpoch;
++  cueTimeline.seek(audio.currentTime);
++  cueTimeline.playbackEpoch = epoch;
++  cueTimeline.isSeeking = false;
++});
++audio.addEventListener("emptied", () => {
++  rippleField.reset();
++  cueTimeline?.seek(0);
+ });
+ 
+ // Flush the fraction of audio played since the last rendered frame before pause.
+ audio.addEventListener("pause", () => {
+   if (!audio.seeking) updateSoundWaves(0, true);
++});
++audio.addEventListener("ended", () => {
++  updateSoundWaves(0, true);
++});
++audio.addEventListener("play", () => {
++  if (cueTimeline && audio.currentTime < cueTimeline.lastTime && !audio.seeking) {
++    rippleField.reset();
++    cueTimeline.seek(audio.currentTime);
++  }
+ });
+ 
+ 
+@@ -948,6 +972,7 @@
+       );
+ 
+ 
++    beginMediaSeek();
+     audio.currentTime =
+       ratio *
+       audio.duration;
+@@ -999,10 +1024,9 @@
+ 
+ function updateSoundWaves(delta, flushPause = false) {
+   const playing = flushPause || (!audio.paused && !audio.seeking && !audio.ended);
+-  if (playing && cueTimeline && Math.abs(audio.currentTime - cueTimeline.lastTime) > 0.3) {
+-    rippleField.reset();
+-  }
+-  const synced = cueTimeline?.step(audio.currentTime, playing,
++  const targetTime = flushPause && Number.isFinite(audio.duration)
++    ? Math.min(audio.currentTime, audio.duration) : audio.currentTime;
++  const synced = cueTimeline?.step(targetTime, playing,
+     cue => rippleField.exciteAt(cue.x, cue.z, cue.strength, cue.width),
+     seconds => rippleField.advance(seconds));
+   // After pause/end, existing waves are allowed to reflect and settle naturally.

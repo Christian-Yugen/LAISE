@@ -1,0 +1,213 @@
+{
+  "pass": true,
+  "initial": {
+    "time": 0.469333,
+    "ended": false,
+    "finished": false,
+    "error": null,
+    "totalCues": 10282,
+    "appliedCues": 0,
+    "uniqueAppliedCues": 0,
+    "nextCueIndex": 0,
+    "simulationTime": 0.461333,
+    "playbackEpoch": 1,
+    "catchUpCount": 0,
+    "largestCatchUpMs": 30.123999999999985,
+    "unexpectedResetCount": 0
+  },
+  "final": {
+    "time": 2.890667,
+    "ended": false,
+    "finished": false,
+    "error": null,
+    "totalCues": 10282,
+    "appliedCues": 26,
+    "uniqueAppliedCues": 26,
+    "nextCueIndex": 26,
+    "simulationTime": 2.890667,
+    "playbackEpoch": 1,
+    "catchUpCount": 0,
+    "largestCatchUpMs": 30.123999999999985,
+    "unexpectedResetCount": 0
+  },
+  "actualBackgroundVisibility": "visible",
+  "visibilityEvents": [],
+  "hiddenSupported": false,
+  "method": "second foreground tab plus CDP frozen/active lifecycle; no visibility property overrides",
+  "audit": {
+    "records": [
+      {
+        "cueIndex": 0,
+        "playbackEpoch": 1,
+        "simulationTime": 0.592,
+        "mediaTime": 0.599993
+      },
+      {
+        "cueIndex": 1,
+        "playbackEpoch": 1,
+        "simulationTime": 0.712,
+        "mediaTime": 0.730667
+      },
+      {
+        "cueIndex": 2,
+        "playbackEpoch": 1,
+        "simulationTime": 0.912,
+        "mediaTime": 0.930667
+      },
+      {
+        "cueIndex": 3,
+        "playbackEpoch": 1,
+        "simulationTime": 1.232,
+        "mediaTime": 1.24
+      },
+      {
+        "cueIndex": 4,
+        "playbackEpoch": 1,
+        "simulationTime": 1.432,
+        "mediaTime": 1.44
+      },
+      {
+        "cueIndex": 5,
+        "playbackEpoch": 1,
+        "simulationTime": 1.672,
+        "mediaTime": 1.68
+      },
+      {
+        "cueIndex": 6,
+        "playbackEpoch": 1,
+        "simulationTime": 1.88,
+        "mediaTime": 1.88
+      },
+      {
+        "cueIndex": 7,
+        "playbackEpoch": 1,
+        "simulationTime": 2.032,
+        "mediaTime": 2.04
+      },
+      {
+        "cueIndex": 8,
+        "playbackEpoch": 1,
+        "simulationTime": 2.152,
+        "mediaTime": 2.16
+      },
+      {
+        "cueIndex": 9,
+        "playbackEpoch": 1,
+        "simulationTime": 2.2,
+        "mediaTime": 2.210667
+      },
+      {
+        "cueIndex": 10,
+        "playbackEpoch": 1,
+        "simulationTime": 2.2,
+        "mediaTime": 2.210667
+      },
+      {
+        "cueIndex": 11,
+        "playbackEpoch": 1,
+        "simulationTime": 2.2,
+        "mediaTime": 2.210667
+      },
+      {
+        "cueIndex": 12,
+        "playbackEpoch": 1,
+        "simulationTime": 2.352,
+        "mediaTime": 2.36
+      },
+      {
+        "cueIndex": 13,
+        "playbackEpoch": 1,
+        "simulationTime": 2.352,
+        "mediaTime": 2.36
+      },
+      {
+        "cueIndex": 14,
+        "playbackEpoch": 1,
+        "simulationTime": 2.352,
+        "mediaTime": 2.36
+      },
+      {
+        "cueIndex": 15,
+        "playbackEpoch": 1,
+        "simulationTime": 2.352,
+        "mediaTime": 2.36
+      },
+      {
+        "cueIndex": 16,
+        "playbackEpoch": 1,
+        "simulationTime": 2.472,
+        "mediaTime": 2.479948
+      },
+      {
+        "cueIndex": 17,
+        "playbackEpoch": 1,
+        "simulationTime": 2.472,
+        "mediaTime": 2.479948
+      },
+      {
+        "cueIndex": 18,
+        "playbackEpoch": 1,
+        "simulationTime": 2.48,
+        "mediaTime": 2.490667
+      },
+      {
+        "cueIndex": 19,
+        "playbackEpoch": 1,
+        "simulationTime": 2.48,
+        "mediaTime": 2.490667
+      },
+      {
+        "cueIndex": 20,
+        "playbackEpoch": 1,
+        "simulationTime": 2.624,
+        "mediaTime": 2.629199
+      },
+      {
+        "cueIndex": 21,
+        "playbackEpoch": 1,
+        "simulationTime": 2.688,
+        "mediaTime": 2.690667
+      },
+      {
+        "cueIndex": 22,
+        "playbackEpoch": 1,
+        "simulationTime": 2.704,
+        "mediaTime": 2.709333
+      },
+      {
+        "cueIndex": 23,
+        "playbackEpoch": 1,
+        "simulationTime": 2.744,
+        "mediaTime": 2.76
+      },
+      {
+        "cueIndex": 24,
+        "playbackEpoch": 1,
+        "simulationTime": 2.816,
+        "mediaTime": 2.829333
+      },
+      {
+        "cueIndex": 25,
+        "playbackEpoch": 1,
+        "simulationTime": 2.824,
+        "mediaTime": 2.829333
+      }
+    ],
+    "resets": [],
+    "events": [
+      {
+        "event": "playing",
+        "time": 0,
+        "epoch": 1
+      },
+      {
+        "event": "pause",
+        "time": 2.890667,
+        "epoch": 1
+      }
+    ],
+    "gaps": [],
+    "finished": false
+  },
+  "errors": []
+}

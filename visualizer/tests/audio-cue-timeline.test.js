@@ -50,9 +50,10 @@ test('pause/resume never repeats an attack; seeking skips old hits and permits r
   assert.deepEqual(emitted,[0.1,0.2,0.4,0.1]);
 });
 
-test('background jumps discard stale events instead of creating a burst', () => {
+test('explicit discontinuity skips unplayed events instead of creating a burst', () => {
   const track=timeline([cue(0.1),cue(0.2),cue(2.1)]);
   const emitted=[];
+  track.seek(2);
   track.step(2,true,e=>emitted.push(e.time),()=>{});
   track.step(2.2,true,e=>emitted.push(e.time),()=>{});
   assert.deepEqual(emitted,[2.1]);

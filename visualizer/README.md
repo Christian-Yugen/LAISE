@@ -24,7 +24,8 @@ In `src/main.js`:
 - `TERRAIN`: surface width, depth and maximum wave height.
 - `MESH_ANGLES`: horizontal, vertical and lateral rotations, in degrees.
 - `SCREEN_POSITION`: horizontal/vertical pixel offset; positive means right/down.
-- `CAMERA.magnification`: screen size multiplier, constrained to retain margins.
+- `CAMERA.span`, `CAMERA.elevation`, `CAMERA.distance`, `CAMERA.widthTarget`: orthographic composition.
+  `frameTerrain()` preserves approved width and anchors the base FRONT above the listener.
 
 In `src/ripple-field.js`, `RIPPLE_SETTINGS` controls propagation speed, damping,
 edge damping, restoring force and impulse intensity. Camera and surface pose
@@ -123,7 +124,42 @@ the musical sample injects the unchanged cues from 46 to 48 s. Live playback is
 tested separately without frozen animation. Evidence is written under
 `reports/v1_1r1-evidence/`.
 
-**KNOWN LIMITATION:** Full negative terrain envelope framing is deferred to
-LAISE Visualizer V1.2 — Spatial Field Composition. V1.1R1 intentionally preserves
-the approved camera, pose and geometry; it does not guarantee fit of all −2.8
-extremes. No V1.2 behavior is implemented.
+## LAISE Visualizer V1.2 - APPROVED
+
+Final approved baseline: R3B composition, automatic R1 Audio Motion Recovery and
+R3B-R1 Playback Continuity Recovery. The physical domain is 16x16 with 128x128
+segments, yaw 45 degrees and an OrthographicCamera at 16 degrees elevation.
+At 1920x1080 the field base is 1682.861971 px wide; FRONT is Y=870, eight pixels
+above the listener. The negative deformation envelope may pass behind existing
+listener/HUD overlays and, at large viewports, below the viewport edge.
+The camera remains fixed during playback. No instrument-specific behavior.
+
+The media clock drives cue processing. Render stalls trigger deterministic
+catch-up, never inferred seek or discarded cues. Explicit seeks start a new
+epoch, clear the field and resynchronize to the destination. Ended flushes the
+last played interval. Physical equations, cues, master, manifest, R1 calibration,
+colors, particles and bloom remain preserved.
+
+Validation: 78 JavaScript + 4 Python unit tests PASS; production build PASS;
+90 synthetic stall cases and full-track stress/equivalence PASS. Three normal
+330 s playbacks and a fourth with injected stalls each applied 10,282/10,282
+unique cues with zero dropped, duplicate or unexpected reset.
+
+From the visualizer directory:
+
+```powershell
+node --test tests/*.test.js
+python -B -m unittest discover -s tests -p "test_*.py"
+node tools/audit_playback_continuity.mjs
+npm run build
+```
+
+With Vite on localhost:5173 and Chrome/Playwright installed,
+`tools/validate_playback_continuity.py` repeats the four real playbacks and controls.
+`tools/verify_continuity_freeze.py` checks protected files and seeded normal PNGs
+against the minimal `tests/fixtures/r3b-pre-continuity` fixture. The WAV is local
+and intentionally ignored; its expected hash is recorded in the technical report.
+
+Evidence: `reports/LAISE_VISUALIZER_V1_2B_R3B_R1_PLAYBACK_CONTINUITY_RECOVERY.md`
+and `reports/v1_2br3b_r1-playback-continuity/`. Historical working backups,
+exploratory renders and older phase validators remain local. No V1.3 changes.

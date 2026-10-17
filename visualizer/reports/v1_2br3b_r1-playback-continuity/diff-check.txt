@@ -1,0 +1,7 @@
+Exit code: 0
+warning: in the working copy of 'visualizer/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'visualizer/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'visualizer/src/audio-cue-timeline.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'visualizer/src/style.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'visualizer/tests/audio-cue-timeline.test.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'visualizer/tools/validate_cue_track.mjs', LF will be replaced by CRLF the next time Git touches it
