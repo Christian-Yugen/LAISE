@@ -1,0 +1,14 @@
+{
+  "pass": true,
+  "checks": {
+    "freeze-unit-js": 0,
+    "freeze-unit-python": 0,
+    "freeze-build": 0,
+    "freeze-sanity": 0,
+    "freeze-playback": 0
+  },
+  "previousTests": 110,
+  "gestureJsonByteIdentical": true,
+  "gestureJsonSha256": "6c2c0796fd42dc178f7211061b3b5a75fad412b9e8e5a7324b8db4a1f6c8dc54",
+  "productionV12Preserved": true
+}

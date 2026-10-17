@@ -1,0 +1,13 @@
+{
+  "baseline": "LAISE Visualizer V1.3A - APPROVED analytic foundation",
+  "tag": "LAISE_VISUALIZER_V1_3A_APPROVED",
+  "v12Commit": "6bc4b130f86356f0dd6994a55dfc91f4d78f7acb",
+  "gestureJsonSha256": "6c2c0796fd42dc178f7211061b3b5a75fad412b9e8e5a7324b8db4a1f6c8dc54",
+  "sources": 12,
+  "gestures": 2583,
+  "attacks": 10282,
+  "tests": 110,
+  "classification": "heuristic evidence, not absolute musical truth",
+  "runtimeChanges": false,
+  "report": "visualizer/reports/LAISE_VISUALIZER_V1_3A_MUSICAL_GESTURE_INTELLIGENCE.md"
+}

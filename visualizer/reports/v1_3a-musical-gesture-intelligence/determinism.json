@@ -1,0 +1,21 @@
+{
+  "pass": true,
+  "twoCompleteAnalyses": true,
+  "byteIdentical": true,
+  "sha256Run1": "6c2c0796fd42dc178f7211061b3b5a75fad412b9e8e5a7324b8db4a1f6c8dc54",
+  "sha256Run2": "6c2c0796fd42dc178f7211061b3b5a75fad412b9e8e5a7324b8db4a1f6c8dc54",
+  "featureHashesBothRuns": {
+    "backing_vocals.json": "1351d25cf02c8b5a68dbf8cfc90d4727eb28f6bd4703d44475c43f269f53d55d",
+    "bass.json": "af721b1e68bd3c90924a8304d31150dc8d2eb06ea0f477b6d54530b58df94399",
+    "brass.json": "efcaae8a6a9be2b957b77f76e98e8251a41a91a24ab1e62d6d3aa2f7d00c9984",
+    "drums.json": "5787c37c916a19352d3bc6daf299d0bfa919fd259cffe0552fa032820667d8b7",
+    "guitar.json": "47ea2791c1f542e77761ee14540511b69763a15a623f463aa35af8263df5edc9",
+    "keyboards.json": "932127491801a9c80c2a36d52ae86405d9c578ea5d68b30ac53875c5249b7117",
+    "lead_vocal.json": "07b26bed9228f9985ac02d3ee9616914d1388145aa4c39758f61f5f4817f3017",
+    "other.json": "9831d2229f28b3783ca7dfda444a24df4925ae9c977b07cbe2c7ef7b6ec702d0",
+    "percussion.json": "fb85a35206938b408367f8a4ffde5e0118efbbee883195bec18a7da2b5e32174",
+    "strings.json": "08834c9945d309ae57ae4fdeb90ff9a8afc842b1cbe3fc84fe8cb4b52ce876f3",
+    "synth.json": "b343ec3a85783eb399ec5b3b76fedf015d5ac365d348ee63444c0d926a897df6",
+    "woodwinds.json": "4aaa45debfddb6d364330aba437555ce94e883de781081a930a9299574fb0c87"
+  }
+}

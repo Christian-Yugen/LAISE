@@ -1,0 +1,16 @@
+{
+  "head": "6bc4b130f86356f0dd6994a55dfc91f4d78f7acb",
+  "expected": "6bc4b130f86356f0dd6994a55dfc91f4d78f7acb",
+  "protectedHashes": {
+    "index.html": "e891a183ce0944bc5cf84b0de33fac7030e06fd182dc05a7e73578745810d967",
+    "src/style.css": "f4001a9fd55a73c30072ef3ed843c2ae5da078f568fdda09cd15cbb8875c1343",
+    "src/audio-motion-recovery.js": "2a9939775cbd54c0025eca3c594a69ae0d3324bfbc1d2dd882d24836abc05e21",
+    "src/ripple-field.js": "3525e4ee424a4af054be7195129dc6c458b1132412b46921ef6b42e9f7a03f50",
+    "public/audio/TUKANA02_FINAL_MASTER_PCM24_48k.wav": "4f4d46a870faf29fa51867450a5a70cc82faad1b863d83bd40e89c6d27a3e271",
+    "public/audio/tukana-stem-cues.json": "c880676240a480f72cf3dc42fc5b3a656bd38fd466a79474698abd81b99e944c",
+    "public/audio/tukana-visualizer-manifest.json": "d9e30acd15b532ce44e7a05ee3cffcf22c1e602e55623018ae9b241065e9f62d",
+    "src/main.js": "3bd2219c7cb6fdbb8d5de51bb3f1f2c614815f92db2d70d312601e7a2c12e65e",
+    "src/audio-cue-timeline.js": "27815f5567dcd02eb78283f524eabeeff953d87e32e101da8c3e59c1e3ce4ced"
+  },
+  "pass": true
+}

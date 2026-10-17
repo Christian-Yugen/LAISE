@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="420" viewBox="0 0 1500 420" role="img"><title>keyboards:g00029</title>
+<style>text{font-family:Arial,sans-serif;fill:#233344}.tick{font-size:11px}.label{font-size:13px;font-weight:bold}</style>
+<rect width="1500" height="420" fill="#fafcfe"/>
+<text x="30" y="30" font-size="21" >REPEATED_PULSE_SEQUENCE | keyboards | confidence 0.890</text>
+<text x="30" y="55" font-size="14" >124.752-125.312 s | RMS 0.000317 | 5 original attacks</text>
+<rect x="530.534" y="90" width="328.932" height="220" fill="#2875d2" opacity=".12"/>
+<path d="M100.573,221.845 L112.320,190.439 L124.068,178.084 L135.816,172.243 L147.563,191.575 L159.311,203.603 L171.058,209.464 L182.806,211.060 L194.553,160.528 L206.301,154.385 L218.049,144.150 L229.796,184.070 L241.544,202.696 L253.291,217.530 L265.039,217.936 L276.786,143.671 L288.534,134.102 L300.282,128.182 L312.029,181.689 L323.777,198.532 L335.524,214.719 L347.272,222.681 L359.019,181.781 L370.767,159.413 L382.515,150.934 L394.262,169.939 L406.010,185.342 L417.757,192.522 L429.505,197.808 L441.252,170.452 L453.000,152.947 L464.748,146.367 L476.495,172.220 L488.243,199.847 L499.990,215.227 L511.738,225.898 L523.485,215.416 L535.233,203.473 L546.981,204.803 L558.728,213.038 L570.476,225.441 L582.223,228.301 L593.971,230.061 L605.718,194.557 L617.466,173.498 L629.214,166.572 L640.961,188.235 L652.709,215.298 L664.456,228.679 L676.204,227.823 L687.951,183.549 L699.699,171.966 L711.447,172.187 L723.194,210.995 L734.942,228.151 L746.689,234.017 L758.437,233.660 L770.184,211.258 L781.932,207.148 L793.680,210.041 L805.427,234.162 L817.175,245.385 L828.922,244.744 L840.670,245.170 L852.417,233.044 L864.165,233.241 L875.913,235.047 L887.660,249.392 L899.408,255.967 L911.155,259.068 L922.903,259.676 L934.650,261.669 L946.398,263.197 L958.146,267.266 L969.893,270.474 L981.641,274.868 L993.388,276.961 L1005.136,278.135 L1016.883,270.839 L1028.631,270.054 L1040.379,267.325 L1052.126,272.918 L1063.874,277.231 L1075.621,279.744 L1087.369,278.964 L1099.117,275.113 L1110.864,276.436 L1122.612,276.330 L1134.359,282.277 L1146.107,283.197 L1157.854,282.958 L1169.602,286.290 L1181.350,286.507 L1193.097,286.580 L1204.845,285.962 L1216.592,285.825 L1228.340,286.287 L1240.087,287.070 L1251.835,287.518 L1263.583,284.254 L1275.330,284.354 L1287.078,285.252 L1298.825,291.239" fill="none" stroke="#203c50" stroke-width="1.5"/>
+<text x="12" y="310" font-size="11" >0.00000</text>
+<text x="90.0" y="335" font-size="11" >124.002s</text>
+<text x="12" y="260.0" font-size="11" >0.00016</text>
+<text x="392.5" y="335" font-size="11" >124.517s</text>
+<text x="12" y="210.0" font-size="11" >0.00032</text>
+<text x="695.0" y="335" font-size="11" >125.032s</text>
+<text x="12" y="160.0" font-size="11" >0.00048</text>
+<text x="997.5" y="335" font-size="11" >125.547s</text>
+<text x="12" y="110" font-size="11" >0.00064</text>
+<text x="1300.0" y="335" font-size="11" >126.062s</text>
+<path d="M530.534,95V310" stroke="#e67e22" opacity=".45"><title>original attack 3133 at 124.752s</title></path>
+<path d="M615.117,95V310" stroke="#e67e22" opacity=".45"><title>original attack 3141 at 124.896s</title></path>
+<path d="M695.000,95V310" stroke="#e67e22" opacity=".45"><title>original attack 3149 at 125.032s</title></path>
+<path d="M779.583,95V310" stroke="#e67e22" opacity=".45"><title>original attack 3156 at 125.176s</title></path>
+<path d="M859.466,95V310" stroke="#e67e22" opacity=".45"><title>original attack 3164 at 125.312s</title></path>
+<text x="30" y="365" font-size="12" >Vertical axis: absolute stereo RMS FS (case-specific numeric axis, no signal normalization). Orange lines: original attacks.</text>
+<text x="30" y="389" font-size="12" >Classification is a feature-supported hypothesis. Full numeric and T007 trajectory evidence: cases.json.</text>
+</svg>
