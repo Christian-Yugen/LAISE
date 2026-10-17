@@ -1,0 +1,13 @@
+{
+  "pass": true,
+  "files": [
+    "tools\\musical_salience.py",
+    "tools\\build_musical_visual_intents.py",
+    "tools\\causal_eligibility_audit.py",
+    "tools\\audit_causal_recovery.py",
+    "tools\\validate_causal_playback_regression.py",
+    "tools\\finalize_causal_recovery_evidence.py",
+    "tools\\report_causal_recovery.py",
+    "tests\\test_causal_eligibility.py"
+  ]
+}

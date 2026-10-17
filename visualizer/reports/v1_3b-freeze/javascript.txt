@@ -1,0 +1,478 @@
+TAP version 13
+# Subtest: three rapid hits emit exactly three impulses, in order and at their subframe times
+ok 1 - three rapid hits emit exactly three impulses, in order and at their subframe times
+  ---
+  duration_ms: 3.2113
+  type: 'test'
+  ...
+# Subtest: simultaneous sources retain independent positions and absolute strengths
+ok 2 - simultaneous sources retain independent positions and absolute strengths
+  ---
+  duration_ms: 0.4115
+  type: 'test'
+  ...
+# Subtest: pause/resume never repeats an attack; seeking skips old hits and permits replay
+ok 3 - pause/resume never repeats an attack; seeking skips old hits and permits replay
+  ---
+  duration_ms: 1.9208
+  type: 'test'
+  ...
+# Subtest: explicit discontinuity skips unplayed events instead of creating a burst
+ok 4 - explicit discontinuity skips unplayed events instead of creating a burst
+  ---
+  duration_ms: 0.4312
+  type: 'test'
+  ...
+# Subtest: spatial impulses peak near the requested source and louder hits produce larger waves
+ok 5 - spatial impulses peak near the requested source and louder hits produce larger waves
+  ---
+  duration_ms: 51.2808
+  type: 'test'
+  ...
+# Subtest: approved response calibration retains the known V1.1 center sensitivity
+ok 6 - approved response calibration retains the known V1.1 center sensitivity
+  ---
+  duration_ms: 9.0938
+  type: 'test'
+  ...
+# Subtest: approved baseline passed as current projection needs no recovery gain
+ok 7 - approved baseline passed as current projection needs no recovery gain
+  ---
+  duration_ms: 7.4065
+  type: 'test'
+  ...
+# Subtest: recovers weak transient visibility without camera/pose mutation 1920x1080
+ok 8 - recovers weak transient visibility without camera/pose mutation 1920x1080
+  ---
+  duration_ms: 20.5509
+  type: 'test'
+  ...
+# Subtest: recovers weak transient visibility without camera/pose mutation 1920x960
+ok 9 - recovers weak transient visibility without camera/pose mutation 1920x960
+  ---
+  duration_ms: 5.3854
+  type: 'test'
+  ...
+# Subtest: recovers weak transient visibility without camera/pose mutation 1600x900
+ok 10 - recovers weak transient visibility without camera/pose mutation 1600x900
+  ---
+  duration_ms: 2.3067
+  type: 'test'
+  ...
+# Subtest: recovers weak transient visibility without camera/pose mutation 1366x768
+ok 11 - recovers weak transient visibility without camera/pose mutation 1366x768
+  ---
+  duration_ms: 3.0027
+  type: 'test'
+  ...
+# Subtest: recovers weak transient visibility without camera/pose mutation 2560x1440
+ok 12 - recovers weak transient visibility without camera/pose mutation 2560x1440
+  ---
+  duration_ms: 2.3225
+  type: 'test'
+  ...
+# Subtest: recovers weak transient visibility without camera/pose mutation 3840x2160
+ok 13 - recovers weak transient visibility without camera/pose mutation 3840x2160
+  ---
+  duration_ms: 2.2835
+  type: 'test'
+  ...
+# Subtest: gain cache responds to a projection change without introducing attack/decay state
+ok 14 - gain cache responds to a projection change without introducing attack/decay state
+  ---
+  duration_ms: 2.0806
+  type: 'test'
+  ...
+# Subtest: R3B approved width and listener anchor preserve response under vertical lens shift 1920x1080
+ok 15 - R3B approved width and listener anchor preserve response under vertical lens shift 1920x1080
+  ---
+  duration_ms: 14.7439
+  type: 'test'
+  ...
+# Subtest: R3B approved width and listener anchor preserve response under vertical lens shift 1600x900
+ok 16 - R3B approved width and listener anchor preserve response under vertical lens shift 1600x900
+  ---
+  duration_ms: 5.7087
+  type: 'test'
+  ...
+# Subtest: R3B approved width and listener anchor preserve response under vertical lens shift 1366x768
+ok 17 - R3B approved width and listener anchor preserve response under vertical lens shift 1366x768
+  ---
+  duration_ms: 2.2594
+  type: 'test'
+  ...
+# Subtest: R3B approved width and listener anchor preserve response under vertical lens shift 2560x1440
+ok 18 - R3B approved width and listener anchor preserve response under vertical lens shift 2560x1440
+  ---
+  duration_ms: 2.4688
+  type: 'test'
+  ...
+# Subtest: full signed envelope at fixed R2 angle has a strict zero-margin bound below 92%
+ok 19 - full signed envelope at fixed R2 angle has a strict zero-margin bound below 92%
+  ---
+  duration_ms: 6.6958
+  type: 'test'
+  ...
+# Subtest: width 92% cannot lower FRONT even if elevation were relaxed
+ok 20 - width 92% cannot lower FRONT even if elevation were relaxed
+  ---
+  duration_ms: 0.3849
+  type: 'test'
+  ...
+# Subtest: width 94% cannot lower FRONT even if elevation were relaxed
+ok 21 - width 94% cannot lower FRONT even if elevation were relaxed
+  ---
+  duration_ms: 0.1382
+  type: 'test'
+  ...
+# Subtest: width 96% cannot lower FRONT even if elevation were relaxed
+ok 22 - width 96% cannot lower FRONT even if elevation were relaxed
+  ---
+  duration_ms: 0.1281
+  type: 'test'
+  ...
+# Subtest: a single admissible front vertex can hit the actual listener border, not just an empty AABB
+ok 23 - a single admissible front vertex can hit the actual listener border, not just an empty AABB
+  ---
+  duration_ms: 0.2057
+  type: 'test'
+  ...
+# Subtest: 950 ms continuous media advance without seek preserves every intervening cue
+ok 24 - 950 ms continuous media advance without seek preserves every intervening cue
+  ---
+  duration_ms: 2.5913
+  type: 'test'
+  ...
+# Subtest: an impulse forms a central peak, then an outward ring with troughs and decay
+ok 25 - an impulse forms a central peak, then an outward ring with troughs and decay
+  ---
+  duration_ms: 365.7109
+  type: 'test'
+  ...
+# Subtest: fixed timesteps give matching motion at 30 and 120 rendered frames per second
+ok 26 - fixed timesteps give matching motion at 30 and 120 rendered frames per second
+  ---
+  duration_ms: 129.439
+  type: 'test'
+  ...
+# Subtest: without measured audio events the surface stays flat
+ok 27 - without measured audio events the surface stays flat
+  ---
+  duration_ms: 244.1889
+  type: 'test'
+  ...
+# Subtest: repeated impacts move the boundary, remain finite, and reset cleanly on a seek
+ok 28 - repeated impacts move the boundary, remain finite, and reset cleanly on a seek
+  ---
+  duration_ms: 925.7287
+  type: 'test'
+  ...
+# Subtest: a wave reaches the free edge and returns to the center
+ok 29 - a wave reaches the free edge and returns to the center
+  ---
+  duration_ms: 335.5137
+  type: 'test'
+  ...
+# Subtest: an elongated impulse produces a broad, nearly straight travelling crest
+ok 30 - an elongated impulse produces a broad, nearly straight travelling crest
+  ---
+  duration_ms: 20.6544
+  type: 'test'
+  ...
+# Subtest: crossing circular and straight waves reinforce and cancel each other
+ok 31 - crossing circular and straight waves reinforce and cancel each other
+  ---
+  duration_ms: 75.4723
+  type: 'test'
+  ...
+# Subtest: R3B approved width, lowered center and signed overlay envelope 1920x1080
+ok 32 - R3B approved width, lowered center and signed overlay envelope 1920x1080
+  ---
+  duration_ms: 6.3853
+  type: 'test'
+  ...
+# Subtest: R3B approved width, lowered center and signed overlay envelope 1600x900
+ok 33 - R3B approved width, lowered center and signed overlay envelope 1600x900
+  ---
+  duration_ms: 3.3005
+  type: 'test'
+  ...
+# Subtest: R3B approved width, lowered center and signed overlay envelope 1366x768
+ok 34 - R3B approved width, lowered center and signed overlay envelope 1366x768
+  ---
+  duration_ms: 1.33
+  type: 'test'
+  ...
+# Subtest: R3B approved width, lowered center and signed overlay envelope 2560x1440
+ok 35 - R3B approved width, lowered center and signed overlay envelope 2560x1440
+  ---
+  duration_ms: 2.8568
+  type: 'test'
+  ...
+# Subtest: approved R1 calibration and physical equations remain byte-identical
+ok 36 - approved R1 calibration and physical equations remain byte-identical
+  ---
+  duration_ms: 1.5104
+  type: 'test'
+  ...
+# Subtest: pre-recovery temporal baseline is retained for normal-before/after regression
+ok 37 - pre-recovery temporal baseline is retained for normal-before/after regression
+  ---
+  duration_ms: 1.37
+  type: 'test'
+  ...
+# Subtest: square domain: actual geometry has unit aspect, isotropic cells and stable CFL
+ok 38 - square domain: actual geometry has unit aspect, isotropic cells and stable CFL
+  ---
+  duration_ms: 44.4766
+  type: 'test'
+  ...
+# Subtest: mapping preserves center
+ok 39 - mapping preserves center
+  ---
+  duration_ms: 13.9995
+  type: 'test'
+  ...
+# Subtest: mapping preserves left
+ok 40 - mapping preserves left
+  ---
+  duration_ms: 8.7793
+  type: 'test'
+  ...
+# Subtest: mapping preserves right
+ok 41 - mapping preserves right
+  ---
+  duration_ms: 8.5461
+  type: 'test'
+  ...
+# Subtest: mapping preserves front / T007 negative Z
+ok 42 - mapping preserves front / T007 negative Z
+  ---
+  duration_ms: 9.4051
+  type: 'test'
+  ...
+# Subtest: mapping preserves rear / T007 positive Z
+ok 43 - mapping preserves rear / T007 positive Z
+  ---
+  duration_ms: 9.0009
+  type: 'test'
+  ...
+# Subtest: mapping preserves left-front
+ok 44 - mapping preserves left-front
+  ---
+  duration_ms: 11.6816
+  type: 'test'
+  ...
+# Subtest: mapping preserves right-front
+ok 45 - mapping preserves right-front
+  ---
+  duration_ms: 22.2129
+  type: 'test'
+  ...
+# Subtest: mapping preserves left-rear
+ok 46 - mapping preserves left-rear
+  ---
+  duration_ms: 16.5444
+  type: 'test'
+  ...
+# Subtest: mapping preserves right-rear
+ok 47 - mapping preserves right-rear
+  ---
+  duration_ms: 13.6084
+  type: 'test'
+  ...
+# Subtest: isotropy: center impulse agrees under X/Z transpose (relative L2 < 1e-5)
+ok 48 - isotropy: center impulse agrees under X/Z transpose (relative L2 < 1e-5)
+  ---
+  duration_ms: 260.2862
+  type: 'test'
+  ...
+# Subtest: isotropy: left impulse agrees under X/Z transpose (relative L2 < 1e-5)
+ok 49 - isotropy: left impulse agrees under X/Z transpose (relative L2 < 1e-5)
+  ---
+  duration_ms: 227.2053
+  type: 'test'
+  ...
+# Subtest: isotropy: right impulse agrees under X/Z transpose (relative L2 < 1e-5)
+ok 50 - isotropy: right impulse agrees under X/Z transpose (relative L2 < 1e-5)
+  ---
+  duration_ms: 248.3453
+  type: 'test'
+  ...
+# Subtest: isotropy: front impulse agrees under X/Z transpose (relative L2 < 1e-5)
+ok 51 - isotropy: front impulse agrees under X/Z transpose (relative L2 < 1e-5)
+  ---
+  duration_ms: 225.2999
+  type: 'test'
+  ...
+# Subtest: isotropy: rear impulse agrees under X/Z transpose (relative L2 < 1e-5)
+ok 52 - isotropy: rear impulse agrees under X/Z transpose (relative L2 < 1e-5)
+  ---
+  duration_ms: 201.7624
+  type: 'test'
+  ...
+# Subtest: free boundary left: finite reflection and dissipation
+ok 53 - free boundary left: finite reflection and dissipation
+  ---
+  duration_ms: 839.3103
+  type: 'test'
+  ...
+# Subtest: free boundary right: finite reflection and dissipation
+ok 54 - free boundary right: finite reflection and dissipation
+  ---
+  duration_ms: 687.1187
+  type: 'test'
+  ...
+# Subtest: free boundary front: finite reflection and dissipation
+ok 55 - free boundary front: finite reflection and dissipation
+  ---
+  duration_ms: 941.2992
+  type: 'test'
+  ...
+# Subtest: free boundary rear: finite reflection and dissipation
+ok 56 - free boundary rear: finite reflection and dissipation
+  ---
+  duration_ms: 980.2893
+  type: 'test'
+  ...
+# Subtest: free boundary left-front: finite reflection and dissipation
+ok 57 - free boundary left-front: finite reflection and dissipation
+  ---
+  duration_ms: 919.0777
+  type: 'test'
+  ...
+# Subtest: free boundary right-front: finite reflection and dissipation
+ok 58 - free boundary right-front: finite reflection and dissipation
+  ---
+  duration_ms: 869.8871
+  type: 'test'
+  ...
+# Subtest: free boundary left-rear: finite reflection and dissipation
+ok 59 - free boundary left-rear: finite reflection and dissipation
+  ---
+  duration_ms: 827.7274
+  type: 'test'
+  ...
+# Subtest: free boundary right-rear: finite reflection and dissipation
+ok 60 - free boundary right-rear: finite reflection and dissipation
+  ---
+  duration_ms: 1126.8892
+  type: 'test'
+  ...
+# Subtest: diamond signed envelope and R3B listener-overlay composition 1920x1080
+ok 61 - diamond signed envelope and R3B listener-overlay composition 1920x1080
+  ---
+  duration_ms: 6.3988
+  type: 'test'
+  ...
+# Subtest: diamond signed envelope and R3B listener-overlay composition 1920x960
+ok 62 - diamond signed envelope and R3B listener-overlay composition 1920x960
+  ---
+  duration_ms: 2.9554
+  type: 'test'
+  ...
+# Subtest: diamond signed envelope and R3B listener-overlay composition 1600x900
+ok 63 - diamond signed envelope and R3B listener-overlay composition 1600x900
+  ---
+  duration_ms: 1.1267
+  type: 'test'
+  ...
+# Subtest: diamond signed envelope and R3B listener-overlay composition 1366x768
+ok 64 - diamond signed envelope and R3B listener-overlay composition 1366x768
+  ---
+  duration_ms: 0.8072
+  type: 'test'
+  ...
+# Subtest: diamond signed envelope and R3B listener-overlay composition 2560x1440
+ok 65 - diamond signed envelope and R3B listener-overlay composition 2560x1440
+  ---
+  duration_ms: 0.9538
+  type: 'test'
+  ...
+# Subtest: diamond signed envelope and R3B listener-overlay composition 3840x2160
+ok 66 - diamond signed envelope and R3B listener-overlay composition 3840x2160
+  ---
+  duration_ms: 0.6023
+  type: 'test'
+  ...
+# Subtest: musical input 46-48 seconds preserves times, source IDs, strengths and normalized positions
+ok 67 - musical input 46-48 seconds preserves times, source IDs, strengths and normalized positions
+  ---
+  duration_ms: 28.348
+  type: 'test'
+  ...
+# Subtest: duration: metadata available before handlers synchronizes immediately
+ok 68 - duration: metadata available before handlers synchronizes immediately
+  ---
+  duration_ms: 2.3222
+  type: 'test'
+  ...
+# Subtest: duration: later metadata and durationchange use actual media duration
+ok 69 - duration: later metadata and durationchange use actual media duration
+  ---
+  duration_ms: 1.1519
+  type: 'test'
+  ...
+# Subtest: duration: nonpositive and nonfinite values never replace valid duration
+ok 70 - duration: nonpositive and nonfinite values never replace valid duration
+  ---
+  duration_ms: 1.1431
+  type: 'test'
+  ...
+# Subtest: manifest: approved schema validates
+ok 71 - manifest: approved schema validates
+  ---
+  duration_ms: 1.9344
+  type: 'test'
+  ...
+# Subtest: manifest: missing required fields are rejected
+ok 72 - manifest: missing required fields are rejected
+  ---
+  duration_ms: 17.585
+  type: 'test'
+  ...
+# Subtest: manifest: invalid types, nonfinite numbers, count and status rejected
+ok 73 - manifest: invalid types, nonfinite numbers, count and status rejected
+  ---
+  duration_ms: 15.7418
+  type: 'test'
+  ...
+# Subtest: HUD: values come from supplied manifest, not literal application metrics
+ok 74 - HUD: values come from supplied manifest, not literal application metrics
+  ---
+  duration_ms: 1.668
+  type: 'test'
+  ...
+# Subtest: HUD: approved manifest preserves current numeric values
+ok 75 - HUD: approved manifest preserves current numeric values
+  ---
+  duration_ms: 1.3551
+  type: 'test'
+  ...
+# Subtest: HUD: failure clears metadata instead of retaining a false validation claim
+ok 76 - HUD: failure clears metadata instead of retaining a false validation claim
+  ---
+  duration_ms: 1.3838
+  type: 'test'
+  ...
+# Subtest: HTML: technical slots are neutral placeholders and old hardcodes absent
+ok 77 - HTML: technical slots are neutral placeholders and old hardcodes absent
+  ---
+  duration_ms: 0.9385
+  type: 'test'
+  ...
+# Subtest: dead lights: only unlit materials; no PointLights or exclusive bass computations
+ok 78 - dead lights: only unlit materials; no PointLights or exclusive bass computations
+  ---
+  duration_ms: 0.4796
+  type: 'test'
+  ...
+1..78
+# tests 78
+# suites 0
+# pass 78
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 8977.8217

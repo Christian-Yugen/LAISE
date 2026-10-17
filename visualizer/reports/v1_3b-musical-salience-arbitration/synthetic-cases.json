@@ -1,0 +1,54 @@
+{
+  "pass": true,
+  "cases": [
+    {
+      "case": "A",
+      "pass": true,
+      "dominantSourceIndex": 8,
+      "dominantCount": 1,
+      "strongAbsoluteRms": 0.1,
+      "weakAbsoluteRms": 1e-05
+    },
+    {
+      "case": "B",
+      "pass": true,
+      "bothEqualSourcesDominant": true
+    },
+    {
+      "case": "C",
+      "pass": true,
+      "intentCount": 1,
+      "sustainDuration": 8,
+      "modifierRelation": "reinforcement",
+      "ownedAttacks": 1
+    },
+    {
+      "case": "D",
+      "pass": true,
+      "intentCount": 1,
+      "sustainDuration": 8,
+      "modifierRelation": "intensityModifier",
+      "ownedAttacks": 1
+    },
+    {
+      "case": "E",
+      "pass": true,
+      "absoluteRms": 1e-05,
+      "localContextIntensity": 1,
+      "maximumRawSalience": 0.0010994503663918865
+    },
+    {
+      "case": "F",
+      "pass": true,
+      "changeLatencySeconds": 0.05,
+      "maximumAllowedSeconds": 0.15
+    },
+    {
+      "case": "G",
+      "pass": true,
+      "dominanceSetChanges": 1,
+      "frames": 100,
+      "relativeOscillation": 0.02
+    }
+  ]
+}

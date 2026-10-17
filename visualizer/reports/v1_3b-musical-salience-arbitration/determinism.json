@@ -1,0 +1,12 @@
+{
+  "pass": true,
+  "byteIdentical": true,
+  "sha256": "d0e7857f927ac7e0946995c60eb6f096aaed5b351b42fd13030b512bc2a581df",
+  "independentFullRuns": 2,
+  "pairedEvidence": {
+    "analysis-summary.json": true,
+    "sensitivity.json": true,
+    "intensity-distributions.json": true,
+    "arbitration-decisions.json": true
+  }
+}
