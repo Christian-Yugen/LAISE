@@ -21,10 +21,15 @@ export class AudioCueTimeline {
     this.duration = data.duration;
     this.emittedCount = 0;
     this.lastEvent = null;
+    this.playbackEpoch = -1;
+    this.catchUpCount = 0;
+    this.largestCatchUpMs = 0;
+    this.isSeeking = false;
     this.seek(0);
   }
 
   seek(time) {
+    this.playbackEpoch++;
     let low = 0;
     let high = this.events.length;
     while (low < high) {
@@ -34,18 +39,25 @@ export class AudioCueTimeline {
     }
     this.index = low;
     this.lastTime = time;
+    this.simulationTime = time;
+    this.mediaTime = time;
     this.emittedCount = 0;
     this.lastEvent = null;
   }
 
   step(time, playing, emit, advance) {
     if (!Number.isFinite(time)) return false;
+    this.mediaTime = time;
+    this.isPlaying = playing;
     if (!playing) {
-      this.lastTime = time;
       return false;
     }
-    // A seek/background jump must not release a backlog of old hits at once.
-    if (time < this.lastTime || time - this.lastTime > 0.3) this.seek(time);
+    // Only explicit media lifecycle operations may reposition the timeline.
+    // A late render frame is continuous musical time, regardless of its length.
+    if (this.isSeeking || time < this.lastTime) return false;
+    const gap = time - this.lastTime;
+    if (gap > 0.1) this.catchUpCount++;
+    this.largestCatchUpMs = Math.max(this.largestCatchUpMs, gap * 1000);
     let cursor = this.lastTime;
     const advanceTo = next => {
       while (next - cursor > 0.000001) {
@@ -55,14 +67,17 @@ export class AudioCueTimeline {
       }
     };
     while (this.index < this.events.length && this.events[this.index].time <= time) {
-      const cue = this.events[this.index++];
+      const cueIndex = this.index++;
+      const cue = this.events[cueIndex];
       advanceTo(Math.max(cursor, cue.time));
-      emit(cue);
+      this.simulationTime = cue.time;
+      emit(cue, {cueIndex, playbackEpoch:this.playbackEpoch, simulationTime:cue.time, mediaTime:time});
       this.emittedCount++;
       this.lastEvent = cue;
     }
     advanceTo(time);
     this.lastTime = time;
+    this.simulationTime = time;
     return true;
   }
 }

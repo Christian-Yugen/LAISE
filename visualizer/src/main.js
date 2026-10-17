@@ -1,6 +1,7 @@
 ﻿import "./style.css";
 import { RippleField } from "./ripple-field.js";
 import { AudioCueTimeline } from "./audio-cue-timeline.js";
+import { AudioMotionRecovery } from "./audio-motion-recovery.js";
 
 import * as THREE from "three";
 
@@ -152,12 +153,12 @@ scene.fog =
 
 
 // One horizontal local XZ plane; only this group owns the terrain pose.
-const TERRAIN = Object.freeze({ width: 16, depth: 12, maxHeight: 2.8 });
+const TERRAIN = Object.freeze({ width: 16, depth: 16, maxHeight: 2.8 });
 // AJUSTE AQUI: valores em graus, aplicados uma ?nica vez ? malha e ao glow.
 const MESH_ANGLES = Object.freeze({
-  horizontal: 47, // Eixo Y: giro sobre a mesa. Antes: 8?; agora: +20?.
-  vertical: -6,    // Eixo X: inclina a frente e o fundo.
-  diagonal: -3   // Eixo Z: inclina a esquerda e a direita.
+  horizontal: 45, // Square domain, viewed along its diagonal.
+  vertical: 0,
+  diagonal: 0
 });
 const BASE_POSE = Object.freeze({
   y: -0.75,
@@ -166,85 +167,126 @@ const BASE_POSE = Object.freeze({
   roll: THREE.MathUtils.degToRad(MESH_ANGLES.diagonal)
 });
 // Posicao na tela, em pixels: horizontal + direita; vertical + baixo.
-const SCREEN_POSITION = Object.freeze({ horizontal: 70, vertical: 0 });
-const CAMERA = Object.freeze({ fov: 36, elevation: Math.PI / 9, magnification: 1.4 });
+const SCREEN_POSITION = Object.freeze({ horizontal: 0, vertical: 0 });
+// Approved R3 reference: 1682.861971 px at 1920 px, preserved proportionally.
+const CAMERA = Object.freeze({ span: 32, elevation: THREE.MathUtils.degToRad(16), distance: 26, widthTarget: 1682.861971225252 / 1920 });
 
 const camera =
-  new THREE.PerspectiveCamera(
-    CAMERA.fov,
-    window.innerWidth /
-    window.innerHeight,
-    0.1,
-    100
+  new THREE.OrthographicCamera(
+    -CAMERA.span * window.innerWidth / window.innerHeight / 2,
+    CAMERA.span * window.innerWidth / window.innerHeight / 2,
+    CAMERA.span / 2, -CAMERA.span / 2, 0.1, 100
   );
 
 
-// Center the projected base rectangle, rather than aiming at a world-space point.
-// Perspective makes those two centers different. Lens shift fixes the composition
-// without tilting the horizontal plane or moving the camera during playback.
-function frameTerrain() {
-  camera.zoom = 1;
-  const width = window.innerWidth;
-  const height = window.innerHeight;
-  const target = new THREE.Vector3(0, BASE_POSE.y, 0);
-  const direction = new THREE.Vector3(0, Math.sin(CAMERA.elevation), Math.cos(CAMERA.elevation));
-  const poseRotation = new THREE.Euler(BASE_POSE.pitch, BASE_POSE.yaw, BASE_POSE.roll);
-  const corners = [];
-  for (const x of [-TERRAIN.width / 2, TERRAIN.width / 2]) {
-    for (const z of [-TERRAIN.depth / 2, TERRAIN.depth / 2]) {
-      corners.push(new THREE.Vector3(x, 0, z).applyEuler(poseRotation).add(target));
+// Full local deformation box, including the translated glow's upper extreme.
+function fieldEnvelope() {
+  const rotation = new THREE.Euler(BASE_POSE.pitch, BASE_POSE.yaw, BASE_POSE.roll);
+  return [-TERRAIN.width / 2, TERRAIN.width / 2].flatMap(x =>
+    [-TERRAIN.depth / 2, TERRAIN.depth / 2].flatMap(z =>
+      [-TERRAIN.maxHeight, TERRAIN.maxHeight + 0.025].map(y =>
+        new THREE.Vector3(x, y, z).applyEuler(rotation).add(new THREE.Vector3(0, BASE_POSE.y, 0)))));
+}
+
+function convexHull(points) {
+  const sorted = [...points].sort((a, b) => a.x - b.x || a.y - b.y);
+  const cross = (a, b, c) => (b.x - a.x) * (c.y - a.y) - (b.y - a.y) * (c.x - a.x);
+  const half = list => {
+    const result = [];
+    for (const point of list) {
+      while (result.length > 1 && cross(result.at(-2), result.at(-1), point) <= 0) result.pop();
+      result.push(point);
+    }
+    return result.slice(0, -1);
+  };
+  return [...half(sorted), ...half([...sorted].reverse())];
+}
+
+// Separating axes avoid reserving an empty full-width band for corner UI.
+function polygonsOverlap(a, b) {
+  for (const polygon of [a, b]) {
+    for (let i = 0; i < polygon.length; i++) {
+      const p = polygon[i], q = polygon[(i + 1) % polygon.length];
+      const axis = { x: p.y - q.y, y: q.x - p.x };
+      const project = shape => shape.map(point => point.x * axis.x + point.y * axis.y);
+      const aa = project(a), bb = project(b);
+      if (Math.max(...aa) <= Math.min(...bb) || Math.max(...bb) <= Math.min(...aa)) return false;
     }
   }
-  // Conservative envelope: every point in this box can reach maxHeight.
-  const envelope = corners.flatMap(point => [point, point.clone().add(new THREE.Vector3(0, TERRAIN.maxHeight + 0.025, 0).applyEuler(poseRotation))]);
-  function place(distance) {
+  return true;
+}
+
+function frameTerrain() {
+  const width = window.innerWidth, height = window.innerHeight;
+  // R3B anchors the BASE front to the listener. Negative deformation is allowed
+  // behind the listener/HUD overlays; it never changes the simulated heights.
+  camera.left = -CAMERA.span * width / height / 2;
+  camera.right = CAMERA.span * width / height / 2;
+  camera.top = CAMERA.span / 2;
+  camera.bottom = -CAMERA.span / 2;
+  const margin = 8;
+  const rect = selector => {
+    const element = document.querySelector(selector);
+    const bounds = element?.getBoundingClientRect();
+    return bounds?.width && bounds?.height ? bounds : null;
+  };
+  const listenerTop = rect(".headphones")?.top ?? rect(".listener")?.top ?? height * 0.8;
+  const listenerGap = Math.max(6, Math.min(width, height) * (8 / 1080));
+  const frontTarget = listenerTop - listenerGap + SCREEN_POSITION.vertical;
+  const obstacles = [".brand", ".field-summary", ".status"].map(rect).filter(Boolean).map(r => [
+    { x: r.left - margin / 2, y: r.top - margin / 2 },
+    { x: r.right + margin / 2, y: r.top - margin / 2 },
+    { x: r.right + margin / 2, y: r.bottom + margin / 2 },
+    { x: r.left - margin / 2, y: r.bottom + margin / 2 }
+  ]);
+  const target = new THREE.Vector3(0, BASE_POSE.y, 0);
+  const direction = new THREE.Vector3(0, Math.sin(CAMERA.elevation), Math.cos(CAMERA.elevation));
+  camera.position.copy(target).addScaledVector(direction, CAMERA.distance);
+  camera.lookAt(target);
+  camera.far = 500;
+  camera.updateMatrixWorld(true);
+  const envelope = fieldEnvelope();
+  const rotation = new THREE.Euler(BASE_POSE.pitch, BASE_POSE.yaw, BASE_POSE.roll);
+  const base = [-TERRAIN.width / 2, TERRAIN.width / 2].flatMap(x =>
+    [-TERRAIN.depth / 2, TERRAIN.depth / 2].map(z =>
+      new THREE.Vector3(x, 0, z).applyEuler(rotation).add(target)));
+  function place(zoom) {
+    camera.zoom = zoom;
     camera.clearViewOffset();
-    camera.position.copy(target).addScaledVector(direction, distance);
-    camera.lookAt(target);
-    camera.updateMatrixWorld(true);
-    const projected = corners.map(point => point.clone().project(camera));
-    const centerX = (Math.min(...projected.map(p => p.x)) + Math.max(...projected.map(p => p.x))) / 2;
-    const centerY = (Math.min(...projected.map(p => p.y)) + Math.max(...projected.map(p => p.y))) / 2;
-    camera.setViewOffset(
-      width,
-      height,
-      centerX * width / 2,
-      -centerY * height / 2,
-      width,
-      height
-    );
-    return envelope.every(point => {
+    camera.updateProjectionMatrix();
+    const projected = base.map(point => point.clone().project(camera));
+    const cx = (Math.min(...projected.map(p => p.x)) + Math.max(...projected.map(p => p.x))) / 2;
+    const frontY = Math.max(...projected.map(p => (1 - p.y) * height / 2));
+    camera.setViewOffset(width, height, cx * width / 2 - SCREEN_POSITION.horizontal,
+      frontY - frontTarget, width, height);
+    return envelope.map(point => {
       const p = point.clone().project(camera);
-      return Math.abs(p.x) <= 0.78 && Math.abs(p.y) <= 0.58 && p.z > -1 && p.z < 1;
+      return { x: (p.x + 1) * width / 2, y: (1 - p.y) * height / 2, z: p.z };
     });
   }
-  // Binary search gives a reproducible fit for the fixed pose at every aspect ratio.
-  let near = 10;
-  let far = 200;
-  camera.far = 500;
-  for (let i = 0; i < 36; i++) {
-    const distance = (near + far) / 2;
-    if (place(distance)) far = distance;
-    else near = distance;
+  function fits(points) {
+    const epsilon = 1e-7; // Floating-point projection tolerance, in CSS pixels.
+    // Lower signed envelope may be occluded by the existing bottom overlays or
+    // viewport edge. Only upper/lateral bounds and header legibility limit fit.
+    if (!points.every(p => p.x >= margin - epsilon && p.x <= width - margin + epsilon && p.y >= margin - epsilon && p.z > -1 && p.z < 1)) return false;
+    const hull = convexHull(points);
+    return obstacles.every(obstacle => !polygonsOverlap(hull, obstacle));
   }
-  place(far);
-  // Enlarge the approved composition by 40%, keeping the same perspective.
-  // On narrow screens, retain margin around the complete deformation envelope.
-  const projectedEnvelope = envelope.map(point => point.clone().project(camera));
-  const extentX = Math.max(...projectedEnvelope.map(p => Math.abs(p.x)));
-  const extentY = Math.max(...projectedEnvelope.map(p => Math.abs(p.y)));
-  camera.zoom = Math.min(CAMERA.magnification, 0.90 / extentX, 0.84 / extentY);
-  place(far);
-  // Apply the screen translation after fitting, so size and angles stay unchanged.
-  const finalEnvelope = envelope.map(point => point.clone().project(camera));
-  const minX = Math.min(...finalEnvelope.map(p => p.x));
-  const maxX = Math.max(...finalEnvelope.map(p => p.x));
-  const horizontal = THREE.MathUtils.clamp(SCREEN_POSITION.horizontal,
-    (-0.98 - minX) * width / 2, (0.98 - maxX) * width / 2);
-  const view = camera.view;
-  camera.setViewOffset(width, height,
-    view.offsetX - horizontal, view.offsetY - SCREEN_POSITION.vertical, width, height);
-
+  camera.zoom = 1;
+  camera.clearViewOffset();
+  camera.updateProjectionMatrix();
+  const unit = base.map(point => point.clone().project(camera));
+  const unitWidth = (Math.max(...unit.map(p => p.x)) - Math.min(...unit.map(p => p.x))) * width / 2;
+  const approvedZoom = width * CAMERA.widthTarget / unitWidth;
+  if (fits(place(approvedZoom))) return;
+  // Only exceptionally constrained viewports may reduce width to protect text.
+  let low = 0.01, high = approvedZoom;
+  for (let i = 0; i < 40; i++) {
+    const zoom = (low + high) / 2;
+    if (fits(place(zoom))) low = zoom;
+    else high = zoom;
+  }
+  place(low);
 }
 
 frameTerrain();
@@ -262,8 +304,8 @@ frameTerrain();
    SONIC TERRAIN
 ========================================================= */
 
-const SEG_X = 120;
-const SEG_Z = 100;
+const SEG_X = 128;
+const SEG_Z = 128;
 
 const geometry =
   new THREE.PlaneGeometry(
@@ -478,6 +520,7 @@ geometry.boundingSphere = geometry.boundingBox.getBoundingSphere(new THREE.Spher
 
 // Audio excites a signed wave field; the pose and camera remain independent.
 const rippleField = new RippleField(TERRAIN.width, TERRAIN.depth, SEG_X, SEG_Z);
+const audioMotionRecovery = new AudioMotionRecovery();
 // All vertices, including the outer rows, now follow the wave field.
 
 
@@ -723,15 +766,39 @@ const cueReady = fetch("/audio/tukana-stem-cues.json")
   });
 
 // A seek starts a new acoustic moment; do not keep waves from the old section.
-audio.addEventListener("seeking", () => {
+function beginMediaSeek() {
+  if (cueTimeline?.isSeeking) return;
   rippleField.reset();
   smoothed.fill(0);
   cueTimeline?.seek(audio.currentTime);
+  if (cueTimeline) cueTimeline.isSeeking = true;
+}
+audio.addEventListener("seeking", beginMediaSeek);
+audio.addEventListener("seeked", () => {
+  if (!cueTimeline) return;
+  // Final destination may differ from the requested position after clamping.
+  const epoch = cueTimeline.playbackEpoch;
+  cueTimeline.seek(audio.currentTime);
+  cueTimeline.playbackEpoch = epoch;
+  cueTimeline.isSeeking = false;
+});
+audio.addEventListener("emptied", () => {
+  rippleField.reset();
+  cueTimeline?.seek(0);
 });
 
 // Flush the fraction of audio played since the last rendered frame before pause.
 audio.addEventListener("pause", () => {
   if (!audio.seeking) updateSoundWaves(0, true);
+});
+audio.addEventListener("ended", () => {
+  updateSoundWaves(0, true);
+});
+audio.addEventListener("play", () => {
+  if (cueTimeline && audio.currentTime < cueTimeline.lastTime && !audio.seeking) {
+    rippleField.reset();
+    cueTimeline.seek(audio.currentTime);
+  }
 });
 
 
@@ -776,6 +843,23 @@ composer.addPass(
 /* =========================================================
    UI
 ========================================================= */
+
+// Presentation only: the existing play/pause/seek timing stays unchanged.
+function renderPlaybackButton(state) {
+  const label = {
+    playing: "Pausar", paused: "Continuar", ended: "Reproduzir novamente",
+    error: "Falha na análise — recarregue a página"
+  }[state];
+  const icon = state === "playing" ? "Ⅱ" : state === "error" ? "!" : "▶";
+  startButton.innerHTML = `<span aria-hidden="true">${icon}</span>`;
+  startButton.setAttribute("aria-label", label);
+  startButton.title = label;
+  startButton.dataset.state = state;
+}
+
+audio.addEventListener("play", () => renderPlaybackButton("playing"));
+audio.addEventListener("pause", () => renderPlaybackButton("paused"));
+audio.addEventListener("ended", () => renderPlaybackButton("ended"));
 
 function formatTime(
   seconds
@@ -888,6 +972,7 @@ timeline.addEventListener(
       );
 
 
+    beginMediaSeek();
     audio.currentTime =
       ratio *
       audio.duration;
@@ -903,7 +988,7 @@ startButton.addEventListener(
     await audioContext.resume();
     await cueReady;
     if (cueLoadError) {
-      startButton.textContent = "FALHA NA ANALISE - RECARREGUE A PAGINA";
+      renderPlaybackButton("error");
       return;
     }
 
@@ -915,16 +1000,12 @@ startButton.addEventListener(
       await audio.play();
 
 
-      startButton.innerHTML =
-        "<span>Ⅱ</span> PAUSAR";
 
     } else {
 
       audio.pause();
 
 
-      startButton.innerHTML =
-        "<span>▶</span> CONTINUAR";
 
     }
 
@@ -943,10 +1024,9 @@ let previousTime = 0;
 
 function updateSoundWaves(delta, flushPause = false) {
   const playing = flushPause || (!audio.paused && !audio.seeking && !audio.ended);
-  if (playing && cueTimeline && Math.abs(audio.currentTime - cueTimeline.lastTime) > 0.3) {
-    rippleField.reset();
-  }
-  const synced = cueTimeline?.step(audio.currentTime, playing,
+  const targetTime = flushPause && Number.isFinite(audio.duration)
+    ? Math.min(audio.currentTime, audio.duration) : audio.currentTime;
+  const synced = cueTimeline?.step(targetTime, playing,
     cue => rippleField.exciteAt(cue.x, cue.z, cue.strength, cue.width),
     seconds => rippleField.advance(seconds));
   // After pause/end, existing waves are allowed to reflect and settle naturally.
@@ -1011,11 +1091,13 @@ function animate() {
 
   updateSoundWaves(delta);
 
+  const motionGain = audioMotionRecovery.gainFor(camera, terrainRig,
+    window.innerWidth, window.innerHeight);
   for (let i = 0; i < positions.count; i++) {
     // Signed heights produce rising crests and falling troughs. Fixed simulation
     // timesteps supply temporal continuity without smearing the travelling wave.
     positions.array[i * 3 + 1] = TERRAIN.maxHeight *
-      Math.tanh(rippleField.heights[i] / TERRAIN.maxHeight);
+      Math.tanh(rippleField.heights[i] * motionGain / TERRAIN.maxHeight);
   }
   positions.needsUpdate = true;
 

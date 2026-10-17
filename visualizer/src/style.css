@@ -103,54 +103,23 @@ body {
   color: #71857c;
 }
 
-.rail {
+.field-summary {
   position: absolute;
-  left: 42px;
-  top: 175px;
+  left: 45px;
+  top: 139px;
   z-index: 5;
 
   display: flex;
-  flex-direction: column;
-  gap: 27px;
-}
-
-.rail section {
-  display: flex;
-  gap: 14px;
-  align-items: flex-start;
-}
-
-.rail strong {
-  display: block;
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-}
-
-.rail small {
-  display: block;
-  margin-top: 5px;
-
   font-size: 8px;
   letter-spacing: 0.17em;
   color: #70827b;
+  white-space: nowrap;
+  pointer-events: none;
 }
 
-.rail-dot {
-  width: 9px;
-  height: 9px;
-  margin-top: 3px;
-
-  border: 1px solid #65776f;
-  border-radius: 50%;
-}
-
-.rail-dot.active {
-  background: #45e6b0;
-  border-color: #45e6b0;
-
-  box-shadow:
-    0 0 12px rgba(69, 230, 176, 0.8);
+.field-summary > span + span::before {
+  content: "·";
+  margin: 0 10px;
 }
 
 .status {
@@ -191,6 +160,7 @@ body {
 
   font-size: 8px;
   letter-spacing: 0.24em;
+  text-shadow: 0 1px 4px #020706, 0 0 8px #020706;
 }
 
 .listener small {
@@ -206,6 +176,7 @@ body {
 
   border: 1px solid rgba(231, 181, 106, 0.6);
   border-radius: 50%;
+  background: rgba(2, 7, 6, 0.9);
 
   display: flex;
   align-items: center;
@@ -292,8 +263,16 @@ body {
 }
 
 .progress-area {
+  display: flex;
+  align-items: center;
+  gap: 14px;
   border-left: 1px solid rgba(255,255,255,0.06);
   border-right: 1px solid rgba(255,255,255,0.06);
+}
+
+.progress-track {
+  flex: 1;
+  min-width: 0;
 }
 
 .timeline {
@@ -405,16 +384,13 @@ body {
 }
 
 #startButton {
-  position: absolute;
-
-  left: 50%;
-  top: 50%;
-
-  transform: translate(-50%, -50%);
-
-  z-index: 20;
-
-  padding: 15px 24px;
+  position: static;
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  padding: 0;
 
   border: 1px solid rgba(235, 181, 105, 0.52);
   border-radius: 999px;
@@ -423,15 +399,14 @@ body {
 
   color: #edc082;
 
-  font-size: 10px;
-  letter-spacing: 0.16em;
+  font-size: 12px;
 
   cursor: pointer;
 
   backdrop-filter: blur(10px);
 
   box-shadow:
-    0 0 35px rgba(232, 159, 69, 0.13);
+    0 0 14px rgba(232, 159, 69, 0.13);
 
   transition: 0.25s ease;
 }
@@ -444,12 +419,17 @@ body {
 }
 
 #startButton span {
-  margin-right: 8px;
+  margin: 0;
+}
+
+#startButton:focus-visible {
+  outline: 2px solid #efb86b;
+  outline-offset: 3px;
 }
 
 @media (max-width: 1000px) {
 
-  .rail {
+  .field-summary {
     display: none;
   }
 

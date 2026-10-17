@@ -1,0 +1,1 @@
+Interrupted by user-reported power failure; last observed media time 30.330667 s; not a completed run, not PASS.

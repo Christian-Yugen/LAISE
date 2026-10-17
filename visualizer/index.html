@@ -29,45 +29,14 @@
       </div>
     </header>
 
-    <aside class="rail">
-
-      <section>
-        <span class="rail-dot active"></span>
-        <div>
-          <strong>SPATIAL FIELD</strong>
-          <small>REACTIVE TERRAIN</small>
-          <small>REAL-TIME FFT</small>
-        </div>
-      </section>
-
-      <section>
-        <span class="rail-dot"></span>
-        <div>
-          <strong>BINAURAL</strong>
-          <small id="spatialSource">--</small>
-          <small>MASTER SOURCE</small>
-        </div>
-      </section>
-
-      <section>
-        <span class="rail-dot"></span>
-        <div>
-          <strong>STEMS</strong>
-          <small id="sourceCount">--</small>
-          <small id="stemsState">--</small>
-        </div>
-      </section>
-
-      <section>
-        <span class="rail-dot"></span>
-        <div>
-          <strong>MOTION</strong>
-          <small>SPATIAL DATA</small>
-          <small id="motionState">--</small>
-        </div>
-      </section>
-
-    </aside>
+    <div class="field-summary" aria-label="Spatial field metadata">
+      <span>SPATIAL FIELD</span>
+      <span>BINAURAL <span id="spatialSource">--</span></span>
+      <span id="sourceCount">--</span>
+      <span>MOTION DATA</span>
+      <span hidden id="stemsState">--</span>
+      <span hidden id="motionState">--</span>
+    </div>
 
     <div class="status">
       <div class="status-title">
@@ -94,14 +63,17 @@
       </div>
 
       <div class="progress-area">
-
-        <div class="timeline" id="timeline">
-          <div class="timeline-fill" id="timelineFill"></div>
-        </div>
-
-        <div class="time">
-          <span id="currentTime">00:00</span>
-          <span id="duration">00:00</span>
+        <button id="startButton" type="button" aria-label="Iniciar reprodução" title="Iniciar reprodução">
+          <span aria-hidden="true">▶</span>
+        </button>
+        <div class="progress-track">
+          <div class="timeline" id="timeline">
+            <div class="timeline-fill" id="timelineFill"></div>
+          </div>
+          <div class="time">
+            <span id="currentTime">00:00</span>
+            <span id="duration">00:00</span>
+          </div>
         </div>
 
       </div>
@@ -133,11 +105,6 @@
       </div>
 
     </footer>
-
-    <button id="startButton">
-      <span>▶</span>
-      INICIAR VISUALIZAÇÃO
-    </button>
 
     <audio
       id="audio"
