@@ -1,0 +1,14 @@
+{
+  "pass": true,
+  "sources": 12,
+  "preservedAttacks": 10282,
+  "gestures": 2583,
+  "relationships": 26577,
+  "trajectorySamplesChecked": 27559,
+  "spatialTolerance": 2e-05,
+  "maximumSpatialError": 4.997726272826242e-07,
+  "allAttacksGrouped": true,
+  "protectedV12HashesMatch": true,
+  "runtimeDiffVsApprovedTag": "empty",
+  "jsonSha256": "6c2c0796fd42dc178f7211061b3b5a75fad412b9e8e5a7324b8db4a1f6c8dc54"
+}

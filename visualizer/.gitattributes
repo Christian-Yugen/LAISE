@@ -11,3 +11,10 @@
 /public/audio/tukana-stem-cues.json -text
 /public/audio/tukana-visualizer-manifest.json -text
 /tests/fixtures/** -text
+# V1.3A provenance records the exact offline analyzer/builder bytes.
+/tools/musical_gestures.py -text
+/tools/build_musical_gestures.py -text
+
+# V1.3B provenance freezes exact approved offline producer bytes.
+/tools/musical_salience.py -text
+/tools/build_musical_visual_intents.py -text

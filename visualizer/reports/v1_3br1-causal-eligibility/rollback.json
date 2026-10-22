@@ -1,0 +1,17 @@
+{
+  "files": {
+    "public/audio/tukana-musical-visual-intents-v1.json": "4c42dbaceb0adcd7010a1981186e8e75a11e03539ef4e90634ebc690d98add7b",
+    "tools/musical_salience.py": "bd2f5cd04a96930d360bb67dcde661f15d9c0650c25efe3d26639726a44de01e",
+    "tools/build_musical_visual_intents.py": "5d240537805dcfc83cb4934ea0b9a3d86f2a1fffa92463d7e0bc7faa22750212",
+    "tools/validate_musical_salience.py": "8bf5dd92efcdd3c0f0c18fdd59dae0823dee081afd204fec04a31420588cfcf3",
+    "tools/render_musical_salience.py": "0187fa37f2a6c9a555d69306778f70f828aab03c9503f0974d32d1f84d754901",
+    "reports/LAISE_VISUALIZER_V1_3B_MUSICAL_SALIENCE_ARBITRATION.md": "343ccef99e7d30cb6a8c07cc0d9f1cd3cb1a467627453ad1e90ea11bcfb74929",
+    "reports/v1_3b-musical-salience-arbitration/analysis-summary.json": "c84713689d6039487e89a97d27faee85a7eed4b7d0723175965fa76b9b591291",
+    "reports/v1_3b-musical-salience-arbitration/sensitivity.json": "8c226c9883c9fcd18f9cd546e504af809704616e8dd3889b94ac5ad3792f7181",
+    "reports/v1_3b-musical-salience-arbitration/determinism.json": "c33942bddcda7442d695eebefdd3ab1eeeb69fec592f07374ba5df359239a666",
+    "reports/v1_3b-musical-salience-arbitration/intensity-distributions.json": "130c4bf20d6e14d11defaf22dcdf4e86843f0e156097975ffafac5488c33df11",
+    "reports/v1_3b-musical-salience-arbitration/sanity-checks.json": "f7897996615a3fec3da76611171b333a6ec7a502b66a4d527af6d0c4628c7f48",
+    "reports/v1_3b-musical-salience-arbitration/final-checks.json": "7144e37a2ac61233efe8547488b38f5944b99f97bb5f2c69dce4a781786feb12"
+  },
+  "noCodeChangesYet": true
+}

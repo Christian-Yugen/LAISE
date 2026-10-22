@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="420" viewBox="0 0 1500 420" role="img"><title>drums:g00044</title>
+<style>text{font-family:Arial,sans-serif;fill:#233344}.tick{font-size:11px}.label{font-size:13px;font-weight:bold}</style>
+<rect width="1500" height="420" fill="#fafcfe"/>
+<text x="30" y="30" font-size="21" >TREMOLO_OR_ROLL | drums | confidence 0.828</text>
+<text x="30" y="55" font-size="14" >57.632-58.256 s | RMS 0.003434 | 8 original attacks</text>
+<rect x="517.260" y="90" width="355.480" height="220" fill="#b26c0d" opacity=".12"/>
+<path d="M100.254,189.202 L111.648,221.129 L123.041,222.213 L134.435,228.957 L145.829,241.894 L157.222,258.920 L168.616,269.821 L180.009,271.831 L191.403,281.815 L202.797,291.239 L214.190,294.333 L225.584,295.230 L236.977,291.495 L248.371,288.025 L259.765,287.832 L271.158,290.013 L282.552,296.124 L293.945,297.838 L305.339,297.776 L316.733,294.877 L328.126,274.330 L339.520,227.402 L350.913,195.942 L362.307,164.007 L373.701,143.402 L385.094,151.919 L396.488,141.487 L407.881,152.035 L419.275,159.577 L430.669,176.328 L442.062,217.528 L453.456,211.953 L464.849,222.419 L476.243,239.161 L487.637,259.284 L499.030,261.546 L510.424,253.739 L521.817,253.779 L533.211,249.555 L544.605,256.400 L555.998,244.806 L567.392,244.895 L578.785,242.040 L590.179,252.554 L601.573,249.989 L612.966,254.107 L624.360,254.142 L635.753,260.453 L647.147,258.300 L658.540,237.967 L669.934,190.905 L681.328,152.889 L692.721,142.427 L704.115,159.881 L715.508,164.088 L726.902,161.128 L738.296,171.553 L749.689,192.628 L761.083,234.099 L772.476,227.239 L783.870,229.535 L795.264,238.770 L806.657,256.644 L818.051,260.627 L829.444,262.385 L840.838,266.944 L852.232,271.268 L863.625,265.278 L875.019,260.056 L886.412,255.559 L897.806,256.347 L909.200,262.934 L920.593,271.008 L931.987,277.265 L943.380,280.236 L954.774,282.797 L966.168,281.523 L977.561,260.496 L988.955,211.859 L1000.348,165.034 L1011.742,128.182 L1023.136,131.598 L1034.529,152.960 L1045.923,158.666 L1057.316,174.846 L1068.710,177.703 L1080.104,223.621 L1091.497,231.556 L1102.891,229.468 L1114.284,232.481 L1125.678,246.710 L1137.072,257.115 L1148.465,253.524 L1159.859,240.734 L1171.252,241.050 L1182.646,248.656 L1194.040,259.698 L1205.433,258.984 L1216.827,259.231 L1228.220,253.556 L1239.614,263.569 L1251.008,268.270 L1262.401,277.706 L1273.795,275.771 L1285.188,273.352 L1296.582,273.014" fill="none" stroke="#203c50" stroke-width="1.5"/>
+<text x="12" y="310" font-size="11" >0.00000</text>
+<text x="90.0" y="335" font-size="11" >56.882s</text>
+<text x="12" y="260.0" font-size="11" >0.00192</text>
+<text x="392.499999999999" y="335" font-size="11" >57.413s</text>
+<text x="12" y="210.0" font-size="11" >0.00383</text>
+<text x="695.000000000002" y="335" font-size="11" >57.944s</text>
+<text x="12" y="160.0" font-size="11" >0.00575</text>
+<text x="997.500000000001" y="335" font-size="11" >58.475s</text>
+<text x="12" y="110" font-size="11" >0.00766</text>
+<text x="1300.0" y="335" font-size="11" >59.006s</text>
+<path d="M517.260,95V310" stroke="#e67e22" opacity=".45"><title>original attack 991 at 57.632s</title></path>
+<path d="M562.834,95V310" stroke="#e67e22" opacity=".45"><title>original attack 992 at 57.712s</title></path>
+<path d="M612.966,95V310" stroke="#e67e22" opacity=".45"><title>original attack 1000 at 57.8s</title></path>
+<path d="M672.213,95V310" stroke="#e67e22" opacity=".45"><title>original attack 1001 at 57.904s</title></path>
+<path d="M726.902,95V310" stroke="#e67e22" opacity=".45"><title>original attack 1006 at 58.0s</title></path>
+<path d="M772.476,95V310" stroke="#e67e22" opacity=".45"><title>original attack 1009 at 58.08s</title></path>
+<path d="M822.608,95V310" stroke="#e67e22" opacity=".45"><title>original attack 1011 at 58.168s</title></path>
+<path d="M872.740,95V310" stroke="#e67e22" opacity=".45"><title>original attack 1018 at 58.256s</title></path>
+<text x="30" y="365" font-size="12" >Vertical axis: absolute stereo RMS FS (case-specific numeric axis, no signal normalization). Orange lines: original attacks.</text>
+<text x="30" y="389" font-size="12" >Classification is a feature-supported hypothesis. Full numeric and T007 trajectory evidence: cases.json.</text>
+</svg>
