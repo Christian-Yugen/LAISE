@@ -325,13 +325,16 @@ export class BehaviorTimelineV13C {
   ) {
 
     /*
-      Absolute-preserving provisional visual mapping.
+      R6.4 absolute-preserving footprint mapping.
 
-      P10 -> 0.55x base footprint
-      P99 -> 1.45x base footprint
+      P10 -> 0.65x base footprint
+      P99 -> 1.80x base footprint
 
-      The musical amplitude itself is NOT normalized.
-      This only controls the initial spatial footprint.
+      Strong mountains therefore develop a broader base
+      before rising vertically.
+
+      Musical amplitude / physicalDrive is NOT normalized
+      or amplified here. Only spatial footprint changes.
     */
 
     const safe =
@@ -358,8 +361,8 @@ export class BehaviorTimelineV13C {
 
 
     return (
-      0.55 +
-      0.90 * u
+      0.65 +
+      1.15 * u
     );
   }
 

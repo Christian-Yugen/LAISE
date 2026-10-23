@@ -1,0 +1,42 @@
+{
+  "approval": "USER_APPROVED_VISUAL_APPEARANCE",
+  "date": "2026-10-22",
+  "scope": "V1.3C visual appearance and current R6.4 footprint/height checkpoint. Beat and stem-to-wave fidelity remains under evaluation.",
+  "branch": "feature/visualizer-v1.3c-approved-golden-mesh",
+  "base": "0f0a0d0a02ba00978d3df35136d17a71f93ee848",
+  "sha256": {
+    "visualizer/behavior-lab-v13c.html": "b3ef1b1b650de632e0a9cc43ef2b0b4d9351e3df51461096ea5e1e94eff3bb82",
+    "visualizer/src/behavior-lab-v13c.js": "61fd10b8224b81855d53aa3dbcff51dea0b02a845092447d68cc7542a5eabe16",
+    "visualizer/src/behavior-timeline-v13c.js": "399b2f203453fb2206980c79af75e8f56692a6ac5836114f0c8bcea51f47799c",
+    "visualizer/src/behavior-open-boundary-field-v13c.js": "4d0abef8d2a18116186733c9e615b0dd2447ffc97d985c60004920ec867b85ee",
+    "visualizer/src/behavior-ripple-field-v13c.js": "7fbee0a9e6dae9984277207982d8e1d1b281a399676db41a1ccf2363f1e7eb38",
+    "visualizer/public/audio/tukana-musical-behavior-runtime-v1.json": "0befc1612962843ac39a500d7c941f47442b4bc01f825c9a831d339b87841c7a",
+    "visualizer/public/audio/tukana-stem-cues.json": "c880676240a480f72cf3dc42fc5b3a656bd38fd466a79474698abd81b99e944c",
+    "visualizer/public/audio/tukana-visualizer-manifest.json": "d9e30acd15b532ce44e7a05ee3cffcf22c1e602e55623018ae9b241065e9f62d"
+  },
+  "validation": {
+    "javascriptTests": {
+      "passed": 78,
+      "failed": 0
+    },
+    "pythonTests": {
+      "passed": 74,
+      "failed": 0
+    },
+    "syntaxExit": 0,
+    "productionBuildExit": 0,
+    "v13cBuildExit": 0,
+    "webglErrors": 0
+  },
+  "captures": {
+    "viewport": [
+      1920,
+      919
+    ],
+    "energy": 0.27,
+    "flat": "flat-approved.png",
+    "deformed": "relief-134s-approved.png",
+    "deformedTimeSeconds": 134,
+    "protocol": "Fixed particle seed and visual clock; actual cached musical field. Screenshot HUD anchor is not replayed."
+  }
+}
