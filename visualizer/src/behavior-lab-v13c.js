@@ -18,6 +18,7 @@ import {
 import {
   UnrealBloomPass
 } from "three/addons/postprocessing/UnrealBloomPass.js";
+import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
 
 
 const canvas =
@@ -142,6 +143,10 @@ renderer.setSize(
 renderer.outputColorSpace =
   THREE.SRGBColorSpace;
 
+// Compress the final composite, including bloom, before display conversion.
+renderer.toneMapping = THREE.ReinhardToneMapping;
+renderer.toneMappingExposure = 1.15;
+
 
 const scene =
   new THREE.Scene();
@@ -232,9 +237,9 @@ function frameTerrain() {
     const bounds = element?.getBoundingClientRect();
     return bounds?.width && bounds?.height ? bounds : null;
   };
-  const listenerTop = rect(".headphones")?.top ?? rect(".listener")?.top ?? height * 0.8;
-  const listenerGap = Math.max(6, Math.min(width, height) * (8 / 1080));
-  const frontTarget = listenerTop - listenerGap + SCREEN_POSITION.vertical;
+  const hudTop = rect(".hud")?.top ?? height * 0.88;
+  const frontGap = Math.max(6, Math.min(width, height) * (8 / 1080));
+  const frontTarget = hudTop - frontGap + SCREEN_POSITION.vertical;
   const obstacles = [".brand", ".field-summary", ".status"].map(rect).filter(Boolean).map(r => [
     { x: r.left - margin / 2, y: r.top - margin / 2 },
     { x: r.right + margin / 2, y: r.top - margin / 2 },
@@ -298,8 +303,51 @@ frameTerrain();
    LIGHT
 ========================================================= */
 
-// All active scene materials are unlit (MeshBasicMaterial / PointsMaterial).
-// PointLights and their exclusive intensity calculations have no visual effect.
+/*
+  R7C-R6: camera-space key/fill, shared by the relief and wire shading.
+  Camera local +X is screen right, +Y is up, +Z faces the observer.
+  Both the lights AND their targets belong to the camera, so rotating or
+  reframing it cannot change the apparent side of the illumination.
+*/
+const TERRAIN_LIGHTING = Object.freeze({
+  keyIntensity: 4.4,
+  fillIntensity: 0.20,
+  ambientIntensity: 0.08,
+  surfaceAlbedo: 0.26,
+  wireShadow: 0.10,
+  wireKey: 4.6,
+  wireFill: 0.08,
+  wireRim: 4.8,
+  peakBoost: 1.0,
+  surfaceLight: 0.50,
+  surfacePeakLight: 1.20,
+  bloomBase: 0.14,
+  bloomEnergy: 0.04,
+  bloomRadius: 0.0,
+  bloomThreshold: 1.10
+});
+
+const terrainHemisphereLight = new THREE.HemisphereLight(
+  0xfff4e8, 0x101522, TERRAIN_LIGHTING.ambientIntensity
+);
+scene.add(terrainHemisphereLight);
+
+const terrainKeyLight = new THREE.DirectionalLight(
+  0xfff2d8, TERRAIN_LIGHTING.keyIntensity
+);
+const terrainFillLight = new THREE.DirectionalLight(
+  0xd5e6ff, TERRAIN_LIGHTING.fillIntensity
+);
+
+terrainKeyLight.target.position.set(0, 0, -CAMERA.distance);
+terrainFillLight.target.position.copy(terrainKeyLight.target.position);
+terrainKeyLight.position.copy(terrainKeyLight.target.position)
+  .add(new THREE.Vector3(-0.72, 0.62, 0.42).normalize().multiplyScalar(20));
+terrainFillLight.position.copy(terrainFillLight.target.position)
+  .add(new THREE.Vector3(0.72, 0.18, 0.50).normalize().multiplyScalar(20));
+camera.add(terrainKeyLight, terrainKeyLight.target,
+  terrainFillLight, terrainFillLight.target);
+scene.add(camera);
 
 
 /* =========================================================
@@ -339,25 +387,204 @@ const colors =
   );
 
 
-const colorA =
-  new THREE.Color(
-    0xd89a48
+/*
+  R7C ? CONTINUOUS GOLDEN SPECTRUM
+
+  One continuous chromatic surface.
+
+  There are no warm/cool halves and no central seam.
+
+  Gold has the largest visual territory, then gradually
+  evolves through coral, magenta, violet, cyan and blue.
+
+  Position / propagation remain physical.
+  Color is presentation only.
+*/
+
+const spectrumStops = [
+
+  {
+    t: 0.00,
+    color: new THREE.Color(0x4f72b5)
+  },
+
+  {
+    t: 0.14,
+    color: new THREE.Color(0x765fc3)
+  },
+
+  {
+    t: 0.27,
+    color: new THREE.Color(0xb6539b)
+  },
+
+  {
+    t: 0.34,
+    color: new THREE.Color(0xd66762)
+  },
+
+  /*
+    R7C-R2 GOLDEN CENTER
+
+    The perceptual center deliberately receives the
+    largest warm luminous territory.
+
+    Important musical mountains therefore tend to appear
+    golden rather than predominantly red.
+  */
+
+  {
+    t: 0.52,
+    color: new THREE.Color(0xe3a642)
+  },
+
+  {
+    t: 0.58,
+    color: new THREE.Color(0xf0bd4f)
+  },
+
+  {
+    t: 0.67,
+    color: new THREE.Color(0xdaa344)
+  },
+
+  {
+    t: 0.80,
+    color: new THREE.Color(0x42b8aa)
+  },
+
+  {
+    t: 1.00,
+    color: new THREE.Color(0x347fb8)
+  }
+
+];
+
+
+const observerColorCos =
+  Math.cos(
+    BASE_POSE.yaw
   );
 
-const colorB =
-  new THREE.Color(
-    0xc54c3d
+const observerColorSin =
+  Math.sin(
+    BASE_POSE.yaw
   );
 
-const colorC =
-  new THREE.Color(
-    0x36d2b3
-  );
 
-const colorD =
-  new THREE.Color(
-    0x318cbe
+const observerColorHalfSpan =
+  TERRAIN.width / 2 *
+    Math.abs(observerColorCos) +
+  TERRAIN.depth / 2 *
+    Math.abs(observerColorSin);
+
+
+/*
+  Quintic smootherstep.
+
+  Besides color continuity, the RATE of chromatic change
+  also approaches zero at each palette control point.
+
+  That prevents a visible chromatic seam.
+*/
+
+function spectrumSmootherStep(value) {
+
+  const u =
+    THREE.MathUtils.clamp(
+      value,
+      0,
+      1
+    );
+
+  return (
+    u * u * u *
+    (
+      u *
+      (
+        u * 6 - 15
+      ) +
+      10
+    )
   );
+}
+
+
+function continuousSpectrumColor(
+  t,
+  target
+) {
+
+  if (t <= spectrumStops[0].t) {
+
+    return target.copy(
+      spectrumStops[0].color
+    );
+  }
+
+
+  const last =
+    spectrumStops[
+      spectrumStops.length - 1
+    ];
+
+
+  if (t >= last.t) {
+
+    return target.copy(
+      last.color
+    );
+  }
+
+
+  for (
+    let i = 0;
+    i < spectrumStops.length - 1;
+    i++
+  ) {
+
+    const left =
+      spectrumStops[i];
+
+    const right =
+      spectrumStops[i + 1];
+
+
+    if (
+      t >= left.t &&
+      t <= right.t
+    ) {
+
+      const localT =
+        (
+          t - left.t
+        ) /
+        (
+          right.t -
+          left.t
+        );
+
+
+      return target
+        .copy(left.color)
+        .lerp(
+          right.color,
+          spectrumSmootherStep(
+            localT
+          )
+        );
+    }
+  }
+
+
+  return target.copy(
+    last.color
+  );
+}
+
+
+const spectrumColor =
+  new THREE.Color();
 
 
 for (
@@ -371,64 +598,59 @@ for (
       i * 3
     ];
 
+  const z =
+    basePositions[
+      i * 3 + 2
+    ];
+
+
+  /*
+    Horizontal axis as perceived by the observer.
+
+    The terrain can remain yawed 45 degrees while
+    the chromatic progression remains visually ordered.
+  */
+
+  const observerX =
+    x * observerColorCos +
+    z * observerColorSin;
+
+
   const t =
     THREE.MathUtils.clamp(
-      (x + TERRAIN.width / 2) / TERRAIN.width,
+      (
+        observerX +
+        observerColorHalfSpan
+      ) /
+      (
+        2 *
+        observerColorHalfSpan
+      ),
       0,
       1
     );
 
 
-  let c =
-    new THREE.Color();
-
-
-  if (t < 0.33) {
-
-    c.copy(
-      colorA
-    ).lerp(
-      colorB,
-      t / 0.33
-    );
-
-  } else if (t < 0.68) {
-
-    c.copy(
-      colorB
-    ).lerp(
-      colorC,
-      (
-        t - 0.33
-      ) / 0.35
-    );
-
-  } else {
-
-    c.copy(
-      colorC
-    ).lerp(
-      colorD,
-      (
-        t - 0.68
-      ) / 0.32
-    );
-
-  }
+  continuousSpectrumColor(
+    t,
+    spectrumColor
+  );
 
 
   colors[
     i * 3
-  ] = c.r;
+  ] =
+    spectrumColor.r;
 
   colors[
     i * 3 + 1
-  ] = c.g;
+  ] =
+    spectrumColor.g;
 
   colors[
     i * 3 + 2
-  ] = c.b;
-
+  ] =
+    spectrumColor.b;
 }
 
 
@@ -441,77 +663,301 @@ geometry.setAttribute(
 );
 
 
-const terrainMaterial =
-  new THREE.MeshBasicMaterial({
+/*
+  R7C-R2 ? IMMUTABLE CHROMATIC BASE
 
-    vertexColors: true,
+  Runtime light/shadow modifies only the displayed color.
+  This copy preserves the original spectrum.
+*/
 
-    wireframe: true,
+const baseSpectrumColors =
+  new Float32Array(
+    colors
+  );
 
-    transparent: true,
 
-    opacity: 0.83,
+// R7C-R6: immutable palette and shared position/normal buffers. The surface
+// and its lines now shade the SAME visible slope, without CPU recoloring.
+geometry.setAttribute("color", new THREE.BufferAttribute(baseSpectrumColors, 3));
+const wireGeometry = new THREE.BufferGeometry();
+wireGeometry.setIndex(geometry.index);
+wireGeometry.setAttribute("position", positions);
+wireGeometry.setAttribute("normal", geometry.attributes.normal);
+wireGeometry.setAttribute("color", geometry.attributes.color);
 
-    blending:
-      THREE.AdditiveBlending,
+const wireLightDirection = new THREE.Vector3();
+const wireFillDirection = new THREE.Vector3();
+const wireViewLightDirection = new THREE.Vector3();
+const wireViewFillDirection = new THREE.Vector3();
+const wireViewUpDirection = new THREE.Vector3();
+const inverseTerrainMatrix = new THREE.Matrix4();
+const lightWorldPosition = new THREE.Vector3();
+const lightWorldTarget = new THREE.Vector3();
 
-    depthWrite: false
+function updateTerrainLighting() {
+  camera.updateWorldMatrix(true, true);
+  terrainRig.updateWorldMatrix(true, false);
+  inverseTerrainMatrix.copy(terrainRig.matrixWorld).invert();
+  const localDirection = (light, direction) => {
+    light.getWorldPosition(lightWorldPosition);
+    light.target.getWorldPosition(lightWorldTarget);
+    direction.subVectors(lightWorldPosition, lightWorldTarget)
+      .transformDirection(inverseTerrainMatrix);
+  };
+  localDirection(terrainKeyLight, wireLightDirection);
+  localDirection(terrainFillLight, wireFillDirection);
+  // The shader normalMatrix produces VIEW-space normals. Transform the key
+  // and fill to that same space; camera-local illumination remains stable.
+  wireViewLightDirection.copy(wireLightDirection)
+    .transformDirection(terrainRig.matrixWorld)
+    .transformDirection(camera.matrixWorldInverse);
+  wireViewFillDirection.copy(wireFillDirection)
+    .transformDirection(terrainRig.matrixWorld)
+    .transformDirection(camera.matrixWorldInverse);
+  wireViewUpDirection.set(0, 1, 0)
+    .transformDirection(terrainRig.matrixWorld)
+    .transformDirection(camera.matrixWorldInverse);
+}
 
-  });
+
+/*
+  One depth-tested, directionally luminous wireframe replaces the former
+  unlit CPU-tinted lines plus displaced additive duplicate. The shadow floor
+  is deliberately weak. Rim light is gated by the KEY response, so a dark
+  slope never gains a view-only emissive contour that would erase its shade.
+*/
+// Presentation grade only: preserve the palette's dominant channel while
+// strengthening its chroma, rather than diluting lit colors toward white.
+// The palette and the gold enhancement use the SAME observer-space axis.
+// A broad spatial blend avoids a hue-threshold band at the red/gold boundary.
+const terrainSpectrumAxis = new THREE.Vector2(observerColorCos, observerColorSin);
+const terrainColorGLSL = `
+  vec3 vividTerrainColor(vec3 source, float spectrumT) {
+    float peak = max(max(source.r, source.g), source.b);
+    vec3 chroma = clamp(source / max(peak, 0.0001), 0.0, 1.0);
+    vec3 vivid = pow(chroma, vec3(1.40));
+    // Let red, orange and gold overlap across a wide part of the field.
+    // The central gold retains its full gain; the cool side fades gently.
+    float gold = smoothstep(0.32, 0.56, spectrumT)
+      * (1.0 - smoothstep(0.68, 0.80, spectrumT));
+    // More yellow-gold, less copper: lift green relative to dominant red,
+    // retain low blue for saturation, and give gold a modest luminous gain.
+    vivid.g = mix(vivid.g, max(vivid.g, 0.72), gold * 0.90);
+    vivid.b *= 1.0 - 0.20 * gold;
+    return vivid * peak * (1.0 + 0.15 * gold);
+  }
+  float terrainPeakLight(float height) {
+    return smoothstep(1.5, 6.5, max(height, 0.0));
+  }
+`;
+
+const terrainMaterial = new THREE.ShaderMaterial({
+  vertexColors: true,
+  wireframe: true,
+  side: THREE.DoubleSide,
+  transparent: false,
+  depthTest: true,
+  depthWrite: false,
+  // Global atmospheric fog suppressed the old lines while the projected
+  // layer bypassed it. Both terrain materials now use the same clear medium.
+  fog: false,
+  uniforms: {
+    uKeyDirection: { value: wireViewLightDirection },
+    uFillDirection: { value: wireViewFillDirection },
+    uTerrainUp: { value: wireViewUpDirection },
+    uOrthographic: { value: camera.isOrthographicCamera },
+    uSpectrumAxis: { value: terrainSpectrumAxis },
+    uSpectrumHalfSpan: { value: observerColorHalfSpan },
+    uShadow: { value: TERRAIN_LIGHTING.wireShadow },
+    uKey: { value: TERRAIN_LIGHTING.wireKey },
+    uFill: { value: TERRAIN_LIGHTING.wireFill },
+    uRim: { value: TERRAIN_LIGHTING.wireRim },
+    uPeakBoost: { value: TERRAIN_LIGHTING.peakBoost }
+  },
+  vertexShader: `
+    varying vec3 vViewNormal;
+    varying vec3 vViewPosition;
+    varying vec3 vSpectrum;
+    varying float vTerrainHeight;
+    varying float vSpectrumT;
+    uniform vec2 uSpectrumAxis;
+    uniform float uSpectrumHalfSpan;
+    void main() {
+      vTerrainHeight = position.y;
+      vSpectrumT = (dot(position.xz, uSpectrumAxis) + uSpectrumHalfSpan)
+        / (2.0 * uSpectrumHalfSpan);
+      vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
+      vViewNormal = normalMatrix * normal;
+      vViewPosition = -mvPosition.xyz;
+      vSpectrum = color;
+      gl_Position = projectionMatrix * mvPosition;
+    }
+  `,
+  fragmentShader: `
+    uniform vec3 uKeyDirection;
+    uniform vec3 uFillDirection;
+    uniform vec3 uTerrainUp;
+    uniform bool uOrthographic;
+    uniform float uShadow;
+    uniform float uKey;
+    uniform float uFill;
+    uniform float uRim;
+    uniform float uPeakBoost;
+    varying float vTerrainHeight;
+    varying float vSpectrumT;
+    ${terrainColorGLSL}
+    varying vec3 vViewNormal;
+    varying vec3 vViewPosition;
+    varying vec3 vSpectrum;
+    void main() {
+      vec3 viewDirection = uOrthographic ? vec3(0.0, 0.0, 1.0)
+        : normalize(vViewPosition);
+      vec3 faceNormal = normalize(vViewNormal);
+      // Wireframe primitives are lines: gl_FrontFacing cannot orient their
+      // normals. Face them toward the observer, matching the visible side
+      // of the depth-writing, double-sided relief beneath them.
+      if (dot(faceNormal, viewDirection) < 0.0) faceNormal = -faceNormal;
+      float keyFacing = max(dot(faceNormal, uKeyDirection), 0.0);
+      float key = pow(smoothstep(0.35, 0.98, keyFacing), 2.6);
+      float fill = max(dot(faceNormal, uFillDirection), 0.0);
+      // The camera looks across a shallow plane: Fresnel alone would also
+      // light the entire flat base. Gate the rim by actual terrain slope.
+      float slope = 1.0 - abs(dot(faceNormal, uTerrainUp));
+      float rim = pow(1.0 - max(dot(faceNormal, viewDirection), 0.0), 2.8)
+        * smoothstep(0.02, 0.40, slope);
+      float litRim = rim * smoothstep(0.12, 0.85, keyFacing);
+      // Actual musical height accents only the lit contribution. Shadows
+      // keep their existing floor; no displacement or physical drive changes.
+      float peakGain = 1.0 + uPeakBoost * terrainPeakLight(vTerrainHeight);
+      float radiance = uShadow + uFill * fill
+        + (uKey * key + uRim * litRim) * peakGain;
+      // HDR remains chromatic: no white mix and no additive layer. Only
+      // light-facing lines cross the bloom threshold; the final OutputPass
+      // compresses their radiance after the restrained bloom composite.
+      gl_FragColor = vec4(vividTerrainColor(vSpectrum, vSpectrumT) * radiance, 1.0);
+      #include <tonemapping_fragment>
+      #include <colorspace_fragment>
+    }
+  `
+});
 
 
 const terrain =
   new THREE.Mesh(
-    geometry,
+    wireGeometry,
     terrainMaterial
   );
 
+
+// V1.3C may deform beyond the legacy framing envelope.
+terrain.frustumCulled = false;
+
+
+/*
+  R7A ? SHADED RELIEF SURFACE
+
+  Same geometry, same deformation, same vertex colors.
+
+  This surface does not create another wave.
+  It only makes the existing geometry readable through
+  light and shade.
+*/
+
+// A depth-writing surface prevents bright hidden slopes and rear wire
+// segments from washing over a shadow-facing foreground slope.
+const reliefSurfaceMaterial = new THREE.MeshStandardMaterial({
+  vertexColors: true,
+  color: new THREE.Color().setScalar(TERRAIN_LIGHTING.surfaceAlbedo),
+  side: THREE.DoubleSide,
+  transparent: false,
+  opacity: 1.0,
+  roughness: 0.72,
+  metalness: 0.0,
+  fog: false,
+  depthTest: true,
+  depthWrite: true,
+  polygonOffset: true,
+  polygonOffsetFactor: 1,
+  polygonOffsetUnits: 1
+});
+
+
+// Keep the solid body chromatic as well as the lines. This replaces no
+// normals or lighting model: the Standard shader still supplies its live
+// view-space normal, occlusion, key/fill and depth behavior.
+reliefSurfaceMaterial.onBeforeCompile = shader => {
+  shader.uniforms.uTerrainKeyDirection = { value: wireViewLightDirection };
+  shader.uniforms.uSpectrumAxis = { value: terrainSpectrumAxis };
+  shader.uniforms.uSpectrumHalfSpan = { value: observerColorHalfSpan };
+  shader.uniforms.uTerrainSurfaceLight = { value: TERRAIN_LIGHTING.surfaceLight };
+  shader.uniforms.uTerrainSurfacePeakLight = { value: TERRAIN_LIGHTING.surfacePeakLight };
+  shader.vertexShader = `
+    varying float vTerrainHeight;
+    varying float vSpectrumT;
+    uniform vec2 uSpectrumAxis;
+    uniform float uSpectrumHalfSpan;
+  ` + shader.vertexShader;
+  shader.vertexShader = shader.vertexShader.replace("#include <begin_vertex>",
+    `#include <begin_vertex>
+    vTerrainHeight = position.y;
+    vSpectrumT = (dot(position.xz, uSpectrumAxis) + uSpectrumHalfSpan)
+      / (2.0 * uSpectrumHalfSpan);`);
+  shader.fragmentShader = `
+    varying float vTerrainHeight;
+    varying float vSpectrumT;
+    uniform vec3 uTerrainKeyDirection;
+    uniform float uTerrainSurfaceLight;
+    uniform float uTerrainSurfacePeakLight;
+    ${terrainColorGLSL}
+  ` + shader.fragmentShader;
+  shader.fragmentShader = shader.fragmentShader.replace("#include <color_fragment>",
+    "#include <color_fragment>\ndiffuseColor.rgb = vividTerrainColor(diffuseColor.rgb, vSpectrumT);");
+  shader.fragmentShader = shader.fragmentShader.replace("#include <emissivemap_fragment>", `
+    #include <emissivemap_fragment>
+    float litFace = pow(smoothstep(0.18, 0.95,
+      max(dot(normal, uTerrainKeyDirection), 0.0)), 1.4);
+    totalEmissiveRadiance += diffuseColor.rgb * litFace
+      * (uTerrainSurfaceLight + uTerrainSurfacePeakLight * terrainPeakLight(vTerrainHeight));
+  `);
+};
+reliefSurfaceMaterial.customProgramCacheKey = () => "r7c-r6-warm-gradient";
+
+const reliefSurface =
+  new THREE.Mesh(
+    geometry,
+    reliefSurfaceMaterial
+  );
+
+
+reliefSurface.frustumCulled =
+  false;
+
+reliefSurface.renderOrder =
+  0;
+
+terrain.renderOrder =
+  1;
 
 const terrainRig = new THREE.Group();
 terrainRig.position.set(0, BASE_POSE.y, 0);
 terrainRig.rotation.set(BASE_POSE.pitch, BASE_POSE.yaw, BASE_POSE.roll);
 terrainRig.scale.set(1, 1, 1);
-terrainRig.add(terrain);
-scene.add(terrainRig);
+terrainRig.add(
+  reliefSurface
+);
+
+terrainRig.add(
+  terrain
+);
+
+scene.add(
+  terrainRig
+);
 
 
-/* =========================================================
-   SECOND CONTOUR LAYER
-========================================================= */
-
-// Shared geometry guarantees identical silhouettes and deformation.
-const glowGeometry = geometry;
-
-
-const glowMaterial =
-  new THREE.MeshBasicMaterial({
-
-    color:
-      0x46d6ae,
-
-    wireframe: true,
-
-    transparent: true,
-
-    opacity: 0.08,
-
-    blending:
-      THREE.AdditiveBlending,
-
-    depthWrite: false
-
-  });
-
-
-const glowTerrain =
-  new THREE.Mesh(
-    glowGeometry,
-    glowMaterial
-  );
-
-
-glowTerrain.position.set(0, 0.025, 0);
-terrainRig.add(glowTerrain);
+// R7C-R6 removes the projectedGoldenLightSurface and the translated
+// additive glowTerrain. Bloom now comes from the single lit wireframe;
+// it cannot expose hidden geometry or blanket a whole shaded face.
 
 // Include both crests and troughs in the deformation bounds.
 geometry.boundingBox = new THREE.Box3(
@@ -718,6 +1164,10 @@ for (
 }
 
 
+// Decorative listener rings intentionally removed from
+// the V1.3C visual composition.
+rings.visible = false;
+
 scene.add(
   rings
 );
@@ -858,16 +1308,20 @@ const bloom =
       window.innerHeight
     ),
 
-    0.9,
-    0.55,
-    0.12
+    TERRAIN_LIGHTING.bloomBase,
+    TERRAIN_LIGHTING.bloomRadius,
+    TERRAIN_LIGHTING.bloomThreshold
 
   );
 
 
+// Favor the fine blur mip. The default broad mips spread luminous crests
+// across neighboring dark slopes, undoing their directional contrast.
+bloom.compositeMaterial.uniforms.bloomFactors.value = [1.0, 0.28, 0.06, 0.0, 0.0];
 composer.addPass(
   bloom
 );
+composer.addPass(new OutputPass());
 
 
 /* =========================================================
@@ -1059,137 +1513,216 @@ let previousTime = 0;
 ========================================================= */
 
 let behaviorTimelineV13C = null;
-let behaviorMode = "v13c";
+
+// V1.3C is now the definitive visual behavior.
+// No public V1.2/V1.3C mode selector remains.
+const behaviorMode = "v13c";
+
+/* =========================================================
+   R6.4 ? SCULPTED PEAK ENVELOPE
+
+   Physical field is never clipped.
+
+   Up to 4.8:
+     1:1 visual response.
+
+   Above 4.8:
+     progressive logarithmic containment.
+
+   This keeps exceptional peaks visually dominant without
+   allowing them to overwhelm the entire camera composition.
+========================================================= */
+
+const V13C_VISUAL_PEAK_KNEE = 4.8;
+const V13C_VISUAL_PEAK_LOG_SCALE = 1.4;
+
+function visualHeightV13C(
+  physicalVisualHeight
+) {
+
+  const sign =
+    Math.sign(
+      physicalVisualHeight
+    );
+
+  const magnitude =
+    Math.abs(
+      physicalVisualHeight
+    );
+
+
+  if (
+    magnitude <=
+    V13C_VISUAL_PEAK_KNEE
+  ) {
+
+    return physicalVisualHeight;
+  }
+
+
+  const excess =
+    magnitude -
+    V13C_VISUAL_PEAK_KNEE;
+
+
+  const contained =
+    V13C_VISUAL_PEAK_KNEE +
+    V13C_VISUAL_PEAK_LOG_SCALE *
+    Math.log1p(
+      excess /
+      V13C_VISUAL_PEAK_LOG_SCALE
+    );
+
+
+  return (
+    sign *
+    contained
+  );
+}
+
+
 let behaviorLoadError = null;
 
 
-const behaviorLabPanel =
+/* =========================================================
+   V1.3C LIVE MUSICAL TELEMETRY
+
+   Kept intentionally visible:
+   - dominant causal source / anchor
+   - physical drive
+   - footprint
+   - active continuous behaviors
+
+   This is telemetry only. It never drives physics.
+========================================================= */
+
+const behaviorLabState =
   document.createElement("div");
 
-behaviorLabPanel.id =
-  "behaviorLabPanel";
+behaviorLabState.id =
+  "behaviorLabState";
 
-behaviorLabPanel.innerHTML = `
-  <div class="lab-title">
-    V1.3C BEHAVIOR LAB
-  </div>
-
-  <div class="lab-switch">
-    <button
-      type="button"
-      data-mode="v12">
-      V1.2
-    </button>
-
-    <button
-      type="button"
-      data-mode="v13c"
-      class="active">
-      V1.3C
-    </button>
-  </div>
-
-  <div
-    id="behaviorLabState"
-    class="lab-state">
-    Loading V1.3C...
-  </div>
-
-  <div class="lab-note">
-    SINGLE MASTER CLOCK · PROVISIONAL LAB
-  </div>
-`;
-
-document.body.appendChild(
-  behaviorLabPanel
+behaviorLabState.setAttribute(
+  "aria-live",
+  "polite"
 );
+
+
+const statusPanel =
+  document.querySelector(
+    ".status"
+  );
+
+
+if (!statusPanel) {
+
+  throw new Error(
+    "V1.3C status HUD not found"
+  );
+}
+
+
+statusPanel.appendChild(
+  behaviorLabState
+);
+
+
+// Main visual title: stronger hierarchy without changing
+// the dynamic ENERGY or musical telemetry below it.
+const masterReactiveTitle =
+  [...statusPanel.querySelectorAll("*")]
+    .find(
+      element =>
+        element.textContent.trim() ===
+        "MASTER REACTIVE TERRAIN"
+    );
+
+if (masterReactiveTitle) {
+  masterReactiveTitle.classList.add(
+    "v13c-master-reactive-title"
+  );
+}
 
 
 const behaviorLabStyle =
   document.createElement("style");
 
 behaviorLabStyle.textContent = `
-  #behaviorLabPanel {
-    position: fixed;
-    top: 18px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 30;
 
-    min-width: 310px;
-    padding: 10px 12px;
+  /* =====================================================
+     V1.3C FINAL VISUAL HIERARCHY
+  ===================================================== */
 
-    border: 1px solid rgba(239,184,107,.25);
-    background: rgba(2,7,6,.82);
-    backdrop-filter: blur(12px);
-
-    color: #b7c7c0;
-    font-family: inherit;
-
-    box-shadow:
-      0 0 30px rgba(0,0,0,.25);
+  .v13c-master-reactive-title {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    letter-spacing: .12em !important;
+    line-height: 1.15 !important;
   }
 
-  #behaviorLabPanel .lab-title {
-    margin-bottom: 8px;
-    text-align: center;
 
-    color: #efb86b;
-    font-size: 9px;
-    letter-spacing: .18em;
+  /* Historical/static metadata remains in the project
+     evidence, but no longer occupies the musical image. */
+
+  .brand,
+  .field-summary,
+  .hud .metric,
+  .release {
+    display: none !important;
   }
 
-  #behaviorLabPanel .lab-switch {
+
+  #behaviorLabState {
+    margin-top: 12px;
+
+    max-width: 520px;
+
+    color: #7fd8b9;
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: .10em;
+
+    text-align: right;
+
+    text-shadow:
+      0 1px 4px #020706,
+      0 0 12px rgba(69,199,159,.16);
+
+    pointer-events: none;
+  }
+
+  #behaviorLabState .behavior-telemetry-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6px;
+    grid-template-columns: auto minmax(90px, auto);
+    justify-content: end;
+    column-gap: 18px;
+
+    min-height: 20px;
+    align-items: baseline;
   }
 
-  #behaviorLabPanel button {
-    padding: 7px 10px;
+  #behaviorLabState .behavior-telemetry-label {
+    color: #708f84;
 
-    border:
-      1px solid rgba(255,255,255,.10);
-
-    background:
-      rgba(255,255,255,.025);
-
-    color: #71857c;
-
-    font: inherit;
-    font-size: 9px;
-    letter-spacing: .12em;
-
-    cursor: pointer;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: .16em;
   }
 
-  #behaviorLabPanel button.active {
-    border-color:
-      rgba(239,184,107,.65);
+  #behaviorLabState .behavior-telemetry-value {
+    color: #7fd8b9;
 
-    color: #efb86b;
-
-    background:
-      rgba(239,184,107,.08);
-  }
-
-  #behaviorLabPanel .lab-state {
-    margin-top: 8px;
-
-    color: #7fa99b;
-    font-size: 8px;
-    line-height: 1.5;
+    font-size: 13px;
+    font-weight: 400;
     letter-spacing: .08em;
-    text-align: center;
+
+    white-space: nowrap;
   }
 
-  #behaviorLabPanel .lab-note {
-    margin-top: 5px;
-
-    color: #53665e;
-    font-size: 7px;
-    letter-spacing: .12em;
-    text-align: center;
+  #behaviorLabState[data-error="true"] {
+    color: #e47a68;
   }
 `;
 
@@ -1197,57 +1730,113 @@ document.head.appendChild(
   behaviorLabStyle
 );
 
+/* =========================================================
+   R6.4 ? FINAL VISUAL COMPOSITION
+========================================================= */
 
-const behaviorLabState =
-  document.querySelector(
-    "#behaviorLabState"
-  );
+const r64CompositionStyle =
+  document.createElement("style");
+
+r64CompositionStyle.textContent = `
+
+  /* -----------------------------------------
+     LAISE ? identity only
+  ----------------------------------------- */
+
+  .brand {
+    display: flex !important;
+  }
+
+  .brand .mark,
+  .brand .subtitle,
+  .brand .version {
+    display: none !important;
+  }
+
+  .brand .laise {
+    display: block !important;
+  }
+
+
+  /* -----------------------------------------
+     Static technical metadata belongs to
+     reports, not to the live musical image.
+  ----------------------------------------- */
+
+  .field-summary,
+  .hud .metric,
+  .release {
+    display: none !important;
+  }
+
+
+  /* -----------------------------------------
+     Stronger main reactive title
+  ----------------------------------------- */
+
+  .status-title,
+  .v13c-master-reactive-title {
+    font-size:
+      clamp(15px, 1.1vw, 20px)
+      !important;
+
+    font-weight:
+      700
+      !important;
+
+    letter-spacing:
+      .11em
+      !important;
+
+    line-height:
+      1.15
+      !important;
+  }
+
+
+  /* -----------------------------------------
+     Bottom HUD now contains only information
+     useful during playback.
+  ----------------------------------------- */
+
+  .hud {
+    grid-template-columns:
+      minmax(220px, .85fr)
+      minmax(0, 2.15fr)
+      !important;
+  }
+
+`;
+
+document.head.appendChild(
+  r64CompositionStyle
+);
+
+
 
 
 function renderBehaviorLabState() {
 
-  const buttons =
-    behaviorLabPanel.querySelectorAll(
-      "[data-mode]"
-    );
-
-  for (
-    const button
-    of buttons
-  ) {
-
-    button.classList.toggle(
-      "active",
-      button.dataset.mode ===
-        behaviorMode
-    );
-  }
-
-
-  if (
-    behaviorMode === "v12"
-  ) {
-
-    behaviorLabState.textContent =
-      "V1.2 · T007 ABSOLUTO · CUES LEGADOS";
-
-    return;
-  }
-
-
   if (behaviorLoadError) {
 
+    behaviorLabState.dataset.error =
+      "true";
+
     behaviorLabState.textContent =
-      "V1.3C LOAD ERROR";
+      "V1.3C TELEMETRY UNAVAILABLE";
 
     return;
   }
+
+
+  behaviorLabState.dataset.error =
+    "false";
 
 
   if (!behaviorTimelineV13C) {
 
     behaviorLabState.textContent =
-      "LOADING V1.3C...";
+      "V1.3C ? LOADING MUSICAL BEHAVIOR...";
 
     return;
   }
@@ -1257,68 +1846,54 @@ function renderBehaviorLabState() {
     behaviorTimelineV13C.debug;
 
 
-  behaviorLabState.textContent =
-    `V1.3C · ANCHOR ${state.anchorSource}` +
-    ` · DRIVE ${state.anchorDrive.toFixed(5)}` +
-    ` · FOOTPRINT ×${state.footprintScale.toFixed(2)}` +
-    ` · ACTIVE ${state.activeContinuous}`;
-}
+  behaviorLabState.replaceChildren();
+
+  const telemetryRows = [
+    ["ANCHOR", state.anchorSource],
+    ["DRIVE", state.anchorDrive.toFixed(5)],
+    ["FOOTPRINT", `?${state.footprintScale.toFixed(2)}`],
+    ["ACTIVE", String(state.activeContinuous)]
+  ];
+
+  for (const [label, value] of telemetryRows) {
+
+    const row =
+      document.createElement("div");
+
+    row.className =
+      "behavior-telemetry-row";
 
 
-function setBehaviorMode(
-  mode
-) {
+    const labelElement =
+      document.createElement("span");
 
-  if (
-    mode !== "v12" &&
-    mode !== "v13c"
-  ) {
-    return;
-  }
+    labelElement.className =
+      "behavior-telemetry-label";
+
+    labelElement.textContent =
+      label;
 
 
-  behaviorMode = mode;
+    const valueElement =
+      document.createElement("strong");
 
-  /*
-    One audio element, one currentTime.
+    valueElement.className =
+      "behavior-telemetry-value";
 
-    Only the visual field is reset when
-    A/B mode changes. Audio never duplicates.
-  */
-
-  resetRippleFields();
-
-  cueTimeline?.seek(
-    audio.currentTime
-  );
-
-  behaviorTimelineV13C?.seek(
-    audio.currentTime
-  );
+    valueElement.textContent =
+      value;
 
 
-  renderBehaviorLabState();
-}
+    row.append(
+      labelElement,
+      valueElement
+    );
 
-
-behaviorLabPanel.addEventListener(
-  "click",
-  event => {
-
-    const button =
-      event.target.closest(
-        "[data-mode]"
-      );
-
-    if (!button) {
-      return;
-    }
-
-    setBehaviorMode(
-      button.dataset.mode
+    behaviorLabState.appendChild(
+      row
     );
   }
-);
+}
 
 
 fetch(
@@ -1587,12 +2162,36 @@ function animate() {
       : rippleField;
 
   for (let i = 0; i < positions.count; i++) {
-    // Signed heights produce rising crests and falling troughs. Fixed simulation
-    // timesteps supply temporal continuity without smearing the travelling wave.
-    positions.array[i * 3 + 1] = TERRAIN.maxHeight *
-      Math.tanh(visibleRippleField.heights[i] * motionGain / TERRAIN.maxHeight);
+
+    // Physical field remains untouched.
+    // V1.2 preserves the approved legacy ?2.8 soft limiter.
+    //
+    // V1.3C intentionally keeps an open vertical response:
+    // exceptional physical peaks may reach or leave the
+    // camera frame instead of flattening into a common cap.
+
+    const physicalVisualHeight =
+      visibleRippleField.heights[i] *
+      motionGain;
+
+    positions.array[i * 3 + 1] =
+      behaviorMode === "v13c"
+        ? visualHeightV13C(
+            physicalVisualHeight
+          )
+        : TERRAIN.maxHeight *
+          Math.tanh(
+            physicalVisualHeight /
+            TERRAIN.maxHeight
+          );
   }
+
   positions.needsUpdate = true;
+
+  // Shared live normals drive the depth-writing surface and wire shader.
+  // All directional shading is evaluated per fragment in view coordinates.
+  geometry.computeVertexNormals();
+  updateTerrainLighting();
 
 
   particles.rotation.y =
@@ -1607,8 +2206,8 @@ function animate() {
     time * 0.025;
 
 
-  bloom.strength =
-    0.45 + Math.min(averageEnergy * 0.8, 0.25);
+  bloom.strength = TERRAIN_LIGHTING.bloomBase
+    + TERRAIN_LIGHTING.bloomEnergy * THREE.MathUtils.clamp(averageEnergy, 0, 1);
 
 
 
