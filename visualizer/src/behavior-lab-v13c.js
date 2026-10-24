@@ -2,6 +2,8 @@ import "./style.css";
 import { RippleField } from "./behavior-ripple-field-v13c.js";
 import { OpenBoundaryRippleFieldV13C } from "./behavior-open-boundary-field-v13c.js";
 import { BehaviorTimelineV13C } from "./behavior-timeline-v13c.js";
+import { NEON_R8A, neonUniformsR8A, neonEmissionGLSL, createNeonCurvatureR8A } from "./neon-emission-r8a.js";
+import { installNeonOpticsR8A } from "./neon-optics-r8a.js";
 import { AudioCueTimeline } from "./audio-cue-timeline.js";
 import { AudioMotionRecovery } from "./audio-motion-recovery.js";
 
@@ -145,7 +147,7 @@ renderer.outputColorSpace =
 
 // Compress the final composite, including bloom, before display conversion.
 renderer.toneMapping = THREE.ReinhardToneMapping;
-renderer.toneMappingExposure = 1.15;
+renderer.toneMappingExposure = NEON_R8A.neonExposure;
 
 
 const scene =
@@ -321,10 +323,10 @@ const TERRAIN_LIGHTING = Object.freeze({
   peakBoost: 1.0,
   surfaceLight: 0.50,
   surfacePeakLight: 1.20,
-  bloomBase: 0.14,
+  bloomBase: NEON_R8A.neonBloomStrength,
   bloomEnergy: 0.04,
   bloomRadius: 0.0,
-  bloomThreshold: 1.10
+  bloomThreshold: NEON_R8A.neonBloomThreshold
 });
 
 const terrainHemisphereLight = new THREE.HemisphereLight(
@@ -405,17 +407,17 @@ const spectrumStops = [
 
   {
     t: 0.00,
-    color: new THREE.Color(0x4f72b5)
+    color: new THREE.Color(0x587cff)
   },
 
   {
     t: 0.14,
-    color: new THREE.Color(0x765fc3)
+    color: new THREE.Color(0x8a60ed)
   },
 
   {
     t: 0.27,
-    color: new THREE.Color(0xb6539b)
+    color: new THREE.Color(0xd34bc4)
   },
 
   {
@@ -448,14 +450,39 @@ const spectrumStops = [
     color: new THREE.Color(0xdaa344)
   },
 
+  /*
+    R8A.5 ? GOLD -> GREEN -> CYAN -> BLUE
+
+    The green intermediate preserves chroma and avoids
+    the pale neutral band perceived in R8A.4.
+
+    All color stops remain spatially fixed and continuous.
+    Musical geometry, lighting and neon emission are unchanged.
+  */
+
   {
-    t: 0.80,
-    color: new THREE.Color(0x42b8aa)
+    t: 0.72,
+    color: new THREE.Color(0xa7c74c)
+  },
+
+  {
+    t: 0.78,
+    color: new THREE.Color(0x45ce69)
+  },
+
+  {
+    t: 0.84,
+    color: new THREE.Color(0x19c8a0)
+  },
+
+  {
+    t: 0.90,
+    color: new THREE.Color(0x24e0d1)
   },
 
   {
     t: 1.00,
-    color: new THREE.Color(0x347fb8)
+    color: new THREE.Color(0x298fe8)
   }
 
 ];
@@ -515,71 +542,106 @@ function continuousSpectrumColor(
   target
 ) {
 
-  if (t <= spectrumStops[0].t) {
+  // R8A.8: Continuous interpolation with no per-stop
+  // smootherstep plateaus. This avoids visible color bands.
+  //
+  // Catmull-Rom/Hermite interpolation with bounded tangents:
+  // preserves continuous first derivatives and avoids
+  // overshooting RGB endpoints.
 
-    return target.copy(
-      spectrumStops[0].color
-    );
+  const first = spectrumStops[0];
+  const last = spectrumStops[spectrumStops.length - 1];
+
+  if (t <= first.t) {
+    return target.copy(first.color);
   }
-
-
-  const last =
-    spectrumStops[
-      spectrumStops.length - 1
-    ];
-
 
   if (t >= last.t) {
+    return target.copy(last.color);
+  }
 
-    return target.copy(
-      last.color
+  for (let i = 0; i < spectrumStops.length - 1; i++) {
+
+    const a = spectrumStops[i];
+    const b = spectrumStops[i + 1];
+
+    if (t < a.t || t > b.t) continue;
+
+    const before = spectrumStops[Math.max(0, i - 1)];
+    const after = spectrumStops[
+      Math.min(spectrumStops.length - 1, i + 2)
+    ];
+
+    const span = b.t - a.t;
+    const u = (t - a.t) / span;
+
+    const u2 = u * u;
+    const u3 = u2 * u;
+
+    const h00 = 2 * u3 - 3 * u2 + 1;
+    const h10 = u3 - 2 * u2 + u;
+    const h01 = -2 * u3 + 3 * u2;
+    const h11 = u3 - u2;
+
+    const interpolateChannel = (key) => {
+
+      const y0 = a.color[key];
+      const y1 = b.color[key];
+
+      const secant = (y1 - y0) / span;
+
+      const leftSpan = b.t - before.t;
+      const rightSpan = after.t - a.t;
+
+      let m0 = leftSpan > 0
+        ? (b.color[key] - before.color[key]) / leftSpan
+        : secant;
+
+      let m1 = rightSpan > 0
+        ? (after.color[key] - a.color[key]) / rightSpan
+        : secant;
+
+      // A monotonic channel must not overshoot its endpoints.
+      if (Math.abs(secant) < 1e-10) {
+        m0 = 0;
+        m1 = 0;
+      } else {
+        if (m0 * secant <= 0) m0 = 0;
+        if (m1 * secant <= 0) m1 = 0;
+
+        const alpha = m0 / secant;
+        const beta = m1 / secant;
+        const norm = alpha * alpha + beta * beta;
+
+        if (norm > 9) {
+          const scale = 3 / Math.sqrt(norm);
+          m0 *= scale;
+          m1 *= scale;
+        }
+      }
+
+      const value =
+        h00 * y0 +
+        h10 * span * m0 +
+        h01 * y1 +
+        h11 * span * m1;
+
+      return THREE.MathUtils.clamp(
+        value,
+        Math.min(y0, y1),
+        Math.max(y0, y1)
+      );
+    };
+
+    return target.setRGB(
+      interpolateChannel("r"),
+      interpolateChannel("g"),
+      interpolateChannel("b"),
+      THREE.LinearSRGBColorSpace
     );
   }
 
-
-  for (
-    let i = 0;
-    i < spectrumStops.length - 1;
-    i++
-  ) {
-
-    const left =
-      spectrumStops[i];
-
-    const right =
-      spectrumStops[i + 1];
-
-
-    if (
-      t >= left.t &&
-      t <= right.t
-    ) {
-
-      const localT =
-        (
-          t - left.t
-        ) /
-        (
-          right.t -
-          left.t
-        );
-
-
-      return target
-        .copy(left.color)
-        .lerp(
-          right.color,
-          spectrumSmootherStep(
-            localT
-          )
-        );
-    }
-  }
-
-
-  return target.copy(
-    last.color
-  );
+  return target.copy(last.color);
 }
 
 
@@ -685,6 +747,10 @@ wireGeometry.setAttribute("position", positions);
 wireGeometry.setAttribute("normal", geometry.attributes.normal);
 wireGeometry.setAttribute("color", geometry.attributes.color);
 
+const updateNeonCurvature = createNeonCurvatureR8A(
+  geometry, wireGeometry, SEG_X, SEG_Z, TERRAIN.width, TERRAIN.depth
+);
+
 const wireLightDirection = new THREE.Vector3();
 const wireFillDirection = new THREE.Vector3();
 const wireViewLightDirection = new THREE.Vector3();
@@ -739,7 +805,7 @@ const terrainColorGLSL = `
     // Let red, orange and gold overlap across a wide part of the field.
     // The central gold retains its full gain; the cool side fades gently.
     float gold = smoothstep(0.32, 0.56, spectrumT)
-      * (1.0 - smoothstep(0.68, 0.80, spectrumT));
+      * (1.0 - smoothstep(0.62, 0.71, spectrumT));
     // More yellow-gold, less copper: lift green relative to dominant red,
     // retain low blue for saturation, and give gold a modest luminous gain.
     vivid.g = mix(vivid.g, max(vivid.g, 0.72), gold * 0.90);
@@ -772,9 +838,14 @@ const terrainMaterial = new THREE.ShaderMaterial({
     uKey: { value: TERRAIN_LIGHTING.wireKey },
     uFill: { value: TERRAIN_LIGHTING.wireFill },
     uRim: { value: TERRAIN_LIGHTING.wireRim },
-    uPeakBoost: { value: TERRAIN_LIGHTING.peakBoost }
+    uPeakBoost: { value: TERRAIN_LIGHTING.peakBoost },
+    ...neonUniformsR8A
   },
   vertexShader: `
+    attribute float neonCurvature;
+    attribute vec3 neonNormal;
+    varying float vNeonCurvature;
+    varying vec3 vNeonViewNormal;
     varying vec3 vViewNormal;
     varying vec3 vViewPosition;
     varying vec3 vSpectrum;
@@ -783,6 +854,8 @@ const terrainMaterial = new THREE.ShaderMaterial({
     uniform vec2 uSpectrumAxis;
     uniform float uSpectrumHalfSpan;
     void main() {
+      vNeonCurvature = neonCurvature;
+      vNeonViewNormal = normalMatrix * neonNormal;
       vTerrainHeight = position.y;
       vSpectrumT = (dot(position.xz, uSpectrumAxis) + uSpectrumHalfSpan)
         / (2.0 * uSpectrumHalfSpan);
@@ -806,6 +879,7 @@ const terrainMaterial = new THREE.ShaderMaterial({
     varying float vTerrainHeight;
     varying float vSpectrumT;
     ${terrainColorGLSL}
+    ${neonEmissionGLSL}
     varying vec3 vViewNormal;
     varying vec3 vViewPosition;
     varying vec3 vSpectrum;
@@ -831,10 +905,13 @@ const terrainMaterial = new THREE.ShaderMaterial({
       float peakGain = 1.0 + uPeakBoost * terrainPeakLight(vTerrainHeight);
       float radiance = uShadow + uFill * fill
         + (uKey * key + uRim * litRim) * peakGain;
-      // HDR remains chromatic: no white mix and no additive layer. Only
-      // light-facing lines cross the bloom threshold; the final OutputPass
-      // compresses their radiance after the restrained bloom composite.
-      gl_FragColor = vec4(vividTerrainColor(vSpectrum, vSpectrumT) * radiance, 1.0);
+      // Reflected color and selective linear HDR emission remain independent.
+      // Only locally convex, favorably lit regions approach a white-hot core.
+      // Tone mapping and sRGB output remain in the existing final OutputPass.
+      vec3 chromaticBase = vividTerrainColor(vSpectrum, vSpectrumT);
+      vec3 emission = r8aNeonEmission(chromaticBase, vSpectrumT,
+        faceNormal, uTerrainUp, uKeyDirection);
+      gl_FragColor = vec4(chromaticBase * radiance + emission, 1.0);
       #include <tonemapping_fragment>
       #include <colorspace_fragment>
     }
@@ -886,41 +963,61 @@ const reliefSurfaceMaterial = new THREE.MeshStandardMaterial({
 // normals or lighting model: the Standard shader still supplies its live
 // view-space normal, occlusion, key/fill and depth behavior.
 reliefSurfaceMaterial.onBeforeCompile = shader => {
+  Object.assign(shader.uniforms, neonUniformsR8A);
+  shader.uniforms.uTerrainUp = { value: wireViewUpDirection };
+  shader.uniforms.uR8A10SurfaceAlbedo = {
+    value: TERRAIN_LIGHTING.surfaceAlbedo
+  };
   shader.uniforms.uTerrainKeyDirection = { value: wireViewLightDirection };
   shader.uniforms.uSpectrumAxis = { value: terrainSpectrumAxis };
   shader.uniforms.uSpectrumHalfSpan = { value: observerColorHalfSpan };
   shader.uniforms.uTerrainSurfaceLight = { value: TERRAIN_LIGHTING.surfaceLight };
   shader.uniforms.uTerrainSurfacePeakLight = { value: TERRAIN_LIGHTING.surfacePeakLight };
   shader.vertexShader = `
+    attribute float neonCurvature;
+    attribute vec3 neonNormal;
+    varying float vNeonCurvature;
+    varying vec3 vNeonViewNormal;
     varying float vTerrainHeight;
     varying float vSpectrumT;
+    varying vec3 vR8A10Spectrum;
     uniform vec2 uSpectrumAxis;
     uniform float uSpectrumHalfSpan;
   ` + shader.vertexShader;
   shader.vertexShader = shader.vertexShader.replace("#include <begin_vertex>",
     `#include <begin_vertex>
+    vNeonCurvature = neonCurvature;
+    vNeonViewNormal = normalMatrix * neonNormal;
     vTerrainHeight = position.y;
+    vR8A10Spectrum = color;
     vSpectrumT = (dot(position.xz, uSpectrumAxis) + uSpectrumHalfSpan)
       / (2.0 * uSpectrumHalfSpan);`);
   shader.fragmentShader = `
     varying float vTerrainHeight;
     varying float vSpectrumT;
+    varying vec3 vR8A10Spectrum;
+    uniform float uR8A10SurfaceAlbedo;
     uniform vec3 uTerrainKeyDirection;
+    uniform vec3 uTerrainUp;
     uniform float uTerrainSurfaceLight;
     uniform float uTerrainSurfacePeakLight;
     ${terrainColorGLSL}
+    ${neonEmissionGLSL}
   ` + shader.fragmentShader;
   shader.fragmentShader = shader.fragmentShader.replace("#include <color_fragment>",
-    "#include <color_fragment>\ndiffuseColor.rgb = vividTerrainColor(diffuseColor.rgb, vSpectrumT);");
+    "#include <color_fragment>\ndiffuseColor.rgb = vividTerrainColor(vR8A10Spectrum, vSpectrumT) * uR8A10SurfaceAlbedo;");
   shader.fragmentShader = shader.fragmentShader.replace("#include <emissivemap_fragment>", `
     #include <emissivemap_fragment>
     float litFace = pow(smoothstep(0.18, 0.95,
       max(dot(normal, uTerrainKeyDirection), 0.0)), 1.4);
     totalEmissiveRadiance += diffuseColor.rgb * litFace
       * (uTerrainSurfaceLight + uTerrainSurfacePeakLight * terrainPeakLight(vTerrainHeight));
+    totalEmissiveRadiance += ${NEON_R8A.surfaceEmissionFraction.toFixed(4)}
+      * r8aNeonEmission(diffuseColor.rgb, vSpectrumT,
+        normal, uTerrainUp, uTerrainKeyDirection);
   `);
 };
-reliefSurfaceMaterial.customProgramCacheKey = () => "r7c-r6-warm-gradient";
+reliefSurfaceMaterial.customProgramCacheKey = () => "r8a-hdr-neon-emission-v2";
 
 const reliefSurface =
   new THREE.Mesh(
@@ -1318,6 +1415,7 @@ const bloom =
 // Favor the fine blur mip. The default broad mips spread luminous crests
 // across neighboring dark slopes, undoing their directional contrast.
 bloom.compositeMaterial.uniforms.bloomFactors.value = [1.0, 0.28, 0.06, 0.0, 0.0];
+installNeonOpticsR8A(bloom);
 composer.addPass(
   bloom
 );
@@ -2191,6 +2289,7 @@ function animate() {
   // Shared live normals drive the depth-writing surface and wire shader.
   // All directional shading is evaluated per fragment in view coordinates.
   geometry.computeVertexNormals();
+  updateNeonCurvature();
   updateTerrainLighting();
 
 
