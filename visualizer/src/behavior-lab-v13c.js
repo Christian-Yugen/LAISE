@@ -221,12 +221,19 @@ const SCREEN_POSITION = Object.freeze({ horizontal: 0, vertical: 0 });
 // Approved R3 reference: 1682.861971 px at 1920 px, preserved proportionally.
 const CAMERA = Object.freeze({ span: 32, elevation: THREE.MathUtils.degToRad(16), distance: 26, widthTarget: 1682.861971225252 / 1920 });
 
-const camera =
-  new THREE.OrthographicCamera(
-    -CAMERA.span * window.innerWidth / window.innerHeight / 2,
-    CAMERA.span * window.innerWidth / window.innerHeight / 2,
-    CAMERA.span / 2, -CAMERA.span / 2, 0.1, 100
-  );
+// R12 visual-depth test. The existing orthographic camera remains the default.
+// Perspective makes near and far terrain project at different apparent sizes;
+// audio physics, lighting constants, and bloom settings are unchanged.
+const perspectiveDepthEnabledR12 =
+  new URLSearchParams(window.location.search).get("depth") === "perspective";
+const camera = perspectiveDepthEnabledR12
+  ? new THREE.PerspectiveCamera(38,
+      window.innerWidth / window.innerHeight, 0.1, 500)
+  : new THREE.OrthographicCamera(
+      -CAMERA.span * window.innerWidth / window.innerHeight / 2,
+      CAMERA.span * window.innerWidth / window.innerHeight / 2,
+      CAMERA.span / 2, -CAMERA.span / 2, 0.1, 100
+    );
 
 
 // Full local deformation box, including the translated glow's upper extreme.
@@ -270,10 +277,14 @@ function frameTerrain() {
   const width = window.innerWidth, height = window.innerHeight;
   // R3B anchors the BASE front to the listener. Negative deformation is allowed
   // behind the listener/HUD overlays; it never changes the simulated heights.
-  camera.left = -CAMERA.span * width / height / 2;
-  camera.right = CAMERA.span * width / height / 2;
-  camera.top = CAMERA.span / 2;
-  camera.bottom = -CAMERA.span / 2;
+  if (camera.isOrthographicCamera) {
+    camera.left = -CAMERA.span * width / height / 2;
+    camera.right = CAMERA.span * width / height / 2;
+    camera.top = CAMERA.span / 2;
+    camera.bottom = -CAMERA.span / 2;
+  } else {
+    camera.aspect = width / height;
+  }
   const margin = 8;
   const rect = selector => {
     const element = document.querySelector(selector);
@@ -2799,4 +2810,5 @@ window.addEventListener(
 
   }
 );
+
 
