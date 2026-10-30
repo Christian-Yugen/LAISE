@@ -884,8 +884,8 @@ const baseSpectrumColors =
   );
 
 // R12 color-only rotation: retain the approved gradient and its lighting.
-const colorSpinEnabledR12 =
-  new URLSearchParams(window.location.search).get("colorspin") === "1";
+const colorSpinEnabledR12 = perspectiveDepthEnabledR12 &&
+  new URLSearchParams(window.location.search).get("colorspin") !== "0";
 const colorSpinLookupR12 = colorSpinEnabledR12
   ? Array.from({ length: 1025 }, (_, index) =>
       continuousSpectrumColor(index / 1024, new THREE.Color()).clone())
