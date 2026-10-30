@@ -499,6 +499,43 @@ const basePositions =
     positions.array
   );
 
+// R12 rounded tips: smooth only the tallest visible crest geometry.
+// Audio, propagation, color spin, and lighting inputs remain unchanged.
+const roundedTipsEnabledR12 = new URLSearchParams(window.location.search).get("roundtips") === "1";
+const roundedTipBufferR12 = roundedTipsEnabledR12 ? new Float32Array(positions.count) : null;
+const roundedTipKernelR12 = [1, 8, 28, 56, 70, 56, 28, 8, 1];
+function roundVisibleTipsR12() {
+  const vertexHeights = positions.array;
+  const columns = SEG_X + 1;
+  const rows = SEG_Z + 1;
+  // Two separable passes, mirrored at edges, prevent artificial seams.
+  for (let row = 0; row < rows; row++) {
+    for (let col = 0; col < columns; col++) {
+      let sum = 0;
+      for (let k = -4; k <= 4; k++) {
+        const sample = Math.max(0, Math.min(columns - 1, col + k));
+        sum += roundedTipKernelR12[k + 4] * vertexHeights[(row * columns + sample) * 3 + 1];
+      }
+      roundedTipBufferR12[row * columns + col] = sum / 256;
+    }
+  }
+  for (let row = 0; row < rows; row++) {
+    for (let col = 0; col < columns; col++) {
+      const index = row * columns + col;
+      const original = vertexHeights[index * 3 + 1];
+      if (original <= 1.2) continue;
+      let sum = 0;
+      for (let k = -4; k <= 4; k++) {
+        const sample = Math.max(0, Math.min(rows - 1, row + k));
+        sum += roundedTipKernelR12[k + 4] * roundedTipBufferR12[sample * columns + col];
+      }
+      const blend = Math.min(0.92, Math.max(0, (original - 1.2) / 1.8) * 0.92);
+      vertexHeights[index * 3 + 1] = original + (sum / 256 - original) * blend;
+    }
+  }
+}
+
+
 
 const colors =
   new Float32Array(
@@ -2844,6 +2881,7 @@ function animate() {
     }
   }
 
+  if (roundedTipsEnabledR12) roundVisibleTipsR12();
   positions.needsUpdate = true;
 
   // Shared live normals drive the depth-writing surface and wire shader.
