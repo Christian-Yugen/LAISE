@@ -98,6 +98,8 @@ function renderTechnicalHud(data) {
     motionState: "--", visualizerVersion: "--", deliveryStatus: "UNAVAILABLE"
   };
   for (const [id, text] of Object.entries(values)) document.getElementById(id).textContent = text;
+  document.getElementById("depthTrackTitle").textContent = values.trackTitle;
+  document.getElementById("depthMasterLabel").textContent = values.masterLabel;
   const master = document.getElementById("masterLabel");
   master.dataset.masterUrl = data?.master_url ?? "";
   master.dataset.masterSha256 = data?.master_sha256 ?? "";
@@ -226,6 +228,7 @@ const CAMERA = Object.freeze({ span: 32, elevation: THREE.MathUtils.degToRad(16)
 // audio physics, lighting constants, and bloom settings are unchanged.
 const perspectiveDepthEnabledR12 =
   new URLSearchParams(window.location.search).get("depth") === "perspective";
+document.documentElement.classList.toggle("perspective-depth-r12", perspectiveDepthEnabledR12);
 const camera = perspectiveDepthEnabledR12
   ? new THREE.PerspectiveCamera(38,
       window.innerWidth / window.innerHeight, 0.1, 500)
@@ -293,7 +296,9 @@ function frameTerrain() {
   };
   const hudTop = rect(".hud")?.top ?? height * 0.88;
   const frontGap = Math.max(6, Math.min(width, height) * (8 / 1080));
-  const frontTarget = hudTop - frontGap + SCREEN_POSITION.vertical;
+  const frontTarget = perspectiveDepthEnabledR12
+    ? height - Math.max(38, height * 0.055) + SCREEN_POSITION.vertical
+    : hudTop - frontGap + SCREEN_POSITION.vertical;
   const obstacles = [".brand", ".field-summary", ".status"].map(rect).filter(Boolean).map(r => [
     { x: r.left - margin / 2, y: r.top - margin / 2 },
     { x: r.right + margin / 2, y: r.top - margin / 2 },
@@ -306,7 +311,14 @@ function frameTerrain() {
   camera.lookAt(target);
   camera.far = 500;
   camera.updateMatrixWorld(true);
-  const envelope = fieldEnvelope();
+  const envelope = perspectiveDepthEnabledR12
+    ? [-TERRAIN.width / 2, TERRAIN.width / 2].flatMap(x =>
+        [-TERRAIN.depth / 2, TERRAIN.depth / 2].flatMap(z =>
+          [-TERRAIN.maxHeight, 12].map(y =>
+            new THREE.Vector3(x, y, z).applyEuler(
+              new THREE.Euler(BASE_POSE.pitch, BASE_POSE.yaw, BASE_POSE.roll)
+            ).add(target))))
+    : fieldEnvelope();
   const rotation = new THREE.Euler(BASE_POSE.pitch, BASE_POSE.yaw, BASE_POSE.roll);
   const base = [-TERRAIN.width / 2, TERRAIN.width / 2].flatMap(x =>
     [-TERRAIN.depth / 2, TERRAIN.depth / 2].map(z =>
