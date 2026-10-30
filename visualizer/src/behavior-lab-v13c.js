@@ -1,3 +1,4 @@
+import { EventWaveDetailR9 } from "./event-wave-detail-r9.js";
 import "./style.css";
 import { RippleField } from "./behavior-ripple-field-v13c.js";
 import { OpenBoundaryRippleFieldV13C } from "./behavior-open-boundary-field-v13c.js";
@@ -8,6 +9,7 @@ import { AudioCueTimeline } from "./audio-cue-timeline.js";
 import { AudioMotionRecovery } from "./audio-motion-recovery.js";
 
 import * as THREE from "three";
+import { createReflectiveFloorR8B } from "./reflective-floor-r8b.js";
 
 import {
   EffectComposer
@@ -152,6 +154,45 @@ renderer.toneMappingExposure = NEON_R8A.neonExposure;
 
 const scene =
   new THREE.Scene();
+
+// LAISE_FOREST_BACKGROUND_R8B
+// ?background=0 allows a visual comparison without the forest.
+const forestBackgroundEnabled =
+  new URLSearchParams(window.location.search).get("background") !== "0";
+
+if (forestBackgroundEnabled) {
+  // LAISE_R8C_ABSTRACT_BACKGROUND
+  // Default: abstract. Use ?background=forest for the previous image.
+  const selectedBackgroundR8C =
+    new URLSearchParams(window.location.search).get("background");
+
+  const forestUrl = selectedBackgroundR8C === "forest"
+    ? new URL("./laise-forest-background-r8b.png", import.meta.url).href
+    : new URL("./laise-abstract-background-r8c.png", import.meta.url).href;
+
+  new THREE.TextureLoader().load(
+    forestUrl,
+    (texture) => {
+      texture.colorSpace = THREE.SRGBColorSpace;
+      scene.background = texture;
+      // LAISE_R8C_BACKGROUND_DIM_TEST
+      // ?bgdim=0.25 darkens only the scene background.
+      // Without the parameter, the previous appearance is preserved.
+      const bgDimParam = new URLSearchParams(window.location.search).get("bgdim");
+      const bgDimValue = Number(bgDimParam);
+      scene.backgroundIntensity =
+        bgDimParam !== null && bgDimParam.trim() !== "" && Number.isFinite(bgDimValue)
+          ? THREE.MathUtils.clamp(bgDimValue, 0, 1)
+          : 1;
+
+    },
+    undefined,
+    (error) => {
+      console.error("LAISE: falha ao carregar o fundo da floresta.", error);
+    }
+  );
+}
+
 
 
 scene.fog =
@@ -403,7 +444,7 @@ const colors =
   Color is presentation only.
 */
 
-const spectrumStops = [
+const originalSpectrumStops = [
 
   {
     t: 0.00,
@@ -486,6 +527,48 @@ const spectrumStops = [
   }
 
 ];
+
+// LAISE_R8C_FOREST_PALETTE
+// Default: forest palette. Use ?palette=original for comparison.
+// Emission, bloom, exposure and terrain behavior are unchanged.
+const forestPaletteColors = [
+  0xf2b858, // warm gold
+  0xf28a78, // coral
+  0xe95dbb, // pink
+  0xc260e8, // violet
+  0x854fe9, // purple
+  0x605fe9, // blue-violet
+  0x3d7df0, // blue
+  0x278fe9, // blue
+  0x1ba8ed, // bright blue
+  0x1fc6ed, // cyan-blue
+  0x35d7dc, // cyan
+  0x338fe2  // blue
+];
+
+// LAISE_R8C_PALETTE_V2
+// Keep the previous forest palette for ?palette=forest1.
+const forestPaletteV1 = forestPaletteColors.slice();
+
+const paletteChoiceR8C =
+  new URLSearchParams(window.location.search).get("palette");
+
+if (paletteChoiceR8C !== "forest1" && paletteChoiceR8C !== "original") {
+  // Only the two central color stops change.
+  forestPaletteColors[4] = 0x713de8;
+  forestPaletteColors[5] = 0x4d48ef;
+}
+
+const forestPaletteEnabled =
+  new URLSearchParams(window.location.search).get("palette") !== "original";
+
+const spectrumStops = forestPaletteEnabled
+  ? originalSpectrumStops.map((stop, index) => ({
+      t: stop.t,
+      color: new THREE.Color(forestPaletteColors[index])
+    }))
+  : originalSpectrumStops;
+
 
 
 const observerColorCos =
@@ -741,11 +824,18 @@ const baseSpectrumColors =
 // R7C-R6: immutable palette and shared position/normal buffers. The surface
 // and its lines now shade the SAME visible slope, without CPU recoloring.
 geometry.setAttribute("color", new THREE.BufferAttribute(baseSpectrumColors, 3));
+// R9.3: optional, short attack contours independent of the terrain height.
+const attackAccentR93 = new THREE.BufferAttribute(
+  new Float32Array((SEG_X + 1) * (SEG_Z + 1)), 1
+);
+attackAccentR93.setUsage(THREE.DynamicDrawUsage);
+geometry.setAttribute("attackAccent", attackAccentR93);
 const wireGeometry = new THREE.BufferGeometry();
 wireGeometry.setIndex(geometry.index);
 wireGeometry.setAttribute("position", positions);
 wireGeometry.setAttribute("normal", geometry.attributes.normal);
 wireGeometry.setAttribute("color", geometry.attributes.color);
+wireGeometry.setAttribute("attackAccent", attackAccentR93);
 
 const updateNeonCurvature = createNeonCurvatureR8A(
   geometry, wireGeometry, SEG_X, SEG_Z, TERRAIN.width, TERRAIN.depth
@@ -808,8 +898,16 @@ const terrainColorGLSL = `
       * (1.0 - smoothstep(0.62, 0.71, spectrumT));
     // More yellow-gold, less copper: lift green relative to dominant red,
     // retain low blue for saturation, and give gold a modest luminous gain.
-    vivid.g = mix(vivid.g, max(vivid.g, 0.72), gold * 0.90);
-    vivid.b *= 1.0 - 0.20 * gold;
+    // LAISE_R8C_COLOR_GRADE_TEST
+    // Original palette or ?grade=legacy: preserve the previous gold grading.
+    // Forest palette: let the selected blue/violet colors remain authoritative.
+    ${
+      (!forestPaletteEnabled ||
+        new URLSearchParams(window.location.search).get("grade") === "legacy")
+        ? `vivid.g = mix(vivid.g, max(vivid.g, 0.72), gold * 0.90);
+           vivid.b *= 1.0 - 0.20 * gold;`
+        : ""
+    }
     return vivid * peak * (1.0 + 0.15 * gold);
   }
   float terrainPeakLight(float height) {
@@ -842,6 +940,8 @@ const terrainMaterial = new THREE.ShaderMaterial({
     ...neonUniformsR8A
   },
   vertexShader: `
+    attribute float attackAccent;
+    varying float vAttackAccent;
     attribute float neonCurvature;
     attribute vec3 neonNormal;
     varying float vNeonCurvature;
@@ -854,6 +954,7 @@ const terrainMaterial = new THREE.ShaderMaterial({
     uniform vec2 uSpectrumAxis;
     uniform float uSpectrumHalfSpan;
     void main() {
+      vAttackAccent = attackAccent;
       vNeonCurvature = neonCurvature;
       vNeonViewNormal = normalMatrix * neonNormal;
       vTerrainHeight = position.y;
@@ -867,6 +968,7 @@ const terrainMaterial = new THREE.ShaderMaterial({
     }
   `,
   fragmentShader: `
+    varying float vAttackAccent;
     uniform vec3 uKeyDirection;
     uniform vec3 uFillDirection;
     uniform vec3 uTerrainUp;
@@ -911,7 +1013,9 @@ const terrainMaterial = new THREE.ShaderMaterial({
       vec3 chromaticBase = vividTerrainColor(vSpectrum, vSpectrumT);
       vec3 emission = r8aNeonEmission(chromaticBase, vSpectrumT,
         faceNormal, uTerrainUp, uKeyDirection);
-      gl_FragColor = vec4(chromaticBase * radiance + emission, 1.0);
+      // A brief chromatic crest marks each recorded onset on the same mesh.
+      gl_FragColor = vec4(chromaticBase * radiance + emission
+        + chromaticBase * (0.55 * vAttackAccent), 1.0);
       #include <tonemapping_fragment>
       #include <colorspace_fragment>
     }
@@ -974,6 +1078,8 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
   shader.uniforms.uTerrainSurfaceLight = { value: TERRAIN_LIGHTING.surfaceLight };
   shader.uniforms.uTerrainSurfacePeakLight = { value: TERRAIN_LIGHTING.surfacePeakLight };
   shader.vertexShader = `
+    attribute float attackAccent;
+    varying float vAttackAccent;
     attribute float neonCurvature;
     attribute vec3 neonNormal;
     varying float vNeonCurvature;
@@ -986,6 +1092,7 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
   ` + shader.vertexShader;
   shader.vertexShader = shader.vertexShader.replace("#include <begin_vertex>",
     `#include <begin_vertex>
+    vAttackAccent = attackAccent;
     vNeonCurvature = neonCurvature;
     vNeonViewNormal = normalMatrix * neonNormal;
     vTerrainHeight = position.y;
@@ -993,6 +1100,7 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
     vSpectrumT = (dot(position.xz, uSpectrumAxis) + uSpectrumHalfSpan)
       / (2.0 * uSpectrumHalfSpan);`);
   shader.fragmentShader = `
+    varying float vAttackAccent;
     varying float vTerrainHeight;
     varying float vSpectrumT;
     varying vec3 vR8A10Spectrum;
@@ -1015,6 +1123,7 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
     totalEmissiveRadiance += ${NEON_R8A.surfaceEmissionFraction.toFixed(4)}
       * r8aNeonEmission(diffuseColor.rgb, vSpectrumT,
         normal, uTerrainUp, uTerrainKeyDirection);
+    totalEmissiveRadiance += diffuseColor.rgb * (0.16 * vAttackAccent);
   `);
 };
 reliefSurfaceMaterial.customProgramCacheKey = () => "r8a-hdr-neon-emission-v2";
@@ -1050,6 +1159,223 @@ terrainRig.add(
 scene.add(
   terrainRig
 );
+
+// LAISE_R8C_EDGE_GLOW_TEST
+// Experimental perimeter light: enabled only with ?edge=1.
+// Positions and colors are shared with the existing animated terrain.
+const edgeGlowEnabledR8C =
+  new URLSearchParams(window.location.search).get("edge") === "1";
+
+if (edgeGlowEnabledR8C) {
+  // LAISE_R8C_EDGE_UNIFORM_TEST
+  // ?edgeuniform=0 restores the previous edge color intensity.
+  const edgeUniformR8C =
+    new URLSearchParams(window.location.search).get("edgeuniform") !== "0";
+
+  // LAISE_R8C_EDGE_POWER_TEST
+  // Previous intensity: ?edge=1&edgepower=2.4
+  const edgePowerParamR8C =
+    new URLSearchParams(window.location.search).get("edgepower");
+  const parsedEdgePowerR8C = Number(edgePowerParamR8C);
+  const edgeGlowPowerR8C =
+    edgePowerParamR8C !== null &&
+    edgePowerParamR8C.trim() !== "" &&
+    Number.isFinite(parsedEdgePowerR8C)
+      ? THREE.MathUtils.clamp(parsedEdgePowerR8C, 0, 12)
+      : 8.0;
+
+  const columns = SEG_X + 1;
+  const rows = SEG_Z + 1;
+  const expectedVertices = columns * rows;
+
+  if (positions.count !== expectedVertices) {
+    console.error(
+      "LAISE edge test disabled: unexpected terrain vertex count.",
+      positions.count,
+      expectedVertices
+    );
+  } else {
+    const edgeIndices = [];
+
+    // Horizontal boundaries.
+    for (let col = 0; col < SEG_X; col++) {
+      edgeIndices.push(col, col + 1);
+
+      const lastRow = (rows - 1) * columns;
+      edgeIndices.push(lastRow + col, lastRow + col + 1);
+    }
+
+    // Vertical boundaries.
+    for (let row = 0; row < SEG_Z; row++) {
+      edgeIndices.push(row * columns, (row + 1) * columns);
+      edgeIndices.push(
+        row * columns + SEG_X,
+        (row + 1) * columns + SEG_X
+      );
+    }
+
+    const edgeGeometry = new THREE.BufferGeometry();
+    edgeGeometry.setIndex(edgeIndices);
+    edgeGeometry.setAttribute("position", positions);
+    edgeGeometry.setAttribute("color", geometry.attributes.color);
+
+    const edgeMaterial = new THREE.ShaderMaterial({
+      vertexColors: true,
+      transparent: false,
+      depthTest: true,
+      depthWrite: false,
+      vertexShader: `
+        varying vec3 vEdgeColor;
+
+        void main() {
+          vEdgeColor = color;
+          gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+        }
+      `,
+      fragmentShader: `
+        varying vec3 vEdgeColor;
+
+        void main() {
+          // HDR color feeds the existing post-processing pipeline.
+          // Preserve hue while equalizing the strongest color channel.
+          vec3 edgeHue = vEdgeColor / max(
+            max(max(vEdgeColor.r, vEdgeColor.g), vEdgeColor.b),
+            0.0001
+          );
+          vec3 edgeOutput = ${edgeUniformR8C ? "edgeHue" : "vEdgeColor"};
+          gl_FragColor = vec4(
+            edgeOutput * ${edgeGlowPowerR8C.toFixed(2)},
+            1.0
+          );
+        }
+      `
+    });
+
+    const edgeGlow = new THREE.LineSegments(edgeGeometry, edgeMaterial);
+    edgeGlow.name = "LAISE_R8C_EDGE_GLOW_TEST";
+    edgeGlow.frustumCulled = false;
+    edgeGlow.renderOrder = 2;
+
+    // LAISE_R8C_EDGE_CORE_OPTION
+    // The intense experimental line is off by default.
+    // ?edgecore=1 restores it for comparison.
+    const edgeCoreEnabledR8C =
+      new URLSearchParams(window.location.search).get("edgecore") === "1";
+
+    if (edgeCoreEnabledR8C) {
+      terrainRig.add(edgeGlow);
+    }
+
+
+    // LAISE_R8C_EDGE_HALO_TEST
+    // Default with ?edge=1: halo enabled.
+    // Use ?edge=1&edgehalo=0 to compare with the previous line.
+    const edgeHaloEnabledR8C =
+      new URLSearchParams(window.location.search).get("edgehalo") !== "0";
+
+    if (edgeHaloEnabledR8C) {
+      // LAISE_R8C_HALO_STRENGTH_TEST
+      // ?halostrength=0.15 restores the previous halo strength.
+      const haloStrengthParamR8C =
+        new URLSearchParams(window.location.search).get("halostrength");
+
+      const haloStrengthValueR8C = Number(haloStrengthParamR8C);
+
+      const haloStrengthR8C =
+        haloStrengthParamR8C !== null &&
+        haloStrengthParamR8C.trim() !== "" &&
+        Number.isFinite(haloStrengthValueR8C)
+          ? THREE.MathUtils.clamp(haloStrengthValueR8C, 0, 0.5)
+          : 0.24;
+
+      const haloGeometry = new THREE.BufferGeometry();
+
+      // One point per unique perimeter vertex. The position and color
+      // attributes are the same buffers used by the animated terrain.
+      const uniqueEdgeIndices = [...new Set(edgeIndices)];
+
+      haloGeometry.setIndex(uniqueEdgeIndices);
+      haloGeometry.setAttribute("position", positions);
+      haloGeometry.setAttribute("color", geometry.attributes.color);
+
+      const haloMaterial = new THREE.ShaderMaterial({
+        vertexColors: true,
+        transparent: true,
+        blending: THREE.AdditiveBlending,
+        depthTest: true,
+        depthWrite: false,
+        uniforms: {
+          uHaloSize: {
+            value: 18 * Math.min(window.devicePixelRatio || 1, 1.6)
+          }
+        },
+        vertexShader: `
+          uniform float uHaloSize;
+          varying vec3 vHaloColor;
+
+          void main() {
+            float peak = max(max(color.r, color.g), color.b);
+            vHaloColor = color / max(peak, 0.0001);
+
+            gl_Position =
+              projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+
+            gl_PointSize = uHaloSize;
+          }
+        `,
+        fragmentShader: `
+          varying vec3 vHaloColor;
+
+          void main() {
+            float distanceFromCenter = length(gl_PointCoord - vec2(0.5));
+            if (distanceFromCenter >= 0.5) discard;
+
+            float glow = 1.0 - smoothstep(0.0, 0.5, distanceFromCenter);
+            glow = glow * glow;
+
+            gl_FragColor = vec4(vHaloColor * 1.8, glow * ${haloStrengthR8C.toFixed(3)});
+          }
+        `
+      });
+
+      const edgeHalo = new THREE.Points(haloGeometry, haloMaterial);
+      edgeHalo.name = "LAISE_R8C_EDGE_HALO_TEST";
+      edgeHalo.frustumCulled = false;
+      edgeHalo.renderOrder = 3;
+
+      terrainRig.add(edgeHalo);
+
+      console.info(
+        "LAISE edge halo enabled:",
+        uniqueEdgeIndices.length,
+        "perimeter points"
+      );
+    }
+
+
+    console.info(
+      "LAISE edge test enabled:",
+      edgeIndices.length / 2,
+      "segments"
+    );
+  }
+}
+
+
+// R8B.3 - Real-time reflective floor.
+// Query flag ?floor=0 disables the experiment without changing files.
+const reflectiveFloorEnabled =
+  new URLSearchParams(window.location.search).get("floor") === "1";
+
+if (reflectiveFloorEnabled) {
+  const reflectiveFloorR8B = createReflectiveFloorR8B({
+    width: TERRAIN.width,
+    depth: TERRAIN.depth,
+    minimumTerrainY: BASE_POSE.y - TERRAIN.maxHeight
+  });
+  scene.add(reflectiveFloorR8B.floor);
+}
+
 
 
 // R7C-R6 removes the projectedGoldenLightSurface and the translated
@@ -1611,6 +1937,21 @@ let previousTime = 0;
 ========================================================= */
 
 let behaviorTimelineV13C = null;
+// LAISE_R9_EVENT_DETAIL: independent, additive visual attack packets.
+const eventWavesEnabledR9 = new URLSearchParams(window.location.search).get("events") === "1";
+const articulationR92 = eventWavesEnabledR9 && new URLSearchParams(window.location.search).get("articulation") === "1";
+const contoursR93 = eventWavesEnabledR9 &&
+  new URLSearchParams(window.location.search).get("contours") === "1";
+let eventWaveDetailR9 = null;
+window.__LAISE_EVENT_WAVES__ = {
+  get status() { return eventWaveDetailR9?.debug ?? { mode: "OFF", requested: eventWavesEnabledR9 }; }
+};
+for (const eventName of ["seeking", "seeked", "emptied"]) {
+  audio.addEventListener(eventName, () => {
+    eventWaveDetailR9?.seek(eventName === "emptied" ? 0 : audio.currentTime);
+  });
+}
+
 
 // V1.3C is now the definitive visual behavior.
 // No public V1.2/V1.3C mode selector remains.
@@ -2021,9 +2362,75 @@ fetch(
     }
 
 
+    if (eventWavesEnabledR9) {
+      eventWaveDetailR9 = new EventWaveDetailR9(data, TERRAIN.width, TERRAIN.depth, SEG_X, SEG_Z);
+      eventWaveDetailR9.seek(audio.currentTime);
+      console.info("LAISE R9 event detail enabled", eventWaveDetailR9.debug);
+    }
+
     behaviorTimelineV13C =
       new BehaviorTimelineV13C(
-        data
+        // LAISE_PERCUSSION_MOTION_TEST
+        !eventWavesEnabledR9 && (
+          new URLSearchParams(window.location.search).get("percussion") === "1" ||
+          new URLSearchParams(window.location.search).get("rhythm") === "1"
+        )
+          ? {
+              ...data,
+              behaviors: data.behaviors.map((behavior) => {
+                // LAISE_DRUMS_PERCUSSION_TEST
+                if (
+                  behavior.source !== "percussion" &&
+                  behavior.source !== "drums"
+                ) return behavior;
+
+                // Smoothly favors small positive signals; zero stays zero.
+                // The original event times and positions are preserved.
+                const boost = (value) => {
+                  if (!Number.isFinite(value) || value <= 0) return value;
+                  // LAISE_RHYTHM_MOTION_TEST
+                  // Stronger test only when ?rhythm=1 is present.
+                  if (
+                    new URLSearchParams(window.location.search)
+                      .get("rhythm") === "1"
+                  ) {
+                    return value * (1 + 2.5 / (1 + value / 0.005));
+                  }
+
+                  return value * (1 + 0.70 / (1 + value / 0.002));
+                };
+
+                return {
+                  ...behavior,
+
+                  continuous: behavior.continuous.map((sample) => {
+                    const copy = sample.slice();
+                    copy[1] = boost(sample[1]);
+                    return copy;
+                  }),
+
+                  attacks: behavior.attacks.map((attack) => ({
+                    ...attack,
+                    drive: boost(attack.drive)
+                  })),
+
+                  reinforcementAttacks:
+                    (behavior.reinforcementAttacks ?? []).map((attack) => {
+                      const copy = { ...attack };
+
+                      if (Number.isFinite(attack.physicalAttackDrive)) {
+                        copy.physicalAttackDrive =
+                          boost(attack.physicalAttackDrive);
+                      } else if (Number.isFinite(attack.residualDrive)) {
+                        copy.residualDrive = boost(attack.residualDrive);
+                      }
+
+                      return copy;
+                    })
+                };
+              })
+            }
+          : data
       );
 
 
@@ -2259,6 +2666,19 @@ function animate() {
       ? behaviorRippleField
       : rippleField;
 
+  if (eventWaveDetailR9) {
+    eventWaveDetailR9.update(
+      audio.currentTime, !audio.paused && !audio.seeking && !audio.ended,
+      behaviorTimelineV13C?.anchorX ?? 0,
+      behaviorTimelineV13C?.anchorZ ?? 0
+    );
+  }
+
+  if (contoursR93 && eventWaveDetailR9) {
+    attackAccentR93.array.set(eventWaveDetailR9.accents);
+    attackAccentR93.needsUpdate = true;
+  }
+
   for (let i = 0; i < positions.count; i++) {
 
     // Physical field remains untouched.
@@ -2268,20 +2688,24 @@ function animate() {
     // exceptional physical peaks may reach or leave the
     // camera frame instead of flattening into a common cap.
 
-    const physicalVisualHeight =
-      visibleRippleField.heights[i] *
-      motionGain;
+    const baseVisualHeight = visibleRippleField.heights[i] * motionGain;
+    const detailVisualHeight = (eventWaveDetailR9?.heights[i] ?? 0) * motionGain;
 
-    positions.array[i * 3 + 1] =
-      behaviorMode === "v13c"
-        ? visualHeightV13C(
-            physicalVisualHeight
-          )
-        : TERRAIN.maxHeight *
-          Math.tanh(
-            physicalVisualHeight /
-            TERRAIN.maxHeight
-          );
+    if (articulationR92 && behaviorMode === "v13c") {
+      // R9.2: articulate attacks relative to the existing surface.
+      // Bound the added relief; the physical field and audio stay untouched.
+      const relativeGain = 1 + Math.min(1.4, Math.abs(baseVisualHeight) / 3.0);
+      const relief = 1.1 * Math.tanh(detailVisualHeight * relativeGain / 1.1);
+      positions.array[i * 3 + 1] = visualHeightV13C(baseVisualHeight) + relief;
+    } else {
+      const physicalVisualHeight = baseVisualHeight + detailVisualHeight;
+      positions.array[i * 3 + 1] =
+        behaviorMode === "v13c"
+          ? visualHeightV13C(physicalVisualHeight)
+          : TERRAIN.maxHeight * Math.tanh(
+              physicalVisualHeight / TERRAIN.maxHeight
+            );
+    }
   }
 
   positions.needsUpdate = true;
@@ -2355,3 +2779,4 @@ window.addEventListener(
 
   }
 );
+
