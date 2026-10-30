@@ -1148,6 +1148,14 @@ const terrainRig = new THREE.Group();
 terrainRig.position.set(0, BASE_POSE.y, 0);
 terrainRig.rotation.set(BASE_POSE.pitch, BASE_POSE.yaw, BASE_POSE.roll);
 terrainRig.scale.set(1, 1, 1);
+// R10: approved full horizontal turn, one revolution per two minutes
+// of playback. ?rotate=0 restores the fixed pose for comparison.
+const horizontalRotationEnabledR10 =
+  new URLSearchParams(window.location.search).get("rotate") !== "0";
+let horizontalRotationElapsedR10 = 0;
+function horizontalRotationOffsetR10(seconds) {
+  return seconds * (2 * Math.PI / 120);
+}
 terrainRig.add(
   reliefSurface
 );
@@ -2659,8 +2667,20 @@ function animate() {
 
   updateSoundWaves(delta);
 
+  // Keep the approved projection gain calibrated to the original pose.
+  // Rotation changes presentation only, never the musical displacement.
+  if (horizontalRotationEnabledR10) {
+    terrainRig.rotation.y = BASE_POSE.yaw;
+  }
   const motionGain = audioMotionRecovery.gainFor(camera, terrainRig,
     window.innerWidth, window.innerHeight);
+  if (horizontalRotationEnabledR10) {
+    if (!audio.paused && !audio.seeking && !audio.ended) {
+      horizontalRotationElapsedR10 += delta;
+    }
+    terrainRig.rotation.y = BASE_POSE.yaw +
+      horizontalRotationOffsetR10(horizontalRotationElapsedR10);
+  }
   const visibleRippleField =
     behaviorMode === "v13c"
       ? behaviorRippleField
