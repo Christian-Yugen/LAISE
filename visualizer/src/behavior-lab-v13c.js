@@ -588,6 +588,14 @@ const observerColorHalfSpan =
   TERRAIN.depth / 2 *
     Math.abs(observerColorSin);
 
+// R11: optional concentric color field anchored to the mesh itself.
+// Geometry, musical response and lighting values remain unchanged.
+const colorFieldR11 = new URLSearchParams(window.location.search).get("colorfield");
+const radialPaletteR11 = ["radial", "radial-reverse", "radial-depth"].includes(colorFieldR11);
+const radialReverseR11 = colorFieldR11 === "radial-reverse";
+const radialBlendR11 = colorFieldR11 === "radial-depth" ? 0.45 : 1.0;
+const radialRadiusR11 = Math.hypot(TERRAIN.width / 2, TERRAIN.depth / 2);
+
 
 /*
   Quintic smootherstep.
@@ -761,19 +769,15 @@ for (
     z * observerColorSin;
 
 
-  const t =
-    THREE.MathUtils.clamp(
-      (
-        observerX +
-        observerColorHalfSpan
-      ) /
-      (
-        2 *
-        observerColorHalfSpan
-      ),
-      0,
-      1
-    );
+  const linearT = THREE.MathUtils.clamp(
+    (observerX + observerColorHalfSpan) / (2 * observerColorHalfSpan),
+    0, 1
+  );
+  const radiusT = THREE.MathUtils.clamp(Math.hypot(x, z) / radialRadiusR11, 0, 1);
+  const radialT = radialReverseR11 ? 1 - radiusT : radiusT;
+  const t = radialPaletteR11
+    ? linearT + (radialT - linearT) * radialBlendR11
+    : linearT;
 
 
   continuousSpectrumColor(
@@ -932,6 +936,10 @@ const terrainMaterial = new THREE.ShaderMaterial({
     uOrthographic: { value: camera.isOrthographicCamera },
     uSpectrumAxis: { value: terrainSpectrumAxis },
     uSpectrumHalfSpan: { value: observerColorHalfSpan },
+    uRadialPaletteR11: { value: radialPaletteR11 },
+    uRadialReverseR11: { value: radialReverseR11 },
+    uRadialBlendR11: { value: radialBlendR11 },
+    uRadialRadiusR11: { value: radialRadiusR11 },
     uShadow: { value: TERRAIN_LIGHTING.wireShadow },
     uKey: { value: TERRAIN_LIGHTING.wireKey },
     uFill: { value: TERRAIN_LIGHTING.wireFill },
@@ -953,13 +961,21 @@ const terrainMaterial = new THREE.ShaderMaterial({
     varying float vSpectrumT;
     uniform vec2 uSpectrumAxis;
     uniform float uSpectrumHalfSpan;
+    uniform bool uRadialPaletteR11;
+    uniform bool uRadialReverseR11;
+    uniform float uRadialBlendR11;
+    uniform float uRadialRadiusR11;
     void main() {
       vAttackAccent = attackAccent;
       vNeonCurvature = neonCurvature;
       vNeonViewNormal = normalMatrix * neonNormal;
       vTerrainHeight = position.y;
-      vSpectrumT = (dot(position.xz, uSpectrumAxis) + uSpectrumHalfSpan)
+      float linearT = (dot(position.xz, uSpectrumAxis) + uSpectrumHalfSpan)
         / (2.0 * uSpectrumHalfSpan);
+      float radiusT = clamp(length(position.xz) / uRadialRadiusR11, 0.0, 1.0);
+      float radialT = uRadialReverseR11 ? 1.0 - radiusT : radiusT;
+      vSpectrumT = uRadialPaletteR11
+        ? mix(linearT, radialT, uRadialBlendR11) : linearT;
       vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
       vViewNormal = normalMatrix * normal;
       vViewPosition = -mvPosition.xyz;
@@ -1075,6 +1091,10 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
   shader.uniforms.uTerrainKeyDirection = { value: wireViewLightDirection };
   shader.uniforms.uSpectrumAxis = { value: terrainSpectrumAxis };
   shader.uniforms.uSpectrumHalfSpan = { value: observerColorHalfSpan };
+  shader.uniforms.uRadialPaletteR11 = { value: radialPaletteR11 };
+  shader.uniforms.uRadialReverseR11 = { value: radialReverseR11 };
+  shader.uniforms.uRadialBlendR11 = { value: radialBlendR11 };
+  shader.uniforms.uRadialRadiusR11 = { value: radialRadiusR11 };
   shader.uniforms.uTerrainSurfaceLight = { value: TERRAIN_LIGHTING.surfaceLight };
   shader.uniforms.uTerrainSurfacePeakLight = { value: TERRAIN_LIGHTING.surfacePeakLight };
   shader.vertexShader = `
@@ -1089,6 +1109,10 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
     varying vec3 vR8A10Spectrum;
     uniform vec2 uSpectrumAxis;
     uniform float uSpectrumHalfSpan;
+    uniform bool uRadialPaletteR11;
+    uniform bool uRadialReverseR11;
+    uniform float uRadialBlendR11;
+    uniform float uRadialRadiusR11;
   ` + shader.vertexShader;
   shader.vertexShader = shader.vertexShader.replace("#include <begin_vertex>",
     `#include <begin_vertex>
@@ -1097,8 +1121,12 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
     vNeonViewNormal = normalMatrix * neonNormal;
     vTerrainHeight = position.y;
     vR8A10Spectrum = color;
-    vSpectrumT = (dot(position.xz, uSpectrumAxis) + uSpectrumHalfSpan)
-      / (2.0 * uSpectrumHalfSpan);`);
+    float linearT = (dot(position.xz, uSpectrumAxis) + uSpectrumHalfSpan)
+      / (2.0 * uSpectrumHalfSpan);
+    float radiusT = clamp(length(position.xz) / uRadialRadiusR11, 0.0, 1.0);
+    float radialT = uRadialReverseR11 ? 1.0 - radiusT : radiusT;
+    vSpectrumT = uRadialPaletteR11
+      ? mix(linearT, radialT, uRadialBlendR11) : linearT;`);
   shader.fragmentShader = `
     varying float vAttackAccent;
     varying float vTerrainHeight;
