@@ -229,6 +229,8 @@ const CAMERA = Object.freeze({ span: 32, elevation: THREE.MathUtils.degToRad(16)
 const perspectiveDepthEnabledR12 =
   new URLSearchParams(window.location.search).get("depth") === "perspective";
 document.documentElement.classList.toggle("perspective-depth-r12", perspectiveDepthEnabledR12);
+const visibleEdgesEnabledR12 = perspectiveDepthEnabledR12 &&
+  new URLSearchParams(window.location.search).get("edges") === "1";
 const wideCoverageEnabledR12 = perspectiveDepthEnabledR12 &&
   new URLSearchParams(window.location.search).get("fill") === "1";
 const camera = perspectiveDepthEnabledR12
@@ -299,7 +301,7 @@ function frameTerrain() {
   const hudTop = rect(".hud")?.top ?? height * 0.88;
   const frontGap = Math.max(6, Math.min(width, height) * (8 / 1080));
   const frontTarget = perspectiveDepthEnabledR12
-    ? height + height * 0.23 + SCREEN_POSITION.vertical
+    ? height + height * (visibleEdgesEnabledR12 ? 0.02 : 0.23) + SCREEN_POSITION.vertical
     : hudTop - frontGap + SCREEN_POSITION.vertical;
   const obstacles = [".brand", ".field-summary", ".status"].map(rect).filter(Boolean).map(r => [
     { x: r.left - margin / 2, y: r.top - margin / 2 },
@@ -354,7 +356,7 @@ function frameTerrain() {
   const unitWidth = (Math.max(...unit.map(p => p.x)) - Math.min(...unit.map(p => p.x))) * width / 2;
   const approvedZoom = width * CAMERA.widthTarget / unitWidth;
   if (perspectiveDepthEnabledR12) {
-    place(approvedZoom * (wideCoverageEnabledR12 ? 1.45 : 1.15));
+    place(approvedZoom * (visibleEdgesEnabledR12 ? 1.25 : wideCoverageEnabledR12 ? 1.45 : 1.15));
     return;
   }
   if (fits(place(approvedZoom))) return;
