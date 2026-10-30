@@ -447,3 +447,67 @@ body {
   }
 
 }
+
+/* R12 perspective composition: clear the terrain's foreground. */
+.depth-track-info { display: none; }
+.perspective-depth-r12 .depth-track-info {
+  display: grid;
+  justify-items: end;
+  gap: 3px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  max-width: min(360px, 45vw);
+  margin-left: auto;
+  text-shadow: 0 1px 5px #020706;
+}
+.perspective-depth-r12 .depth-track-info small {
+  font-size: 9px;
+  letter-spacing: .17em;
+  color: #8bafa6;
+}
+.perspective-depth-r12 .depth-track-info strong {
+  font-size: clamp(12px, 1vw, 16px);
+  font-weight: 500;
+  color: #e8f7f0;
+}
+.perspective-depth-r12 .depth-track-info span {
+  font-size: 9px;
+  letter-spacing: .12em;
+  color: #c9a46d;
+}
+.perspective-depth-r12 .hud {
+  left: max(24px, 3vw);
+  right: max(24px, 3vw);
+  bottom: 10px;
+  min-height: 42px;
+  display: block;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  backdrop-filter: none;
+  box-shadow: none;
+  overflow: visible;
+}
+.perspective-depth-r12 .hud .now-playing { display: none !important; }
+.perspective-depth-r12 .hud .progress-area {
+  padding: 0;
+  border: 0;
+  gap: 12px;
+}
+.perspective-depth-r12 .hud .progress-track {
+  padding: 0;
+}
+.perspective-depth-r12 .hud .timeline {
+  height: 4px;
+  background: rgba(190, 224, 215, .25);
+  box-shadow: 0 1px 5px #020706;
+}
+.perspective-depth-r12 .hud .time {
+  margin-top: 5px;
+  color: #c4d9d0;
+  text-shadow: 0 1px 5px #020706;
+}
+@media (max-width: 600px) {
+  .perspective-depth-r12 .status { right: 18px; top: 18px; }
+  .perspective-depth-r12 .depth-track-info { max-width: 60vw; }
+}
