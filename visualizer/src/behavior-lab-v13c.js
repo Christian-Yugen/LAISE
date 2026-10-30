@@ -421,6 +421,40 @@ camera.add(terrainKeyLight, terrainKeyLight.target,
   terrainFillLight, terrainFillLight.target);
 scene.add(camera);
 
+// A quiet reference edge behind the terrain: the foreground mesh can cross it.
+// Opt in with ?portal=1 for the billboard-like depth comparison.
+const portalFrameEnabledR12 = perspectiveDepthEnabledR12 &&
+  new URLSearchParams(window.location.search).get("portal") === "1";
+const portalFrameR12 = portalFrameEnabledR12
+  ? new THREE.LineSegments(
+      new THREE.BufferGeometry(),
+      new THREE.LineBasicMaterial({
+        color: 0x87b9c3, transparent: true, opacity: 0.27,
+        depthTest: true, depthWrite: false, toneMapped: false
+      })
+    )
+  : null;
+function resizePortalFrameR12() {
+  if (!portalFrameR12) return;
+  const distance = 75;
+  const halfHeight = Math.tan(THREE.MathUtils.degToRad(19)) *
+    distance / Math.max(0.001, camera.zoom);
+  const halfWidth = halfHeight * camera.aspect;
+  const x = halfWidth * 0.73, y = halfHeight * 0.66;
+  portalFrameR12.geometry.dispose();
+  portalFrameR12.geometry = new THREE.BufferGeometry().setFromPoints([
+    new THREE.Vector3(-x, y, -distance), new THREE.Vector3(x, y, -distance),
+    new THREE.Vector3(x, y, -distance), new THREE.Vector3(x, -y, -distance),
+    new THREE.Vector3(x, -y, -distance), new THREE.Vector3(-x, -y, -distance),
+    new THREE.Vector3(-x, -y, -distance), new THREE.Vector3(-x, y, -distance)
+  ]);
+}
+if (portalFrameR12) {
+  camera.add(portalFrameR12);
+  resizePortalFrameR12();
+  window.addEventListener("resize", () => requestAnimationFrame(resizePortalFrameR12));
+}
+
 
 /* =========================================================
    SONIC TERRAIN
