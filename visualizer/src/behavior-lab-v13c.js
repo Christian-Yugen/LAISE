@@ -229,6 +229,8 @@ const CAMERA = Object.freeze({ span: 32, elevation: THREE.MathUtils.degToRad(16)
 const perspectiveDepthEnabledR12 =
   new URLSearchParams(window.location.search).get("depth") === "perspective";
 document.documentElement.classList.toggle("perspective-depth-r12", perspectiveDepthEnabledR12);
+const wideCoverageEnabledR12 = perspectiveDepthEnabledR12 &&
+  new URLSearchParams(window.location.search).get("fill") === "1";
 const camera = perspectiveDepthEnabledR12
   ? new THREE.PerspectiveCamera(38,
       window.innerWidth / window.innerHeight, 0.1, 500)
@@ -352,7 +354,7 @@ function frameTerrain() {
   const unitWidth = (Math.max(...unit.map(p => p.x)) - Math.min(...unit.map(p => p.x))) * width / 2;
   const approvedZoom = width * CAMERA.widthTarget / unitWidth;
   if (perspectiveDepthEnabledR12) {
-    place(approvedZoom * 1.15);
+    place(approvedZoom * (wideCoverageEnabledR12 ? 1.45 : 1.15));
     return;
   }
   if (fits(place(approvedZoom))) return;
@@ -2787,6 +2789,10 @@ function animate() {
           : TERRAIN.maxHeight * Math.tanh(
               physicalVisualHeight / TERRAIN.maxHeight
             );
+    }
+    if (wideCoverageEnabledR12) {
+      // Display-only peak reduction balances the closer fixed perspective.
+      positions.array[i * 3 + 1] *= 0.82;
     }
   }
 
