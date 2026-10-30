@@ -276,7 +276,6 @@ function polygonsOverlap(a, b) {
   return true;
 }
 
-let perspectiveBaseZoomR12 = 1;
 function frameTerrain() {
   const width = window.innerWidth, height = window.innerHeight;
   // R3B anchors the BASE front to the listener. Negative deformation is allowed
@@ -298,7 +297,7 @@ function frameTerrain() {
   const hudTop = rect(".hud")?.top ?? height * 0.88;
   const frontGap = Math.max(6, Math.min(width, height) * (8 / 1080));
   const frontTarget = perspectiveDepthEnabledR12
-    ? height - Math.max(38, height * 0.055) + SCREEN_POSITION.vertical
+    ? height - Math.max(18, height * 0.03) + SCREEN_POSITION.vertical
     : hudTop - frontGap + SCREEN_POSITION.vertical;
   const obstacles = [".brand", ".field-summary", ".status"].map(rect).filter(Boolean).map(r => [
     { x: r.left - margin / 2, y: r.top - margin / 2 },
@@ -353,8 +352,7 @@ function frameTerrain() {
   const unitWidth = (Math.max(...unit.map(p => p.x)) - Math.min(...unit.map(p => p.x))) * width / 2;
   const approvedZoom = width * CAMERA.widthTarget / unitWidth;
   if (perspectiveDepthEnabledR12) {
-    perspectiveBaseZoomR12 = approvedZoom;
-    place(approvedZoom);
+    place(approvedZoom * 1.15);
     return;
   }
   if (fits(place(approvedZoom))) return;
@@ -2675,42 +2673,6 @@ function updateSoundWaves(delta, flushPause = false) {
 
 
 
-const perspectivePointR12 = new THREE.Vector3();
-function framePerspectiveLiveR12() {
-  if (!perspectiveDepthEnabledR12) return;
-  const width = window.innerWidth, height = window.innerHeight;
-  const frontTarget = height - Math.max(38, height * 0.055);
-  terrainRig.updateMatrixWorld(true);
-  camera.zoom = perspectiveBaseZoomR12;
-  camera.clearViewOffset();
-  camera.updateProjectionMatrix();
-
-  // Anchor the rotating front edge near the controls. Side and lower
-  // cropping are intentional: the mesh should feel close to the viewer.
-  const corners = [-TERRAIN.width / 2, TERRAIN.width / 2].flatMap(x =>
-    [-TERRAIN.depth / 2, TERRAIN.depth / 2].map(z =>
-      new THREE.Vector3(x, 0, z).applyMatrix4(terrainRig.matrixWorld).project(camera)));
-  const centerX = (Math.min(...corners.map(p => p.x)) +
-    Math.max(...corners.map(p => p.x))) / 2;
-  const frontY = Math.max(...corners.map(p => (1 - p.y) * height / 2));
-  let offsetY = frontY - frontTarget;
-  camera.setViewOffset(width, height, centerX * width / 2, offsetY, width, height);
-
-  // Only the top is a hard boundary. Inspect the live geometry, so an
-  // unusually tall musical peak moves the image down without shrinking it.
-  let uppermost = height;
-  for (let i = 0; i < positions.count; i++) {
-    perspectivePointR12.fromBufferAttribute(positions, i)
-      .applyMatrix4(terrainRig.matrixWorld).project(camera);
-    uppermost = Math.min(uppermost, (1 - perspectivePointR12.y) * height / 2);
-  }
-  if (uppermost < 18) {
-    offsetY -= 18 - uppermost;
-    camera.setViewOffset(width, height, centerX * width / 2,
-      offsetY, width, height);
-  }
-}
-
 function animate() {
 
   requestAnimationFrame(
@@ -2829,7 +2791,6 @@ function animate() {
   }
 
   positions.needsUpdate = true;
-  framePerspectiveLiveR12();
 
   // Shared live normals drive the depth-writing surface and wire shader.
   // All directional shading is evaluated per fragment in view coordinates.
