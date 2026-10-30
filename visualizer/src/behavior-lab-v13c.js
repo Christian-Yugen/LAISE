@@ -229,6 +229,9 @@ const CAMERA = Object.freeze({ span: 32, elevation: THREE.MathUtils.degToRad(16)
 const perspectiveDepthEnabledR12 =
   new URLSearchParams(window.location.search).get("depth") === "perspective";
 document.documentElement.classList.toggle("perspective-depth-r12", perspectiveDepthEnabledR12);
+const horizontalPoseEnabledR12 = perspectiveDepthEnabledR12 &&
+  new URLSearchParams(window.location.search).get("flat") === "1";
+const presentationYawR12 = horizontalPoseEnabledR12 ? 0 : BASE_POSE.yaw;
 const visibleEdgesEnabledR12 = perspectiveDepthEnabledR12 &&
   new URLSearchParams(window.location.search).get("edges") === "1";
 const wideCoverageEnabledR12 = perspectiveDepthEnabledR12 &&
@@ -320,10 +323,10 @@ function frameTerrain() {
         [-TERRAIN.depth / 2, TERRAIN.depth / 2].flatMap(z =>
           [-TERRAIN.maxHeight, 12].map(y =>
             new THREE.Vector3(x, y, z).applyEuler(
-              new THREE.Euler(BASE_POSE.pitch, BASE_POSE.yaw, BASE_POSE.roll)
+              new THREE.Euler(BASE_POSE.pitch, presentationYawR12, BASE_POSE.roll)
             ).add(target))))
     : fieldEnvelope();
-  const rotation = new THREE.Euler(BASE_POSE.pitch, BASE_POSE.yaw, BASE_POSE.roll);
+  const rotation = new THREE.Euler(BASE_POSE.pitch, presentationYawR12, BASE_POSE.roll);
   const base = [-TERRAIN.width / 2, TERRAIN.width / 2].flatMap(x =>
     [-TERRAIN.depth / 2, TERRAIN.depth / 2].map(z =>
       new THREE.Vector3(x, 0, z).applyEuler(rotation).add(target)));
@@ -1250,7 +1253,7 @@ terrain.renderOrder =
 
 const terrainRig = new THREE.Group();
 terrainRig.position.set(0, BASE_POSE.y, 0);
-terrainRig.rotation.set(BASE_POSE.pitch, BASE_POSE.yaw, BASE_POSE.roll);
+terrainRig.rotation.set(BASE_POSE.pitch, presentationYawR12, BASE_POSE.roll);
 terrainRig.scale.set(1, 1, 1);
 // R10: approved full horizontal turn, one revolution per two minutes
 // of playback. ?rotate=0 restores the fixed pose for comparison.
@@ -2774,11 +2777,12 @@ function animate() {
 
   // Keep the approved projection gain calibrated to the original pose.
   // Rotation changes presentation only, never the musical displacement.
-  if (horizontalRotationEnabledR10) {
+  if (horizontalRotationEnabledR10 || horizontalPoseEnabledR12) {
     terrainRig.rotation.y = BASE_POSE.yaw;
   }
   const motionGain = audioMotionRecovery.gainFor(camera, terrainRig,
     window.innerWidth, window.innerHeight);
+  if (horizontalPoseEnabledR12) terrainRig.rotation.y = presentationYawR12;
   if (horizontalRotationEnabledR10) {
     if (!audio.paused && !audio.seeking && !audio.ended) {
       horizontalRotationElapsedR10 += delta;
