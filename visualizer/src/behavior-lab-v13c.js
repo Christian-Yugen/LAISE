@@ -297,7 +297,7 @@ function frameTerrain() {
   const hudTop = rect(".hud")?.top ?? height * 0.88;
   const frontGap = Math.max(6, Math.min(width, height) * (8 / 1080));
   const frontTarget = perspectiveDepthEnabledR12
-    ? height + height * 0.32 + SCREEN_POSITION.vertical
+    ? height + height * 0.23 + SCREEN_POSITION.vertical
     : hudTop - frontGap + SCREEN_POSITION.vertical;
   const obstacles = [".brand", ".field-summary", ".status"].map(rect).filter(Boolean).map(r => [
     { x: r.left - margin / 2, y: r.top - margin / 2 },
