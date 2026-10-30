@@ -357,6 +357,12 @@ function frameTerrain() {
   const approvedZoom = width * CAMERA.widthTarget / unitWidth;
   if (perspectiveDepthEnabledR12) {
     place(approvedZoom * (visibleEdgesEnabledR12 ? 1.25 : wideCoverageEnabledR12 ? 1.45 : 1.15));
+    if (visibleEdgesEnabledR12) {
+      // Open only the horizontal field of view. Camera distance, vertical
+      // projection, musical displacement, and lighting remain unchanged.
+      camera.projectionMatrix.elements[0] *= 0.80;
+      camera.projectionMatrixInverse.copy(camera.projectionMatrix).invert();
+    }
     return;
   }
   if (fits(place(approvedZoom))) return;
