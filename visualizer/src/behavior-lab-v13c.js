@@ -824,11 +824,18 @@ const baseSpectrumColors =
 // R7C-R6: immutable palette and shared position/normal buffers. The surface
 // and its lines now shade the SAME visible slope, without CPU recoloring.
 geometry.setAttribute("color", new THREE.BufferAttribute(baseSpectrumColors, 3));
+// R9.3: optional, short attack contours independent of the terrain height.
+const attackAccentR93 = new THREE.BufferAttribute(
+  new Float32Array((SEG_X + 1) * (SEG_Z + 1)), 1
+);
+attackAccentR93.setUsage(THREE.DynamicDrawUsage);
+geometry.setAttribute("attackAccent", attackAccentR93);
 const wireGeometry = new THREE.BufferGeometry();
 wireGeometry.setIndex(geometry.index);
 wireGeometry.setAttribute("position", positions);
 wireGeometry.setAttribute("normal", geometry.attributes.normal);
 wireGeometry.setAttribute("color", geometry.attributes.color);
+wireGeometry.setAttribute("attackAccent", attackAccentR93);
 
 const updateNeonCurvature = createNeonCurvatureR8A(
   geometry, wireGeometry, SEG_X, SEG_Z, TERRAIN.width, TERRAIN.depth
@@ -933,6 +940,8 @@ const terrainMaterial = new THREE.ShaderMaterial({
     ...neonUniformsR8A
   },
   vertexShader: `
+    attribute float attackAccent;
+    varying float vAttackAccent;
     attribute float neonCurvature;
     attribute vec3 neonNormal;
     varying float vNeonCurvature;
@@ -945,6 +954,7 @@ const terrainMaterial = new THREE.ShaderMaterial({
     uniform vec2 uSpectrumAxis;
     uniform float uSpectrumHalfSpan;
     void main() {
+      vAttackAccent = attackAccent;
       vNeonCurvature = neonCurvature;
       vNeonViewNormal = normalMatrix * neonNormal;
       vTerrainHeight = position.y;
@@ -958,6 +968,7 @@ const terrainMaterial = new THREE.ShaderMaterial({
     }
   `,
   fragmentShader: `
+    varying float vAttackAccent;
     uniform vec3 uKeyDirection;
     uniform vec3 uFillDirection;
     uniform vec3 uTerrainUp;
@@ -1002,7 +1013,9 @@ const terrainMaterial = new THREE.ShaderMaterial({
       vec3 chromaticBase = vividTerrainColor(vSpectrum, vSpectrumT);
       vec3 emission = r8aNeonEmission(chromaticBase, vSpectrumT,
         faceNormal, uTerrainUp, uKeyDirection);
-      gl_FragColor = vec4(chromaticBase * radiance + emission, 1.0);
+      // A brief chromatic crest marks each recorded onset on the same mesh.
+      gl_FragColor = vec4(chromaticBase * radiance + emission
+        + chromaticBase * (0.55 * vAttackAccent), 1.0);
       #include <tonemapping_fragment>
       #include <colorspace_fragment>
     }
@@ -1065,6 +1078,8 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
   shader.uniforms.uTerrainSurfaceLight = { value: TERRAIN_LIGHTING.surfaceLight };
   shader.uniforms.uTerrainSurfacePeakLight = { value: TERRAIN_LIGHTING.surfacePeakLight };
   shader.vertexShader = `
+    attribute float attackAccent;
+    varying float vAttackAccent;
     attribute float neonCurvature;
     attribute vec3 neonNormal;
     varying float vNeonCurvature;
@@ -1077,6 +1092,7 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
   ` + shader.vertexShader;
   shader.vertexShader = shader.vertexShader.replace("#include <begin_vertex>",
     `#include <begin_vertex>
+    vAttackAccent = attackAccent;
     vNeonCurvature = neonCurvature;
     vNeonViewNormal = normalMatrix * neonNormal;
     vTerrainHeight = position.y;
@@ -1084,6 +1100,7 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
     vSpectrumT = (dot(position.xz, uSpectrumAxis) + uSpectrumHalfSpan)
       / (2.0 * uSpectrumHalfSpan);`);
   shader.fragmentShader = `
+    varying float vAttackAccent;
     varying float vTerrainHeight;
     varying float vSpectrumT;
     varying vec3 vR8A10Spectrum;
@@ -1106,6 +1123,7 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
     totalEmissiveRadiance += ${NEON_R8A.surfaceEmissionFraction.toFixed(4)}
       * r8aNeonEmission(diffuseColor.rgb, vSpectrumT,
         normal, uTerrainUp, uTerrainKeyDirection);
+    totalEmissiveRadiance += diffuseColor.rgb * (0.16 * vAttackAccent);
   `);
 };
 reliefSurfaceMaterial.customProgramCacheKey = () => "r8a-hdr-neon-emission-v2";
@@ -1922,6 +1940,8 @@ let behaviorTimelineV13C = null;
 // LAISE_R9_EVENT_DETAIL: independent, additive visual attack packets.
 const eventWavesEnabledR9 = new URLSearchParams(window.location.search).get("events") === "1";
 const articulationR92 = eventWavesEnabledR9 && new URLSearchParams(window.location.search).get("articulation") === "1";
+const contoursR93 = eventWavesEnabledR9 &&
+  new URLSearchParams(window.location.search).get("contours") === "1";
 let eventWaveDetailR9 = null;
 window.__LAISE_EVENT_WAVES__ = {
   get status() { return eventWaveDetailR9?.debug ?? { mode: "OFF", requested: eventWavesEnabledR9 }; }
@@ -2654,6 +2674,11 @@ function animate() {
     );
   }
 
+  if (contoursR93 && eventWaveDetailR9) {
+    attackAccentR93.array.set(eventWaveDetailR9.accents);
+    attackAccentR93.needsUpdate = true;
+  }
+
   for (let i = 0; i < positions.count; i++) {
 
     // Physical field remains untouched.
@@ -2754,3 +2779,4 @@ window.addEventListener(
 
   }
 );
+
