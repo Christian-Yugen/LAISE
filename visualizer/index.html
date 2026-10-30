@@ -1,120 +1,16 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-  <title>LAISE Visualizer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAISE — Visualizador 3D</title>
+  <meta http-equiv="refresh" content="0; url=/behavior-lab-v13c.html">
+  <script>
+    window.location.replace("/behavior-lab-v13c.html" + window.location.search);
+  </script>
 </head>
-
 <body>
-
-  <div id="app">
-
-    <canvas id="scene"></canvas>
-
-    <header class="brand">
-      <div class="mark">△</div>
-
-      <div>
-        <div class="laise">LAISE</div>
-        <div class="subtitle">
-          SPATIAL AUDIO VISUALIZER
-        </div>
-        <div class="version" id="visualizerVersion">
-          --
-        </div>
-      </div>
-    </header>
-
-    <div class="field-summary" aria-label="Spatial field metadata">
-      <span>SPATIAL FIELD</span>
-      <span>BINAURAL <span id="spatialSource">--</span></span>
-      <span id="sourceCount">--</span>
-      <span>MOTION DATA</span>
-      <span hidden id="stemsState">--</span>
-      <span hidden id="motionState">--</span>
-    </div>
-
-    <div class="status">
-      <div class="status-title">
-        MASTER REACTIVE TERRAIN
-      </div>
-
-      <div class="status-value" id="energy">
-        ENERGY 0%
-      </div>
-    </div>
-
-    <div class="listener">
-      <div class="headphones">◉</div>
-      <div>LISTENER POSITION</div>
-      <small>BINAURAL FIELD</small>
-    </div>
-
-    <footer class="hud">
-
-      <div class="now-playing">
-        <small>NOW PLAYING</small>
-        <strong id="trackTitle">--</strong>
-        <span id="masterLabel">--</span>
-      </div>
-
-      <div class="progress-area">
-        <button id="startButton" type="button" aria-label="Iniciar reprodução" title="Iniciar reprodução">
-          <span aria-hidden="true">▶</span>
-        </button>
-        <div class="progress-track">
-          <div class="timeline" id="timeline">
-            <div class="timeline-fill" id="timelineFill"></div>
-          </div>
-          <div class="time">
-            <span id="currentTime">00:00</span>
-            <span id="duration">00:00</span>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="metric">
-        <small>INTEGRATED</small>
-        <strong id="integratedLufs">--</strong>
-        <span>LUFS</span>
-      </div>
-
-      <div class="metric">
-        <small>TRUE PEAK</small>
-        <strong id="truePeak">--</strong>
-        <span>dBTP</span>
-      </div>
-
-      <div class="metric">
-        <small>SPATIAL</small>
-        <strong id="spatialIntegrity">--</strong>
-        <span>% integrity</span>
-      </div>
-
-      <div class="release">
-        <div class="release-dot"></div>
-        <div>
-          <strong>FINAL DELIVERY</strong>
-          <span id="deliveryStatus">--</span>
-        </div>
-      </div>
-
-    </footer>
-
-    <audio
-      id="audio"
-      preload="auto"
-      src="/audio/TUKANA02_FINAL_MASTER_PCM24_48k.wav">
-    </audio>
-
-  </div>
-
-  <script type="module" src="/src/main.js"></script>
-
+  <p>Abrindo o visualizador LAISE...</p>
+  <a href="/behavior-lab-v13c.html">Abrir visualizador</a>
 </body>
 </html>
