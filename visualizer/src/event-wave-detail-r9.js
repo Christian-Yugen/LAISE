@@ -12,6 +12,8 @@ export class EventWaveDetailR9 {
     this.dz = depth / segmentsZ;
     this.heights = new Float32Array(this.columns * this.rows);
     this.accents = new Float32Array(this.columns * this.rows);
+    this.contoursEnabled = typeof window !== "undefined" &&
+      new URLSearchParams(window.location.search).get("contours") === "1";
     // R9.1: faster travel and shorter tail; original profile retained.
     const originalWaves = typeof window !== "undefined" &&
       new URLSearchParams(window.location.search).get("waveprofile") === "original";
@@ -91,8 +93,10 @@ export class EventWaveDetailR9 {
       const amp = e.amplitude * envelope;
       // A short crest remains readable over a tall sustained surface.
       // Max composition avoids multiplying brightness for coincident stems.
-      const accent = Math.min(1, e.amplitude / 0.65)
-        * (1 - Math.exp(-age / 0.012)) * Math.exp(-age / 0.20);
+      const accent = this.contoursEnabled
+        ? Math.min(1, e.amplitude / 0.65)
+          * (1 - Math.exp(-age / 0.012)) * Math.exp(-age / 0.20)
+        : 0;
       const c0 = Math.max(0, Math.floor((e.x - support + this.width / 2) / this.dx));
       const c1 = Math.min(this.columns - 1, Math.ceil((e.x + support + this.width / 2) / this.dx));
       const r0 = Math.max(0, Math.floor((e.z - support + this.depth / 2) / this.dz));
@@ -105,7 +109,7 @@ export class EventWaveDetailR9 {
           if (Math.abs(q) > 3) continue;
           const index = row * this.columns + col;
           this.heights[index] += amp * (1 - q * q) * Math.exp(-q * q / 2);
-          if (Math.abs(q) < 1.5) {
+          if (this.contoursEnabled && Math.abs(q) < 1.5) {
             this.accents[index] = Math.max(this.accents[index],
               accent * Math.exp(-2 * q * q));
           }
