@@ -883,6 +883,39 @@ const baseSpectrumColors =
     colors
   );
 
+// R12 color-only rotation: retain the approved gradient and its lighting.
+const colorSpinEnabledR12 =
+  new URLSearchParams(window.location.search).get("colorspin") === "1";
+const colorSpinLookupR12 = colorSpinEnabledR12
+  ? Array.from({ length: 1025 }, (_, index) =>
+      continuousSpectrumColor(index / 1024, new THREE.Color()).clone())
+  : null;
+let colorSpinElapsedR12 = 0;
+function updateColorSpinR12(delta) {
+  if (!colorSpinLookupR12) return;
+  if (!audio.paused && !audio.seeking && !audio.ended) {
+    colorSpinElapsedR12 += delta;
+  }
+  const angle = horizontalRotationOffsetR10(colorSpinElapsedR12);
+  const axisX = Math.cos(BASE_POSE.yaw + angle);
+  const axisZ = Math.sin(BASE_POSE.yaw + angle);
+  terrainSpectrumAxis.set(axisX, axisZ);
+  const inverseSpan = 1 / (2 * observerColorHalfSpan);
+  for (let i = 0; i < positions.count; i++) {
+    const offset = i * 3;
+    const t = THREE.MathUtils.clamp(
+      (basePositions[offset] * axisX +
+        basePositions[offset + 2] * axisZ + observerColorHalfSpan) *
+        inverseSpan, 0, 1);
+    const sample = colorSpinLookupR12[Math.round(t * 1024)];
+    baseSpectrumColors[offset] = sample.r;
+    baseSpectrumColors[offset + 1] = sample.g;
+    baseSpectrumColors[offset + 2] = sample.b;
+  }
+  geometry.attributes.color.needsUpdate = true;
+}
+
+
 
 // R7C-R6: immutable palette and shared position/normal buffers. The surface
 // and its lines now shade the SAME visible slope, without CPU recoloring.
@@ -1213,7 +1246,7 @@ terrainRig.rotation.set(BASE_POSE.pitch, BASE_POSE.yaw, BASE_POSE.roll);
 terrainRig.scale.set(1, 1, 1);
 // R10: approved full horizontal turn, one revolution per two minutes
 // of playback. ?rotate=0 restores the fixed pose for comparison.
-const horizontalRotationEnabledR10 =
+const horizontalRotationEnabledR10 = !colorSpinEnabledR12 &&
   new URLSearchParams(window.location.search).get("rotate") !== "0";
 let horizontalRotationElapsedR10 = 0;
 function horizontalRotationOffsetR10(seconds) {
@@ -2745,6 +2778,7 @@ function animate() {
     terrainRig.rotation.y = BASE_POSE.yaw +
       horizontalRotationOffsetR10(horizontalRotationElapsedR10);
   }
+  updateColorSpinR12(delta);
   const visibleRippleField =
     behaviorMode === "v13c"
       ? behaviorRippleField
