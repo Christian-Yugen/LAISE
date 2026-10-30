@@ -232,6 +232,8 @@ document.documentElement.classList.toggle("perspective-depth-r12", perspectiveDe
 const horizontalPoseEnabledR12 = perspectiveDepthEnabledR12 &&
   new URLSearchParams(window.location.search).get("flat") === "1";
 const presentationYawR12 = horizontalPoseEnabledR12 ? 0 : BASE_POSE.yaw;
+const fullSpanEnabledR12 = perspectiveDepthEnabledR12 &&
+  new URLSearchParams(window.location.search).get("span") === "1";
 const visibleEdgesEnabledR12 = perspectiveDepthEnabledR12 &&
   new URLSearchParams(window.location.search).get("edges") === "1";
 const wideCoverageEnabledR12 = perspectiveDepthEnabledR12 &&
@@ -363,7 +365,7 @@ function frameTerrain() {
     if (visibleEdgesEnabledR12) {
       // Open only the horizontal field of view. Camera distance, vertical
       // projection, musical displacement, and lighting remain unchanged.
-      camera.projectionMatrix.elements[0] *= 0.80;
+      camera.projectionMatrix.elements[0] *= fullSpanEnabledR12 && horizontalPoseEnabledR12 ? 1.38 : 0.80;
       camera.projectionMatrixInverse.copy(camera.projectionMatrix).invert();
     }
     return;
