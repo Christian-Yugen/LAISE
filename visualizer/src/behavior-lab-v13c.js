@@ -221,7 +221,12 @@ const BASE_POSE = Object.freeze({
 // Posicao na tela, em pixels: horizontal + direita; vertical + baixo.
 const SCREEN_POSITION = Object.freeze({ horizontal: 0, vertical: 0 });
 // Approved R3 reference: 1682.861971 px at 1920 px, preserved proportionally.
-const CAMERA = Object.freeze({ span: 32, elevation: THREE.MathUtils.degToRad(16), distance: 26, widthTarget: 1682.861971225252 / 1920 });
+const depthPlusEnabledR14 = new URLSearchParams(window.location.search).get("depthplus") === "1" &&
+  new URLSearchParams(window.location.search).get("depth") === "perspective";
+const CAMERA = Object.freeze({ span: 32,
+  elevation: THREE.MathUtils.degToRad(depthPlusEnabledR14 ? 12 : 16),
+  distance: depthPlusEnabledR14 ? 23 : 26,
+  widthTarget: 1682.861971225252 / 1920 });
 
 // R12 visual-depth test. The existing orthographic camera remains the default.
 // Perspective makes near and far terrain project at different apparent sizes;
@@ -239,7 +244,7 @@ const visibleEdgesEnabledR12 = perspectiveDepthEnabledR12 &&
 const wideCoverageEnabledR12 = perspectiveDepthEnabledR12 &&
   new URLSearchParams(window.location.search).get("fill") === "1";
 const camera = perspectiveDepthEnabledR12
-  ? new THREE.PerspectiveCamera(38,
+  ? new THREE.PerspectiveCamera(depthPlusEnabledR14 ? 42 : 38,
       window.innerWidth / window.innerHeight, 0.1, 500)
   : new THREE.OrthographicCamera(
       -CAMERA.span * window.innerWidth / window.innerHeight / 2,
@@ -2546,7 +2551,9 @@ fetch(
 
 
     if (eventWavesEnabledR9) {
-      eventWaveDetailR9 = new EventWaveDetailR9(data, TERRAIN.width, TERRAIN.depth, SEG_X, SEG_Z, stemFieldEnabledR13);
+      eventWaveDetailR9 = new EventWaveDetailR9(data, TERRAIN.width, TERRAIN.depth, SEG_X, SEG_Z,
+        stemFieldEnabledR13,
+        stemFieldEnabledR13 && new URLSearchParams(window.location.search).get("rhythmpresence") === "1");
       eventWaveDetailR9.seek(audio.currentTime);
       console.info("LAISE R9 event detail enabled", eventWaveDetailR9.debug);
     }
