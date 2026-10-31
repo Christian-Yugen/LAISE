@@ -540,8 +540,13 @@ function roundVisibleTipsR12() {
           roundedTipBufferR12[sample * columns + col];
       }
       const rounded = sum / roundedTipKernelSumR12;
-      const t = Math.max(0, Math.min(1, (Math.max(original, rounded) - 0.7) / 1.5));
-      const blend = t * t * (3 - 2 * t);
+      // Smooth only protruding crowns. The lower slopes, troughs and
+      // small beat-driven ripples keep their full original movement.
+      const heightT = Math.max(0, Math.min(1, (original - 1.0) / 1.0));
+      const prominenceT = Math.max(0, Math.min(1, (original - rounded - 0.04) / 0.34));
+      const heightGate = heightT * heightT * (3 - 2 * heightT);
+      const prominenceGate = prominenceT * prominenceT * (3 - 2 * prominenceT);
+      const blend = 0.95 * heightGate * prominenceGate;
       vertexHeights[index * 3 + 1] = original + (rounded - original) * blend;
     }
   }
