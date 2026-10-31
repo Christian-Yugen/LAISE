@@ -3,8 +3,9 @@
 const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
 
 export class EventWaveDetailR9 {
-  constructor(data, width, depth, segmentsX, segmentsZ, stemField = false) {
+  constructor(data, width, depth, segmentsX, segmentsZ, stemField = false, rhythmPresence = false) {
     this.stemField = stemField;
+    this.rhythmPresence = rhythmPresence;
     this.width = width;
     this.depth = depth;
     this.columns = segmentsX + 1;
@@ -42,6 +43,20 @@ export class EventWaveDetailR9 {
       }
     }
     this.events.sort((a, b) => a.time - b.time || a.source.localeCompare(b.source));
+    // Regularity is learned from event timing, never from a stem name.
+    if (this.rhythmPresence) {
+      const previous = new Map();
+      for (const event of this.events) {
+        const last = previous.get(event.source);
+        const gap = last ? event.time - last.time : 0;
+        const previousGap = last?.gap ?? 0;
+        const valid = gap >= 0.14 && gap <= 1.3 &&
+          previousGap >= 0.14 && previousGap <= 1.3;
+        event.rhythm = valid ? clamp(1 - Math.abs(gap - previousGap) /
+          Math.max(gap, previousGap), 0, 1) : 0;
+        previous.set(event.source, { time: event.time, gap });
+      }
+    }
     this.sourceHeights = new Map();
     this.sourceReferences = new Map();
     this.globalReference = 0.004;
@@ -98,9 +113,12 @@ export class EventWaveDetailR9 {
         (e.drive + (this.stemField ? 0.45 * reference : reference)));
       const absolute = Math.sqrt(e.drive /
         (e.drive + Math.max(this.globalReference, 1e-8)));
+      const quietRhythm = this.rhythmPresence ? e.rhythm * (1 - absolute) : 0;
       const amplitude = 0.65 * relative *
-        (this.stemField ? 0.55 + 0.45 * absolute : 1);
-      this.active.push({ ...e, x, z, amplitude });
+        (this.stemField ? 0.55 + 0.45 * absolute : 1) *
+        (1 + 0.75 * quietRhythm);
+      const width = this.bandWidth * (1 + 0.90 * quietRhythm);
+      this.active.push({ ...e, x, z, amplitude, width });
       this.emitted++;
       this.bySource[e.source] = (this.bySource[e.source] ?? 0) + 1;
       this.lastEvent = { time: e.time, source: e.source, kind: e.kind };
@@ -111,8 +129,8 @@ export class EventWaveDetailR9 {
     if (this.stemField) {
       for (const field of this.sourceHeights.values()) field.fill(0);
     }
-    const w = this.bandWidth;
     for (const e of this.active) {
+      const w = e.width;
       const age = Math.max(0, time - e.time);
       const radius = this.speed * age;
       const support = radius + 3 * w;
