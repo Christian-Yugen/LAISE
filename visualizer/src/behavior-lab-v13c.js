@@ -2120,6 +2120,8 @@ let previousTime = 0;
 let behaviorTimelineV13C = null;
 // LAISE_R9_EVENT_DETAIL: independent, additive visual attack packets.
 const eventWavesEnabledR9 = new URLSearchParams(window.location.search).get("events") === "1";
+const stemFieldEnabledR13 = eventWavesEnabledR9 &&
+  new URLSearchParams(window.location.search).get("stemfield") === "1";
 const articulationR92 = eventWavesEnabledR9 && new URLSearchParams(window.location.search).get("articulation") === "1";
 const contoursR93 = eventWavesEnabledR9 &&
   new URLSearchParams(window.location.search).get("contours") === "1";
@@ -2544,7 +2546,7 @@ fetch(
 
 
     if (eventWavesEnabledR9) {
-      eventWaveDetailR9 = new EventWaveDetailR9(data, TERRAIN.width, TERRAIN.depth, SEG_X, SEG_Z);
+      eventWaveDetailR9 = new EventWaveDetailR9(data, TERRAIN.width, TERRAIN.depth, SEG_X, SEG_Z, stemFieldEnabledR13);
       eventWaveDetailR9.seek(audio.currentTime);
       console.info("LAISE R9 event detail enabled", eventWaveDetailR9.debug);
     }
@@ -2865,8 +2867,8 @@ function animate() {
   if (eventWaveDetailR9) {
     eventWaveDetailR9.update(
       audio.currentTime, !audio.paused && !audio.seeking && !audio.ended,
-      behaviorTimelineV13C?.anchorX ?? 0,
-      behaviorTimelineV13C?.anchorZ ?? 0
+      stemFieldEnabledR13 ? 0 : behaviorTimelineV13C?.anchorX ?? 0,
+      stemFieldEnabledR13 ? 0 : behaviorTimelineV13C?.anchorZ ?? 0
     );
   }
 
