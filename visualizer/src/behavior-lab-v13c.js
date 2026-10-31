@@ -2918,8 +2918,8 @@ function animate() {
       const attackActivity = Math.min(1, Math.abs(detailVisualHeight) * 2.0);
       const sway = crestGate * (0.45 + 0.55 * attackActivity);
       const phase = audio.currentTime * 2.1 + x * 0.18 + z * 0.12;
-      positions.array[offset] = x + 0.12 * sway * Math.sin(phase);
-      positions.array[offset + 2] = z + 0.075 * sway * Math.cos(phase * 0.83);
+      positions.array[offset] = x + 0.24 * sway * Math.sin(phase);
+      positions.array[offset + 2] = z + 0.14 * sway * Math.cos(phase * 0.83);
     } else {
       positions.array[offset] = x;
       positions.array[offset + 2] = z;
