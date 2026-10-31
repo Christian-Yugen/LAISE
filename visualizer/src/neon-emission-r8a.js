@@ -20,7 +20,8 @@ export const neonUniformsR8A = {
   uNeonCrestStrength: { value: NEON_R8A.neonCrestStrength },
   uNeonThreshold: { value: NEON_R8A.neonHighlightThreshold },
   uNeonSoftness: { value: NEON_R8A.neonHighlightSoftness },
-  uNeonWarmth: { value: NEON_R8A.neonHighlightWarmth }
+  uNeonWarmth: { value: NEON_R8A.neonHighlightWarmth },
+  uNeonBroadFace: { value: 0 }
 };
 
 export const neonEmissionGLSL = `
@@ -30,6 +31,7 @@ export const neonEmissionGLSL = `
   uniform float uNeonThreshold;
   uniform float uNeonSoftness;
   uniform float uNeonWarmth;
+  uniform float uNeonBroadFace;
   varying float vNeonCurvature;
   varying vec3 vNeonViewNormal;
 
@@ -44,6 +46,11 @@ export const neonEmissionGLSL = `
     float slope = smoothstep(0.015, 0.35,
       1.0 - abs(dot(emissionNormal, terrainUp)));
     float faceLight = pow(litGate, 1.15) * slope;
+    // Keep the localized crest, but illuminate the full key-facing slope.
+    // The face-normal gate retains the shadow side of the rounded mesh.
+    float broadFacing = smoothstep(0.02, 0.72, keyFacing) * shadowGate;
+    float broadFaceLight = pow(broadFacing, 0.8) * (0.55 + 0.45 * slope);
+    faceLight = mix(faceLight, broadFaceLight, uNeonBroadFace);
     float crest = smoothstep(max(0.0, uNeonThreshold - uNeonSoftness),
       uNeonThreshold + uNeonSoftness, max(vNeonCurvature, 0.0));
     float highlight = crest * litGate * (0.40 + 0.60 * slope);
