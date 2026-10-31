@@ -502,6 +502,8 @@ const basePositions =
 // R12 rounded tips: smooth only the tallest visible crest geometry.
 // Audio, propagation, color spin, and lighting inputs remain unchanged.
 const roundedTipsEnabledR12 = new URLSearchParams(window.location.search).get("roundtips") === "1";
+const sustainedSwayEnabledR12 = roundedTipsEnabledR12 &&
+  new URLSearchParams(window.location.search).get("sway") === "1";
 const roundedTipBufferR12 = roundedTipsEnabledR12 ? new Float32Array(positions.count) : null;
 const originalLightHeightsR12 = roundedTipsEnabledR12 ? new Float32Array(positions.count) : null;
 const originalLightNormalsR12 = roundedTipsEnabledR12 ?
@@ -2903,6 +2905,24 @@ function animate() {
     if (wideCoverageEnabledR12) {
       // Display-only peak reduction balances the closer fixed perspective.
       positions.array[i * 3 + 1] *= 0.82;
+    }
+    // A sustained crest shifts gently in the plane as attacks cross it.
+    // Rest and low ripples remain anchored; no camera or physics movement.
+    const offset = i * 3;
+    const x = basePositions[offset];
+    const z = basePositions[offset + 2];
+    if (sustainedSwayEnabledR12) {
+      const heightT = Math.max(0, Math.min(1,
+        (positions.array[offset + 1] - 0.7) / 2.0));
+      const crestGate = heightT * heightT * (3 - 2 * heightT);
+      const attackActivity = Math.min(1, Math.abs(detailVisualHeight) * 2.0);
+      const sway = crestGate * (0.45 + 0.55 * attackActivity);
+      const phase = audio.currentTime * 2.1 + x * 0.18 + z * 0.12;
+      positions.array[offset] = x + 0.12 * sway * Math.sin(phase);
+      positions.array[offset + 2] = z + 0.075 * sway * Math.cos(phase * 0.83);
+    } else {
+      positions.array[offset] = x;
+      positions.array[offset + 2] = z;
     }
   }
 
