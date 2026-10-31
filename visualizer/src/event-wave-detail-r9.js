@@ -3,7 +3,8 @@
 const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
 
 export class EventWaveDetailR9 {
-  constructor(data, width, depth, segmentsX, segmentsZ) {
+  constructor(data, width, depth, segmentsX, segmentsZ, stemField = false) {
+    this.stemField = stemField;
     this.width = width;
     this.depth = depth;
     this.columns = segmentsX + 1;
@@ -41,6 +42,23 @@ export class EventWaveDetailR9 {
       }
     }
     this.events.sort((a, b) => a.time - b.time || a.source.localeCompare(b.source));
+    this.sourceHeights = new Map();
+    this.sourceReferences = new Map();
+    this.globalReference = 0.004;
+    if (this.stemField) {
+      const allDrives = this.events.map(event => event.drive).sort((a, b) => a - b);
+      this.globalReference = allDrives[Math.min(allDrives.length - 1, Math.floor(0.90 * allDrives.length))] ?? 0.004;
+      const bySource = new Map();
+      for (const event of this.events) {
+        if (!bySource.has(event.source)) bySource.set(event.source, []);
+        bySource.get(event.source).push(event.drive);
+      }
+      for (const [source, drives] of bySource) {
+        drives.sort((a, b) => a - b);
+        this.sourceReferences.set(source, drives[Math.min(drives.length - 1, Math.floor(0.90 * drives.length))]);
+        this.sourceHeights.set(source, new Float32Array(this.heights.length));
+      }
+    }
     this.seek(0);
   }
 
@@ -74,7 +92,14 @@ export class EventWaveDetailR9 {
       const x = clamp(e.x - anchorX, -1, 1) * this.width / 2;
       const z = clamp(e.z - anchorZ, -1, 1) * this.depth / 2;
       // Bounded visual amplitude, monotonic in recorded drive; no nonzero floor.
-      const amplitude = 0.65 * Math.sqrt(e.drive / (e.drive + 0.004));
+      const reference = this.stemField ?
+        Math.max(this.sourceReferences.get(e.source) ?? 0, 1e-8) : 0.004;
+      const relative = Math.sqrt(e.drive /
+        (e.drive + (this.stemField ? 0.45 * reference : reference)));
+      const absolute = Math.sqrt(e.drive /
+        (e.drive + Math.max(this.globalReference, 1e-8)));
+      const amplitude = 0.65 * relative *
+        (this.stemField ? 0.55 + 0.45 * absolute : 1);
       this.active.push({ ...e, x, z, amplitude });
       this.emitted++;
       this.bySource[e.source] = (this.bySource[e.source] ?? 0) + 1;
@@ -83,6 +108,9 @@ export class EventWaveDetailR9 {
     this.active = this.active.filter(e => time - e.time < this.lifetime);
     this.heights.fill(0);
     this.accents.fill(0);
+    if (this.stemField) {
+      for (const field of this.sourceHeights.values()) field.fill(0);
+    }
     const w = this.bandWidth;
     for (const e of this.active) {
       const age = Math.max(0, time - e.time);
@@ -108,12 +136,34 @@ export class EventWaveDetailR9 {
           const q = (Math.hypot(dx, dz) - radius) / w;
           if (Math.abs(q) > 3) continue;
           const index = row * this.columns + col;
-          this.heights[index] += amp * (1 - q * q) * Math.exp(-q * q / 2);
+          const contribution = amp * (1 - q * q) * Math.exp(-q * q / 2);
+          if (this.stemField) this.sourceHeights.get(e.source)[index] += contribution;
+          else this.heights[index] += contribution;
           if (this.contoursEnabled && Math.abs(q) < 1.5) {
             this.accents[index] = Math.max(this.accents[index],
               accent * Math.exp(-2 * q * q));
           }
         }
+      }
+    }
+    if (this.stemField) {
+      // One bounded response per source; coincident stems remain perceptible
+      // without adding every packet into an unbounded storm.
+      for (let i = 0; i < this.heights.length; i++) {
+        let positive = 0, negative = 0, strongestPositive = 0, strongestNegative = 0;
+        for (const field of this.sourceHeights.values()) {
+          const v = 0.55 * Math.tanh(field[i] / 0.55);
+          if (v >= 0) {
+            positive += v;
+            strongestPositive = Math.max(strongestPositive, v);
+          } else {
+            negative += v;
+            strongestNegative = Math.min(strongestNegative, v);
+          }
+        }
+        this.heights[i] = 0.85 * Math.tanh((strongestPositive +
+          0.40 * (positive - strongestPositive) + strongestNegative +
+          0.40 * (negative - strongestNegative)) / 0.85);
       }
     }
     this.lastTime = time;
