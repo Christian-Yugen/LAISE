@@ -504,6 +504,8 @@ const basePositions =
 const roundedTipsEnabledR12 = new URLSearchParams(window.location.search).get("roundtips") === "1";
 const roundedTipBufferR12 = roundedTipsEnabledR12 ? new Float32Array(positions.count) : null;
 const originalLightHeightsR12 = roundedTipsEnabledR12 ? new Float32Array(positions.count) : null;
+const originalLightNormalsR12 = roundedTipsEnabledR12 ?
+  new Float32Array(geometry.attributes.normal.array.length) : null;
 const roundedTipRadiusR12 = 9;
 const roundedTipKernelR12 = Array.from(
   { length: 2 * roundedTipRadiusR12 + 1 },
@@ -986,12 +988,19 @@ const attackAccentR93 = new THREE.BufferAttribute(
 );
 attackAccentR93.setUsage(THREE.DynamicDrawUsage);
 geometry.setAttribute("attackAccent", attackAccentR93);
+// Lighting retains the original unsmoothed slopes while geometry can round.
+const lightingNormalR12 = new THREE.BufferAttribute(
+  new Float32Array(geometry.attributes.normal.array.length), 3
+);
+lightingNormalR12.setUsage(THREE.DynamicDrawUsage);
+geometry.setAttribute("lightingNormal", lightingNormalR12);
 const wireGeometry = new THREE.BufferGeometry();
 wireGeometry.setIndex(geometry.index);
 wireGeometry.setAttribute("position", positions);
 wireGeometry.setAttribute("normal", geometry.attributes.normal);
 wireGeometry.setAttribute("color", geometry.attributes.color);
 wireGeometry.setAttribute("attackAccent", attackAccentR93);
+wireGeometry.setAttribute("lightingNormal", lightingNormalR12);
 
 const updateNeonCurvature = createNeonCurvatureR8A(
   geometry, wireGeometry, SEG_X, SEG_Z, TERRAIN.width, TERRAIN.depth
@@ -1100,6 +1109,7 @@ const terrainMaterial = new THREE.ShaderMaterial({
     varying float vAttackAccent;
     attribute float neonCurvature;
     attribute vec3 neonNormal;
+    attribute vec3 lightingNormal;
     varying float vNeonCurvature;
     varying vec3 vNeonViewNormal;
     varying vec3 vViewNormal;
@@ -1117,7 +1127,7 @@ const terrainMaterial = new THREE.ShaderMaterial({
       vSpectrumT = (dot(position.xz, uSpectrumAxis) + uSpectrumHalfSpan)
         / (2.0 * uSpectrumHalfSpan);
       vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
-      vViewNormal = normalMatrix * normal;
+      vViewNormal = normalMatrix * lightingNormal;
       vViewPosition = -mvPosition.xyz;
       vSpectrum = color;
       gl_Position = projectionMatrix * mvPosition;
@@ -2892,6 +2902,8 @@ function animate() {
   }
 
   if (roundedTipsEnabledR12) {
+    geometry.computeVertexNormals();
+    originalLightNormalsR12.set(geometry.attributes.normal.array);
     for (let i = 0; i < positions.count; i++) {
       originalLightHeightsR12[i] = positions.array[i * 3 + 1];
     }
@@ -2902,7 +2914,9 @@ function animate() {
   // Shared live normals drive the depth-writing surface and wire shader.
   // All directional shading is evaluated per fragment in view coordinates.
   geometry.computeVertexNormals();
-  updateNeonCurvature(originalLightHeightsR12);
+  lightingNormalR12.array.set(originalLightNormalsR12 ?? geometry.attributes.normal.array);
+  lightingNormalR12.needsUpdate = true;
+  updateNeonCurvature(originalLightHeightsR12, originalLightNormalsR12);
   updateTerrainLighting();
 
 
