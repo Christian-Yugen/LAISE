@@ -79,15 +79,16 @@ export function createNeonCurvatureR8A(geometry, wireGeometry, segmentsX, segmen
   geometry.setAttribute('neonNormal', normalAttribute);
   wireGeometry.setAttribute('neonNormal', normalAttribute);
   const dx2 = (width / segmentsX) ** 2, dz2 = (depth / segmentsZ) ** 2;
-  return () => {
+  return (originalLightHeights = null) => {
     const p = geometry.attributes.position.array;
+    const heightAt = (i) => originalLightHeights ? originalLightHeights[i] : p[i * 3 + 1];
     for (let row = 1; row < rows - 1; row++) {
       for (let col = 1; col < columns - 1; col++) {
-        const i = row * columns + col, h = p[i * 3 + 1];
+        const i = row * columns + col, h = heightAt(i);
         // Keep the sign through filtering so noise is not rectified into light.
         rawCurvature[i] =
-          (2 * h - p[(i - 1) * 3 + 1] - p[(i + 1) * 3 + 1]) / dx2 +
-          (2 * h - p[(i - columns) * 3 + 1] - p[(i + columns) * 3 + 1]) / dz2;
+          (2 * h - heightAt(i - 1) - heightAt(i + 1)) / dx2 +
+          (2 * h - heightAt(i - columns) - heightAt(i + columns)) / dz2;
       }
     }
     // Extend the adjacent interior descriptor; do not invent a luminous border.
