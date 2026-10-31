@@ -503,6 +503,7 @@ const basePositions =
 // Audio, propagation, color spin, and lighting inputs remain unchanged.
 const roundedTipsEnabledR12 = new URLSearchParams(window.location.search).get("roundtips") === "1";
 const roundedTipBufferR12 = roundedTipsEnabledR12 ? new Float32Array(positions.count) : null;
+const originalLightHeightsR12 = roundedTipsEnabledR12 ? new Float32Array(positions.count) : null;
 const roundedTipRadiusR12 = 9;
 const roundedTipKernelR12 = Array.from(
   { length: 2 * roundedTipRadiusR12 + 1 },
@@ -2890,13 +2891,18 @@ function animate() {
     }
   }
 
-  if (roundedTipsEnabledR12) roundVisibleTipsR12();
+  if (roundedTipsEnabledR12) {
+    for (let i = 0; i < positions.count; i++) {
+      originalLightHeightsR12[i] = positions.array[i * 3 + 1];
+    }
+    roundVisibleTipsR12();
+  }
   positions.needsUpdate = true;
 
   // Shared live normals drive the depth-writing surface and wire shader.
   // All directional shading is evaluated per fragment in view coordinates.
   geometry.computeVertexNormals();
-  updateNeonCurvature();
+  updateNeonCurvature(originalLightHeightsR12);
   updateTerrainLighting();
 
 
