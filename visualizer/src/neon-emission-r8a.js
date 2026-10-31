@@ -79,7 +79,7 @@ export function createNeonCurvatureR8A(geometry, wireGeometry, segmentsX, segmen
   geometry.setAttribute('neonNormal', normalAttribute);
   wireGeometry.setAttribute('neonNormal', normalAttribute);
   const dx2 = (width / segmentsX) ** 2, dz2 = (depth / segmentsZ) ** 2;
-  return (originalLightHeights = null) => {
+  return (originalLightHeights = null, originalLightNormals = null) => {
     const p = geometry.attributes.position.array;
     const heightAt = (i) => originalLightHeights ? originalLightHeights[i] : p[i * 3 + 1];
     for (let row = 1; row < rows - 1; row++) {
@@ -103,7 +103,7 @@ export function createNeonCurvatureR8A(geometry, wireGeometry, segmentsX, segmen
 
     // Separable 3x3 binomial filter, presentation attributes only. It bridges
     // vertex-scale light islands without moving vertices or delaying playback.
-    const normals = geometry.attributes.normal.array;
+    const normals = originalLightNormals ?? geometry.attributes.normal.array;
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < columns; col++) {
         const i = row * columns + col;
