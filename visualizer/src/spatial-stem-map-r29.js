@@ -28,7 +28,9 @@ function sampleAt(rows, time) {
 // is a horizontal spatial projection, not an inferred elevation measurement.
 export function createSpatialStemMapR29(root, data) {
   if (!root || !Array.isArray(data?.behaviors)) return null;
-  const canvas = root.querySelector("canvas");
+  const radar = document.querySelector("#spatialStemRadar");
+  if (!radar) return null;
+  const canvas = radar.querySelector("canvas");
   const context = canvas.getContext("2d");
   const toggle = root.querySelector("button");
   const name = root.querySelector(".stem-map-active");
@@ -51,6 +53,7 @@ export function createSpatialStemMapR29(root, data) {
   toggle.addEventListener("click", () => {
     collapsed = !collapsed;
     root.classList.toggle("collapsed", collapsed);
+    radar.hidden = collapsed;
     toggle.setAttribute("aria-expanded", String(!collapsed));
     toggle.setAttribute("aria-label", collapsed ? "Expandir mapa espacial" : "Recolher mapa espacial");
   });
