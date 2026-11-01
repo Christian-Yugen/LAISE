@@ -160,7 +160,10 @@ const scene =
   new THREE.Scene();
 
 // Compare the original image with a world-space atmospheric layer.
-if (new URLSearchParams(window.location.search).get("spatialscene") === "1") {
+const groundFlowR24 = new URLSearchParams(window.location.search).get("groundflow") === "1"
+  ? addPropagatingGroundR24(scene)
+  : null;
+if (!groundFlowR24 && new URLSearchParams(window.location.search).get("spatialscene") === "1") {
   addSpatialSceneR19(scene);
 }
 
