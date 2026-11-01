@@ -511,3 +511,60 @@ body {
   .perspective-depth-r12 .status { right: 18px; top: 18px; }
   .perspective-depth-r12 .depth-track-info { max-width: 60vw; }
 }
+
+
+/* R28: compact player by the track title, with no bottom overlay. */
+.top-controls-r28 .hud { display: none !important; }
+.top-controls-r28 .status {
+  width: min(340px, 40vw);
+}
+.top-controls-r28 .depth-track-info {
+  display: grid;
+  justify-items: end;
+  max-width: 100%;
+}
+.top-controls-r28 #depthMasterLabel { display: none; }
+.top-controls-r28 .status .progress-area {
+  width: min(245px, 100%);
+  padding: 0;
+  margin-top: 5px;
+  border: 0;
+  display: block;
+}
+.top-controls-r28 .status .progress-track {
+  width: 100%;
+}
+.top-controls-r28 .status .timeline {
+  height: 4px;
+  width: 100%;
+  background: rgba(190, 224, 215, .28);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .65);
+}
+.top-controls-r28 .status .time {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+  font-size: 9px;
+  color: #c4d9d0;
+}
+.top-controls-r28 #startButton {
+  position: absolute;
+  top: 52px;
+  right: calc(100% + 12px);
+  left: auto;
+  width: 36px;
+  height: 36px;
+}
+@media (max-width: 600px) {
+  .top-controls-r28 .status {
+    width: min(270px, 58vw);
+    right: 18px;
+  }
+  .top-controls-r28 #startButton {
+    top: 50px;
+    right: calc(100% + 8px);
+    width: 32px;
+    height: 32px;
+  }
+  .top-controls-r28 .status .progress-area { width: min(210px, 100%); }
+}
