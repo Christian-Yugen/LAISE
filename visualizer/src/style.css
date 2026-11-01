@@ -774,3 +774,23 @@ body {
     width: min(190px, 46vw);
   }
 }
+
+/* R32 framing: radar in the upper right, opposite the stem card. */
+.stem-map-r29 .stem-map-visual:not([hidden]) {
+  top: 38px;
+  right: clamp(18px, 2.5vw, 48px);
+}
+.stem-map-r29 .status {
+  right: clamp(270px, 17vw, 330px);
+}
+@media (max-width: 600px) {
+  .stem-map-r29 .stem-map-visual:not([hidden]) {
+    top: 18px;
+    right: 12px;
+    width: min(160px, 39vw);
+  }
+  .stem-map-r29 .status {
+    top: 200px;
+    right: 14px;
+  }
+}
