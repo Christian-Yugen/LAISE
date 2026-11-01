@@ -65,18 +65,46 @@ export function createSpatialStemMapR29(root, data) {
     const cx = w / 2, cy = h / 2 + 2, radius = Math.min(w, h) * .38;
     context.clearRect(0, 0, w, h);
     context.lineWidth = 1;
+    // Concentric spatial field plus directional sound layers around a listener.
     for (const fraction of [0.28, 0.56, 0.82, 1]) {
       context.beginPath();
       context.arc(cx, cy, radius * fraction, 0, Math.PI * 2);
-      context.strokeStyle = fraction === 1 ? "rgba(130,211,218,.44)"
-        : "rgba(130,211,218,.19)";
+      context.strokeStyle = fraction === 1 ? "rgba(130,211,218,.44)" : "rgba(130,211,218,.19)";
       context.stroke();
     }
-    context.strokeStyle = "rgba(130,211,218,.15)";
+    context.strokeStyle = "rgba(130,211,218,.13)";
     context.beginPath();
     context.moveTo(cx - radius, cy); context.lineTo(cx + radius, cy);
     context.moveTo(cx, cy - radius); context.lineTo(cx, cy + radius);
     context.stroke();
+
+    // Layer bands echo the reference: elevated, ear-level and lower spatial audio.
+    context.save();
+    context.globalAlpha = .46;
+    context.beginPath(); context.ellipse(cx, cy - radius * .58, radius * .72, radius * .20, 0, Math.PI, 0);
+    context.strokeStyle = "#ff9f4a"; context.lineWidth = 5; context.stroke();
+    context.beginPath(); context.ellipse(cx, cy, radius * .90, radius * .22, 0, 0, Math.PI * 2);
+    context.strokeStyle = "#54cfff"; context.lineWidth = 7; context.stroke();
+    context.beginPath(); context.ellipse(cx, cy + radius * .52, radius * .70, radius * .18, 0, 0, Math.PI);
+    context.strokeStyle = "#8d7cff"; context.lineWidth = 4; context.stroke();
+    context.restore();
+
+    // Listener profile silhouette at the center of the spatial field.
+    context.save();
+    context.beginPath();
+    context.moveTo(cx - radius * .18, cy + radius * .50);
+    context.bezierCurveTo(cx - radius * .27, cy + radius * .26, cx - radius * .25, cy - radius * .20, cx - radius * .16, cy - radius * .36);
+    context.bezierCurveTo(cx - radius * .08, cy - radius * .52, cx + radius * .18, cy - radius * .50, cx + radius * .24, cy - radius * .30);
+    context.bezierCurveTo(cx + radius * .31, cy - radius * .10, cx + radius * .22, cy + radius * .02, cx + radius * .28, cy + radius * .12);
+    context.lineTo(cx + radius * .18, cy + radius * .19);
+    context.lineTo(cx + radius * .16, cy + radius * .42);
+    context.lineTo(cx + radius * .08, cy + radius * .50);
+    context.closePath();
+    context.fillStyle = "rgba(3, 8, 18, .88)";
+    context.shadowColor = "rgba(91, 199, 255, .42)";
+    context.shadowBlur = 16;
+    context.fill();
+    context.restore();
 
     const active = new Map();
     for (const b of data.behaviors) {
