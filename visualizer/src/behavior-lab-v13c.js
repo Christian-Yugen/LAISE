@@ -10,6 +10,7 @@ import { AudioMotionRecovery } from "./audio-motion-recovery.js";
 
 import * as THREE from "three";
 import { createReflectiveFloorR8B } from "./reflective-floor-r8b.js";
+import { createSpatialStemMapR29 } from "./spatial-stem-map-r29.js";
 
 import {
   EffectComposer
@@ -48,6 +49,8 @@ const timelineFill =
 
 const energyLabel =
   document.querySelector("#energy");
+const spatialMapEnabledR29 = new URLSearchParams(window.location.search).get("spatialmap") === "1";
+document.documentElement.classList.toggle("stem-map-r29", spatialMapEnabledR29);
 
 // R28 presentation experiment: relocate the existing controls, preserving
 // their handlers, IDs, playback timing, and seek behavior.
@@ -2148,6 +2151,7 @@ let previousTime = 0;
 ========================================================= */
 
 let behaviorTimelineV13C = null;
+let spatialStemMapR29 = null;
 // LAISE_R9_EVENT_DETAIL: independent, additive visual attack packets.
 const eventWavesEnabledR9 = new URLSearchParams(window.location.search).get("events") === "1";
 const stemFieldEnabledR13 = eventWavesEnabledR9 &&
@@ -2583,6 +2587,12 @@ fetch(
       console.info("LAISE R9 event detail enabled", eventWaveDetailR9.debug);
     }
 
+    if (spatialMapEnabledR29) {
+      spatialStemMapR29 = createSpatialStemMapR29(
+        document.querySelector("#spatialStemMap"), data
+      );
+    }
+
     behaviorTimelineV13C =
       new BehaviorTimelineV13C(
         // LAISE_PERCUSSION_MOTION_TEST
@@ -2874,6 +2884,7 @@ function animate() {
 
 
   updateSoundWaves(delta);
+  spatialStemMapR29?.render(audio.currentTime);
 
   // Keep the approved projection gain calibrated to the original pose.
   // Rotation changes presentation only, never the musical displacement.
