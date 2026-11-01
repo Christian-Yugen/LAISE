@@ -10,6 +10,7 @@ import { AudioMotionRecovery } from "./audio-motion-recovery.js";
 
 import * as THREE from "three";
 import { createReflectiveFloorR8B } from "./reflective-floor-r8b.js";
+import { addSpatialSceneR19 } from "./spatial-scene-r19.js";
 
 import {
   EffectComposer
@@ -156,6 +157,11 @@ renderer.toneMappingExposure = NEON_R8A.neonExposure;
 
 const scene =
   new THREE.Scene();
+
+// Compare the original image with a world-space atmospheric layer.
+if (new URLSearchParams(window.location.search).get("spatialscene") === "1") {
+  addSpatialSceneR19(scene);
+}
 
 // LAISE_FOREST_BACKGROUND_R8B
 // ?background=0 allows a visual comparison without the forest.
