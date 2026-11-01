@@ -121,17 +121,6 @@ export function createSpatialStemMapR29(root, data) {
       context.shadowColor = color;
       context.fill();
       context.shadowBlur = 0;
-      if (sorted.indexOf(point) < 3) {
-      context.font = "bold 19px system-ui, sans-serif";
-      context.textAlign = px > cx + radius * .4 ? "right" : "left";
-      context.textBaseline = "middle";
-      context.fillStyle = "#e9f7f4";
-      context.shadowColor = "#020812";
-      context.shadowBlur = 6;
-      context.fillText(LABELS[point.source] || point.source.slice(0, 4).toUpperCase(),
-        px + (context.textAlign === "right" ? -16 : 16), py - 15);
-      context.shadowBlur = 0;
-      }
     }
     context.beginPath();
     context.arc(cx, cy, 7, 0, Math.PI * 2);
@@ -141,7 +130,7 @@ export function createSpatialStemMapR29(root, data) {
     context.arc(cx, cy + 12, 9, Math.PI, 0);
     context.strokeStyle = "#e7eee9";
     context.stroke();
-    const entries = sorted.slice(0, 5).map(point => {
+    const entries = sorted.map(point => {
       const item = document.createElement("span");
       item.className = "stem-map-legend-item";
       const dot = document.createElement("i");
