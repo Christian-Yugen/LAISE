@@ -5,7 +5,7 @@ import * as THREE from "three";
 // gives it the same vanishing point while its edges fade into the existing sky.
 export function addSpatialSceneR19(scene) {
   const floor = new THREE.Mesh(
-    new THREE.PlaneGeometry(100, 100),
+    new THREE.PlaneGeometry(100, 100, 96, 96),
     new THREE.ShaderMaterial({
       transparent: true,
       depthWrite: false,
@@ -17,7 +17,13 @@ export function addSpatialSceneR19(scene) {
       vertexShader: `
         varying vec2 vWorld;
         void main() {
-          vec4 world = modelMatrix * vec4(position, 1.0);
+          vec3 organic = position;
+          // Small, broad variations break the ruler-straight meeting line
+          // without introducing a separate animated liquid effect.
+          organic.z += 0.30 * sin(position.x * 0.36 + position.y * 0.20)
+            * sin(position.y * 0.41 - position.x * 0.15)
+            + 0.12 * sin(position.x * 0.77 + position.y * 0.31);
+          vec4 world = modelMatrix * vec4(organic, 1.0);
           vWorld = world.xz;
           gl_Position = projectionMatrix * viewMatrix * world;
         }
@@ -33,7 +39,10 @@ export function addSpatialSceneR19(scene) {
           vec3 color = mix(uViolet, uCyan, side);
           // A dim contact region grounds the terrain; the illuminated air
           // around it shares the mesh palette without becoming a second mesh.
-          float contact = 1.0 - smoothstep(4.0, 12.0, radius);
+          float irregularRadius = radius
+            + 0.55 * sin(atan(p.y, p.x) * 5.0 + radius * 0.27)
+            + 0.28 * sin(p.x * 0.43 - p.y * 0.37);
+          float contact = 1.0 - smoothstep(4.0, 12.0, irregularRadius);
           float ambience = exp(-radius * 0.048);
           float ring = exp(-pow((radius - 12.0) / 8.5, 2.0));
           vec3 radiance = color * (0.045 * ambience + 0.11 * ring);
