@@ -1092,6 +1092,7 @@ const terrainColorGLSL = `
   }
 `;
 
+const heightHaloStrengthR16 = new URLSearchParams(window.location.search).get("heightglow") === "1" ? 1.25 : 0;
 const terrainMaterial = new THREE.ShaderMaterial({
   vertexColors: true,
   wireframe: true,
@@ -1114,6 +1115,7 @@ const terrainMaterial = new THREE.ShaderMaterial({
     uFill: { value: TERRAIN_LIGHTING.wireFill },
     uRim: { value: TERRAIN_LIGHTING.wireRim },
     uPeakBoost: { value: TERRAIN_LIGHTING.peakBoost },
+    uHeightHaloStrength: { value: heightHaloStrengthR16 },
     ...neonUniformsR8A
   },
   vertexShader: `
@@ -1156,6 +1158,7 @@ const terrainMaterial = new THREE.ShaderMaterial({
     uniform float uFill;
     uniform float uRim;
     uniform float uPeakBoost;
+    uniform float uHeightHaloStrength;
     varying float vTerrainHeight;
     varying float vSpectrumT;
     ${terrainColorGLSL}
@@ -1191,6 +1194,10 @@ const terrainMaterial = new THREE.ShaderMaterial({
       vec3 chromaticBase = vividTerrainColor(vSpectrum, vSpectrumT);
       vec3 emission = r8aNeonEmission(chromaticBase, vSpectrumT,
         faceNormal, uTerrainUp, uKeyDirection);
+      // Height amplifies only the already illuminated emission, creating
+      // a stronger local HDR halo without raising the shadow floor.
+      emission *= 1.0 + uHeightHaloStrength *
+        smoothstep(0.8, 5.0, max(vTerrainHeight, 0.0));
       // A brief chromatic crest marks each recorded onset on the same mesh.
       gl_FragColor = vec4(chromaticBase * radiance + emission
         + chromaticBase * (0.55 * vAttackAccent), 1.0);
@@ -1255,6 +1262,7 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
   shader.uniforms.uSpectrumHalfSpan = { value: observerColorHalfSpan };
   shader.uniforms.uTerrainSurfaceLight = { value: TERRAIN_LIGHTING.surfaceLight };
   shader.uniforms.uTerrainSurfacePeakLight = { value: TERRAIN_LIGHTING.surfacePeakLight };
+  shader.uniforms.uHeightHaloStrength = { value: heightHaloStrengthR16 };
   shader.vertexShader = `
     attribute float attackAccent;
     varying float vAttackAccent;
@@ -1287,6 +1295,7 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
     uniform vec3 uTerrainUp;
     uniform float uTerrainSurfaceLight;
     uniform float uTerrainSurfacePeakLight;
+    uniform float uHeightHaloStrength;
     ${terrainColorGLSL}
     ${neonEmissionGLSL}
   ` + shader.fragmentShader;
@@ -1297,7 +1306,8 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
     float litFace = pow(smoothstep(0.18, 0.95,
       max(dot(normal, uTerrainKeyDirection), 0.0)), 1.4);
     totalEmissiveRadiance += diffuseColor.rgb * litFace
-      * (uTerrainSurfaceLight + uTerrainSurfacePeakLight * terrainPeakLight(vTerrainHeight));
+      * (uTerrainSurfaceLight + uTerrainSurfacePeakLight * terrainPeakLight(vTerrainHeight)
+        + 0.45 * uHeightHaloStrength * smoothstep(0.8, 5.0, max(vTerrainHeight, 0.0)));
     totalEmissiveRadiance += ${NEON_R8A.surfaceEmissionFraction.toFixed(4)}
       * r8aNeonEmission(diffuseColor.rgb, vSpectrumT,
         normal, uTerrainUp, uTerrainKeyDirection);
