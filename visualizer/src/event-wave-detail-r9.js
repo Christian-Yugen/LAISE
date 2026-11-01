@@ -14,6 +14,9 @@ export class EventWaveDetailR9 {
     this.dz = depth / segmentsZ;
     this.heights = new Float32Array(this.columns * this.rows);
     this.accents = new Float32Array(this.columns * this.rows);
+    this.rhythmHeights = new Float32Array(this.columns * this.rows);
+    this.rhythmSculpt = rhythmPresence && typeof window !== "undefined" &&
+      new URLSearchParams(window.location.search).get("rhythmsculpt") === "1";
     this.contoursEnabled = typeof window !== "undefined" &&
       new URLSearchParams(window.location.search).get("contours") === "1";
     // R9.1: faster travel and shorter tail; original profile retained.
@@ -90,6 +93,7 @@ export class EventWaveDetailR9 {
     this.active = [];
     this.heights.fill(0);
     this.accents.fill(0);
+    this.rhythmHeights.fill(0);
     this.emitted = 0;
     this.bySource = {};
     this.lastEvent = null;
@@ -118,7 +122,8 @@ export class EventWaveDetailR9 {
         (this.stemField ? 0.55 + 0.45 * absolute : 1) *
         (1 + 0.75 * quietRhythm);
       const width = this.bandWidth * (1 + 0.90 * quietRhythm);
-      this.active.push({ ...e, x, z, amplitude, width });
+      this.active.push({ ...e, x, z, amplitude, width,
+        absolutePresence: absolute });
       this.emitted++;
       this.bySource[e.source] = (this.bySource[e.source] ?? 0) + 1;
       this.lastEvent = { time: e.time, source: e.source, kind: e.kind };
@@ -126,6 +131,7 @@ export class EventWaveDetailR9 {
     this.active = this.active.filter(e => time - e.time < this.lifetime);
     this.heights.fill(0);
     this.accents.fill(0);
+    this.rhythmHeights.fill(0);
     if (this.stemField) {
       for (const field of this.sourceHeights.values()) field.fill(0);
     }
@@ -137,6 +143,31 @@ export class EventWaveDetailR9 {
       const envelope = (1 - Math.exp(-age / 0.012)) * Math.exp(-age / this.decayTime)
         * (1 - clamp(age / this.lifetime, 0, 1)) ** 2;
       const amp = e.amplitude * envelope;
+      if (this.rhythmSculpt && e.rhythm >= 0.55) {
+        // A compact, sustained local presence makes quiet repeated attacks
+        // legible beside stronger sources without changing the physical field.
+        const width = 0.85 + 0.45 * e.rhythm;
+        const radiusLimit = 3 * width;
+        const rhythmEnvelope = (1 - Math.exp(-age / 0.022)) *
+          Math.exp(-age / 0.46);
+        const height = 1.35 * e.rhythm *
+          (1 - 0.35 * e.absolutePresence) * rhythmEnvelope;
+        const x0 = Math.max(0, Math.floor((e.x - radiusLimit + this.width / 2) / this.dx));
+        const x1 = Math.min(this.columns - 1, Math.ceil((e.x + radiusLimit + this.width / 2) / this.dx));
+        const z0 = Math.max(0, Math.floor((e.z - radiusLimit + this.depth / 2) / this.dz));
+        const z1 = Math.min(this.rows - 1, Math.ceil((e.z + radiusLimit + this.depth / 2) / this.dz));
+        for (let row = z0; row <= z1; row++) {
+          const dz = -this.depth / 2 + row * this.dz - e.z;
+          for (let col = x0; col <= x1; col++) {
+            const dx = -this.width / 2 + col * this.dx - e.x;
+            const q = (dx * dx + dz * dz) / (width * width);
+            if (q > 9) continue;
+            const index = row * this.columns + col;
+            this.rhythmHeights[index] = Math.max(this.rhythmHeights[index],
+              height * Math.exp(-q / 2));
+          }
+        }
+      }
       // A short crest remains readable over a tall sustained surface.
       // Max composition avoids multiplying brightness for coincident stems.
       const accent = this.contoursEnabled
