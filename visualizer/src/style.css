@@ -568,3 +568,67 @@ body {
   }
   .top-controls-r28 .status .progress-area { width: min(210px, 100%); }
 }
+
+
+/* R29 optional spatial stem monitor; occupies no foreground footer. */
+.stem-map-panel { display: none; }
+.stem-map-r29 .stem-map-panel {
+  position: absolute;
+  left: 44px;
+  top: 177px;
+  width: 242px;
+  z-index: 7;
+  color: #cce2e2;
+  border: 1px solid rgba(112, 190, 207, .28);
+  border-radius: 13px;
+  background: rgba(2, 9, 18, .70);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, .25);
+  backdrop-filter: blur(8px);
+  overflow: hidden;
+}
+.stem-map-heading {
+  padding: 9px 10px 7px 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 9px;
+  letter-spacing: .18em;
+}
+.stem-map-heading button {
+  border: 0;
+  background: transparent;
+  color: #b5d7dd;
+  cursor: pointer;
+  font-size: 17px;
+  line-height: 1;
+}
+.stem-map-content { padding: 0 10px 10px; }
+.stem-map-content canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.stem-map-axis, .stem-map-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  font-size: 8px;
+  letter-spacing: .08em;
+  color: #88aeb9;
+}
+.stem-map-bottom {
+  margin-top: 8px;
+  color: #c9e7e4;
+}
+.stem-map-active { text-transform: capitalize; }
+.stem-map-panel.collapsed .stem-map-content { display: none; }
+.stem-map-panel.collapsed .stem-map-heading button { transform: rotate(180deg); }
+@media (max-width: 600px) {
+  .stem-map-r29 .stem-map-panel {
+    left: 18px;
+    top: 132px;
+    width: min(210px, 50vw);
+  }
+  .stem-map-axis { font-size: 7px; }
+}
