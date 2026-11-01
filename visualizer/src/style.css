@@ -715,16 +715,33 @@ body {
   .stem-map-r29 .stem-map-legend-item { font-size: 9px; }
 }
 
-/* R32: move spatial field to the far right, below track information. */
+/* R32 correction: card remains top left; only the spatial circle moves right. */
 .stem-map-r29 .stem-map-panel {
-  left: auto;
-  right: clamp(12px, 2.5vw, 48px);
-  top: clamp(236px, 34vh, 320px);
+  left: 44px;
+  right: auto;
+  top: 34px;
+  width: 170px;
+  overflow: visible;
 }
+.stem-map-r29 .stem-map-content {
+  display: block;
+  padding: 0 10px 12px;
+}
+.stem-map-r29 .stem-map-side { min-height: 0; }
+.stem-map-r29 .stem-map-visual {
+  position: fixed;
+  top: clamp(310px, 36vh, 350px);
+  right: clamp(12px, 2.5vw, 48px);
+  width: 220px;
+  pointer-events: none;
+}
+.stem-map-r29 .stem-map-content canvas { width: 220px; }
 @media (max-width: 600px) {
-  .stem-map-r29 .stem-map-panel {
-    left: auto;
+  .stem-map-r29 .stem-map-panel { left: 18px; top: 18px; width: 150px; }
+  .stem-map-r29 .stem-map-visual {
+    top: 260px;
     right: 12px;
-    top: 225px;
+    width: min(190px, 46vw);
   }
+  .stem-map-r29 .stem-map-content canvas { width: 100%; }
 }
