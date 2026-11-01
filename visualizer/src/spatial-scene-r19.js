@@ -45,9 +45,19 @@ export function addSpatialSceneR19(scene) {
           float contact = 1.0 - smoothstep(4.0, 12.0, irregularRadius);
           float ambience = exp(-radius * 0.048);
           float ring = exp(-pow((radius - 12.0) / 8.5, 2.0));
-          vec3 radiance = color * (0.045 * ambience + 0.11 * ring);
-          radiance *= 1.0 - 0.50 * contact;
+          // Broad, irregular depth bands: darker pools near the contact
+          // region and lighter shallows where the layer opens outward.
+          float contours = 0.5 * sin(p.x * 0.26 + p.y * 0.19)
+            + 0.28 * sin(p.x * 0.54 - p.y * 0.38);
+          float depth = clamp(0.10 + 0.77 * contact
+            + 0.12 * contours * smoothstep(2.0, 18.0, radius), 0.0, 1.0);
+          float shallow = 1.0 - depth;
+          vec3 deepTint = mix(color, vec3(0.018, 0.032, 0.070), depth * 0.52);
+          vec3 radiance = deepTint *
+            (0.035 * ambience + 0.11 * ring + 0.065 * shallow);
+          radiance *= 1.0 - 0.34 * depth;
           float alpha = (0.64 * ambience + 0.20 * ring)
+            * mix(0.68, 1.18, depth)
             * (1.0 - smoothstep(36.0, 49.0, radius));
           gl_FragColor = vec4(radiance, alpha);
         }
