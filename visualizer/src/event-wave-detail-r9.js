@@ -148,8 +148,11 @@ export class EventWaveDetailR9 {
         // legible beside stronger sources without changing the physical field.
         const width = 1.0 + 0.55 * e.rhythm;
         const radiusLimit = 3 * width;
-        const rhythmEnvelope = (1 - Math.exp(-age / 0.022)) *
-          Math.exp(-age / 0.55);
+        const fadeT = clamp((age - this.lifetime * 0.52) /
+          (this.lifetime * 0.48), 0, 1);
+        const release = 1 - fadeT * fadeT * (3 - 2 * fadeT);
+        const rhythmEnvelope = (1 - Math.exp(-age / 0.055)) *
+          Math.exp(-age / 0.65) * release;
         const height = 2.0 * e.rhythm *
           (1 - 0.35 * e.absolutePresence) * rhythmEnvelope;
         const x0 = Math.max(0, Math.floor((e.x - radiusLimit + this.width / 2) / this.dx));
