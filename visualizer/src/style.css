@@ -878,3 +878,44 @@ body {
 @media (max-width: 600px) {
   .stem-map-r29 .stem-map-visual:not([hidden]) { width: min(250px, 58vw); }
 }
+
+
+/* R35: frontal binaural listener map with spatial height and depth cues. */
+.stem-map-r29 .stem-map-visual:not([hidden]) {
+  width: min(320px, 27vw);
+  padding: 7px 8px 6px;
+  border-color: rgba(84, 207, 224, .24);
+  background: linear-gradient(145deg, rgba(1, 8, 14, .92), rgba(4, 11, 18, .86));
+}
+.stem-map-r29 .stem-map-visual-heading {
+  gap: 8px;
+}
+.stem-map-r29 .stem-map-visual-heading span:last-child {
+  text-align: right;
+  font-size: 7px;
+  letter-spacing: .09em;
+}
+.stem-map-r29 .stem-map-visual canvas {
+  aspect-ratio: 783 / 739;
+  object-fit: cover;
+  background: #000;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(183, 221, 230, .12), 0 0 24px rgba(57, 166, 205, .12);
+}
+.stem-map-r29 .stem-map-visual .stem-map-axis {
+  justify-content: space-between;
+  gap: 6px;
+  margin-top: 5px;
+  padding: 0 4px;
+  color: #a3c3c6;
+  font-size: 7px;
+  letter-spacing: .055em;
+}
+@media (max-width: 600px) {
+  .stem-map-r29 .stem-map-visual:not([hidden]) {
+    width: min(250px, 58vw);
+  }
+  .stem-map-r29 .stem-map-visual-heading span:last-child {
+    font-size: 6px;
+  }
+}
