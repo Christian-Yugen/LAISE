@@ -1092,7 +1092,7 @@ const terrainColorGLSL = `
   }
 `;
 
-const heightHaloStrengthR16 = new URLSearchParams(window.location.search).get("heightglow") === "1" ? 2.3 : 0;
+const heightHaloStrengthR16 = new URLSearchParams(window.location.search).get("heightglow") === "1" ? 3.1 : 0;
 const terrainMaterial = new THREE.ShaderMaterial({
   vertexColors: true,
   wireframe: true,
@@ -1197,7 +1197,7 @@ const terrainMaterial = new THREE.ShaderMaterial({
       // Height amplifies only the already illuminated emission, creating
       // a stronger local HDR halo without raising the shadow floor.
       emission *= 1.0 + uHeightHaloStrength *
-        pow(smoothstep(1.4, 6.0, max(vTerrainHeight, 0.0)), 1.35);
+        pow(smoothstep(1.5, 6.8, max(vTerrainHeight, 0.0)), 1.55);
       // A brief chromatic crest marks each recorded onset on the same mesh.
       gl_FragColor = vec4(chromaticBase * radiance + emission
         + chromaticBase * (0.55 * vAttackAccent), 1.0);
@@ -1308,7 +1308,7 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
     totalEmissiveRadiance += diffuseColor.rgb * litFace
       * (uTerrainSurfaceLight + uTerrainSurfacePeakLight * terrainPeakLight(vTerrainHeight)
         + 0.35 * uHeightHaloStrength *
-          pow(smoothstep(1.4, 6.0, max(vTerrainHeight, 0.0)), 1.35));
+          pow(smoothstep(1.5, 6.8, max(vTerrainHeight, 0.0)), 1.55));
     totalEmissiveRadiance += ${NEON_R8A.surfaceEmissionFraction.toFixed(4)}
       * r8aNeonEmission(diffuseColor.rgb, vSpectrumT,
         normal, uTerrainUp, uTerrainKeyDirection);
@@ -1937,7 +1937,9 @@ const bloom =
 
 // Favor the fine blur mip. The default broad mips spread luminous crests
 // across neighboring dark slopes, undoing their directional contrast.
-bloom.compositeMaterial.uniforms.bloomFactors.value = [1.0, 0.28, 0.06, 0.0, 0.0];
+bloom.compositeMaterial.uniforms.bloomFactors.value = heightHaloStrengthR16 > 0
+  ? [1.0, 0.43, 0.15, 0.025, 0.0]
+  : [1.0, 0.28, 0.06, 0.0, 0.0];
 installNeonOpticsR8A(bloom);
 composer.addPass(
   bloom
