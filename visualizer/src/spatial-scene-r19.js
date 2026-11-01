@@ -52,12 +52,12 @@ export function addSpatialSceneR19(scene) {
           float depth = clamp(0.10 + 0.77 * contact
             + 0.12 * contours * smoothstep(2.0, 18.0, radius), 0.0, 1.0);
           float shallow = 1.0 - depth;
-          vec3 deepTint = mix(color, vec3(0.018, 0.032, 0.070), depth * 0.52);
+          vec3 deepTint = mix(color, vec3(0.003, 0.008, 0.023), depth * 0.85);
           vec3 radiance = deepTint *
-            (0.035 * ambience + 0.11 * ring + 0.065 * shallow);
-          radiance *= 1.0 - 0.34 * depth;
+            (0.020 * ambience + 0.09 * ring + 0.20 * shallow * shallow);
+          radiance *= 1.0 - 0.72 * depth;
           float alpha = (0.64 * ambience + 0.20 * ring)
-            * mix(0.68, 1.18, depth)
+            * mix(0.44, 1.38, depth)
             * (1.0 - smoothstep(36.0, 49.0, radius));
           gl_FragColor = vec4(radiance, alpha);
         }
