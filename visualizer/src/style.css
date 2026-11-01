@@ -794,3 +794,16 @@ body {
     right: 14px;
   }
 }
+
+/* R33: keep live mix metrics in clear space above the terrain peaks. */
+.stem-map-r29 .status {
+  top: 34px;
+  right: clamp(252px, 20vw, 390px);
+  width: min(310px, 30vw);
+}
+.stem-map-r29 .status .status-title,
+.stem-map-r29 .status .status-value,
+.stem-map-r29 .status .depth-track-info { position: relative; z-index: 1; }
+@media (max-width: 600px) {
+  .stem-map-r29 .status { top: 190px; right: 14px; width: min(280px, 72vw); }
+}
