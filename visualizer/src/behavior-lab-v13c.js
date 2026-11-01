@@ -49,6 +49,17 @@ const timelineFill =
 const energyLabel =
   document.querySelector("#energy");
 
+// R28 presentation experiment: relocate the existing controls, preserving
+// their handlers, IDs, playback timing, and seek behavior.
+const topControlsR28 = new URLSearchParams(window.location.search).get("topcontrols") === "1";
+document.documentElement.classList.toggle("top-controls-r28", topControlsR28);
+if (topControlsR28) {
+  document.querySelector(".depth-track-info").appendChild(
+    document.querySelector(".hud .progress-area")
+  );
+  document.querySelector(".status").appendChild(startButton);
+}
+
 // Technical metadata is independent of cueReady and must never gate playback.
 // BEGIN TECHNICAL MANIFEST
 function validateTechnicalManifest(data, masterUrl) {
@@ -312,7 +323,7 @@ function frameTerrain() {
   const hudTop = rect(".hud")?.top ?? height * 0.88;
   const frontGap = Math.max(6, Math.min(width, height) * (8 / 1080));
   const frontTarget = perspectiveDepthEnabledR12
-    ? height + height * (visibleEdgesEnabledR12 ? 0.02 : 0.23) + SCREEN_POSITION.vertical
+    ? height + height * (topControlsR28 ? -0.07 : visibleEdgesEnabledR12 ? 0.02 : 0.23) + SCREEN_POSITION.vertical
     : hudTop - frontGap + SCREEN_POSITION.vertical;
   const obstacles = [".brand", ".field-summary", ".status"].map(rect).filter(Boolean).map(r => [
     { x: r.left - margin / 2, y: r.top - margin / 2 },
