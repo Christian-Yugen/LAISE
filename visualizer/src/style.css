@@ -729,9 +729,9 @@ body {
 }
 .stem-map-r29 .stem-map-side { min-height: 0; }
 .stem-map-r29 .stem-map-visual {
-  position: fixed;
-  top: clamp(310px, 36vh, 350px);
-  right: clamp(12px, 2.5vw, 48px);
+  position: absolute;
+  top: clamp(276px, 36vh - 34px, 316px);
+  left: calc(100vw - 44px - 220px - clamp(12px, 2.5vw, 48px));
   width: 220px;
   pointer-events: none;
 }
@@ -739,8 +739,8 @@ body {
 @media (max-width: 600px) {
   .stem-map-r29 .stem-map-panel { left: 18px; top: 18px; width: 150px; }
   .stem-map-r29 .stem-map-visual {
-    top: 260px;
-    right: 12px;
+    top: 242px;
+    left: calc(100vw - 18px - min(190px, 46vw) - 12px);
     width: min(190px, 46vw);
   }
   .stem-map-r29 .stem-map-content canvas { width: 100%; }
