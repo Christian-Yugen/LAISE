@@ -11,6 +11,7 @@ import { AudioMotionRecovery } from "./audio-motion-recovery.js";
 import * as THREE from "three";
 import { createReflectiveFloorR8B } from "./reflective-floor-r8b.js";
 import { addSpatialSceneR19 } from "./spatial-scene-r19.js";
+import { addDarkWaterR20 } from "./dark-water-r20.js";
 
 import {
   EffectComposer
@@ -159,9 +160,13 @@ const scene =
   new THREE.Scene();
 
 // Compare the original image with a world-space atmospheric layer.
-const spatialSceneR19 = new URLSearchParams(window.location.search).get("spatialscene") === "1"
-  ? addSpatialSceneR19(scene)
+const waterGroundR20 = new URLSearchParams(window.location.search).get("waterground") === "1"
+  ? addDarkWaterR20(scene)
   : null;
+const spatialSceneR19 = !waterGroundR20 &&
+  new URLSearchParams(window.location.search).get("spatialscene") === "1"
+    ? addSpatialSceneR19(scene)
+    : null;
 
 // LAISE_FOREST_BACKGROUND_R8B
 // ?background=0 allows a visual comparison without the forest.
@@ -2995,6 +3000,10 @@ function animate() {
 
 
   spatialSceneR19?.update(audio.currentTime, averageEnergy);
+  if (waterGroundR20) {
+    terrainRig.updateMatrixWorld(true);
+    waterGroundR20.update(audio.currentTime, averageEnergy, positions, terrainRig);
+  }
   composer.render();
 
 }
