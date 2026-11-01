@@ -33,6 +33,7 @@ export function createSpatialStemMapR29(root, data) {
   const toggle = root.querySelector("button");
   const name = root.querySelector(".stem-map-active");
   const status = root.querySelector(".stem-map-status");
+  const legend = root.querySelector(".stem-map-legend");
   const sources = [...new Set(data.behaviors.map(b => b.source))].sort();
   const maxBySource = new Map(sources.map(source => [source, 0]));
   for (const b of data.behaviors) {
@@ -120,7 +121,8 @@ export function createSpatialStemMapR29(root, data) {
       context.shadowColor = color;
       context.fill();
       context.shadowBlur = 0;
-      context.font = "bold 18px system-ui, sans-serif";
+      if (sorted.indexOf(point) < 3) {
+      context.font = "bold 19px system-ui, sans-serif";
       context.textAlign = px > cx + radius * .4 ? "right" : "left";
       context.textBaseline = "middle";
       context.fillStyle = "#e9f7f4";
@@ -129,6 +131,7 @@ export function createSpatialStemMapR29(root, data) {
       context.fillText(LABELS[point.source] || point.source.slice(0, 4).toUpperCase(),
         px + (context.textAlign === "right" ? -16 : 16), py - 15);
       context.shadowBlur = 0;
+      }
     }
     context.beginPath();
     context.arc(cx, cy, 7, 0, Math.PI * 2);
@@ -138,6 +141,15 @@ export function createSpatialStemMapR29(root, data) {
     context.arc(cx, cy + 12, 9, Math.PI, 0);
     context.strokeStyle = "#e7eee9";
     context.stroke();
+    const entries = sorted.slice(0, 5).map(point => {
+      const item = document.createElement("span");
+      item.className = "stem-map-legend-item";
+      const dot = document.createElement("i");
+      dot.style.backgroundColor = PALETTE[point.source] || "#b8d9e4";
+      item.append(dot, document.createTextNode(point.source.replaceAll("_", " ")));
+      return item;
+    });
+    legend.replaceChildren(...entries);
     name.textContent = sorted[0]?.source.replaceAll("_", " ") || "—";
     status.textContent = sorted.length + " fontes ativas";
     canvas.setAttribute("aria-label", "Mapa X/Z: " + sorted.map(p =>
