@@ -635,3 +635,45 @@ body {
   }
   .stem-map-axis { font-size: 7px; }
 }
+
+
+/* R30: the map is a compact backdrop; the WebGL terrain paints above it. */
+.stem-map-behind-r30 body,
+.stem-map-behind-r30 #app { background: #000; }
+.stem-map-behind-r30 #app::before { display: none; }
+.stem-map-behind-r30 .stem-map-panel { z-index: 2; }
+.stem-map-behind-r30 #scene { z-index: 3; }
+.stem-map-r29 .stem-map-panel { width: 220px; }
+.stem-map-r29 .stem-map-content { padding: 0 8px 9px; }
+.stem-map-r29 .stem-map-content canvas {
+  width: min(185px, 100%);
+  margin-inline: auto;
+}
+.stem-map-legend {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px 8px;
+  margin-top: 8px;
+}
+.stem-map-legend-item {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 10px;
+  color: #d9efed;
+  text-transform: capitalize;
+}
+.stem-map-legend-item i {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 7px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px currentColor;
+}
+@media (max-width: 600px) {
+  .stem-map-r29 .stem-map-panel { width: min(210px, 50vw); }
+  .stem-map-r29 .stem-map-content canvas { width: min(160px, 100%); }
+}
