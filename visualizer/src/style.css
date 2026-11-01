@@ -642,7 +642,7 @@ body {
 .stem-map-behind-r30 #app { background: #000; }
 .stem-map-behind-r30 #app::before { display: none; }
 .stem-map-behind-r30 .stem-map-panel { z-index: 2; }
-.stem-map-behind-r30 #scene { z-index: 3; }
+.stem-map-behind-r30 #scene { z-index: 3; pointer-events: none; }
 .stem-map-r29 .stem-map-panel { width: 220px; }
 .stem-map-r29 .stem-map-content { padding: 0 8px 9px; }
 .stem-map-r29 .stem-map-content canvas {
