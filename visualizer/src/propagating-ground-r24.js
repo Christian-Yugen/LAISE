@@ -99,13 +99,13 @@ export function addPropagatingGroundR24(scene) {
       for (const p of candidates) {
         const key=Math.round(p.x/4)+":"+Math.round(p.z/4);
         const previous=lastAt.get(key) ?? -Infinity;
-        if (time-previous<1.2 || energy<0.025) continue;
+        if (time-previous<1.8 || energy<0.025 || waves.length>=COUNT
+          || (waves.length && time-waves[waves.length-1].born<0.85)) continue;
         waves.push({x:p.x,z:p.z,born:time,
           power:THREE.MathUtils.clamp(0.40+(p.h-2.4)*0.15,0.4,1)});
         lastAt.set(key,time);
       }
       while (waves.length && (time-waves[0].born)*SPEED>68) waves.shift();
-      while (waves.length>COUNT) waves.shift();
       for (let i=0; i<COUNT; i++) {
         const w=waves[i];
         active[i].set(w?.x ?? 0,w?.z ?? 0,
