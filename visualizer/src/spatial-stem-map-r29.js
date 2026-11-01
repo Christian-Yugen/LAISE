@@ -1,10 +1,3 @@
-const LABELS = {
-  lead_vocal: "VOZ", backing_vocals: "CORO", drums: "BATERIA",
-  percussion: "PERCUSSÃO", bass: "BAIXO", guitar: "GUITARRA",
-  keyboards: "TECLAS", synth: "SINTETIZADOR", woodwinds: "MADEIRAS",
-  strings: "CORDAS", brass: "METAIS", other: "OUTRO"
-};
-
 const PALETTE = {
   lead_vocal: "#f59bdb", backing_vocals: "#be8eff",
   drums: "#ffbb64", percussion: "#ff905d",
@@ -88,19 +81,6 @@ function drawStem(context, point, w, h) {
   context.arc(px - radius * .2, py - radius * .2, radius * .43, 0, Math.PI * 2);
   context.fill();
 
-  const label = LABELS[point.source] || point.source.replaceAll("_", " ").toUpperCase();
-  const labelX = px + (horizontal >= 0 ? radius + 7 : -radius - 7);
-  context.font = "600 18px Inter, ui-sans-serif, system-ui, sans-serif";
-  context.textAlign = horizontal >= 0 ? "left" : "right";
-  context.textBaseline = "middle";
-  context.globalAlpha = frontness < 0 ? .70 : .94;
-  context.shadowBlur = 7;
-  context.shadowColor = "#000";
-  context.lineWidth = 4;
-  context.strokeStyle = "rgba(0, 4, 10, .88)";
-  context.strokeText(label, labelX, py);
-  context.fillStyle = "#e8f8f7";
-  context.fillText(label, labelX, py);
   context.restore();
 }
 
