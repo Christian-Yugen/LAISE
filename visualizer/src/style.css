@@ -810,3 +810,26 @@ body {
 
 /* R33 fix: terrain canvas must render in front of track and live metric text. */
 .stem-map-r29 .status { z-index: 2; }
+
+/* R33 image replacement: preserve the supplied wide artwork aspect ratio. */
+.stem-map-r29 .stem-map-visual:not([hidden]) {
+  width: min(320px, 27vw);
+  padding: 0;
+  border-radius: 12px;
+  background: rgba(2, 7, 12, .84);
+  box-shadow: 0 0 24px rgba(30, 130, 190, .13);
+}
+.stem-map-r29 .stem-map-visual canvas {
+  width: 100%;
+  aspect-ratio: 1285 / 792;
+  border-radius: 10px;
+}
+.stem-map-r29 .stem-map-visual .stem-map-axis {
+  justify-content: space-around;
+  margin-top: -2px;
+  padding: 0 8px 5px;
+  color: #91bec9;
+}
+@media (max-width: 600px) {
+  .stem-map-r29 .stem-map-visual:not([hidden]) { width: min(250px, 58vw); }
+}
