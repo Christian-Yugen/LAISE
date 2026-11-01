@@ -117,10 +117,12 @@ export function addDarkWaterR20(scene) {
         if (h < 2.3) continue;
         candidate.set(terrainPositions.getX(i), h, terrainPositions.getZ(i));
         world.copy(candidate).applyMatrix4(terrainRig.matrixWorld);
-        if (picked.some(p => Math.hypot(world.x - p.x, world.z - p.z) < 3.3)) {
-          continue;
+        const near = picked.findIndex(p => Math.hypot(world.x - p.x, world.z - p.z) < 3.3);
+        if (near >= 0) {
+          if (h > picked[near].h) picked[near] = { x: world.x, z: world.z, h };
+        } else {
+          picked.push({ x: world.x, z: world.z, h });
         }
-        picked.push({ x: world.x, z: world.z, h });
         picked.sort((a, b) => b.h - a.h);
         if (picked.length > 3) picked.pop();
       }
