@@ -83,10 +83,10 @@ export function addAtmosphericEnvironmentR26(scene) {
     transparent: true,
     depthWrite: false,
     depthTest: true,
-    vertexColors: true,
     blending: THREE.AdditiveBlending,
     vertexShader: `
       attribute float aSize;
+      attribute vec3 color;
       varying vec3 vColor;
       void main() {
         vColor = color;
@@ -99,7 +99,7 @@ export function addAtmosphericEnvironmentR26(scene) {
       varying vec3 vColor;
       void main() {
         float r = length(gl_PointCoord - 0.5) * 2.0;
-        float alpha = 0.45 * smoothstep(1.0, 0.0, r);
+        float alpha = 0.45 * (1.0 - smoothstep(0.0, 1.0, r));
         gl_FragColor = vec4(vColor, alpha);
       }
     `
