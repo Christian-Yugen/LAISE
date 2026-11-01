@@ -159,9 +159,9 @@ const scene =
   new THREE.Scene();
 
 // Compare the original image with a world-space atmospheric layer.
-if (new URLSearchParams(window.location.search).get("spatialscene") === "1") {
-  addSpatialSceneR19(scene);
-}
+const spatialSceneR19 = new URLSearchParams(window.location.search).get("spatialscene") === "1"
+  ? addSpatialSceneR19(scene)
+  : null;
 
 // LAISE_FOREST_BACKGROUND_R8B
 // ?background=0 allows a visual comparison without the forest.
@@ -2994,6 +2994,7 @@ function animate() {
 
 
 
+  spatialSceneR19?.update(audio.currentTime, averageEnergy);
   composer.render();
 
 }
