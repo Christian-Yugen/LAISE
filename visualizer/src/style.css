@@ -572,7 +572,8 @@ body {
 
 /* R29 optional spatial stem monitor; occupies no foreground footer. */
 .stem-map-panel { display: none; }
-.stem-map-r29 .brand { display: none; }
+.stem-map-r29 .brand,
+.stem-map-r29 .field-summary { display: none; }
 .stem-map-r29 .stem-map-panel {
   display: block;
   position: absolute;
