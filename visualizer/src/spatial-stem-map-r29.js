@@ -1,3 +1,9 @@
+const LABELS = {
+  lead_vocal: "VOZ", backing_vocals: "CORO", drums: "DRUM",
+  percussion: "PERC", bass: "BASS", guitar: "GTR",
+  keyboards: "KEYS", synth: "SYN", woodwinds: "WIND", other: "OTH"
+};
+
 const PALETTE = {
   lead_vocal: "#f59bdb", backing_vocals: "#be8eff",
   drums: "#ffbb64", percussion: "#ff905d",
@@ -98,21 +104,30 @@ export function createSpatialStemMapR29(root, data) {
     for (const point of sorted.slice().reverse()) {
       const full = Math.max(maxBySource.get(point.source) || 0, 0.00001);
       const strength = clamp(Math.sqrt(point.drive / full), 0.12, 1);
-      const px = cx + clamp(point.x / 8, -1, 1) * radius * .90;
-      const py = cy + clamp(point.z / 8, -1, 1) * radius * .90;
+      const px = cx + clamp(point.x, -1, 1) * radius * .90;
+      const py = cy + clamp(point.z, -1, 1) * radius * .90;
       const color = PALETTE[point.source] || "#b8d9e4";
       context.beginPath();
-      context.arc(px, py, 5 + 10 * strength, 0, Math.PI * 2);
+      context.arc(px, py, 20 + 16 * strength, 0, Math.PI * 2);
       context.fillStyle = color;
       context.globalAlpha = .13 + .22 * strength;
       context.fill();
       context.globalAlpha = 1;
       context.beginPath();
-      context.arc(px, py, 2.5 + 3.1 * strength, 0, Math.PI * 2);
+      context.arc(px, py, 10 + 9 * strength, 0, Math.PI * 2);
       context.fillStyle = color;
-      context.shadowBlur = 8 + 14 * strength;
+      context.shadowBlur = 12 + 22 * strength;
       context.shadowColor = color;
       context.fill();
+      context.shadowBlur = 0;
+      context.font = "bold 18px system-ui, sans-serif";
+      context.textAlign = px > cx + radius * .4 ? "right" : "left";
+      context.textBaseline = "middle";
+      context.fillStyle = "#e9f7f4";
+      context.shadowColor = "#020812";
+      context.shadowBlur = 6;
+      context.fillText(LABELS[point.source] || point.source.slice(0, 4).toUpperCase(),
+        px + (context.textAlign === "right" ? -16 : 16), py - 15);
       context.shadowBlur = 0;
     }
     context.beginPath();
