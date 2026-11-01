@@ -59,7 +59,9 @@ export function addPropagatingGroundR24(scene) {
           vec3 shallow=tint*(0.13+0.12*edge);
           vec3 body=mix(shallow,deep,smoothstep(0.16,0.95,basin));
           vec3 highlight=tint*(0.18*edge+0.10*glint);
-          float alpha=clamp(0.67*basin+0.32*edge+0.10*abs(vLift),0.0,0.86);
+          float presence=smoothstep(0.02,0.22,basin+edge);
+          float alpha=presence*clamp(0.18+0.84*basin
+            +0.30*edge+0.08*abs(vLift),0.0,0.96);
           alpha *= 1.0-smoothstep(49.0,55.0,length(vWorld));
           gl_FragColor=vec4(body+highlight,alpha);
         }
@@ -67,7 +69,7 @@ export function addPropagatingGroundR24(scene) {
     })
   );
   ground.rotation.x=-Math.PI/2;
-  ground.position.y=-1.16;
+  ground.position.y=-1.34;
   ground.renderOrder=-2;
   ground.frustumCulled=false;
   scene.add(ground);
@@ -102,7 +104,7 @@ export function addPropagatingGroundR24(scene) {
         if (time-previous<1.8 || energy<0.025 || waves.length>=COUNT
           || (waves.length && time-waves[waves.length-1].born<0.85)) continue;
         waves.push({x:p.x,z:p.z,born:time,
-          power:THREE.MathUtils.clamp(0.40+(p.h-2.4)*0.15,0.4,1)});
+          power:THREE.MathUtils.clamp(0.65+(p.h-2.4)*0.11,0.65,1)});
         lastAt.set(key,time);
       }
       while (waves.length && (time-waves[0].born)*SPEED>68) waves.shift();
