@@ -12,14 +12,20 @@ export function addSpatialSceneR19(scene) {
       side: THREE.DoubleSide,
       uniforms: {
         uViolet: { value: new THREE.Color(0x542c91) },
-        uCyan: { value: new THREE.Color(0x126d85) }
+        uCyan: { value: new THREE.Color(0x126d85) },
+        uTime: { value: 0 },
+        uActivity: { value: 0 }
       },
       vertexShader: `
         varying vec2 vWorld;
+        uniform float uTime;
+        uniform float uActivity;
         void main() {
           vec3 softened = position;
-          softened.z += 0.22 * sin(position.x * 0.31) * sin(position.y * 0.25)
-            + 0.10 * sin(position.x * 0.71 + position.y * 0.18);
+          float drift = uTime * 0.65;
+          float wave = sin(position.x * 0.49 + drift) * cos(position.y * 0.37 - drift * 0.67)
+            + 0.35 * sin(position.x * 0.91 - position.y * 0.42 + drift * 1.3);
+          softened.z += (0.21 + 0.22 * uActivity) * wave;
           vec4 world = modelMatrix * vec4(softened, 1.0);
           vWorld = world.xz;
           gl_Position = projectionMatrix * viewMatrix * world;
@@ -36,21 +42,20 @@ export function addSpatialSceneR19(scene) {
           vec3 color = mix(uViolet, uCyan, side);
           // A dim contact region grounds the terrain; the illuminated air
           // around it shares the mesh palette without becoming a second mesh.
-          float contact = 1.0 - smoothstep(3.0, 15.0, radius);
+          float contact = 1.0 - smoothstep(4.0, 12.0, radius);
           float ambience = exp(-radius * 0.048);
           float ring = exp(-pow((radius - 12.0) / 8.5, 2.0));
           vec3 radiance = color * (0.045 * ambience + 0.11 * ring);
-          radiance *= 1.0 - 0.18 * contact;
-          float alpha = (0.45 * ambience + 0.17 * ring)
-            * smoothstep(2.0, 11.0, radius)
-            * (1.0 - smoothstep(30.0, 49.0, radius));
+          radiance *= 1.0 - 0.50 * contact;
+          float alpha = (0.64 * ambience + 0.20 * ring)
+            * (1.0 - smoothstep(36.0, 49.0, radius));
           gl_FragColor = vec4(radiance, alpha);
         }
       `
     })
   );
   floor.rotation.x = -Math.PI / 2;
-  floor.position.y = -2.35;
+  floor.position.y = -1.12;
   floor.renderOrder = -2;
   floor.frustumCulled = false;
   scene.add(floor);
@@ -86,4 +91,10 @@ export function addSpatialSceneR19(scene) {
     depthWrite: false
   }));
   scene.add(motes);
+  return {
+    update(time, activity) {
+      floor.material.uniforms.uTime.value = time;
+      floor.material.uniforms.uActivity.value = THREE.MathUtils.clamp(activity, 0, 1);
+    }
+  };
 }
