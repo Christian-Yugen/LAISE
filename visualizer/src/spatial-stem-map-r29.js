@@ -35,6 +35,16 @@ function sampleAt(rows, time) {
       : a[key]
   ]));
 }
+function sampleDrive(rows, time) {
+  if (!rows?.length || time < rows[0][0]) return null;
+  let low = 0, high = rows.length - 1;
+  while (low < high) {
+    const mid = Math.ceil((low + high) / 2);
+    if (rows[mid][0] <= time) low = mid;
+    else high = mid - 1;
+  }
+  return rows[low];
+}
 
 function drawStem(context, point, w, h) {
   const az = point.azimuth * Math.PI / 180;
@@ -157,7 +167,7 @@ export function createSpatialStemMapR29(root, data) {
     for (const b of data.behaviors) {
       let drive = 0;
       if (time >= b.startTime && time < b.endTime) {
-        const row = sampleAt(b.continuous, time);
+        const row = sampleDrive(b.continuous, time);
         if (row) drive = row[1] || 0;
       }
       const attacks = attacksByBehavior.get(b);
