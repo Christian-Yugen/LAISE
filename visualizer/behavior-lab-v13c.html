@@ -15,19 +15,7 @@
 
     <canvas id="scene"></canvas>
 
-    <header class="brand">
-      <div class="mark">△</div>
-
-      <div>
-        <div class="laise">LAISE</div>
-        <div class="subtitle">
-          SPATIAL AUDIO VISUALIZER
-        </div>
-        <div class="version" id="visualizerVersion">
-          --
-        </div>
-      </div>
-    </header>
+    <div id="visualizerVersion" hidden>--</div>
 
     <div class="field-summary" aria-label="Spatial field metadata">
       <span>SPATIAL FIELD</span>
@@ -44,10 +32,15 @@
         <button type="button" aria-expanded="true" aria-label="Recolher mapa espacial">⌃</button>
       </div>
       <div class="stem-map-content">
-        <canvas width="440" height="440" role="img" aria-label="Mapa espacial aguardando dados"></canvas>
-        <div class="stem-map-axis"><span>X ESQUERDA</span><span>−Z FRENTE</span><span>X DIREITA</span></div>
-        <div class="stem-map-legend" aria-label="Stems ativos"></div>
-        <div class="stem-map-bottom"><span class="stem-map-active">—</span><span class="stem-map-status">0 fontes ativas</span></div>
+        <div class="stem-map-side">
+          <span class="stem-map-side-title">FONTES ATIVAS</span>
+          <div class="stem-map-legend" aria-label="Stems ativos"></div>
+          <div class="stem-map-bottom"><span class="stem-map-active">—</span><span class="stem-map-status">0 fontes ativas</span></div>
+        </div>
+        <div class="stem-map-visual">
+          <canvas width="440" height="440" role="img" aria-label="Mapa espacial aguardando dados"></canvas>
+          <div class="stem-map-axis"><span>X ESQUERDA</span><span>−Z FRENTE</span><span>X DIREITA</span></div>
+        </div>
       </div>
     </aside>
 
