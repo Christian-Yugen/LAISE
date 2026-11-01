@@ -573,6 +573,7 @@ body {
 /* R29 optional spatial stem monitor; occupies no foreground footer. */
 .stem-map-panel { display: none; }
 .stem-map-r29 .stem-map-panel {
+  display: block;
   position: absolute;
   left: 44px;
   top: 177px;
