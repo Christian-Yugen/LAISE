@@ -745,3 +745,32 @@ body {
   }
   .stem-map-r29 .stem-map-content canvas { width: 100%; }
 }
+
+/* R32 visibility fix: radar is a separate overlay; card remains behind terrain. */
+.stem-map-visual { display: none; }
+.stem-map-r29 .stem-map-visual:not([hidden]) {
+  display: block;
+  position: absolute;
+  right: clamp(12px, 2.5vw, 48px);
+  left: auto;
+  top: clamp(305px, 34vh, 345px);
+  width: 220px;
+  z-index: 5;
+  pointer-events: none;
+  padding: 4px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(2, 10, 23, .86) 0%, rgba(2, 10, 23, .68) 61%, transparent 73%);
+}
+.stem-map-r29 .stem-map-visual canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.stem-map-r29 .stem-map-visual .stem-map-axis { font-size: 8px; }
+@media (max-width: 600px) {
+  .stem-map-r29 .stem-map-visual:not([hidden]) {
+    right: 12px;
+    top: 240px;
+    width: min(190px, 46vw);
+  }
+}
