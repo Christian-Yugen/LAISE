@@ -214,7 +214,7 @@ export function createSpatialStemMapR29(root, data) {
       return item;
     });
     legend.replaceChildren(...entries);
-    name.textContent = sorted[0]?.source.replaceAll("_", " ") || "—";
+    name.textContent = sorted.at(-1)?.source.replaceAll("_", " ") || "—";
     status.textContent = sorted.length + " fontes ativas";
     canvas.setAttribute("aria-label", "Campo binaural frontal: " + points.map(p =>
       p.source.replaceAll("_", " ") + ", azimute " + p.azimuth.toFixed(0) +
