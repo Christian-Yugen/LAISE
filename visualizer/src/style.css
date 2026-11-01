@@ -807,3 +807,6 @@ body {
 @media (max-width: 600px) {
   .stem-map-r29 .status { top: 190px; right: 14px; width: min(280px, 72vw); }
 }
+
+/* R33 fix: terrain canvas must render in front of track and live metric text. */
+.stem-map-r29 .status { z-index: 2; }
