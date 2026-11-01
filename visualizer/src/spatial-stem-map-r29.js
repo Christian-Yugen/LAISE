@@ -95,6 +95,23 @@ export function createSpatialStemMapR29(root, data) {
   const context = canvas.getContext("2d");
   const backdrop = new Image();
   backdrop.src = "/spatial-listener-head.svg";
+  let silhouette = null;
+  backdrop.onload = () => {
+    const matteCanvas = document.createElement("canvas");
+    matteCanvas.width = backdrop.naturalWidth;
+    matteCanvas.height = backdrop.naturalHeight;
+    const matteContext = matteCanvas.getContext("2d", { willReadFrequently: true });
+    matteContext.drawImage(backdrop, 0, 0);
+    const image = matteContext.getImageData(0, 0, matteCanvas.width, matteCanvas.height);
+    for (let i = 0; i < image.data.length; i += 4) {
+      const intensity = Math.max(image.data[i], image.data[i + 1], image.data[i + 2]);
+      const coverage = intensity === 0 ? 0 : Math.pow(Math.min(1, intensity / 5), .20);
+      image.data[i + 3] = Math.round(image.data[i + 3] * coverage);
+    }
+    matteContext.putImageData(image, 0, 0);
+    silhouette = matteCanvas;
+    lastDrawn = -Infinity;
+  };
   const toggle = root.querySelector("button");
   const name = root.querySelector(".stem-map-active");
   const status = root.querySelector(".stem-map-status");
@@ -139,9 +156,6 @@ export function createSpatialStemMapR29(root, data) {
     lastDrawn = time;
     const w = canvas.width, h = canvas.height;
     context.clearRect(0, 0, w, h);
-    if (backdrop.complete && backdrop.naturalWidth) {
-      context.drawImage(backdrop, 0, 0, w, h);
-    }
 
     const active = new Map();
     for (const b of data.behaviors) {
@@ -183,7 +197,14 @@ export function createSpatialStemMapR29(root, data) {
         maxDrive: maxBySource.get(point.source) || .00001
       }];
     });
-    for (const point of points) drawStem(context, point, w, h);
+    const isBehind = point => {
+      const azimuth = point.azimuth * Math.PI / 180;
+      const elevation = clamp(point.elevation, -60, 75) * Math.PI / 180;
+      return Math.cos(azimuth) * Math.cos(elevation) < 0;
+    };
+    for (const point of points.filter(isBehind)) drawStem(context, point, w, h);
+    if (silhouette) context.drawImage(silhouette, 0, 0, w, h);
+    for (const point of points.filter(point => !isBehind(point))) drawStem(context, point, w, h);
 
     const entries = sorted.map(point => {
       const item = document.createElement("span");
