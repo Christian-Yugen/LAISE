@@ -175,7 +175,17 @@ const scene =
 // ?background=0 allows a visual comparison without the forest.
 const backgroundModeR27 = new URLSearchParams(window.location.search).get("background");
 const forestBackgroundEnabled = backgroundModeR27 !== "0" && backgroundModeR27 !== "black";
-if (backgroundModeR27 === "black") scene.background = new THREE.Color(0x000000);
+if (backgroundModeR27 === "black") {
+  if (spatialMapEnabledR29) {
+    // The transparent black backdrop lets the WebGL terrain sit in front
+    // of the DOM map while the page itself supplies the black background.
+    scene.background = null;
+    renderer.setClearColor(0x000000, 0);
+    document.documentElement.classList.add("stem-map-behind-r30");
+  } else {
+    scene.background = new THREE.Color(0x000000);
+  }
+}
 
 if (forestBackgroundEnabled) {
   // LAISE_R8C_ABSTRACT_BACKGROUND
