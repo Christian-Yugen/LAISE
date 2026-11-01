@@ -146,11 +146,11 @@ export class EventWaveDetailR9 {
       if (this.rhythmSculpt && e.rhythm >= 0.55) {
         // A compact, sustained local presence makes quiet repeated attacks
         // legible beside stronger sources without changing the physical field.
-        const width = 0.85 + 0.45 * e.rhythm;
+        const width = 1.0 + 0.55 * e.rhythm;
         const radiusLimit = 3 * width;
         const rhythmEnvelope = (1 - Math.exp(-age / 0.022)) *
-          Math.exp(-age / 0.46);
-        const height = 1.35 * e.rhythm *
+          Math.exp(-age / 0.55);
+        const height = 2.0 * e.rhythm *
           (1 - 0.35 * e.absolutePresence) * rhythmEnvelope;
         const x0 = Math.max(0, Math.floor((e.x - radiusLimit + this.width / 2) / this.dx));
         const x1 = Math.min(this.columns - 1, Math.ceil((e.x + radiusLimit + this.width / 2) / this.dx));
