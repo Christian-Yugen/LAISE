@@ -38,6 +38,8 @@ export function createSpatialStemMapR29(root, data) {
         attack.sourceDrive || attack.drive || 0));
     }
   }
+  const attacksByBehavior = new Map(data.behaviors.map(b =>
+    [b, [...(b.attacks ?? [])].sort((a, c) => a.time - c.time)]));
   let collapsed = false;
   toggle.addEventListener("click", () => {
     collapsed = !collapsed;
@@ -75,9 +77,16 @@ export function createSpatialStemMapR29(root, data) {
       }
       // Discrete instruments remain visible briefly at their recorded
       // attack location, including when they have no sustained row.
-      for (const a of b.attacks ?? []) {
+      const attacks = attacksByBehavior.get(b);
+      let lo = 0, hi = attacks.length;
+      while (lo < hi) {
+        const mid = (lo + hi) >> 1;
+        if (attacks[mid].time < time - 0.35) lo = mid + 1;
+        else hi = mid;
+      }
+      for (let i = lo; i < attacks.length && attacks[i].time <= time; i++) {
+        const a = attacks[i];
         const age = time - a.time;
-        if (age < 0 || age > 0.35) continue;
         const pulse = (a.sourceDrive || a.drive || 0) * Math.exp(-age / 0.17);
         if (pulse > drive) { drive = pulse; x = a.x || 0; z = a.z || 0; }
       }
