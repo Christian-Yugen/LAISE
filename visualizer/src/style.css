@@ -714,3 +714,17 @@ body {
   .stem-map-r29 .stem-map-content canvas { width: min(200px, 100%); }
   .stem-map-r29 .stem-map-legend-item { font-size: 9px; }
 }
+
+/* R32: move spatial field to the far right, below track information. */
+.stem-map-r29 .stem-map-panel {
+  left: auto;
+  right: clamp(12px, 2.5vw, 48px);
+  top: clamp(236px, 34vh, 320px);
+}
+@media (max-width: 600px) {
+  .stem-map-r29 .stem-map-panel {
+    left: auto;
+    right: 12px;
+    top: 225px;
+  }
+}
