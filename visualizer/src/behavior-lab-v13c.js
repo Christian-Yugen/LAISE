@@ -1092,7 +1092,7 @@ const terrainColorGLSL = `
   }
 `;
 
-const heightHaloStrengthR16 = new URLSearchParams(window.location.search).get("heightglow") === "1" ? 1.25 : 0;
+const heightHaloStrengthR16 = new URLSearchParams(window.location.search).get("heightglow") === "1" ? 2.3 : 0;
 const terrainMaterial = new THREE.ShaderMaterial({
   vertexColors: true,
   wireframe: true,
@@ -1197,7 +1197,7 @@ const terrainMaterial = new THREE.ShaderMaterial({
       // Height amplifies only the already illuminated emission, creating
       // a stronger local HDR halo without raising the shadow floor.
       emission *= 1.0 + uHeightHaloStrength *
-        smoothstep(0.8, 5.0, max(vTerrainHeight, 0.0));
+        pow(smoothstep(1.4, 6.0, max(vTerrainHeight, 0.0)), 1.35);
       // A brief chromatic crest marks each recorded onset on the same mesh.
       gl_FragColor = vec4(chromaticBase * radiance + emission
         + chromaticBase * (0.55 * vAttackAccent), 1.0);
@@ -1307,7 +1307,8 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
       max(dot(normal, uTerrainKeyDirection), 0.0)), 1.4);
     totalEmissiveRadiance += diffuseColor.rgb * litFace
       * (uTerrainSurfaceLight + uTerrainSurfacePeakLight * terrainPeakLight(vTerrainHeight)
-        + 0.45 * uHeightHaloStrength * smoothstep(0.8, 5.0, max(vTerrainHeight, 0.0)));
+        + 0.35 * uHeightHaloStrength *
+          pow(smoothstep(1.4, 6.0, max(vTerrainHeight, 0.0)), 1.35));
     totalEmissiveRadiance += ${NEON_R8A.surfaceEmissionFraction.toFixed(4)}
       * r8aNeonEmission(diffuseColor.rgb, vSpectrumT,
         normal, uTerrainUp, uTerrainKeyDirection);
