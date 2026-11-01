@@ -677,3 +677,40 @@ body {
   .stem-map-r29 .stem-map-panel { width: min(210px, 50vw); }
   .stem-map-r29 .stem-map-content canvas { width: min(160px, 100%); }
 }
+
+/* R31: large, uncluttered radar with live stem labels in a side column. */
+.stem-map-r29 .stem-map-panel { width: min(390px, calc(100vw - 36px)); }
+.stem-map-r29 .stem-map-content {
+  display: grid;
+  grid-template-columns: 132px minmax(0, 1fr);
+  gap: 7px;
+  padding: 0 10px 12px;
+  align-items: start;
+}
+.stem-map-side { min-width: 0; display: flex; flex-direction: column; min-height: 215px; }
+.stem-map-side-title { color: #87afba; font-size: 8px; letter-spacing: .14em; }
+.stem-map-r29 .stem-map-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}
+.stem-map-r29 .stem-map-legend-item { font-size: 11px; line-height: 1.25; }
+.stem-map-r29 .stem-map-legend-item i { width: 9px; height: 9px; flex-basis: 9px; }
+.stem-map-r29 .stem-map-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  margin-top: auto;
+  padding-top: 9px;
+}
+.stem-map-visual { min-width: 0; }
+.stem-map-r29 .stem-map-content canvas { width: min(220px, 100%); }
+.stem-map-r29 .stem-map-axis { font-size: 7px; letter-spacing: 0; }
+@media (max-width: 600px) {
+  .stem-map-r29 .stem-map-panel { left: 14px; top: 16px; width: min(345px, calc(100vw - 28px)); }
+  .stem-map-r29 .stem-map-content { grid-template-columns: 108px minmax(0, 1fr); gap: 4px; }
+  .stem-map-r29 .stem-map-content canvas { width: min(200px, 100%); }
+  .stem-map-r29 .stem-map-legend-item { font-size: 9px; }
+}
