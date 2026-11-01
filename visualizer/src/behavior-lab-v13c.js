@@ -2911,6 +2911,9 @@ function animate() {
               physicalVisualHeight / TERRAIN.maxHeight
             );
     }
+    if (eventWaveDetailR9?.rhythmSculpt) {
+      positions.array[i * 3 + 1] += eventWaveDetailR9.rhythmHeights[i] * motionGain;
+    }
     if (wideCoverageEnabledR12) {
       // Display-only peak reduction balances the closer fixed perspective.
       positions.array[i * 3 + 1] *= 0.82;
