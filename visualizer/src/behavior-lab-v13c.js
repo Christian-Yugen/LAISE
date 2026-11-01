@@ -11,6 +11,7 @@ import { AudioMotionRecovery } from "./audio-motion-recovery.js";
 import * as THREE from "three";
 import { createReflectiveFloorR8B } from "./reflective-floor-r8b.js";
 import { addSpatialSceneR19 } from "./spatial-scene-r19.js";
+import { addPropagatingGroundR24 } from "./propagating-ground-r24.js";
 
 import {
   EffectComposer
@@ -2994,6 +2995,10 @@ function animate() {
 
 
 
+  if (groundFlowR24) {
+    terrainRig.updateMatrixWorld(true);
+    groundFlowR24.update(audio.currentTime, averageEnergy, positions, terrainRig);
+  }
   composer.render();
 
 }
