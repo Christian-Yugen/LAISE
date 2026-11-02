@@ -42,9 +42,11 @@ function sampleDrive(rows, time) {
 function drawStem(context, point, w, h, behind = false) {
   const az = point.azimuth * Math.PI / 180;
   const el = clamp(point.elevation, -60, 75) * Math.PI / 180;
-  const horizontal = Math.sin(az) * Math.cos(el);
+  // The artwork is viewed from behind the listener: turn the scene 180°.
+  // Mirroring X preserves the listener's left/right from this rear viewpoint.
+  const horizontal = -Math.sin(az) * Math.cos(el);
   const vertical = Math.sin(el);
-  const rawFrontness = Math.cos(az) * Math.cos(el);
+  const rawFrontness = -Math.cos(az) * Math.cos(el);
   const frontness = behind ? -Math.abs(rawFrontness) : rawFrontness;
   const distanceScale = clamp(1.2 / Math.max(.65, point.distance), .62, 1.34);
   const perspective = clamp(1 + frontness * .10, .88, 1.12);
@@ -90,7 +92,7 @@ function drawStem(context, point, w, h, behind = false) {
 
 // The map uses the same T007 automation coordinates as the rendered stems.
 // Azimuth controls left/right and front/back, elevation controls height,
-// and distance controls apparent scale. This is a frontal projection.
+// and distance controls apparent scale. This is a rear three-quarter projection.
 export function createSpatialStemMapR29(root, data) {
   if (!root || !Array.isArray(data?.behaviors)) return null;
   const radar = document.querySelector("#spatialStemRadar");
@@ -99,21 +101,12 @@ export function createSpatialStemMapR29(root, data) {
   const context = canvas.getContext("2d");
   const backdrop = new Image();
   backdrop.src = "/spatial-listener-head.svg";
+  // Keep the source image's native transparency. The old luminance matte
+  // made dark parts of the face translucent, so rear-source halos leaked
+  // through the nose and forehead.
   let silhouette = null;
   backdrop.onload = () => {
-    const matteCanvas = document.createElement("canvas");
-    matteCanvas.width = backdrop.naturalWidth;
-    matteCanvas.height = backdrop.naturalHeight;
-    const matteContext = matteCanvas.getContext("2d", { willReadFrequently: true });
-    matteContext.drawImage(backdrop, 0, 0);
-    const image = matteContext.getImageData(0, 0, matteCanvas.width, matteCanvas.height);
-    for (let i = 0; i < image.data.length; i += 4) {
-      const intensity = Math.max(image.data[i], image.data[i + 1], image.data[i + 2]);
-      const coverage = intensity === 0 ? 0 : Math.pow(Math.min(1, intensity / 5), .20);
-      image.data[i + 3] = Math.round(image.data[i + 3] * coverage);
-    }
-    matteContext.putImageData(image, 0, 0);
-    silhouette = matteCanvas;
+    silhouette = backdrop;
     lastDrawn = -Infinity;
   };
   const toggle = root.querySelector("button");
@@ -209,9 +202,11 @@ export function createSpatialStemMapR29(root, data) {
       const elevation = clamp(point.elevation, -60, 75) * Math.PI / 180;
       return Math.cos(azimuth) * Math.cos(elevation) < 0;
     };
-    for (const point of points.filter(isBehind)) drawStem(context, point, w, h, true);
-    if (silhouette) context.drawImage(silhouette, 0, 0, w, h);
+    // Sources in front of the listener go behind the opaque head silhouette.
+    // Rear-hemisphere sources sit on the visible occiput and remain readable.
     for (const point of points.filter(point => !isBehind(point))) drawStem(context, point, w, h, false);
+    if (silhouette) context.drawImage(silhouette, 0, 0, w, h);
+    for (const point of points.filter(isBehind)) drawStem(context, point, w, h, true);
 
     const entries = sorted.map(point => {
       const item = document.createElement("span");
@@ -224,7 +219,7 @@ export function createSpatialStemMapR29(root, data) {
     legend.replaceChildren(...entries);
     name.textContent = sorted.at(-1)?.source.replaceAll("_", " ") || "—";
     status.textContent = sorted.length + " fontes ativas";
-    canvas.setAttribute("aria-label", "Campo binaural frontal: " + points.map(p =>
+    canvas.setAttribute("aria-label", "Campo binaural em vista traseira: " + points.map(p =>
       p.source.replaceAll("_", " ") + ", azimute " + p.azimuth.toFixed(0) +
       " graus, elevação " + p.elevation.toFixed(0) + " graus, distância " +
       p.distance.toFixed(1)).join("; "));
