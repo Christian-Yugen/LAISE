@@ -1107,6 +1107,25 @@ const terrainColorGLSL = `
   }
 `;
 
+// Preserve R35 spectral colors and lighting on the wireframe, independently
+// from the R36 green relief surface.
+const terrainWireColorGLSL = `
+  vec3 vividWireTerrainColor(vec3 source, float spectrumT) {
+    float peak = max(max(source.r, source.g), source.b);
+    vec3 chroma = clamp(source / max(peak, 0.0001), 0.0, 1.0);
+    vec3 vivid = pow(chroma, vec3(1.40));
+    float gold = smoothstep(0.32, 0.56, spectrumT)
+      * (1.0 - smoothstep(0.62, 0.71, spectrumT));
+    if (!forestPaletteEnabled || new URLSearchParams(window.location.search).get("grade") === "legacy") {
+      vivid.g = mix(vivid.g, max(vivid.g, 0.72), gold * 0.90);
+      vivid.b *= 1.0 - 0.20 * gold;
+    }
+    return vivid * peak * (1.0 + 0.15 * gold);
+  }
+  float terrainPeakLight(float height) {
+    return smoothstep(1.5, 6.5, max(height, 0.0));
+  }
+`;
 const heightHaloStrengthR16 = new URLSearchParams(window.location.search).get("heightglow") === "1" ? 3.1 : 0;
 const terrainMaterial = new THREE.ShaderMaterial({
   vertexColors: true,
@@ -1183,7 +1202,7 @@ const terrainMaterial = new THREE.ShaderMaterial({
     varying float vSpectrumT;
     varying vec2 vKeneUv;
     uniform sampler2D uKenePatternTexture;
-    ${terrainColorGLSL}
+    ${terrainWireColorGLSL}
     ${neonEmissionGLSL}
     varying vec3 vViewNormal;
     varying vec3 vViewPosition;
@@ -1210,17 +1229,20 @@ const terrainMaterial = new THREE.ShaderMaterial({
       float peakGain = 1.0 + uPeakBoost * terrainPeakLight(vTerrainHeight);
       float radiance = uShadow + uFill * fill
         + (uKey * key + uRim * litRim) * peakGain;
-      // Continuous antique-gold grid, with the kene mask lifted to a
-      // brighter saturated gold. No white emission is added to the lines.
+      // Preserve R35 spectral wireframe shading. The kene graphic is
+      // composited only where its texture mask crosses the grid.
+      vec3 chromaticBase = vividWireTerrainColor(vSpectrum, vSpectrumT);
+      vec3 emission = r8aNeonEmission(chromaticBase, vSpectrumT,
+        faceNormal, uTerrainUp, uKeyDirection);
+      emission *= 1.0 + uHeightHaloStrength *
+        pow(smoothstep(1.5, 6.8, max(vTerrainHeight, 0.0)), 1.55);
       float patternAlpha = texture2D(uKenePatternTexture, vKeneUv).a;
       float patternLine = smoothstep(0.06, 0.50, patternAlpha);
-      vec3 gridGold = vec3(0.36, 0.235, 0.045);
-      vec3 keneGold = vec3(0.78, 0.52, 0.075);
-      vec3 lineColor = mix(gridGold, keneGold, patternLine);
-      float lineLight = 0.78 + 0.12 * key + 0.10 * litRim;
-      vec3 goldEmission = keneGold * patternLine
-        * (0.20 + 0.12 * vAttackAccent);
-      gl_FragColor = vec4(lineColor * lineLight + goldEmission, 1.0);
+      vec3 keneGold = vec3(0.92, 0.66, 0.16);
+      chromaticBase = mix(chromaticBase, keneGold, patternLine * 0.94);
+      emission += keneGold * patternLine * (0.48 + 0.32 * vAttackAccent);
+      gl_FragColor = vec4(chromaticBase * radiance + emission
+        + chromaticBase * (0.55 * vAttackAccent), 1.0);
       #include <tonemapping_fragment>
       #include <colorspace_fragment>
     }
