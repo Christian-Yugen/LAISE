@@ -1303,8 +1303,11 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
     varying float vTerrainHeight;
     varying float vSpectrumT;
     varying vec3 vR8A10Spectrum;
+    varying vec2 vForestPatternUv;
+    varying float vForestFlatness;
     uniform vec2 uSpectrumAxis;
     uniform float uSpectrumHalfSpan;
+    uniform vec3 uTerrainUp;
   ` + shader.vertexShader;
   shader.vertexShader = shader.vertexShader.replace("#include <begin_vertex>",
     `#include <begin_vertex>
@@ -1314,12 +1317,17 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
     vTerrainHeight = position.y;
     vR8A10Spectrum = color;
     vSpectrumT = (dot(position.xz, uSpectrumAxis) + uSpectrumHalfSpan)
-      / (2.0 * uSpectrumHalfSpan);`);
+      / (2.0 * uSpectrumHalfSpan);
+    vForestPatternUv = position.xz * 0.92;
+    vec3 forestVertexNormal = normalize(normalMatrix * normal);
+    vForestFlatness = 1.0 - abs(dot(forestVertexNormal, normalize(uTerrainUp)));`);
   shader.fragmentShader = `
     varying float vAttackAccent;
     varying float vTerrainHeight;
     varying float vSpectrumT;
     varying vec3 vR8A10Spectrum;
+    varying vec2 vForestPatternUv;
+    varying float vForestFlatness;
     uniform float uR8A10SurfaceAlbedo;
     uniform vec3 uTerrainKeyDirection;
     uniform vec3 uTerrainUp;
@@ -1333,13 +1341,11 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
     #include <color_fragment>
     diffuseColor.rgb = vividTerrainColor(vR8A10Spectrum, vSpectrumT) * uR8A10SurfaceAlbedo;
     // Kene-inspired geometric linework, kept subtle on flatter clearings.
-    vec2 motifUv = vViewPosition.xz * 0.92;
-    vec2 cell = fract(motifUv) - 0.5;
+    vec2 cell = fract(vForestPatternUv) - 0.5;
     float diamond = min(abs(cell.x - cell.y), abs(cell.x + cell.y));
     float crossline = min(abs(cell.x), abs(cell.y));
     float motif = 1.0 - smoothstep(0.012, 0.035, min(diamond, crossline));
-    float flatland = 1.0 - smoothstep(0.06, 0.34,
-      1.0 - abs(dot(normalize(normal), normalize(uTerrainUp))));
+    float flatland = 1.0 - smoothstep(0.06, 0.34, vForestFlatness);
     diffuseColor.rgb = mix(diffuseColor.rgb,
       vec3(0.46, 0.25, 0.09), motif * flatland * 0.30);
   `);
