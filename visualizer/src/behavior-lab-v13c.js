@@ -460,7 +460,7 @@ const terrainFillLight = new THREE.DirectionalLight(
 terrainKeyLight.target.position.set(0, 0, -CAMERA.distance);
 terrainFillLight.target.position.copy(terrainKeyLight.target.position);
 terrainKeyLight.position.copy(terrainKeyLight.target.position)
-  .add(new THREE.Vector3(-0.72, 0.62, 0.42).normalize().multiplyScalar(20));
+  .add(new THREE.Vector3(-0.45, 0.84, 0.70).normalize().multiplyScalar(20));
 terrainFillLight.position.copy(terrainFillLight.target.position)
   .add(new THREE.Vector3(0.72, 0.18, 0.50).normalize().multiplyScalar(20));
 camera.add(terrainKeyLight, terrainKeyLight.target,
