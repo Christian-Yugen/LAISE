@@ -1124,6 +1124,12 @@ const terrainWireColorGLSL = `
   }
 `;
 const heightHaloStrengthR16 = new URLSearchParams(window.location.search).get("heightglow") === "1" ? 1.6 : 0;
+const terrainLightTestR36 =
+  new URLSearchParams(window.location.search).get("lighttest");
+const wireWaveGlowScaleR36 =
+  terrainLightTestR36 === "surface" ? 0.0 : 1.0;
+const reliefWaveGlowScaleR36 =
+  terrainLightTestR36 === "wire" ? 0.0 : 1.0;
 const terrainMaterial = new THREE.ShaderMaterial({
   vertexColors: true,
   wireframe: true,
@@ -1149,6 +1155,7 @@ const terrainMaterial = new THREE.ShaderMaterial({
     uRim: { value: TERRAIN_LIGHTING.wireRim },
     uPeakBoost: { value: TERRAIN_LIGHTING.peakBoost },
     uHeightHaloStrength: { value: heightHaloStrengthR16 },
+    uWaveGlowScale: { value: wireWaveGlowScaleR36 },
     uKenePatternTexture: { value: null },
     ...neonUniformsR8A
   },
@@ -1195,6 +1202,7 @@ const terrainMaterial = new THREE.ShaderMaterial({
     uniform float uRim;
     uniform float uPeakBoost;
     uniform float uHeightHaloStrength;
+    uniform float uWaveGlowScale;
     varying float vTerrainHeight;
     varying float vSpectrumT;
     varying vec2 vKeneUv;
@@ -1225,13 +1233,13 @@ const terrainMaterial = new THREE.ShaderMaterial({
       // keep their existing floor; no displacement or physical drive changes.
       float peakGain = 1.0 + uPeakBoost * terrainPeakLight(vTerrainHeight);
       float radiance = uShadow + uFill * fill
-        + (uKey * key + uRim * litRim) * peakGain;
+        + uWaveGlowScale * (uKey * key + uRim * litRim) * peakGain;
       // Preserve R35 spectral wireframe shading. The kene graphic is
       // composited only where its texture mask crosses the grid.
       vec3 chromaticBase = vividWireTerrainColor(vSpectrum, vSpectrumT);
       vec3 emission = r8aNeonEmission(chromaticBase, vSpectrumT,
         faceNormal, uTerrainUp, uKeyDirection);
-      emission *= 0.58 * (1.0 + uHeightHaloStrength *
+      emission *= uWaveGlowScale * 0.58 * (1.0 + uHeightHaloStrength *
         pow(smoothstep(1.5, 6.8, max(vTerrainHeight, 0.0)), 1.55));
       float patternAlpha = texture2D(uKenePatternTexture, vKeneUv).a;
       float patternLine = smoothstep(0.06, 0.50, patternAlpha);
@@ -1301,6 +1309,7 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
   shader.uniforms.uSpectrumHalfSpan = { value: observerColorHalfSpan };
   shader.uniforms.uTerrainSurfaceLight = { value: TERRAIN_LIGHTING.surfaceLight };
   shader.uniforms.uTerrainSurfacePeakLight = { value: TERRAIN_LIGHTING.surfacePeakLight };
+  shader.uniforms.uReliefWaveGlowScale = { value: reliefWaveGlowScaleR36 };
   shader.uniforms.uHeightHaloStrength = { value: heightHaloStrengthR16 };
   shader.vertexShader = `
     attribute float attackAccent;
@@ -1343,6 +1352,7 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
     uniform float uTerrainSurfaceLight;
     uniform float uTerrainSurfacePeakLight;
     uniform float uHeightHaloStrength;
+    uniform float uReliefWaveGlowScale;
     ${terrainColorGLSL}
     ${neonEmissionGLSL}
   ` + shader.fragmentShader;
@@ -1356,14 +1366,14 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
     #include <emissivemap_fragment>
     float litFace = pow(smoothstep(0.18, 0.95,
       max(dot(normal, uTerrainKeyDirection), 0.0)), 1.4);
-    totalEmissiveRadiance += diffuseColor.rgb * litFace
+    totalEmissiveRadiance += uReliefWaveGlowScale * diffuseColor.rgb * litFace
       * (uTerrainSurfaceLight + uTerrainSurfacePeakLight * terrainPeakLight(vTerrainHeight)
         + 0.35 * uHeightHaloStrength *
           pow(smoothstep(1.5, 6.8, max(vTerrainHeight, 0.0)), 1.55));
-    totalEmissiveRadiance += ${NEON_R8A.surfaceEmissionFraction.toFixed(4)} * 0.58
+    totalEmissiveRadiance += uReliefWaveGlowScale * ${NEON_R8A.surfaceEmissionFraction.toFixed(4)} * 0.58
       * r8aNeonEmission(diffuseColor.rgb, vSpectrumT,
         normal, uTerrainUp, uTerrainKeyDirection);
-    totalEmissiveRadiance += diffuseColor.rgb * (0.16 * vAttackAccent);
+    totalEmissiveRadiance += uReliefWaveGlowScale * diffuseColor.rgb * (0.16 * vAttackAccent);
   `);
 };
 reliefSurfaceMaterial.customProgramCacheKey = () => "r8a-hdr-neon-emission-v2";
