@@ -1221,7 +1221,7 @@ const terrainMaterial = new THREE.ShaderMaterial({
         float d = dot(delta, delta);
         if (d < nearest) { second = nearest; nearest = d; } else if (d < second) second = d;
       }
-      return 1.0 - smoothstep(0.018, 0.075, sqrt(second) - sqrt(nearest));
+      return 1.0 - smoothstep(0.025, 0.18, sqrt(second) - sqrt(nearest));
     }
     varying vec3 vViewNormal;
     varying vec3 vViewPosition;
@@ -1257,11 +1257,11 @@ const terrainMaterial = new THREE.ShaderMaterial({
       emission *= uWaveGlowScale * 0.30 * (1.0 + 1.15 * terrainPeakLight(vTerrainHeight)
         + uHeightHaloStrength *
         pow(smoothstep(1.5, 6.8, max(vTerrainHeight, 0.0)), 1.55));
-      float summitFire = smoothstep(1.05, 2.65, max(vTerrainHeight, 0.0));
+      float summitFire = smoothstep(0.72, 2.35, max(vTerrainHeight, 0.0));
       float crackMask = emberCracks(vKeneUv) * summitFire;
-      float firePulse = 0.12 + 0.88 * clamp(vAttackAccent, 0.0, 1.0);
+      float firePulse = 0.32 + 0.68 * clamp(vAttackAccent, 0.0, 1.0);
       float fireFacing = 0.30 + 0.70 * keyFacing;
-      vec3 fireColor = mix(vec3(0.72, 0.006, 0.008), vec3(1.0, 0.11, 0.004),
+      vec3 fireColor = mix(vec3(0.82, 0.008, 0.004), vec3(1.0, 0.075, 0.002),
         clamp(0.55 * crackMask + 0.45 * vAttackAccent, 0.0, 1.0));
       float patternAlpha = texture2D(uKenePatternTexture, vKeneUv).a;
       float patternLine = smoothstep(0.06, 0.50, patternAlpha) * (1.0 - summitFire);
@@ -1269,7 +1269,7 @@ const terrainMaterial = new THREE.ShaderMaterial({
       chromaticBase = mix(chromaticBase, keneGold, patternLine * 0.98);
       // Keep the summit mesh green; ember colors are confined to thin crack lines.
       emission += keneGold * patternLine * (1.35 + 0.75 * vAttackAccent);
-      emission += fireColor * crackMask * firePulse * fireFacing * 1.85;
+      emission += fireColor * crackMask * firePulse * fireFacing * 3.4;
       gl_FragColor = vec4(chromaticBase * radiance + emission
         + chromaticBase * (0.24 * vAttackAccent), 1.0);
       #include <tonemapping_fragment>
@@ -1391,7 +1391,7 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
         float d = dot(delta, delta);
         if (d < nearest) { second = nearest; nearest = d; } else if (d < second) second = d;
       }
-      return 1.0 - smoothstep(0.018, 0.075, sqrt(second) - sqrt(nearest));
+      return 1.0 - smoothstep(0.025, 0.18, sqrt(second) - sqrt(nearest));
     }
   ` + shader.fragmentShader;
   shader.fragmentShader = shader.fragmentShader.replace("#include <color_fragment>", `
@@ -1412,13 +1412,13 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
         normal, uTerrainUp, uTerrainKeyDirection);
     totalEmissiveRadiance += uReliefWaveGlowScale * diffuseColor.rgb * (0.16 * vAttackAccent);
     // Red-to-amber summit glow stays local to tall peaks and pulses with stem attacks.
-    float summitFire = smoothstep(1.05, 2.65, max(vTerrainHeight, 0.0));
+    float summitFire = smoothstep(0.72, 2.35, max(vTerrainHeight, 0.0));
     float crackMask = emberCracks(vForestPatternUv) * summitFire;
-    float firePulse = 0.12 + 0.88 * clamp(vAttackAccent, 0.0, 1.0);
+    float firePulse = 0.32 + 0.68 * clamp(vAttackAccent, 0.0, 1.0);
     float fireFacing = 0.30 + 0.70 * litFace;
-    vec3 fireColor = mix(vec3(0.72, 0.006, 0.008), vec3(1.0, 0.11, 0.004),
+    vec3 fireColor = mix(vec3(0.82, 0.008, 0.004), vec3(1.0, 0.075, 0.002),
       clamp(0.55 * crackMask + 0.45 * vAttackAccent, 0.0, 1.0));
-    totalEmissiveRadiance += uReliefWaveGlowScale * fireColor * crackMask * firePulse * fireFacing * 2.15;
+    totalEmissiveRadiance += uReliefWaveGlowScale * fireColor * crackMask * firePulse * fireFacing * 3.8;
   `);
 };
 reliefSurfaceMaterial.customProgramCacheKey = () => "r8a-hdr-neon-emission-v2";
