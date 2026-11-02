@@ -1038,6 +1038,7 @@ const wireGeometry = new THREE.BufferGeometry();
 wireGeometry.setIndex(geometry.index);
 wireGeometry.setAttribute("position", positions);
 wireGeometry.setAttribute("normal", geometry.attributes.normal);
+wireGeometry.setAttribute("uv", geometry.attributes.uv);
 wireGeometry.setAttribute("color", geometry.attributes.color);
 wireGeometry.setAttribute("attackAccent", attackAccentR93);
 wireGeometry.setAttribute("lightingNormal", lightingNormalR12);
@@ -1094,14 +1095,12 @@ function updateTerrainLighting() {
 const terrainSpectrumAxis = new THREE.Vector2(observerColorCos, observerColorSin);
 const terrainColorGLSL = `
   vec3 vividTerrainColor(vec3 source, float spectrumT) {
-    // R36 enforces a green-only material grade even if the source spectrum
-    // or an old URL palette override contains warm hues.
+    // Forest moss palette: dark canopy shadows into softly lit moss.
     float sourceLevel = clamp(max(max(source.r, source.g), source.b), 0.0, 1.0);
     float gradient = clamp(0.72 * spectrumT + 0.28 * sourceLevel, 0.0, 1.0);
-    vec3 forestDeep = vec3(0.008, 0.075, 0.022);
-    vec3 forestBright = vec3(0.115, 0.54, 0.105);
-    vec3 green = mix(forestDeep, forestBright, smoothstep(0.0, 1.0, gradient));
-    return green * (0.78 + 0.42 * sourceLevel);
+    vec3 forestDeep = vec3(0.035, 0.080, 0.035);
+    vec3 forestMid = vec3(0.16, 0.27, 0.15);
+    return mix(forestDeep, forestMid, smoothstep(0.0, 1.0, gradient));
   }
   float terrainPeakLight(float height) {
     return smoothstep(1.5, 6.5, max(height, 0.0));
@@ -1132,6 +1131,7 @@ const terrainMaterial = new THREE.ShaderMaterial({
     uRim: { value: TERRAIN_LIGHTING.wireRim },
     uPeakBoost: { value: TERRAIN_LIGHTING.peakBoost },
     uHeightHaloStrength: { value: heightHaloStrengthR16 },
+    uKenePatternTexture: { value: null },
     ...neonUniformsR8A
   },
   vertexShader: `
@@ -1147,6 +1147,8 @@ const terrainMaterial = new THREE.ShaderMaterial({
     varying vec3 vSpectrum;
     varying float vTerrainHeight;
     varying float vSpectrumT;
+    attribute vec2 uv;
+    varying vec2 vKeneUv;
     uniform vec2 uSpectrumAxis;
     uniform float uSpectrumHalfSpan;
     void main() {
@@ -1156,6 +1158,7 @@ const terrainMaterial = new THREE.ShaderMaterial({
       vTerrainHeight = position.y;
       vSpectrumT = (dot(position.xz, uSpectrumAxis) + uSpectrumHalfSpan)
         / (2.0 * uSpectrumHalfSpan);
+      vKeneUv = uv;
       vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
       vViewNormal = normalMatrix * lightingNormal;
       vViewPosition = -mvPosition.xyz;
@@ -1177,6 +1180,8 @@ const terrainMaterial = new THREE.ShaderMaterial({
     uniform float uHeightHaloStrength;
     varying float vTerrainHeight;
     varying float vSpectrumT;
+    varying vec2 vKeneUv;
+    uniform sampler2D uKenePatternTexture;
     ${terrainColorGLSL}
     ${neonEmissionGLSL}
     varying vec3 vViewNormal;
@@ -1207,19 +1212,25 @@ const terrainMaterial = new THREE.ShaderMaterial({
       // Reflected color and selective linear HDR emission remain independent.
       // Only locally convex, favorably lit regions approach a white-hot core.
       // Tone mapping and sRGB output remain in the existing final OutputPass.
-      vec3 chromaticBase = vividTerrainColor(vSpectrum, vSpectrumT);
       float crest = smoothstep(1.15, 3.4, max(vTerrainHeight, 0.0));
-      vec3 crestGreen = mix(vec3(0.12, 0.48, 0.18), vec3(0.42, 0.92, 0.34),
-        smoothstep(0.0, 4.0, max(vTerrainHeight, 0.0)));
-      chromaticBase = mix(chromaticBase, crestGreen, crest * 0.72);
+      float goldLight = clamp(key * 0.62 + fill * 0.16 + litRim * 0.22
+        + crest * 0.18, 0.0, 1.0);
+      vec3 copperLine = vec3(0.558, 0.258, 0.029); // #C58B30
+      vec3 goldLine = vec3(0.659, 0.434, 0.038);   // #D4AF37
+      vec3 chromaticBase = mix(copperLine, goldLine, goldLight);
+      float patternAlpha = texture2D(uKenePatternTexture, vKeneUv).a;
+      float patternLine = smoothstep(0.06, 0.50, patternAlpha);
+      vec3 keneGold = vec3(0.92, 0.66, 0.16);
+      chromaticBase = mix(chromaticBase, keneGold, patternLine * 0.78);
       vec3 emission = r8aNeonEmission(chromaticBase, vSpectrumT,
         faceNormal, uTerrainUp, uKeyDirection);
       emission *= 1.0 + uHeightHaloStrength *
         pow(smoothstep(1.0, 3.7, max(vTerrainHeight, 0.0)), 1.8);
-      emission += crestGreen * crest * (0.16 + 0.72 * vAttackAccent);
-      // A brief chromatic crest marks each recorded onset on the same mesh.
+      // The motif is sampled only on rasterized wireframe segments.
+      emission += keneGold * patternLine * (1.25 + 1.8 * vAttackAccent);
+      emission += goldLine * crest * (0.12 + 0.45 * vAttackAccent);
       gl_FragColor = vec4(chromaticBase * radiance + emission
-        + chromaticBase * (0.55 * vAttackAccent), 1.0);
+        + chromaticBase * (0.35 * vAttackAccent), 1.0);
       #include <tonemapping_fragment>
       #include <colorspace_fragment>
     }
@@ -1394,7 +1405,9 @@ scene.add(
   terrainRig
 );
 
-// R36: map the attached gold motif onto the animated terrain geometry.
+// R36: decode the supplied motif texture and sample it in the wire shader.
+// Because the terrain draw is wireframe-only, the design can appear only on
+// grid segments and follows the same audio-deformed vertices.
 const kenePatternImageR36 = new Image();
 kenePatternImageR36.onload = () => {
   const keneTextureR36 = new THREE.Texture(kenePatternImageR36);
@@ -1403,28 +1416,9 @@ kenePatternImageR36.onload = () => {
   keneTextureR36.minFilter = THREE.LinearMipmapLinearFilter;
   keneTextureR36.magFilter = THREE.LinearFilter;
   keneTextureR36.needsUpdate = true;
-  const keneMaterialR36 = new THREE.MeshBasicMaterial({
-    map: keneTextureR36,
-    // HDR gold core: exceed the bloom threshold so the exact motif emits
-    // a warm living halo while the forest mesh retains its green palette.
-    color: new THREE.Color(3.8, 3.0, 0.72),
-    transparent: true,
-    opacity: 1.0,
-    alphaTest: 0.025,
-    side: THREE.DoubleSide,
-    depthTest: true,
-    depthWrite: false,
-    polygonOffset: true,
-    polygonOffsetFactor: -1,
-    polygonOffsetUnits: -1,
-    blending: THREE.AdditiveBlending,
-    toneMapped: false
-  });
-  const keneOverlayR36 = new THREE.Mesh(geometry, keneMaterialR36);
-  keneOverlayR36.frustumCulled = false;
-  keneOverlayR36.renderOrder = 2;
-  terrainRig.add(keneOverlayR36);
+  terrainMaterial.uniforms.uKenePatternTexture.value = keneTextureR36;
 };
+kenePatternImageR36.onerror = () => console.error("LAISE R36: falha ao carregar o grafismo dourado.");
 kenePatternImageR36.src = `data:image/png;base64,${KENE_TERRAIN_PATTERN_R36}`;
 
 // LAISE_R8C_EDGE_GLOW_TEST
