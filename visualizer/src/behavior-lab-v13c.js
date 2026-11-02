@@ -433,10 +433,10 @@ const TERRAIN_LIGHTING = Object.freeze({
   ambientIntensity: 0.018,
   surfaceAlbedo: 0.17,
   wireShadow: 0.10,
-  wireKey: 2.20,
+  wireKey: 2.85,
   wireFill: 0.08,
-  wireRim: 2.20,
-  peakBoost: 0.30,
+  wireRim: 2.90,
+  peakBoost: 0.42,
   surfaceLight: 0.22,
   surfacePeakLight: 0.45,
   bloomBase: NEON_R8A.neonBloomStrength * 0.58,
@@ -1240,7 +1240,7 @@ const terrainMaterial = new THREE.ShaderMaterial({
       vec3 emission = r8aNeonEmission(chromaticBase, vSpectrumT,
         faceNormal, uTerrainUp, uKeyDirection);
       emission = vec3(emission.r * 0.22, emission.g * 0.62, emission.b * 0.18);
-      emission *= uWaveGlowScale * 0.38 * (1.0 + uHeightHaloStrength *
+      emission *= uWaveGlowScale * 0.48 * (1.0 + uHeightHaloStrength *
         pow(smoothstep(1.5, 6.8, max(vTerrainHeight, 0.0)), 1.55));
       float patternAlpha = texture2D(uKenePatternTexture, vKeneUv).a;
       float patternLine = smoothstep(0.06, 0.50, patternAlpha);
