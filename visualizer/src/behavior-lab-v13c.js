@@ -1116,9 +1116,12 @@ const terrainWireColorGLSL = `
     vec3 vivid = pow(chroma, vec3(1.40));
     float gold = smoothstep(0.32, 0.56, spectrumT)
       * (1.0 - smoothstep(0.62, 0.71, spectrumT));
-    if (!forestPaletteEnabled || new URLSearchParams(window.location.search).get("grade") === "legacy") {
-      vivid.g = mix(vivid.g, max(vivid.g, 0.72), gold * 0.90);
-      vivid.b *= 1.0 - 0.20 * gold;
+    ${
+      (!forestPaletteEnabled ||
+        new URLSearchParams(window.location.search).get("grade") === "legacy")
+        ? `vivid.g = mix(vivid.g, max(vivid.g, 0.72), gold * 0.90);
+           vivid.b *= 1.0 - 0.20 * gold;`
+        : ""
     }
     return vivid * peak * (1.0 + 0.15 * gold);
   }
