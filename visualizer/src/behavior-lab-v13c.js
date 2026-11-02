@@ -1112,9 +1112,9 @@ const terrainMaterial = new THREE.ShaderMaterial({
   vertexColors: true,
   wireframe: true,
   side: THREE.DoubleSide,
-  // Render only the gold kene mask; the supporting grid no longer washes
-  // out the green relief beneath it.
-  transparent: true,
+  // Keep the full terrain grid visible; the shader gives it a subdued
+  // antique-gold line while reserving brighter gold for the kene motif.
+  transparent: false,
   depthTest: true,
   depthWrite: false,
   // Global atmospheric fog suppressed the old lines while the projected
@@ -1210,14 +1210,17 @@ const terrainMaterial = new THREE.ShaderMaterial({
       float peakGain = 1.0 + uPeakBoost * terrainPeakLight(vTerrainHeight);
       float radiance = uShadow + uFill * fill
         + (uKey * key + uRim * litRim) * peakGain;
-      // Only the kene pattern is visible on the wireframe. The solid green
-      // relief remains the base; ordinary grid lines do not tint or whiten it.
+      // Continuous antique-gold grid, with the kene mask lifted to a
+      // brighter saturated gold. No white emission is added to the lines.
       float patternAlpha = texture2D(uKenePatternTexture, vKeneUv).a;
       float patternLine = smoothstep(0.06, 0.50, patternAlpha);
-      vec3 keneGold = vec3(0.92, 0.66, 0.16);
-      float goldPulse = 0.82 + 0.18 * vAttackAccent;
-      vec3 goldEmission = keneGold * patternLine * goldPulse;
-      gl_FragColor = vec4(goldEmission, patternLine * 0.96);
+      vec3 gridGold = vec3(0.36, 0.235, 0.045);
+      vec3 keneGold = vec3(0.78, 0.52, 0.075);
+      vec3 lineColor = mix(gridGold, keneGold, patternLine);
+      float lineLight = 0.78 + 0.12 * key + 0.10 * litRim;
+      vec3 goldEmission = keneGold * patternLine
+        * (0.20 + 0.12 * vAttackAccent);
+      gl_FragColor = vec4(lineColor * lineLight + goldEmission, 1.0);
       #include <tonemapping_fragment>
       #include <colorspace_fragment>
     }
