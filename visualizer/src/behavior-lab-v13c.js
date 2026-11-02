@@ -429,12 +429,12 @@ frameTerrain();
 */
 const TERRAIN_LIGHTING = Object.freeze({
   keyIntensity: 2.9,
-  fillIntensity: 0.20,
-  ambientIntensity: 0.025,
+  fillIntensity: 0.30,
+  ambientIntensity: 0.065,
   surfaceAlbedo: 0.18,
-  wireShadow: 0.075,
+  wireShadow: 0.16,
   wireKey: 3.25,
-  wireFill: 0.08,
+  wireFill: 0.14,
   wireRim: 3.35,
   peakBoost: 0.82,
   surfaceLight: 0.28,
@@ -446,7 +446,7 @@ const TERRAIN_LIGHTING = Object.freeze({
 });
 
 const terrainHemisphereLight = new THREE.HemisphereLight(
-  0x83bb5d, 0x010201, TERRAIN_LIGHTING.ambientIntensity
+  0x83bb5d, 0x071108, TERRAIN_LIGHTING.ambientIntensity
 );
 scene.add(terrainHemisphereLight);
 
@@ -1092,7 +1092,7 @@ const terrainColorGLSL = `
     // Forest moss palette: dark canopy shadows into softly lit moss.
     float sourceLevel = clamp(max(max(source.r, source.g), source.b), 0.0, 1.0);
     float gradient = clamp(0.72 * spectrumT + 0.28 * sourceLevel, 0.0, 1.0);
-    vec3 forestDeep = vec3(0.002, 0.014, 0.003);
+    vec3 forestDeep = vec3(0.006, 0.030, 0.008);
     vec3 forestMid = vec3(0.045, 0.165, 0.032);
     return mix(forestDeep, forestMid, smoothstep(0.0, 1.0, gradient));
   }
