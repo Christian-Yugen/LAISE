@@ -1227,11 +1227,13 @@ const terrainMaterial = new THREE.ShaderMaterial({
       return 0.72 * emberNoise(warped) + 0.28 * emberNoise(warped * 2.1 + vec2(5.2, 1.3));
     }
     float emberCracks(vec2 uv) {
-      // Broad, softly warped ember areas replace the artificial contour-line pattern.
-      return smoothstep(0.54, 0.82, emberField(uv));
+      // One warped noise contour creates flowing, irregular lava fissures.
+      float field = emberField(uv);
+      return 1.0 - smoothstep(0.012, 0.052, abs(field - 0.49));
     }
     float emberHalo(vec2 uv) {
-      return smoothstep(0.30, 0.74, emberField(uv));
+      float field = emberField(uv);
+      return exp(-abs(field - 0.49) * 11.0);
     }
     varying vec3 vViewNormal;
     varying vec3 vViewPosition;
@@ -1281,8 +1283,9 @@ const terrainMaterial = new THREE.ShaderMaterial({
       emission += keneGold * patternLine * (1.35 + 0.75 * vAttackAccent);
       float emberGlow = emberHalo(vKeneUv) * summitFire;
       emission += fireColor * emberGlow * firePulse * fireFacing * 0.42;
-      // Soft low-intensity ember tint on the wire grid, without red tracer lines.
-      emission += fireColor * emberGlow * firePulse * fireFacing * 0.34;
+      // Warm halo around the fine crack core keeps the fissure organic.
+      emission += fireColor * emberGlow * firePulse * fireFacing * 0.30;
+      emission += fireColor * crackMask * firePulse * fireFacing * 1.15;
       gl_FragColor = vec4(chromaticBase * radiance + emission
         + chromaticBase * (0.24 * vAttackAccent), 1.0);
       #include <tonemapping_fragment>
@@ -1410,11 +1413,13 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
       return 0.72 * emberNoise(warped) + 0.28 * emberNoise(warped * 2.1 + vec2(5.2, 1.3));
     }
     float emberCracks(vec2 uv) {
-      // Broad, softly warped ember areas replace the artificial contour-line pattern.
-      return smoothstep(0.54, 0.82, emberField(uv));
+      // One warped noise contour creates flowing, irregular lava fissures.
+      float field = emberField(uv);
+      return 1.0 - smoothstep(0.012, 0.052, abs(field - 0.49));
     }
     float emberHalo(vec2 uv) {
-      return smoothstep(0.30, 0.74, emberField(uv));
+      float field = emberField(uv);
+      return exp(-abs(field - 0.49) * 11.0);
     }
   ` + shader.fragmentShader;
   shader.fragmentShader = shader.fragmentShader.replace("#include <color_fragment>", `
@@ -1443,8 +1448,9 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
       clamp(0.55 * crackMask + 0.45 * vAttackAccent, 0.0, 1.0));
     float emberGlow = emberHalo(vForestPatternUv / 14.72 + 0.5) * summitFire;
     totalEmissiveRadiance += uReliefWaveGlowScale * fireColor * emberGlow * firePulse * fireFacing * 0.55;
-    // Diffuse, irregular summit warmth; no sharp red fissure strokes.
-    totalEmissiveRadiance += uReliefWaveGlowScale * fireColor * emberGlow * firePulse * fireFacing * 0.62;
+    // Fine lava veins receive a restrained core and a soft surrounding halo.
+    totalEmissiveRadiance += uReliefWaveGlowScale * fireColor * emberGlow * firePulse * fireFacing * 0.34;
+    totalEmissiveRadiance += uReliefWaveGlowScale * fireColor * crackMask * firePulse * fireFacing * 1.25;
   `);
 };
 reliefSurfaceMaterial.customProgramCacheKey = () => "r8a-hdr-neon-emission-v2";
