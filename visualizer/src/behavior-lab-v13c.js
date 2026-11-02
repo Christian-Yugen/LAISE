@@ -696,18 +696,18 @@ const originalSpectrumStops = [
 // Default: forest palette. Use ?palette=original for comparison.
 // Emission, bloom, exposure and terrain behavior are unchanged.
 const forestPaletteColors = [
-  0x76502b, // dark earth
-  0x9a6330, // burnt copper
-  0x9b4528, // ritual red
-  0xb15a2c, // ember orange
-  0xc27632, // bronze
-  0x96723b, // aged gold
-  0x53663a, // moss green
-  0x426044, // forest green
-  0x315c48, // deep canopy
-  0x3d7556, // bioluminescent moss
-  0x69804b, // lichen
-  0x8d713c  // muted gold
+  0x183b2b, // deep forest
+  0x245438, // shaded canopy
+  0x2d6840, // forest green
+  0x397b46, // moss green
+  0x468c4d, // leaf green
+  0x5a9b52, // bright moss
+  0x6ca957, // lichen
+  0x4d9250, // fern
+  0x347b48, // deep emerald
+  0x3c8950, // bioluminescent moss
+  0x69a95b, // canopy light
+  0x8aba68  // soft green highlight
 ];
 
 // LAISE_R8C_PALETTE_V2
@@ -1220,14 +1220,14 @@ const terrainMaterial = new THREE.ShaderMaterial({
       // Tone mapping and sRGB output remain in the existing final OutputPass.
       vec3 chromaticBase = vividTerrainColor(vSpectrum, vSpectrumT);
       float crest = smoothstep(1.15, 3.4, max(vTerrainHeight, 0.0));
-      float fireBand = smoothstep(0.18, 0.82, vSpectrumT);
-      vec3 ember = mix(vec3(1.0, 0.10, 0.025), vec3(1.0, 0.42, 0.045), fireBand);
-      chromaticBase = mix(chromaticBase, ember, crest * 0.82);
+      vec3 crestGreen = mix(vec3(0.12, 0.48, 0.18), vec3(0.42, 0.92, 0.34),
+        smoothstep(0.0, 4.0, max(vTerrainHeight, 0.0)));
+      chromaticBase = mix(chromaticBase, crestGreen, crest * 0.72);
       vec3 emission = r8aNeonEmission(chromaticBase, vSpectrumT,
         faceNormal, uTerrainUp, uKeyDirection);
       emission *= 1.0 + uHeightHaloStrength *
         pow(smoothstep(1.0, 3.7, max(vTerrainHeight, 0.0)), 1.8);
-      emission += ember * crest * (0.16 + 0.72 * vAttackAccent);
+      emission += crestGreen * crest * (0.16 + 0.72 * vAttackAccent);
       // A brief chromatic crest marks each recorded onset on the same mesh.
       gl_FragColor = vec4(chromaticBase * radiance + emission
         + chromaticBase * (0.55 * vAttackAccent), 1.0);
@@ -1347,7 +1347,7 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
     float motif = 1.0 - smoothstep(0.012, 0.035, min(diamond, crossline));
     float flatland = 1.0 - smoothstep(0.06, 0.34, vForestFlatness);
     diffuseColor.rgb = mix(diffuseColor.rgb,
-      vec3(0.46, 0.25, 0.09), motif * flatland * 0.30);
+      vec3(0.18, 0.38, 0.16), motif * flatland * 0.25);
   `);
   shader.fragmentShader = shader.fragmentShader.replace("#include <emissivemap_fragment>", `
     #include <emissivemap_fragment>
