@@ -1243,19 +1243,20 @@ const terrainMaterial = new THREE.ShaderMaterial({
       emission *= uWaveGlowScale * 0.30 * (1.0 + 1.15 * terrainPeakLight(vTerrainHeight)
         + uHeightHaloStrength *
         pow(smoothstep(1.5, 6.8, max(vTerrainHeight, 0.0)), 1.55));
+      float summitFire = smoothstep(1.05, 2.65, max(vTerrainHeight, 0.0));
+      float firePulse = summitFire * (0.42 + 0.58 * clamp(vAttackAccent, 0.0, 1.0));
+      float fireFacing = 0.30 + 0.70 * keyFacing;
+      vec3 fireColor = mix(vec3(0.88, 0.018, 0.002), vec3(1.0, 0.035, 0.002),
+        smoothstep(1.05, 2.65, vTerrainHeight));
       float patternAlpha = texture2D(uKenePatternTexture, vKeneUv).a;
-      float patternLine = smoothstep(0.06, 0.50, patternAlpha);
+      float patternLine = smoothstep(0.06, 0.50, patternAlpha) * (1.0 - summitFire);
       vec3 keneGold = vec3(1.0, 0.68, 0.015);
       chromaticBase = mix(chromaticBase, keneGold, patternLine * 0.98);
-      // Solar yellow emission belongs only to the kene strokes, never the full grid.
+      chromaticBase = mix(chromaticBase, fireColor, summitFire * 0.96);
+      // Solar yellow emission belongs only to kene strokes below the summits.
       emission += keneGold * patternLine * (1.35 + 0.75 * vAttackAccent);
-      // Restrained volcanic fire is confined to the highest terrain and follows attacks.
-      float summitFire = smoothstep(1.05, 2.65, max(vTerrainHeight, 0.0));
-      float firePulse = summitFire * (0.18 + 0.82 * clamp(vAttackAccent, 0.0, 1.0));
-      float fireFacing = 0.30 + 0.70 * keyFacing;
-      vec3 fireColor = mix(vec3(1.0, 0.12, 0.015), vec3(1.0, 0.42, 0.025),
-        smoothstep(0.85, 2.3, vTerrainHeight));
-      emission += fireColor * firePulse * fireFacing * 0.72;
+      // High summits become red/crimson without amber or green contamination.
+      emission += fireColor * firePulse * fireFacing * 1.25;
       gl_FragColor = vec4(chromaticBase * radiance + emission
         + chromaticBase * (0.24 * vAttackAccent), 1.0);
       #include <tonemapping_fragment>
@@ -1369,8 +1370,9 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
   shader.fragmentShader = shader.fragmentShader.replace("#include <color_fragment>", `
     #include <color_fragment>
     diffuseColor.rgb = vividTerrainColor(vR8A10Spectrum, vSpectrumT) * uR8A10SurfaceAlbedo;
-    // The gold kene graphic is rendered only by the wireframe mask above.
-    // Keep the relief material purely green so its color remains visible.
+    float summitTint = smoothstep(1.05, 2.65, max(vTerrainHeight, 0.0));
+    diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.20, 0.006, 0.001), summitTint * 0.96);
+    // Gold kene remains on lower sections; highest summits stay crimson.
   `);
   shader.fragmentShader = shader.fragmentShader.replace("#include <emissivemap_fragment>", `
     #include <emissivemap_fragment>
@@ -1386,11 +1388,11 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
     totalEmissiveRadiance += uReliefWaveGlowScale * diffuseColor.rgb * (0.16 * vAttackAccent);
     // Red-to-amber summit glow stays local to tall peaks and pulses with stem attacks.
     float summitFire = smoothstep(1.05, 2.65, max(vTerrainHeight, 0.0));
-    float firePulse = summitFire * (0.18 + 0.82 * clamp(vAttackAccent, 0.0, 1.0));
+    float firePulse = summitFire * (0.42 + 0.58 * clamp(vAttackAccent, 0.0, 1.0));
     float fireFacing = 0.30 + 0.70 * litFace;
-    vec3 fireColor = mix(vec3(1.0, 0.12, 0.015), vec3(1.0, 0.42, 0.025),
-      smoothstep(0.85, 2.3, vTerrainHeight));
-    totalEmissiveRadiance += uReliefWaveGlowScale * fireColor * firePulse * fireFacing * 0.82;
+    vec3 fireColor = mix(vec3(0.88, 0.018, 0.002), vec3(1.0, 0.035, 0.002),
+      smoothstep(1.05, 2.65, vTerrainHeight));
+    totalEmissiveRadiance += uReliefWaveGlowScale * fireColor * firePulse * fireFacing * 1.45;
   `);
 };
 reliefSurfaceMaterial.customProgramCacheKey = () => "r8a-hdr-neon-emission-v2";
