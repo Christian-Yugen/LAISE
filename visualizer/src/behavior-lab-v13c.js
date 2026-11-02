@@ -1227,14 +1227,11 @@ const terrainMaterial = new THREE.ShaderMaterial({
       return 0.72 * emberNoise(warped) + 0.28 * emberNoise(warped * 2.1 + vec2(5.2, 1.3));
     }
     float emberCracks(vec2 uv) {
-      float field = emberField(uv);
-      float contour = min(abs(field - 0.43), abs(field - 0.58));
-      return 1.0 - smoothstep(0.018, 0.060, contour);
+      // Broad, softly warped ember areas replace the artificial contour-line pattern.
+      return smoothstep(0.54, 0.82, emberField(uv));
     }
     float emberHalo(vec2 uv) {
-      float field = emberField(uv);
-      float contour = min(abs(field - 0.43), abs(field - 0.58));
-      return exp(-contour * 18.0);
+      return smoothstep(0.30, 0.74, emberField(uv));
     }
     varying vec3 vViewNormal;
     varying vec3 vViewPosition;
@@ -1284,7 +1281,8 @@ const terrainMaterial = new THREE.ShaderMaterial({
       emission += keneGold * patternLine * (1.35 + 0.75 * vAttackAccent);
       float emberGlow = emberHalo(vKeneUv) * summitFire;
       emission += fireColor * emberGlow * firePulse * fireFacing * 0.42;
-      emission += fireColor * crackMask * firePulse * fireFacing * 2.6;
+      // Soft low-intensity ember tint on the wire grid, without red tracer lines.
+      emission += fireColor * emberGlow * firePulse * fireFacing * 0.34;
       gl_FragColor = vec4(chromaticBase * radiance + emission
         + chromaticBase * (0.24 * vAttackAccent), 1.0);
       #include <tonemapping_fragment>
@@ -1412,14 +1410,11 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
       return 0.72 * emberNoise(warped) + 0.28 * emberNoise(warped * 2.1 + vec2(5.2, 1.3));
     }
     float emberCracks(vec2 uv) {
-      float field = emberField(uv);
-      float contour = min(abs(field - 0.43), abs(field - 0.58));
-      return 1.0 - smoothstep(0.018, 0.060, contour);
+      // Broad, softly warped ember areas replace the artificial contour-line pattern.
+      return smoothstep(0.54, 0.82, emberField(uv));
     }
     float emberHalo(vec2 uv) {
-      float field = emberField(uv);
-      float contour = min(abs(field - 0.43), abs(field - 0.58));
-      return exp(-contour * 18.0);
+      return smoothstep(0.30, 0.74, emberField(uv));
     }
   ` + shader.fragmentShader;
   shader.fragmentShader = shader.fragmentShader.replace("#include <color_fragment>", `
@@ -1448,7 +1443,8 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
       clamp(0.55 * crackMask + 0.45 * vAttackAccent, 0.0, 1.0));
     float emberGlow = emberHalo(vForestPatternUv / 14.72 + 0.5) * summitFire;
     totalEmissiveRadiance += uReliefWaveGlowScale * fireColor * emberGlow * firePulse * fireFacing * 0.55;
-    totalEmissiveRadiance += uReliefWaveGlowScale * fireColor * crackMask * firePulse * fireFacing * 3.0;
+    // Diffuse, irregular summit warmth; no sharp red fissure strokes.
+    totalEmissiveRadiance += uReliefWaveGlowScale * fireColor * emberGlow * firePulse * fireFacing * 0.62;
   `);
 };
 reliefSurfaceMaterial.customProgramCacheKey = () => "r8a-hdr-neon-emission-v2";
