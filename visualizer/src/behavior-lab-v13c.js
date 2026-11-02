@@ -428,19 +428,19 @@ frameTerrain();
   reframing it cannot change the apparent side of the illumination.
 */
 const TERRAIN_LIGHTING = Object.freeze({
-  keyIntensity: 4.4,
+  keyIntensity: 3.6,
   fillIntensity: 0.20,
   ambientIntensity: 0.08,
   surfaceAlbedo: 0.26,
   wireShadow: 0.10,
-  wireKey: 4.6,
+  wireKey: 3.7,
   wireFill: 0.08,
-  wireRim: 4.8,
-  peakBoost: 1.0,
-  surfaceLight: 0.50,
-  surfacePeakLight: 1.20,
-  bloomBase: NEON_R8A.neonBloomStrength,
-  bloomEnergy: 0.04,
+  wireRim: 3.9,
+  peakBoost: 0.72,
+  surfaceLight: 0.38,
+  surfacePeakLight: 0.82,
+  bloomBase: NEON_R8A.neonBloomStrength * 0.78,
+  bloomEnergy: 0.025,
   bloomRadius: 0.0,
   bloomThreshold: NEON_R8A.neonBloomThreshold
 });
@@ -1123,7 +1123,7 @@ const terrainWireColorGLSL = `
     return smoothstep(1.5, 6.5, max(height, 0.0));
   }
 `;
-const heightHaloStrengthR16 = new URLSearchParams(window.location.search).get("heightglow") === "1" ? 3.1 : 0;
+const heightHaloStrengthR16 = new URLSearchParams(window.location.search).get("heightglow") === "1" ? 2.3 : 0;
 const terrainMaterial = new THREE.ShaderMaterial({
   vertexColors: true,
   wireframe: true,
@@ -1231,8 +1231,8 @@ const terrainMaterial = new THREE.ShaderMaterial({
       vec3 chromaticBase = vividWireTerrainColor(vSpectrum, vSpectrumT);
       vec3 emission = r8aNeonEmission(chromaticBase, vSpectrumT,
         faceNormal, uTerrainUp, uKeyDirection);
-      emission *= 1.0 + uHeightHaloStrength *
-        pow(smoothstep(1.5, 6.8, max(vTerrainHeight, 0.0)), 1.55);
+      emission *= 0.78 * (1.0 + uHeightHaloStrength *
+        pow(smoothstep(1.5, 6.8, max(vTerrainHeight, 0.0)), 1.55));
       float patternAlpha = texture2D(uKenePatternTexture, vKeneUv).a;
       float patternLine = smoothstep(0.06, 0.50, patternAlpha);
       vec3 keneGold = vec3(0.92, 0.66, 0.16);
@@ -1360,7 +1360,7 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
       * (uTerrainSurfaceLight + uTerrainSurfacePeakLight * terrainPeakLight(vTerrainHeight)
         + 0.35 * uHeightHaloStrength *
           pow(smoothstep(1.5, 6.8, max(vTerrainHeight, 0.0)), 1.55));
-    totalEmissiveRadiance += ${NEON_R8A.surfaceEmissionFraction.toFixed(4)}
+    totalEmissiveRadiance += ${NEON_R8A.surfaceEmissionFraction.toFixed(4)} * 0.78
       * r8aNeonEmission(diffuseColor.rgb, vSpectrumT,
         normal, uTerrainUp, uTerrainKeyDirection);
     totalEmissiveRadiance += diffuseColor.rgb * (0.16 * vAttackAccent);
