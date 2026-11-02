@@ -717,8 +717,9 @@ const forestPaletteColors = [
 // Keep the same dark-green palette in every forest palette mode.
 const forestPaletteV1 = forestPaletteColors.slice();
 
-const forestPaletteEnabled =
-  new URLSearchParams(window.location.search).get("palette") !== "original";
+// R36 keeps the green forest palette fixed; legacy palette query values
+// must not reintroduce the warm orange spectrum.
+const forestPaletteEnabled = true;
 
 const spectrumStops = forestPaletteEnabled
   ? originalSpectrumStops.map((stop, index) => ({
