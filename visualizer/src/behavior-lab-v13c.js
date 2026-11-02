@@ -430,15 +430,15 @@ frameTerrain();
 const TERRAIN_LIGHTING = Object.freeze({
   keyIntensity: 2.9,
   fillIntensity: 0.20,
-  ambientIntensity: 0.025,
-  surfaceAlbedo: 0.18,
+  ambientIntensity: 0.018,
+  surfaceAlbedo: 0.17,
   wireShadow: 0.10,
-  wireKey: 1.55,
+  wireKey: 2.20,
   wireFill: 0.08,
-  wireRim: 1.65,
-  peakBoost: 0.22,
-  surfaceLight: 0.28,
-  surfacePeakLight: 0.55,
+  wireRim: 2.20,
+  peakBoost: 0.30,
+  surfaceLight: 0.22,
+  surfacePeakLight: 0.45,
   bloomBase: NEON_R8A.neonBloomStrength * 0.58,
   bloomEnergy: 0.015,
   bloomRadius: 0.0,
@@ -1092,8 +1092,8 @@ const terrainColorGLSL = `
     // Forest moss palette: dark canopy shadows into softly lit moss.
     float sourceLevel = clamp(max(max(source.r, source.g), source.b), 0.0, 1.0);
     float gradient = clamp(0.72 * spectrumT + 0.28 * sourceLevel, 0.0, 1.0);
-    vec3 forestDeep = vec3(0.002, 0.014, 0.003);
-    vec3 forestMid = vec3(0.045, 0.165, 0.032);
+    vec3 forestDeep = vec3(0.001, 0.008, 0.002);
+    vec3 forestMid = vec3(0.030, 0.105, 0.022);
     return mix(forestDeep, forestMid, smoothstep(0.0, 1.0, gradient));
   }
   float terrainPeakLight(float height) {
@@ -1240,7 +1240,7 @@ const terrainMaterial = new THREE.ShaderMaterial({
       vec3 emission = r8aNeonEmission(chromaticBase, vSpectrumT,
         faceNormal, uTerrainUp, uKeyDirection);
       emission = vec3(emission.r * 0.22, emission.g * 0.62, emission.b * 0.18);
-      emission *= uWaveGlowScale * 0.28 * (1.0 + uHeightHaloStrength *
+      emission *= uWaveGlowScale * 0.38 * (1.0 + uHeightHaloStrength *
         pow(smoothstep(1.5, 6.8, max(vTerrainHeight, 0.0)), 1.55));
       float patternAlpha = texture2D(uKenePatternTexture, vKeneUv).a;
       float patternLine = smoothstep(0.06, 0.50, patternAlpha);
