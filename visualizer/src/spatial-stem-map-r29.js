@@ -39,35 +39,39 @@ function sampleDrive(rows, time) {
   return rows[low];
 }
 
-function drawStem(context, point, w, h) {
+function drawStem(context, point, w, h, behind = false) {
   const az = point.azimuth * Math.PI / 180;
   const el = clamp(point.elevation, -60, 75) * Math.PI / 180;
   const horizontal = Math.sin(az) * Math.cos(el);
   const vertical = Math.sin(el);
-  const frontness = Math.cos(az) * Math.cos(el);
+  const rawFrontness = Math.cos(az) * Math.cos(el);
+  const frontness = behind ? -Math.abs(rawFrontness) : rawFrontness;
   const distanceScale = clamp(1.2 / Math.max(.65, point.distance), .62, 1.34);
   const perspective = clamp(1 + frontness * .10, .88, 1.12);
   const px = w / 2 + horizontal * w * .405 * perspective;
   const py = h * .51 - vertical * h * .365 * perspective;
-  const depthScale = distanceScale * (.80 + Math.max(0, frontness) * .26);
+  const rearEmphasis = behind ? 1.42 : 1;
+  const depthScale = distanceScale * (.80 + Math.max(0, frontness) * .26) * rearEmphasis;
   const strength = clamp(Math.sqrt(point.drive / Math.max(point.maxDrive, .00001)), .18, 1);
   const radius = (12 + 7 * strength) * depthScale;
   const color = PALETTE[point.source] || "#b8d9e4";
-  const alpha = (.48 + .46 * strength) * (frontness < 0 ? .68 : 1);
+  const alpha = Math.min(1, (.48 + .46 * strength) * (behind ? 1.18 : 1));
 
   context.save();
   context.globalCompositeOperation = "screen";
-  const halo = context.createRadialGradient(px, py, radius * .12, px, py, radius * 3.25);
-  halo.addColorStop(0, color + "cc");
-  halo.addColorStop(.25, color + "75");
+  const haloReach = behind ? 4.6 : 3.25;
+  const halo = context.createRadialGradient(px, py, radius * .10, px, py, radius * haloReach);
+  halo.addColorStop(0, color + (behind ? "ff" : "cc"));
+  halo.addColorStop(.26, color + (behind ? "b0" : "75"));
+  halo.addColorStop(.66, color + (behind ? "42" : "20"));
   halo.addColorStop(1, color + "00");
   context.fillStyle = halo;
   context.beginPath();
-  context.arc(px, py, radius * 3.25, 0, Math.PI * 2);
+  context.arc(px, py, radius * haloReach, 0, Math.PI * 2);
   context.fill();
 
   context.globalAlpha = alpha;
-  context.shadowBlur = (18 + 22 * strength) * depthScale;
+  context.shadowBlur = (18 + 22 * strength) * depthScale * (behind ? 1.30 : 1);
   context.shadowColor = color;
   context.fillStyle = color;
   context.beginPath();
@@ -105,7 +109,7 @@ export function createSpatialStemMapR29(root, data) {
     const image = matteContext.getImageData(0, 0, matteCanvas.width, matteCanvas.height);
     for (let i = 0; i < image.data.length; i += 4) {
       const intensity = Math.max(image.data[i], image.data[i + 1], image.data[i + 2]);
-      const coverage = intensity === 0 ? 0 : Math.pow(Math.min(1, intensity / 5), .20);
+      const coverage = intensity === 0 ? 0 : Math.pow(Math.min(1, intensity / 5), .08);
       image.data[i + 3] = Math.round(image.data[i + 3] * coverage);
     }
     matteContext.putImageData(image, 0, 0);
@@ -198,13 +202,16 @@ export function createSpatialStemMapR29(root, data) {
       }];
     });
     const isBehind = point => {
+      // The listener's lead vocal is visually placed behind per the listening review;
+      // its original automation coordinates and rendered audio remain unchanged.
+      if (point.source === "lead_vocal") return true;
       const azimuth = point.azimuth * Math.PI / 180;
       const elevation = clamp(point.elevation, -60, 75) * Math.PI / 180;
       return Math.cos(azimuth) * Math.cos(elevation) < 0;
     };
-    for (const point of points.filter(isBehind)) drawStem(context, point, w, h);
+    for (const point of points.filter(isBehind)) drawStem(context, point, w, h, true);
     if (silhouette) context.drawImage(silhouette, 0, 0, w, h);
-    for (const point of points.filter(point => !isBehind(point))) drawStem(context, point, w, h);
+    for (const point of points.filter(point => !isBehind(point))) drawStem(context, point, w, h, false);
 
     const entries = sorted.map(point => {
       const item = document.createElement("span");
