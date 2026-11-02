@@ -1112,7 +1112,9 @@ const terrainMaterial = new THREE.ShaderMaterial({
   vertexColors: true,
   wireframe: true,
   side: THREE.DoubleSide,
-  transparent: false,
+  // Render only the gold kene mask; the supporting grid no longer washes
+  // out the green relief beneath it.
+  transparent: true,
   depthTest: true,
   depthWrite: false,
   // Global atmospheric fog suppressed the old lines while the projected
@@ -1208,28 +1210,14 @@ const terrainMaterial = new THREE.ShaderMaterial({
       float peakGain = 1.0 + uPeakBoost * terrainPeakLight(vTerrainHeight);
       float radiance = uShadow + uFill * fill
         + (uKey * key + uRim * litRim) * peakGain;
-      // Reflected color and selective linear HDR emission remain independent.
-      // Only locally convex, favorably lit regions approach a white-hot core.
-      // Tone mapping and sRGB output remain in the existing final OutputPass.
-      float crest = smoothstep(1.15, 3.4, max(vTerrainHeight, 0.0));
-      float goldLight = clamp(key * 0.62 + fill * 0.16 + litRim * 0.22
-        + crest * 0.18, 0.0, 1.0);
-      vec3 copperLine = vec3(0.558, 0.258, 0.029); // #C58B30
-      vec3 goldLine = vec3(0.659, 0.434, 0.038);   // #D4AF37
-      vec3 chromaticBase = mix(copperLine, goldLine, goldLight);
+      // Only the kene pattern is visible on the wireframe. The solid green
+      // relief remains the base; ordinary grid lines do not tint or whiten it.
       float patternAlpha = texture2D(uKenePatternTexture, vKeneUv).a;
       float patternLine = smoothstep(0.06, 0.50, patternAlpha);
-      // Saturated gold is applied to the graphic mask only.
       vec3 keneGold = vec3(0.92, 0.66, 0.16);
-      chromaticBase = mix(chromaticBase, keneGold, patternLine * 0.96);
-      // Keep the supporting grid subdued so the green relief remains clear.
-      float subduedWireRadiance = radiance * 0.20;
-      // No white neon emission on wire lines; only the motif gets a golden
-      // luminous accent, while crests stay within the same gold palette.
-      vec3 emission = keneGold * patternLine * (0.62 + 0.38 * vAttackAccent);
-      emission += goldLine * crest * (0.08 + 0.20 * vAttackAccent);
-      gl_FragColor = vec4(chromaticBase * subduedWireRadiance + emission
-        + chromaticBase * (0.045 * vAttackAccent), 1.0);
+      float goldPulse = 0.82 + 0.18 * vAttackAccent;
+      vec3 goldEmission = keneGold * patternLine * goldPulse;
+      gl_FragColor = vec4(goldEmission, patternLine * 0.96);
       #include <tonemapping_fragment>
       #include <colorspace_fragment>
     }
@@ -1339,14 +1327,8 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
   shader.fragmentShader = shader.fragmentShader.replace("#include <color_fragment>", `
     #include <color_fragment>
     diffuseColor.rgb = vividTerrainColor(vR8A10Spectrum, vSpectrumT) * uR8A10SurfaceAlbedo;
-    // Kene-inspired geometric linework, kept subtle on flatter clearings.
-    vec2 cell = fract(vForestPatternUv) - 0.5;
-    float diamond = min(abs(cell.x - cell.y), abs(cell.x + cell.y));
-    float crossline = min(abs(cell.x), abs(cell.y));
-    float motif = 1.0 - smoothstep(0.012, 0.035, min(diamond, crossline));
-    float flatland = 1.0 - smoothstep(0.06, 0.34, vForestFlatness);
-    diffuseColor.rgb = mix(diffuseColor.rgb,
-      vec3(0.18, 0.38, 0.16), motif * flatland * 0.25);
+    // The gold kene graphic is rendered only by the wireframe mask above.
+    // Keep the relief material purely green so its color remains visible.
   `);
   shader.fragmentShader = shader.fragmentShader.replace("#include <emissivemap_fragment>", `
     #include <emissivemap_fragment>
