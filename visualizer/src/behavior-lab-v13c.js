@@ -436,7 +436,7 @@ const TERRAIN_LIGHTING = Object.freeze({
   wireKey: 3.25,
   wireFill: 0.08,
   wireRim: 3.35,
-  peakBoost: 0.42,
+  peakBoost: 0.82,
   surfaceLight: 0.28,
   surfacePeakLight: 0.55,
   bloomBase: NEON_R8A.neonBloomStrength * 0.58,
@@ -1120,7 +1120,7 @@ const terrainWireColorGLSL = `
     return vivid * peak * (1.0 + 0.15 * gold);
   }
   float terrainPeakLight(float height) {
-    return smoothstep(1.5, 6.5, max(height, 0.0));
+    return smoothstep(0.55, 2.65, max(height, 0.0));
   }
 `;
 const heightHaloStrengthR16 = new URLSearchParams(window.location.search).get("heightglow") === "1" ? 1.6 : 0;
@@ -1240,7 +1240,8 @@ const terrainMaterial = new THREE.ShaderMaterial({
       vec3 emission = r8aNeonEmission(chromaticBase, vSpectrumT,
         faceNormal, uTerrainUp, uKeyDirection);
       emission = vec3(emission.r * 0.22, emission.g * 0.62, emission.b * 0.18);
-      emission *= uWaveGlowScale * 0.30 * (1.0 + uHeightHaloStrength *
+      emission *= uWaveGlowScale * 0.30 * (1.0 + 1.15 * terrainPeakLight(vTerrainHeight)
+        + uHeightHaloStrength *
         pow(smoothstep(1.5, 6.8, max(vTerrainHeight, 0.0)), 1.55));
       float patternAlpha = texture2D(uKenePatternTexture, vKeneUv).a;
       float patternLine = smoothstep(0.06, 0.50, patternAlpha);
