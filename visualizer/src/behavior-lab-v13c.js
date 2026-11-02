@@ -1212,22 +1212,21 @@ const terrainMaterial = new THREE.ShaderMaterial({
       // Only locally convex, favorably lit regions approach a white-hot core.
       // Tone mapping and sRGB output remain in the existing final OutputPass.
       float crest = smoothstep(1.15, 3.4, max(vTerrainHeight, 0.0));
-      float goldLight = clamp(key * 0.62 + fill * 0.16 + litRim * 0.22
-        + crest * 0.18, 0.0, 1.0);
-      vec3 copperLine = vec3(0.558, 0.258, 0.029); // #C58B30
-      vec3 goldLine = vec3(0.659, 0.434, 0.038);   // #D4AF37
-      vec3 chromaticBase = mix(copperLine, goldLine, goldLight);
+      vec3 chromaticBase = vividTerrainColor(vSpectrum, vSpectrumT);
+      vec3 crestGreen = mix(vec3(0.10, 0.30, 0.10), vec3(0.22, 0.46, 0.19),
+        smoothstep(0.0, 4.0, max(vTerrainHeight, 0.0)));
+      chromaticBase = mix(chromaticBase, crestGreen, crest * 0.48);
       float patternAlpha = texture2D(uKenePatternTexture, vKeneUv).a;
       float patternLine = smoothstep(0.06, 0.50, patternAlpha);
+      // Warm gold is restricted to UV-marked motif pixels on wire segments.
       vec3 keneGold = vec3(0.92, 0.66, 0.16);
-      chromaticBase = mix(chromaticBase, keneGold, patternLine * 0.78);
+      chromaticBase = mix(chromaticBase, keneGold, patternLine * 0.94);
       vec3 emission = r8aNeonEmission(chromaticBase, vSpectrumT,
         faceNormal, uTerrainUp, uKeyDirection);
       emission *= 1.0 + uHeightHaloStrength *
         pow(smoothstep(1.0, 3.7, max(vTerrainHeight, 0.0)), 1.8);
-      // The motif is sampled only on rasterized wireframe segments.
-      emission += keneGold * patternLine * (1.25 + 1.8 * vAttackAccent);
-      emission += goldLine * crest * (0.12 + 0.45 * vAttackAccent);
+      emission += keneGold * patternLine * (1.35 + 1.9 * vAttackAccent);
+      emission += crestGreen * crest * (0.12 + 0.45 * vAttackAccent);
       gl_FragColor = vec4(chromaticBase * radiance + emission
         + chromaticBase * (0.35 * vAttackAccent), 1.0);
       #include <tonemapping_fragment>
