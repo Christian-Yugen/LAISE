@@ -1209,19 +1209,16 @@ const terrainMaterial = new THREE.ShaderMaterial({
     uniform sampler2D uKenePatternTexture;
     ${terrainWireColorGLSL}
     ${neonEmissionGLSL}
-    vec2 crackHash(vec2 p) {
-      return fract(sin(vec2(dot(p, vec2(127.1, 311.7)), dot(p, vec2(269.5, 183.3)))) * 43758.5453);
-    }
     float emberCracks(vec2 uv) {
-      vec2 p = uv * vec2(34.0, 17.0); vec2 cell = floor(p); vec2 local = fract(p);
-      float nearest = 10.0; float second = 10.0;
-      for (int y = -1; y <= 1; y++) for (int x = -1; x <= 1; x++) {
-        vec2 offset = vec2(float(x), float(y));
-        vec2 delta = offset + crackHash(cell + offset) - local;
-        float d = dot(delta, delta);
-        if (d < nearest) { second = nearest; nearest = d; } else if (d < second) second = d;
-      }
-      return 1.0 - smoothstep(0.025, 0.18, sqrt(second) - sqrt(nearest));
+      // Warped continuous paths create flowing fissures rather than isolated spots.
+      vec2 p = uv * 6.2831853;
+      float warpA = sin(p.y * 1.65 + sin(p.x * 0.62) * 1.45);
+      float warpB = sin(p.x * 1.42 + sin(p.y * 0.74) * 1.25);
+      float phaseA = p.x * 7.4 + warpA * 1.45 + sin(p.y * 4.1) * 0.42;
+      float phaseB = p.y * 6.2 + warpB * 1.35 + sin(p.x * 3.8) * 0.36;
+      float veinA = 1.0 - smoothstep(0.025, 0.14, abs(sin(phaseA)));
+      float veinB = 1.0 - smoothstep(0.035, 0.16, abs(sin(phaseB)));
+      return max(veinA, veinB * 0.72);
     }
     varying vec3 vViewNormal;
     varying vec3 vViewPosition;
@@ -1379,19 +1376,16 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
     uniform float uReliefWaveGlowScale;
     ${terrainColorGLSL}
     ${neonEmissionGLSL}
-    vec2 crackHash(vec2 p) {
-      return fract(sin(vec2(dot(p, vec2(127.1, 311.7)), dot(p, vec2(269.5, 183.3)))) * 43758.5453);
-    }
     float emberCracks(vec2 uv) {
-      vec2 p = uv * vec2(34.0, 17.0); vec2 cell = floor(p); vec2 local = fract(p);
-      float nearest = 10.0; float second = 10.0;
-      for (int y = -1; y <= 1; y++) for (int x = -1; x <= 1; x++) {
-        vec2 offset = vec2(float(x), float(y));
-        vec2 delta = offset + crackHash(cell + offset) - local;
-        float d = dot(delta, delta);
-        if (d < nearest) { second = nearest; nearest = d; } else if (d < second) second = d;
-      }
-      return 1.0 - smoothstep(0.025, 0.18, sqrt(second) - sqrt(nearest));
+      // Warped continuous paths create flowing fissures rather than isolated spots.
+      vec2 p = uv * 6.2831853;
+      float warpA = sin(p.y * 1.65 + sin(p.x * 0.62) * 1.45);
+      float warpB = sin(p.x * 1.42 + sin(p.y * 0.74) * 1.25);
+      float phaseA = p.x * 7.4 + warpA * 1.45 + sin(p.y * 4.1) * 0.42;
+      float phaseB = p.y * 6.2 + warpB * 1.35 + sin(p.x * 3.8) * 0.36;
+      float veinA = 1.0 - smoothstep(0.025, 0.14, abs(sin(phaseA)));
+      float veinB = 1.0 - smoothstep(0.035, 0.16, abs(sin(phaseB)));
+      return max(veinA, veinB * 0.72);
     }
   ` + shader.fragmentShader;
   shader.fragmentShader = shader.fragmentShader.replace("#include <color_fragment>", `
@@ -1413,7 +1407,7 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
     totalEmissiveRadiance += uReliefWaveGlowScale * diffuseColor.rgb * (0.16 * vAttackAccent);
     // Red-to-amber summit glow stays local to tall peaks and pulses with stem attacks.
     float summitFire = smoothstep(0.72, 2.35, max(vTerrainHeight, 0.0));
-    float crackMask = emberCracks(vForestPatternUv) * summitFire;
+    float crackMask = emberCracks(vForestPatternUv / 14.72 + 0.5) * summitFire;
     float firePulse = 0.32 + 0.68 * clamp(vAttackAccent, 0.0, 1.0);
     float fireFacing = 0.30 + 0.70 * litFace;
     vec3 fireColor = mix(vec3(0.82, 0.008, 0.004), vec3(1.0, 0.075, 0.002),
