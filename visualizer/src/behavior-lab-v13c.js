@@ -48,6 +48,19 @@ const timelineFill =
 
 const energyLabel =
   document.querySelector("#energy");
+const activeStemsEnabled = new URLSearchParams(window.location.search).get("spatialmap") === "1";
+document.documentElement.classList.toggle("active-stems-enabled", activeStemsEnabled);
+const activeStemsPanel = document.querySelector("#activeStemsPanel");
+if (activeStemsEnabled && activeStemsPanel) activeStemsPanel.hidden = false;
+const activeStemsList = document.querySelector("#activeStemsList");
+const activeStemAnchor = document.querySelector("#activeStemAnchor");
+const activeStemCount = document.querySelector("#activeStemCount");
+const activeStemsToggle = activeStemsPanel?.querySelector("button");
+activeStemsToggle?.addEventListener("click", () => {
+  const collapsed = activeStemsPanel.classList.toggle("collapsed");
+  activeStemsToggle.setAttribute("aria-expanded", String(!collapsed));
+  activeStemsToggle.setAttribute("aria-label", collapsed ? "Expandir lista de stems" : "Recolher lista de stems");
+});
 
 // R28 presentation experiment: relocate the existing controls, preserving
 // their handlers, IDs, playback timing, and seek behavior.
@@ -2150,6 +2163,8 @@ let previousTime = 0;
 ========================================================= */
 
 let behaviorTimelineV13C = null;
+let activeStemBehaviorData = null;
+let lastActiveStemRender = -Infinity;
 // LAISE_R9_EVENT_DETAIL: independent, additive visual attack packets.
 const eventWavesEnabledR9 = new URLSearchParams(window.location.search).get("events") === "1";
 const stemFieldEnabledR13 = eventWavesEnabledR9 &&
@@ -2586,6 +2601,7 @@ fetch(
     }
 
 
+    activeStemBehaviorData = data.behaviors;
     behaviorTimelineV13C =
       new BehaviorTimelineV13C(
         // LAISE_PERCUSSION_MOTION_TEST
@@ -2822,6 +2838,48 @@ function updateSoundWaves(delta, flushPause = false) {
 
 
 
+function sampleActiveStemDrive(rows, time) {
+  if (!rows?.length || time < rows[0][0]) return null;
+  let low = 0, high = rows.length - 1;
+  while (low < high) {
+    const mid = Math.ceil((low + high) / 2);
+    if (rows[mid][0] <= time) low = mid;
+    else high = mid - 1;
+  }
+  return rows[low];
+}
+
+function renderActiveStemList(time) {
+  if (!activeStemsEnabled || !activeStemBehaviorData || Math.abs(time - lastActiveStemRender) < .12) return;
+  lastActiveStemRender = time;
+  const active = new Map();
+  for (const behavior of activeStemBehaviorData) {
+    let drive = 0;
+    if (time >= behavior.startTime && time < behavior.endTime) {
+      const row = sampleActiveStemDrive(behavior.continuous, time);
+      if (row) drive = row[1] || 0;
+    }
+    for (const attack of behavior.attacks ?? []) {
+      const age = time - attack.time;
+      if (age < 0 || age > .35) continue;
+      const pulse = (attack.sourceDrive || attack.drive || 0) * Math.exp(-age / .17);
+      if (pulse > drive) drive = pulse;
+    }
+    if (drive <= 0) continue;
+    const previous = active.get(behavior.source);
+    if (!previous || drive > previous.drive) active.set(behavior.source, { source: behavior.source, drive });
+  }
+  const sorted = [...active.values()].sort((a, b) => a.drive - b.drive);
+  activeStemsList?.replaceChildren(...sorted.map(({ source }) => {
+    const item = document.createElement("span");
+    item.className = "active-stem-item";
+    item.textContent = source.replaceAll("_", " ");
+    return item;
+  }));
+  if (activeStemAnchor) activeStemAnchor.textContent = sorted.at(-1)?.source.replaceAll("_", " ") || "—";
+  if (activeStemCount) activeStemCount.textContent = sorted.length + (sorted.length === 1 ? " fonte ativa" : " fontes ativas");
+}
+
 function animate() {
 
   requestAnimationFrame(
@@ -2877,6 +2935,7 @@ function animate() {
 
 
   updateSoundWaves(delta);
+  renderActiveStemList(audio.currentTime);
 
   // Keep the approved projection gain calibrated to the original pose.
   // Rotation changes presentation only, never the musical displacement.
