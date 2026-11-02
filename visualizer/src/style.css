@@ -132,9 +132,33 @@ body {
 }
 
 .status-title {
-  font-size: 9px;
-  letter-spacing: 0.22em;
-  color: #83958e;
+  position: fixed;
+  top: 26px;
+  left: 50%;
+  z-index: 8;
+  width: max-content;
+  max-width: calc(100vw - 28px);
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: clamp(15px, 1.65vw, 23px);
+  font-weight: 650;
+  line-height: 1.2;
+  letter-spacing: .20em;
+  white-space: nowrap;
+  background: linear-gradient(95deg, #f1b867 0%, #fff0ce 47%, #6de5b7 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, .95)) drop-shadow(0 0 12px rgba(83, 218, 174, .24));
+}
+.status-title::after {
+  content: "";
+  display: block;
+  width: 58%;
+  height: 1px;
+  margin: 7px auto 0;
+  background: linear-gradient(90deg, transparent, rgba(241, 184, 103, .82), rgba(109, 229, 183, .82), transparent);
 }
 
 .status-value {
@@ -447,3 +471,228 @@ body {
   }
 
 }
+
+/* R12 perspective composition: clear the terrain's foreground. */
+.depth-track-info { display: none; }
+.perspective-depth-r12 .depth-track-info {
+  display: grid;
+  justify-items: end;
+  gap: 3px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  max-width: min(360px, 45vw);
+  margin-left: auto;
+  text-shadow: 0 1px 5px #020706;
+}
+.perspective-depth-r12 .depth-track-info small {
+  font-size: 9px;
+  letter-spacing: .17em;
+  color: #8bafa6;
+}
+.perspective-depth-r12 .depth-track-info strong {
+  font-size: clamp(12px, 1vw, 16px);
+  font-weight: 500;
+  color: #e8f7f0;
+}
+.perspective-depth-r12 .depth-track-info span {
+  font-size: 9px;
+  letter-spacing: .12em;
+  color: #c9a46d;
+}
+.perspective-depth-r12 .hud {
+  left: max(24px, 3vw);
+  right: max(24px, 3vw);
+  bottom: 10px;
+  min-height: 42px;
+  display: block;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  backdrop-filter: none;
+  box-shadow: none;
+  overflow: visible;
+}
+.perspective-depth-r12 .hud .now-playing { display: none !important; }
+.perspective-depth-r12 .hud .progress-area {
+  padding: 0;
+  border: 0;
+  gap: 12px;
+}
+.perspective-depth-r12 .hud .progress-track {
+  padding: 0;
+}
+.perspective-depth-r12 .hud .timeline {
+  height: 4px;
+  background: rgba(190, 224, 215, .25);
+  box-shadow: 0 1px 5px #020706;
+}
+.perspective-depth-r12 .hud .time {
+  margin-top: 5px;
+  color: #c4d9d0;
+  text-shadow: 0 1px 5px #020706;
+}
+@media (max-width: 600px) {
+  .perspective-depth-r12 .status { right: 18px; top: 18px; }
+  .perspective-depth-r12 .depth-track-info { max-width: 60vw; }
+}
+
+
+/* R28: compact player by the track title, with no bottom overlay. */
+.top-controls-r28 .hud { display: none !important; }
+.top-controls-r28 .status {
+  width: min(340px, 40vw);
+}
+.top-controls-r28 .depth-track-info {
+  display: grid;
+  justify-items: end;
+  max-width: 100%;
+}
+.top-controls-r28 #depthMasterLabel { display: none; }
+.top-controls-r28 .status .progress-area {
+  width: min(245px, 100%);
+  padding: 0;
+  margin-top: 5px;
+  border: 0;
+  display: block;
+}
+.top-controls-r28 .status .progress-track {
+  width: 100%;
+}
+.top-controls-r28 .status .timeline {
+  height: 4px;
+  width: 100%;
+  background: rgba(190, 224, 215, .28);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .65);
+}
+.top-controls-r28 .status .time {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+  font-size: 9px;
+  color: #c4d9d0;
+}
+.top-controls-r28 #startButton {
+  position: absolute;
+  top: 52px;
+  right: calc(100% + 12px);
+  left: auto;
+  width: 36px;
+  height: 36px;
+}
+@media (max-width: 600px) {
+  .top-controls-r28 .status {
+    width: min(270px, 58vw);
+    right: 18px;
+  }
+  .top-controls-r28 #startButton {
+    top: 50px;
+    right: calc(100% + 8px);
+    width: 32px;
+    height: 32px;
+  }
+  .top-controls-r28 .status .progress-area { width: min(210px, 100%); }
+}
+
+/* R36: keep the active-stem readout as text, without binaural markers. */
+.active-stems-panel { display: none; }
+.active-stems-enabled .active-stems-panel:not([hidden]) {
+  display: block;
+  position: absolute;
+  left: 44px;
+  top: 34px;
+  z-index: 7;
+  width: 170px;
+  color: #d5e4dc;
+  border: 1px solid rgba(92, 160, 129, .30);
+  border-radius: 13px;
+  background: linear-gradient(155deg, rgba(3, 13, 10, .88), rgba(2, 8, 8, .80));
+  box-shadow: 0 12px 36px rgba(0, 0, 0, .34);
+  backdrop-filter: blur(9px);
+  overflow: hidden;
+}
+.active-stems-heading {
+  min-height: 34px;
+  padding: 8px 10px 7px 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #bad2c6;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: .14em;
+}
+.active-stems-heading button {
+  border: 0;
+  background: transparent;
+  color: #9bcab1;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+}
+.active-stems-content { padding: 0 12px 11px; }
+.active-stems-caption {
+  display: block;
+  margin-bottom: 7px;
+  color: #86ac98;
+  font-size: 8px;
+  letter-spacing: .13em;
+}
+.active-stems-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-height: 18px;
+}
+.active-stem-item {
+  color: #d9e9e1;
+  font-size: 12px;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+.active-stems-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 9px;
+  padding-top: 7px;
+  border-top: 1px solid rgba(154, 198, 171, .14);
+  color: #adc9bb;
+  font-size: 9px;
+  font-weight: 600;
+}
+.active-stems-bottom span:first-child { text-transform: capitalize; }
+.active-stems-bottom span:last-child { color: #8ca99a; }
+.active-stems-panel.collapsed .active-stems-content { display: none; }
+.active-stems-panel.collapsed .active-stems-heading button { transform: rotate(180deg); }
+@media (max-width: 600px) {
+  .active-stems-enabled .active-stems-panel:not([hidden]) {
+    left: 18px;
+    top: 18px;
+    width: min(170px, 46vw);
+  }
+  .active-stem-item { font-size: 10px; }
+}
+
+@media (max-width: 600px) {
+  .status-title {
+    top: 17px;
+    font-size: clamp(11px, 3vw, 16px);
+    letter-spacing: .12em;
+  }
+}
+
+/* R36 rainforest terrain visual identity */
+.status-title {
+  color: #ffe0a3 !important;
+  text-shadow: 0 0 18px rgba(255, 145, 47, .38), 0 2px 12px #000;
+}
+.active-stems-enabled .active-stems-panel:not([hidden]) {
+  border-color: rgba(191, 126, 55, .48);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, .42), inset 0 0 24px rgba(117, 75, 34, .11);
+}
+.active-stems-heading { color: #e5c18b; }
+.active-stems-heading button { color: #e9a24d; }
+.active-stems-caption { color: #c39359; }
+.active-stem-item { color: #e8ddc7; }
+.active-stems-bottom { border-top-color: rgba(190, 137, 77, .22); color: #d9c29b; }
+.active-stems-bottom span:last-child { color: #b69a6e; }

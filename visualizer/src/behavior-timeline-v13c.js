@@ -22,6 +22,8 @@ export class BehaviorTimelineV13C {
 
 
     this.data = data;
+    this.stemField = typeof window !== "undefined" &&
+      new URLSearchParams(window.location.search).get("stemfield") === "1";
 
     this.kImpulse =
       data.calibration.kImpulse;
@@ -716,10 +718,10 @@ export class BehaviorTimelineV13C {
 
 
     const anchorX =
-      this.anchorX;
+      this.stemField ? 0 : this.anchorX;
 
     const anchorZ =
-      this.anchorZ;
+      this.stemField ? 0 : this.anchorZ;
 
 
     /*
