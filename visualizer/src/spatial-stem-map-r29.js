@@ -109,7 +109,7 @@ export function createSpatialStemMapR29(root, data) {
     const image = matteContext.getImageData(0, 0, matteCanvas.width, matteCanvas.height);
     for (let i = 0; i < image.data.length; i += 4) {
       const intensity = Math.max(image.data[i], image.data[i + 1], image.data[i + 2]);
-      const coverage = intensity === 0 ? 0 : Math.pow(Math.min(1, intensity / 5), .08);
+      const coverage = intensity === 0 ? 0 : Math.pow(Math.min(1, intensity / 5), .20);
       image.data[i + 3] = Math.round(image.data[i + 3] * coverage);
     }
     matteContext.putImageData(image, 0, 0);
