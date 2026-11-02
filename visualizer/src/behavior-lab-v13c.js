@@ -430,13 +430,13 @@ frameTerrain();
 const TERRAIN_LIGHTING = Object.freeze({
   keyIntensity: 2.9,
   fillIntensity: 0.20,
-  ambientIntensity: 0.045,
-  surfaceAlbedo: 0.22,
+  ambientIntensity: 0.025,
+  surfaceAlbedo: 0.18,
   wireShadow: 0.10,
-  wireKey: 2.3,
+  wireKey: 1.55,
   wireFill: 0.08,
-  wireRim: 2.4,
-  peakBoost: 0.36,
+  wireRim: 1.65,
+  peakBoost: 0.22,
   surfaceLight: 0.28,
   surfacePeakLight: 0.55,
   bloomBase: NEON_R8A.neonBloomStrength * 0.58,
@@ -446,7 +446,7 @@ const TERRAIN_LIGHTING = Object.freeze({
 });
 
 const terrainHemisphereLight = new THREE.HemisphereLight(
-  0x9fcf78, 0x030604, TERRAIN_LIGHTING.ambientIntensity
+  0x83bb5d, 0x010201, TERRAIN_LIGHTING.ambientIntensity
 );
 scene.add(terrainHemisphereLight);
 
@@ -1092,8 +1092,8 @@ const terrainColorGLSL = `
     // Forest moss palette: dark canopy shadows into softly lit moss.
     float sourceLevel = clamp(max(max(source.r, source.g), source.b), 0.0, 1.0);
     float gradient = clamp(0.72 * spectrumT + 0.28 * sourceLevel, 0.0, 1.0);
-    vec3 forestDeep = vec3(0.008, 0.035, 0.009);
-    vec3 forestMid = vec3(0.070, 0.235, 0.055);
+    vec3 forestDeep = vec3(0.002, 0.014, 0.003);
+    vec3 forestMid = vec3(0.045, 0.165, 0.032);
     return mix(forestDeep, forestMid, smoothstep(0.0, 1.0, gradient));
   }
   float terrainPeakLight(float height) {
@@ -1239,7 +1239,8 @@ const terrainMaterial = new THREE.ShaderMaterial({
       vec3 chromaticBase = vividWireTerrainColor(vSpectrum, vSpectrumT);
       vec3 emission = r8aNeonEmission(chromaticBase, vSpectrumT,
         faceNormal, uTerrainUp, uKeyDirection);
-      emission *= uWaveGlowScale * 0.42 * (1.0 + uHeightHaloStrength *
+      emission = vec3(emission.r * 0.22, emission.g * 0.62, emission.b * 0.18);
+      emission *= uWaveGlowScale * 0.28 * (1.0 + uHeightHaloStrength *
         pow(smoothstep(1.5, 6.8, max(vTerrainHeight, 0.0)), 1.55));
       float patternAlpha = texture2D(uKenePatternTexture, vKeneUv).a;
       float patternLine = smoothstep(0.06, 0.50, patternAlpha);
@@ -1247,7 +1248,7 @@ const terrainMaterial = new THREE.ShaderMaterial({
       chromaticBase = mix(chromaticBase, keneGold, patternLine * 0.94);
       emission += keneGold * patternLine * (0.48 + 0.32 * vAttackAccent);
       gl_FragColor = vec4(chromaticBase * radiance + emission
-        + chromaticBase * (0.40 * vAttackAccent), 1.0);
+        + chromaticBase * (0.24 * vAttackAccent), 1.0);
       #include <tonemapping_fragment>
       #include <colorspace_fragment>
     }
