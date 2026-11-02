@@ -696,33 +696,26 @@ const originalSpectrumStops = [
 // LAISE_R8C_FOREST_PALETTE
 // Default: forest palette. Use ?palette=original for comparison.
 // Emission, bloom, exposure and terrain behavior are unchanged.
+// LAISE_R36_DARK_GREEN_PALETTE
+// Keep every terrain color in a restrained deep forest-green range.
+// Gold is reserved for the kene graphic; no copper/orange stops.
 const forestPaletteColors = [
-  0x183b2b, // deep forest
-  0x245438, // shaded canopy
-  0x2d6840, // forest green
-  0x397b46, // moss green
-  0x468c4d, // leaf green
-  0x5a9b52, // bright moss
-  0x6ca957, // lichen
-  0x4d9250, // fern
-  0x347b48, // deep emerald
-  0x3c8950, // bioluminescent moss
-  0x69a95b, // canopy light
-  0x8aba68  // soft green highlight
+  0x1b321b, // deep forest shadow
+  0x203920, // shaded canopy
+  0x233f23, // moss shadow
+  0x29452a, // dark forest
+  0x2d482e, // deep moss
+  0x31502f, // shaded moss
+  0x3b5838, // illuminated moss
+  0x355233, // fern shadow
+  0x2a4729, // emerald shadow
+  0x31502f, // bioluminescent moss shadow
+  0x365335, // canopy light
+  0x3b5838  // soft dark-green highlight
 ];
 
-// LAISE_R8C_PALETTE_V2
-// Keep the previous forest palette for ?palette=forest1.
+// Keep the same dark-green palette in every forest palette mode.
 const forestPaletteV1 = forestPaletteColors.slice();
-
-const paletteChoiceR8C =
-  new URLSearchParams(window.location.search).get("palette");
-
-if (paletteChoiceR8C !== "forest1" && paletteChoiceR8C !== "original") {
-  // Only the two central color stops change.
-  forestPaletteColors[4] = 0xc27632;
-  forestPaletteColors[5] = 0x96723b;
-}
 
 const forestPaletteEnabled =
   new URLSearchParams(window.location.search).get("palette") !== "original";
