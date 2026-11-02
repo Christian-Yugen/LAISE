@@ -700,18 +700,18 @@ const originalSpectrumStops = [
 // Keep every terrain color in a restrained deep forest-green range.
 // Gold is reserved for the kene graphic; no copper/orange stops.
 const forestPaletteColors = [
-  0x1b321b, // deep forest shadow
-  0x203920, // shaded canopy
-  0x233f23, // moss shadow
-  0x29452a, // dark forest
-  0x2d482e, // deep moss
-  0x31502f, // shaded moss
-  0x3b5838, // illuminated moss
-  0x355233, // fern shadow
-  0x2a4729, // emerald shadow
-  0x31502f, // bioluminescent moss shadow
-  0x365335, // canopy light
-  0x3b5838  // soft dark-green highlight
+  0x152815, // deep forest shadow
+  0x192d19, // shaded canopy
+  0x1b321b, // moss shadow
+  0x203720, // dark forest
+  0x243a25, // deep moss
+  0x273e25, // shaded moss
+  0x2e452c, // illuminated moss
+  0x294029, // fern shadow
+  0x213821, // emerald shadow
+  0x273e25, // bioluminescent moss shadow
+  0x2a4129, // canopy light
+  0x2e452c  // soft dark-green highlight
 ];
 
 // Keep the same dark-green palette in every forest palette mode.
@@ -1092,8 +1092,8 @@ const terrainColorGLSL = `
     // Forest moss palette: dark canopy shadows into softly lit moss.
     float sourceLevel = clamp(max(max(source.r, source.g), source.b), 0.0, 1.0);
     float gradient = clamp(0.72 * spectrumT + 0.28 * sourceLevel, 0.0, 1.0);
-    vec3 forestDeep = vec3(0.006, 0.030, 0.008);
-    vec3 forestMid = vec3(0.045, 0.165, 0.032);
+    vec3 forestDeep = vec3(0.004, 0.020, 0.005);
+    vec3 forestMid = vec3(0.030, 0.112, 0.022);
     return mix(forestDeep, forestMid, smoothstep(0.0, 1.0, gradient));
   }
   float terrainPeakLight(float height) {
