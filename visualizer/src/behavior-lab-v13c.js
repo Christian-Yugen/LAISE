@@ -1405,10 +1405,12 @@ kenePatternImageR36.onload = () => {
   keneTextureR36.needsUpdate = true;
   const keneMaterialR36 = new THREE.MeshBasicMaterial({
     map: keneTextureR36,
-    color: 0xffffff,
+    // HDR gold core: exceed the bloom threshold so the exact motif emits
+    // a warm living halo while the forest mesh retains its green palette.
+    color: new THREE.Color(3.8, 3.0, 0.72),
     transparent: true,
-    opacity: 0.92,
-    alphaTest: 0.045,
+    opacity: 1.0,
+    alphaTest: 0.025,
     side: THREE.DoubleSide,
     depthTest: true,
     depthWrite: false,
