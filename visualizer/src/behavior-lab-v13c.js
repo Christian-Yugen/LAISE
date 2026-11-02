@@ -9,6 +9,7 @@ import { AudioCueTimeline } from "./audio-cue-timeline.js";
 import { AudioMotionRecovery } from "./audio-motion-recovery.js";
 
 import * as THREE from "three";
+import { KENE_TERRAIN_PATTERN_R36 } from "./kene-terrain-pattern-r36.js";
 import { createReflectiveFloorR8B } from "./reflective-floor-r8b.js";
 
 import {
@@ -1392,6 +1393,37 @@ terrainRig.add(
 scene.add(
   terrainRig
 );
+
+// R36: map the attached gold motif onto the animated terrain geometry.
+const kenePatternImageR36 = new Image();
+kenePatternImageR36.onload = () => {
+  const keneTextureR36 = new THREE.Texture(kenePatternImageR36);
+  keneTextureR36.colorSpace = THREE.SRGBColorSpace;
+  keneTextureR36.generateMipmaps = true;
+  keneTextureR36.minFilter = THREE.LinearMipmapLinearFilter;
+  keneTextureR36.magFilter = THREE.LinearFilter;
+  keneTextureR36.needsUpdate = true;
+  const keneMaterialR36 = new THREE.MeshBasicMaterial({
+    map: keneTextureR36,
+    color: 0xffffff,
+    transparent: true,
+    opacity: 0.92,
+    alphaTest: 0.045,
+    side: THREE.DoubleSide,
+    depthTest: true,
+    depthWrite: false,
+    polygonOffset: true,
+    polygonOffsetFactor: -1,
+    polygonOffsetUnits: -1,
+    blending: THREE.AdditiveBlending,
+    toneMapped: false
+  });
+  const keneOverlayR36 = new THREE.Mesh(geometry, keneMaterialR36);
+  keneOverlayR36.frustumCulled = false;
+  keneOverlayR36.renderOrder = 2;
+  terrainRig.add(keneOverlayR36);
+};
+kenePatternImageR36.src = `data:image/png;base64,${KENE_TERRAIN_PATTERN_R36}`;
 
 // LAISE_R8C_EDGE_GLOW_TEST
 // Experimental perimeter light: enabled only with ?edge=1.
