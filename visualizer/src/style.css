@@ -680,3 +680,19 @@ body {
     letter-spacing: .12em;
   }
 }
+
+/* R36 rainforest terrain visual identity */
+.status-title {
+  color: #ffe0a3 !important;
+  text-shadow: 0 0 18px rgba(255, 145, 47, .38), 0 2px 12px #000;
+}
+.active-stems-enabled .active-stems-panel:not([hidden]) {
+  border-color: rgba(191, 126, 55, .48);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, .42), inset 0 0 24px rgba(117, 75, 34, .11);
+}
+.active-stems-heading { color: #e5c18b; }
+.active-stems-heading button { color: #e9a24d; }
+.active-stems-caption { color: #c39359; }
+.active-stem-item { color: #e8ddc7; }
+.active-stems-bottom { border-top-color: rgba(190, 137, 77, .22); color: #d9c29b; }
+.active-stems-bottom span:last-child { color: #b69a6e; }
