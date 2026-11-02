@@ -195,9 +195,9 @@ if (forestBackgroundEnabled) {
   const selectedBackgroundR8C =
     new URLSearchParams(window.location.search).get("background");
 
-  const forestUrl = selectedBackgroundR8C === "forest"
-    ? new URL("./laise-forest-background-r8b.png", import.meta.url).href
-    : new URL("./laise-abstract-background-r8c.png", import.meta.url).href;
+  const forestUrl = selectedBackgroundR8C === "abstract"
+    ? new URL("./laise-abstract-background-r8c.png", import.meta.url).href
+    : new URL("./laise-forest-background-r8b.png", import.meta.url).href;
 
   new THREE.TextureLoader().load(
     forestUrl,
@@ -226,8 +226,8 @@ if (forestBackgroundEnabled) {
 
 scene.fog =
   new THREE.FogExp2(
-    0x020706,
-    0.048
+    0x07140d,
+    0.038
   );
 
 
@@ -445,15 +445,15 @@ const TERRAIN_LIGHTING = Object.freeze({
 });
 
 const terrainHemisphereLight = new THREE.HemisphereLight(
-  0xfff4e8, 0x101522, TERRAIN_LIGHTING.ambientIntensity
+  0xd7e3b7, 0x10180f, TERRAIN_LIGHTING.ambientIntensity
 );
 scene.add(terrainHemisphereLight);
 
 const terrainKeyLight = new THREE.DirectionalLight(
-  0xfff2d8, TERRAIN_LIGHTING.keyIntensity
+  0xffd39a, TERRAIN_LIGHTING.keyIntensity
 );
 const terrainFillLight = new THREE.DirectionalLight(
-  0xd5e6ff, TERRAIN_LIGHTING.fillIntensity
+  0x7ba66b, TERRAIN_LIGHTING.fillIntensity
 );
 
 terrainKeyLight.target.position.set(0, 0, -CAMERA.distance);
@@ -696,18 +696,18 @@ const originalSpectrumStops = [
 // Default: forest palette. Use ?palette=original for comparison.
 // Emission, bloom, exposure and terrain behavior are unchanged.
 const forestPaletteColors = [
-  0xf2b858, // warm gold
-  0xf28a78, // coral
-  0xe95dbb, // pink
-  0xc260e8, // violet
-  0x854fe9, // purple
-  0x605fe9, // blue-violet
-  0x3d7df0, // blue
-  0x278fe9, // blue
-  0x1ba8ed, // bright blue
-  0x1fc6ed, // cyan-blue
-  0x35d7dc, // cyan
-  0x338fe2  // blue
+  0x76502b, // dark earth
+  0x9a6330, // burnt copper
+  0x9b4528, // ritual red
+  0xb15a2c, // ember orange
+  0xc27632, // bronze
+  0x96723b, // aged gold
+  0x53663a, // moss green
+  0x426044, // forest green
+  0x315c48, // deep canopy
+  0x3d7556, // bioluminescent moss
+  0x69804b, // lichen
+  0x8d713c  // muted gold
 ];
 
 // LAISE_R8C_PALETTE_V2
@@ -719,8 +719,8 @@ const paletteChoiceR8C =
 
 if (paletteChoiceR8C !== "forest1" && paletteChoiceR8C !== "original") {
   // Only the two central color stops change.
-  forestPaletteColors[4] = 0x713de8;
-  forestPaletteColors[5] = 0x4d48ef;
+  forestPaletteColors[4] = 0xc27632;
+  forestPaletteColors[5] = 0x96723b;
 }
 
 const forestPaletteEnabled =
@@ -1219,12 +1219,15 @@ const terrainMaterial = new THREE.ShaderMaterial({
       // Only locally convex, favorably lit regions approach a white-hot core.
       // Tone mapping and sRGB output remain in the existing final OutputPass.
       vec3 chromaticBase = vividTerrainColor(vSpectrum, vSpectrumT);
+      float crest = smoothstep(1.15, 3.4, max(vTerrainHeight, 0.0));
+      float fireBand = smoothstep(0.18, 0.82, vSpectrumT);
+      vec3 ember = mix(vec3(1.0, 0.10, 0.025), vec3(1.0, 0.42, 0.045), fireBand);
+      chromaticBase = mix(chromaticBase, ember, crest * 0.82);
       vec3 emission = r8aNeonEmission(chromaticBase, vSpectrumT,
         faceNormal, uTerrainUp, uKeyDirection);
-      // Height amplifies only the already illuminated emission, creating
-      // a stronger local HDR halo without raising the shadow floor.
       emission *= 1.0 + uHeightHaloStrength *
-        pow(smoothstep(1.5, 6.8, max(vTerrainHeight, 0.0)), 1.55);
+        pow(smoothstep(1.0, 3.7, max(vTerrainHeight, 0.0)), 1.8);
+      emission += ember * crest * (0.16 + 0.72 * vAttackAccent);
       // A brief chromatic crest marks each recorded onset on the same mesh.
       gl_FragColor = vec4(chromaticBase * radiance + emission
         + chromaticBase * (0.55 * vAttackAccent), 1.0);
@@ -1326,8 +1329,20 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
     ${terrainColorGLSL}
     ${neonEmissionGLSL}
   ` + shader.fragmentShader;
-  shader.fragmentShader = shader.fragmentShader.replace("#include <color_fragment>",
-    "#include <color_fragment>\ndiffuseColor.rgb = vividTerrainColor(vR8A10Spectrum, vSpectrumT) * uR8A10SurfaceAlbedo;");
+  shader.fragmentShader = shader.fragmentShader.replace("#include <color_fragment>", `
+    #include <color_fragment>
+    diffuseColor.rgb = vividTerrainColor(vR8A10Spectrum, vSpectrumT) * uR8A10SurfaceAlbedo;
+    // Kene-inspired geometric linework, kept subtle on flatter clearings.
+    vec2 motifUv = vViewPosition.xz * 0.92;
+    vec2 cell = fract(motifUv) - 0.5;
+    float diamond = min(abs(cell.x - cell.y), abs(cell.x + cell.y));
+    float crossline = min(abs(cell.x), abs(cell.y));
+    float motif = 1.0 - smoothstep(0.012, 0.035, min(diamond, crossline));
+    float flatland = 1.0 - smoothstep(0.06, 0.34,
+      1.0 - abs(dot(normalize(normal), normalize(uTerrainUp))));
+    diffuseColor.rgb = mix(diffuseColor.rgb,
+      vec3(0.46, 0.25, 0.09), motif * flatland * 0.30);
+  `);
   shader.fragmentShader = shader.fragmentShader.replace("#include <emissivemap_fragment>", `
     #include <emissivemap_fragment>
     float litFace = pow(smoothstep(0.18, 0.95,
@@ -1694,6 +1709,9 @@ for (
 }
 
 
+const particleBasePositions = particlePositions.slice();
+const particlePhases = new Float32Array(particleCount);
+for (let i = 0; i < particleCount; i++) particlePhases[i] = Math.random() * Math.PI * 2;
 const particleGeometry =
   new THREE.BufferGeometry();
 
@@ -2924,6 +2942,11 @@ function animate() {
     totalEnergy /
     frequencyData.length /
     255;
+  let highBandEnergy = 0;
+  const highBandStart = Math.floor(frequencyData.length * 0.72);
+  for (let i = highBandStart; i < frequencyData.length; i++) highBandEnergy += smoothed[i];
+  highBandEnergy = highBandStart < frequencyData.length
+    ? highBandEnergy / (frequencyData.length - highBandStart) / 255 : 0;
 
 
   energyLabel.textContent =
@@ -3050,6 +3073,19 @@ function animate() {
 
   particles.position.y =
     averageEnergy * 0.25;
+  const particlePositionsLive = particleGeometry.attributes.position.array;
+  const sporePulse = THREE.MathUtils.clamp(highBandEnergy * 3.6, 0, 1);
+  for (let i = 0; i < particleCount; i++) {
+    const k = i * 3, phase = particlePhases[i] + time * (0.35 + sporePulse * 1.8);
+    particlePositionsLive[k] = particleBasePositions[k] + Math.sin(phase) * (0.035 + sporePulse * 0.20);
+    particlePositionsLive[k + 1] = particleBasePositions[k + 1]
+      + Math.sin(phase * 0.73) * (0.035 + sporePulse * 0.32);
+    particlePositionsLive[k + 2] = particleBasePositions[k + 2] + Math.cos(phase * 0.61) * 0.08;
+  }
+  particleGeometry.attributes.position.needsUpdate = true;
+  particleMaterial.color.setRGB(0.72 + sporePulse * 0.28, 0.40 + sporePulse * 0.35, 0.12 + sporePulse * 0.12);
+  particleMaterial.size = 0.024 + sporePulse * 0.018;
+  particleMaterial.opacity = 0.34 + sporePulse * 0.46;
 
 
   rings.rotation.y =
