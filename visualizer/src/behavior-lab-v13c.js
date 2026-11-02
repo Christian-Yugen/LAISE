@@ -433,10 +433,10 @@ const TERRAIN_LIGHTING = Object.freeze({
   ambientIntensity: 0.08,
   surfaceAlbedo: 0.26,
   wireShadow: 0.10,
-  wireKey: 2.9,
+  wireKey: 2.3,
   wireFill: 0.08,
-  wireRim: 3.0,
-  peakBoost: 0.48,
+  wireRim: 2.4,
+  peakBoost: 0.36,
   surfaceLight: 0.28,
   surfacePeakLight: 0.55,
   bloomBase: NEON_R8A.neonBloomStrength * 0.58,
@@ -1239,7 +1239,7 @@ const terrainMaterial = new THREE.ShaderMaterial({
       vec3 chromaticBase = vividWireTerrainColor(vSpectrum, vSpectrumT);
       vec3 emission = r8aNeonEmission(chromaticBase, vSpectrumT,
         faceNormal, uTerrainUp, uKeyDirection);
-      emission *= uWaveGlowScale * 0.58 * (1.0 + uHeightHaloStrength *
+      emission *= uWaveGlowScale * 0.42 * (1.0 + uHeightHaloStrength *
         pow(smoothstep(1.5, 6.8, max(vTerrainHeight, 0.0)), 1.55));
       float patternAlpha = texture2D(uKenePatternTexture, vKeneUv).a;
       float patternLine = smoothstep(0.06, 0.50, patternAlpha);
@@ -1247,7 +1247,7 @@ const terrainMaterial = new THREE.ShaderMaterial({
       chromaticBase = mix(chromaticBase, keneGold, patternLine * 0.94);
       emission += keneGold * patternLine * (0.48 + 0.32 * vAttackAccent);
       gl_FragColor = vec4(chromaticBase * radiance + emission
-        + chromaticBase * (0.55 * vAttackAccent), 1.0);
+        + chromaticBase * (0.40 * vAttackAccent), 1.0);
       #include <tonemapping_fragment>
       #include <colorspace_fragment>
     }
