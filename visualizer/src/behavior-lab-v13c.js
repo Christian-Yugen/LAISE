@@ -1093,26 +1093,14 @@ function updateTerrainLighting() {
 const terrainSpectrumAxis = new THREE.Vector2(observerColorCos, observerColorSin);
 const terrainColorGLSL = `
   vec3 vividTerrainColor(vec3 source, float spectrumT) {
-    float peak = max(max(source.r, source.g), source.b);
-    vec3 chroma = clamp(source / max(peak, 0.0001), 0.0, 1.0);
-    vec3 vivid = pow(chroma, vec3(1.40));
-    // Let red, orange and gold overlap across a wide part of the field.
-    // The central gold retains its full gain; the cool side fades gently.
-    float gold = smoothstep(0.32, 0.56, spectrumT)
-      * (1.0 - smoothstep(0.62, 0.71, spectrumT));
-    // More yellow-gold, less copper: lift green relative to dominant red,
-    // retain low blue for saturation, and give gold a modest luminous gain.
-    // LAISE_R8C_COLOR_GRADE_TEST
-    // Original palette or ?grade=legacy: preserve the previous gold grading.
-    // Forest palette: let the selected blue/violet colors remain authoritative.
-    ${
-      (!forestPaletteEnabled ||
-        new URLSearchParams(window.location.search).get("grade") === "legacy")
-        ? `vivid.g = mix(vivid.g, max(vivid.g, 0.72), gold * 0.90);
-           vivid.b *= 1.0 - 0.20 * gold;`
-        : ""
-    }
-    return vivid * peak * (1.0 + 0.15 * gold);
+    // R36 enforces a green-only material grade even if the source spectrum
+    // or an old URL palette override contains warm hues.
+    float sourceLevel = clamp(max(max(source.r, source.g), source.b), 0.0, 1.0);
+    float gradient = clamp(0.72 * spectrumT + 0.28 * sourceLevel, 0.0, 1.0);
+    vec3 forestDeep = vec3(0.008, 0.075, 0.022);
+    vec3 forestBright = vec3(0.115, 0.54, 0.105);
+    vec3 green = mix(forestDeep, forestBright, smoothstep(0.0, 1.0, gradient));
+    return green * (0.78 + 0.42 * sourceLevel);
   }
   float terrainPeakLight(float height) {
     return smoothstep(1.5, 6.5, max(height, 0.0));
