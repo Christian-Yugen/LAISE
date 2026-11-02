@@ -568,3 +568,83 @@ body {
   }
   .top-controls-r28 .status .progress-area { width: min(210px, 100%); }
 }
+
+/* R36: keep the active-stem readout as text, without binaural markers. */
+.active-stems-panel { display: none; }
+.active-stems-enabled .active-stems-panel:not([hidden]) {
+  display: block;
+  position: absolute;
+  left: 44px;
+  top: 34px;
+  z-index: 7;
+  width: 170px;
+  color: #d5e4dc;
+  border: 1px solid rgba(92, 160, 129, .30);
+  border-radius: 13px;
+  background: linear-gradient(155deg, rgba(3, 13, 10, .88), rgba(2, 8, 8, .80));
+  box-shadow: 0 12px 36px rgba(0, 0, 0, .34);
+  backdrop-filter: blur(9px);
+  overflow: hidden;
+}
+.active-stems-heading {
+  min-height: 34px;
+  padding: 8px 10px 7px 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #bad2c6;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: .14em;
+}
+.active-stems-heading button {
+  border: 0;
+  background: transparent;
+  color: #9bcab1;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+}
+.active-stems-content { padding: 0 12px 11px; }
+.active-stems-caption {
+  display: block;
+  margin-bottom: 7px;
+  color: #86ac98;
+  font-size: 8px;
+  letter-spacing: .13em;
+}
+.active-stems-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-height: 18px;
+}
+.active-stem-item {
+  color: #d9e9e1;
+  font-size: 12px;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+.active-stems-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 9px;
+  padding-top: 7px;
+  border-top: 1px solid rgba(154, 198, 171, .14);
+  color: #adc9bb;
+  font-size: 9px;
+  font-weight: 600;
+}
+.active-stems-bottom span:first-child { text-transform: capitalize; }
+.active-stems-bottom span:last-child { color: #8ca99a; }
+.active-stems-panel.collapsed .active-stems-content { display: none; }
+.active-stems-panel.collapsed .active-stems-heading button { transform: rotate(180deg); }
+@media (max-width: 600px) {
+  .active-stems-enabled .active-stems-panel:not([hidden]) {
+    left: 18px;
+    top: 18px;
+    width: min(170px, 46vw);
+  }
+  .active-stem-item { font-size: 10px; }
+}
