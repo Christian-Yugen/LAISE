@@ -438,7 +438,7 @@ const TERRAIN_LIGHTING = Object.freeze({
   wireRim: 3.35,
   peakBoost: 0.82,
   surfaceLight: 0.28,
-  surfacePeakLight: 0.55,
+  surfacePeakLight: 0.95,
   bloomBase: NEON_R8A.neonBloomStrength * 0.58,
   bloomEnergy: 0.015,
   bloomRadius: 0.0,
@@ -1097,7 +1097,7 @@ const terrainColorGLSL = `
     return mix(forestDeep, forestMid, smoothstep(0.0, 1.0, gradient));
   }
   float terrainPeakLight(float height) {
-    return smoothstep(1.5, 6.5, max(height, 0.0));
+    return smoothstep(0.55, 2.65, max(height, 0.0));
   }
 `;
 
@@ -1367,8 +1367,8 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
   `);
   shader.fragmentShader = shader.fragmentShader.replace("#include <emissivemap_fragment>", `
     #include <emissivemap_fragment>
-    float litFace = pow(smoothstep(0.18, 0.95,
-      max(dot(normal, uTerrainKeyDirection), 0.0)), 1.4);
+    float litFace = pow(smoothstep(0.30, 0.92,
+      max(dot(normal, uTerrainKeyDirection), 0.0)), 1.8);
     totalEmissiveRadiance += uReliefWaveGlowScale * diffuseColor.rgb * litFace
       * (uTerrainSurfaceLight + uTerrainSurfacePeakLight * terrainPeakLight(vTerrainHeight)
         + 0.35 * uHeightHaloStrength *
