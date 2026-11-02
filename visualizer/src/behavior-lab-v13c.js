@@ -1209,16 +1209,32 @@ const terrainMaterial = new THREE.ShaderMaterial({
     uniform sampler2D uKenePatternTexture;
     ${terrainWireColorGLSL}
     ${neonEmissionGLSL}
+    float emberHash(vec2 p) {
+      return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453);
+    }
+    float emberNoise(vec2 p) {
+      vec2 i = floor(p); vec2 f = fract(p); f = f * f * (3.0 - 2.0 * f);
+      float a = emberHash(i); float b = emberHash(i + vec2(1.0, 0.0));
+      float c = emberHash(i + vec2(0.0, 1.0)); float d = emberHash(i + vec2(1.0, 1.0));
+      return mix(mix(a, b, f.x), mix(c, d, f.x), f.y);
+    }
+    float emberField(vec2 uv) {
+      vec2 p = uv * vec2(11.0, 6.0);
+      vec2 q = vec2(emberNoise(p), emberNoise(p + vec2(4.2, 7.1)));
+      vec2 r = vec2(emberNoise(p + 3.0 * q + vec2(1.7, 9.2)),
+                    emberNoise(p + 3.0 * q + vec2(8.3, 2.8)));
+      vec2 warped = p + 3.5 * (r - 0.5);
+      return 0.72 * emberNoise(warped) + 0.28 * emberNoise(warped * 2.1 + vec2(5.2, 1.3));
+    }
     float emberCracks(vec2 uv) {
-      // Warped continuous paths create flowing fissures rather than isolated spots.
-      vec2 p = uv * 6.2831853;
-      float warpA = sin(p.y * 1.65 + sin(p.x * 0.62) * 1.45);
-      float warpB = sin(p.x * 1.42 + sin(p.y * 0.74) * 1.25);
-      float phaseA = p.x * 7.4 + warpA * 1.45 + sin(p.y * 4.1) * 0.42;
-      float phaseB = p.y * 6.2 + warpB * 1.35 + sin(p.x * 3.8) * 0.36;
-      float veinA = 1.0 - smoothstep(0.025, 0.14, abs(sin(phaseA)));
-      float veinB = 1.0 - smoothstep(0.035, 0.16, abs(sin(phaseB)));
-      return max(veinA, veinB * 0.72);
+      float field = emberField(uv);
+      float contour = min(abs(field - 0.43), abs(field - 0.58));
+      return 1.0 - smoothstep(0.018, 0.060, contour);
+    }
+    float emberHalo(vec2 uv) {
+      float field = emberField(uv);
+      float contour = min(abs(field - 0.43), abs(field - 0.58));
+      return exp(-contour * 18.0);
     }
     varying vec3 vViewNormal;
     varying vec3 vViewPosition;
@@ -1266,7 +1282,9 @@ const terrainMaterial = new THREE.ShaderMaterial({
       chromaticBase = mix(chromaticBase, keneGold, patternLine * 0.98);
       // Keep the summit mesh green; ember colors are confined to thin crack lines.
       emission += keneGold * patternLine * (1.35 + 0.75 * vAttackAccent);
-      emission += fireColor * crackMask * firePulse * fireFacing * 3.4;
+      float emberGlow = emberHalo(vKeneUv) * summitFire;
+      emission += fireColor * emberGlow * firePulse * fireFacing * 0.42;
+      emission += fireColor * crackMask * firePulse * fireFacing * 2.6;
       gl_FragColor = vec4(chromaticBase * radiance + emission
         + chromaticBase * (0.24 * vAttackAccent), 1.0);
       #include <tonemapping_fragment>
@@ -1376,16 +1394,32 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
     uniform float uReliefWaveGlowScale;
     ${terrainColorGLSL}
     ${neonEmissionGLSL}
+    float emberHash(vec2 p) {
+      return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453);
+    }
+    float emberNoise(vec2 p) {
+      vec2 i = floor(p); vec2 f = fract(p); f = f * f * (3.0 - 2.0 * f);
+      float a = emberHash(i); float b = emberHash(i + vec2(1.0, 0.0));
+      float c = emberHash(i + vec2(0.0, 1.0)); float d = emberHash(i + vec2(1.0, 1.0));
+      return mix(mix(a, b, f.x), mix(c, d, f.x), f.y);
+    }
+    float emberField(vec2 uv) {
+      vec2 p = uv * vec2(11.0, 6.0);
+      vec2 q = vec2(emberNoise(p), emberNoise(p + vec2(4.2, 7.1)));
+      vec2 r = vec2(emberNoise(p + 3.0 * q + vec2(1.7, 9.2)),
+                    emberNoise(p + 3.0 * q + vec2(8.3, 2.8)));
+      vec2 warped = p + 3.5 * (r - 0.5);
+      return 0.72 * emberNoise(warped) + 0.28 * emberNoise(warped * 2.1 + vec2(5.2, 1.3));
+    }
     float emberCracks(vec2 uv) {
-      // Warped continuous paths create flowing fissures rather than isolated spots.
-      vec2 p = uv * 6.2831853;
-      float warpA = sin(p.y * 1.65 + sin(p.x * 0.62) * 1.45);
-      float warpB = sin(p.x * 1.42 + sin(p.y * 0.74) * 1.25);
-      float phaseA = p.x * 7.4 + warpA * 1.45 + sin(p.y * 4.1) * 0.42;
-      float phaseB = p.y * 6.2 + warpB * 1.35 + sin(p.x * 3.8) * 0.36;
-      float veinA = 1.0 - smoothstep(0.025, 0.14, abs(sin(phaseA)));
-      float veinB = 1.0 - smoothstep(0.035, 0.16, abs(sin(phaseB)));
-      return max(veinA, veinB * 0.72);
+      float field = emberField(uv);
+      float contour = min(abs(field - 0.43), abs(field - 0.58));
+      return 1.0 - smoothstep(0.018, 0.060, contour);
+    }
+    float emberHalo(vec2 uv) {
+      float field = emberField(uv);
+      float contour = min(abs(field - 0.43), abs(field - 0.58));
+      return exp(-contour * 18.0);
     }
   ` + shader.fragmentShader;
   shader.fragmentShader = shader.fragmentShader.replace("#include <color_fragment>", `
@@ -1412,7 +1446,9 @@ reliefSurfaceMaterial.onBeforeCompile = shader => {
     float fireFacing = 0.30 + 0.70 * litFace;
     vec3 fireColor = mix(vec3(0.82, 0.008, 0.004), vec3(1.0, 0.075, 0.002),
       clamp(0.55 * crackMask + 0.45 * vAttackAccent, 0.0, 1.0));
-    totalEmissiveRadiance += uReliefWaveGlowScale * fireColor * crackMask * firePulse * fireFacing * 3.8;
+    float emberGlow = emberHalo(vForestPatternUv / 14.72 + 0.5) * summitFire;
+    totalEmissiveRadiance += uReliefWaveGlowScale * fireColor * emberGlow * firePulse * fireFacing * 0.55;
+    totalEmissiveRadiance += uReliefWaveGlowScale * fireColor * crackMask * firePulse * fireFacing * 3.0;
   `);
 };
 reliefSurfaceMaterial.customProgramCacheKey = () => "r8a-hdr-neon-emission-v2";
