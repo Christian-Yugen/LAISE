@@ -1147,7 +1147,6 @@ const terrainMaterial = new THREE.ShaderMaterial({
     varying vec3 vSpectrum;
     varying float vTerrainHeight;
     varying float vSpectrumT;
-    attribute vec2 uv;
     varying vec2 vKeneUv;
     uniform vec2 uSpectrumAxis;
     uniform float uSpectrumHalfSpan;
