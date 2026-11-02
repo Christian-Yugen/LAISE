@@ -1245,9 +1245,10 @@ const terrainMaterial = new THREE.ShaderMaterial({
         pow(smoothstep(1.5, 6.8, max(vTerrainHeight, 0.0)), 1.55));
       float patternAlpha = texture2D(uKenePatternTexture, vKeneUv).a;
       float patternLine = smoothstep(0.06, 0.50, patternAlpha);
-      vec3 keneGold = vec3(0.92, 0.66, 0.16);
-      chromaticBase = mix(chromaticBase, keneGold, patternLine * 0.94);
-      emission += keneGold * patternLine * (0.48 + 0.32 * vAttackAccent);
+      vec3 keneGold = vec3(1.0, 0.82, 0.20);
+      chromaticBase = mix(chromaticBase, keneGold, patternLine * 0.98);
+      // Solar yellow emission belongs only to the kene strokes, never the full grid.
+      emission += keneGold * patternLine * (1.15 + 0.65 * vAttackAccent);
       gl_FragColor = vec4(chromaticBase * radiance + emission
         + chromaticBase * (0.24 * vAttackAccent), 1.0);
       #include <tonemapping_fragment>
